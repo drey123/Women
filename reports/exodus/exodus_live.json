@@ -1,5 +1,5 @@
 {
-  "fetched_utc": "2026-10-13T12:51:32Z",
+  "fetched_utc": "2026-10-13T15:34:01Z",
   "source": "https://reports.exodus-privacy.eu.org/api",
   "endpoint_pattern": "https://reports.exodus-privacy.eu.org/api/search/<package>/details",
   "tracker_registry_count": 432,

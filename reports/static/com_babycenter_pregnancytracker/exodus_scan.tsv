@@ -1,8 +1,13 @@
-tracker	match_files	code_signature
-Snowplow	20	com.snowplowanalytics.
-AppsFlyer	11	com.appsflyer.
-Amazon Advertisement	6	com.amazon.device.ads
-ComScore	2	com.comscore.
-AppLovin (MAX and SparkLabs)	1	com.applovin
-JW Player	1	com.longtailvideo.jwplayer.
-mParticle	1	com.mparticle
+tracker	match_files	dex_class	code_signature
+Snowplow	20	n	com.snowplowanalytics.
+AppsFlyer	11	Y	com.appsflyer.
+Amazon Advertisement	6	Y	com.amazon.device.ads
+ComScore	2	Y	com.comscore.
+AppLovin (MAX and SparkLabs)	1	n	com.applovin
+JW Player	1	Y	com.longtailvideo.jwplayer.
+mParticle	1	n	com.mparticle
+Google AdMob	0	Y	com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.
+Google CrashLytics	0	Y	io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.
+Google Firebase Analytics	0	Y	com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics
+IAB Open Measurement	0	Y	com.iab.omid.library|com.prime31.util.IabHelperImpl|com.prime31.IAB.
+Localytics	0	Y	com.localytics.android.|com.localytics.androidx|com.localytics.react.

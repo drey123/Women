@@ -1,12 +1,11 @@
      17 https://www.slf4j.org
-     16 https://rev.cat
+     15 https://rev.cat
      13 https://www.googleapis.com
      13 https://firebase.google.com
      10 https://stardust.app
       9 https://stardust-app.onelink.me
       5 https://play.google.com
       5 https://errors.rev.cat
-      5 https://developer.android.com
       4 https://rownd-hub.supertokens.com
       4 https://issuetracker.google.com
       4 https://api.rownd.io
@@ -14,6 +13,7 @@
       3 https://st-auth.stardust.app
       3 https://google.com
       3 https://github.com
+      3 https://developer.android.com
       3 https://app-measurement.com
       3 https://api.stardust.app
       3 https://api.rudderlabs.com

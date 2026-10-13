@@ -1,7 +1,8 @@
-tracker	match_files	code_signature
-Apptentive	13	com.apptentive.
-AppsFlyer	11	com.appsflyer.
-HelpShift	6	com.helpshift
-Urbanairship	2	com.urbanairship
-Amazon Mobile Analytics (Amplify)	1	com.amplifyframework.analytics.
-mParticle	1	com.mparticle
+tracker	match_files	dex_class	code_signature
+Apptentive	13	Y	com.apptentive.
+AppsFlyer	11	Y	com.appsflyer.
+HelpShift	6	Y	com.helpshift
+Urbanairship	2	n	com.urbanairship
+Amazon Mobile Analytics (Amplify)	1	Y	com.amplifyframework.analytics.
+mParticle	1	n	com.mparticle
+Sentry	0	Y	io.sentry.|com.joshdholtz.sentry

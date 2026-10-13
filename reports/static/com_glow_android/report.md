@@ -3,7 +3,7 @@ Static analysis report — com_glow_android
 - Package: `com.glow.android`
 - APK: `/tmp/apk/com.glow.android.apk` (132902051 bytes, sha256 `be0e886a086748f74a960863a7e42f73cdb02ecbd0009ef657a42579488207f1`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T12:51:44Z | Runner: x86_64
+- Date: 2026-10-13T15:34:15Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -59,21 +59,29 @@ com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
 ```
 ```
 
-## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
-- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
-| Tracker | Matching files | Code signature |
-|---|---|---|
-| AppsFlyer | 12 | `com.appsflyer.` |
-| Amazon Advertisement | 5 | `com.amazon.device.ads` |
-| Facebook Login | 5 | `com.facebook.login` |
-| Facebook Share | 5 | `com.facebook.share` |
-| AppLovin (MAX and SparkLabs) | 1 | `com.applovin` |
-| Bolts | 1 | `com.parse.bolts` |
-| Facebook Places | 1 | `com.facebook.places` |
-| Smaato | 1 | `com.smaato.` |
-| mParticle | 1 | `com.mparticle` |
+## Tracker detection (Exodus-Privacy registry; dual surface per NF-17)
+- Signatures checked: 428 (registry digest sha256 c4ebde4f6cd200b0; source: reports.exodus-privacy.eu.org/api/trackers)
+- Surfaces: `dex_class` = regex signature over the dexdump class list of every classes*.dex (exodus-core semantics, primary); `Files (tree)` = fixed-string hits over the apktool tree incl. manifest/resources (string-presence, NOT class-presence; reconciliation run 38415446421 showed the tree surface alone both over- and under-reports).
+- Reading rule: `dex_class=Y` = tracker classes present (strong claim). `dex_class=n` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown != absence.
+| Tracker | Files (tree) | dex_class | Code signature |
+|---|---|---|---|
+| AppsFlyer | 12 | Y | `com.appsflyer.` |
+| Amazon Advertisement | 5 | Y | `com.amazon.device.ads` |
+| Facebook Login | 5 | Y | `com.facebook.login` |
+| Facebook Share | 5 | Y | `com.facebook.share` |
+| AppLovin (MAX and SparkLabs) | 1 | n | `com.applovin` |
+| Bolts | 1 | n | `com.parse.bolts` |
+| Facebook Places | 1 | n | `com.facebook.places` |
+| Smaato | 1 | n | `com.smaato.` |
+| mParticle | 1 | n | `com.mparticle` |
+| Facebook Analytics | 0 | Y | `com.facebook.appevents|com.facebook.marketing.|com.facebook.CampaignTrackingReceiver` |
+| Google AdMob | 0 | Y | `com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.` |
+| Google CrashLytics | 0 | Y | `io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.` |
+| Google Firebase Analytics | 0 | Y | `com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics` |
+| IAB Open Measurement | 0 | Y | `com.iab.omid.library|com.prime31.util.IabHelperImpl|com.prime31.IAB.` |
+| Sentry | 0 | Y | `io.sentry.|com.joshdholtz.sentry` |
 
-**Tracker classes embedded in code: 9**
+**Families with tree evidence: 15; of which class-present in dex: 10**
 
 ## Network hosts referenced in code/resources (top 100)
 ```
@@ -180,15 +188,15 @@ com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
 ```
 
 ## Local data model signals
-- Room @Entity classes: 30 (files: /tmp/women-analysis-com_glow_android.ychKIO/src/sources/com/glow/android/roomdb/entity/PeriodV2.java /tmp/women-analysis-com_glow_android.ychKIO/src/sources/com/glow/android/roomdb/entity/MedicalLog.java /tmp/women-analysis-com_glow_android.ychKIO/src/sources/com/glow/android/roomdb/entity/UserDailyTodo.java /tmp/women-analysis-com_glow_android.ychKIO/src/sources/com/glow/android/roomdb/entity/DailyLog.java /tmp/women-analysis-com_glow_android.ychKIO/src/sources/com/glow/android/roomdb/entity/Notification.java )
+- Room @Entity classes: 30 (files: /tmp/women-analysis-com_glow_android.6IP2CW/src/sources/com/glow/android/roomdb/entity/PeriodV2.java /tmp/women-analysis-com_glow_android.6IP2CW/src/sources/com/glow/android/roomdb/entity/MedicalLog.java /tmp/women-analysis-com_glow_android.6IP2CW/src/sources/com/glow/android/roomdb/entity/UserDailyTodo.java /tmp/women-analysis-com_glow_android.6IP2CW/src/sources/com/glow/android/roomdb/entity/DailyLog.java /tmp/women-analysis-com_glow_android.6IP2CW/src/sources/com/glow/android/roomdb/entity/Notification.java )
 - @Database classes: 3
 - protobuf generated classes: 32 files
 - SQLiteOpenHelper subclasses: 10
-- FirebaseRemoteConfig usages: 122 lines
+- FirebaseRemoteConfig usages: 133 lines
 
 ## Crypto/pinning posture
 - Bundled cert/keystore files: 0 → 
-- network_security_config present: /tmp/women-analysis-com_glow_android.ychKIO/dec/res/xml/network_security_config.xml 
+- network_security_config present: /tmp/women-analysis-com_glow_android.6IP2CW/dec/res/xml/network_security_config.xml 
 - certificatePinner usages: 60
 
 ## Manifest package/version

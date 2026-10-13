@@ -3,7 +3,7 @@ Static analysis report — com_babycenter_pregnancytracker
 - Package: `com.babycenter.pregnancytracker`
 - APK: `/tmp/apk/com.babycenter.pregnancytracker.apk` (67082565 bytes, sha256 `3816927114ee91d9837dfc35535dd33c449ab1555b979ede30cd0e0b72aa3c5f`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T13:01:09Z | Runner: x86_64
+- Date: 2026-10-13T15:44:14Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -35,19 +35,26 @@ com.amazon.privacypass.ATTEST
 ```
 ```
 
-## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
-- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
-| Tracker | Matching files | Code signature |
-|---|---|---|
-| Snowplow | 20 | `com.snowplowanalytics.` |
-| AppsFlyer | 11 | `com.appsflyer.` |
-| Amazon Advertisement | 6 | `com.amazon.device.ads` |
-| ComScore | 2 | `com.comscore.` |
-| AppLovin (MAX and SparkLabs) | 1 | `com.applovin` |
-| JW Player | 1 | `com.longtailvideo.jwplayer.` |
-| mParticle | 1 | `com.mparticle` |
+## Tracker detection (Exodus-Privacy registry; dual surface per NF-17)
+- Signatures checked: 428 (registry digest sha256 c4ebde4f6cd200b0; source: reports.exodus-privacy.eu.org/api/trackers)
+- Surfaces: `dex_class` = regex signature over the dexdump class list of every classes*.dex (exodus-core semantics, primary); `Files (tree)` = fixed-string hits over the apktool tree incl. manifest/resources (string-presence, NOT class-presence; reconciliation run 38415446421 showed the tree surface alone both over- and under-reports).
+- Reading rule: `dex_class=Y` = tracker classes present (strong claim). `dex_class=n` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown != absence.
+| Tracker | Files (tree) | dex_class | Code signature |
+|---|---|---|---|
+| Snowplow | 20 | n | `com.snowplowanalytics.` |
+| AppsFlyer | 11 | Y | `com.appsflyer.` |
+| Amazon Advertisement | 6 | Y | `com.amazon.device.ads` |
+| ComScore | 2 | Y | `com.comscore.` |
+| AppLovin (MAX and SparkLabs) | 1 | n | `com.applovin` |
+| JW Player | 1 | Y | `com.longtailvideo.jwplayer.` |
+| mParticle | 1 | n | `com.mparticle` |
+| Google AdMob | 0 | Y | `com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.` |
+| Google CrashLytics | 0 | Y | `io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.` |
+| Google Firebase Analytics | 0 | Y | `com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics` |
+| IAB Open Measurement | 0 | Y | `com.iab.omid.library|com.prime31.util.IabHelperImpl|com.prime31.IAB.` |
+| Localytics | 0 | Y | `com.localytics.android.|com.localytics.androidx|com.localytics.react.` |
 
-**Tracker classes embedded in code: 7**
+**Families with tree evidence: 12; of which class-present in dex: 9**
 
 ## Network hosts referenced in code/resources (top 100)
 ```
@@ -162,7 +169,7 @@ com.amazon.privacypass.ATTEST
 
 ## Crypto/pinning posture
 - Bundled cert/keystore files: 0 → 
-- network_security_config present: /tmp/women-analysis-com_babycenter_pregnancytracker.84dxi3/dec/res/xml/network_security_config.xml 
+- network_security_config present: /tmp/women-analysis-com_babycenter_pregnancytracker.OAfjkQ/dec/res/xml/network_security_config.xml 
 - certificatePinner usages: 50
 
 ## Manifest package/version

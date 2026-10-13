@@ -3,7 +3,7 @@ Static analysis report — com_stardust_app
 - Package: `com.stardust.app`
 - APK: `/tmp/apk/com.stardust.app.apk` (66132023 bytes, sha256 `b85380d4bba8af176605fd79e1689bd4189d1f06a93d1128bdcee56782f7e31b`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T12:55:58Z | Runner: x86_64
+- Date: 2026-10-13T15:39:25Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -54,28 +54,33 @@ com.stardust.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ```
 ```
 
-## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
-- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
-| Tracker | Matching files | Code signature |
-|---|---|---|
-| OneSignal | 629 | `com.onesignal.` |
-| AppsFlyer | 11 | `com.appsflyer.` |
-| Branch | 1 | `io.branch.` |
-| mParticle | 1 | `com.mparticle` |
+## Tracker detection (Exodus-Privacy registry; dual surface per NF-17)
+- Signatures checked: 428 (registry digest sha256 c4ebde4f6cd200b0; source: reports.exodus-privacy.eu.org/api/trackers)
+- Surfaces: `dex_class` = regex signature over the dexdump class list of every classes*.dex (exodus-core semantics, primary); `Files (tree)` = fixed-string hits over the apktool tree incl. manifest/resources (string-presence, NOT class-presence; reconciliation run 38415446421 showed the tree surface alone both over- and under-reports).
+- Reading rule: `dex_class=Y` = tracker classes present (strong claim). `dex_class=n` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown != absence.
+| Tracker | Files (tree) | dex_class | Code signature |
+|---|---|---|---|
+| OneSignal | 629 | Y | `com.onesignal.` |
+| AppsFlyer | 11 | Y | `com.appsflyer.` |
+| Branch | 1 | n | `io.branch.` |
+| mParticle | 1 | n | `com.mparticle` |
+| Google CrashLytics | 0 | Y | `io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.` |
+| Google Firebase Analytics | 0 | Y | `com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics` |
+| Huawei Mobile Services (HMS) Core | 0 | Y | `com.huawei.hms.analytics|com.huawei.hms.location|com.huawei.hms.plugin.analytics|com.huawei.hms.plugin.ads|com.huawei.updatesdk.|com.huawei.agconnect.|com.huawei.hms.support.api.push.|com.huawei.hms.flutter.analytics.` |
+| OpenTelemetry (OpenCensus, OpenTracing) | 0 | Y | `io.opencensus|io.opentelemetry` |
 
-**Tracker classes embedded in code: 4**
+**Families with tree evidence: 8; of which class-present in dex: 6**
 
 ## Network hosts referenced in code/resources (top 100)
 ```
      17 https://www.slf4j.org
-     16 https://rev.cat
+     15 https://rev.cat
      13 https://www.googleapis.com
      13 https://firebase.google.com
      10 https://stardust.app
       9 https://stardust-app.onelink.me
       5 https://play.google.com
       5 https://errors.rev.cat
-      5 https://developer.android.com
       4 https://rownd-hub.supertokens.com
       4 https://issuetracker.google.com
       4 https://api.rownd.io
@@ -83,6 +88,7 @@ com.stardust.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
       3 https://st-auth.stardust.app
       3 https://google.com
       3 https://github.com
+      3 https://developer.android.com
       3 https://app-measurement.com
       3 https://api.stardust.app
       3 https://api.rudderlabs.com
@@ -158,7 +164,7 @@ com.stardust.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 
 ## Crypto/pinning posture
 - Bundled cert/keystore files: 0 → 
-- network_security_config present: /tmp/women-analysis-com_stardust_app.2DUKYN/dec/res/xml/network_security_config.xml 
+- network_security_config present: /tmp/women-analysis-com_stardust_app.SmRYas/dec/res/xml/network_security_config.xml 
 - certificatePinner usages: 22
 
 ## Manifest package/version

@@ -3,7 +3,7 @@ Static analysis report — com_naturalcycles_cordova
 - Package: `com.naturalcycles.cordova`
 - APK: `/tmp/apk/com.naturalcycles.cordova.apk` (82932818 bytes, sha256 `93bd7fde999865625142eb759357932687983fa86b47b29fe3cba8cc0eed0526`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T12:56:33Z | Runner: x86_64
+- Date: 2026-10-13T15:39:38Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -34,13 +34,17 @@ com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 ```
 ```
 
-## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
-- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
-| Tracker | Matching files | Code signature |
-|---|---|---|
-| MoEngage | 77 | `com.moengage.` |
+## Tracker detection (Exodus-Privacy registry; dual surface per NF-17)
+- Signatures checked: 428 (registry digest sha256 c4ebde4f6cd200b0; source: reports.exodus-privacy.eu.org/api/trackers)
+- Surfaces: `dex_class` = regex signature over the dexdump class list of every classes*.dex (exodus-core semantics, primary); `Files (tree)` = fixed-string hits over the apktool tree incl. manifest/resources (string-presence, NOT class-presence; reconciliation run 38415446421 showed the tree surface alone both over- and under-reports).
+- Reading rule: `dex_class=Y` = tracker classes present (strong claim). `dex_class=n` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown != absence.
+| Tracker | Files (tree) | dex_class | Code signature |
+|---|---|---|---|
+| MoEngage | 77 | Y | `com.moengage.` |
+| Adjust | 0 | Y | `com.adjust.sdk.|com.adjust.android.sdk.` |
+| Sentry | 0 | Y | `io.sentry.|com.joshdholtz.sentry` |
 
-**Tracker classes embedded in code: 1**
+**Families with tree evidence: 3; of which class-present in dex: 3**
 
 ## Network hosts referenced in code/resources (top 100)
 ```
@@ -134,7 +138,7 @@ com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 - FirebaseRemoteConfig usages: 0 lines
 
 ## Crypto/pinning posture
-- Bundled cert/keystore files: 5 → /tmp/women-analysis-com_naturalcycles_cordova.um7Y1g/dec/assets/ds-visa.crt /tmp/women-analysis-com_naturalcycles_cordova.um7Y1g/dec/assets/ds-amex.pem /tmp/women-analysis-com_naturalcycles_cordova.um7Y1g/dec/assets/ds-discover.cer /tmp/women-analysis-com_naturalcycles_cordova.um7Y1g/dec/assets/ds-mastercard.crt /tmp/women-analysis-com_naturalcycles_cordova.um7Y1g/dec/assets/ds-cartesbancaires.pem 
+- Bundled cert/keystore files: 5 → /tmp/women-analysis-com_naturalcycles_cordova.8g2fqp/dec/assets/ds-visa.crt /tmp/women-analysis-com_naturalcycles_cordova.8g2fqp/dec/assets/ds-amex.pem /tmp/women-analysis-com_naturalcycles_cordova.8g2fqp/dec/assets/ds-discover.cer /tmp/women-analysis-com_naturalcycles_cordova.8g2fqp/dec/assets/ds-mastercard.crt /tmp/women-analysis-com_naturalcycles_cordova.8g2fqp/dec/assets/ds-cartesbancaires.pem 
 - network_security_config present: 
 - certificatePinner usages: 50
 

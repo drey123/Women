@@ -1,2 +1,4 @@
-tracker	match_files	code_signature
-MoEngage	77	com.moengage.
+tracker	match_files	dex_class	code_signature
+MoEngage	77	Y	com.moengage.
+Adjust	0	Y	com.adjust.sdk.|com.adjust.android.sdk.
+Sentry	0	Y	io.sentry.|com.joshdholtz.sentry

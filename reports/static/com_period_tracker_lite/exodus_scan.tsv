@@ -1,1 +1,4 @@
-tracker	match_files	code_signature
+tracker	match_files	dex_class	code_signature
+Google AdMob	0	Y	com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.
+Google Firebase Analytics	0	Y	com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics
+Pusher	0	Y	com.pusher.client.

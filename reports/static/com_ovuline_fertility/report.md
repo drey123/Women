@@ -3,7 +3,7 @@ Static analysis report — com_ovuline_fertility
 - Package: `com.ovuline.fertility`
 - APK: `/tmp/apk/com.ovuline.fertility.apk` (32109771 bytes, sha256 `c6add81afaa97e4b2cf40995d8c2634511bc9d39dc395a1fb4fd36e2495fc8f3`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T12:53:11Z | Runner: x86_64
+- Date: 2026-10-13T15:36:39Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -49,18 +49,21 @@ com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 ```
 ```
 
-## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
-- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
-| Tracker | Matching files | Code signature |
-|---|---|---|
-| Apptentive | 13 | `com.apptentive.` |
-| AppsFlyer | 11 | `com.appsflyer.` |
-| HelpShift | 6 | `com.helpshift` |
-| Urbanairship | 2 | `com.urbanairship` |
-| Amazon Mobile Analytics (Amplify) | 1 | `com.amplifyframework.analytics.` |
-| mParticle | 1 | `com.mparticle` |
+## Tracker detection (Exodus-Privacy registry; dual surface per NF-17)
+- Signatures checked: 428 (registry digest sha256 c4ebde4f6cd200b0; source: reports.exodus-privacy.eu.org/api/trackers)
+- Surfaces: `dex_class` = regex signature over the dexdump class list of every classes*.dex (exodus-core semantics, primary); `Files (tree)` = fixed-string hits over the apktool tree incl. manifest/resources (string-presence, NOT class-presence; reconciliation run 38415446421 showed the tree surface alone both over- and under-reports).
+- Reading rule: `dex_class=Y` = tracker classes present (strong claim). `dex_class=n` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown != absence.
+| Tracker | Files (tree) | dex_class | Code signature |
+|---|---|---|---|
+| Apptentive | 13 | Y | `com.apptentive.` |
+| AppsFlyer | 11 | Y | `com.appsflyer.` |
+| HelpShift | 6 | Y | `com.helpshift` |
+| Urbanairship | 2 | n | `com.urbanairship` |
+| Amazon Mobile Analytics (Amplify) | 1 | Y | `com.amplifyframework.analytics.` |
+| mParticle | 1 | n | `com.mparticle` |
+| Sentry | 0 | Y | `io.sentry.|com.joshdholtz.sentry` |
 
-**Tracker classes embedded in code: 6**
+**Families with tree evidence: 7; of which class-present in dex: 5**
 
 ## Network hosts referenced in code/resources (top 100)
 ```

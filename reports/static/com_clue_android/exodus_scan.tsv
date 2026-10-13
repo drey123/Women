@@ -1,3 +1,5 @@
-tracker	match_files	code_signature
-Braze (formerly Appboy)	18	com.appboy
-Snowplow	17	com.snowplowanalytics.
+tracker	match_files	dex_class	code_signature
+Braze (formerly Appboy)	18	n	com.appboy
+Snowplow	17	n	com.snowplowanalytics.
+Adjust	0	Y	com.adjust.sdk.|com.adjust.android.sdk.
+Google Firebase Analytics	0	Y	com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics

@@ -3,7 +3,7 @@ Static analysis report — com_hp_pregnancy_lite
 - Package: `com.hp.pregnancy.lite`
 - APK: `/tmp/apk/com.hp.pregnancy.lite.apk` (96296232 bytes, sha256 `64187b6a8dfec9210a4784cbf537d2bf5c6135627dfedfb8123a54106b127b18`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T13:00:26Z | Runner: x86_64
+- Date: 2026-10-13T15:43:48Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -59,18 +59,25 @@ com.hp.pregnancy.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ```
 ```
 
-## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
-- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
-| Tracker | Matching files | Code signature |
-|---|---|---|
-| OneSignal | 816 | `com.onesignal.` |
-| Branch | 20 | `io.branch.` |
-| Facebook Login | 3 | `com.facebook.login` |
-| Bolts | 2 | `com.parse.bolts` |
-| Facebook Places | 1 | `com.facebook.places` |
-| Facebook Share | 1 | `com.facebook.share` |
+## Tracker detection (Exodus-Privacy registry; dual surface per NF-17)
+- Signatures checked: 428 (registry digest sha256 c4ebde4f6cd200b0; source: reports.exodus-privacy.eu.org/api/trackers)
+- Surfaces: `dex_class` = regex signature over the dexdump class list of every classes*.dex (exodus-core semantics, primary); `Files (tree)` = fixed-string hits over the apktool tree incl. manifest/resources (string-presence, NOT class-presence; reconciliation run 38415446421 showed the tree surface alone both over- and under-reports).
+- Reading rule: `dex_class=Y` = tracker classes present (strong claim). `dex_class=n` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown != absence.
+| Tracker | Files (tree) | dex_class | Code signature |
+|---|---|---|---|
+| OneSignal | 816 | Y | `com.onesignal.` |
+| Branch | 20 | Y | `io.branch.` |
+| Facebook Login | 3 | Y | `com.facebook.login` |
+| Bolts | 2 | Y | `com.parse.bolts` |
+| Facebook Places | 1 | n | `com.facebook.places` |
+| Facebook Share | 1 | Y | `com.facebook.share` |
+| Facebook Analytics | 0 | Y | `com.facebook.appevents|com.facebook.marketing.|com.facebook.CampaignTrackingReceiver` |
+| Google AdMob | 0 | Y | `com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.` |
+| Google CrashLytics | 0 | Y | `io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.` |
+| Google Firebase Analytics | 0 | Y | `com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics` |
+| Huawei Mobile Services (HMS) Core | 0 | Y | `com.huawei.hms.analytics|com.huawei.hms.location|com.huawei.hms.plugin.analytics|com.huawei.hms.plugin.ads|com.huawei.updatesdk.|com.huawei.agconnect.|com.huawei.hms.support.api.push.|com.huawei.hms.flutter.analytics.` |
 
-**Tracker classes embedded in code: 6**
+**Families with tree evidence: 11; of which class-present in dex: 10**
 
 ## Network hosts referenced in code/resources (top 100)
 ```
@@ -177,14 +184,14 @@ com.hp.pregnancy.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ```
 
 ## Local data model signals
-- Room @Entity classes: 22 (files: /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/src/sources/com/hp/pregnancy/room_database/entity/QuickTips.java /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/src/sources/com/hp/pregnancy/room_database/entity/Shopping.java /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/src/sources/com/hp/pregnancy/room_database/entity/Questions.java /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/src/sources/com/hp/pregnancy/room_database/entity/Daily.java /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/src/sources/com/hp/pregnancy/room_database/entity/BirthPlan.java )
+- Room @Entity classes: 22 (files: /tmp/women-analysis-com_hp_pregnancy_lite.hleOVG/src/sources/com/hp/pregnancy/room_database/entity/QuickTips.java /tmp/women-analysis-com_hp_pregnancy_lite.hleOVG/src/sources/com/hp/pregnancy/room_database/entity/Shopping.java /tmp/women-analysis-com_hp_pregnancy_lite.hleOVG/src/sources/com/hp/pregnancy/room_database/entity/Questions.java /tmp/women-analysis-com_hp_pregnancy_lite.hleOVG/src/sources/com/hp/pregnancy/room_database/entity/Daily.java /tmp/women-analysis-com_hp_pregnancy_lite.hleOVG/src/sources/com/hp/pregnancy/room_database/entity/BirthPlan.java )
 - @Database classes: 2
 - protobuf generated classes: 131 files
 - SQLiteOpenHelper subclasses: 13
 - FirebaseRemoteConfig usages: 201 lines
 
 ## Crypto/pinning posture
-- Bundled cert/keystore files: 1 → /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/dec/res/raw/public_key.pem 
+- Bundled cert/keystore files: 1 → /tmp/women-analysis-com_hp_pregnancy_lite.hleOVG/dec/res/raw/public_key.pem 
 - network_security_config present: 
 - certificatePinner usages: 35
 

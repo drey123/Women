@@ -3,7 +3,7 @@ Static analysis report — com_period_tracker_lite
 - Package: `com.period.tracker.lite`
 - APK: `/tmp/apk/com.period.tracker.lite.apk` (26308653 bytes, sha256 `375e6e2284a027d587d1049bcd0ce863f458b631eb5beafa58cc74175654e2c1`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T12:51:36Z | Runner: x86_64
+- Date: 2026-10-13T15:34:12Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -30,12 +30,17 @@ com.period.tracker.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ```
 ```
 
-## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
-- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
-| Tracker | Matching files | Code signature |
-|---|---|---|
+## Tracker detection (Exodus-Privacy registry; dual surface per NF-17)
+- Signatures checked: 428 (registry digest sha256 c4ebde4f6cd200b0; source: reports.exodus-privacy.eu.org/api/trackers)
+- Surfaces: `dex_class` = regex signature over the dexdump class list of every classes*.dex (exodus-core semantics, primary); `Files (tree)` = fixed-string hits over the apktool tree incl. manifest/resources (string-presence, NOT class-presence; reconciliation run 38415446421 showed the tree surface alone both over- and under-reports).
+- Reading rule: `dex_class=Y` = tracker classes present (strong claim). `dex_class=n` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown != absence.
+| Tracker | Files (tree) | dex_class | Code signature |
+|---|---|---|---|
+| Google AdMob | 0 | Y | `com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.` |
+| Google Firebase Analytics | 0 | Y | `com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics` |
+| Pusher | 0 | Y | `com.pusher.client.` |
 
-**Tracker classes embedded in code: 0**
+**Families with tree evidence: 3; of which class-present in dex: 3**
 
 ## Network hosts referenced in code/resources (top 100)
 ```
@@ -116,8 +121,8 @@ com.period.tracker.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 - FirebaseRemoteConfig usages: 1 lines
 
 ## Crypto/pinning posture
-- Bundled cert/keystore files: 1 → /tmp/women-analysis-com_period_tracker_lite.HKQT6Z/dec/res/raw/mykeystore.bks 
-- network_security_config present: /tmp/women-analysis-com_period_tracker_lite.HKQT6Z/dec/res/xml/network_security_config.xml 
+- Bundled cert/keystore files: 1 → /tmp/women-analysis-com_period_tracker_lite.ILPyaA/dec/res/raw/mykeystore.bks 
+- network_security_config present: /tmp/women-analysis-com_period_tracker_lite.ILPyaA/dec/res/xml/network_security_config.xml 
 - certificatePinner usages: 0
 
 ## Manifest package/version

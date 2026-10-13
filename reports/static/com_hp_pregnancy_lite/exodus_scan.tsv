@@ -1,7 +1,12 @@
-tracker	match_files	code_signature
-OneSignal	816	com.onesignal.
-Branch	20	io.branch.
-Facebook Login	3	com.facebook.login
-Bolts	2	com.parse.bolts
-Facebook Places	1	com.facebook.places
-Facebook Share	1	com.facebook.share
+tracker	match_files	dex_class	code_signature
+OneSignal	816	Y	com.onesignal.
+Branch	20	Y	io.branch.
+Facebook Login	3	Y	com.facebook.login
+Bolts	2	Y	com.parse.bolts
+Facebook Places	1	n	com.facebook.places
+Facebook Share	1	Y	com.facebook.share
+Facebook Analytics	0	Y	com.facebook.appevents|com.facebook.marketing.|com.facebook.CampaignTrackingReceiver
+Google AdMob	0	Y	com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.
+Google CrashLytics	0	Y	io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.
+Google Firebase Analytics	0	Y	com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics
+Huawei Mobile Services (HMS) Core	0	Y	com.huawei.hms.analytics|com.huawei.hms.location|com.huawei.hms.plugin.analytics|com.huawei.hms.plugin.ads|com.huawei.updatesdk.|com.huawei.agconnect.|com.huawei.hms.support.api.push.|com.huawei.hms.flutter.analytics.

@@ -1,6 +1,12 @@
-tracker	match_files	code_signature
-Facebook Ads	5	com.facebook.ads
-Facebook Login	2	com.facebook.login
-Bolts	1	com.parse.bolts
-Facebook Places	1	com.facebook.places
-Facebook Share	1	com.facebook.share
+tracker	match_files	dex_class	code_signature
+Facebook Ads	5	Y	com.facebook.ads
+Facebook Login	2	Y	com.facebook.login
+Bolts	1	n	com.parse.bolts
+Facebook Places	1	n	com.facebook.places
+Facebook Share	1	Y	com.facebook.share
+Facebook Analytics	0	Y	com.facebook.appevents|com.facebook.marketing.|com.facebook.CampaignTrackingReceiver
+Google AdMob	0	Y	com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.
+Google Analytics	0	Y	com.google.android.apps.analytics.|com.google.android.gms.analytics.|com.google.analytics.
+Google CrashLytics	0	Y	io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.
+Google Firebase Analytics	0	Y	com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics
+Google Tag Manager	0	Y	com.google.tagmanager|com.google.android.gms.tagmanager

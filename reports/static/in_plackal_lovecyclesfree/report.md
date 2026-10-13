@@ -3,7 +3,7 @@ Static analysis report — in_plackal_lovecyclesfree
 - Package: `in.plackal.lovecyclesfree`
 - APK: `/tmp/apk/in.plackal.lovecyclesfree.apk` (26433637 bytes, sha256 `2288d273bf0e4650941b53ba52c178b9880dffac91bd00f6350c75de7e6d5f22`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T12:55:03Z | Runner: x86_64
+- Date: 2026-10-13T15:38:04Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -38,17 +38,25 @@ android.permission.FOREGROUND_SERVICE
 ```
 ```
 
-## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
-- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
-| Tracker | Matching files | Code signature |
-|---|---|---|
-| Facebook Ads | 5 | `com.facebook.ads` |
-| Facebook Login | 2 | `com.facebook.login` |
-| Bolts | 1 | `com.parse.bolts` |
-| Facebook Places | 1 | `com.facebook.places` |
-| Facebook Share | 1 | `com.facebook.share` |
+## Tracker detection (Exodus-Privacy registry; dual surface per NF-17)
+- Signatures checked: 428 (registry digest sha256 c4ebde4f6cd200b0; source: reports.exodus-privacy.eu.org/api/trackers)
+- Surfaces: `dex_class` = regex signature over the dexdump class list of every classes*.dex (exodus-core semantics, primary); `Files (tree)` = fixed-string hits over the apktool tree incl. manifest/resources (string-presence, NOT class-presence; reconciliation run 38415446421 showed the tree surface alone both over- and under-reports).
+- Reading rule: `dex_class=Y` = tracker classes present (strong claim). `dex_class=n` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown != absence.
+| Tracker | Files (tree) | dex_class | Code signature |
+|---|---|---|---|
+| Facebook Ads | 5 | Y | `com.facebook.ads` |
+| Facebook Login | 2 | Y | `com.facebook.login` |
+| Bolts | 1 | n | `com.parse.bolts` |
+| Facebook Places | 1 | n | `com.facebook.places` |
+| Facebook Share | 1 | Y | `com.facebook.share` |
+| Facebook Analytics | 0 | Y | `com.facebook.appevents|com.facebook.marketing.|com.facebook.CampaignTrackingReceiver` |
+| Google AdMob | 0 | Y | `com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.` |
+| Google Analytics | 0 | Y | `com.google.android.apps.analytics.|com.google.android.gms.analytics.|com.google.analytics.` |
+| Google CrashLytics | 0 | Y | `io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.` |
+| Google Firebase Analytics | 0 | Y | `com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics` |
+| Google Tag Manager | 0 | Y | `com.google.tagmanager|com.google.android.gms.tagmanager` |
 
-**Tracker classes embedded in code: 5**
+**Families with tree evidence: 11; of which class-present in dex: 9**
 
 ## Network hosts referenced in code/resources (top 100)
 ```

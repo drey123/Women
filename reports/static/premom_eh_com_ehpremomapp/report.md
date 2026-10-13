@@ -3,7 +3,7 @@ Static analysis report — premom_eh_com_ehpremomapp
 - Package: `premom.eh.com.ehpremomapp`
 - APK: `/tmp/apk/premom.eh.com.ehpremomapp.apk` (92088292 bytes, sha256 `a68a7798d4bbafcafe47336d88cf0c373c1c0e7432978909e9130d992b40a878`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T12:59:38Z | Runner: x86_64
+- Date: 2026-10-13T15:42:40Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -58,18 +58,22 @@ android.permission.READ_BASIC_PHONE_STATE
 ```
 ```
 
-## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
-- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
-| Tracker | Matching files | Code signature |
-|---|---|---|
-| Braze (formerly Appboy) | 18 | `com.appboy` |
-| Facebook Login | 5 | `com.facebook.login` |
-| Singular | 2 | `com.singular.sdk` |
-| Bolts | 1 | `com.parse.bolts` |
-| Facebook Places | 1 | `com.facebook.places` |
-| Facebook Share | 1 | `com.facebook.share` |
+## Tracker detection (Exodus-Privacy registry; dual surface per NF-17)
+- Signatures checked: 428 (registry digest sha256 c4ebde4f6cd200b0; source: reports.exodus-privacy.eu.org/api/trackers)
+- Surfaces: `dex_class` = regex signature over the dexdump class list of every classes*.dex (exodus-core semantics, primary); `Files (tree)` = fixed-string hits over the apktool tree incl. manifest/resources (string-presence, NOT class-presence; reconciliation run 38415446421 showed the tree surface alone both over- and under-reports).
+- Reading rule: `dex_class=Y` = tracker classes present (strong claim). `dex_class=n` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown != absence.
+| Tracker | Files (tree) | dex_class | Code signature |
+|---|---|---|---|
+| Braze (formerly Appboy) | 18 | n | `com.appboy` |
+| Facebook Login | 5 | Y | `com.facebook.login` |
+| Singular | 2 | Y | `com.singular.sdk` |
+| Bolts | 1 | n | `com.parse.bolts` |
+| Facebook Places | 1 | n | `com.facebook.places` |
+| Facebook Share | 1 | Y | `com.facebook.share` |
+| Facebook Analytics | 0 | Y | `com.facebook.appevents|com.facebook.marketing.|com.facebook.CampaignTrackingReceiver` |
+| Google CrashLytics | 0 | Y | `io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.` |
 
-**Tracker classes embedded in code: 6**
+**Families with tree evidence: 8; of which class-present in dex: 5**
 
 ## Network hosts referenced in code/resources (top 100)
 ```
@@ -176,15 +180,15 @@ android.permission.READ_BASIC_PHONE_STATE
 ```
 
 ## Local data model signals
-- Room @Entity classes: 7 (files: /tmp/women-analysis-premom_eh_com_ehpremomapp.vFj0jh/src/sources/androidx/work/impl/model/WorkProgress.java /tmp/women-analysis-premom_eh_com_ehpremomapp.vFj0jh/src/sources/androidx/work/impl/model/SystemIdInfo.java /tmp/women-analysis-premom_eh_com_ehpremomapp.vFj0jh/src/sources/androidx/work/impl/model/Dependency.java /tmp/women-analysis-premom_eh_com_ehpremomapp.vFj0jh/src/sources/androidx/work/impl/model/WorkSpec.java /tmp/women-analysis-premom_eh_com_ehpremomapp.vFj0jh/src/sources/androidx/work/impl/model/WorkName.java )
+- Room @Entity classes: 7 (files: /tmp/women-analysis-premom_eh_com_ehpremomapp.4JSv5I/src/sources/androidx/work/impl/model/WorkProgress.java /tmp/women-analysis-premom_eh_com_ehpremomapp.4JSv5I/src/sources/androidx/work/impl/model/SystemIdInfo.java /tmp/women-analysis-premom_eh_com_ehpremomapp.4JSv5I/src/sources/androidx/work/impl/model/Dependency.java /tmp/women-analysis-premom_eh_com_ehpremomapp.4JSv5I/src/sources/androidx/work/impl/model/WorkSpec.java /tmp/women-analysis-premom_eh_com_ehpremomapp.4JSv5I/src/sources/androidx/work/impl/model/WorkName.java )
 - @Database classes: 1
 - protobuf generated classes: 135 files
 - SQLiteOpenHelper subclasses: 8
 - FirebaseRemoteConfig usages: 8 lines
 
 ## Crypto/pinning posture
-- Bundled cert/keystore files: 5 → /tmp/women-analysis-premom_eh_com_ehpremomapp.vFj0jh/dec/assets/ds-visa.crt /tmp/women-analysis-premom_eh_com_ehpremomapp.vFj0jh/dec/assets/ds-amex.pem /tmp/women-analysis-premom_eh_com_ehpremomapp.vFj0jh/dec/assets/ds-discover.cer /tmp/women-analysis-premom_eh_com_ehpremomapp.vFj0jh/dec/assets/ds-mastercard.crt /tmp/women-analysis-premom_eh_com_ehpremomapp.vFj0jh/dec/assets/ds-cartesbancaires.pem 
-- network_security_config present: /tmp/women-analysis-premom_eh_com_ehpremomapp.vFj0jh/dec/res/xml/network_security_config.xml 
+- Bundled cert/keystore files: 5 → /tmp/women-analysis-premom_eh_com_ehpremomapp.4JSv5I/dec/assets/ds-visa.crt /tmp/women-analysis-premom_eh_com_ehpremomapp.4JSv5I/dec/assets/ds-amex.pem /tmp/women-analysis-premom_eh_com_ehpremomapp.4JSv5I/dec/assets/ds-discover.cer /tmp/women-analysis-premom_eh_com_ehpremomapp.4JSv5I/dec/assets/ds-mastercard.crt /tmp/women-analysis-premom_eh_com_ehpremomapp.4JSv5I/dec/assets/ds-cartesbancaires.pem 
+- network_security_config present: /tmp/women-analysis-premom_eh_com_ehpremomapp.4JSv5I/dec/res/xml/network_security_config.xml 
 - certificatePinner usages: 54
 
 ## Manifest package/version
