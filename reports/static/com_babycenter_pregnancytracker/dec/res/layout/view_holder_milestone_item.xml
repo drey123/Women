@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textAppearance="?textAppearanceBody1" android:textColor="@android:color/white" android:background="?selectableItemBackground" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?spacingTouchTarget" android:drawablePadding="?spacing" app:drawableTint="?colorControlActivated"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

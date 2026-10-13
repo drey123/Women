@@ -1,1 +1,0 @@
-import{n as t,q as s}from"./index-flPLuAHJ.js";import a from"./CycleStatisticsModal-CxZypqID.js";import"./cycleStatisticsStore-B3nRnHJn.js";const c=async()=>{const o=await t.create(s({component:a,cssClass:"fullscreen-modal",backdropDismiss:!1}));return await o.present(),o};export{c as openCycleStatisticsModal};

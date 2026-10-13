@@ -1,3 +1,0 @@
-import{E as f}from"./chunk-C2zCjFfo.js";import{At as U1,H as Kh,Jr as wC,P as JD,qr as w,ti as wy,vt as Rg}from"./chunk-Gq3RN3zc.js";import{Ci as yt,Et as W}from"./chunk-CXj7tDWn.js";import{t as V}from"./chunk-D1TaIeIY.js";import{t as f$1}from"./chunk-CVUk84tS2.js";var y=class e extends V{activatedRoute=w(yt);hwId=Number(this.activatedRoute.snapshot.paramMap.get(`hwid`));ROUTES=f;HardwareId=W;scrollable=U1(f$1);ionViewDidEnter(){super.ionViewDidEnter(),this.scrollable()?.updateScrollable()}static ɵfac=(()=>{let r;return function(i){return(r||(r=wy(e)))(i||e)}})();static ɵdir=JD({type:e,viewQuery:function(t,i){t&1&&Rg(i.scrollable,f$1,5),t&2&&wC()},features:[Kh]})};export{y as t};
-//# debugId=56751576-9a83-5666-b5a1-09734a774d04
-//# sourceMappingURL=chunk-C4pIdSWm.js.map

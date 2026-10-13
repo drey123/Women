@@ -1,6 +1,0 @@
-package io.sentry.exception;
-
-/* JADX INFO: loaded from: classes6.dex */
-public final class SentryEnvelopeException extends Exception {
-    private static final long serialVersionUID = -8307801916948173232L;
-}

@@ -1,6 +1,0 @@
-package com.google.firebase.events;
-
-/* JADX INFO: loaded from: classes3.dex */
-public interface EventHandler<T> {
-    void a(Event event);
-}

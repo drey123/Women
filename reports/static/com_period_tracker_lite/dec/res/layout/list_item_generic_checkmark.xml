@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/relative_generic_item" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickLayout"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview_generic_name_bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:text="" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" />
-    <ImageView android:id="@id/imageview_selected_item" android:background="@drawable/checkmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true" />
-</RelativeLayout>

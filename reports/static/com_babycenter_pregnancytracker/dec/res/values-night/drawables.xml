@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <drawable name="google_places_attribution">@drawable/places_powered_by_google_dark</drawable>
-</resources>

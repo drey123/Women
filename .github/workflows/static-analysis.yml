@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths-ignore:
       - "reports/**"
+      - "note.md"
+      - "spec/**"
+      - ".github/**"
   workflow_dispatch: {}
 
 permissions:
@@ -58,6 +61,10 @@ jobs:
           chmod +x tooling/analyze_static.sh
           APP=$(echo "${{ matrix.pkg }}" | tr '.' '_')
           bash tooling/analyze_static.sh "$APP" "${{ matrix.pkg }}" "/tmp/apk/${{ matrix.pkg }}.apk" reports/static
+      - name: Prune decompiled trees (report + evidence only)
+        run: |
+          APP=$(echo "${{ matrix.pkg }}" | tr '.' '_')
+          rm -rf "reports/static/$APP/dec" "reports/static/$APP/src"
       - name: Commit report
         run: |
           git config user.name "audit-bot"

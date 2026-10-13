@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="16.0dp" android:width="375.0dp" android:viewportWidth="375.0" android:viewportHeight="17.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="@color/signupConsentHeaderBackground" android:pathData="M0,0 H375 V17 H-375 V-17" />
-    <path android:fillColor="@color/colorBackground" android:pathData="M-215.79,221.81C-180.5,131.51 -107.08,58.78 -25.04,19.13C50.87,-17.55 130.04,13.74 210.1,16C292.99,18.35 387.67,-19.94 451.54,32.61C516.16,85.77 532.9,188.01 531.36,280.32C530,362.43 470.05,429.38 443.62,508.63C413.15,600.02 441.14,726.89 365.03,779.15C289.02,831.34 204.62,745.28 120.74,730.34C49.35,717.63 -29.96,740.19 -89.27,698.24C-152.88,653.24 -189.7,576.44 -211.19,495.54C-234.54,407.59 -250.54,310.76 -215.79,221.81Z" />
-</vector>

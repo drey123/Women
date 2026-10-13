@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_delete_data_account_0" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_delete_app" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/_16sdp" android:layout_marginEnd="@dimen/_16sdp" />
-    <include android:id="@id/progress_bar" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_progressbar" />
-</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,1 +1,0 @@
-import{n as a,q as e}from"./index-flPLuAHJ.js";import s from"./ChartSetupModal-r5VK49B_.js";class r{async open(){const o=await a.create(e({component:s,componentProps:{isOpen:!0},cssClass:"chart-setup-modal",mode:"ios"}));await o.present();const{data:t}=await o.onWillDismiss();return t}}const i=new r;export{i as chartSetupModalService};

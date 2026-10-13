@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:paddingTop="?spacing" android:paddingBottom="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/brushSizeLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_brush" android:layout_marginStart="?spacing" android:layout_marginEnd="?spacing" />
-    <SeekBar android:id="@id/brashSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" />
-    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/opacityLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingXXL" android:text="@string/label_opacity" android:layout_marginStart="?spacing" android:layout_marginEnd="?spacing" />
-    <SeekBar android:id="@id/opacity" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:max="255" />
-    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/colors" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingXXL" />
-</LinearLayout>

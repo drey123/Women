@@ -1,9 +1,0 @@
-package com.google.android.gms.internal.ads;
-
-/* JADX INFO: compiled from: com.google.android.gms:play-services-ads@@24.7.0 */
-/* JADX INFO: loaded from: classes5.dex */
-public interface zzanq {
-    void zza(zzem zzemVar, zzadd zzaddVar, zzaoe zzaoeVar);
-
-    void zzb(zzeg zzegVar);
-}

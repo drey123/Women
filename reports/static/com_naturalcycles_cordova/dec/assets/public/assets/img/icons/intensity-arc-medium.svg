@@ -1,5 +1,0 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M 20 0 A 20 20 0 0 0 3.04 9.40 L 5.47 10.92 A 17.14 17.14 0 0 1 20 2.86 Z" style="fill: var(--tracker-chip-background)"/>
-  <path d="M 2.51 10.30 A 20 20 0 0 0 2.51 29.70 L 5.01 28.31 A 17.14 17.14 0 0 1 5.01 11.69 Z" fill="currentColor"/>
-  <path d="M 3.04 30.60 A 20 20 0 0 0 20 40 L 20 37.14 A 17.14 17.14 0 0 1 5.47 29.08 Z" fill="currentColor"/>
-</svg>

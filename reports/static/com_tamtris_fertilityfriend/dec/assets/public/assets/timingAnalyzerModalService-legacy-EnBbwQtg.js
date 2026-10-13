@@ -1,1 +1,0 @@
-System.register(["./index-legacy-BrYhl2i2.js","./TimingAnalyzer-legacy-D048Gk5F.js"],function(e,n){"use strict";var s,t,a;return{setters:[e=>{s=e.n,t=e.q},e=>{a=e.default}],execute:function(){e("timingAnalyzerModalService",new class{async open(){const e=await s.create(t({component:a,cssClass:"fullscreen-modal"}));return await e.present(),e.onWillDismiss()}})}}});

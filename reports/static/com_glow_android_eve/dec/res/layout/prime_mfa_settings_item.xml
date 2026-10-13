@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/MFAText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mfa" android:layout_centerVertical="true" />
-    <androidx.appcompat.widget.SwitchCompat android:id="@id/MFASwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="0.0dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
-</RelativeLayout>

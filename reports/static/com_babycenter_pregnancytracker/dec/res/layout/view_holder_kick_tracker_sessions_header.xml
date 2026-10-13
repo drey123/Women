@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textAppearance="?textAppearanceHeadline5" android:paddingTop="?spacingM" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/kick_tracker__label__past_sessions" android:includeFontPadding="false" android:paddingHorizontal="?spacing"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

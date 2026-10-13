@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/dp_size_phone_15_tablet_22" android:textColor="@color/disable_grey_color" android:gravity="start|center" android:id="@id/TagSelectionHeaderText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_size_phone_15_tablet_20" android:layout_marginStart="@dimen/dp_size_phone_10_tablet_20" />
-</LinearLayout>

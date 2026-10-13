@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
-  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="#ffffff" android:pathData="M77.84,50.35L45.1,69.25L49.85,77.47L82.59,58.57L77.84,50.35Z" android:fillAlpha="0.7" />
-    <path android:fillColor="@drawable/$ic_activities_weighttraining__0" android:pathData="M33.08,64.96L29.09,67.27C27.94,67.94 27.54,69.42 28.22,70.58L40.02,91.03C40.69,92.2 42.18,92.6 43.33,91.93L47.32,89.62C48.48,88.96 48.87,87.47 48.2,86.31L36.39,65.86C35.72,64.7 34.24,64.3 33.08,64.96Z" />
-    <path android:fillColor="@drawable/$ic_activities_weighttraining__1" android:pathData="M84.67,35.72L80.68,38.02C79.52,38.69 79.13,40.17 79.8,41.33L91.61,61.79C92.28,62.95 93.76,63.35 94.92,62.68L98.91,60.38C100.06,59.71 100.46,58.23 99.79,57.07L87.98,36.61C87.31,35.45 85.82,35.05 84.67,35.72Z" />
-    <path android:fillColor="@drawable/$ic_activities_weighttraining__2" android:pathData="M34.01,53.74L28.9,56.69C28,57.21 27.69,58.37 28.22,59.27L50.05,97.09C50.57,97.99 51.73,98.31 52.63,97.79L57.74,94.84C58.64,94.32 58.95,93.16 58.42,92.25L36.59,54.44C36.07,53.53 34.91,53.22 34.01,53.74Z" />
-    <path android:fillColor="@drawable/$ic_activities_weighttraining__3" android:pathData="M75.22,29.94L69.25,33.39C68.35,33.91 68.04,35.07 68.56,35.98L90.4,73.79C90.92,74.7 92.08,75.01 92.98,74.49L98.95,71.05C99.85,70.52 100.16,69.37 99.64,68.46L77.8,30.64C77.28,29.74 76.12,29.42 75.22,29.94Z" />
-</vector>

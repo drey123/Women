@@ -1,1 +1,0 @@
-ALTER TABLE `hpt_logs` ADD `level` INTEGER NOT NULL DEFAULT 0;

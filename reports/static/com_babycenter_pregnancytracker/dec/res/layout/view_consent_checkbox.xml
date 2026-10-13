@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="?spacingS"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBox android:textAppearance="?textAppearanceBody2" android:gravity="start" android:id="@id/consentCheckBox" android:paddingBottom="0.0dp" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="0.0dp" android:paddingStart="?spacingS" />
-    <TextView android:textAppearance="?textAppearanceCaption" android:textColor="@color/colorError" android:id="@id/consentErrorMessage" android:paddingTop="?spacingXXS" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="?spacingS" />
-</LinearLayout>

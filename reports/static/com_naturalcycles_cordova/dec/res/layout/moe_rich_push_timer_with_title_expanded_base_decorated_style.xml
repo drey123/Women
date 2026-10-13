@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/MoERichPushNotification.DecoratedStyle.Expanded.TextAppearance.Title" />
-    <RelativeLayout android:id="@id/chronometerLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_marginStart="@dimen/moe_rich_push_without_permission_timer_progress_margin_start">
-        <Chronometer android:id="@id/moEChronometer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MoERichPushNotificationChronometerDecoratedStyle" />
-    </RelativeLayout>
-</LinearLayout>

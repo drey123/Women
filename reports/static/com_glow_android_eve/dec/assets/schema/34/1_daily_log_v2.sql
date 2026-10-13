@@ -1,1 +1,0 @@
-ALTER TABLE `daily_log_v2` ADD `prenatal_vitamin` TEXT;

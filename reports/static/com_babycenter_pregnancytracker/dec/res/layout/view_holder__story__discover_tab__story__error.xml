@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="?spacingXL" android:paddingBottom="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?spacing"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stories__error__text" app:drawableTint="?colorOnBackgroundSecondary" app:drawableTopCompat="@drawable/ic_baseline_warning_24" app:layout_constraintBottom_toTopOf="@id/button" app:layout_constraintTop_toTopOf="parent" />
-    <com.google.android.material.button.MaterialButton android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stories__label__reload" app:icon="@drawable/ic_baseline_reload_24" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="?borderlessButtonStyle" />
-</LinearLayout>

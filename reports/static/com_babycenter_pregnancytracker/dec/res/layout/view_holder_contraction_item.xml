@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/contraction_timer_header_group" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/length" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="27.0" android:paddingStart="?spacing" android:paddingEnd="?spacingXS" android:paddingVertical="?spacingS" />
-    <Space android:layout_width="?spacingXXS" android:layout_height="match_parent" />
-    <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/timeApart" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="27.0" android:paddingStart="?spacingS" android:paddingEnd="?spacingXS" android:paddingVertical="?spacingS" />
-    <Space android:layout_width="?spacingXXS" android:layout_height="match_parent" />
-    <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/startStop" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="46.0" android:paddingStart="?spacingS" android:paddingEnd="?spacingXS" android:paddingVertical="?spacingS" />
-</LinearLayout>

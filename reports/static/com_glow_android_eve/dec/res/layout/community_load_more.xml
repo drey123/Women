@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:layout_gravity="center" android:id="@id/loading_more" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="10.0dp" />
-    <View android:id="@id/loading_more_space" android:background="@color/community_topic_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp" />
-</LinearLayout>

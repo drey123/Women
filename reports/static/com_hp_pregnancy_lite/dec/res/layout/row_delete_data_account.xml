@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/row_delete_data_account_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_16sdp" android:layout_marginEnd="@dimen/_16sdp"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="@dimen/_15ssp" android:textStyle="bold" android:textColor="@color/black" android:gravity="start" android:id="@id/tv_title_delete" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_24dp" android:fontFamily="@font/robotomedium" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <TextView android:textSize="@dimen/_11ssp" android:textColor="@color/black" android:id="@id/tv_delete_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:text="@string/delete_app_data_desc1" android:fontFamily="@font/robotoregular" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title_delete" />
-</androidx.constraintlayout.widget.ConstraintLayout>

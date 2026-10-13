@@ -1,1 +1,0 @@
-import{n,q as o}from"./index-flPLuAHJ.js";import a from"./TimingAnalyzer-Dz2A4MeL.js";class l{async open(){const e=await n.create(o({component:a,cssClass:"fullscreen-modal"}));return await e.present(),e.onWillDismiss()}}const t=new l;export{t as timingAnalyzerModalService};

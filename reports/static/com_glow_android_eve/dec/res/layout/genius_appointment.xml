@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.glow.android.kaylee.ui.widget.ReminderRecycleView android:id="@id/appointment_list" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
-    <include android:id="@id/appointment_empty" android:visibility="gone" layout="@layout/layout_empty_appointment" />
-    <include android:id="@id/reminder_empty" android:visibility="gone" layout="@layout/layout_empty_reminder" />
-</FrameLayout>

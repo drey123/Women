@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="13.0dp" android:width="14.0dp" android:viewportWidth="14.0" android:viewportHeight="13.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <group>
-        <clip-path android:pathData="M0,0h14v13h-14z" />
-        <path android:fillColor="@color/crisp_sdk_chat_textview_brandingbutton" android:pathData="M10.16,9.515L13.92,9.115L12.98,0.255L0.08,1.615L1.01,10.475L5.25,10.025L8.02,12.745L10.16,9.515Z" />
-    </group>
-</vector>

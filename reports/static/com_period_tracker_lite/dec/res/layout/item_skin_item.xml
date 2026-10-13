@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/layout_select_skin" android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/imageview_skin_image" android:layout_width="35.0dp" android:layout_height="35.0dp" android:layout_marginTop="3.0dp" android:layout_marginBottom="3.0dp" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
-    <TextView android:textColor="#000000" android:id="@id/textview_skin_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_toEndOf="@id/imageview_skin_image" />
-    <ImageView android:id="@id/imageview_check" android:background="@drawable/icon_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
-</RelativeLayout>

@@ -1,9 +1,0 @@
-package com.google.android.gms.internal.ads;
-
-import android.media.MediaFormat;
-
-/* JADX INFO: compiled from: com.google.android.gms:play-services-ads@@24.6.0 */
-/* JADX INFO: loaded from: classes3.dex */
-public interface zzaar {
-    void zzcS(long j, long j2, zzu zzuVar, MediaFormat mediaFormat);
-}

@@ -1,3 +1,0 @@
-ALTER TABLE `period` ADD `type` INTEGER NOT NULL DEFAULT 0;
-
-ALTER TABLE `archived_period` ADD `type` INTEGER NOT NULL DEFAULT 0;

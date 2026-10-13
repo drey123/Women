@@ -1,6 +1,0 @@
-package io.reactivex;
-
-/* JADX INFO: loaded from: classes6.dex */
-public interface SingleOnSubscribe<T> {
-    void a(SingleEmitter singleEmitter);
-}

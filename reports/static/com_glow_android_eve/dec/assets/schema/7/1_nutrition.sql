@@ -1,9 +1,0 @@
-CREATE TABLE IF NOT EXISTS `nutrition`(
-	`date` STRING PRIMARY KEY,
-	`calories_out` REAL NOT NULL DEFAULT 0,
-	`calories_int` REAL NOT NULL DEFAULT 0,
-	`carbohydrates` REAL NOT NULL DEFAULT 0,
-	`fat` REAL NOT NULL DEFAULT 0,
-	`protein` REAL NOT NULL DEFAULT 0,
-	`completed` REAL NOT NULL DEFAULT 0
-	);

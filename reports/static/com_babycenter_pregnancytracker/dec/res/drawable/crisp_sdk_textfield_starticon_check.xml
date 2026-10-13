@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="13.0dp" android:width="13.0dp" android:viewportWidth="13.0" android:viewportHeight="13.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <group>
-        <clip-path android:pathData="M12.686,0.859C13.105,1.282 13.105,1.969 12.682,2.392L6.184,12.142C5.761,12.564 5.073,12.564 4.65,12.142L0.316,7.809C0.113,7.605 -0.001,7.329 -0.001,7.042C-0.001,6.754 0.113,6.478 0.316,6.275C0.52,6.071 0.796,5.957 1.083,5.957C1.371,5.957 1.647,6.071 1.85,6.275L5.419,9.839L11.152,0.858C11.574,0.435 12.262,0.435 12.686,0.858V0.859Z" />
-        <path android:fillColor="@color/crisp_sdk_chat_messages_field_theirs_textfield_checkmark" android:pathData="M-0,0.542H13V12.458H-0V0.542Z" />
-    </group>
-</vector>

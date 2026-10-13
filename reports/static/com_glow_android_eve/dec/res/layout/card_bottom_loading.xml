@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:layout_width="24.0dp" android:layout_height="24.0dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/home_loading_rotate" />
-    <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="#47c426" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="@string/loading_card_pull_up" android:fontFamily="sans-serif-medium" />
-</LinearLayout>

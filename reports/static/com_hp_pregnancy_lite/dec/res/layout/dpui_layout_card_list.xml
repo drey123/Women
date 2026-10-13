@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView android:tag="layout/dpui_layout_card_list_0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DPUICardStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:padding="@dimen/dpui_list_card_container_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <include android:id="@id/dpuiListHeader" android:clickable="false" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/dpuiIcExpandCard" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/dpui_layout_card_header" />
-        <ImageView android:id="@id/dpuiIcExpandCard" android:tag="binding_2" android:layout_width="@dimen/dpui_16dp" android:layout_height="@dimen/dpui_16dp" android:src="@drawable/dpui_ic_expand_card" android:contentDescription="@string/empty_string" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
-        <androidx.recyclerview.widget.RecyclerView android:id="@id/dpuiRvListCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dpui_card_view_spacing" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dpuiListHeader" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</com.google.android.material.card.MaterialCardView>

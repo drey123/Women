@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/selectable_item_background_round_corners"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.imageview.ShapeableImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/fg_story_card" android:scaleType="centerCrop" app:shapeAppearance="@style/BabyCenter.ShapeAppearance.CardView" />
-    <TextView android:textAppearance="?textAppearanceCaption" android:textColor="@color/gray1000" android:layout_gravity="end|top" android:id="@id/seenLabel" android:background="@drawable/bg_card" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:text="@string/stories__label__seen" android:includeFontPadding="false" android:drawablePadding="?spacingXXS" android:layout_marginEnd="?spacingS" android:backgroundTint="@android:color/white" android:paddingHorizontal="?spacingXS" android:paddingVertical="?spacingXXS" app:drawableStartCompat="@drawable/ic_baseline_check_16" app:drawableTint="@color/gray1000" />
-</FrameLayout>

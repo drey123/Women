@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="8.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <include android:id="@id/upvoteComment" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/actionButton" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/actionButton" app:layout_constraintTop_toTopOf="@id/actionButton" layout="@layout/component_upvote_comment" />
-    <TextView android:textSize="14.0sp" android:id="@id/actionButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_more" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/PurpleFlatButton" />
-</androidx.constraintlayout.widget.ConstraintLayout>

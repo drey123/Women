@@ -1,1 +1,0 @@
-import{n as e,q as s}from"./index-flPLuAHJ.js";import r from"./OverlayModal-BVKl1WNe.js";import"./OverlayChartPicker-D8kdTCRG.js";class t{async open(){const o=await e.create(s({component:r,cssClass:"overlay-modal",canDismiss:!0,mode:"ios"}));await o.present();const{data:a}=await o.onWillDismiss();return a}}const c=new t;export{c as overlayModalService};

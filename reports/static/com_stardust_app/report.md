@@ -3,7 +3,7 @@ Static analysis report — com_stardust_app
 - Package: `com.stardust.app`
 - APK: `/tmp/apk/com.stardust.app.apk` (66132023 bytes, sha256 `b85380d4bba8af176605fd79e1689bd4189d1f06a93d1128bdcee56782f7e31b`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:44:47Z | Runner: x86_64
+- Date: 2026-10-13T09:12:55Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```

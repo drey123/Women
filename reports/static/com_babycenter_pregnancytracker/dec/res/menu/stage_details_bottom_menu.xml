@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:icon="@drawable/ic_stage_details_summary_tab_selector" android:id="@id/summary" android:title="" />
-    <item android:icon="@drawable/ic_stage_details_baby_size_tab_selector" android:id="@id/babySize" android:title="" />
-    <item android:icon="@drawable/ic_stage_details_your_baby_tab_selector" android:id="@id/yourBaby" android:title="" />
-    <item android:icon="@drawable/ic_stage_details_your_body_tab_selector" android:id="@id/yourBody" android:title="" />
-</menu>

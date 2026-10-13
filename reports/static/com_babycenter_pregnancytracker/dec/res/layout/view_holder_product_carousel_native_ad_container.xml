@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="?spacingS"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:id="@id/adContainer" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
-    <ImageView android:layout_gravity="end|top" android:id="@id/adInfoIcon" android:background="@android:drawable/ic_menu_info_details" android:visibility="gone" android:layout_width="?spacingTouchTarget" android:layout_height="?spacingTouchTarget" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
-</FrameLayout>

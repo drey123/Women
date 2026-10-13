@@ -1,3 +1,0 @@
-import{n as t,r as u}from"./chunk-BX6A29kF.js";import{c as G,z as w}from"./chunk-CNRdwRwW.js";async function f(e,i){if(!w())return await new Promise((a,c)=>{let l=G(document.createElement(`script`),u(t({src:e,async:!0},i),{onload:a,onerror:(s,u,m,p,d)=>{c(d||new Error(`loadScript failed: ${e}`))}}));document.head.append(l)})}export{f as t};
-//# debugId=fa71d27c-67d7-574a-a192-ed3baf584235
-//# sourceMappingURL=chunk-Di5hFSa52.js.map

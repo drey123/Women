@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@color/transparent" style="@style/SettingItem"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_gravity="center_vertical" style="@style/SettingItemTitleContainer">
-        <TextView android:id="@id/title" android:text="@string/setting_notification" style="@style/SettingItemTitle" />
-    </LinearLayout>
-</FrameLayout>

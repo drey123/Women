@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="parallax"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@null" android:adjustViewBounds="true" />
-    <RelativeLayout android:id="@id/containerDetail" android:paddingTop="25.0dp" android:paddingBottom="40.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <include android:id="@id/cardNormal" layout="@layout/profile_member_card" />
-        <include android:id="@id/cardPremium" layout="@layout/profile_member_card" />
-    </RelativeLayout>
-</FrameLayout>

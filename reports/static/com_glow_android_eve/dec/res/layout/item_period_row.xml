@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/labelTextView" android:layout_width="wrap_content" android:layout_height="56.0dp" android:fontFamily="sans-serif-medium" />
-    <GridLayout android:id="@id/daysLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="56.0dp" android:layout_marginBottom="16.0dp" android:rowCount="6" android:columnCount="7" />
-    <View android:id="@id/selectedView" android:background="@drawable/bg_day_selected" android:visibility="gone" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginLeft="-28.0dp" android:layout_marginTop="28.0dp" />
-</FrameLayout>

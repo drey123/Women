@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/app_rater_background" android:top="@dimen/app_rater_background_card_vertical_offset" />
-    <item android:gravity="center|top" android:height="64.0dp" android:width="64.0dp" android:drawable="@drawable/app_rater_header_like_pregnancy" />
-</layer-list>

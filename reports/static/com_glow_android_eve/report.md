@@ -3,7 +3,7 @@ Static analysis report — com_glow_android_eve
 - Package: `com.glow.android.eve`
 - APK: `/tmp/apk/com.glow.android.eve.apk` (141938123 bytes, sha256 `d3be475550efaee6c88e5a5ccebdec2cc47e1500b158b6ab59cf6465d094a85c`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:45:12Z | Runner: x86_64
+- Date: 2026-10-13T09:23:50Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -174,7 +174,7 @@ com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
 - @Database classes: 3
 - protobuf generated classes: 32 files
 - SQLiteOpenHelper subclasses: 10
-- FirebaseRemoteConfig usages: 122 lines
+- FirebaseRemoteConfig usages: 133 lines
 
 ## Crypto/pinning posture
 - Bundled cert/keystore files: 0 → 

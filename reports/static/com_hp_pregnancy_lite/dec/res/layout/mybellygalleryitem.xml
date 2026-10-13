@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:tag="layout/mybellygalleryitem_0" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/img_add_photo" android:layout_width="64.0dp" android:layout_height="53.0dp" android:src="@drawable/add_photo" android:layout_centerInParent="true" />
-    <TextView android:textSize="@dimen/_16ssp" android:textColor="@color/add_photo_color" android:gravity="center" android:id="@id/centerText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addPhoto" android:layout_below="@id/img_add_photo" android:layout_centerInParent="true" android:fontFamily="@font/dpui_roboto_bold" />
-    <com.hp.pregnancy.customviews.new_50.SelectableRoundedImageView android:id="@id/backgroundImage" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" android:scaleType="centerCrop" app:sriv_left_bottom_corner_radius="2.0dp" app:sriv_left_top_corner_radius="2.0dp" app:sriv_right_bottom_corner_radius="2.0dp" app:sriv_right_top_corner_radius="2.0dp" />
-    <com.hp.pregnancy.customviews.new_50.SelectableRoundedImageView android:id="@id/backgroundImageFullScreen" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:sriv_left_bottom_corner_radius="0.0dp" app:sriv_left_top_corner_radius="0.0dp" app:sriv_right_bottom_corner_radius="0.0dp" app:sriv_right_top_corner_radius="0.0dp" />
-</RelativeLayout>

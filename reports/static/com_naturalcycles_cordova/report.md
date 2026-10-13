@@ -3,7 +3,7 @@ Static analysis report — com_naturalcycles_cordova
 - Package: `com.naturalcycles.cordova`
 - APK: `/tmp/apk/com.naturalcycles.cordova.apk` (82932818 bytes, sha256 `93bd7fde999865625142eb759357932687983fa86b47b29fe3cba8cc0eed0526`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:44:48Z | Runner: x86_64
+- Date: 2026-10-13T09:23:45Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```

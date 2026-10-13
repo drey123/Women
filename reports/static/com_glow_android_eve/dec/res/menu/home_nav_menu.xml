@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:icon="@drawable/selector_tab_today" android:id="@id/tab_home" android:title="@string/nav_menu_home" />
-    <item android:icon="@drawable/selector_tab_community" android:id="@id/tab_community" android:title="@string/nav_menu_community" />
-    <item android:icon="@drawable/selector_tab_message" android:id="@id/tab_message" android:title="@string/nav_menu_notification" />
-</menu>

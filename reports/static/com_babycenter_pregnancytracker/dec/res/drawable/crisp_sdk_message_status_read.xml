@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="7.0dp" android:width="9.0dp" android:viewportWidth="9.0" android:viewportHeight="7.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <group>
-        <clip-path android:pathData="M8.078,0.25L8.761,0.933L2.945,6.75L0.235,4.04L0.923,3.357L2.945,5.378L8.078,0.25Z" />
-        <path android:fillColor="@color/crisp_sdk_chat_bubble_status_read" android:pathData="M0.235,0.25H8.761V6.75H0.235V0.25Z" />
-    </group>
-</vector>

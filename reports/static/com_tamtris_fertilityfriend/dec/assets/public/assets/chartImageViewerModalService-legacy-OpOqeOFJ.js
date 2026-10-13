@@ -1,1 +1,0 @@
-System.register(["./index-legacy-BrYhl2i2.js"],function(e,t){"use strict";var n,r,i;return{setters:[e=>{n=e.n,r=e.q,i=e.eB}],execute:function(){e("chartImageViewerModalService",{async open(e,t){const s=await n.create(r({component:i,componentProps:{imageUrl:e,title:t||"Chart"}}));return await s.present(),s.onDidDismiss()}})}}});

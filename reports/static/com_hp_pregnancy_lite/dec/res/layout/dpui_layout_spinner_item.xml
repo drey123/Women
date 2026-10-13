@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:gravity="end" android:background="@drawable/dpui_ripple_effect" android:paddingTop="@dimen/dpui_12dp" android:paddingBottom="@dimen/dpui_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/dpui_8dp" app:layout_constraintTop_toTopOf="parent" style="@style/DPUI_Excerpt_Regular_Gray"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

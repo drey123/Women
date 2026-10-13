@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/rlOverlayFullScreen" android:background="@drawable/overlay_full_screen" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_size_phone_30_tablet_40" android:layout_centerInParent="true">
-        <TextView android:textSize="@dimen/sp_size_phone_18_tablet_25" android:textStyle="bold" android:textColor="@color/white_color" android:layout_gravity="center_horizontal" android:id="@id/tvOverlayTitleText" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GoPremiumText2" android:textAllCaps="false" />
-        <in.plackal.lovecyclesfree.ui.components.misc.views.CustomTextView android:textSize="@dimen/sp_size_phone_16_tablet_18" android:textColor="@color/white_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvOverlayGoPremiumDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/PregnancyTrackingUpgradeText" app:fontText="Roboto-Light.ttf" />
-        <TextView android:textSize="@dimen/sp_size_phone_18_tablet_25" android:textStyle="bold" android:textColor="@color/white_black_selector" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvUpgradeText" android:background="@drawable/blue_button_upgrade_small_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_size_phone_30_tablet_40" android:text="@string/UpgradeTextUCase" />
-    </LinearLayout>
-</RelativeLayout>

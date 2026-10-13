@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.button.MaterialButton android:id="@id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingXL" android:text="@string/community_promo__label__continue" android:layout_marginStart="?spacing" android:layout_marginEnd="?spacing" style="?materialButtonStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

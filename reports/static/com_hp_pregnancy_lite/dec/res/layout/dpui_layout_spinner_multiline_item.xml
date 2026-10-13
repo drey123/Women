@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:gravity="end" android:id="@id/itemText" android:background="@drawable/dpui_ripple_effect" android:paddingTop="@dimen/dpui_12dp" android:paddingBottom="@dimen/dpui_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="false" android:textAlignment="inherit" android:paddingEnd="@dimen/dpui_8dp" style="@style/DPUI_Excerpt_Regular_Gray" />
-</LinearLayout>

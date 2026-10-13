@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView android:id="@id/crisp_sdk_message_content" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Crisp.SDK.CardView.Filled.ExtraLarge.Variant"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.appcompat.widget.AppCompatImageView android:id="@id/crisp_sdk_image_message" android:layout_width="wrap_content" android:layout_height="120.0dp" android:minWidth="220.0dp" />
-</com.google.android.material.card.MaterialCardView>

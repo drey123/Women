@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/all_bg_blur" android:scaleType="fitXY" />
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/birthPlanWishList" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dp" />
-</RelativeLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:color="@color/textFieldBoxBackgroundHoveredSignup2" android:state_hovered="true" />
-    <item android:state_focused="true" android:color="@color/textFieldBoxBackgroundSignup2" />
-    <item android:state_enabled="false" android:color="@color/textFieldBoxBackgroundSignup2" android:alpha="0.33" />
-    <item android:color="@color/textFieldBoxBackgroundSignup2" />
-</selector>

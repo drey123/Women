@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView android:layout_gravity="bottom" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="9.0dp" style="@style/Widget.Crisp.SDK.CardView.Filled.Small"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="12.0dp" android:layout_marginVertical="9.0dp">
-        <androidx.appcompat.widget.AppCompatImageView android:id="@id/crisp_sdk_alert_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/crisp_sdk_chat_alert_text" android:layout_marginEnd="9.0dp" />
-        <com.google.android.material.textview.MaterialTextView android:id="@id/crisp_sdk_alert_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Crisp.SDK.LabelMedium.Bold.Alert" />
-    </androidx.appcompat.widget.LinearLayoutCompat>
-</com.google.android.material.card.MaterialCardView>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="24.0dp" android:width="24.0dp" android:viewportWidth="24.0" android:viewportHeight="24.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
-    <path android:fillColor="#ffffff" android:pathData="M12,0L12,0A12,12 0,0 1,24 12L24,12A12,12 0,0 1,12 24L12,24A12,12 0,0 1,0 12L0,12A12,12 0,0 1,12 0z" />
-    <path android:fillColor="@drawable/$ic_tag_nurture_insight_symptoms_top2_24__0" android:pathData="M12,0L12,0A12,12 0,0 1,24 12L24,12A12,12 0,0 1,12 24L12,24A12,12 0,0 1,0 12L0,12A12,12 0,0 1,12 0z" />
-    <path android:fillColor="#333333" android:pathData="M15.9871,17.5V15.5H11.6351C14.4031,13.484 15.9071,11.9 15.9071,10.076C15.9071,7.948 14.1151,6.668 11.8271,6.668C10.3391,6.668 8.7551,7.212 7.7151,8.412L9.0111,9.916C9.7311,9.164 10.6591,8.684 11.8751,8.684C12.7551,8.684 13.6031,9.132 13.6031,10.076C13.6031,11.388 12.3231,12.476 7.9551,15.708V17.5H15.9871Z" />
-</vector>

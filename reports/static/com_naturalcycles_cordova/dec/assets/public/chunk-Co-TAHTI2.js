@@ -1,3 +1,0 @@
-import{Ut as XD}from"./chunk-Gq3RN3zc.js";import{c as i}from"./chunk-DTtuWrSK.js";import{Pt as Xa,ri as w3}from"./chunk-CXj7tDWn.js";import{Et as gt,Rt as ku}from"./chunk-CX5ab52I.js";import{t as s}from"./chunk-BmjP6w6y2.js";import{n as h}from"./chunk-DFNW0DnU2.js";var g=class i$1{transform(a,r){let t={};r&&Object.keys(r).forEach(o=>{let e=r[o];e instanceof w3?t[o]=new s().transform(e):e instanceof Date?t[o]=Xa.get(h).localizeDate(i(e),`LONG`):t[o]=e});let n=gt(a,t)?.replaceAll(/{{\w+}}/g,``);return n?ku.parse(n):``}static ɵfac=function(r){return new(r||i$1)};static ɵpipe=XD({name:`tmd`,type:i$1,pure:!0})};export{g as t};
-//# debugId=3cfa20fc-5136-51b6-803e-2f695f3725c4
-//# sourceMappingURL=chunk-Co-TAHTI2.js.map

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<appwidget-provider android:maxHeight="97.0dp" android:minWidth="322.0dp" android:updatePeriodMillis="86400000" android:initialLayout="@layout/nc_widget_medium_layout" android:previewImage="@drawable/widget_preview_medium" android:resizeMode="vertical" android:widgetCategory="home_screen" android:maxResizeHeight="148.0dp" android:targetCellWidth="5" android:targetCellHeight="1"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

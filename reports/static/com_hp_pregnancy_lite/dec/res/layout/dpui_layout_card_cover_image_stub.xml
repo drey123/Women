@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dpuiCardCoverImageContainer" android:tag="layout/dpui_layout_card_cover_image_stub_0" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ViewStub android:id="@id/dpuiCardCoverImageStub" android:tag="binding_1" android:layout="@layout/dpui_layout_card_cover_image_view" android:inflatedId="@id/dpuiCardCoverImageInflated" android:layout_width="match_parent" android:layout_height="@dimen/dpui_0dp" android:contentDescription="@string/app_name" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>

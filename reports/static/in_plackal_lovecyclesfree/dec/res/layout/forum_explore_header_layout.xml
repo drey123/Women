@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/dp_size_phone_15_tablet_22" android:textColor="@color/highlighted_grey_color" android:gravity="start|center" android:id="@id/ForumExploreHeaderText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_size_phone_20_tablet_30" android:textAllCaps="true" />
-</LinearLayout>

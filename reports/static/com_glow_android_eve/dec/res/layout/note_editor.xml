@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:textSize="16.0sp" android:id="@id/note_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="25.0dp" android:layout_marginRight="10.0dp" android:hint="@string/note_editor_hint" android:minLines="1" android:fontFamily="sans-serif-light" />
-</FrameLayout>

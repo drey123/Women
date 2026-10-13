@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/crisp_sdk_channels_overlay" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.card.MaterialCardView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90.0dp" android:layout_marginHorizontal="16.0dp" style="@style/Widget.Crisp.SDK.CardView.Elevated.Fourteen">
-        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/crisp_sdk_channels_recycler" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingHorizontal="9.0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-    </com.google.android.material.card.MaterialCardView>
-</FrameLayout>

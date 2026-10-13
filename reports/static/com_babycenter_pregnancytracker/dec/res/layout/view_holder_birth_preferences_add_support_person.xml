@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:paddingBottom="?spacing" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-16.0dp" android:layout_marginHorizontal="?spacing">
-        <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?colorStandaloneLink" android:gravity="center_vertical" android:id="@id/button" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:minHeight="?spacingTouchTarget" android:text="@string/birth_preferences__label__add_name" android:paddingHorizontal="?spacing" />
-    </com.google.android.material.card.MaterialCardView>
-</FrameLayout>

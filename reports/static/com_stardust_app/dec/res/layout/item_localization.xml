@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/title_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/locale_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
-</LinearLayout>

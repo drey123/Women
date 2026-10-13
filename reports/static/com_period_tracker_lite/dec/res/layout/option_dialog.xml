@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:id="@id/btn_edit_note" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3.0dp" android:text="@string/dialog_btn_edit_note" />
-    <Button android:id="@id/btn_change_note" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3.0dp" android:text="@string/dialog_btn_change_note" />
-    <Button android:textColor="#ff0000" android:id="@id/btn_delete_note" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3.0dp" android:text="@string/dialog_btn_delete_note" />
-    <Button android:id="@id/btn_email_note" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3.0dp" android:text="@string/dialog_btn_email_note" />
-    <Button android:textColor="#ffffffff" android:id="@id/btn_cancel_note" android:background="@drawable/btn_dark_all" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3.0dp" android:text="@string/dialog_btn_cancel" />
-</LinearLayout>

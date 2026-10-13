@@ -1,1 +1,0 @@
-import{dl as r}from"./index-flPLuAHJ.js";class t extends r{readPassword(){throw new Error("Method not implemented.")}async promptDialog(e){throw new Error("Not implemented on web"+JSON.stringify(e))}async getPluginVersion(){return{version:"web"}}}export{t as SavePasswordWeb};

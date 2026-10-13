@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<navigation android:id="@id/what_does_it_mean_nav_graph" app:startDestination="@id/whatDoesThisMeanFragment"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <fragment android:label="WhatDoesThisMeanFragment" android:name="com.hp.pregnancy.lite.personalisedConsent.WhatDoesThisMeanFragment" android:id="@id/whatDoesThisMeanFragment">
-        <argument android:name="BundleUrl" app:argType="string" app:nullable="true" />
-        <argument android:name="CallingFragment" app:argType="string" app:nullable="true" />
-    </fragment>
-</navigation>

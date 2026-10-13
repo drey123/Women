@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
-  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="@drawable/$ic_flow_spotting__0" android:pathData="M90.99,76.68C90.99,85.82 83.6,93.24 74.5,93.24C65.4,93.24 58.02,85.82 58.02,76.68C58.02,69.31 68.74,46.9 72.89,38.51C73.56,37.18 75.46,37.18 76.13,38.51C80.27,46.92 91,69.31 91,76.68H90.99Z" />
-    <path android:fillColor="@drawable/$ic_flow_spotting__1" android:pathData="M51.19,70.47C51.19,75.5 47.12,79.59 42.09,79.59C37.07,79.59 33,75.5 33,70.47C33,66.4 38.92,54.06 41.21,49.44C41.57,48.7 42.62,48.7 42.99,49.44C45.28,54.07 51.2,66.4 51.2,70.47H51.19Z" />
-    <path android:fillColor="@drawable/$ic_flow_spotting__2" android:pathData="M62.56,40.19C62.56,43.73 59.76,46.61 56.31,46.61C52.86,46.61 50.06,43.73 50.06,40.19C50.06,37.33 54.13,28.64 55.7,25.39C55.95,24.87 56.67,24.87 56.93,25.39C58.5,28.65 62.57,37.33 62.57,40.19H62.56Z" />
-</vector>

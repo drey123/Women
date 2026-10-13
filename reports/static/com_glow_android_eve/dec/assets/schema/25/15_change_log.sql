@@ -1,6 +1,0 @@
-CREATE TABLE IF NOT EXISTS `change_log`(
-	`id` INTEGER NOT NULL PRIMARY KEY,
-	`type` TEXT NOT NULL,
-	`key` TEXT NOT NULL,
-	`value` TEXT NOT NULL
-	);

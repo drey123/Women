@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/productHeader" android:background="@drawable/selectable_item_background_round_corners_outline" android:padding="?spacingS" android:layout_width="@dimen/home_feed__products_carousel__item__width" android:layout_height="match_parent" android:layout_marginBottom="?spacingS"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/productsHeroImage" android:layout_width="match_parent" android:layout_height="124.0dp" android:layout_marginBottom="?spacing" android:scaleType="centerInside" android:adjustViewBounds="true" />
-    <com.google.android.material.button.MaterialButton android:textAppearance="?textAppearanceButton" android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:id="@id/cta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/products_module__cta__shop_all" android:includeFontPadding="false" app:icon="@drawable/ic_baseline_chevron_right_24" app:iconGravity="textEnd" app:iconPadding="?spacingXS" style="?borderlessButtonStyle" />
-</LinearLayout>

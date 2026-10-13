@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView android:tag="layout/ad_exchange_advert_container_0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DPUICardStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/itemGamDesignedAdContainer" android:padding="@dimen/dpui_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
-</com.google.android.material.card.MaterialCardView>

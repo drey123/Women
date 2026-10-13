@@ -1,1 +1,0 @@
-import{n as r,q as a}from"./index-flPLuAHJ.js";import t from"./QuickPeriodEntryModal-CepLGD_K.js";class i{async open(){const e=await r.create(a({component:t}));await e.present();const{data:o}=await e.onWillDismiss();return{saved:(o==null?void 0:o.saved)||!1}}}const l=new i;export{l as quickPeriodEntryModalService};

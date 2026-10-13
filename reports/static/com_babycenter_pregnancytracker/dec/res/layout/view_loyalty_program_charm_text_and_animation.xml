@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.airbnb.lottie.LottieAnimationView android:id="@id/loyaltyProgramIndicatorAnimation" android:layout_width="?spacingTouchTarget" android:layout_height="38.0dp" android:contentDescription="@null" app:lottie_autoPlay="true" app:lottie_enableMergePathsForKitKatAndAbove="true" app:lottie_fileName="lottie/loyalty_program_charm.zip" app:lottie_loop="true" />
-    <TextView android:textAppearance="?textAppearanceCaption" android:textColor="@color/colorLinkStandalone" android:gravity="center_vertical" android:id="@id/loyaltyProgramIndicatorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="?spacingXS" app:drawableEndCompat="@drawable/ic_baseline_arrow_forward_24" app:drawableTint="@color/colorLinkStandalone" app:tint="@color/colorLinkStandalone" />
-    <androidx.constraintlayout.helper.widget.Flow android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="loyaltyProgramIndicatorAnimation,loyaltyProgramIndicatorText" app:flow_maxElementsWrap="1" app:flow_wrapMode="chain" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-</merge>

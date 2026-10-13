@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="28.0dp" android:width="69.0dp" android:autoMirrored="true" android:viewportWidth="69.0" android:viewportHeight="28.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
-    <path android:fillColor="#33000000" android:pathData="M14,0.75L55,0.75A13.25,13.25 0,0 1,68.25 14L68.25,14A13.25,13.25 0,0 1,55 27.25L14,27.25A13.25,13.25 0,0 1,0.75 14L0.75,14A13.25,13.25 0,0 1,14 0.75z" />
-    <path android:fillColor="#33000000" android:pathData="M14,0.75L55,0.75A13.25,13.25 0,0 1,68.25 14L68.25,14A13.25,13.25 0,0 1,55 27.25L14,27.25A13.25,13.25 0,0 1,0.75 14L0.75,14A13.25,13.25 0,0 1,14 0.75z" />
-    <path android:pathData="M14,0.75L55,0.75A13.25,13.25 0,0 1,68.25 14L68.25,14A13.25,13.25 0,0 1,55 27.25L14,27.25A13.25,13.25 0,0 1,0.75 14L0.75,14A13.25,13.25 0,0 1,14 0.75z" android:strokeColor="@drawable/$premium_chip_gradient_file__0" android:strokeWidth="1.5" />
-</vector>

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<appwidget-provider android:description="@string/widget_description" android:minWidth="110.0dp" android:minHeight="110.0dp" android:updatePeriodMillis="0" android:initialLayout="@layout/widget_cycle_wheel_small" android:configure="com.tamtris.fertilityfriend.widget.WidgetConfigActivity" android:resizeMode="none" android:widgetCategory="home_screen" android:widgetFeatures="reconfigurable|configuration_optional" android:previewLayout="@layout/widget_cycle_wheel_small" android:targetCellWidth="2" android:targetCellHeight="2"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

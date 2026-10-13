@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <RelativeLayout android:id="@id/parentLayout" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <TextView android:textColor="@color/pink_color_highlight" android:gravity="center_vertical" android:id="@id/load_more_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/LoadPrvsComments" android:drawablePadding="@dimen/dp_size_phone_10_tablet_10" android:drawableStart="@drawable/img_reload" android:layout_marginStart="@dimen/dp_size_phone_20_tablet_25" />
-        <View android:id="@id/load_more_divider" android:background="@color/comment_divider_color" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/dp_size_phone_10_tablet_10" android:layout_below="@id/load_more_text" />
-    </RelativeLayout>
-</RelativeLayout>

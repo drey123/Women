@@ -1,8 +1,0 @@
-package p042c1;
-
-/* JADX INFO: compiled from: R8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
-public final /* synthetic */ class F0 {
-    public static /* synthetic */ void b() {
-    }
-}

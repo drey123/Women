@@ -1,1 +1,0 @@
-import{n as r,q as n}from"./index-flPLuAHJ.js";import c from"./ChartPickerModal-Bi1H197_.js";class i{async open(t){return new Promise(async a=>{const e=await r.create(n({component:c,componentProps:{currentChartDate:t,onChartSelected:o=>{a(o)}}}));e.onDidDismiss().then(o=>{o.data||a(null)}),await e.present()})}}const d=new i;export{d as c};

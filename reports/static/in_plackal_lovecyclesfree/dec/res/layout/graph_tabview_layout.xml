@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginEnd="10.0dp">
-        <Button android:id="@id/graph_tab_button" android:text="@string/GraphText" style="@style/GraphTabButtonStyle" />
-        <Button android:id="@id/graph_history_tab_button" android:text="@string/HistoryText" style="@style/GraphTabButtonStyle" />
-    </LinearLayout>
-</RelativeLayout>

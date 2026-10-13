@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set android:ordering="together"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
-    <objectAnimator android:interpolator="@drawable/$bc_logo_splash_screen__41" android:duration="254" android:startOffset="681" android:propertyName="translateXY" android:pathData="M 2.657,-4.055C 2.6470000000000002,-3.4429999999999996 2.239,-0.4119999999999999 2.062,1.018" android:propertyXName="translateX" android:propertyYName="translateY" />
-    <objectAnimator android:interpolator="@drawable/$bc_logo_splash_screen__42" android:duration="567" android:startOffset="934" android:propertyName="translateXY" android:pathData="M 2.062,1.018C 1.9479999999999997,1.937 2.8689999999999998,3.587 2.908,4.006" android:propertyXName="translateX" android:propertyYName="translateY" />
-</set>

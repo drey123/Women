@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:gravity="top" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@null" android:scaleType="fitXY" android:adjustViewBounds="true" />
-    <com.glow.android.kaylee.ui.widget.HTMLTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:paddingLeft="25.0dp" android:paddingRight="25.0dp" android:layout_width="match_parent" android:layout_height="120.0dp" android:text="@string/community_status_change_hint" />
-</LinearLayout>

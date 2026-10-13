@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/reasonText" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/change_status_explain_text" app:layout_constraintTop_toTopOf="parent" />
-    <TextView android:id="@id/reason1" android:layout_marginTop="30.0dp" android:text="@string/change_status_reason1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/reasonText" style="@style/ChangeStatusOptionButton" />
-    <TextView android:id="@id/reason2" android:layout_marginTop="16.0dp" android:text="@string/change_status_reason2" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/reason1" style="@style/ChangeStatusOptionButton" />
-    <TextView android:id="@id/reason3" android:layout_marginTop="16.0dp" android:text="@string/change_status_reason3" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/reason2" style="@style/ChangeStatusOptionButton" />
-</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,1 +1,0 @@
-ALTER TABLE `opk_log` ADD `user_id` INTEGER NOT NULL DEFAULT 0;

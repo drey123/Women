@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/adsRoot" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:id="@id/stubImage" android:layout="@layout/ads_comp_dfp_template" android:inflatedId="@id/rootImage" android:layout_width="match_parent" android:layout_height="wrap_content" />
-    <ViewStub android:id="@id/stubVideo" android:layout="@layout/ads_comp_dfp_template_large" android:inflatedId="@id/rootVideo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="12.0dp" />
-    <ViewStub android:id="@id/stubBanner" android:layout="@layout/ads_dfp_banner" android:inflatedId="@id/rootBanner" android:layout_width="match_parent" android:layout_height="wrap_content" />
-</FrameLayout>

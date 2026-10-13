@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_width="97.0dp" android:layout_height="48.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:background="@drawable/crisp_sdk_skeleton_background" android:layout_width="20.0dp" android:layout_height="20.0dp" />
-    <View android:background="@drawable/crisp_sdk_skeleton_background" android:layout_width="35.0dp" android:layout_height="12.0dp" android:layout_marginStart="14.0dp" />
-</androidx.appcompat.widget.LinearLayoutCompat>

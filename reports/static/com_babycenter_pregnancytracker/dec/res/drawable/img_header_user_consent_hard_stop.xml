@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<level-list
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:height="128.0dp" android:width="128.0dp" android:drawable="@drawable/img_header_signup_consent" />
-</level-list>

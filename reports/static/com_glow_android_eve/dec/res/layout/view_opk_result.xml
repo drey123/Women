@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/resultView" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="26.0dp" android:src="@drawable/ic_opk_diamon_purple" />
-    <TextView android:textSize="12.0sp" android:textColor="#fff" android:id="@id/resultTextView" android:background="@drawable/bg_round_corner_purple" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
-</merge>

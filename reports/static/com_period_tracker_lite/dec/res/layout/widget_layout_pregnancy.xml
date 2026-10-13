@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/root_appwidget_pregnancy" android:layout_width="60.0dp" android:layout_height="60.0dp" style="@style/Widget.PeriodTracker.AppWidget.OuterView"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/appwidget_image_butterfly" android:layout_width="17.0dp" android:layout_height="14.0dp" android:src="@drawable/butterfly_icon" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
-    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
-        <TextView android:textSize="16.0sp" android:typeface="serif" android:textColor="#3d0e00" android:gravity="center" android:id="@id/text_appwidget_pregnancy_weeks" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="W18" android:shadowColor="#efefef" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:paddingHorizontal="2.0dp" />
-        <TextView android:textSize="16.0sp" android:typeface="serif" android:textColor="#3d0e00" android:gravity="center" android:id="@id/text_appwidget_pregnancy_days" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="D2" android:shadowColor="#efefef" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:paddingHorizontal="2.0dp" />
-    </LinearLayout>
-</RelativeLayout>

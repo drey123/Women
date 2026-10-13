@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:layout_gravity="center" android:id="@id/delete_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="@string/setting_delete_account" style="@style/FlatButtonWhite"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

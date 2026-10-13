@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_symptom_stroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="?spacingS" android:paddingVertical="?spacingXS">
-        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:id="@id/symptomItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="?spacingS" />
-        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:id="@id/severityBadge" android:background="@drawable/bg_symptom_severity_no_stroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="?spacingS" android:paddingHorizontal="?spacingS" />
-    </LinearLayout>
-    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:id="@id/symptomNote" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingM" />
-</LinearLayout>

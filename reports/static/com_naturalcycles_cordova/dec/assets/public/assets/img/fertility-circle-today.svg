@@ -1,4 +1,0 @@
-<svg id="fertility-circle-today" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="24" cy="24" r="23" stroke="var(--circle-color, #f1eaea)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1 4"/>
-<circle cx="24" cy="24" r="18.5" stroke="var(--circle-color, #f1eaea)" stroke-width="3"/>
-</svg>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:icon="@drawable/ic_outline_info_24" android:id="@id/info" android:title="@string/menu__info__contractions" app:showAsAction="ifRoom" />
-    <item android:icon="@drawable/ic_baseline_share_24" android:id="@id/share" android:title="@string/share" app:showAsAction="never" />
-    <item android:icon="@drawable/ic_baseline_delete_24" android:id="@id/delete" android:title="@string/menu__delete_all" app:showAsAction="never" />
-</menu>

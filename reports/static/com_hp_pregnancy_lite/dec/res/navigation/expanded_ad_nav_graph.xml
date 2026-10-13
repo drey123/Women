@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<navigation android:id="@id/expanded_ad_nav_graph" app:startDestination="@id/expandedAdsContainer"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <fragment android:name="com.hp.pregnancy.util.daryl.ads.ExpandedAdsContainer" android:id="@id/expandedAdsContainer">
-        <argument android:name="expandedCarouselModel" app:argType="com.philips.hp.components.dpads.models.carousel.ExpandedCarouselAdModel" app:nullable="true" />
-    </fragment>
-</navigation>

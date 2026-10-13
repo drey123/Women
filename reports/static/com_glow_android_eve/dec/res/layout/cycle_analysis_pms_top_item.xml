@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/view_icon" android:layout_width="88.0dp" android:layout_height="88.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
-    <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/view_rank" android:background="@drawable/cycle_analysis_pms_rank_gold" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="8.0dp" app:layout_constraintBottom_toBottomOf="@id/view_icon" app:layout_constraintRight_toRightOf="@id/view_icon" />
-    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/view_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/view_icon" />
-    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/view_count" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/view_name" />
-</merge>

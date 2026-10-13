@@ -1,6 +1,0 @@
-package com.facebook.drawee.backends.pipeline.info;
-
-/* JADX INFO: loaded from: classes3.dex */
-public interface ImageOriginListener {
-    void onImageLoaded(String str, int i, boolean z2, String str2);
-}

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout style="@style/ListTopBannerBackground"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/top_blue_desc_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
-</FrameLayout>
