@@ -194,9 +194,9 @@ jobs:
         run: |
           git config user.name "audit-bot"
           git config user.email "audit-bot@users.noreply.github.com"
-          # Preserve existing decompiled trees and historical evidence. Stage only the
-          # report artifacts that this publisher intentionally manages; broad "git add -A
-          # reports/" is unsafe with sparse checkout because omitted paths can look absent.
+          # Existing dec/src trees are retained research material and must not be pruned.
+          # Stage only artifacts this publisher manages; broad "git add -A reports/" is
+          # unsafe with sparse checkout because omitted paths can look absent.
           git add --sparse -- reports/exodus/exodus_live.json reports/exodus/exodus_live.md
           find reports/static -type f \\( -name report.md -o -name STATUS.md -o -name exodus_scan.tsv \\) -print0 | xargs -0 -r git add --sparse --
           find reports/static -type f -path '*/evidence/*' -print0 | xargs -0 -r git add --sparse --
