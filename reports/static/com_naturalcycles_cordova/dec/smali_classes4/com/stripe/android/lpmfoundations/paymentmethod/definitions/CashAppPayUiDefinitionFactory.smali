@@ -1,0 +1,191 @@
+.class final Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayUiDefinitionFactory;
+.super Lcom/stripe/android/lpmfoundations/paymentmethod/UiDefinitionFactory$Simple;
+.source "CashAppPayDefinition.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u00c2\u0002\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u0010\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016J \u0010\u0008\u001a\u00020\t2\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\rH\u0014\u00a8\u0006\u000e"
+    }
+    d2 = {
+        "Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayUiDefinitionFactory;",
+        "Lcom/stripe/android/lpmfoundations/paymentmethod/UiDefinitionFactory$Simple;",
+        "<init>",
+        "()V",
+        "createSupportedPaymentMethod",
+        "Lcom/stripe/android/lpmfoundations/luxe/SupportedPaymentMethod;",
+        "metadata",
+        "Lcom/stripe/android/lpmfoundations/paymentmethod/PaymentMethodMetadata;",
+        "buildFormElements",
+        "",
+        "arguments",
+        "Lcom/stripe/android/lpmfoundations/paymentmethod/UiDefinitionFactory$Arguments;",
+        "builder",
+        "Lcom/stripe/android/lpmfoundations/luxe/FormElementsBuilder;",
+        "paymentsheet_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final INSTANCE:Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayUiDefinitionFactory;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayUiDefinitionFactory;
+
+    invoke-direct {v0}, Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayUiDefinitionFactory;-><init>()V
+
+    sput-object v0, Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayUiDefinitionFactory;->INSTANCE:Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayUiDefinitionFactory;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 32
+    invoke-direct {p0}, Lcom/stripe/android/lpmfoundations/paymentmethod/UiDefinitionFactory$Simple;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected buildFormElements(Lcom/stripe/android/lpmfoundations/paymentmethod/PaymentMethodMetadata;Lcom/stripe/android/lpmfoundations/paymentmethod/UiDefinitionFactory$Arguments;Lcom/stripe/android/lpmfoundations/luxe/FormElementsBuilder;)V
+    .locals 8
+
+    const-string p0, "metadata"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p0, "arguments"
+
+    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p0, "builder"
+
+    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 45
+    sget-object p0, Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayDefinition;->INSTANCE:Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayDefinition;
+
+    invoke-virtual {p0, p1}, Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayDefinition;->requiresMandate(Lcom/stripe/android/lpmfoundations/paymentmethod/PaymentMethodMetadata;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    .line 47
+    new-instance v0, Lcom/stripe/android/ui/core/elements/MandateTextElement;
+
+    .line 48
+    sget-object p0, Lcom/stripe/android/uicore/elements/IdentifierSpec;->Companion:Lcom/stripe/android/uicore/elements/IdentifierSpec$Companion;
+
+    const-string p1, "cashapp_mandate"
+
+    invoke-virtual {p0, p1}, Lcom/stripe/android/uicore/elements/IdentifierSpec$Companion;->Generic(Ljava/lang/String;)Lcom/stripe/android/uicore/elements/IdentifierSpec;
+
+    move-result-object v1
+
+    .line 49
+    sget v2, Lcom/stripe/android/ui/core/R$string;->stripe_cash_app_pay_mandate:I
+
+    const/4 p0, 0x2
+
+    .line 50
+    new-array p0, p0, [Ljava/lang/String;
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p2}, Lcom/stripe/android/lpmfoundations/paymentmethod/UiDefinitionFactory$Arguments;->getMerchantName()Ljava/lang/String;
+
+    move-result-object v3
+
+    aput-object v3, p0, p1
+
+    const/4 p1, 0x1
+
+    invoke-virtual {p2}, Lcom/stripe/android/lpmfoundations/paymentmethod/UiDefinitionFactory$Arguments;->getMerchantName()Ljava/lang/String;
+
+    move-result-object p2
+
+    aput-object p2, p0, p1
+
+    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v3
+
+    const/16 v6, 0x18
+
+    const/4 v7, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    .line 47
+    invoke-direct/range {v0 .. v7}, Lcom/stripe/android/ui/core/elements/MandateTextElement;-><init>(Lcom/stripe/android/uicore/elements/IdentifierSpec;ILjava/util/List;FLcom/stripe/android/uicore/elements/InputController;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    check-cast v0, Lcom/stripe/android/uicore/elements/FormElement;
+
+    .line 46
+    invoke-virtual {p3, v0}, Lcom/stripe/android/lpmfoundations/luxe/FormElementsBuilder;->footer(Lcom/stripe/android/uicore/elements/FormElement;)Lcom/stripe/android/lpmfoundations/luxe/FormElementsBuilder;
+
+    :cond_0
+    return-void
+.end method
+
+.method public createSupportedPaymentMethod(Lcom/stripe/android/lpmfoundations/paymentmethod/PaymentMethodMetadata;)Lcom/stripe/android/lpmfoundations/luxe/SupportedPaymentMethod;
+    .locals 11
+
+    const-string p0, "metadata"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 33
+    new-instance v0, Lcom/stripe/android/lpmfoundations/luxe/SupportedPaymentMethod;
+
+    .line 34
+    sget-object p0, Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayDefinition;->INSTANCE:Lcom/stripe/android/lpmfoundations/paymentmethod/definitions/CashAppPayDefinition;
+
+    move-object v1, p0
+
+    check-cast v1, Lcom/stripe/android/lpmfoundations/paymentmethod/PaymentMethodDefinition;
+
+    .line 35
+    sget v3, Lcom/stripe/android/ui/core/R$string;->stripe_paymentsheet_payment_method_cashapp:I
+
+    .line 36
+    sget v4, Lcom/stripe/android/ui/core/R$drawable;->stripe_ic_paymentsheet_pm_cash_app_pay:I
+
+    const/16 v9, 0xe2
+
+    const/4 v10, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    .line 33
+    invoke-direct/range {v0 .. v10}, Lcom/stripe/android/lpmfoundations/luxe/SupportedPaymentMethod;-><init>(Lcom/stripe/android/lpmfoundations/paymentmethod/PaymentMethodDefinition;Lcom/stripe/android/ui/core/elements/SharedDataSpec;IILjava/lang/Integer;ZLcom/stripe/android/core/strings/ResolvableString;Ljava/lang/Integer;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-object v0
+.end method

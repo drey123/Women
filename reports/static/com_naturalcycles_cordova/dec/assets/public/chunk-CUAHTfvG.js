@@ -1,0 +1,3 @@
+import{P as JD,qr as w}from"./chunk-Gq3RN3zc.js";import{t as l1}from"./chunk-mYhEWTSI2.js";var m=class a{animationComponent=w(l1);constructor(){this.animationComponent.animationCreated.subscribe(t=>{this.adaptCanvas(t)})}adaptCanvas(t){t.addEventListener(`load`,()=>{let{canvas:i}=t;if(!(i instanceof HTMLCanvasElement))return;let{width:n,height:e}=t.animationSize();n&&e&&(i.style.aspectRatio=`${n} / ${e}`)})}static ɵfac=function(i){return new(i||a)};static ɵdir=JD({type:a,selectors:[[`app-animation`,`adaptToAnimationSize`,``]]})};export{m as t};
+//# debugId=274ea3ab-eaee-5702-b753-69c32eb38b18
+//# sourceMappingURL=chunk-CUAHTfvG.js.map

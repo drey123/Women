@@ -1,0 +1,3 @@
+import"./chunk-BX6A29kF.js";var t=[{path:`measure-instruction`,loadComponent:()=>import(`./ring-sizer-measure-instruction.page-oXTYsENp.js`).then(e=>e.RingSizerMeasureInstructionPage)},{path:`measure`,loadComponent:()=>import(`./ring-sizer-measure.page-BRnMbQFr.js`).then(e=>e.RingSizerMeasurePage)},{path:`find-or-know-size`,loadComponent:()=>import(`./ring-sizer-find-or-know-size.page-BlSQ2riO.js`).then(e=>e.RingSizerFindOrKnowSizePage)},{path:`select-size`,loadComponent:()=>import(`./ring-sizer-select-size.page-ByPjEd9p.js`).then(e=>e.RingSizerSelectSizePage)}];export{t as ringSizerRoutes};
+//# debugId=95a7b508-572a-5516-9d07-5285407bd809
+//# sourceMappingURL=ring-sizer.router-CWFyZZ8p.js.map

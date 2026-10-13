@@ -1,0 +1,3 @@
+import{Ut as XD}from"./chunk-Gq3RN3zc.js";import{$t as _i,Pt as Xa}from"./chunk-CXj7tDWn.js";import{t as l}from"./chunk-CneVX8WD.js";var s=class i{transform(r,t=!0,n=2){let{fahrenheit:o}=_i().account,m=o?`°F`:`°C`;if(!r)return`\u2013\u2013${Xa.get(l).getNumberSeparator()}\u2013\u2013${t?m:``}`;o&&r>=35&&r<=40.99&&(r=this.convertTempToFahrenheit(r));let{locale:f}=_i().ui;return`${r.toLocaleString(f,{style:`decimal`,minimumFractionDigits:n,maximumFractionDigits:n})}${t?m:``}`}convertTempToFahrenheit(r){return r>50?r:r*1.8+32}static ɵfac=function(t){return new(t||i)};static ɵpipe=XD({name:`temperature`,type:i,pure:!0})};export{s as t};
+//# debugId=fee6454b-9135-5b3a-91bb-5d38263439bf
+//# sourceMappingURL=chunk-DpVyHddc.js.map

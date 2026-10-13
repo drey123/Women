@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/ic_launcher_background" />
+    <item android:gravity="center" android:drawable="@drawable/ic_splash_natural_cycles" />
+    <item android:gravity="center|bottom" android:height="80.0dp" android:width="200.0dp" android:drawable="@drawable/ic_splash_branding" android:bottom="20.0dp" />
+</layer-list>

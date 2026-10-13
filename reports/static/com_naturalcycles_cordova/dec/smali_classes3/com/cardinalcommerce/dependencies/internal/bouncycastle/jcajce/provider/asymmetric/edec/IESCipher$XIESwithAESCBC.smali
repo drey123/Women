@@ -1,0 +1,36 @@
+.class public Lcom/cardinalcommerce/dependencies/internal/bouncycastle/jcajce/provider/asymmetric/edec/IESCipher$XIESwithAESCBC;
+.super Lcom/cardinalcommerce/dependencies/internal/bouncycastle/jcajce/provider/asymmetric/edec/IESCipher$XIESwithCipher;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/cardinalcommerce/dependencies/internal/bouncycastle/jcajce/provider/asymmetric/edec/IESCipher;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "XIESwithAESCBC"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 0
+    invoke-static {}, Lcom/cardinalcommerce/a/KeyPairGeneratorSpi$ECDSA;->init()Lcom/cardinalcommerce/a/IESCipher$ECIESwithDESedeCBC;
+
+    move-result-object v0
+
+    .line 1000
+    new-instance v1, Lcom/cardinalcommerce/a/SignatureSpi$ecDetDSA512;
+
+    invoke-direct {v1, v0}, Lcom/cardinalcommerce/a/SignatureSpi$ecDetDSA512;-><init>(Lcom/cardinalcommerce/a/GMCipherSpi;)V
+
+    const/16 v0, 0x10
+
+    .line 0
+    invoke-direct {p0, v1, v0}, Lcom/cardinalcommerce/dependencies/internal/bouncycastle/jcajce/provider/asymmetric/edec/IESCipher$XIESwithCipher;-><init>(Lcom/cardinalcommerce/a/GMCipherSpi;I)V
+
+    return-void
+.end method

@@ -1,0 +1,3 @@
+import{Ut as XD,qr as w}from"./chunk-Gq3RN3zc.js";import{c as i,s as f}from"./chunk-DTtuWrSK.js";import{n as h}from"./chunk-DFNW0DnU2.js";var p=class t{dateService=w(h);transform(e,r=`MEDIUM`){return e==null?``:typeof e==`number`?this.dateService.localizeDateTime(f(e),r):this.dateService.localizeDate(i(e),r)}static ɵfac=function(r){return new(r||t)};static ɵpipe=XD({name:`nc_date`,type:t,pure:!0})};export{p as t};
+//# debugId=5020395a-919e-58cd-8f29-45fe261bd155
+//# sourceMappingURL=chunk-BKa9fOE3.js.map

@@ -1,0 +1,11 @@
+import"./chunk-BX6A29kF.js";import{f as l}from"./chunk-CJpEYW6X.js";import{a as ft,i as de,n as Ye,o as gt,t as Fe}from"./chunk-ZWabw7K6.js";import{r as x}from"./chunk-DAvbj7df.js";var m=`:host{display:block;-o-object-fit:contain;object-fit:contain}img{display:block;width:100%;height:100%;-o-object-fit:inherit;object-fit:inherit;-o-object-position:inherit;object-position:inherit}`;var b=class{constructor(t){ft(this,t),this.ionImgWillLoad=gt(this,`ionImgWillLoad`,7),this.ionImgDidLoad=gt(this,`ionImgDidLoad`,7),this.ionError=gt(this,`ionError`,7),this.inheritedAttributes={},this.onLoad=()=>{this.ionImgDidLoad.emit()},this.onError=()=>{this.ionError.emit()},this.loadSrc=void 0,this.loadError=void 0,this.alt=void 0,this.src=void 0}srcChanged(){this.addIO()}componentWillLoad(){this.inheritedAttributes=l(this.el,[`draggable`])}componentDidLoad(){this.addIO()}addIO(){this.src!==void 0&&(typeof window<`u`&&`IntersectionObserver`in window&&`IntersectionObserverEntry`in window&&`isIntersecting`in window.IntersectionObserverEntry.prototype?(this.removeIO(),this.io=new IntersectionObserver(t=>{t[t.length-1].isIntersecting&&(this.load(),this.removeIO())}),this.io.observe(this.el)):setTimeout(()=>this.load(),200))}load(){this.loadError=this.onError,this.loadSrc=this.src,this.ionImgWillLoad.emit()}removeIO(){this.io&&(this.io.disconnect(),this.io=void 0)}render(){let{loadSrc:t,alt:a,onLoad:h,loadError:c,inheritedAttributes:l}=this,{draggable:g}=l;return de(Fe,{key:`da600442894427dee1974a28e545613afac69fca`,class:x(this)},de(`img`,{key:`16df0c7069af86c0fa7ce5af598bc0f63b4eb71a`,decoding:`async`,src:t,alt:a,onLoad:h,onError:c,part:`image`,draggable:u(g)}))}get el(){return Ye(this)}static get watchers(){return{src:[`srcChanged`]}}};var u=t=>{switch(t){case`true`:return!0;case`false`:return!1;default:return}};b.style=m;
+/*! Bundled license information:
+
+@ionic/core/dist/esm/ion-img.entry.js:
+(*!
+* (C) Ionic http://ionicframework.com - MIT License
+*)
+*/
+export{b as ion_img};
+//# debugId=c147a4e3-d3f2-5c42-9f02-75fe554ab738
+//# sourceMappingURL=ion-img.entry-CW3dTln7.js.map

@@ -1,0 +1,36 @@
+.class public final synthetic Lcom/capacitorjs/plugins/app/AppPlugin$$ExternalSyntheticLambda0;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Lcom/getcapacitor/App$AppStatusChangeListener;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/capacitorjs/plugins/app/AppPlugin;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/capacitorjs/plugins/app/AppPlugin;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/capacitorjs/plugins/app/AppPlugin$$ExternalSyntheticLambda0;->f$0:Lcom/capacitorjs/plugins/app/AppPlugin;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onAppStatusChanged(Ljava/lang/Boolean;)V
+    .locals 0
+
+    .line 0
+    iget-object p0, p0, Lcom/capacitorjs/plugins/app/AppPlugin$$ExternalSyntheticLambda0;->f$0:Lcom/capacitorjs/plugins/app/AppPlugin;
+
+    invoke-static {p0, p1}, Lcom/capacitorjs/plugins/app/AppPlugin;->$r8$lambda$Ww9YqzOCEd_IhnO6BZ9HmlXy1-g(Lcom/capacitorjs/plugins/app/AppPlugin;Ljava/lang/Boolean;)V
+
+    return-void
+.end method

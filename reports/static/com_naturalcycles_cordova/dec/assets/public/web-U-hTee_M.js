@@ -1,0 +1,3 @@
+import"./chunk-BX6A29kF.js";import{t as E}from"./chunk-HXQTA3GP.js";var s=class extends E{constructor(){super(),this._lastWindow=null}async open(n){this._lastWindow=window.open(n.url,n.windowName||`_blank`)}async close(){return new Promise((n,l)=>{this._lastWindow!=null?(this._lastWindow.close(),this._lastWindow=null,n()):l(`No active window to close!`)})}};var i=new s;export{s as BrowserWeb};
+//# debugId=c0d52ab6-fb4a-5460-b72d-3ef0656ce10c
+//# sourceMappingURL=web-U-hTee_M.js.map

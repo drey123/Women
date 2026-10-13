@@ -1,0 +1,3 @@
+var t=(function(a){return a.Documents=`DOCUMENTS`,a.Data=`DATA`,a.Library=`LIBRARY`,a.Cache=`CACHE`,a.External=`EXTERNAL`,a.ExternalStorage=`EXTERNAL_STORAGE`,a.ExternalCache=`EXTERNAL_CACHE`,a.LibraryNoCloud=`LIBRARY_NO_CLOUD`,a.Temporary=`TEMPORARY`,a})(t||{});var E=(function(a){return a.UTF8=`utf8`,a.ASCII=`ascii`,a.UTF16=`utf16`,a})(E||{});export{t as n,E as t};
+//# debugId=b8bc5480-471d-58ea-a2e9-1350585d2ae7
+//# sourceMappingURL=chunk-Bd3FULOj.js.map

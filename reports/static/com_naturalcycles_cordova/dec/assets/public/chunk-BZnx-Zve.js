@@ -1,0 +1,3 @@
+import{At as U1,H as Kh,Jr as wC,P as JD,ti as wy,vt as Rg}from"./chunk-Gq3RN3zc.js";import{Q as X7}from"./chunk-pLCWg1m8.js";import{_t as eu}from"./chunk-CX5ab52I.js";import{t as V}from"./chunk-D1TaIeIY.js";var p=class i extends V{content=U1.required(X7);_scrollTop=0;ngOnInit(){this.content().scrollEvents=!0,this.content().ionScroll.subscribe(e=>this.onScroll(e))}onScroll(e,t){this._scrollTop=t||e?.detail.scrollTop||0,eu.next(this._scrollTop>24)}ionViewDidEnter(){eu.next(this._scrollTop>24)}static ɵfac=(()=>{let e;return function(o){return(e||(e=wy(i)))(o||i)}})();static ɵdir=JD({type:i,viewQuery:function(t,o){t&1&&Rg(o.content,X7,5),t&2&&wC()},features:[Kh]})};export{p as t};
+//# debugId=46a3d475-53cd-5d44-bb2a-ff65604974bc
+//# sourceMappingURL=chunk-BZnx-Zve.js.map

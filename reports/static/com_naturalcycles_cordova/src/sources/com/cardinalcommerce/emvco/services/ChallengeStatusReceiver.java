@@ -1,0 +1,18 @@
+package com.cardinalcommerce.emvco.services;
+
+import com.cardinalcommerce.emvco.events.CompletionEvent;
+import com.cardinalcommerce.emvco.events.ProtocolErrorEvent;
+import com.cardinalcommerce.emvco.events.RuntimeErrorEvent;
+
+/* JADX INFO: loaded from: classes3.dex */
+public interface ChallengeStatusReceiver {
+    void cancelled();
+
+    void completed(CompletionEvent completionEvent);
+
+    void protocolError(ProtocolErrorEvent protocolErrorEvent);
+
+    void runtimeError(RuntimeErrorEvent runtimeErrorEvent);
+
+    void timedout();
+}

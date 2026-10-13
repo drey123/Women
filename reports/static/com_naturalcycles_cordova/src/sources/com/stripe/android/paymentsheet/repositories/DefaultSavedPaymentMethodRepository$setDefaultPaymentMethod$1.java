@@ -1,0 +1,35 @@
+package com.stripe.android.paymentsheet.repositories;
+
+import kotlin.Metadata;
+import kotlin.Result;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import org.tensorflow.lite.schema.BuiltinOperator;
+
+/* JADX INFO: compiled from: SavedPaymentMethodRepository.kt */
+/* JADX INFO: loaded from: classes5.dex */
+@Metadata(k = 3, mv = {2, 2, 0}, xi = 48)
+@DebugMetadata(c = "com.stripe.android.paymentsheet.repositories.DefaultSavedPaymentMethodRepository", f = "SavedPaymentMethodRepository.kt", i = {0, 0, 1, 1}, l = {BuiltinOperator.REVERSE_V2, 112}, m = "setDefaultPaymentMethod-0E7RQCE", n = {"customerMetadata", "paymentMethodId", "customerMetadata", "paymentMethodId"}, s = {"L$0", "L$1", "L$0", "L$1"}, v = 1)
+final class DefaultSavedPaymentMethodRepository$setDefaultPaymentMethod$1 extends ContinuationImpl {
+    Object L$0;
+    Object L$1;
+    int label;
+    /* synthetic */ Object result;
+    final /* synthetic */ DefaultSavedPaymentMethodRepository this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    DefaultSavedPaymentMethodRepository$setDefaultPaymentMethod$1(DefaultSavedPaymentMethodRepository defaultSavedPaymentMethodRepository, Continuation<? super DefaultSavedPaymentMethodRepository$setDefaultPaymentMethod$1> continuation) {
+        super(continuation);
+        this.this$0 = defaultSavedPaymentMethodRepository;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        Object objMo8364setDefaultPaymentMethod0E7RQCE = this.this$0.mo8364setDefaultPaymentMethod0E7RQCE(null, null, this);
+        return objMo8364setDefaultPaymentMethod0E7RQCE == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objMo8364setDefaultPaymentMethod0E7RQCE : Result.m9202boximpl(objMo8364setDefaultPaymentMethod0E7RQCE);
+    }
+}

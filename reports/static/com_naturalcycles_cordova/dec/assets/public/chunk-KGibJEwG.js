@@ -1,0 +1,4 @@
+import{D as IC,d as EC,pt as QD}from"./chunk-Gq3RN3zc.js";var p=[`*`];var i=class n{static ɵfac=function(o){return new(o||n)};static ɵcmp=QD({type:n,selectors:[[`app-box`]],ngContentSelectors:p,decls:1,vars:0,template:function(o,s){o&1&&(IC(),EC(0))},styles:[`[_nghost-%COMP%]{--%NS%box-margin: 24px 16px;--%NS%box-padding: 16px;background-color:var(--%NS%box-color);display:block;margin:var(--%NS%box-margin);border-radius:var(--%NS%nc-border-radius);padding:var(--%NS%box-padding);overflow:hidden}.ion-no-padding[_nghost-%COMP%]{padding:0}.ion-no-margin[_nghost-%COMP%]{margin:0}
+/*# sourceMappingURL=box.component-YZCRXGJE.css.map */`]})};export{i as t};
+//# debugId=83608077-a112-5796-a8d9-59f53427b306
+//# sourceMappingURL=chunk-KGibJEwG.js.map

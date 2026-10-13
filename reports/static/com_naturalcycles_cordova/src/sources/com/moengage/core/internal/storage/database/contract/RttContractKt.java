@@ -1,0 +1,50 @@
+package com.moengage.core.internal.storage.database.contract;
+
+import kotlin.Metadata;
+
+/* JADX INFO: compiled from: RttContract.kt */
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata(d1 = {"\u0000\u0018\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0011\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b#\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u0019\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\n\n\u0002\u0010\u0006\u001a\u0004\b\u0004\u0010\u0005\"\u000e\u0010\u0007\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\f\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000e\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000f\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0010\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0011\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0012\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0013\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0014\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0015\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0016\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0017\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0018\u001a\u00020\bX\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0019\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u001a\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u001b\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u001c\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u001d\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u001e\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\u001f\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010 \u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010!\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010\"\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010#\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010$\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010%\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010&\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010'\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010(\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010)\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000\"\u000e\u0010*\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000¨\u0006+"}, d2 = {"DDL_DEVICE_TRIGGERS", "", "PROJECTION_DEVICE_TRIGGERS", "", "getPROJECTION_DEVICE_TRIGGERS", "()[Ljava/lang/String;", "[Ljava/lang/String;", "RTT_COLUMN_INDEX_CAMPAIGN_ID", "", "RTT_COLUMN_INDEX_CAMPAIGN_PAYLOAD", "RTT_COLUMN_INDEX_CAMPAIGN_TYPE", "RTT_COLUMN_INDEX_EXPIRY_TIME", "RTT_COLUMN_INDEX_LAST_SHOW_TIME", "RTT_COLUMN_INDEX_LAST_UPDATED_TIME", "RTT_COLUMN_INDEX_MAX_COUNT", "RTT_COLUMN_INDEX_MAX_SYNC_DELAY_TIME", "RTT_COLUMN_INDEX_MINIMUM_DELAY", "RTT_COLUMN_INDEX_PAYLOAD", "RTT_COLUMN_INDEX_PRIORITY", "RTT_COLUMN_INDEX_SHOULD_IGNORE_DND", "RTT_COLUMN_INDEX_SHOULD_SHOW_OFFLINE", "RTT_COLUMN_INDEX_SHOW_COUNT", "RTT_COLUMN_INDEX_SHOW_DELAY", "RTT_COLUMN_INDEX_STATUS", "RTT_COLUMN_INDEX_TRIGGER_EVENT_NAME", "RTT_COLUMN_NAME_CAMPAIGN_ID", "RTT_COLUMN_NAME_CAMPAIGN_PAYLOAD", "RTT_COLUMN_NAME_CAMPAIGN_TYPE", "RTT_COLUMN_NAME_EXPIRY_TIME", "RTT_COLUMN_NAME_LAST_SHOW_TIME", "RTT_COLUMN_NAME_LAST_UPDATED_TIME", "RTT_COLUMN_NAME_MAX_COUNT", "RTT_COLUMN_NAME_MAX_SYNC_DELAY_TIME", "RTT_COLUMN_NAME_MINIMUM_DELAY", "RTT_COLUMN_NAME_PAYLOAD", "RTT_COLUMN_NAME_PRIORITY", "RTT_COLUMN_NAME_SHOULD_IGNORE_DND", "RTT_COLUMN_NAME_SHOULD_SHOW_OFFLINE", "RTT_COLUMN_NAME_SHOW_COUNT", "RTT_COLUMN_NAME_SHOW_DELAY", "RTT_COLUMN_NAME_STATUS", "RTT_COLUMN_NAME_TRIGGER_EVENT_NAME", "TABLE_NAME_REAL_TIME_TRIGGER", "core_release"}, k = 2, mv = {1, 9, 0}, xi = 48)
+public final class RttContractKt {
+    public static final String DDL_DEVICE_TRIGGERS = "CREATE TABLE IF NOT EXISTS DEVICE_TRIGGERS ( _id INTEGER PRIMARY KEY, campaign_id TEXT, event_name TEXT, payload TEXT, campaign_payload TEXT, campaign_type TEXT, max_count INTEGER DEFAULT 0, minimum_delay INTEGER DEFAULT 0, should_show_offline INTEGER DEFAULT 0, max_sync_delay_time INTEGER DEFAULT 0, expiry_time INTEGER, priority INTEGER DEFAULT 3, last_show_time INTEGER DEFAULT 0, show_count INTEGER DEFAULT 0, last_updated_time INTEGER DEFAULT 0, status TEXT, should_ignore_dnd INTEGER DEFAULT 0, delay_before_showing INTEGER DEFAULT 0  ) ";
+    public static final int RTT_COLUMN_INDEX_CAMPAIGN_ID = 1;
+    public static final int RTT_COLUMN_INDEX_CAMPAIGN_PAYLOAD = 4;
+    public static final int RTT_COLUMN_INDEX_CAMPAIGN_TYPE = 5;
+    public static final int RTT_COLUMN_INDEX_EXPIRY_TIME = 10;
+    public static final int RTT_COLUMN_INDEX_LAST_SHOW_TIME = 12;
+    public static final int RTT_COLUMN_INDEX_LAST_UPDATED_TIME = 14;
+    public static final int RTT_COLUMN_INDEX_MAX_COUNT = 6;
+    public static final int RTT_COLUMN_INDEX_MAX_SYNC_DELAY_TIME = 9;
+    public static final int RTT_COLUMN_INDEX_MINIMUM_DELAY = 7;
+    public static final int RTT_COLUMN_INDEX_PAYLOAD = 3;
+    public static final int RTT_COLUMN_INDEX_PRIORITY = 11;
+    public static final int RTT_COLUMN_INDEX_SHOULD_IGNORE_DND = 16;
+    public static final int RTT_COLUMN_INDEX_SHOULD_SHOW_OFFLINE = 8;
+    public static final int RTT_COLUMN_INDEX_SHOW_COUNT = 13;
+    public static final int RTT_COLUMN_INDEX_SHOW_DELAY = 17;
+    public static final int RTT_COLUMN_INDEX_STATUS = 15;
+    public static final int RTT_COLUMN_INDEX_TRIGGER_EVENT_NAME = 2;
+    public static final String RTT_COLUMN_NAME_CAMPAIGN_ID = "campaign_id";
+    public static final String RTT_COLUMN_NAME_CAMPAIGN_PAYLOAD = "campaign_payload";
+    public static final String RTT_COLUMN_NAME_EXPIRY_TIME = "expiry_time";
+    public static final String RTT_COLUMN_NAME_LAST_UPDATED_TIME = "last_updated_time";
+    public static final String RTT_COLUMN_NAME_PAYLOAD = "payload";
+    public static final String RTT_COLUMN_NAME_PRIORITY = "priority";
+    public static final String RTT_COLUMN_NAME_STATUS = "status";
+    public static final String RTT_COLUMN_NAME_TRIGGER_EVENT_NAME = "event_name";
+    public static final String TABLE_NAME_REAL_TIME_TRIGGER = "DEVICE_TRIGGERS";
+    public static final String RTT_COLUMN_NAME_CAMPAIGN_TYPE = "campaign_type";
+    public static final String RTT_COLUMN_NAME_MAX_COUNT = "max_count";
+    public static final String RTT_COLUMN_NAME_MINIMUM_DELAY = "minimum_delay";
+    public static final String RTT_COLUMN_NAME_SHOULD_SHOW_OFFLINE = "should_show_offline";
+    public static final String RTT_COLUMN_NAME_MAX_SYNC_DELAY_TIME = "max_sync_delay_time";
+    public static final String RTT_COLUMN_NAME_LAST_SHOW_TIME = "last_show_time";
+    public static final String RTT_COLUMN_NAME_SHOW_COUNT = "show_count";
+    public static final String RTT_COLUMN_NAME_SHOULD_IGNORE_DND = "should_ignore_dnd";
+    public static final String RTT_COLUMN_NAME_SHOW_DELAY = "delay_before_showing";
+    private static final String[] PROJECTION_DEVICE_TRIGGERS = {"_id", "campaign_id", "event_name", "payload", "campaign_payload", RTT_COLUMN_NAME_CAMPAIGN_TYPE, RTT_COLUMN_NAME_MAX_COUNT, RTT_COLUMN_NAME_MINIMUM_DELAY, RTT_COLUMN_NAME_SHOULD_SHOW_OFFLINE, RTT_COLUMN_NAME_MAX_SYNC_DELAY_TIME, "expiry_time", "priority", RTT_COLUMN_NAME_LAST_SHOW_TIME, RTT_COLUMN_NAME_SHOW_COUNT, "last_updated_time", "status", RTT_COLUMN_NAME_SHOULD_IGNORE_DND, RTT_COLUMN_NAME_SHOW_DELAY};
+
+    public static final String[] getPROJECTION_DEVICE_TRIGGERS() {
+        return PROJECTION_DEVICE_TRIGGERS;
+    }
+}

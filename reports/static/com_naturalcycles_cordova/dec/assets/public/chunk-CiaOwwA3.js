@@ -1,0 +1,3 @@
+import{S as Gr}from"./chunk-Gq3RN3zc.js";import{$t as _i,t as $}from"./chunk-CXj7tDWn.js";import{ot as k}from"./main-UHCTOFSQ.js";var n=class e extends k{className=`PerimenopauseGuard`;get requirements(){return[_i().account.goal===$.PERIMENOPAUSE]}static ɵfac=function(r){return new(r||e)};static ɵprov=Gr({token:e,factory:e.ɵfac})};export{n as t};
+//# debugId=65d42163-dd40-51d6-a3cb-f575204ea766
+//# sourceMappingURL=chunk-CiaOwwA3.js.map

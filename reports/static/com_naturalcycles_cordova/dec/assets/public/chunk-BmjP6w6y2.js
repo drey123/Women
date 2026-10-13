@@ -1,0 +1,3 @@
+import{Ut as XD}from"./chunk-Gq3RN3zc.js";import{$t as _i,b as DT,ri as w3}from"./chunk-CXj7tDWn.js";var s=class r{transform(t,e={}){if(!t)return``;let i=w3.fromObject(t),p=e.withDiscount??!0;`discountPercentage`in t&&p&&(i=i.withDiscount(t.discountPercentage));let{locale:m}=_i().ui;return i.toLocaleString(m||DT.LANG_DEFAULT)}static ɵfac=function(e){return new(e||r)};static ɵpipe=XD({name:`price`,type:r,pure:!0})};export{s as t};
+//# debugId=5f44c797-ee5b-5b36-b662-459e95b6d92f
+//# sourceMappingURL=chunk-BmjP6w6y2.js.map

@@ -1,0 +1,84 @@
+{
+	"appId": "com.naturalcycles.cordova",
+	"appName": "Natural Cycles",
+	"webDir": "www/browser",
+	"loggingBehavior": "none",
+	"server": {
+		"androidScheme": "http",
+		"errorPath": "not_supported.html"
+	},
+	"plugins": {
+		"Keyboard": {
+			"resize": "none"
+		},
+		"SplashScreen": {
+			"androidScaleType": "FIT_CENTER",
+			"androidSplashResourceName": "ic_splash_screen_old",
+			"backgroundColor": "#72035d",
+			"launchAutoHide": false
+		},
+		"LocalNotifications": {
+			"smallIcon": "ic_stat_icon_config_sample",
+			"iconColor": "#72035d"
+		},
+		"PushNotifications": {
+			"presentationOptions": [
+				"alert",
+				"sound",
+				"badge"
+			]
+		},
+		"GoogleAuth": {
+			"scopes": [
+				"profile",
+				"email"
+			],
+			"androidClientId": "712514701016-ngn0r4guu82rcuufjk1bl82qr9qhv4rr.apps.googleusercontent.com"
+		},
+		"NCHealthKit": {
+			"envName": "prod",
+			"apiUrl": "https://api-prod.naturalcycles.com/api/v3"
+		},
+		"NCMoEngage": {
+			"appId": "WY18Y648Q5E71WL1GIUDPLVM"
+		},
+		"NCSentry": {
+			"sentryDsn": "https://b92bf3ba86b2401b8c3f70ab83c7f100@o94439.ingest.sentry.io/5385981",
+			"envName": "prod"
+		},
+		"NCStripe": {
+			"publishableKey": "pk_live_51PWGqPRrpil1qLxGy0cSsygofPFyr0vfJz1Yje6pum4ewIqbELNJHdZ1ovrHTajAfKE2N93uWg7JkfDbci9OKzcq00Umni2LHd"
+		}
+	},
+	"android": {
+		"minWebViewVersion": 111,
+		"webContentsDebuggingEnabled": false,
+		"includePlugins": [
+			"@awesome-cordova-plugins/camera-preview",
+			"@awesome-cordova-plugins/core",
+			"@capacitor/app",
+			"@capacitor/app-launcher",
+			"@capacitor/browser",
+			"@capacitor/camera",
+			"@capacitor/clipboard",
+			"@capacitor/device",
+			"@capacitor/filesystem",
+			"@capacitor/haptics",
+			"@capacitor/keyboard",
+			"@capacitor/local-notifications",
+			"@capacitor/network",
+			"@capacitor/push-notifications",
+			"@capacitor/splash-screen",
+			"@capacitor/status-bar",
+			"@capacitor/text-zoom",
+			"@capacitor-community/bluetooth-le",
+			"@naturalcycles/wearable-ios-plugin",
+			"com.adjust.sdk",
+			"cordova-plugin-camera-preview"
+		]
+	},
+	"ios": {
+		"webContentsDebuggingEnabled": false,
+		"preferredContentMode": "mobile"
+	}
+}

@@ -1,0 +1,4 @@
+import{Hr as vg,ci as yg,o as B1,pt as QD}from"./chunk-Gq3RN3zc.js";import{En as f}from"./chunk-CXj7tDWn.js";import{z as Pz}from"./chunk-pLCWg1m8.js";var l=class e{color=B1(`logo`);ICON=f;static ɵfac=function(o){return new(o||e)};static ɵcmp=QD({type:e,selectors:[[`app-nc-secure-logo`]],inputs:{color:[1,`color`]},decls:1,vars:2,consts:[[3,`src`,`color`]],template:function(o,n){o&1&&yg(0,`ion-icon`,0),o&2&&vg(`src`,n.ICON.NC_LOGO_SECURE)(`color`,n.color())},dependencies:[Pz],styles:[`[_nghost-%COMP%]{display:flex;flex:1;justify-content:center}ion-icon[_ngcontent-%COMP%]{width:97px;height:18px;box-sizing:content-box;padding:6px 0}
+/*# sourceMappingURL=nc-secure-logo.component-D5SD32HH.css.map */`]})};export{l as t};
+//# debugId=d863903e-df37-5e59-be52-f9a5bb078a25
+//# sourceMappingURL=chunk-C8x44R9f2.js.map

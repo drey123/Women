@@ -1,0 +1,3 @@
+import{S as Gr,qr as w}from"./chunk-Gq3RN3zc.js";import{S as E3}from"./chunk-CXj7tDWn.js";import{J as Xt}from"./chunk-CX5ab52I.js";import{t as k}from"./chunk-BdZPiZ3W2.js";import{ot as k$1}from"./main-UHCTOFSQ.js";var m=class e extends k$1{className=`IOSPageGuard`;userDeviceService=w(k);get requirements(){if(!E3)return[!1];let{minIosVersion:r}=this.route.data;return r?[this.userDeviceService.validateMinRequiredVersion({os:Xt.IOS,minOSVersion:r})]:[!0]}static ɵfac=function(i){return new(i||e)};static ɵprov=Gr({token:e,factory:e.ɵfac})};export{m as t};
+//# debugId=0dfa8309-b0fa-5e32-a7f5-04b4e520a08b
+//# sourceMappingURL=chunk-DJjquu_a2.js.map
