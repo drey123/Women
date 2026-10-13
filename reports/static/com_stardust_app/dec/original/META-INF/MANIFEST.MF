@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA1-Digest: 7Dp5Q6tuqmGEH55w075JgAfKWr8=
+
+Name: lib/arm64-v8a/libandroidx.graphics.path.so
+SHA1-Digest: 18F/y0SzCm7+idQ2qhAqvlLgCKY=
+
+Name: lib/arm64-v8a/libdatastore_shared_counter.so
+SHA1-Digest: CV4WlQQMDBlkJLNYR0xKgZjKOsk=
+
+Name: lib/arm64-v8a/libjnidispatch.so
+SHA1-Digest: dr4YmtXf20aW150dW6iSmOMrDao=
+
+Name: lib/arm64-v8a/libuniffi_cel.so
+SHA1-Digest: m+qZ3oc/ZEUNaMGBoe8ZGnXtL0I=
+
+Name: stamp-cert-sha256
+SHA1-Digest: 5vTkm69vqAbusD/fho7oWwc7j+I=
+

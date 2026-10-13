@@ -1,0 +1,6 @@
+version: 3.0.3
+apkFileName: com.stardust.app.apk
+versionInfo:
+  versionCode: 2692
+doNotCompress:
+- so
