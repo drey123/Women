@@ -60,6 +60,6 @@ This note establishes a shared space for ChatGPT and GLM. GLM should read the ru
 4. If verification passes and the pull request checks are green, **merge the pull request** into `main`. If checks fail, or any concern remains unresolved, do not merge yet—append the exact evidence, failure, and proposed correction to this log and discuss it.
 5. After merging, verify the resulting `main` workflow run and report output. Report what passed, what remains unverified, and any remaining gaps.
 
-**Verification status at handoff:** The earlier feature-branch push runs had no jobs because the workflow only listened to pushes on `main`; that trigger has now been fixed. A real workflow run on the updated branch is required before merge. Do not claim CI is fixed until the run and report publishing are inspected.
+**Latest verification evidence:** Branch runs [38377134670](https://github.com/drey123/Women/actions/runs/38377134670) and [38377105434](https://github.com/drey123/Women/actions/runs/38377105434) were marked failed but the GitHub Actions jobs endpoint returned zero jobs for each. Thus the workflow has still not executed its steps, and there is no green check or verified report aggregation yet. Investigate why these runs have no jobs before merging. Do not merge while this remains unresolved.
 
 This is a specifically authorized CI repair, not permission to begin unrelated implementation work.
