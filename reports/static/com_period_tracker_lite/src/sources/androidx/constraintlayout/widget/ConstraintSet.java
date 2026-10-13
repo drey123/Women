@@ -2071,7 +2071,7 @@ public class ConstraintSet {
         constraintLayout.requestLayout();
     }
 
-    public void applyToWithoutCustom(ConstraintLayout constraintLayout) throws IllegalAccessException, NoSuchFieldException {
+    public void applyToWithoutCustom(ConstraintLayout constraintLayout) {
         applyToInternal(constraintLayout, false);
         constraintLayout.setConstraintSet(null);
     }
@@ -2111,7 +2111,7 @@ public class ConstraintSet {
         constraint.applyTo(layoutParams);
     }
 
-    void applyToInternal(ConstraintLayout constraintLayout, boolean z) throws IllegalAccessException, NoSuchFieldException {
+    void applyToInternal(ConstraintLayout constraintLayout, boolean z) {
         int childCount = constraintLayout.getChildCount();
         HashSet<Integer> hashSet = new HashSet(this.mConstraints.keySet());
         for (int i = 0; i < childCount; i++) {
@@ -3234,7 +3234,7 @@ public class ConstraintSet {
         }
     }
 
-    public void load(Context context, int i) throws XmlPullParserException, IOException {
+    public void load(Context context, int i) {
         XmlResourceParser xml = context.getResources().getXml(i);
         try {
             for (int eventType = xml.getEventType(); eventType != 1; eventType = xml.next()) {
@@ -4380,7 +4380,7 @@ public class ConstraintSet {
         }
     }
 
-    private int[] convertReferenceString(View view, String str) throws IllegalAccessException, NoSuchFieldException {
+    private int[] convertReferenceString(View view, String str) {
         int iIntValue;
         Object designInformation;
         String[] strArrSplit = str.split(",");

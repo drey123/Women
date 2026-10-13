@@ -22,10 +22,6 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class LongSparseArrayKt {
     private static final Object DELETED = new Object();
 
-    public static final /* synthetic */ Object access$getDELETED$p() {
-        return DELETED;
-    }
-
     public static /* synthetic */ void getSize$annotations(LongSparseArray longSparseArray) {
     }
 

@@ -164,50 +164,32 @@ final class zzcdv extends zzfs implements zzgt {
         return Uri.parse(httpURLConnection.getURL().toString());
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x0025 */
     @Override // com.google.android.gms.internal.ads.zzga
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final void zzd() throws com.google.android.gms.internal.ads.zzgp {
-        /*
-            r7 = this;
-            r0 = 0
-            r1 = 0
-            java.io.InputStream r2 = r7.zzi     // Catch: java.lang.Throwable -> L25
-            if (r2 == 0) goto L16
-            r2.close()     // Catch: java.io.IOException -> La java.lang.Throwable -> L25
-            goto L16
-        La:
-            r2 = move-exception
-            com.google.android.gms.internal.ads.zzgp r3 = new com.google.android.gms.internal.ads.zzgp     // Catch: java.lang.Throwable -> L25
-            com.google.android.gms.internal.ads.zzge r4 = r7.zzf     // Catch: java.lang.Throwable -> L25
-            r5 = 2000(0x7d0, float:2.803E-42)
-            r6 = 3
-            r3.<init>(r2, r4, r5, r6)     // Catch: java.lang.Throwable -> L25
-            throw r3     // Catch: java.lang.Throwable -> L25
-        L16:
-            r7.zzi = r1
-            r7.zzl()
-            boolean r1 = r7.zzj
-            if (r1 == 0) goto L24
-            r7.zzj = r0
-            r7.zzi()
-        L24:
-            return
-        L25:
-            r2 = move-exception
-            r7.zzi = r1
-            r7.zzl()
-            boolean r1 = r7.zzj
-            if (r1 == 0) goto L34
-            r7.zzj = r0
-            r7.zzi()
-        L34:
-            throw r2
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.internal.ads.zzcdv.zzd():void");
+    public final void zzd() throws zzgp {
+        try {
+            InputStream inputStream = this.zzi;
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    throw new zzgp(e, this.zzf, 2000, 3);
+                }
+            }
+            this.zzi = null;
+            zzl();
+            if (this.zzj) {
+                this.zzj = false;
+                zzi();
+            }
+        } catch (Throwable th) {
+            this.zzi = null;
+            zzl();
+            if (this.zzj) {
+                this.zzj = false;
+                zzi();
+            }
+            throw th;
+        }
     }
 
     @Override // com.google.android.gms.internal.ads.zzfs, com.google.android.gms.internal.ads.zzga

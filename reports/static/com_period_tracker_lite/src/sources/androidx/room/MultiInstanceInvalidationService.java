@@ -67,33 +67,37 @@ public final class MultiInstanceInvalidationService extends Service {
             RemoteCallbackList<IMultiInstanceInvalidationCallback> callbackList$room_runtime_release = this.this$0.getCallbackList$room_runtime_release();
             MultiInstanceInvalidationService multiInstanceInvalidationService = this.this$0;
             synchronized (callbackList$room_runtime_release) {
-                String str = multiInstanceInvalidationService.getClientNames$room_runtime_release().get(Integer.valueOf(clientId));
-                if (str == null) {
-                    Log.w(Room.LOG_TAG, "Remote invalidation client ID not registered");
-                    return;
-                }
-                int iBeginBroadcast = multiInstanceInvalidationService.getCallbackList$room_runtime_release().beginBroadcast();
-                for (int i = 0; i < iBeginBroadcast; i++) {
-                    try {
-                        Object broadcastCookie = multiInstanceInvalidationService.getCallbackList$room_runtime_release().getBroadcastCookie(i);
-                        Intrinsics.checkNotNull(broadcastCookie, "null cannot be cast to non-null type kotlin.Int");
-                        Integer num = (Integer) broadcastCookie;
-                        int iIntValue = num.intValue();
-                        String str2 = multiInstanceInvalidationService.getClientNames$room_runtime_release().get(num);
-                        if (clientId != iIntValue && Intrinsics.areEqual(str, str2)) {
-                            try {
-                                ((IMultiInstanceInvalidationCallback) multiInstanceInvalidationService.getCallbackList$room_runtime_release().getBroadcastItem(i)).onInvalidation(tables);
-                            } catch (RemoteException e) {
-                                Log.w(Room.LOG_TAG, "Error invoking a remote callback", e);
-                            }
-                        }
-                    } catch (Throwable th) {
-                        multiInstanceInvalidationService.getCallbackList$room_runtime_release().finishBroadcast();
-                        throw th;
+                try {
+                    String str = multiInstanceInvalidationService.getClientNames$room_runtime_release().get(Integer.valueOf(clientId));
+                    if (str == null) {
+                        Log.w(Room.LOG_TAG, "Remote invalidation client ID not registered");
+                        return;
                     }
+                    int iBeginBroadcast = multiInstanceInvalidationService.getCallbackList$room_runtime_release().beginBroadcast();
+                    for (int i = 0; i < iBeginBroadcast; i++) {
+                        try {
+                            Object broadcastCookie = multiInstanceInvalidationService.getCallbackList$room_runtime_release().getBroadcastCookie(i);
+                            Intrinsics.checkNotNull(broadcastCookie, "null cannot be cast to non-null type kotlin.Int");
+                            Integer num = (Integer) broadcastCookie;
+                            int iIntValue = num.intValue();
+                            String str2 = multiInstanceInvalidationService.getClientNames$room_runtime_release().get(num);
+                            if (clientId != iIntValue && Intrinsics.areEqual(str, str2)) {
+                                try {
+                                    ((IMultiInstanceInvalidationCallback) multiInstanceInvalidationService.getCallbackList$room_runtime_release().getBroadcastItem(i)).onInvalidation(tables);
+                                } catch (RemoteException e) {
+                                    Log.w(Room.LOG_TAG, "Error invoking a remote callback", e);
+                                }
+                            }
+                        } catch (Throwable th) {
+                            multiInstanceInvalidationService.getCallbackList$room_runtime_release().finishBroadcast();
+                            throw th;
+                        }
+                    }
+                    multiInstanceInvalidationService.getCallbackList$room_runtime_release().finishBroadcast();
+                    Unit unit = Unit.INSTANCE;
+                } catch (Throwable th2) {
+                    throw th2;
                 }
-                multiInstanceInvalidationService.getCallbackList$room_runtime_release().finishBroadcast();
-                Unit unit = Unit.INSTANCE;
             }
         }
     };

@@ -9043,9 +9043,8 @@ public final class zzpg implements zzjg {
         String str5 = zzrVar.zza;
         Preconditions.checkNotEmpty(str5);
         String str6 = zzrVar.zzt;
-        byte[] bArr = null;
         if (!str6.isEmpty()) {
-            this.zzE.put(str5, new zzpd(this, str6, bArr));
+            this.zzE.put(str5, new zzpd(this, str6, null));
         }
         zzh zzhVarZzu = zzj().zzu(str5);
         zzjl zzjlVarZzs = zzB(str5).zzs(zzjl.zzf(zzrVar.zzs, 100));

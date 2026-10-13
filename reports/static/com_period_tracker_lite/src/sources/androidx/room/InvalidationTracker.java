@@ -508,41 +508,37 @@ public class InvalidationTracker {
             closeLock$room_runtime_release.lock();
             try {
                 synchronized (this.syncTriggersLock) {
-                    try {
-                        int[] tablesToSync = this.observedTableTracker.getTablesToSync();
-                        if (tablesToSync != null) {
-                            INSTANCE.beginTransactionInternal$room_runtime_release(database);
-                            try {
-                                int length = tablesToSync.length;
-                                int i = 0;
-                                int i2 = 0;
-                                while (i < length) {
-                                    int i3 = tablesToSync[i];
-                                    int i4 = i2 + 1;
-                                    if (i3 == 1) {
-                                        startTrackingTable(database, i2);
-                                    } else if (i3 == 2) {
-                                        stopTrackingTable(database, i2);
-                                    }
-                                    i++;
-                                    i2 = i4;
+                    int[] tablesToSync = this.observedTableTracker.getTablesToSync();
+                    if (tablesToSync != null) {
+                        INSTANCE.beginTransactionInternal$room_runtime_release(database);
+                        try {
+                            int length = tablesToSync.length;
+                            int i = 0;
+                            int i2 = 0;
+                            while (i < length) {
+                                int i3 = tablesToSync[i];
+                                int i4 = i2 + 1;
+                                if (i3 == 1) {
+                                    startTrackingTable(database, i2);
+                                } else if (i3 == 2) {
+                                    stopTrackingTable(database, i2);
                                 }
-                                database.setTransactionSuccessful();
-                                database.endTransaction();
-                                Unit unit = Unit.INSTANCE;
-                            } catch (Throwable th) {
-                                database.endTransaction();
-                                throw th;
+                                i++;
+                                i2 = i4;
                             }
+                            database.setTransactionSuccessful();
+                            database.endTransaction();
+                            Unit unit = Unit.INSTANCE;
+                        } catch (Throwable th) {
+                            database.endTransaction();
+                            throw th;
                         }
-                    } catch (Throwable th2) {
-                        throw th2;
                     }
                 }
                 closeLock$room_runtime_release.unlock();
-            } catch (Throwable th3) {
+            } catch (Throwable th2) {
                 closeLock$room_runtime_release.unlock();
-                throw th3;
+                throw th2;
             }
         } catch (SQLiteException e) {
             Log.e(Room.LOG_TAG, "Cannot run invalidation tracker. Is the db closed?", e);

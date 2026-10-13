@@ -178,7 +178,11 @@ public final class zzlj extends zzg {
                 long jCurrentTimeMillis = zzicVar2.zzaZ().currentTimeMillis() + 60000;
                 synchronized (atomicReference) {
                     for (long jCurrentTimeMillis2 = 60000; atomicReference.get() == null && jCurrentTimeMillis2 > 0; jCurrentTimeMillis2 = jCurrentTimeMillis - zzicVar2.zzaZ().currentTimeMillis()) {
-                        atomicReference.wait(jCurrentTimeMillis2);
+                        try {
+                            atomicReference.wait(jCurrentTimeMillis2);
+                        } catch (Throwable th) {
+                            throw th;
+                        }
                     }
                 }
             } catch (InterruptedException unused) {

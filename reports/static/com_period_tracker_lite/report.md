@@ -3,7 +3,7 @@ Static analysis report — com_period_tracker_lite
 - Package: `com.period.tracker.lite`
 - APK: `/tmp/apk/com.period.tracker.lite.apk` (26308653 bytes, sha256 `375e6e2284a027d587d1049bcd0ce863f458b631eb5beafa58cc74175654e2c1`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:12:51Z | Runner: x86_64
+- Date: 2026-10-13T09:23:52Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
