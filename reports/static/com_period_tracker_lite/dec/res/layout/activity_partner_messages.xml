@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:tag="bg_title_bar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_partnermessages_titlebar" android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="50.0dp">
+            <Button android:gravity="center_vertical" android:id="@id/button_partnermessages_home" android:background="#00000000" android:layout_width="80.0dp" android:layout_height="match_parent" android:drawablePadding="5.0dp" android:layout_centerVertical="true" android:onClick="onClickHome" android:drawableStart="@drawable/btn_back_arrow" android:paddingStart="12.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/textview_partnermessages_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/send_a_message_text" android:layout_centerVertical="true" android:layout_toStartOf="@id/button_partnermessages_profile" android:layout_toEndOf="@id/button_partnermessages_home" />
+            <Button android:gravity="end|center" android:id="@id/button_partnermessages_profile" android:background="#00000000" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:onClick="onClickProfile" android:drawableEnd="@drawable/btn_profile_top" android:paddingStart="12.0dp" android:paddingEnd="15.0dp" android:layout_marginStart="10.0dp" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_partnermessages_area" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0.0dp" android:layout_below="@id/layout_partnermessages_titlebar">
+        <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_partnermessages_authors" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/messages_between_text" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        <ListView android:id="@id/listview_partnermessages_page" android:layout_width="match_parent" android:layout_height="0.0dp" android:transcriptMode="alwaysScroll" android:cacheColorHint="#00000000" android:divider="#e5e5e5" android:dividerHeight="0.0dp" android:layout_weight="1.0" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_partnermessages_inputfield" android:background="@drawable/bg_not_rounded_white_fill_gray_border" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="46.0dp">
+            <Button android:textSize="20.0sp" android:textColor="#445c91" android:id="@id/imageview_link" android:background="#00ffffff" android:layout_width="35.0dp" android:layout_height="wrap_content" android:text="+" android:onClick="onClickAddPhoto" android:layout_marginStart="0.0dp" android:layout_marginEnd="0.0dp" />
+            <EditText android:id="@id/editText_send_message" android:background="@drawable/bg_round_white" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="30.0dp" android:ems="10" android:layout_weight="1.0" android:inputType="textCapSentences" android:imeOptions="actionSend" />
+            <RelativeLayout android:id="@id/relative_partnermessages_imagepreview" android:background="@drawable/bg_round_white" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:layout_weight="1.0" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp">
+                <ImageView android:id="@id/imageview_partnermessages_photo_preview" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="8.0dp" android:src="@drawable/icon" android:layout_centerInParent="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_icon_close" android:layout_alignParentTop="true" android:onClick="onCloseClick" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <Button android:textSize="18.0sp" android:textColor="#445c91" android:id="@id/textview_send" android:background="#00ffffff" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="@string/button_send" android:onClick="onClickSend" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_pending" android:background="#b0b0b0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/layout_partnermessages_titlebar">
+        <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_messages_pending" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="@string/messages_pending_text" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_messages_loading" android:background="#55303030" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/layout_partnermessages_titlebar">
+        <include android:id="@id/include_loading" layout="@layout/view_loading" />
+    </RelativeLayout>
+</RelativeLayout>

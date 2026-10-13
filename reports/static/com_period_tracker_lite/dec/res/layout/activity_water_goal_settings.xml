@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_water_goal_settings_titlebar" android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="50.0dp">
+            <Button android:gravity="center_vertical" android:id="@id/button_water_goal_settings_back" android:background="#00000000" android:layout_width="80.0dp" android:layout_height="match_parent" android:drawablePadding="5.0dp" android:layout_centerVertical="true" android:onClick="backClick" android:drawableStart="@drawable/btn_back_arrow" android:paddingStart="12.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/textview_water_goal_settings_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="30.0dp">
+            <TextView android:textSize="15.0sp" android:textColor="@color/sublabel_text" android:id="@id/textview_select_unit_title" android:background="#00000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/select_unit" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp">
+                <RelativeLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickFluid">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:paddingTop="7.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/water_fluid_ounce_unit" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                    <ImageView android:id="@id/imageview_fl_check" android:background="@drawable/checkmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickMilliliter">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:paddingTop="7.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/water_milliliters_unit" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                    <ImageView android:id="@id/imageview_ml_check" android:background="@drawable/checkmark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/sublabel_text" android:id="@id/textview_goal_title" android:background="#00000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/goal_text" android:textAllCaps="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+            <RelativeLayout android:background="@drawable/bg_not_rounded_white_fill_gray_border" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickSelectGoal">
+                <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_water_goal_value" android:paddingTop="7.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/water_amount" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

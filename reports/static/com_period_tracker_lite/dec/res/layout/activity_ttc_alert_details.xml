@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_ttc_alert_details_titlebar" android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="50.0dp">
+            <Button android:textSize="16.0sp" android:textColor="@color/navbar_textcolor" android:gravity="center_vertical" android:id="@id/button_ttc_alert_details_back" android:background="#00000000" android:layout_width="90.0dp" android:layout_height="30.0dp" android:layout_marginTop="7.0dp" android:layout_marginBottom="7.0dp" android:text="@string/ttc_text" android:drawablePadding="5.0dp" android:layout_centerVertical="true" android:onClick="homeClick" android:drawableStart="@drawable/btn_back_arrow" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/layout_ttc_alert_details_titlebar">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_ttc_alert_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:maxLines="2" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+                <Switch android:id="@id/button_ttc_alert_status" android:layout_width="60.0dp" android:layout_height="35.0dp" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:layout_toEndOf="@id/textview_ttc_alert_name" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#b0b0b0" android:background="@drawable/bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="10.0dp" android:text="@string/ttc_alert_details_choose" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_alert_setting_rows" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_start_end_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:background="@drawable/bg_selector" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickStartDaySelection">
+                        <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_alert_start_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/ttc_alert_details_start_day" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                        <TextView android:textSize="16.0sp" android:textColor="#545454" android:id="@id/textview_ttc_alert_start_day_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <include layout="@layout/separator_line_lightgray" />
+                    <RelativeLayout android:background="@drawable/bg_selector" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickEndDaySelection">
+                        <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_alert_end_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/ttc_alert_details_end_day" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                        <TextView android:textSize="16.0sp" android:textColor="#545454" android:id="@id/textview_ttc_alert_end_day_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickTimeSelection">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/ttc_alert_details_alert_time" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#545454" android:id="@id/textview_ttc_alert_time_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#b0b0b0" android:id="@id/textview_ttc_alert_message" android:background="@drawable/bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="10.0dp" android:text="@string/ttc_mode_caps" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

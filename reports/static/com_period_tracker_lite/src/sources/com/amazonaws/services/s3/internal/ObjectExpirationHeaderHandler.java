@@ -1,0 +1,44 @@
+package com.amazonaws.services.s3.internal;
+
+import com.amazonaws.http.HttpResponse;
+import com.amazonaws.services.s3.Headers;
+import com.amazonaws.services.s3.internal.ObjectExpirationResult;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/* JADX INFO: loaded from: classes.dex */
+public class ObjectExpirationHeaderHandler<T extends ObjectExpirationResult> implements HeaderHandler<T> {
+    private static final Pattern datePattern = Pattern.compile("expiry-date=\"(.*?)\"");
+    private static final Pattern rulePattern = Pattern.compile("rule-id=\"(.*)\"");
+
+    private Date parseDate(String str) {
+        Matcher matcher = datePattern.matcher(str);
+        if (matcher.find()) {
+            try {
+                return new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z").parse(matcher.group(1));
+            } catch (ParseException unused) {
+            }
+        }
+        return null;
+    }
+
+    private String parseRuleId(String str) {
+        Matcher matcher = rulePattern.matcher(str);
+        if (matcher.find()) {
+            return matcher.group(1);
+        }
+        return null;
+    }
+
+    @Override // com.amazonaws.services.s3.internal.HeaderHandler
+    public void handle(T t, HttpResponse httpResponse) {
+        String str = httpResponse.getHeaders().get(Headers.EXPIRATION);
+        if (str != null) {
+            t.setExpirationTime(parseDate(str));
+            t.setExpirationTimeRuleId(parseRuleId(str));
+        }
+    }
+}

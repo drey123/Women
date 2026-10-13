@@ -1,0 +1,3 @@
+.class interface abstract Lcom/amazonaws/auth/policy/package-info;
+.super Ljava/lang/Object;
+.source "package-info.java"

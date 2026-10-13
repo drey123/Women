@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_exercise_submit_titlebar" android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="50.0dp">
+            <Button android:gravity="center_vertical" android:id="@id/button_exercise_submit_back" android:background="#00000000" android:layout_width="80.0dp" android:layout_height="match_parent" android:drawablePadding="5.0dp" android:layout_centerVertical="true" android:onClick="backClick" android:drawableStart="@drawable/btn_back_arrow" android:paddingStart="12.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/textview_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView android:id="@id/scrollview_submit_request" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="16.0sp" android:textColor="#000000" android:gravity="start" android:id="@id/edittext_exercise_name" android:background="#00000000" android:paddingTop="9.0dp" android:paddingBottom="9.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/exercises_submit_enter_name" android:layout_centerVertical="true" android:imeOptions="actionNext" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:orientation="vertical" android:background="@drawable/bg_selector" android:paddingTop="6.0dp" android:paddingBottom="9.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickMET">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_met_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exercises_met_text" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#b0b0b0" android:gravity="end" android:id="@id/textview_met_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/texthint_optional" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="5.0dp" android:layout_marginEnd="20.0dp" android:layout_toEndOf="@id/textview_met_label" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layout_submit" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/textview_submit_request" android:paddingTop="9.0dp" android:paddingBottom="9.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exercises_submit_request_text" android:onClick="onClickSubmitRequest" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#b0b0b0" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="@string/exercises_submit_message" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

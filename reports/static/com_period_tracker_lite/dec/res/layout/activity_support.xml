@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_support_titlebar" android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="50.0dp">
+            <Button android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/button_support_back" android:background="#00000000" android:layout_width="80.0dp" android:layout_height="match_parent" android:drawablePadding="5.0dp" android:layout_centerVertical="true" android:onClick="backClick" android:drawableStart="@drawable/btn_back_arrow" android:paddingStart="12.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/textview_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_support_titlebar" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/layout_support_titlebar">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="30.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_numpad" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp">
+                <RelativeLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="emailClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/settings_faq" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="writeReviewClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/activity_support_review" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="tellFriendClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/activity_support_tell_a_friend" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickMakeSuggestion">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/make_suggestion_text" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="blogClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/activity_support_blog" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="aboutClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/activity_support_about" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="termsOfServiceClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/terms_of_service_text" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="privacyPolicyClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/support_privacy_policy_text" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

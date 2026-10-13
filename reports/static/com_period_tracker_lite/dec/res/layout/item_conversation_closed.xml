@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="46.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/textview_closed" android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/closed_by_text" android:onClick="onClickFAQ" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" android:layout_alignParentStart="true" />
+</RelativeLayout>

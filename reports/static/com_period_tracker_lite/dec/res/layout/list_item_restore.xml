@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_list_backup" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="backupClick"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/restore_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="" android:layout_marginStart="20.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="#939091" android:id="@id/restore_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp" android:text="" android:layout_below="@id/restore_date" android:layout_marginStart="20.0dp" />
+    <TextView android:textSize="18.0sp" android:textColor="#007aff" android:id="@id/restore_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:text="" android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="10.0dp" android:layout_toStartOf="@id/imageview_check" />
+    <ImageView android:id="@id/imageview_check" android:background="@drawable/icon_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_alignParentEnd="true" />
+    <View android:id="@id/separator" android:background="#b0b0b0" android:paddingTop="5.0dp" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginBottom="5.0dp" android:layout_below="@id/restore_device" android:layout_marginStart="20.0dp" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/layout_chartviews_container" android:paddingTop="30.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp">
+        <com.charts.YCoordinateView android:id="@id/ycoordinateview" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview_chart" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#808080" android:gravity="center" android:id="@id/textview_empty_chart" android:background="@drawable/bg_lightgray_round_edge" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="50.0dp" android:text="@string/empty_cycle_chart" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/layout_legend_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/layout_chartviews_container" android:layout_centerHorizontal="true" />
+</RelativeLayout>

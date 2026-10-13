@@ -1,0 +1,18 @@
+﻿Si vous ne disposez pas d'un compte de sauvegarde, suivez l'une des étapes suivantes pour restaurer vos données antérieures vers cette application :
+
+1. Si vous avez toujours votre ancien appareil sur lequel se trouvent vos données Period Tracker :
+- Connectez votre ancien appareil sur un réseau Wi-Fi
+- Allez sur les paramètres de Period Tracker->Compte P Tracker et créez un compte.
+- Activez votre compte.
+- Rendez-vous à nouveau sur la page de sauvegarde de votre ancien appareil et appuyez sur «Sauvegarder maintenant »
+- Connectez-vous à votre compte depuis votre nouvel appareil et choisissez la sauvegarde que vous venez de réaliser et appuyez sur « Restaurer »
+* Fonctionne sur n'importe quel appareil équipé d'un iOS, sur un Android ou sur un appareil pour Windows 7.
+
+2. Si vous ne disposez plus de votre ancien appareil mais que vous vous êtes envoyé un fichier de sauvegarde depuis votre appareil équipé d'un iOS, suivez les instructions qui se trouvent dans les paramètres de votre application->Général->Restauration depuis la sauvegarde d’ e-mails de votre iPhone.
+
+3. Si vous aviez auparavant « Le logiciel de suivi de mes menstruations et de la période de mes ovulations », une application qui ressemble à la nôtre mais qui a une image d'une fille sur la page d'accueil, suivez les instructions des paramètres de votre               application -> Généralité -> Restauration depuis le logiciel de suivi de mes menstruations et de la période de mes ovulations SD/Sauvegarde d'e-mails.
+
+4. SI vous ne disposez plus de votre ancien appareil et que vous n'avez jamais réalisé une sauvegarde en ligne ou d'e-mails, il se peut que iTunes ait un système de sauvegarde stocké sur votre ordinateur. Cliquez sur ce lien pour lire les instructions qui vous permettent d'avoir accès à ce fichier : http://gpapps.com/support/period-tracker-support-videos/restore-without-backup/
+* Seuls les appareils équipés d'un iOS prennent en charge les sauvegardes iTunes. Si vous aviez auparavant un Android ou Windows 7, vous ne pouvez pas bénéficier de cette option.
+
+5. Si vous ne disposez plus de votre ancien appareil et que vous n'avez jamais réalisé de sauvegarde, Il n'existe malheureusement aucun moyen de récupérer vos données. C'est parce que toutes vos données sont stockées sur votre téléphone. Lorsque vous effectuez une sauvegarde, PTracker réalise une copie de votre sauvegarde et la stocke sur nos serveurs sécurisés d'où vous pouvez les restaurer.

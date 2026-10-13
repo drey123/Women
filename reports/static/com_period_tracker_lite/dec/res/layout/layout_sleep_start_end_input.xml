@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="#00000000" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/include_start_line" layout="@layout/separator_line_lightgray" />
+    <RelativeLayout android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="clickStartPicker">
+        <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_text" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" android:layout_alignParentStart="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff0000" android:gravity="end" android:id="@id/textview_start_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <include layout="@layout/separator_line_lightgray" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_start_picker_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <DatePicker android:layout_gravity="center" android:id="@id/datePicker_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" />
+            <TimePicker android:layout_gravity="center" android:id="@id/timePicker_start" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/separator_line_lightgray" />
+    </LinearLayout>
+    <RelativeLayout android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="clickEndPicker">
+        <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/end_text" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" android:layout_alignParentStart="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff0000" android:gravity="end" android:id="@id/textview_end_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_end_picker_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/separator_line_lightgray" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <DatePicker android:layout_gravity="center" android:id="@id/datePicker_end" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TimePicker android:layout_gravity="center" android:id="@id/timePicker_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

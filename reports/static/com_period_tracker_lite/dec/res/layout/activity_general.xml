@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_appearance_titlebar" android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="50.0dp">
+            <Button android:gravity="center_vertical" android:id="@id/button_appearance_back" android:background="#00000000" android:layout_width="80.0dp" android:layout_height="match_parent" android:drawablePadding="5.0dp" android:layout_centerVertical="true" android:onClick="backClick" android:drawableStart="@drawable/btn_back_arrow" android:paddingStart="12.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/textview_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_period_cycle_text" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView android:id="@id/scrollview_general" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/layout_appearance_titlebar">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_general_content_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_period_settings" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="20.0dp">
+                <RelativeLayout android:id="@id/relative_period_length" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="periodLengthClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/list_item_name" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_period_length" android:layout_marginStart="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:id="@id/relative_cycle_length" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="cycleLengthClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_data_cycle" android:layout_marginStart="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:id="@id/relative_ovulation" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="ovulationClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_calendar_ovulation" android:layout_marginStart="20.0dp" />
+                </RelativeLayout>
+                <include android:id="@id/include_ovulation_acp_separator" layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:id="@id/relative_advanced_predition" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="advancedPredictionClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/advanced_cycle_prediction" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#545454" android:id="@id/textview_advanced_predict_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/off_text" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_numpad" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp">
+                <RelativeLayout android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="hideShowSymptomsClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_symptoms" android:onClick="hideShowSymptomsClick" android:layout_marginStart="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="hideShowMoodsClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_moods" android:onClick="hideShowMoodsClick" android:layout_marginStart="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="weighTempUnitsClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weight_temp_units" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:id="@id/layout_cycle_day_homepage" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cycle_day_homepage" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                    <Switch android:id="@id/switch_cycle_day_homepage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <include android:id="@id/separator_cycle_day_homepage" layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_appearance_display_cycle_day" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                    <Switch android:id="@id/switch_cycle_day_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/sublabel_text" android:id="@id/textview_lifestyle_section" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/lifestyle_text" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp">
+                <RelativeLayout android:tag="1" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickLifestyleGoal">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifestyle_steps_goal" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_steps_goal_value" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifestyle_settings_add_goal" android:layout_marginStart="20.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:tag="2" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickLifestyleGoal">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifestyle_weight_goal" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_weight_goal_value" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifestyle_settings_add_goal" android:layout_marginStart="20.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:tag="3" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickLifestyleGoal">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/height_text" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_height_goal_value" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifestyle_settings_add_height" android:layout_marginStart="20.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:tag="4" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickLifestyleGoal">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifestyle_sleep_goal" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_sleep_goal_value" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:tag="5" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickLifestyleGoal">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifestyle_calorie_intake_goal" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_calorie_intake_goal_value" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:tag="6" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickLifestyleGoal">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifestyle_water_intake_goal" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_water_intake_goal_value" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp">
+                <RelativeLayout android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="abstinenceClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/activity_abstinence_mode_titlebar" android:layout_marginStart="20.0dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp">
+                <RelativeLayout android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="widgetClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_settings_widget" android:layout_marginStart="20.0dp" />
+                </RelativeLayout>
+                <include layout="@layout/separator_line_lightgray" />
+                <RelativeLayout android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/monday_sunday" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+                    <Switch android:id="@id/switch_mon_sun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/sublabel_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/legacy_text" android:layout_marginStart="20.0dp" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp">
+                <RelativeLayout android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="legacyRestoreiPhoneClick">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/legacy_restore_from_iphone" android:layout_marginStart="20.0dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

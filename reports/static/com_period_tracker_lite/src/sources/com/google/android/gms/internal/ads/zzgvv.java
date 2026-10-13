@@ -1,0 +1,31 @@
+package com.google.android.gms.internal.ads;
+
+import java.security.GeneralSecurityException;
+import javax.annotation.Nullable;
+import javax.crypto.Cipher;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-ads@@24.6.0 */
+/* JADX INFO: loaded from: classes3.dex */
+final class zzgvv extends ThreadLocal {
+    zzgvv() {
+    }
+
+    @Nullable
+    protected static final Cipher zza() {
+        try {
+            Cipher cipher = (Cipher) zzhfo.zza.zzb("ChaCha20-Poly1305");
+            if (zzgvw.zzf(cipher)) {
+                return cipher;
+            }
+            return null;
+        } catch (GeneralSecurityException unused) {
+            return null;
+        }
+    }
+
+    @Override // java.lang.ThreadLocal
+    @Nullable
+    protected final /* bridge */ /* synthetic */ Object initialValue() {
+        return zza();
+    }
+}

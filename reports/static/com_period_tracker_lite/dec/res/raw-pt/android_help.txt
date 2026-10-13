@@ -1,0 +1,18 @@
+﻿Se não possui uma conta de reserva, cumpra um dos procedimentos que se seguem para restaurar os seus dados anteriores para esta aplicação:
+
+1. Se ainda tem o seu antigo dispositivo com os seus dados de Rastreador de Período ainda contidos no mesmo:
+- Ligue o seu antigo dispositivo à rede wifi.
+- Vá a Definições do Rastreador de Período -> Conta de Calendário Menstrual e criar uma conta.
+- Ative a sua conta.
+- Vá novamente à página de cópia de segurança do seu antigo dispositivo e prima “Fazer cópia de segurança agora”.
+- Inicie a sessão na sua conta a partir do seu novo dispositivo, selecione a cópia de segurança que acabou de fazer e prima “Restaurar”.
+*Isto irá funcionar em qualquer dispositivo com iOS, Android ou Windows 7.
+
+2. Se já não possui o seu antigo dispositivo mas enviou previamente para si mesma um ficheiro de cópia de segurança a partir do seu dispositivo iOS, siga as instruções em Definições do seu dispositivo -> Geral -> Restaurar a partir da cópia de segurança de Email do iPhone.
+
+3. Se teve anteriormente a aplicação “O Meu Rastreador de Período e Ovulação”, a qual é muito semelhante à nossa mas possui a imagem de uma rapariga na página inicial, siga as instruções em Definições da sua aplicação -> Geral -> Restaurar a partir do meu Rastreador de Período e Ovulação SD/Cópia de segurança de Email.
+
+4. Se já não possui o seu antigo dispositivo e nunca fez uma cópia de segurança online ou através de email, existe a hipótese de a aplicação iTunes instalada no seu computador possuir uma cópia de segurança armazenada nela. Clique nesta ligação para obter instruções acerca de como aceder a esse ficheiro: http://gpapps.com/support/period-tracker-support-videos/restore-without-backup/
+* Apenas os dispositivos com iOS suportam cópias de segurança através do iTunes. Se possuiu anteriormente o sistema operativo Android ou Windows7, esta opção não estará disponível para si.
+
+5. Se já não possui o seu antigo dispositivo e nunca fez uma cópia de segurança, infelizmente, não há forma de recuperar os seus dados. Isto acontece porque todos os seus dados estão armazenados no seu telefone. Quando faz uma cópia de segurança, a PTracker efetua uma cópia da sua cópia de segurança e armazena-a nos nossos servidores seguros para que possa restaurar os seus dados a partir da mesma.

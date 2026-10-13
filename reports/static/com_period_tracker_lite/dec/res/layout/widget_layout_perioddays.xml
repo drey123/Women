@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_appwidget_perioddays" android:layout_width="60.0dp" android:layout_height="60.0dp" style="@style/Widget.PeriodTracker.AppWidget.OuterView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="17.0dp" android:layout_height="14.0dp" android:src="@drawable/butterfly_icon" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="12.0sp" android:typeface="serif" android:textColor="#3d0e00" android:gravity="left" android:id="@id/text_appwidget_day_label" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/day" android:layout_alignParentTop="true" android:paddingHorizontal="3.0dp" />
+    <TextView android:textSize="21.0sp" android:typeface="serif" android:textStyle="bold" android:textColor="#3d0e00" android:id="@id/text_appwidget_periodday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:shadowColor="#efefef" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_below="@id/text_appwidget_day_label" android:layout_centerInParent="true" />
+</RelativeLayout>

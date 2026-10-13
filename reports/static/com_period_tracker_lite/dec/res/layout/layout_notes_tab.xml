@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="41.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view_back_border" android:background="#4a8000" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_tabs_content" android:background="@drawable/bg_note_tab" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/layout_tab1" android:clickable="true" android:layout_width="0.0dp" android:layout_height="36.0dp" android:layout_weight="1.0" android:onClick="tab1Click">
+            <View android:id="@id/view_right_border1" android:background="@color/theme_natureg_unselectedtab_border" android:visibility="visible" android:layout_width="1.0dp" android:layout_height="36.0dp" android:layout_alignParentEnd="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@id/add_note_tab1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_1" android:maxLines="1" android:layout_centerInParent="true" android:textAllCaps="true" app:autoSizeMinTextSize="10.0sp" app:autoSizeTextType="uniform" />
+            <View android:id="@id/view_bottom_border1" android:background="#ffffff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/layout_tab2" android:clickable="true" android:layout_width="0.0dp" android:layout_height="36.0dp" android:layout_weight="1.0" android:onClick="tab2Click">
+            <View android:id="@id/view_right_border2" android:background="@color/theme_natureg_unselectedtab_border" android:visibility="visible" android:layout_width="1.0dp" android:layout_height="36.0dp" android:layout_alignParentEnd="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@id/add_note_tab2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_2" android:maxLines="1" android:layout_centerInParent="true" android:textAllCaps="true" app:autoSizeMinTextSize="10.0sp" app:autoSizeTextType="uniform" />
+            <View android:id="@id/view_bottom_border2" android:background="#00ffff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/layout_tab3" android:clickable="true" android:layout_width="0.0dp" android:layout_height="36.0dp" android:layout_weight="1.0" android:onClick="tab3Click">
+            <View android:id="@id/view_right_border3" android:background="@color/theme_natureg_unselectedtab_border" android:visibility="visible" android:layout_width="1.0dp" android:layout_height="36.0dp" android:layout_alignParentEnd="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@id/add_note_tab3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_3" android:maxLines="1" android:layout_centerInParent="true" android:textAllCaps="true" app:autoSizeMinTextSize="10.0sp" app:autoSizeTextType="uniform" />
+            <View android:id="@id/view_bottom_border3" android:background="#ffffff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/layout_tab4" android:clickable="true" android:layout_width="0.0dp" android:layout_height="36.0dp" android:layout_weight="1.0" android:onClick="tab4Click">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@id/add_note_tab4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_4" android:maxLines="1" android:layout_centerInParent="true" android:textAllCaps="true" app:autoSizeMinTextSize="10.0sp" app:autoSizeTextType="uniform" />
+            <View android:id="@id/view_bottom_border4" android:background="#ffffff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

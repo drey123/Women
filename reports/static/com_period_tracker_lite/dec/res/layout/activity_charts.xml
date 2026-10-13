@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_charts_titlebar" android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="50.0dp">
+            <Button android:gravity="center_vertical" android:id="@id/button_charts_back" android:background="#00000000" android:layout_width="80.0dp" android:layout_height="match_parent" android:drawablePadding="5.0dp" android:layout_centerVertical="true" android:onClick="backClick" android:drawableStart="@drawable/btn_back_arrow" android:paddingStart="12.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/textview_charts_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_charts" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_chart_views_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_charts_titlebar">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_chart_from_generator" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/layout_input_data_settings" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_chart_from_js_container" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/layout_input_data_settings">
+            <TextView android:textSize="17.0sp" android:textColor="#b0b0b0" android:gravity="start" android:id="@id/textview_chart_message" android:paddingTop="10.0dp" android:paddingBottom="0.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" />
+            <com.period.tracker.charts.activity.ChartWebView android:id="@id/webview_other_charts" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_other_container" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="0.6" />
+        </LinearLayout>
+        <include android:id="@id/include_exercise_chart" android:visibility="gone" layout="@layout/layout_chart_exercise" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_input_data_settings" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0sp" android:textColor="#000000" android:ellipsize="end" android:gravity="start|center" android:id="@id/text_view_chart_today_input" android:background="@drawable/bg_selector" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="38.0dp" android:lines="1" android:onClick="onClickTodayData" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" app:autoSizeMaxTextSize="17.0sp" app:autoSizeMinTextSize="10.0sp" app:autoSizeStepGranularity="2.0sp" app:autoSizeTextType="uniform" />
+                <include android:id="@id/include_chart_input_line" layout="@layout/separator_line_lightgray" />
+                <TextView android:textSize="17.0sp" android:textColor="#000000" android:ellipsize="end" android:gravity="start|center" android:id="@id/text_view_chart_goal_input" android:background="@drawable/bg_selector" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="38.0dp" android:lines="1" android:onClick="onClickGoalData" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" app:autoSizeMaxTextSize="17.0sp" app:autoSizeMinTextSize="10.0sp" app:autoSizeStepGranularity="2.0sp" app:autoSizeTextType="uniform" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_chart_content_lite" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30.0dp" android:layout_below="@id/layout_charts_titlebar">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_download_deluxe" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#b4b3b3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:text="@string/chart_lite_subtitle" android:layout_marginStart="20.0dp" />
+            <RelativeLayout android:background="@drawable/bg_not_rounded_white_border_lightgray" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textSize="17.0sp" android:textColor="#007aff" android:gravity="center_vertical" android:id="@id/button_download" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/download_deluxe_text" android:onClick="onClickDownloadDeluxe" android:paddingStart="20.0dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/include_chart_loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/layout_charts_titlebar" layout="@layout/view_loading" />
+</RelativeLayout>

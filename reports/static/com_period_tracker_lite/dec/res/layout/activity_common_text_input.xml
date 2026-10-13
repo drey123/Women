@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_common_text_input_titlebar" android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <Button android:gravity="center_vertical" android:id="@id/button_common_text_input_back" android:background="#00000000" android:layout_width="80.0dp" android:layout_height="match_parent" android:drawablePadding="5.0dp" android:layout_centerVertical="true" android:onClick="backClick" android:drawableStart="@drawable/btn_back_arrow" android:paddingStart="12.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/textview_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" />
+        <Button android:textSize="16.0sp" android:textColor="@color/navbar_textcolor" android:gravity="end|center" android:id="@id/button_common_text_input_done" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/button_done" android:layout_centerVertical="true" android:onClick="saveClick" android:paddingStart="12.0dp" android:paddingEnd="15.0dp" android:layout_marginStart="10.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30.0dp">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_not_rounded_white_fill_gray_border" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16.0sp" android:textColor="#000000" android:gravity="start" android:id="@id/edittext_common_text_input_value" android:background="#00000000" android:paddingTop="9.0dp" android:paddingBottom="9.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter text" android:imeOptions="actionNext" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

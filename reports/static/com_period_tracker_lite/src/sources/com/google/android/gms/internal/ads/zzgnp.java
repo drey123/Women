@@ -1,0 +1,58 @@
+package com.google.android.gms.internal.ads;
+
+import com.google.common.util.concurrent.ListenableFuture;
+import java.util.concurrent.AbstractExecutorService;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
+import java.util.concurrent.RunnableFuture;
+import kotlin.UByte$$ExternalSyntheticBackport0;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-ads@@24.6.0 */
+/* JADX INFO: loaded from: classes3.dex */
+public abstract class zzgnp extends AbstractExecutorService implements zzgpd, AutoCloseable {
+    @Override // java.lang.AutoCloseable
+    public /* synthetic */ void close() {
+        UByte$$ExternalSyntheticBackport0.m((ExecutorService) this);
+    }
+
+    @Override // java.util.concurrent.AbstractExecutorService
+    protected final RunnableFuture newTaskFor(Runnable runnable, Object obj) {
+        return zzgps.zze(runnable, obj);
+    }
+
+    @Override // java.util.concurrent.AbstractExecutorService, java.util.concurrent.ExecutorService
+    public final /* synthetic */ Future submit(Runnable runnable) {
+        return (ListenableFuture) super.submit(runnable);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgpd
+    public final ListenableFuture zza(Runnable runnable) {
+        return (ListenableFuture) super.submit(runnable);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgpd
+    public final ListenableFuture zzb(Runnable runnable, Object obj) {
+        return (ListenableFuture) super.submit(runnable, obj);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgpd
+    public final ListenableFuture zzc(Callable callable) {
+        return (ListenableFuture) super.submit(callable);
+    }
+
+    @Override // java.util.concurrent.AbstractExecutorService
+    protected final RunnableFuture newTaskFor(Callable callable) {
+        return new zzgps(callable);
+    }
+
+    @Override // java.util.concurrent.AbstractExecutorService, java.util.concurrent.ExecutorService
+    public final /* synthetic */ Future submit(Runnable runnable, Object obj) {
+        return (ListenableFuture) super.submit(runnable, obj);
+    }
+
+    @Override // java.util.concurrent.AbstractExecutorService, java.util.concurrent.ExecutorService
+    public final /* synthetic */ Future submit(Callable callable) {
+        return (ListenableFuture) super.submit(callable);
+    }
+}

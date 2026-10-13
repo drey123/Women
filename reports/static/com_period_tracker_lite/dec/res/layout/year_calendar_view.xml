@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/theme_natureg_page_bg" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#000000" android:gravity="start" android:id="@id/textview_monthEven" android:paddingTop="0.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp" />
+        <com.period.tracker.activity.YearCalendarView android:id="@id/year_calendar_even" android:background="#00ffffff" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#000000" android:gravity="start" android:id="@id/textview_monthOdd" android:paddingTop="0.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp" />
+        <com.period.tracker.activity.YearCalendarView android:id="@id/year_calendar_odd" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

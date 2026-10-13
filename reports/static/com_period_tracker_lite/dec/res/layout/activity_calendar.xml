@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dummy_calendar_titlebar" android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="50.0dp">
+            <Button android:gravity="center_vertical" android:id="@id/button_calendar_home" android:background="#00000000" android:layout_width="80.0dp" android:layout_height="match_parent" android:drawablePadding="5.0dp" android:layout_centerVertical="true" android:onClick="homeClick" android:drawableStart="@drawable/btn_back_arrow" android:paddingStart="12.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/textview_calendar_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_calendar_titlebar" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_calendar_lite_options" android:layout_width="wrap_content" android:layout_height="38.0dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/relative_calendar_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@id/relative_calendar_container" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="70.0dp" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_marginBottom="7.0dp" android:layout_centerVertical="true" android:onClick="onClickCalendar" android:layout_marginEnd="-1.0dp">
+                    <ImageButton android:id="@id/button_calendar" android:tag="btn_past_and_future" android:background="@drawable/btn_past_and_future" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_calendar_icon" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="onClickCalendar" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/relative_list_container" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="70.0dp" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_marginBottom="7.0dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="onClickList" android:layout_marginStart="-1.0dp" android:layout_toEndOf="@id/relative_calendar_container">
+                    <ImageButton android:id="@id/button_list" android:tag="btn_past_and_future" android:background="@drawable/btn_past_and_future" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_list_icon" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="onClickList" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageButton android:id="@id/icon_notification" android:background="@drawable/bg_selector" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="28.0dp" android:layout_height="29.0dp" android:src="@drawable/settings_notifications_calendar" android:layout_centerVertical="true" android:onClick="onClickNotifications" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" android:layout_marginStart="20.0dp" android:layout_toStartOf="@id/button_calendar_plus" />
+            <ImageButton android:id="@id/button_calendar_plus" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_plus_white" android:layout_centerVertical="true" android:onClick="onClickPlusButton" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_calendar_content_container" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="28.0dp" android:layout_above="@id/layout_ads_container" android:layout_below="@id/dummy_calendar_titlebar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/year_recycler_view" android:background="@color/theme_natureg_page_bg" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/layout_calendar_list" android:background="#ffffff" android:paddingBottom="15.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@id/include_bar_calendar_month" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_calendar_navbar" />
+            <View android:id="@id/view_line" android:background="#d2d2d2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/include_bar_calendar_month" />
+            <ListView android:id="@id/listview_calendar_list" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#caccc9" android:dividerHeight="0.0dp" android:layout_below="@id/view_line" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/sublabel_text" android:gravity="center" android:id="@id/textview_no_notes" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_notes_text" android:layout_below="@id/view_line" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/loading_text" android:layout_below="@id/include_bar_calendar_month" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_calendar" android:background="#ffffff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.period.tracker.widgets.PeriodCalendarView android:id="@id/calendarview_calendar" android:tag="calendar_border" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="2.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:elevation="2.0dp" />
+            <RelativeLayout android:id="@id/layout_summary_container" android:background="@drawable/bg_selector" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/calendarview_calendar" android:onClick="addClick">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview_summary_notes" android:background="#ffffff" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/textview_note" android:background="@drawable/bg_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/activity_calendar_hint" android:onClick="addClick" android:paddingStart="15.0dp" android:paddingEnd="10.0dp" />
+            </RelativeLayout>
+            <ImageButton android:id="@id/image_button_calendar_key" android:background="#00000000" android:paddingTop="10.0dp" android:paddingBottom="20.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/calendarkey" android:layout_below="@id/calendarview_calendar" android:onClick="nextLegendClick" android:paddingEnd="10.0dp" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_legends_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/layout_ads_container">
+        <RelativeLayout android:id="@id/layout_legends" android:tag="top_color_green" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:paddingTop="5.0dp" android:paddingBottom="6.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="150.0dp">
+            <ScrollView android:id="@id/scrollview_legends" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="nextLegendClick" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_legends_header" android:layout_width="match_parent" android:layout_height="30.0dp">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="25.0dp" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center" android:background="#f98197" android:layout_width="18.0dp" android:layout_height="6.0dp" />
+                            <TextView android:textSize="15.0sp" android:textColor="#000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_calendar_period" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="25.0dp" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center" android:background="@drawable/bg_fertile_dot" android:layout_width="11.0dp" android:layout_height="11.0dp" />
+                            <TextView android:textSize="15.0sp" android:textColor="#000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_calendar_fertile" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="25.0dp" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center" android:background="@drawable/ovulation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="15.0sp" android:textColor="#000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_calendar_ovulation" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="25.0dp" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center" android:background="@drawable/heart" android:layout_width="15.0dp" android:layout_height="15.0dp" />
+                            <TextView android:textSize="15.0sp" android:textColor="#000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_calendar_intimate" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/layout_legend_complete" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="25.0dp">
+                            <ImageView android:layout_gravity="center" android:id="@id/imageview_icon_1" android:background="#fccbd1" android:layout_width="18.0dp" android:layout_height="6.0dp" />
+                            <TextView android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview_text_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_legend_light" android:drawableStart="#fccbd1" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="25.0dp">
+                            <ImageView android:layout_gravity="center" android:id="@id/imageview_icon_3" android:background="#d50224" android:layout_width="18.0dp" android:layout_height="6.0dp" />
+                            <TextView android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview_text_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_legend_heavy" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="25.0dp">
+                            <com.period.tracker.utils.DottedLineView android:layout_gravity="center" android:id="@id/imageview_icon_possible" android:layout_width="18.0dp" android:layout_height="4.0dp" />
+                            <TextView android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview_text_possible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/possible_period_day_legend" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center" android:id="@id/imageview_icon_4" android:background="#c2c0c0" android:layout_width="18.0dp" android:layout_height="6.0dp" />
+                            <TextView android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview_text_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_legend_future" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="25.0dp">
+                            <ImageView android:layout_gravity="center" android:id="@id/imageview_icon_calculated_ovul" android:background="@drawable/manualovulation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview_text_calculated_ovul" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ttc_ovul_legend_text" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="25.0dp">
+                            <ImageView android:layout_gravity="center" android:id="@id/imageview_icon_8" android:background="@drawable/spotting" android:layout_width="12.0dp" android:layout_height="15.0dp" />
+                            <TextView android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview_text_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_legend_spotting" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="25.0dp">
+                            <View android:layout_gravity="center" android:id="@id/imageview_icon_9" android:background="@drawable/bg_black_dot" android:layout_width="12.0dp" android:layout_height="12.0dp" />
+                            <TextView android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview_text_9" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_legend_note_added" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+                        </LinearLayout>
+                        <TextView android:textSize="15.0sp" android:textColor="#000000" android:id="@id/textview_disclaimer_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:text="@string/legend_disclaimer_text1" />
+                        <TextView android:textSize="15.0sp" android:textColor="#000000" android:id="@id/textview_disclaimer_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:text="@string/legend_disclaimer_text2" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_ads_container" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

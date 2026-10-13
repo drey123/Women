@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/imagebutton_plus" android:background="@drawable/plus" android:layout_width="23.0dp" android:layout_height="23.0dp" android:layout_centerVertical="true" />
+    <TextView android:textColor="@color/action_item" android:id="@id/textview_add_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:layout_marginStart="5.0dp" android:layout_toEndOf="@id/imagebutton_plus" />
+</RelativeLayout>

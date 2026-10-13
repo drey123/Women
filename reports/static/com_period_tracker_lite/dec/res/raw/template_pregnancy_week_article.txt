@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<style type="text/css"> 
+body {font-family: "-apple-system", "HelveticaNeue", "Roboto Light", sans-serif;} 
+div.title {font-size:18px; font-weight:bold;} 
+div.body {font-size:14px;} 
+img.photo { max-width: 100%; height: auto;} 
+</style> 
+</head> 
+<body> 
+<div class="title"><% title %></div> 
+<% photo %> 
+<div class="body"><% body %></div> 
+</body> 
+</html>

@@ -1,0 +1,18 @@
+﻿Si no tienes una cuenta de copia de seguridad, realiza una de estas acciones para restaurar los datos anteriores en esta aplicación:
+
+1. Si tu dispositivo anterior aún conserva los datos de Alerta de período:
+-Conecta el dispositivo anterior a la red wifi.
+-Ve a Ajustes de Alerta de período -> Cuenta de P Tracker y crear cuenta.
+-Activa tu cuenta.
+-Vuelve a la página de copia de seguridad del dispositivo anterior y pulsa «Realizar copia de seguridad».
+-Desde tu dispositivo nuevo, accede a tu cuenta y selecciona la copia de seguridad que acabas de crear y pulsa «Restaurar».
+*Esto funciona para cualquier dispositivo iOS, Android o Windows 7.
+
+2. Si ya no conservas el dispositivo anterior, pero si te has enviado un archivo de copia de seguridad por email desde tu dispositivo iOS, sigue las instrucciones de Ajustes de tu aplicación -> General -> Restaurar desde iPhone Email Backup.
+
+3. Si disponías de «My period and ovulation tracker», una aplicación con una apariencia muy similar a la nuestra, pero con la imagen de una chica en la página principal, sigue las instrucciones de Ajustes de tu aplicación -> General -> Restaurar desde Copia de seguridad de Email/SD de «My period and ovulation tracker».
+
+4. Si ya no conservas el dispositivo anterior y nunca has hecho una copia de seguridad en línea o por correo electrónico, existe la posibilidad de que iTunes almacene una copia de seguridad en tu ordenador. Haz clic en este enlace para obtener las instrucciones sobre cómo acceder a ese archivo: http://gpapps.com/support/period-tracker-support-videos/restore-without-backup/
+*Solo los dispositivos IOS admiten copias de seguridad de iTunes. Si tenías un Android o Windows 7, esta opción no está disponible para ti.
+
+5. Si ya no conservas el dispositivo anterior y nunca has hecho una copia de seguridad, lamentablemente, no hay forma de recuperar tus datos, ya que todos tus datos están almacenados en aquel móvil. Al hacer una copia de seguridad, PTracker realiza una copia de tu copia de seguridad y la almacena en nuestros servidores seguros desde donde puedes restaurarla.

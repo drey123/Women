@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_ttc_predict_titlebar" android:tag="bg_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="50.0dp">
+            <Button android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/button_ttc_predict_home" android:background="#00000000" android:layout_width="80.0dp" android:layout_height="match_parent" android:drawablePadding="5.0dp" android:layout_centerVertical="true" android:onClick="homeClick" android:drawableStart="@drawable/btn_back_arrow" android:paddingStart="12.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/textview_ttc_predict_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/layout_ttc_predict_titlebar">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_predict_title_bar" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_numpad" android:background="@drawable/bg_not_rounded_white_border_lightgray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp">
+                <RelativeLayout android:background="@drawable/bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#000000" android:id="@id/textview_ttc_predict_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/ttc_predict_period_luteal" android:maxLines="2" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="50.0dp" android:layout_alignParentStart="true" />
+                    <Switch android:id="@id/switch_ttc_predict" android:layout_width="60.0dp" android:layout_height="35.0dp" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/sublabel_text" android:autoLink="web" android:id="@id/textview_ttc_predict_description" android:background="@drawable/bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="5.0dp" android:text="@string/ttc_predict_period_desc_eng" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

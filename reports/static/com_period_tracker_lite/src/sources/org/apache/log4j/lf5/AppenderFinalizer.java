@@ -1,0 +1,17 @@
+package org.apache.log4j.lf5;
+
+import org.apache.log4j.lf5.viewer.LogBrokerMonitor;
+
+/* JADX INFO: loaded from: classes3.dex */
+public class AppenderFinalizer {
+    protected LogBrokerMonitor _defaultMonitor;
+
+    public AppenderFinalizer(LogBrokerMonitor logBrokerMonitor) {
+        this._defaultMonitor = logBrokerMonitor;
+    }
+
+    protected void finalize() throws Throwable {
+        System.out.println("Disposing of the default LogBrokerMonitor instance");
+        this._defaultMonitor.dispose();
+    }
+}

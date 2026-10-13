@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:installLocation="auto" package="com.period.tracker.lite" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <queries>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT"/>
+            <data android:mimeType="vnd.android.cursor.dir/event"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="sms"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+            <data android:path="tel:"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="com.period.tracker.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.period.tracker.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:enableOnBackInvokedCallback="false" android:extractNativeLibs="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.period.tracker.ApplicationPeriodTrackerLite" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true">
+        <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-5627821002314291~4444129562"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" android:value="true"/>
+        <meta-data android:name="android.supports_size_changes" android:value="false"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.period.tracker.activity.ActivitySplash" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.period.tracker.AlarmReceiver"/>
+        <activity android:name="com.period.tracker.activity.ActivityHome" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityAddNote" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityCalendar" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityPeriodLog" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivitySupport" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivitySecurity" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivitySetPasscode" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivitySettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityPasscodeHelp" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityGeneral" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityHideShowSymptoms" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivitySettingsNumbers" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enableOnBackInvokedCallback="false" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.period.tracker.activity.ActivityRestore" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityLogIn" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityBackup" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityNewAccount" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityBackupAlmost" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityBackupAccountDeleteOrLogOut" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityBackupSchedule" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityBackupAccountWait" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityBackupAccountResend" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityAddNewSymptom" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityAddNewMood" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityHideShowMoods" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityAbstinenceMode" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityPregnancyMode" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityNotifications" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityAlert" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityPregnancyDelivered" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityCharts" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivitySelectSkin" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityOthersFertility" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityOthersPills" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityEditPill" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityFirstLaunchSignup" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.social.activity.ActivityImageEditor" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityCustomAlert" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityEditPeriod" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityUnits" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityPregnancyDone" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityNoAccountHelp" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityNoBackupReminder" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityFAQ" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityReports" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityFAQAnswer" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.activity.ActivitySettingsTTC" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.activity.ActivityTTCLearnMore" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.activity.ActivityTTCMethod" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.activity.ActivityTTCMethodDetails" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.activity.ActivityTTCTemperature" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.chart.ActivityTTCChart" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.chart.ActivityTTCChartSettingsKey" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.chart.ActivityTTCChartSettingsMoveCoverline" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.chart.ActivityTTCChartSettingsCompare" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.activity.ActivityPredictPeriodWithLuteal" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.social.activity.ActivityTTCCategory" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.activity.ActivityTopicDetails" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.activity.ActivityTTCPremiumFAQ" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityPregnancyResources" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityEditPregnancy" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityEmailPreferences" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityGetStarted" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.partner.ActivityPartnerLogin" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.partner.ActivityPartnerCreatePassword" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.partner.ActivityDataShareSettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.partner.ActivityInvitePartner" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.partner.ActivityInvitePartnerPersonalization" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.partner.ActivityInvitePartnerDataOptions" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.partner.ActivityDataShareDetails" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.partner.ActivityInviteEmailText" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.partner.ActivityPartnerSettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.partner.ActivityPartnerMessageRoom" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.period.tracker.partner.ActivityPartnerProfile" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.social.activity.ActivityEditName" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityGeneralSignup" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.social.activity.ActivityChooseSkinIcon" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.social.activity.ActivityCommunityGuidelines" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.custom_homepage_ad.ActivityCustomHomeAd" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityExercisesSettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityExerciseDetail" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityExercises" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityExercisesWeightInput" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityCommonNumberInput" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityNutritionSettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivitySleepSettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityAddEditSleep" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityStepsSettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityTriggersSettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityWaterIntakeSettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.period.tracker.lifestyle.ActivityLifestyleOtherSources" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="gpappsptrackerlitefitbit"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.period.tracker.lifestyle.ActivityWaterGoalSettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivitySleepGoalSettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityHeightGoalSettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityExerciseRequestForm" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.lifestyle.ActivityExerciseMetInput" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.common.ActivityCommonTextInput" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityPeriodSummary" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.BlogActivity" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.AdsConsentFormActivity" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.JoinPatronActivity" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.PatronPerksMemberPageActivity" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.activity.ActivityTTCNotifications" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.activity.ActivityTTCMethodAlertDetails" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.ttc.activity.ActivityTTCNonMethodAlertDetails" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.common.CommonWebViewActivity" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.social.activity.TurboLinksSocialActivity" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.social.activity.TurboLinksActivity" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.SocialStatsActivity" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.FullscreenTurbolinksActivity" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.FullscreenWithAuthenticationActivity" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.social.activity.ActivityAddNewPost" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <activity android:name="com.period.tracker.activity.ActivityYourDataPrivacySettings" android:screenOrientation="portrait" android:theme="@style/ActivityCustomTheme"/>
+        <receiver android:exported="false" android:name="com.period.tracker.MyWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider"/>
+        </receiver>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <service android:exported="false" android:name="com.period.tracker.partner.PartnerFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/icon_notification"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/theme_natureg_toggle_titlebar_textcolor"/>
+        <provider android:authorities="com.period.tracker.lite" android:enabled="true" android:exported="true" android:name="com.period.tracker.ImageFileContentProvider"/>
+        <provider android:authorities="com.period.tracker.lite.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:label="Test Activity" android:name="com.basecamp.turbolinks.TurbolinksTestActivity"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="8.0.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.period.tracker.lite.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.period.tracker.lite.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.period.tracker.lite.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+    </application>
+</manifest>

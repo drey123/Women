@@ -1,0 +1,30 @@
+package com.google.android.gms.internal.ads;
+
+import java.io.Closeable;
+import java.io.IOException;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-ads@@24.6.0 */
+/* JADX INFO: loaded from: classes3.dex */
+public final class zzaqq extends zzhpi implements Closeable {
+    static {
+        zzhpp.zzb(zzaqq.class);
+    }
+
+    public zzaqq(zzhpj zzhpjVar, zzaqp zzaqpVar) throws IOException {
+        zzd(zzhpjVar, zzhpjVar.zzb(), zzaqpVar);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhpi, java.io.Closeable, java.lang.AutoCloseable
+    public final void close() throws IOException {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhpi
+    public final String toString() {
+        String string = this.zzc.toString();
+        StringBuilder sb = new StringBuilder(String.valueOf(string).length() + 7);
+        sb.append("model(");
+        sb.append(string);
+        sb.append(")");
+        return sb.toString();
+    }
+}
