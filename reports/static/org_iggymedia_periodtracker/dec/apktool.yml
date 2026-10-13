@@ -1,0 +1,8 @@
+version: 3.0.3
+apkFileName: org.iggymedia.periodtracker.apk
+sdkInfo:
+  minSdkVersion: 29
+versionInfo:
+  versionCode: 99700651
+doNotCompress:
+- so
