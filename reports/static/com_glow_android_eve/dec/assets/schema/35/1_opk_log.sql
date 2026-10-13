@@ -1,0 +1,1 @@
+ALTER TABLE `opk_log` ADD `brand` TEXT;

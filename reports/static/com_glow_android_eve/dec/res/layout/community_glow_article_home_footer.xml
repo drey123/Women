@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#808080" android:gravity="center" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/community_glow_article_home_more" />
+    <LinearLayout android:orientation="vertical" android:id="@id/premium_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dp">
+            <View android:background="#cccccc" android:layout_width="96.0dp" android:layout_height="1.0dp" android:layout_marginStart="8.0dp" />
+            <ImageView android:layout_width="29.0dp" android:layout_height="29.0dp" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/swerve_diamond" android:scaleType="centerInside" />
+            <View android:background="#cccccc" android:layout_width="96.0dp" android:layout_height="1.0dp" android:layout_marginEnd="8.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/pure_gray" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="45.0dp" android:text="@string/alc_article_go_premium_article_chapter_page" />
+        <TextView android:textColor="#808080" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="50.0dp" android:layout_marginBottom="17.0dp" android:text="@string/alc_article_go_premium_desc" android:lineSpacingMultiplier="1.2" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tryPremiumBtn" android:background="@drawable/bg_rect_gradient" android:padding="@dimen/community_margin_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:layout_marginStart="40.0dp" android:layout_marginEnd="40.0dp" />
+    </LinearLayout>
+</LinearLayout>

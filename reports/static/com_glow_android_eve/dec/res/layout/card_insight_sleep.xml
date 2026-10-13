@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cardSleepIcon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="8.0dp" android:src="@null" android:layout_marginStart="12.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/cardSleepTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chart_sleep_title" android:fontFamily="sans-serif-medium" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="@id/cardSleepIcon" app:layout_constraintLeft_toRightOf="@id/cardSleepIcon" app:layout_constraintTop_toTopOf="@id/cardSleepIcon" />
+        <View android:id="@id/titleDivider" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="8.0dp" android:layout_marginHorizontal="12.0dp" app:layout_constraintTop_toBottomOf="@id/cardSleepTitle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/sleepCardContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" app:layout_constraintTop_toBottomOf="@id/titleDivider">
+            <include android:id="@id/sleepTrend0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:layout_marginHorizontal="12.0dp" layout="@layout/card_insight_sleep_trend" />
+            <include android:id="@id/sleepLastAndCurrentWeek" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:layout_marginHorizontal="12.0dp" layout="@layout/card_insight_sleep_contraction" />
+            <include android:id="@id/sleepHealthTip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:layout_marginHorizontal="12.0dp" layout="@layout/nurture_card_insight_health_tip" />
+            <include android:id="@id/sleepGlowMom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:layout_marginHorizontal="12.0dp" layout="@layout/card_insight_glow_mom" />
+            <include android:id="@id/sleepTrend1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:layout_marginHorizontal="12.0dp" layout="@layout/card_insight_sleep_trend" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/blurr_msg_radius" />
+    <padding android:left="@dimen/blurr_base_16" android:top="@dimen/blurr_base_12" android:right="@dimen/blurr_base_16" android:bottom="@dimen/blurr_base_12" />
+    <solid android:color="@color/purple" />
+</shape>

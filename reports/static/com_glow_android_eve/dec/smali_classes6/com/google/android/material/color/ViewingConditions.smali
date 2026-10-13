@@ -1,0 +1,1065 @@
+.class final Lcom/google/android/material/color/ViewingConditions;
+.super Ljava/lang/Object;
+.source "ViewingConditions.java"
+
+
+# static fields
+.field public static final DEFAULT:Lcom/google/android/material/color/ViewingConditions;
+
+
+# instance fields
+.field private final aw:F
+
+.field private final c:F
+
+.field private final fl:F
+
+.field private final flRoot:F
+
+.field private final n:F
+
+.field private final nbb:F
+
+.field private final nc:F
+
+.field private final ncb:F
+
+.field private final rgbD:[F
+
+.field private final z:F
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 6
+
+    .line 1
+    invoke-static {}, Lcom/google/android/material/color/ColorUtils;->whitePointD65()[F
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const/high16 v1, 0x42480000    # 50.0f
+
+    .line 6
+    .line 7
+    invoke-static {v1}, Lcom/google/android/material/color/ColorUtils;->yFromLstar(F)F
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v2
+
+    .line 11
+    float-to-double v2, v2
+
+    .line 12
+    const-wide v4, 0x404fd4bbab8b494cL    # 63.66197723675813
+
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    mul-double/2addr v2, v4
+
+    .line 18
+    const-wide/high16 v4, 0x4059000000000000L    # 100.0
+
+    .line 19
+    .line 20
+    div-double/2addr v2, v4
+
+    .line 21
+    double-to-float v2, v2
+
+    .line 22
+    const/high16 v3, 0x40000000    # 2.0f
+
+    .line 23
+    .line 24
+    const/4 v4, 0x0
+
+    .line 25
+    invoke-static {v0, v2, v1, v3, v4}, Lcom/google/android/material/color/ViewingConditions;->make([FFFFZ)Lcom/google/android/material/color/ViewingConditions;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    sput-object v0, Lcom/google/android/material/color/ViewingConditions;->DEFAULT:Lcom/google/android/material/color/ViewingConditions;
+
+    .line 30
+    .line 31
+    return-void
+.end method
+
+.method private constructor <init>(FFFFFF[FFFF)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Lcom/google/android/material/color/ViewingConditions;->n:F
+
+    .line 5
+    .line 6
+    iput p2, p0, Lcom/google/android/material/color/ViewingConditions;->aw:F
+
+    .line 7
+    .line 8
+    iput p3, p0, Lcom/google/android/material/color/ViewingConditions;->nbb:F
+
+    .line 9
+    .line 10
+    iput p4, p0, Lcom/google/android/material/color/ViewingConditions;->ncb:F
+
+    .line 11
+    .line 12
+    iput p5, p0, Lcom/google/android/material/color/ViewingConditions;->c:F
+
+    .line 13
+    .line 14
+    iput p6, p0, Lcom/google/android/material/color/ViewingConditions;->nc:F
+
+    .line 15
+    .line 16
+    iput-object p7, p0, Lcom/google/android/material/color/ViewingConditions;->rgbD:[F
+
+    .line 17
+    .line 18
+    iput p8, p0, Lcom/google/android/material/color/ViewingConditions;->fl:F
+
+    .line 19
+    .line 20
+    iput p9, p0, Lcom/google/android/material/color/ViewingConditions;->flRoot:F
+
+    .line 21
+    .line 22
+    iput p10, p0, Lcom/google/android/material/color/ViewingConditions;->z:F
+
+    .line 23
+    .line 24
+    return-void
+.end method
+
+.method public static make([FFFFZ)Lcom/google/android/material/color/ViewingConditions;
+    .locals 22
+
+    .line 1
+    move/from16 v0, p1
+
+    .line 2
+    .line 3
+    const/4 v1, 0x3
+
+    .line 4
+    sget-object v2, Lcom/google/android/material/color/Cam16;->XYZ_TO_CAM16RGB:[[F
+
+    .line 5
+    .line 6
+    const/4 v3, 0x0
+
+    .line 7
+    aget v4, p0, v3
+
+    .line 8
+    .line 9
+    aget-object v5, v2, v3
+
+    .line 10
+    .line 11
+    aget v6, v5, v3
+
+    .line 12
+    .line 13
+    mul-float/2addr v6, v4
+
+    .line 14
+    const/4 v7, 0x1
+
+    .line 15
+    aget v8, p0, v7
+
+    .line 16
+    .line 17
+    aget v9, v5, v7
+
+    .line 18
+    .line 19
+    mul-float/2addr v9, v8
+
+    .line 20
+    add-float/2addr v9, v6
+
+    .line 21
+    const/4 v6, 0x2
+
+    .line 22
+    aget v10, p0, v6
+
+    .line 23
+    .line 24
+    aget v5, v5, v6
+
+    .line 25
+    .line 26
+    mul-float/2addr v5, v10
+
+    .line 27
+    add-float/2addr v5, v9
+
+    .line 28
+    aget-object v9, v2, v7
+
+    .line 29
+    .line 30
+    aget v11, v9, v3
+
+    .line 31
+    .line 32
+    mul-float/2addr v11, v4
+
+    .line 33
+    aget v12, v9, v7
+
+    .line 34
+    .line 35
+    mul-float/2addr v12, v8
+
+    .line 36
+    add-float/2addr v12, v11
+
+    .line 37
+    aget v9, v9, v6
+
+    .line 38
+    .line 39
+    mul-float/2addr v9, v10
+
+    .line 40
+    add-float/2addr v9, v12
+
+    .line 41
+    aget-object v2, v2, v6
+
+    .line 42
+    .line 43
+    aget v11, v2, v3
+
+    .line 44
+    .line 45
+    mul-float/2addr v4, v11
+
+    .line 46
+    aget v11, v2, v7
+
+    .line 47
+    .line 48
+    mul-float/2addr v8, v11
+
+    .line 49
+    add-float/2addr v8, v4
+
+    .line 50
+    aget v2, v2, v6
+
+    .line 51
+    .line 52
+    mul-float/2addr v10, v2
+
+    .line 53
+    add-float/2addr v10, v8
+
+    .line 54
+    const/high16 v2, 0x41200000    # 10.0f
+
+    .line 55
+    .line 56
+    div-float v4, p3, v2
+
+    .line 57
+    .line 58
+    const v8, 0x3f4ccccd    # 0.8f
+
+    .line 59
+    .line 60
+    .line 61
+    add-float/2addr v4, v8
+
+    .line 62
+    float-to-double v11, v4
+
+    .line 63
+    const-wide v13, 0x3feccccccccccccdL    # 0.9
+
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    cmpl-double v11, v11, v13
+
+    .line 69
+    .line 70
+    const v12, 0x3f170a3d    # 0.59f
+
+    .line 71
+    .line 72
+    .line 73
+    if-ltz v11, :cond_0
+
+    .line 74
+    .line 75
+    const v8, 0x3f666666    # 0.9f
+
+    .line 76
+    .line 77
+    .line 78
+    sub-float v8, v4, v8
+
+    .line 79
+    .line 80
+    mul-float/2addr v8, v2
+
+    .line 81
+    const v2, 0x3f30a3d7    # 0.69f
+
+    .line 82
+    .line 83
+    .line 84
+    invoke-static {v12, v2, v8}, Lcom/google/android/material/color/MathUtils;->lerp(FFF)F
+
+    .line 85
+    .line 86
+    .line 87
+    move-result v2
+
+    .line 88
+    :goto_0
+    move/from16 v16, v2
+
+    .line 89
+    .line 90
+    goto :goto_1
+
+    .line 91
+    :cond_0
+    sub-float v8, v4, v8
+
+    .line 92
+    .line 93
+    mul-float/2addr v8, v2
+
+    .line 94
+    const v2, 0x3f066666    # 0.525f
+
+    .line 95
+    .line 96
+    .line 97
+    invoke-static {v2, v12, v8}, Lcom/google/android/material/color/MathUtils;->lerp(FFF)F
+
+    .line 98
+    .line 99
+    .line 100
+    move-result v2
+
+    .line 101
+    goto :goto_0
+
+    .line 102
+    :goto_1
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    .line 103
+    .line 104
+    if-eqz p4, :cond_1
+
+    .line 105
+    .line 106
+    move v8, v2
+
+    .line 107
+    goto :goto_2
+
+    .line 108
+    :cond_1
+    neg-float v8, v0
+
+    .line 109
+    const/high16 v11, 0x42280000    # 42.0f
+
+    .line 110
+    .line 111
+    sub-float/2addr v8, v11
+
+    .line 112
+    const/high16 v11, 0x42b80000    # 92.0f
+
+    .line 113
+    .line 114
+    div-float/2addr v8, v11
+
+    .line 115
+    float-to-double v11, v8
+
+    .line 116
+    invoke-static {v11, v12}, Ljava/lang/Math;->exp(D)D
+
+    .line 117
+    .line 118
+    .line 119
+    move-result-wide v11
+
+    .line 120
+    double-to-float v8, v11
+
+    .line 121
+    const v11, 0x3e8e38e4
+
+    .line 122
+    .line 123
+    .line 124
+    invoke-static {v8, v11, v2, v4}, Landroidx/compose/material3/internal/b;->b(FFFF)F
+
+    .line 125
+    .line 126
+    .line 127
+    move-result v8
+
+    .line 128
+    :goto_2
+    float-to-double v11, v8
+
+    .line 129
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    .line 130
+    .line 131
+    cmpl-double v13, v11, v13
+
+    .line 132
+    .line 133
+    if-lez v13, :cond_2
+
+    .line 134
+    .line 135
+    move v8, v2
+
+    .line 136
+    goto :goto_3
+
+    .line 137
+    :cond_2
+    const-wide/16 v13, 0x0
+
+    .line 138
+    .line 139
+    cmpg-double v11, v11, v13
+
+    .line 140
+    .line 141
+    if-gez v11, :cond_3
+
+    .line 142
+    .line 143
+    const/4 v8, 0x0
+
+    .line 144
+    :cond_3
+    :goto_3
+    const/high16 v11, 0x42c80000    # 100.0f
+
+    .line 145
+    .line 146
+    div-float v12, v11, v5
+
+    .line 147
+    .line 148
+    mul-float/2addr v12, v8
+
+    .line 149
+    add-float/2addr v12, v2
+
+    .line 150
+    sub-float/2addr v12, v8
+
+    .line 151
+    div-float v13, v11, v9
+
+    .line 152
+    .line 153
+    mul-float/2addr v13, v8
+
+    .line 154
+    add-float/2addr v13, v2
+
+    .line 155
+    sub-float/2addr v13, v8
+
+    .line 156
+    div-float/2addr v11, v10
+
+    .line 157
+    mul-float/2addr v11, v8
+
+    .line 158
+    add-float/2addr v11, v2
+
+    .line 159
+    sub-float/2addr v11, v8
+
+    .line 160
+    new-array v8, v1, [F
+
+    .line 161
+    .line 162
+    aput v12, v8, v3
+
+    .line 163
+    .line 164
+    aput v13, v8, v7
+
+    .line 165
+    .line 166
+    aput v11, v8, v6
+
+    .line 167
+    .line 168
+    const/high16 v11, 0x40a00000    # 5.0f
+
+    .line 169
+    .line 170
+    mul-float/2addr v11, v0
+
+    .line 171
+    add-float/2addr v11, v2
+
+    .line 172
+    div-float v11, v2, v11
+
+    .line 173
+    .line 174
+    mul-float v12, v11, v11
+
+    .line 175
+    .line 176
+    mul-float/2addr v12, v11
+
+    .line 177
+    mul-float/2addr v12, v11
+
+    .line 178
+    sub-float/2addr v2, v12
+
+    .line 179
+    mul-float/2addr v12, v0
+
+    .line 180
+    const v11, 0x3dcccccd    # 0.1f
+
+    .line 181
+    .line 182
+    .line 183
+    mul-float/2addr v11, v2
+
+    .line 184
+    mul-float/2addr v11, v2
+
+    .line 185
+    const-wide/high16 v13, 0x4014000000000000L    # 5.0
+
+    .line 186
+    .line 187
+    float-to-double v1, v0
+
+    .line 188
+    mul-double/2addr v1, v13
+
+    .line 189
+    invoke-static {v1, v2}, Ljava/lang/Math;->cbrt(D)D
+
+    .line 190
+    .line 191
+    .line 192
+    move-result-wide v0
+
+    .line 193
+    double-to-float v0, v0
+
+    .line 194
+    mul-float/2addr v11, v0
+
+    .line 195
+    add-float v0, v11, v12
+
+    .line 196
+    .line 197
+    invoke-static/range {p2 .. p2}, Lcom/google/android/material/color/ColorUtils;->yFromLstar(F)F
+
+    .line 198
+    .line 199
+    .line 200
+    move-result v1
+
+    .line 201
+    aget v2, p0, v7
+
+    .line 202
+    .line 203
+    div-float v12, v1, v2
+
+    .line 204
+    .line 205
+    float-to-double v1, v12
+
+    .line 206
+    invoke-static {v1, v2}, Ljava/lang/Math;->sqrt(D)D
+
+    .line 207
+    .line 208
+    .line 209
+    move-result-wide v13
+
+    .line 210
+    double-to-float v11, v13
+
+    .line 211
+    const v13, 0x3fbd70a4    # 1.48f
+
+    .line 212
+    .line 213
+    .line 214
+    add-float v21, v11, v13
+
+    .line 215
+    .line 216
+    const-wide v13, 0x3fc999999999999aL    # 0.2
+
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    invoke-static {v1, v2, v13, v14}, Ljava/lang/Math;->pow(DD)D
+
+    .line 222
+    .line 223
+    .line 224
+    move-result-wide v1
+
+    .line 225
+    double-to-float v1, v1
+
+    .line 226
+    const v2, 0x3f39999a    # 0.725f
+
+    .line 227
+    .line 228
+    .line 229
+    div-float v1, v2, v1
+
+    .line 230
+    .line 231
+    aget v2, v8, v3
+
+    .line 232
+    .line 233
+    mul-float/2addr v2, v0
+
+    .line 234
+    mul-float/2addr v2, v5
+
+    .line 235
+    float-to-double v13, v2
+
+    .line 236
+    const-wide/high16 v17, 0x4059000000000000L    # 100.0
+
+    .line 237
+    .line 238
+    div-double v13, v13, v17
+
+    .line 239
+    .line 240
+    move/from16 p3, v4
+
+    .line 241
+    .line 242
+    const-wide v3, 0x3fdae147ae147ae1L    # 0.42
+
+    .line 243
+    .line 244
+    .line 245
+    .line 246
+    .line 247
+    invoke-static {v13, v14, v3, v4}, Ljava/lang/Math;->pow(DD)D
+
+    .line 248
+    .line 249
+    .line 250
+    move-result-wide v13
+
+    .line 251
+    double-to-float v5, v13
+
+    .line 252
+    aget v11, v8, v7
+
+    .line 253
+    .line 254
+    mul-float/2addr v11, v0
+
+    .line 255
+    mul-float/2addr v11, v9
+
+    .line 256
+    float-to-double v13, v11
+
+    .line 257
+    div-double v13, v13, v17
+
+    .line 258
+    .line 259
+    invoke-static {v13, v14, v3, v4}, Ljava/lang/Math;->pow(DD)D
+
+    .line 260
+    .line 261
+    .line 262
+    move-result-wide v13
+
+    .line 263
+    double-to-float v9, v13
+
+    .line 264
+    aget v11, v8, v6
+
+    .line 265
+    .line 266
+    mul-float/2addr v11, v0
+
+    .line 267
+    mul-float/2addr v11, v10
+
+    .line 268
+    float-to-double v10, v11
+
+    .line 269
+    div-double v10, v10, v17
+
+    .line 270
+    .line 271
+    invoke-static {v10, v11, v3, v4}, Ljava/lang/Math;->pow(DD)D
+
+    .line 272
+    .line 273
+    .line 274
+    move-result-wide v3
+
+    .line 275
+    double-to-float v3, v3
+
+    .line 276
+    const/4 v4, 0x3
+
+    .line 277
+    new-array v10, v4, [F
+
+    .line 278
+    .line 279
+    const/4 v2, 0x0
+
+    .line 280
+    aput v5, v10, v2
+
+    .line 281
+    .line 282
+    aput v9, v10, v7
+
+    .line 283
+    .line 284
+    aput v3, v10, v6
+
+    .line 285
+    .line 286
+    aget v3, v10, v2
+
+    .line 287
+    .line 288
+    const/high16 v4, 0x43c80000    # 400.0f
+
+    .line 289
+    .line 290
+    mul-float v5, v3, v4
+
+    .line 291
+    .line 292
+    const v9, 0x41d90a3d    # 27.13f
+
+    .line 293
+    .line 294
+    .line 295
+    add-float/2addr v3, v9
+
+    .line 296
+    div-float/2addr v5, v3
+
+    .line 297
+    aget v3, v10, v7
+
+    .line 298
+    .line 299
+    mul-float v11, v3, v4
+
+    .line 300
+    .line 301
+    add-float/2addr v3, v9
+
+    .line 302
+    div-float/2addr v11, v3
+
+    .line 303
+    aget v3, v10, v6
+
+    .line 304
+    .line 305
+    mul-float/2addr v4, v3
+
+    .line 306
+    add-float/2addr v3, v9
+
+    .line 307
+    div-float/2addr v4, v3
+
+    .line 308
+    const/4 v3, 0x3
+
+    .line 309
+    new-array v3, v3, [F
+
+    .line 310
+    .line 311
+    const/4 v2, 0x0
+
+    .line 312
+    aput v5, v3, v2
+
+    .line 313
+    .line 314
+    aput v11, v3, v7
+
+    .line 315
+    .line 316
+    aput v4, v3, v6
+
+    .line 317
+    .line 318
+    const/high16 v4, 0x40000000    # 2.0f
+
+    .line 319
+    .line 320
+    aget v2, v3, v2
+
+    .line 321
+    .line 322
+    mul-float/2addr v2, v4
+
+    .line 323
+    aget v4, v3, v7
+
+    .line 324
+    .line 325
+    add-float/2addr v2, v4
+
+    .line 326
+    const v4, 0x3d4ccccd    # 0.05f
+
+    .line 327
+    .line 328
+    .line 329
+    aget v3, v3, v6
+
+    .line 330
+    .line 331
+    invoke-static {v3, v4, v2, v1}, Landroidx/compose/animation/a;->a(FFFF)F
+
+    .line 332
+    .line 333
+    .line 334
+    move-result v13
+
+    .line 335
+    new-instance v2, Lcom/google/android/material/color/ViewingConditions;
+
+    .line 336
+    .line 337
+    float-to-double v3, v0
+
+    .line 338
+    const-wide/high16 v5, 0x3fd0000000000000L    # 0.25
+
+    .line 339
+    .line 340
+    invoke-static {v3, v4, v5, v6}, Ljava/lang/Math;->pow(DD)D
+
+    .line 341
+    .line 342
+    .line 343
+    move-result-wide v3
+
+    .line 344
+    double-to-float v3, v3
+
+    .line 345
+    move-object v11, v2
+
+    .line 346
+    move v14, v1
+
+    .line 347
+    move v15, v1
+
+    .line 348
+    move/from16 v17, p3
+
+    .line 349
+    .line 350
+    move-object/from16 v18, v8
+
+    .line 351
+    .line 352
+    move/from16 v19, v0
+
+    .line 353
+    .line 354
+    move/from16 v20, v3
+
+    .line 355
+    .line 356
+    invoke-direct/range {v11 .. v21}, Lcom/google/android/material/color/ViewingConditions;-><init>(FFFFFF[FFFF)V
+
+    .line 357
+    .line 358
+    .line 359
+    return-object v2
+.end method
+
+
+# virtual methods
+.method public getAw()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/color/ViewingConditions;->aw:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getC()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/color/ViewingConditions;->c:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getFl()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/color/ViewingConditions;->fl:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getFlRoot()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/color/ViewingConditions;->flRoot:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getN()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/color/ViewingConditions;->n:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getNbb()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/color/ViewingConditions;->nbb:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getNc()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/color/ViewingConditions;->nc:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getNcb()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/color/ViewingConditions;->ncb:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getRgbD()[F
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/color/ViewingConditions;->rgbD:[F
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getZ()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/color/ViewingConditions;->z:F
+
+    .line 2
+    .line 3
+    return v0
+.end method

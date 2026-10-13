@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/themeView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/contraction_timer_theme" />
+    <include android:id="@id/launchView" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/contraction_timer_launch" />
+    <androidx.fragment.app.FragmentContainerView android:name="com.glow.android.kaylee.ui.tool.ContractionTimerHistoryFragment" android:id="@id/historyView" android:tag="history" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="16.0dp" app:behavior_peekHeight="60.0dp" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

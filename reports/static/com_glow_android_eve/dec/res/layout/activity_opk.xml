@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/opk_container" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.camera.view.PreviewView android:id="@id/viewPreview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/iv_result_rect" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/previewImg" android:background="@color/cameraFilter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="250.0dp" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/topMask" android:background="@color/cameraFilter" android:layout_width="match_parent" android:layout_height="170.0dp" />
+        <RelativeLayout android:id="@id/autoDetectWindow" android:visibility="visible" android:layout_width="match_parent" android:layout_height="250.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:id="@id/toolTip" android:background="@drawable/bg_corner_rect_333" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="The strip is not found. Try moving the camera around or adjusting the light." android:layout_marginHorizontal="24.0dp" android:paddingHorizontal="24.0dp" android:paddingVertical="8.0dp" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/iv_scan" android:visibility="visible" android:layout_width="match_parent" android:layout_height="40.0dp">
+            <View android:id="@id/detectWindow" android:layout_width="match_parent" android:layout_height="40.0dp" />
+            <ImageView android:id="@id/imageViewScan" android:background="@drawable/opk_ic_scan" android:layout_width="match_parent" android:layout_height="40.0dp" android:scaleType="fitXY" />
+        </RelativeLayout>
+        <View android:id="@id/bottomMask" android:background="@color/cameraFilter" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/debug_result_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:scaleType="fitXY" />
+        <ImageView android:id="@id/result_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dp" android:scaleType="fitXY" />
+        <RelativeLayout android:paddingTop="24.0dp" android:layout_width="match_parent" android:layout_height="240.0dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/flashBtn" android:background="@drawable/bg_opk_reader_btn" android:padding="12.0dp" android:layout_width="120.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="10.0dp" android:layout_alignParentStart="true">
+                <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_flash" android:scaleType="centerCrop" app:tint="@color/white" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/flashText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Turn on\nFlashlight" />
+            </LinearLayout>
+            <ImageView android:id="@id/takePhotoManuallyBtn" android:visibility="visible" android:layout_width="88.0dp" android:layout_height="88.0dp" android:src="@drawable/ic_opk_capture" android:layout_centerHorizontal="true" app:tint="@color/white" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/photoBtn" android:background="@drawable/bg_opk_reader_btn" android:padding="12.0dp" android:layout_width="120.0dp" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginRight="16.0dp" android:layout_alignParentEnd="true">
+                <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_photo" android:scaleType="centerCrop" app:tint="@color/white" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Photo\nLibrary" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/withoutImgBtn" android:background="@drawable/bg_opk_reader_btn" android:padding="12.0dp" android:layout_width="120.0dp" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginRight="16.0dp" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/icon_image" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_opk_reader_no_img" android:scaleType="centerCrop" app:tint="@color/white" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Log without\nimage" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/tab_bar" android:background="#000" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dp" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/autoMaticBtn" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/ic_auto" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_automatic_btn" android:scaleType="centerCrop" app:tint="@color/white" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CAMERA" />
+                    <View android:id="@id/line_auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_marginTop="4.0dp" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/manualBtn" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/ic_manual" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_manual_btn" android:scaleType="centerCrop" app:tint="#999" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#999" android:gravity="center" android:id="@id/txt_manual" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MANUAL" />
+                    <View android:id="@id/line_manual" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_marginTop="4.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#999" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginBottom="24.0dp" android:layout_alignParentBottom="true" />
+            <View android:background="#000" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/manualSampleView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="120.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Please align your strip to the dash line." android:textAlignment="center" />
+        <ImageView android:id="@id/imageView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:src="@null" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:background="@color/transparent" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <ImageView android:id="@id/close" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_bottom_sheet_close" app:tint="@color/white" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="24.0dp" android:text="Record Your Test" android:layout_weight="1.0" />
+        <ImageView android:id="@id/info" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_info_16dp" android:scaleType="center" app:tint="@color/white" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/auto_top_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="120.0dp" android:text="Please put the strip within the frame." android:textAlignment="center" />
+    <androidx.compose.ui.platform.ComposeView android:layout_gravity="bottom" android:id="@id/buyOpkView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="116.0dp" android:layout_marginHorizontal="12.0dp" />
+</FrameLayout>

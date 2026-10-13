@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/text_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:fontFamily="sans-serif-medium" android:layout_marginStart="16.0dp" android:lineHeight="22.0sp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/text_view_count" android:background="@drawable/round_corner_36dp" android:layout_width="wrap_content" android:layout_height="24.0dp" android:minWidth="24.0dp" android:includeFontPadding="false" android:layout_marginStart="8.0dp" android:backgroundTint="@color/nurture" app:layout_constraintBottom_toBottomOf="@id/text_view_title" app:layout_constraintLeft_toRightOf="@id/text_view_title" app:layout_constraintTop_toTopOf="@id/text_view_title" />
+    <ImageView android:id="@id/image_view_info" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/ic_info" android:scaleType="centerInside" android:layout_marginEnd="8.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.glow.android.kaylee.ui.newhome.NestedScrollableHost android:id="@id/pickerContainer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/text_view_title">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+            <com.glow.android.kaylee.ui.dailydata.picker.ImageTextPicker android:id="@id/picker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </com.glow.android.kaylee.ui.newhome.NestedScrollableHost>
+    <androidx.compose.ui.platform.ComposeView android:id="@id/severityPicker" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/pickerContainer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

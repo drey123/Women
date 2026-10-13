@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fafafa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/emptyLayout" android:background="#fafafa" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16.0sp" android:textColor="#808080" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="148.0dp" android:text="@string/no_pregnancy_record_hint" android:lineSpacingExtra="8.0sp" />
+    </FrameLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@id/addButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:src="@drawable/ic_add_white_24dp_glow" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:elevation="4.0dp" app:fab_size="normal" app:tint="@color/white" />
+</RelativeLayout>

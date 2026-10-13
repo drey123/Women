@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/settings_primary_color" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/personal_privacy_and_data" android:fontFamily="sans-serif-medium" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/personalizeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interest_based_ads" android:layout_centerVertical="true" />
+        <androidx.appcompat.widget.SwitchCompat android:enabled="false" android:id="@id/personalizeSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interest_based_ads_desc" android:paddingHorizontal="16.0dp" />
+    <RelativeLayout android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/MFAText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mfa" android:layout_centerVertical="true" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/MFASwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/colorPrimary" android:gravity="center_vertical" android:id="@id/title" android:paddingLeft="24.0dp" android:paddingTop="24.0dp" android:paddingRight="24.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/profile_switch_status_title" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/description" android:background="@color/colorPrimary" android:paddingLeft="24.0dp" android:paddingTop="16.0dp" android:paddingRight="24.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/profile_switch_status_hint" />
+    <ViewStub android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

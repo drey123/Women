@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dailydata_cell_bg" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/dark_gray" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="sans-serif" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/light_gray" android:id="@id/start_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:maxLines="1" />
+</LinearLayout>

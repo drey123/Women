@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/top_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:theme="@style/ThemeOverlay.Glow.ActionBar">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?android:actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/top_bar">
+        <EditText android:textSize="18.0sp" android:textColorHint="@color/light_grey" android:gravity="left|top" android:id="@id/text_editor" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/notes_add" android:lineSpacingMultiplier="1.1" android:inputType="textCapSentences|textMultiLine|textImeMultiLine" />
+        <TextView android:layout_gravity="right|bottom" android:id="@id/remain_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:layout_marginBottom="10.0dp" />
+    </FrameLayout>
+</RelativeLayout>

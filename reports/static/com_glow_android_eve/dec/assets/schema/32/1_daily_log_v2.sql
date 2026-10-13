@@ -1,0 +1,1 @@
+ALTER TABLE `daily_log_v2` ADD `time_modified` INTEGER NOT NULL DEFAULT 0;

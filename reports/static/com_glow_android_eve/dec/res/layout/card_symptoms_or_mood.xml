@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="8.0dp" app:cardElevation="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/cardTitle" android:layout_width="match_parent" android:layout_height="60.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="39.0dp">
+                <ImageView android:id="@id/cardIcon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@null" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/cardName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/symptoms" android:layout_toRightOf="@id/cardIcon" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" android:layout_marginStart="6.0dp" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/unreadCount" android:background="@drawable/bg_round_corner_red_10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="20.0dp" android:minWidth="20.0dp" android:layout_toRightOf="@id/cardName" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" android:layout_marginStart="4.0dp" />
+            </RelativeLayout>
+            <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1.0dp" app:layout_constraintTop_toBottomOf="@id/cardTitle" />
+        </LinearLayout>
+        <androidx.compose.ui.platform.ComposeView android:id="@id/itemSelector" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="100.0dp" android:layout_marginTop="18.0dp" android:paddingStart="16.0dp" app:layout_constraintTop_toBottomOf="@id/cardTitle" />
+        <com.glow.android.ui.widget.compose.EmptyHint android:id="@id/emptyHint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16.0dp" android:layout_marginVertical="16.0dp" app:layout_constraintTop_toBottomOf="@id/itemSelector" />
+        <include android:id="@id/healthTip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="10.0dp" app:layout_constraintTop_toBottomOf="@id/emptyHint" app:layout_goneMarginTop="10.0dp" layout="@layout/card_health_tip" />
+        <include android:id="@id/patternChart" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginHorizontal="10.0dp" app:layout_constraintTop_toBottomOf="@id/healthTip" layout="@layout/card_pattern_chart" />
+        <include android:id="@id/trendChartCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" app:layout_constraintBottom_toTopOf="@id/symptomBarChartCard" app:layout_constraintTop_toBottomOf="@id/patternChart" layout="@layout/card_trend_chart" />
+        <include android:id="@id/symptomBarChartCard" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:layout_marginHorizontal="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/trendChartCard" layout="@layout/card_cycle_buddies_symptom" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="30.0dp" android:paddingBottom="20.0dp" android:layout_width="300.0dp" android:layout_height="wrap_content" android:paddingStart="30.0dp" android:paddingEnd="30.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dp" android:layout_height="23.0dp" android:src="@drawable/ic_chart" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/chart_add_data_title" android:fontFamily="sans-serif" />
+    <com.glow.android.kaylee.ui.widget.ToolTipTextView android:textSize="14.0sp" android:textColor="@color/text_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:text="@string/sign_up_bmi_title" android:fontFamily="sans-serif" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="30.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date" android:layout_centerVertical="true" android:fontFamily="sans-serif" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:id="@id/date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:fontFamily="sans-serif" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#959595" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chart_add_data_date_hint" android:fontFamily="sans-serif" />
+    <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/weight_input_outer" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/weight" android:layout_toStartOf="@id/weight_unit" app:hintAnimationEnabled="true">
+            <EditText android:id="@id/weight_input" android:nextFocusDown="@id/head_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:digits="0123456789.," android:inputType="numberDecimal" android:imeOptions="actionNext" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatSpinner android:id="@id/weight_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/height_input_outer" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/height" android:layout_toStartOf="@id/height_unit" app:hintAnimationEnabled="true">
+            <EditText android:id="@id/height_input" android:nextFocusDown="@id/head_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:digits="0123456789.," android:inputType="numberDecimal" android:imeOptions="actionNext" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatSpinner android:id="@id/height_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="50.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BMI" android:layout_centerVertical="true" android:fontFamily="sans-serif" />
+        <TextView android:textSize="16.0sp" android:textColor="#c0c0c0" android:id="@id/bmi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_centerVertical="true" android:lineSpacingExtra="8.0sp" android:fontFamily="sans-serif" android:layout_marginEnd="16.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/dark_periwinkle" android:id="@id/dismiss_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chart_add_data_later" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:layout_marginEnd="24.0dp" android:letterSpacing="0.04" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/dark_periwinkle" android:id="@id/save_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:layout_marginEnd="18.0dp" android:letterSpacing="0.04" />
+    </LinearLayout>
+</LinearLayout>

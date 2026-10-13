@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tips" android:background="#eeeffa" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_customize_log_drag_tips" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:background="@color/white" android:paddingBottom="68.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/tips" />
+    <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/saveButton" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp" android:layout_marginBottom="16.0dp" android:text="@string/done" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-medium" />
+</RelativeLayout>

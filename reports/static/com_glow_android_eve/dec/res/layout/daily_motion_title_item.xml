@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentEnd="true" app:layout_constraintTop_toTopOf="parent" />
+    <Space android:id="@id/topSpace" android:layout_width="match_parent" android:layout_height="56.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="26.0sp" android:textColor="@color/white" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-black" android:layout_marginStart="16.0dp" app:layout_constraintBottom_toTopOf="@id/desc" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/topSpace" app:layout_constraintVertical_chainStyle="packed" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_below="@id/label" android:layout_alignBottom="@id/bg" android:lineSpacingMultiplier="1.36" android:fontFamily="sans-serif-light" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/label" />
+</androidx.constraintlayout.widget.ConstraintLayout>

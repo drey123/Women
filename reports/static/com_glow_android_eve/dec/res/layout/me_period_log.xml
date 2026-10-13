@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="?android:actionBarSize">
+            <TextView android:layout_gravity="right" android:id="@id/nextActionView" android:text="@string/sign_up_next" style="@style/MenuButton" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <TextView android:id="@id/tips" android:text="@string/sign_up_add_period_tip" style="@style/TopBanner" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <com.glow.android.ui.widget.WeekHeader android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+{
+    "name": "emma",
+    "version": "5.0.3",
+    "rn_version": "0.79.2",
+    "platform": "android",
+    "release": "rn-emma-android@5.0.3-20251114020623",
+    "commit_hash": "17d68f4f2ab5ac5328f43c7ae11abaa4f0812b9b",
+    "min_ios_version": "11.10.9",
+    "max_ios_version": "",
+    "min_android_version": "11.14.1",
+    "max_android_version": ""
+}

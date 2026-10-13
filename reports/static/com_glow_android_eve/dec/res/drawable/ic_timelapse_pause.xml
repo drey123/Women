@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="65.0dp" android:width="64.0dp" android:viewportWidth="64.0" android:viewportHeight="65.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000" android:pathData="M32,33m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0" android:strokeColor="#000000" android:strokeWidth="4.0" android:strokeAlpha="0.2" />
+    <path android:fillColor="#4a4a4a" android:pathData="M32,32m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.15" android:fillType="nonZero" />
+    <path android:fillColor="#00000000" android:pathData="M32,32m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0" android:strokeColor="#39b20b" android:strokeWidth="4.0" android:fillType="nonZero" />
+    <path android:fillColor="#000000" android:pathData="M36.53,21L39.47,21A1.53,1.53 0,0 1,41 22.53L41,43.47A1.53,1.53 0,0 1,39.47 45L36.53,45A1.53,1.53 0,0 1,35 43.47L35,22.53A1.53,1.53 0,0 1,36.53 21z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.2" android:fillType="nonZero" />
+    <path android:fillColor="#000000" android:pathData="M24.53,21L27.47,21A1.53,1.53 0,0 1,29 22.53L29,43.47A1.53,1.53 0,0 1,27.47 45L24.53,45A1.53,1.53 0,0 1,23 43.47L23,22.53A1.53,1.53 0,0 1,24.53 21z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.2" android:fillType="nonZero" />
+    <path android:fillColor="#39b20b" android:pathData="M24.53,20L27.47,20A1.53,1.53 0,0 1,29 21.53L29,42.47A1.53,1.53 0,0 1,27.47 44L24.53,44A1.53,1.53 0,0 1,23 42.47L23,21.53A1.53,1.53 0,0 1,24.53 20z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#39b20b" android:pathData="M36.53,20L39.47,20A1.53,1.53 0,0 1,41 21.53L41,42.47A1.53,1.53 0,0 1,39.47 44L36.53,44A1.53,1.53 0,0 1,35 42.47L35,21.53A1.53,1.53 0,0 1,36.53 20z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

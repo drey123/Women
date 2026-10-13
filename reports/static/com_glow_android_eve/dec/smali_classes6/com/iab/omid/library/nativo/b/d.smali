@@ -1,0 +1,38 @@
+.class public Lcom/iab/omid/library/nativo/b/d;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final b:Lcom/iab/omid/library/nativo/b/d;
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "StaticFieldLeak"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field public a:Landroid/content/Context;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/iab/omid/library/nativo/b/d;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/iab/omid/library/nativo/b/d;->b:Lcom/iab/omid/library/nativo/b/d;
+
+    .line 7
+    .line 8
+    return-void
+.end method

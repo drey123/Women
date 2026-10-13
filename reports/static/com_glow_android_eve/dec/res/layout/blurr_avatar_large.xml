@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/blurr_avatar_default_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="28.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/initial" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/avatar_img" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:layout_gravity="right|bottom" android:id="@id/badge" android:layout_width="@dimen/blurr_avatar_badge_large" android:layout_height="@dimen/blurr_avatar_badge_large" />
+</FrameLayout>

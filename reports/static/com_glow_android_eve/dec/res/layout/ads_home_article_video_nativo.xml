@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_sage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/ads_comp_nativo_template_large_video" />
+    <View android:layout_gravity="bottom" style="@style/Divider" />
+</LinearLayout>

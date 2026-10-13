@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/forecast_bg" android:background="@drawable/bg_gradient_light_green" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/closeButton" android:padding="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_green" />
+    <com.glow.android.kaylee.ui.widget.TrackingScrollView android:id="@id/cardList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/closeButton" />
+    <com.glow.android.freeway.premium.FloatingPremiumButtonWithDiscount android:id="@id/goPremiumBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

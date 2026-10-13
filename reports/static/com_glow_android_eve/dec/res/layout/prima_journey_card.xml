@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/header" android:paddingLeft="@dimen/prima_normal_card_padding" android:paddingRight="@dimen/prima_normal_card_padding" android:layout_width="match_parent" android:layout_height="64.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/grey_500" android:id="@id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textAllCaps="true" />
+            <ImageView android:id="@id/header_icon" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/grey_500" android:id="@id/current_app_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prima_journey_you_are_here" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" />
+        <Button android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:minWidth="0.0dp" android:text="@string/prima_download" style="@style/Prima_FlatButtonWhite" />
+    </LinearLayout>
+</merge>

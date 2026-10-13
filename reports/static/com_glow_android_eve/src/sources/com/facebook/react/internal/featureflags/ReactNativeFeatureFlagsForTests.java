@@ -1,0 +1,26 @@
+package com.facebook.react.internal.featureflags;
+
+import A2.d;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: compiled from: ReactNativeFeatureFlagsForTests.kt */
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0006\u0010\u0004\u001a\u00020\u0005¨\u0006\u0006"}, d2 = {"Lcom/facebook/react/internal/featureflags/ReactNativeFeatureFlagsForTests;", "", "<init>", "()V", "setUp", "", "ReactAndroid_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+public final class ReactNativeFeatureFlagsForTests {
+
+    @NotNull
+    public static final ReactNativeFeatureFlagsForTests INSTANCE = new ReactNativeFeatureFlagsForTests();
+
+    private ReactNativeFeatureFlagsForTests() {
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final ReactNativeFeatureFlagsAccessor setUp$lambda$0() {
+        return new ReactNativeFeatureFlagsLocalAccessor();
+    }
+
+    public final void setUp() {
+        ReactNativeFeatureFlags.INSTANCE.setAccessorProvider$ReactAndroid_release(new d(25));
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_mode_edit_green_24dp" android:id="@id/editImageButton" android:title="Edit" app:showAsAction="ifRoom" app:tint="@color/white" />
+    <item android:icon="@drawable/ic_share_green_24dp" android:id="@id/shareImageButton" android:title="Share" app:showAsAction="ifRoom" app:tint="@color/white" />
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/toolbar" android:background="@color/background_holo_light" android:layout_width="match_parent" android:layout_height="?android:actionBarSize">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="24.0sp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_story_title" android:layout_centerInParent="true" android:fontFamily="regular" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/next_button_color_selector" android:gravity="center" android:layout_gravity="right" android:id="@id/next_action" android:background="?android:selectableItemBackground" android:layout_width="72.0dp" android:layout_height="match_parent" android:layout_marginLeft="1.0dp" android:text="@string/share_story_share_button" android:textAllCaps="true" android:fontFamily="sans-serif" style="@style/SignUpMenuButton" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/next_button_color_selector" android:gravity="center" android:layout_gravity="left|center" android:id="@id/back_action" android:background="?android:selectableItemBackground" android:layout_width="72.0dp" android:layout_height="match_parent" android:layout_marginRight="1.0dp" android:text="@string/share_story_skip" android:textAllCaps="true" android:fontFamily="sans-serif" style="@style/SignUpMenuButton" />
+            </FrameLayout>
+        </FrameLayout>
+        <View android:background="@null" android:layout_width="match_parent" android:layout_height="2.5dp" />
+    </LinearLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_bar" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="2.0dp" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="20.0dp">
+                <CheckBox android:textSize="16.0sp" android:textColor="@color/community_gray" android:layout_gravity="left|center" android:id="@id/anonymous_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/community_create_topic_anonymous_hint" />
+                <View android:layout_gravity="right|center" android:id="@id/insert_image_button" android:background="@drawable/ic_gallery" android:layout_width="32.0dp" android:layout_height="32.0dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <HorizontalScrollView android:id="@id/gallery_scroll_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_bar">
+            <com.glow.android.prime.community.ui.customizeview.InsertedImageGallery android:orientation="horizontal" android:id="@id/gallery" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/gallery_scroll_container">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="match_parent" android:layout_height="120.0dp" android:src="@null" android:scaleType="centerCrop" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:paddingLeft="25.0dp" android:paddingRight="25.0dp" android:layout_width="match_parent" android:layout_height="120.0dp" android:text="@string/share_story_hint" android:shadowColor="@color/black" android:shadowDy="1.0" android:shadowRadius="2.0" />
+                </FrameLayout>
+                <View android:background="#cfdce5" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                <EditText android:textSize="18.0sp" android:textColorHint="@color/community_gray" android:gravity="left|top" android:id="@id/content_editor" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10.0dp" android:layout_marginTop="3.0dp" android:minHeight="100.0dp" android:hint="@string/community_create_topic_content_hint" android:lineSpacingMultiplier="1.1" android:inputType="textCapSentences|textMultiLine|textImeMultiLine" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

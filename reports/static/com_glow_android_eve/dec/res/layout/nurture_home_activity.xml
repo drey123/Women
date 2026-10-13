@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawerLayout" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/homeFragmentsContainer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.glow.android.kaylee.ui.widget.WindowInsetsFrameLayout android:id="@id/home_container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="56.0dp" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/bottomBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_alignParentBottom="true" app:itemIconTint="@drawable/nav_color_selector" app:itemTextColor="@drawable/nav_color_selector" app:labelVisibilityMode="labeled" />
+        <LinearLayout android:orientation="vertical" android:id="@id/tip_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/bottomBar" android:translationY="7.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tip_text" android:background="@drawable/home_nav_tip_black_bg" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="50.0dp" android:text="@string/tutorial_community" android:includeFontPadding="false" android:fontFamily="normal" />
+            <View android:layout_gravity="center_horizontal" android:background="@drawable/home_black_triangle" android:layout_width="20.0dp" android:layout_height="14.0dp" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container_registry_tab_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="56.0dp" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/image_view_tip_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_drop_down_purple_24dp" android:translationX="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.83" app:layout_constraintStart_toStartOf="parent" />
+            <TextView android:textSize="16.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/text_view_tip" android:background="@drawable/round_corner_purple_button_bg" android:layout_width="300.0dp" android:layout_height="match_parent" android:layout_marginBottom="-10.0dp" android:text="@string/baby_registry_tip" android:lineSpacingExtra="4.0dp" android:layout_marginEnd="8.0dp" android:paddingHorizontal="8.0dp" android:paddingVertical="16.0dp" app:layout_constraintBottom_toTopOf="@id/image_view_tip_arrow" app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.compose.ui.platform.ComposeView android:id="@id/fullOverlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="10.0dp" />
+        <FrameLayout android:id="@id/amazonPromoLayer" android:background="@color/overlay_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="10.0dp">
+            <ImageView android:layout_gravity="center" android:id="@id/amazonPromoPic" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@null" android:layout_marginHorizontal="16.0dp" />
+        </FrameLayout>
+        <WebView android:id="@id/web_view" android:background="@color/transparent" android:layout_width="1.0dp" android:layout_height="1.0dp" />
+    </RelativeLayout>
+    <com.glow.android.kaylee.ui.newhome.sidebar.NavDrawerView android:layout_gravity="start" android:id="@id/navView" android:background="#fff" android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:maxWidth="400.0dp" />
+</androidx.drawerlayout.widget.DrawerLayout>

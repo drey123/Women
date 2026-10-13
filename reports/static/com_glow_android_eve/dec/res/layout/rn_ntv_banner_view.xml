@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/bannerContainer" android:background="@color/nativo_ads_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView android:gravity="center_horizontal" android:id="@id/webViewContainer" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/containerSponsor" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/containerSponsor" android:background="@color/white" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/webViewContainer">
+        <TextView android:textSize="12.0sp" android:textColor="#cccccc" android:layout_gravity="left|center" android:id="@id/sponsoredLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sponsored" />
+        <ImageButton android:layout_gravity="right|center" android:id="@id/buttonMore" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ads_more" android:tint="?android:textColorPrimary" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

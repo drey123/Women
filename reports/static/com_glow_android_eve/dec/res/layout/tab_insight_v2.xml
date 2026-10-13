@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="28.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tabName" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/redDot" android:background="@drawable/red_dot" android:visibility="gone" android:layout_width="5.0dp" android:layout_height="5.0dp" android:layout_marginTop="2.0dp" app:layout_constraintLeft_toRightOf="@id/tabName" app:layout_constraintTop_toTopOf="@id/tabName" />
+    <View android:id="@id/tabUnderline" android:background="@color/black" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="2.0dp" android:layout_marginTop="8.0dp" app:layout_constraintLeft_toLeftOf="@id/tabName" app:layout_constraintRight_toRightOf="@id/tabName" app:layout_constraintTop_toBottomOf="@id/tabName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

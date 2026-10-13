@@ -1,0 +1,140 @@
+package com.glow.android.prime.onboarding.common;
+
+import androidx.compose.foundation.layout.Arrangement;
+import androidx.compose.foundation.layout.ColumnKt;
+import androidx.compose.foundation.layout.ColumnScopeInstance;
+import androidx.compose.foundation.layout.PaddingKt;
+import androidx.compose.foundation.layout.SizeKt;
+import androidx.compose.runtime.Applier;
+import androidx.compose.runtime.Composable;
+import androidx.compose.runtime.ComposableTarget;
+import androidx.compose.runtime.ComposablesKt;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.CompositionLocalMap;
+import androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller;
+import androidx.compose.runtime.EffectsKt;
+import androidx.compose.runtime.ScopeUpdateScope;
+import androidx.compose.runtime.Updater;
+import androidx.compose.runtime.internal.ComposableLambdaKt;
+import androidx.compose.ui.Alignment;
+import androidx.compose.ui.ComposedModifierKt;
+import androidx.compose.ui.Modifier;
+import androidx.compose.ui.layout.MeasurePolicy;
+import androidx.compose.ui.node.ComposeUiNode;
+import androidx.compose.ui.res.StringResources_androidKt;
+import androidx.compose.ui.text.TextStyle;
+import androidx.compose.ui.text.input.KeyboardType;
+import androidx.compose.ui.unit.Dp;
+import androidx.lifecycle.HasDefaultViewModelProviderFactory;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelStoreOwner;
+import androidx.lifecycle.viewmodel.CreationExtras;
+import androidx.lifecycle.viewmodel.compose.LocalViewModelStoreOwner;
+import androidx.lifecycle.viewmodel.compose.ViewModelKt;
+import com.glow.android.eve.R;
+import com.glow.android.prime.onboarding.OnboardingViewModel;
+import com.glow.android.prime.onboarding.data.PageInfo;
+import com.glow.android.prime.ui.widget.compose.TextFieldKt;
+import com.glow.android.prime.ui.widget.compose.TextKt;
+import com.glow.android.prime.ui.widget.compose.TextStylesKt;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.EmptyCoroutineContext;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Reflection;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlin.reflect.KClass;
+import kotlinx.coroutines.CoroutineScope;
+import org.jetbrains.annotations.Nullable;
+import p044k2.c;
+import p044k2.d;
+
+/* JADX INFO: compiled from: OnboardingUserName.kt */
+/* JADX INFO: loaded from: classes4.dex */
+@Metadata(d1 = {"\u0000\u0002\n\u0000¨\u0006\u0000"}, d2 = {"prime_release"}, k = 2, mv = {2, 0, 0})
+@SourceDebugExtension
+public final class OnboardingUserNameKt {
+    @ComposableTarget(applier = "androidx.compose.ui.UiComposable")
+    @Composable
+    public static final void a(@Nullable OnboardingViewModel onboardingViewModel, @Nullable final PageInfo pageInfo, boolean z2, @Nullable Composer composer, int i) {
+        Composer composerStartRestartGroup = composer.startRestartGroup(-462688192);
+        composerStartRestartGroup.startReplaceableGroup(1729797275);
+        ViewModelStoreOwner current = LocalViewModelStoreOwner.INSTANCE.getCurrent(composerStartRestartGroup, 6);
+        if (current == null) {
+            throw new IllegalStateException("No ViewModelStoreOwner was provided via LocalViewModelStoreOwner".toString());
+        }
+        ViewModel viewModel = ViewModelKt.viewModel((KClass<ViewModel>) Reflection.a.b(OnboardingViewModel.class), current, (String) null, (ViewModelProvider.Factory) null, current instanceof HasDefaultViewModelProviderFactory ? ((HasDefaultViewModelProviderFactory) current).getDefaultViewModelCreationExtras() : CreationExtras.Empty.INSTANCE, composerStartRestartGroup, 0, 0);
+        composerStartRestartGroup.endReplaceableGroup();
+        final OnboardingViewModel onboardingViewModel2 = (OnboardingViewModel) viewModel;
+        OnboardingBaseKt.a(onboardingViewModel2, false, 0, null, null, null, z2, false, null, new c(onboardingViewModel2, 7), ComposableLambdaKt.rememberComposableLambda(-1842410160, true, new Function2<Composer, Integer, Unit>() { // from class: com.glow.android.prime.onboarding.common.OnboardingUserNameKt$OnboardingUserName$2
+            /* JADX WARN: Multi-variable type inference failed */
+            @Override // kotlin.jvm.functions.Function2
+            public final Unit invoke(Composer composer2, Integer num) {
+                Composer composer3 = composer2;
+                if ((num.intValue() & 11) == 2 && composer3.getSkipping()) {
+                    composer3.skipToGroupEnd();
+                } else {
+                    Modifier.Companion companion = Modifier.INSTANCE;
+                    Modifier modifierM674paddingVpY3zN4$default = PaddingKt.m674paddingVpY3zN4$default(SizeKt.fillMaxSize$default(companion, 0.0f, 1, null), Dp.m6628constructorimpl(24), 0.0f, 2, null);
+                    MeasurePolicy measurePolicyColumnMeasurePolicy = ColumnKt.columnMeasurePolicy(Arrangement.INSTANCE.getTop(), Alignment.INSTANCE.getCenterHorizontally(), composer3, 48);
+                    int currentCompositeKeyHash = ComposablesKt.getCurrentCompositeKeyHash(composer3, 0);
+                    CompositionLocalMap currentCompositionLocalMap = composer3.getCurrentCompositionLocalMap();
+                    Modifier modifierMaterializeModifier = ComposedModifierKt.materializeModifier(composer3, modifierM674paddingVpY3zN4$default);
+                    ComposeUiNode.Companion companion2 = ComposeUiNode.INSTANCE;
+                    Function0<ComposeUiNode> constructor = companion2.getConstructor();
+                    if (!(composer3.getApplier() instanceof Applier)) {
+                        ComposablesKt.invalidApplier();
+                    }
+                    composer3.startReusableNode();
+                    if (composer3.getInserting()) {
+                        composer3.createNode(constructor);
+                    } else {
+                        composer3.useNode();
+                    }
+                    Composer composerM3657constructorimpl = Updater.m3657constructorimpl(composer3);
+                    Function2 function2S = androidx.compose.animation.a.s(companion2, composerM3657constructorimpl, measurePolicyColumnMeasurePolicy, composerM3657constructorimpl, currentCompositionLocalMap);
+                    if (composerM3657constructorimpl.getInserting() || !Intrinsics.areEqual(composerM3657constructorimpl.rememberedValue(), Integer.valueOf(currentCompositeKeyHash))) {
+                        android.support.v4.media.a.A(currentCompositeKeyHash, composerM3657constructorimpl, currentCompositeKeyHash, function2S);
+                    }
+                    Updater.m3664setimpl(composerM3657constructorimpl, modifierMaterializeModifier, companion2.getSetModifier());
+                    ColumnScopeInstance columnScopeInstance = ColumnScopeInstance.INSTANCE;
+                    Object objRememberedValue = composer3.rememberedValue();
+                    if (objRememberedValue == Composer.INSTANCE.getEmpty()) {
+                        objRememberedValue = android.support.v4.media.a.e(EffectsKt.createCompositionCoroutineScope(EmptyCoroutineContext.f25412b, composer3), composer3);
+                    }
+                    CoroutineScope coroutineScope = ((CompositionScopedCoroutineScopeCanceller) objRememberedValue).getCoroutineScope();
+                    p051n4.a.l(96, companion, composer3, 6);
+                    TextStyle textStyle = TextStylesKt.c;
+                    PageInfo pageInfo2 = pageInfo;
+                    String strStringResource = pageInfo2 != null ? pageInfo2.a : null;
+                    composer3.startReplaceGroup(-1073269648);
+                    if (strStringResource == null) {
+                        strStringResource = StringResources_androidKt.stringResource(R.string.prime_onboarding_user_name_title, composer3, 0);
+                    }
+                    composer3.endReplaceGroup();
+                    TextKt.a(null, textStyle, strStringResource, 0L, composer3, 48, 9);
+                    String str = pageInfo2 != null ? pageInfo2.f9790b : null;
+                    composer3.startReplaceGroup(-1073265924);
+                    if (str != null) {
+                        p051n4.a.l(20, companion, composer3, 6);
+                        TextKt.a(null, TextStylesKt.f10041e, str, 0L, composer3, 48, 9);
+                    }
+                    composer3.endReplaceGroup();
+                    p051n4.a.l(50, companion, composer3, 6);
+                    Modifier modifierM722width3ABfNKs = SizeKt.m722width3ABfNKs(companion, Dp.m6628constructorimpl(200));
+                    OnboardingViewModel onboardingViewModel3 = onboardingViewModel2;
+                    TextFieldKt.a(modifierM722width3ABfNKs, (String) onboardingViewModel3.f9533q.getValue(), new b(coroutineScope, onboardingViewModel3, 1), "First and Last", null, null, KeyboardType.INSTANCE.m6332getTextPjHm6EE(), null, null, composer3, 1575942, 432);
+                    composer3.endNode();
+                }
+                return Unit.a;
+            }
+        }, composerStartRestartGroup, 54), false, composerStartRestartGroup, (((i & (-15)) << 12) & 3670016) | 8, 6, 2494);
+        ScopeUpdateScope scopeUpdateScopeEndRestartGroup = composerStartRestartGroup.endRestartGroup();
+        if (scopeUpdateScopeEndRestartGroup != null) {
+            scopeUpdateScopeEndRestartGroup.updateScope(new d(onboardingViewModel2, pageInfo, z2, i, 3));
+        }
+    }
+}

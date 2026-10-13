@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bannerImage" android:layout_width="match_parent" android:layout_height="10.0dp" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="13.0dp" android:layout_marginRight="24.0dp" android:text="@string/pregnant_nurture_title" />
+    <TextView android:textSize="14.0sp" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="24.0dp" android:text="@string/pregnant_nurture_content" android:lineSpacingMultiplier="1.2" />
+    <androidx.appcompat.widget.AppCompatButton android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/download" android:background="@color/green" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="36.0dp" android:text="@string/pregnant_nurture_download" />
+    <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@color/dark_grey" android:id="@id/cancelButton" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/normal_cancel" />
+</LinearLayout>

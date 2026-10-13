@@ -1,0 +1,1 @@
+CREATE INDEX `index_daily_log_v2_date` ON `daily_log_v2` (`date`)

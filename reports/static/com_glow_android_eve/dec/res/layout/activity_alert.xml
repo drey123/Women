@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolBar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="scroll|enterAlways" />
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="bottom" android:id="@id/tabLayout" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:tabGravity="fill" app:tabIndicatorColor="@color/white" app:tabMode="fixed" app:tabPaddingEnd="0.0dp" app:tabPaddingStart="0.0dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/appBarLayout" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.glow.android.kaylee.ui.widget.FloatingActionButton android:id="@id/addButton" app:button_color="@color/green" app:button_icon="@null" style="@style/KayleeFloatingActionButton" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

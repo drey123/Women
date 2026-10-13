@@ -1,0 +1,1 @@
+ALTER TABLE `notification` ADD `action_context` STRING;

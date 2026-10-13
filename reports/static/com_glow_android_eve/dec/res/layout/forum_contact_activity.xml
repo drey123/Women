@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/conv_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="200.0dp" />
+    <ScrollView android:id="@id/conv_empty" android:background="@color/chat_empty_default_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/blurr_base_32" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/conv_empty_img" android:layout_width="110.0dp" android:layout_height="110.0dp" android:layout_marginTop="100.0dp" android:src="@null" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/blurr_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/conv_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/blurr_base_24" android:text="@string/chat_contact_empty_text" android:lineSpacingMultiplier="1.1" android:paddingHorizontal="14.0dp" />
+            <Button android:layout_gravity="center" android:id="@id/conv_empty_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="@dimen/blurr_base_16" android:layout_marginRight="8.0dp" android:layout_marginBottom="8.0dp" android:text="@string/chat_conv_empty_btn" style="@style/RaisedButtonPurple" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/connecting_text" android:background="@color/light_purple" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chat_msg_status_connecting" />
+</FrameLayout>

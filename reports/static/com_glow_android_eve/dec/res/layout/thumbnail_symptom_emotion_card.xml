@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/grey_500" android:id="@id/titleView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.google.android.flexbox.FlexboxLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/titleView" app:alignContent="flex_start" app:alignItems="flex_start" app:flexWrap="wrap" app:justifyContent="space_between" />
+</RelativeLayout>

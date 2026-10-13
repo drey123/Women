@@ -1,0 +1,1 @@
+ALTER TABLE `reminder` ADD COLUMN `type` INTEGER DEFAULT 0;

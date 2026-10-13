@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/detail" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="100.0dp">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:drawablePadding="5.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/next_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:includeFontPadding="false" android:drawableRight="@drawable/ic_settings_purple_18dp" android:drawablePadding="3.0dp" android:layout_below="@id/title" android:fontFamily="sans-serif-light" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="" android:maxLines="2" android:includeFontPadding="false" android:layout_below="@id/next_date" android:fontFamily="sans-serif-light" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.SwitchCompat android:layout_gravity="right|center" android:id="@id/enable_switch" android:padding="2.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginRight="12.0dp" android:switchTextAppearance="@style/SwitchText" android:switchPadding="2.0dp" />
+</FrameLayout>

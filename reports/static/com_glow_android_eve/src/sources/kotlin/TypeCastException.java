@@ -1,0 +1,6 @@
+package kotlin;
+
+/* JADX INFO: compiled from: TypeCastException.kt */
+/* JADX INFO: loaded from: classes6.dex */
+public class TypeCastException extends ClassCastException {
+}

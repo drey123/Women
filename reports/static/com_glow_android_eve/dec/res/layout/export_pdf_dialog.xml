@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/export_pdf_dialog_content" />
+    <Space android:layout_width="match_parent" android:layout_height="10.0dp" />
+    <AutoCompleteTextView android:textSize="18.0sp" android:id="@id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/export_pdf_dialog_hint" android:inputType="textEmailAddress" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+.class public Lorg/ocpsoft/prettytime/units/Week;
+.super Lorg/ocpsoft/prettytime/impl/ResourcesTimeUnit;
+.source "Week.java"
+
+# interfaces
+.implements Lorg/ocpsoft/prettytime/TimeUnit;
+
+
+# virtual methods
+.method public final c()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "Week"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

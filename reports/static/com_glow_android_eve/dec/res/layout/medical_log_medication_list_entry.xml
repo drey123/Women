@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:layout_height="56.0dp" android:paddingHorizontal="20.0dp" style="@style/DailyLogItemHeader"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.glow.android.ui.widget.UninterceptableTextView android:clickable="false" android:layout_height="wrap_content" android:text="@string/medical_log_medication_list_entry" android:layout_alignParentLeft="false" android:layout_centerVertical="true" style="@style/DailyLogItemDesc" />
+    <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_add_blue_24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

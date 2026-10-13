@@ -1,0 +1,1 @@
+ALTER TABLE `reminder_v27` ADD `time_removed` INTEGER NOT NULL DEFAULT 0;

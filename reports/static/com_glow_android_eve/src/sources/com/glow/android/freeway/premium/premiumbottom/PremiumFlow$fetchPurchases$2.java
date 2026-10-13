@@ -1,0 +1,62 @@
+package com.glow.android.freeway.premium.premiumbottom;
+
+import com.glow.android.freeway.premium.model.IapPurchase;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.Result;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlinx.coroutines.CoroutineScope;
+import rx.singles.BlockingSingle;
+
+/* JADX INFO: compiled from: PremiumFlow.kt */
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u0001*\u00020\u0003H\n"}, d2 = {"<anonymous>", "", "Lcom/glow/android/freeway/premium/model/IapPurchase;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 0, 0}, xi = 48)
+@DebugMetadata(c = "com.glow.android.freeway.premium.premiumbottom.PremiumFlow$fetchPurchases$2", f = "PremiumFlow.kt", l = {}, m = "invokeSuspend")
+@SourceDebugExtension
+final class PremiumFlow$fetchPurchases$2 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super List<? extends IapPurchase>>, Object> {
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ PremiumFlow f4898b;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public PremiumFlow$fetchPurchases$2(PremiumFlow premiumFlow, Continuation<? super PremiumFlow$fetchPurchases$2> continuation) {
+        super(2, continuation);
+        this.f4898b = premiumFlow;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new PremiumFlow$fetchPurchases$2(this.f4898b, continuation);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super List<? extends IapPurchase>> continuation) {
+        return ((PremiumFlow$fetchPurchases$2) create(coroutineScope, continuation)).invokeSuspend(Unit.a);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        Object objM7015constructorimpl;
+        CoroutineSingletons coroutineSingletons = CoroutineSingletons.f25414b;
+        ResultKt.a(obj);
+        PremiumFlow premiumFlow = this.f4898b;
+        try {
+            Result.Companion companion = Result.Companion;
+            objM7015constructorimpl = Result.m7015constructorimpl((List) new BlockingSingle(premiumFlow.i.g("all")).a());
+        } catch (Throwable th) {
+            Result.Companion companion2 = Result.Companion;
+            objM7015constructorimpl = Result.m7015constructorimpl(ResultKt.createFailure(th));
+        }
+        if (Result.m7016isFailureimpl(objM7015constructorimpl)) {
+            return null;
+        }
+        return objM7015constructorimpl;
+    }
+}

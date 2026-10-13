@@ -1,0 +1,1 @@
+ALTER TABLE `daily_log` ADD COLUMN `stress_level` INTEGER;

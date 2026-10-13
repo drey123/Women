@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/babyImage" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@null" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/babyNickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:layout_marginStart="10.0dp" app:layout_constraintBottom_toTopOf="@id/pregnancyDuration" app:layout_constraintLeft_toRightOf="@id/babyImage" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/pregnancyDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/babyImage" app:layout_constraintTop_toBottomOf="@id/babyNickName" />
+    <ImageView android:id="@id/dropdownButton" android:padding="3.0dp" android:layout_width="20.0dp" android:layout_height="15.0dp" android:src="@null" android:layout_marginStart="5.0dp" app:layout_constraintBottom_toBottomOf="@id/babyNickName" app:layout_constraintLeft_toRightOf="@id/babyNickName" app:tint="@color/purple" />
+</androidx.constraintlayout.widget.ConstraintLayout>

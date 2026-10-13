@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:id="@id/triangle_top" android:background="@drawable/purple_triangle_down" android:layout_width="36.0dp" android:layout_height="18.0dp" android:layout_marginBottom="-1.0dp" android:rotation="180.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_round_corner_purple" android:padding="18.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp">
+        <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/reminder_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tutorial_reminder_step_1" android:includeFontPadding="false" android:textAlignment="center" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/action_positive" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/tutorial_reminder_action_sure" android:includeFontPadding="false" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="14.0sp" android:textColor="#cdcff1" android:id="@id/action_negative" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/tutorial_reminder_action_later" android:includeFontPadding="false" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+    <View android:id="@id/triangle_bottom" android:background="@drawable/purple_triangle_down" android:layout_width="36.0dp" android:layout_height="18.0dp" android:layout_marginTop="-1.0dp" />
+</merge>

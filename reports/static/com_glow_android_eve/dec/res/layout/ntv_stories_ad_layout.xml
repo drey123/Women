@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/default_ntv_stories_ad_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/default_stories_webView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ProgressBar android:id="@id/storyProgressBar" android:layout_width="wrap_content" android:layout_height="match_parent" android:indeterminateDrawable="@drawable/ntv_progress" android:layout_centerHorizontal="true" style="@style/Widget.AppCompat.ProgressBar" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="0.0dp" style="@style/SignUpCell">
+        <com.glow.android.kaylee.ui.widget.AutoTooltipTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:fontFamily="normal" />
+        <com.glow.android.trion.widget.BooleanSelector android:id="@id/yes_selector" android:layout_width="80.0dp" style="@style/BooleanSelector" />
+    </LinearLayout>
+</FrameLayout>

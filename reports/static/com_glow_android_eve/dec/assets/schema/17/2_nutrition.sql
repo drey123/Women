@@ -1,0 +1,1 @@
+ALTER TABLE `nutrition` ADD `time_modified_sec` INTEGER NOT NULL DEFAULT 0;

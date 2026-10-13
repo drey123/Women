@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `reminder`(
+    `id` INTEGER PRIMARY KEY,
+    `title` STRING NOT NULL,
+	`hour` INTEGER NOT NULL,
+	`minute` INTEGER NOT NULL,
+	`repeat` INTEGER NOT NULL,
+	`enabled` INTEGER,
+	`date` STRING NOT NULL
+);

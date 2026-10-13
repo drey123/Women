@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/PressableBg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.glow.android.ui.widget.ClickableTextView android:id="@id/title" style="@style/SettingItemTitle" />
+    <TextView android:id="@id/subtitle" android:layout_below="@id/title" style="@style/SettingItemSubTitle" />
+</RelativeLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="_areOris">
+        <item quantity="one">is</item>
+        <item quantity="other">are</item>
+    </plurals>
+    <plurals name="_day_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="_days_to_go">
+        <item quantity="one">%d day to go</item>
+        <item quantity="other">%d days to go</item>
+    </plurals>
+    <plurals name="_hour_ago">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="_kicks">
+        <item quantity="one">%d kick</item>
+        <item quantity="other">%d kicks</item>
+    </plurals>
+    <plurals name="_min_ago">
+        <item quantity="one">%d min ago</item>
+        <item quantity="other">%d mins ago</item>
+    </plurals>
+    <plurals name="_s_comment">
+        <item quantity="one">%s Comment</item>
+        <item quantity="other">%s Comments</item>
+    </plurals>
+    <plurals name="_s_upvote">
+        <item quantity="one">%s Upvote</item>
+        <item quantity="other">%s Upvotes</item>
+    </plurals>
+    <plurals name="_s_view">
+        <item quantity="one">%s view</item>
+        <item quantity="other">%s views</item>
+    </plurals>
+    <plurals name="alcohol_glass_unit">
+        <item quantity="one">%d glass</item>
+        <item quantity="other">%d glasses</item>
+    </plurals>
+    <plurals name="article_category_articles">
+        <item quantity="one">%d article</item>
+        <item quantity="other">%d articles</item>
+    </plurals>
+    <plurals name="article_count">
+        <item quantity="one">%d article</item>
+        <item quantity="other">%d articles</item>
+    </plurals>
+    <plurals name="baby_count">
+        <item quantity="one">%d baby</item>
+        <item quantity="other">%d babies</item>
+    </plurals>
+    <plurals name="cap_cycle_">
+        <item quantity="one">%d Cycle</item>
+        <item quantity="other">%d Cycles</item>
+    </plurals>
+    <plurals name="cigarette_unit">
+        <item quantity="one">%d cigarette</item>
+        <item quantity="other">%d cigarettes</item>
+    </plurals>
+    <plurals name="community_topic_responses">
+        <item quantity="one">1 response</item>
+        <item quantity="other">%1$s responses</item>
+    </plurals>
+    <plurals name="community_topic_votes">
+        <item quantity="one">%1$s vote</item>
+        <item quantity="other">%1$s votes</item>
+    </plurals>
+    <plurals name="cycle_">
+        <item quantity="one">%d cycle</item>
+        <item quantity="other">%d cycles</item>
+    </plurals>
+    <plurals name="cycle_periods">
+        <item quantity="one">period</item>
+        <item quantity="other">periods</item>
+    </plurals>
+    <plurals name="daily_log_sleep_desc_hour">
+        <item quantity="one">%dh</item>
+        <item quantity="other">%dh</item>
+    </plurals>
+    <plurals name="daily_log_sleep_desc_minute">
+        <item quantity="one">%dm</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="dailydata_dlg_sleep_h">
+        <item quantity="one">1 hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="dailydata_dlg_sleep_m">
+        <item quantity="one">1 min</item>
+        <item quantity="other">%d mins</item>
+    </plurals>
+    <plurals name="day">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="day_n_afterbirth">
+        <item quantity="one">%d day after birth</item>
+        <item quantity="other">%d days after birth</item>
+    </plurals>
+    <plurals name="day_plural">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="days_before">
+        <item quantity="one">%d day prepare pregnancy</item>
+        <item quantity="other">%d days prepare pregnancy</item>
+    </plurals>
+    <plurals name="days_item">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="days_to_last_period">
+        <item quantity="one">"%d Day
+Since Last Period"</item>
+        <item quantity="other">"%d Days
+Since Last Period"</item>
+    </plurals>
+    <plurals name="days_to_next_period">
+        <item quantity="one">"Next Period
+In %d Day"</item>
+        <item quantity="other">"Next Period
+In %d Days"</item>
+    </plurals>
+    <plurals name="fertile_day_after_ov">
+        <item quantity="one">"1 Day 
+after Ovulation"</item>
+        <item quantity="other">"%d Days 
+after Ovulation"</item>
+    </plurals>
+    <plurals name="fertile_day_before_ov">
+        <item quantity="one">"Ovulation 
+in 1 Day"</item>
+        <item quantity="other">"Ovulation 
+in %d Days"</item>
+    </plurals>
+    <plurals name="fertile_window_happens">
+        <item quantity="one">Happens after %d day</item>
+        <item quantity="other">Happens after %d days</item>
+    </plurals>
+    <plurals name="fertile_window_passed">
+        <item quantity="one">%d day has passed</item>
+        <item quantity="other">%d days have passed</item>
+    </plurals>
+    <plurals name="glass">
+        <item quantity="one">glass</item>
+        <item quantity="other">glasses</item>
+    </plurals>
+    <plurals name="insight_like_number">
+        <item quantity="one">%d Upvote</item>
+        <item quantity="other">%d Upvotes</item>
+    </plurals>
+    <plurals name="medicine_cream_unit">
+        <item quantity="one">gram</item>
+        <item quantity="other">grams</item>
+    </plurals>
+    <plurals name="medicine_injectable_unit">
+        <item quantity="one">ml</item>
+        <item quantity="other">ml</item>
+    </plurals>
+    <plurals name="medicine_patch_unit">
+        <item quantity="one">patch</item>
+        <item quantity="other">patches</item>
+    </plurals>
+    <plurals name="medicine_solution_unit">
+        <item quantity="one">solution</item>
+        <item quantity="other">solutions</item>
+    </plurals>
+    <plurals name="medicine_spray_unit">
+        <item quantity="one">spray</item>
+        <item quantity="other">sprays</item>
+    </plurals>
+    <plurals name="medicine_suppository_unit">
+        <item quantity="one">suppository</item>
+        <item quantity="other">suppositories</item>
+    </plurals>
+    <plurals name="medicine_tablet_unit">
+        <item quantity="one">tablet</item>
+        <item quantity="other">tablets</item>
+    </plurals>
+    <plurals name="medicine_vaginal_ring_unit">
+        <item quantity="one">ring</item>
+        <item quantity="other">rings</item>
+    </plurals>
+    <plurals name="min_plural">
+        <item quantity="one">1min</item>
+        <item quantity="other">%dmins</item>
+    </plurals>
+    <plurals name="more_images_count_label">
+        <item quantity="one">1 More Photo</item>
+        <item quantity="other">%d More Photos</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="plurals_response">
+        <item quantity="one">%s response</item>
+        <item quantity="other">%s responses</item>
+    </plurals>
+    <plurals name="plurals_upvote">
+        <item quantity="one">%s upvote</item>
+        <item quantity="other">%s upvotes</item>
+    </plurals>
+    <plurals name="plurals_view">
+        <item quantity="one">%s view</item>
+        <item quantity="other">%s views</item>
+    </plurals>
+    <plurals name="pregnancy_days_to_due_date">
+        <item quantity="one">%d Day To Go</item>
+        <item quantity="other">%d Days To Go</item>
+    </plurals>
+    <plurals name="premium_onboarding_cycles">
+        <item quantity="one">cycle</item>
+        <item quantity="other">cycles</item>
+    </plurals>
+    <plurals name="premium_onboarding_days">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+    <plurals name="prima_total_session_number">
+        <item quantity="one">%d session</item>
+        <item quantity="other">%d sessions</item>
+    </plurals>
+    <plurals name="profile_health_TTC_for_how_long_years">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+    <plurals name="reminder_frequency_daily">
+        <item quantity="one">%d Time Daily</item>
+        <item quantity="other">%1$s Times Daily</item>
+    </plurals>
+    <plurals name="reminder_frequency_monthly">
+        <item quantity="one">%d Time Monthly</item>
+        <item quantity="other">%1$s Times Monthly</item>
+    </plurals>
+    <plurals name="reminder_frequency_none">
+        <item quantity="one">%d Time</item>
+        <item quantity="other">%1$s Times</item>
+    </plurals>
+    <plurals name="reminder_frequency_period">
+        <item quantity="one">According to your period</item>
+        <item quantity="other">According to your period</item>
+    </plurals>
+    <plurals name="reminder_frequency_weekly">
+        <item quantity="one">%d Time Weekly</item>
+        <item quantity="other">%1$s Times Weekly</item>
+    </plurals>
+    <plurals name="reminder_frequency_yearly">
+        <item quantity="one">%d Time Yearly</item>
+        <item quantity="other">%1$s Times Yearly</item>
+    </plurals>
+    <plurals name="set">
+        <item quantity="one">set</item>
+        <item quantity="other">sets</item>
+    </plurals>
+    <plurals name="sign_up_question_ttc_length_month_unit_short">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="sign_up_question_ttc_length_week_unit_short">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+    <plurals name="sign_up_question_ttc_length_year_unit_short">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+    <plurals name="timelapse_album_delete">
+        <item quantity="one">Delete %d photo?</item>
+        <item quantity="other">Delete %d photos?</item>
+    </plurals>
+    <plurals name="total_session_number">
+        <item quantity="one">%d session</item>
+        <item quantity="other">%d sessions</item>
+    </plurals>
+    <plurals name="week_plural">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardCornerRadius="2.0dp" app:cardElevation="2.0dp" style="@style/ForecastCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/title" android:text="@string/baby_growth_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ForecastCard.Title" />
+        <ImageView android:id="@id/currentFruit" android:layout_width="160.0dp" android:layout_height="160.0dp" android:layout_marginTop="8.0dp" android:scaleType="centerInside" app:layout_constraintEnd_toStartOf="@id/currentContentView" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/currentContentView" android:layout_width="160.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/currentFruit" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/currentFruit" app:layout_constraintTop_toTopOf="@id/currentFruit">
+            <TextView android:id="@id/yourBabyText" android:text="@string/your_baby_is" style="@style/ForecastCard.TextAppearance" />
+            <TextView android:gravity="center_horizontal" android:id="@id/sizeText" android:layout_marginTop="-8.0dp" style="@style/ForecastCard.SubTitle" />
+            <TextView android:id="@id/currentText" style="@style/ForecastCard.TextAppearance" />
+            <TextView android:gravity="center_horizontal" android:id="@id/currentFruitName" android:layout_marginTop="-8.0dp" style="@style/ForecastCard.SubTitle" />
+        </LinearLayout>
+        <ImageView android:id="@id/nextFruit" android:layout_width="160.0dp" android:layout_height="160.0dp" android:layout_marginTop="5.0dp" android:scaleType="centerInside" app:layout_constraintEnd_toStartOf="@id/nextContentView" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/currentFruit" />
+        <View android:id="@id/nextCover" android:background="@drawable/cover_question" android:layout_width="160.0dp" android:layout_height="160.0dp" app:layout_constraintBottom_toBottomOf="@id/nextFruit" app:layout_constraintEnd_toEndOf="@id/nextFruit" app:layout_constraintStart_toStartOf="@id/nextFruit" app:layout_constraintTop_toTopOf="@id/nextFruit" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/nextContentView" android:layout_width="160.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/nextFruit" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/nextFruit" app:layout_constraintTop_toTopOf="@id/nextFruit">
+            <TextView android:gravity="center_horizontal" android:id="@id/nextText" style="@style/ForecastCard.TextAppearance" />
+            <TextView android:gravity="center" android:id="@id/nextFruitName" android:layout_marginTop="-8.0dp" style="@style/ForecastCard.SubTitle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextGuessView" android:background="@color/white" android:layout_width="160.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/nextFruit" app:layout_constraintStart_toStartOf="@id/nextContentView" app:layout_constraintTop_toTopOf="@id/nextFruit">
+            <TextView android:gravity="center_horizontal" android:id="@id/guessText" android:text="@string/guess_size_next_week" style="@style/ForecastCard.TextAppearance" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/revealButton" android:background="@drawable/bg_rect_green" android:layout_width="88.0dp" android:layout_height="30.0dp" android:text="@string/reveal" android:textAllCaps="true" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+        <ImageView android:id="@id/dots" android:layout_width="5.0dp" android:layout_height="15.0dp" android:layout_marginTop="5.0dp" android:src="@drawable/ic_dots" app:layout_constraintBottom_toBottomOf="@id/nextFruit" app:layout_constraintEnd_toEndOf="@id/currentFruit" app:layout_constraintStart_toStartOf="@id/currentFruit" app:layout_constraintTop_toTopOf="@id/currentFruit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

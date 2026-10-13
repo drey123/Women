@@ -1,0 +1,98 @@
+package com.glow.android.ui.home;
+
+import com.glow.android.prime.gdpr.GlobLocalStore;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Dispatchers;
+import kotlinx.coroutines.scheduling.DefaultIoScheduler;
+
+/* JADX INFO: compiled from: MainActivity.kt */
+/* JADX INFO: loaded from: classes4.dex */
+@Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 0, 0}, xi = 48)
+@DebugMetadata(c = "com.glow.android.ui.home.MainActivity$checkVaUser$1", f = "MainActivity.kt", l = {661, 664}, m = "invokeSuspend")
+final class MainActivity$checkVaUser$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public boolean f12265b;
+    public int c;
+    public final /* synthetic */ MainActivity d;
+
+    /* JADX INFO: renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ boolean f12266e;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public MainActivity$checkVaUser$1(MainActivity mainActivity, boolean z2, Continuation<? super MainActivity$checkVaUser$1> continuation) {
+        super(2, continuation);
+        this.d = mainActivity;
+        this.f12266e = z2;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new MainActivity$checkVaUser$1(this.d, this.f12266e, continuation);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        return ((MainActivity$checkVaUser$1) create(coroutineScope, continuation)).invokeSuspend(Unit.a);
+    }
+
+    /* JADX WARN: Code duplicated, block: B:22:0x0053  */
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) throws Throwable {
+        boolean z2;
+        CoroutineSingletons coroutineSingletons = CoroutineSingletons.f25414b;
+        int i = this.c;
+        GlobLocalStore globLocalStore = null;
+        MainActivity mainActivity = this.d;
+        if (i != 0) {
+            if (i == 1) {
+                ResultKt.a(obj);
+            } else {
+                if (i != 2) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                z2 = this.f12265b;
+                ResultKt.a(obj);
+            }
+            if (z2) {
+                mainActivity.f12243e1.launch(Boolean.valueOf(this.f12266e));
+            }
+            return Unit.a;
+        }
+        ResultKt.a(obj);
+        DefaultIoScheduler defaultIoScheduler = Dispatchers.c;
+        MainActivity$checkVaUser$1$needAccess$1 mainActivity$checkVaUser$1$needAccess$1 = new MainActivity$checkVaUser$1$needAccess$1(mainActivity, null);
+        this.c = 1;
+        obj = BuildersKt.f(defaultIoScheduler, mainActivity$checkVaUser$1$needAccess$1, this);
+        if (obj == coroutineSingletons) {
+            return coroutineSingletons;
+        }
+        boolean zBooleanValue = ((Boolean) obj).booleanValue();
+        GlobLocalStore globLocalStore2 = mainActivity.f12233V0;
+        if (globLocalStore2 != null) {
+            globLocalStore = globLocalStore2;
+        } else {
+            Intrinsics.throwUninitializedPropertyAccessException("globLocalStore");
+        }
+        this.f12265b = zBooleanValue;
+        this.c = 2;
+        if (globLocalStore.d(zBooleanValue, this) == coroutineSingletons) {
+            return coroutineSingletons;
+        }
+        z2 = zBooleanValue;
+        if (z2) {
+            mainActivity.f12243e1.launch(Boolean.valueOf(this.f12266e));
+        }
+        return Unit.a;
+    }
+}

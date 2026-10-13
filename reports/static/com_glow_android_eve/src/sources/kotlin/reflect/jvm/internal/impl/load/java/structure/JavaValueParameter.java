@@ -1,0 +1,17 @@
+package kotlin.reflect.jvm.internal.impl.load.java.structure;
+
+import kotlin.reflect.jvm.internal.impl.name.Name;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* JADX INFO: compiled from: javaElements.kt */
+/* JADX INFO: loaded from: classes6.dex */
+public interface JavaValueParameter extends JavaAnnotationOwner {
+    boolean d();
+
+    @Nullable
+    Name getName();
+
+    @NotNull
+    JavaType getType();
+}

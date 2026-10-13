@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:text="@string/cannot_edit_pregnancy" />
+    <androidx.appcompat.widget.AppCompatButton android:layout_gravity="right" android:id="@id/disablePregnancyButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disable_pregnancy" style="@style/ActionButton.Card.Purple" />
+    <androidx.appcompat.widget.AppCompatButton android:layout_gravity="right" android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" style="@style/ActionButton.Card.Purple" />
+</LinearLayout>

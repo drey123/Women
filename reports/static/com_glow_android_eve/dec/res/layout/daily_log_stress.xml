@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/titleContainer" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginLeft="20.0dp" style="@style/DailyLogItemHeader">
+        <TextView android:layout_height="wrap_content" android:text="@string/daily_log_stress_question" android:layout_alignParentLeft="false" android:layout_centerVertical="true" style="@style/DailyLogItemDesc" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/stressButtons" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+        <com.glow.android.ui.dailylog.DailyLogItem android:layout_width="wrap_content" android:layout_height="wrap_content" app:icon="@null" app:name="@string/daily_log_stress_low" />
+        <com.glow.android.ui.dailylog.DailyLogItem android:layout_width="wrap_content" android:layout_height="wrap_content" app:icon="@null" app:name="@string/daily_log_stress_medium" />
+        <com.glow.android.ui.dailylog.DailyLogItem android:layout_width="wrap_content" android:layout_height="wrap_content" app:icon="@null" app:name="@string/daily_log_stress_high" />
+        <com.glow.android.ui.dailylog.DailyLogItem android:layout_width="wrap_content" android:layout_height="wrap_content" app:icon="@null" app:name="@string/summary_no" />
+    </LinearLayout>
+</LinearLayout>

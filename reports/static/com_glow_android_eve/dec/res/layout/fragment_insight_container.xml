@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/insight_grey" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.glow.android.kaylee.ui.widget.TabSwitchView android:id="@id/tabs" android:layout_width="240.0dp" android:layout_height="28.0dp" android:layout_marginTop="10.0dp" app:first_tab="Insight" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:second_tab="Forecast" />
+    <FrameLayout android:name="com.glow.android.kaylee.ui.insight.InsightV2Fragment" android:id="@id/fragmentContainerInsight" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tabs" />
+</androidx.constraintlayout.widget.ConstraintLayout>

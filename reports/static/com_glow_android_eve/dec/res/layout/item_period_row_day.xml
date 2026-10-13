@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="0.0dp" android:layout_height="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#333" android:layout_gravity="center_horizontal" android:id="@id/todayTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/today" android:textAllCaps="true" />
+    <View android:layout_gravity="center|bottom" android:id="@id/selectedView" android:background="@drawable/bg_day_selected" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="44.0dp" />
+    <View android:gravity="center" android:layout_gravity="center|bottom" android:orientation="vertical" android:id="@id/dayLayout" android:background="@drawable/bg_circle_period" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginBottom="2.0dp" />
+    <View android:layout_gravity="center|bottom" android:id="@id/statusImageView" android:background="@drawable/ic_circle_grey" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginBottom="2.0dp" />
+    <TextView android:textSize="20.0sp" android:textColor="#fff" android:layout_gravity="center" android:id="@id/dayTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="sans-serif-light" />
+    <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/labelView" android:background="@drawable/bg_round_corner_purple_2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:textAlignment="center" android:paddingHorizontal="3.0dp" android:paddingVertical="1.0dp" />
+    <View android:layout_gravity="center|bottom" android:id="@id/infoImageView" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="10.0dp" />
+    <View android:layout_gravity="center|top" android:id="@id/externalSourceLogo" android:background="@drawable/ic_sync" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginLeft="15.0dp" android:layout_marginTop="16.0dp" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.glow.android.ui.widget.DashLineView android:id="@id/lateLineView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2.0dp" />
+        <com.glow.android.ui.widget.DashLineView android:id="@id/bbtDashLineView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_marginTop="4.0dp" />
+        <View android:id="@id/bbtSolidLineView" android:background="#189d76" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_marginTop="4.0dp" />
+    </LinearLayout>
+</FrameLayout>

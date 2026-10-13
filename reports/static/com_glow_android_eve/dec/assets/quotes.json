@@ -1,0 +1,681 @@
+{
+    "miscarriage": {
+        "1": {
+            "day": "1", 
+            "quote": "Love is born in life, and death cannot end it.", 
+            "source": "Mette Ivie Harrison"
+        }, 
+        "10": {
+            "day": "10", 
+            "quote": "Grief is in two parts. The first is loss. The second is the remaking of life.", 
+            "source": "Anne Roiphe"
+        }, 
+        "11": {
+            "day": "11", 
+            "quote": "Tears shed for another person are not a sign of weakness. They are a sign of a pure heart.", 
+            "source": "Jos\u00e9 N. Harris"
+        }, 
+        "12": {
+            "day": "12", 
+            "quote": "Grief can be a burden, but also an anchor. You get used to the weight, how it holds you in place.", 
+            "source": "Sarah Dessen"
+        }, 
+        "13": {
+            "day": "13", 
+            "quote": "Every day begins with an act of courage and hope: getting out of bed.",
+            "source": "Mason Cooley"
+        }, 
+        "14": {
+            "day": "14", 
+            "quote": "Nothing ever goes away until it teaches us what we need to know.", 
+            "source": "Pema Chodron"
+        }, 
+        "15": {
+            "day": "15", 
+            "quote": "If one dream should fall and break into a thousand pieces, never be afraid to pick one of those pieces up and begin again.", 
+            "source": "Flavia Weedn"
+        }, 
+        "16": {
+            "day": "16", 
+            "quote": "Let your hopes, not your hurts, shape your future.", 
+            "source": "Robert H. Schuller"
+        }, 
+        "17": {
+            "day": "17", 
+            "quote": "We can't direct the wind, but we can readjust the sails.", 
+            "source": "Thomas S. Monson"
+        }, 
+        "18": {
+            "day": "18", 
+            "quote": "I was with you every second of your life.", 
+            "source": "Stephanie Paige Cole"
+        }, 
+        "19": {
+            "day": "19", 
+            "quote": "You never know how strong you are, until strong is the only choice you have.", 
+            "source": "Anon."
+        }, 
+        "2": {
+            "day": "2", 
+            "quote": "I carry your heart with me, I carry it in my heart.", 
+            "source": "e.e. cummings"
+        }, 
+        "20": {
+            "day": "20", 
+            "quote": "To remember is painful - To forget is impossible.", 
+            "source": "Anon."
+        }, 
+        "21": {
+            "day": "21", 
+            "quote": "Their tiny feet go before us to teach us the way home.", 
+            "source": "Anon."
+        }, 
+        "22": {
+            "day": "22", 
+            "quote": "We must embrace pain and burn it as fuel for our journey.", 
+            "source": "Kenji Muyazawa"
+        }, 
+        "23": {
+            "day": "23", 
+            "quote": "Where hope would otherwise become hopelessness, it becomes faith.", 
+            "source": "Robert Brault"
+        }, 
+        "24": {
+            "day": "24", 
+            "quote": "Sometimes the small sounds of blessings are found in the hardest moments of life. Listen for the whispers...", 
+            "source": "Maureen Watts"
+        }, 
+        "25": {
+            "day": "25", 
+            "quote": "Grief does not change you. It reveals you.", 
+            "source": "John Green"
+        }, 
+        "26": {
+            "day": "26", 
+            "quote": "Mostly it is loss which teaches us about the worth of things.", 
+            "source": "Arthur Schopenhauer"
+        }, 
+        "27": {
+            "day": "27", 
+            "quote": "I will not forget you. I have written your name in the palms of my hands.", 
+            "source": "Isaah 4915"
+        }, 
+        "28": {
+            "day": "28", 
+            "quote": "Each person's grief journey is unique as a fingerprint or a snowflake.", 
+            "source": "Earl Grollman"
+        }, 
+        "29": {
+            "day": "29", 
+            "quote": "Grief is love's unwillingness to let go.", 
+            "source": "William Bryant"
+        }, 
+        "3": {
+            "day": "3", 
+            "quote": "Breathe. Listen to my footfall in your heart. I am not gone but merely walk within you.", 
+            "source": "Nicholas Evans"
+        }, 
+        "30": {
+            "day": "30", 
+            "quote": "Grief is not a disorder, a disease or a sign of weakness. It is the price you pay for love.", 
+            "source": "Earl Grollman"
+        }, 
+        "31": {
+            "day": "31", 
+            "quote": "Unable are the loved to die. For love is immortality.", 
+            "source": "Emily Dickinson"
+        }, 
+        "32": {
+            "day": "32", 
+            "quote": "We bereaved are not alone. We belong to the largest company in all the world -- the company of those who have known suffering.", 
+            "source": "Helen Keller"
+        }, 
+        "33": {
+            "day": "33", 
+            "quote": "It's so much darker when a light goes out than it would have been if it had never shone.", 
+            "source": "John Steinbeck"
+        }, 
+        "34": {
+            "day": "34", 
+            "quote": "God breaks the heart again and again and again until it stays open.", 
+            "source": "Hazrat Inayat Khan"
+        }, 
+        "35": {
+            "day": "35", 
+            "quote": "There will be an answer, let it be.", 
+            "source": "The Beatles"
+        }, 
+        "36": {
+            "day": "36", 
+            "quote": "There is no way out, only a way forward.", 
+            "source": "Michael Hollings"
+        }, 
+        "37": {
+            "day": "37", 
+            "quote": "As long as I can I will laugh with the birds, I will sing with the flowers, I will pray to the stars, for both of us.", 
+            "source": "Sascha"
+        }, 
+        "38": {
+            "day": "38", 
+            "quote": "We acquire the strength we have overcome.", 
+            "source": "Ralph Waldo Emerson"
+        }, 
+        "39": {
+            "day": "39", 
+            "quote": "God puts rainbows in the clouds so that each of us - in the most dreaded moments - can see a possibility of hope.", 
+            "source": "Maya Angelou"
+        }, 
+        "4": {
+            "day": "4", 
+            "quote": "Sometimes the smallest things take up the most room in your heart.", 
+            "source": "A.A. Milne"
+        }, 
+        "40": {
+            "day": "40", 
+            "quote": "Hope is some extraordinary spiritual grace that God gives us to control our fears, not to oust them.", 
+            "source": "Vincent McNabb"
+        }, 
+        "41": {
+            "day": "41", 
+            "quote": "There is no telling how many miles you will have to run while chasing a dream.", 
+            "source": "Anon"
+        }, 
+        "42": {
+            "day": "42", 
+            "quote": "Courage is being afraid but going on anyhow.", 
+            "source": "Dan Rather"
+        }, 
+        "43": {
+            "day": "43", 
+            "quote": "Time is a physician that heals every grief.", 
+            "source": "Diphilus"
+        }, 
+        "44": {
+            "day": "44", 
+            "quote": "Hold on to the love, not the loss.", 
+            "source": "Eva Longoria"
+        }, 
+        "45": {
+            "day": "45", 
+            "quote": "When the world says, \"Give up,\" Hope whispers, \"Try it one more time.\"", 
+            "source": "Anon"
+        }, 
+        "5": {
+            "day": "5", 
+            "quote": "The most beautiful people are those who have known defeat, known loss, and have found their way out of the depths.", 
+            "source": "Elizabeth Kubler Ross"
+        }, 
+        "6": {
+            "day": "6", 
+            "quote": "There is no foot too small that it cannot leave an impact on this world.",
+            "source": "Unknown"
+        }, 
+        "7": {
+            "day": "7", 
+            "quote": "Your absence has gone through me like thread through a needle. Everything I do is stitched with its color.", 
+            "source": "W.S. Merwin"
+        }, 
+        "8": {
+            "day": "8", 
+            "quote": "So it\u2019s true, when all is said and done, grief is the price we pay for love.", 
+            "source": "E.A. Bucchianeri"
+        }, 
+        "9": {
+            "day": "9", 
+            "quote": "We must accept finite disappoinment, but never lose infinite hope.", 
+            "source": "Martin Luther King, Jr."
+        }
+    }, 
+    "postpartum": {
+        "1": {
+            "day": "1", 
+            "quote": "Your first breath took mine away.", 
+            "source": "Anon"
+        }, 
+        "10": {
+            "day": "10", 
+            "quote": "Only love can be divided endlessly, and still not diminish.", 
+            "source": "Anne Morrow Lindbergh"
+        }, 
+        "11": {
+            "day": "11", 
+            "quote": "People who say they sleep like a baby usually don\u2019t have one.", 
+            "source": "Eda J. Le Shan"
+        }, 
+        "12": {
+            "day": "12", 
+            "quote": "There is no way to be a perfect mother, and a million ways to be a good one.", 
+            "source": "Jill Churchill"
+        }, 
+        "13": {
+            "day": "13", 
+            "quote": "A new baby is like the beginning of all things \u2013 wonder, hope, a dream of possibilities.", 
+            "source": "Eda J LeShan"
+        }, 
+        "14": {
+            "day": "14", 
+            "quote": "A baby fills a place in your heart that you never knew was empty.", 
+            "source": "Anon"
+        }, 
+        "15": {
+            "day": "15", 
+            "quote": "Babies are such a nice way to start people.", 
+            "source": "Don Herald"
+        }, 
+        "16": {
+            "day": "16", 
+            "quote": "When my baby is sleeping, that's when I think: Wow I made that!\"\"", 
+            "source": "Maria Ovalle"
+        }, 
+        "17": {
+            "day": "17", 
+            "quote": "A mother's arms are made of tenderness and children sleep soundly in them.", 
+            "source": "Victor Hugo"
+        }, 
+        "18": {
+            "day": "18", 
+            "quote": "Good moms have messy kitchens, laundry piles, and happy kids.", 
+            "source": "Anon"
+        }, 
+        "19": {
+            "day": "19", 
+            "quote": "It's not how much we give, but how much love we put into giving.", 
+            "source": "Mother Theresa"
+        }, 
+        "2": {
+            "day": "2", 
+            "quote": "Being a mother is learning about strengths you didn't know you had...and dealing with fears you didn't know existed.", 
+            "source": "Linda Wooten"
+        }, 
+        "20": {
+            "day": "20", 
+            "quote": "If it doesn't challenge you - it does not change you.", 
+            "source": "Fred Devito"
+        }, 
+        "21": {
+            "day": "21", 
+            "quote": "A baby is born with a need to be loved \u2013 and never outgrows it.", 
+            "source": "Frank A. Clark"
+        }, 
+        "22": {
+            "day": "22", 
+            "quote": "A baby will make love stronger, days shorter, nights longer...the past forgotten, and the future worth living for.", 
+            "source": "Pablo Picasso"
+        }, 
+        "23": {
+            "day": "23", 
+            "quote": "Sometime the strength of motherhood is stronger than any natural laws.", 
+            "source": "Barbara Kingsolver"
+        }, 
+        "24": {
+            "day": "24", 
+            "quote": "Remarkable qualities find their truest expression through motherhood.", 
+            "source": "Gordon Hinkley"
+        }, 
+        "25": {
+            "day": "25", 
+            "quote": "Birth is not only about making babies. It's about making mothers~ strong, competent, capable mothers who trust themselves.", 
+            "source": "Barbara Katz Rothman"
+        }, 
+        "26": {
+            "day": "26", 
+            "quote": "The only thing worth stealing is a kiss from a sleeping baby.", 
+            "source": "Joe Houldsworth"
+        }, 
+        "27": {
+            "day": "27", 
+            "quote": "A baby is a little bit of heaven on earth.", 
+            "source": "Anon"
+        }, 
+        "28": {
+            "day": "28", 
+            "quote": "A baby is something you carry inside you for nine months, in your arms for three years and in your heart till the day you die.", 
+            "source": "Mary Mason"
+        }, 
+        "29": {
+            "day": "29", 
+            "quote": "Each day I love you more...today, more than yesterday...and less than tomorrow.", 
+            "source": "Rosemonde Gerard"
+        }, 
+        "3": {
+            "day": "3", 
+            "quote": "The moment a child is born, the mother is also born. She never existed before.", 
+            "source": "Bhagwan Shree Rajneesh"
+        }, 
+        "30": {
+            "day": "30", 
+            "quote": "Littlest feet make the biggest footprint on our hearts.", 
+            "source": "Anon"
+        }, 
+        "31": {
+            "day": "31", 
+            "quote": "Babies are always more trouble than you thought \u2013 and more wonderful.", 
+            "source": "Charles Osgood"
+        }, 
+        "32": {
+            "day": "32", 
+            "quote": "When you're drawing up your first list of life's miracles, you might place near the top the first moment your baby smiles at you.", 
+            "source": "Bob Greene"
+        }, 
+        "33": {
+            "day": "33", 
+            "quote": "Babies are nature's way of showing people what the world looks like at 2:00 a.m.", 
+            "source": "Anon"
+        }, 
+        "34": {
+            "day": "34", 
+            "quote": "I'll love you forever. I'll like you for always. As long as I'm living, my baby you'll be.", 
+            "source": "Robert Munsch"
+        }, 
+        "35": {
+            "day": "35", 
+            "quote": "The soul is healed by being with children.", 
+            "source": "Fyodor Dpstoevsky"
+        }, 
+        "36": {
+            "day": "36", 
+            "quote": "If I have a monument in this world, it is my son.", 
+            "source": "Maya Angelou"
+        }, 
+        "37": {
+            "day": "37", 
+            "quote": "A baby is the tiniest thing I ever decided to put my whole life into.", 
+            "source": "Terri Guillemets"
+        }, 
+        "38": {
+            "day": "38", 
+            "quote": "You can learn many things from children. How much patience you have, for instance.", 
+            "source": "Franklin P. Jones"
+        }, 
+        "39": {
+            "day": "39", 
+            "quote": "No language can express the power and beauty and heroism of a mother\u2019s love.", 
+            "source": "Edwin H. Chapin"
+        }, 
+        "4": {
+            "day": "4", 
+            "quote": "The phrase 'Working Mother' is redundant.", 
+            "source": "Jane Sellman"
+        }, 
+        "40": {
+            "day": "40", 
+            "quote": "Getting a burp out of your little thing is probably the greatest satisfaction I've come across.", 
+            "source": "Brad Pitt"
+        }, 
+        "41": {
+            "day": "41", 
+            "quote": "The tie which links mother and child is of such pure and immaculate strength as to be never violated.", 
+            "source": "Washington Irving"
+        }, 
+        "42": {
+            "day": "42", 
+            "quote": "Loving a baby is a circular business, a kind of feedback loop. The more you give, the more you get.", 
+            "source": "Penelope Leach"
+        }, 
+        "43": {
+            "day": "43", 
+            "quote": "What good mothers and fathers instinctively feel like doing for their babies is usually best after all.", 
+            "source": "Benjamin Spock"
+        }, 
+        "44": {
+            "day": "44", 
+            "quote": "Don't forget that compared to a grownup person every baby is a genius. Think of the capacity to learn!", 
+            "source": "May Sarton"
+        }, 
+        "45": {
+            "day": "45", 
+            "quote": "There's really nothing quite so sweet as tiny little baby feet.", 
+            "source": "Anon"
+        }, 
+        "46": {
+            "day": "46", 
+            "quote": "There is no finer investment for any community than putting milk into babies.", 
+            "source": "Winston Churchill"
+        }, 
+        "47": {
+            "day": "47", 
+            "quote": "Insanity is hereditary \u2014 you get it from your kids.", 
+            "source": "Sam Levenson"
+        }, 
+        "48": {
+            "day": "48", 
+            "quote": "Parents can learn a lot from their children about coping with life.", 
+            "source": "Muriel Spark"
+        }, 
+        "49": {
+            "day": "49", 
+            "quote": "God could not be everywhere, and so he created mothers.", 
+            "source": "Jewish proverb"
+        }, 
+        "5": {
+            "day": "5", 
+            "quote": "Making the decision to have a child is momentous. It is to decide forever to have your heart walking around outside of your body.", 
+            "source": "Elizabeth Stone"
+        }, 
+        "50": {
+            "day": "50", 
+            "quote": "Raising a child is like reading a mystery novel. But you have to wait a generation to see how it turns out.", 
+            "source": "Anon"
+        }, 
+        "51": {
+            "day": "51", 
+            "quote": "A child is a curly, dimpled lunatic.", 
+            "source": "Ralph Waldo Emerson"
+        }, 
+        "52": {
+            "day": "52", 
+            "quote": "We are transfused with our children, and feel more keenly for them than for ourselves.", 
+            "source": "Marie de Sevigne"
+        }, 
+        "53": {
+            "day": "53", 
+            "quote": "If evolution really works, how come mothers have only two hands?", 
+            "source": "Milton Berle"
+        }, 
+        "54": {
+            "day": "54", 
+            "quote": "I know how to do anything\u2014I'm a mom.", 
+            "source": "Roseanne Barr"
+        }, 
+        "55": {
+            "day": "55", 
+            "quote": "Children reinvent your world for you.", 
+            "source": "Susan Sarandon"
+        }, 
+        "56": {
+            "day": "56", 
+            "quote": "Always kiss your children goodnight -- even if they're already asleep.", 
+            "source": "H. Jackson Brown, Jr."
+        }, 
+        "57": {
+            "day": "57", 
+            "quote": "Having a baby is a life-changer. It gives you a whole other perspective on why you wake up every day.", 
+            "source": "Taylor Hanson"
+        }, 
+        "58": {
+            "day": "58", 
+            "quote": "The jewel of the sky is the sun, the jewel of the house is the child.", 
+            "source": "Chinese saying"
+        }, 
+        "59": {
+            "day": "59", 
+            "quote": "Every baby needs a lap.", 
+            "source": "Henry Robin"
+        }, 
+        "6": {
+            "day": "6", 
+            "quote": "We never know the love of the parent until we become parents ourselves.", 
+            "source": "Henry Ward Beecher"
+        }, 
+        "60": {
+            "day": "60", 
+            "quote": "Give a little love to a child. and you get a great deal back.", 
+            "source": "John Ruskin"
+        }, 
+        "61": {
+            "day": "61", 
+            "quote": "There are two things children should get from their parents: roots and wings.", 
+            "source": "Johann Wolfgang von Goethe"
+        }, 
+        "62": {
+            "day": "62", 
+            "quote": "Just like a plant needs light and space to grow, a child needs love and freedom to unfold.", 
+            "source": "Sigrid Leo"
+        }, 
+        "63": {
+            "day": "63", 
+            "quote": "Children need love, especially when they do not deserve it.", 
+            "source": "Harold Hulbert"
+        }, 
+        "64": {
+            "day": "64", 
+            "quote": "Insomnia: A contagious disease often transmitted from babies to parents.", 
+            "source": "Shannon Fife"
+        }, 
+        "65": {
+            "day": "65", 
+            "quote": "I don't know why they say 'you have a baby.' The baby has you.", 
+            "source": "Gallagher"
+        }, 
+        "66": {
+            "day": "66", 
+            "quote": "Having my baby fall asleep in my arms takes away all of my worries and stresses.", 
+            "source": "Maria Jose Ovalle"
+        }, 
+        "67": {
+            "day": "67", 
+            "quote": "When you become a mother, you stop being the picture and start being the frame.", 
+            "source": "Anon"
+        }, 
+        "68": {
+            "day": "68", 
+            "quote": "I never knew how much love my heart could hold until someone called me mommy.", 
+            "source": "Rita Ghatourey"
+        }, 
+        "69": {
+            "day": "69", 
+            "quote": "Pretty much all the honest truth telling in the world is done by children.", 
+            "source": "Oliver Wendell Holmes"
+        }, 
+        "7": {
+            "day": "7", 
+            "quote": "Sometimes the smallest things take up the most room in your heart", 
+            "source": "A.A. Milne"
+        }, 
+        "70": {
+            "day": "70", 
+            "quote": "Raising kids is part joy and part guerilla warfare.", 
+            "source": "Ed Asner"
+        }, 
+        "71": {
+            "day": "71", 
+            "quote": "Even when freshly washed and relieved of all obvious confections, children tend to be sticky.", 
+            "source": "Fran Lebowitz"
+        }, 
+        "72": {
+            "day": "72", 
+            "quote": "Aside from new babies, new mothers must be the most beautiful creatures on earth.", 
+            "source": "Terri Guillemets"
+        }, 
+        "73": {
+            "day": "73", 
+            "quote": "Adam and Eve had many advantages, but the principal one was that they escaped teething.", 
+            "source": "Mark Twain"
+        }, 
+        "74": {
+            "day": "74", 
+            "quote": "Having a child is surely the most beautifully irrational act that two people in love can commit.", 
+            "source": "Bill Cosby"
+        }, 
+        "75": {
+            "day": "75", 
+            "quote": "It is the nature of babies to be in bliss.", 
+            "source": "Deepak Chopra"
+        }, 
+        "76": {
+            "day": "76", 
+            "quote": "The best things in life aren't things.", 
+            "source": "Art Buchwald"
+        }, 
+        "77": {
+            "day": "77", 
+            "quote": "I think that I see something more eternal than the ocean in the expression of the eyes of a waking little baby.", 
+            "source": "Vincent van Gogh"
+        }, 
+        "78": {
+            "day": "78", 
+            "quote": "A babe in the house is a well-spring of pleasure, a messenger of peace and love, a resting place for innocence on earth.", 
+            "source": "Martin Fraquhar Tupper"
+        }, 
+        "79": {
+            "day": "79", 
+            "quote": "We cannot give our children the future...but we can the present.", 
+            "source": "Kathleen Norris"
+        }, 
+        "8": {
+            "day": "8", 
+            "quote": "A baby is God's opinion that the world should go on.", 
+            "source": "Carl Sandburg"
+        }, 
+        "80": {
+            "day": "80", 
+            "quote": "What a child doesn't receive he can seldom later give.", 
+            "source": "P.D. James"
+        }, 
+        "81": {
+            "day": "81", 
+            "quote": "Each day of our lives we make deposits in the memory banks of our children.", 
+            "source": "Charles R. Swindall"
+        }, 
+        "82": {
+            "day": "82", 
+            "quote": "A mother is she who can take the place of all others but whose place no one else can take.", 
+            "source": "Cardinal Mermillod"
+        }, 
+        "83": {
+            "day": "83", 
+            "quote": "Love is an act of endless forgiveness, a tender look which becomes a habit.", 
+            "source": "Peter Ustinov"
+        }, 
+        "84": {
+            "day": "84", 
+            "quote": "Only mothers can think of the future - because they give birth to it in their children.", 
+            "source": "Maxim Gorky"
+        }, 
+        "85": {
+            "day": "85", 
+            "quote": "The heart of a mother is a deep abyss at the bottom of which you will always find forgiveness.", 
+            "source": "Honore' de Balzac"
+        }, 
+        "86": {
+            "day": "86", 
+            "quote": "The quickest way for a parent to get a child's attention is to sit down and look comfortable.", 
+            "source": "Lane Olinghouse"
+        }, 
+        "87": {
+            "day": "87", 
+            "quote": "Love is the greatest gift that one generation can leave to another.", 
+            "source": "Richard Garnett"
+        }, 
+        "88": {
+            "day": "88", 
+            "quote": "A child seldom needs a good talking to as a good listening to.", 
+            "source": "Robert Brault"
+        }, 
+        "89": {
+            "day": "89", 
+            "quote": "Your children need your presence more than your presents.", 
+            "source": "Jesse Jackson"
+        }, 
+        "9": {
+            "day": "9", 
+            "quote": "Words can not express the joy of new life.", 
+            "source": "Hermann Hesse"
+        }, 
+        "90": {
+            "day": "90", 
+            "quote": "So quickly you grow with bounds and leaps, but the sweetest memories are mine for keeps!", 
+            "source": "Anon"
+        }
+    }
+}

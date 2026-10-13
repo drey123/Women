@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/cyclePickerContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="8.0dp">
+        <androidx.compose.ui.platform.ComposeView android:id="@id/cyclePicker" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.glow.android.ui.bbt.ChartView android:id="@id/chartView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/cyclePickerContainer" />
+    <RelativeLayout android:id="@id/startLogView" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/bbt_chart_start_log_height" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="300.0dp" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/bbt_chart_activity_start_log_message" android:layout_centerHorizontal="true" />
+        <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:gravity="center" android:id="@id/startLogButton" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/bbt_chart_activity_start_log" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="true" style="@style/BlueButton" />
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/premium_only_label" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/progressLayout" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="48.0dp" android:layout_height="48.0dp" style="@android:style/Widget.Holo.Light.ProgressBar" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sampleLayout" android:background="#e5ffffff" android:paddingBottom="10.0dp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="60.0dp" android:layout_below="@id/cyclePickerContainer" app:layout_behavior="com.glow.android.ui.home.ScrollFABBehavior">
+        <TextView android:textSize="16.0sp" android:textColor="#5b62d2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bbt_sample_data" android:fontFamily="sans-serif-medium" android:textFontWeight="600" />
+        <ImageView android:layout_gravity="end" android:layout_width="200.0dp" android:layout_height="105.0dp" android:layout_marginTop="20.0dp" android:src="@null" android:layout_marginEnd="25.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/addLogButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="200.0dp" android:src="@drawable/ic_log_btn_2x" android:layout_alignParentBottom="true" android:layout_marginEnd="16.0dp" android:layout_alignParentEnd="true" app:fab_size="normal" app:layout_behavior="com.glow.android.ui.home.ScrollFABBehavior" />
+    <com.glow.android.ui.widget.compose.UnlockMaskBtn android:id="@id/unlockMaskBtn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

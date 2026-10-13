@@ -1,0 +1,30 @@
+package com.facebook.drawee.view;
+
+import android.view.View;
+import android.view.ViewGroup;
+import com.facebook.infer.annotation.Nullsafe;
+
+/* JADX INFO: loaded from: classes3.dex */
+@Nullsafe(Nullsafe.Mode.LOCAL)
+public class AspectRatioMeasure {
+
+    public static class Spec {
+        public int height;
+        public int width;
+    }
+
+    private static boolean shouldAdjust(int i) {
+        return i == 0 || i == -2;
+    }
+
+    public static void updateMeasureSpec(Spec spec, float f4, ViewGroup.LayoutParams layoutParams, int i, int i6) {
+        if (f4 <= 0.0f || layoutParams == null) {
+            return;
+        }
+        if (shouldAdjust(layoutParams.height)) {
+            spec.height = View.MeasureSpec.makeMeasureSpec(View.resolveSize((int) (((View.MeasureSpec.getSize(spec.width) - i) / f4) + i6), spec.height), 1073741824);
+        } else if (shouldAdjust(layoutParams.width)) {
+            spec.width = View.MeasureSpec.makeMeasureSpec(View.resolveSize((int) (((View.MeasureSpec.getSize(spec.height) - i6) * f4) + i), spec.width), 1073741824);
+        }
+    }
+}

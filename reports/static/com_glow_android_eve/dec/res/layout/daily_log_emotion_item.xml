@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="63.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp">
+        <ImageView android:id="@id/emotionPic" android:layout_width="58.0dp" android:layout_height="58.0dp" android:src="@null" />
+        <ImageView android:id="@id/emotion_logged_icon" android:visibility="invisible" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="8.0dp" android:src="@drawable/ic_yes_marked" android:scaleType="fitXY" android:layout_alignRight="@id/emotionPic" android:layout_alignBottom="@id/emotionPic" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_color" android:id="@id/emotion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_toRightOf="@id/emotionPic" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="right|center" android:id="@id/yes_selector" android:background="@drawable/selector_log_yes" android:layout_width="@dimen/emotion_tick_size" android:layout_height="@dimen/emotion_tick_size" android:layout_marginRight="70.0dp" />
+    <FrameLayout android:layout_gravity="right|center" android:id="@id/no_selector" android:background="@drawable/selector_log_no" android:layout_width="@dimen/emotion_tick_size" android:layout_height="@dimen/emotion_tick_size" android:layout_marginRight="26.0dp" />
+    <View android:layout_gravity="bottom" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="1.0dp" />
+</FrameLayout>

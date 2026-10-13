@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@null" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <LinearLayout android:orientation="vertical" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/image">
+            <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/invite_partner_dialog_title" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/invite_partner_dialog_text" android:lineSpacingMultiplier="1.1" />
+            <EditText android:id="@id/partner_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:hint="@string/invite_partner_dialog_partner_name" android:maxLines="1" android:inputType="text" />
+            <EditText android:id="@id/partner_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:hint="@string/invite_partner_dialog_partner_email" android:maxLines="1" android:inputType="textEmailAddress" />
+            <TextView android:textSize="12.0sp" android:id="@id/partner_feature_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:lineSpacingMultiplier="1.1" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

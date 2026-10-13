@@ -1,0 +1,1 @@
+ALTER TABLE `daily_log` ADD COLUMN `period_flow` INTEGER DEFAULT 0;

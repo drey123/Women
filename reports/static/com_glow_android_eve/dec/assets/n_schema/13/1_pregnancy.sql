@@ -1,0 +1,1 @@
+ALTER TABLE `pregnancy` ADD COLUMN `breast_feed` INTEGER;

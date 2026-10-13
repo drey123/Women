@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:gravity="center" android:id="@id/no_item_response" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/ptr_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/no_item_response">
+            <ListView android:id="@id/item_list" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:divider="@color/transparent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+    <include layout="@layout/common_retry" />
+</FrameLayout>

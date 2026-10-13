@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DailyLogCellContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/titleTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dailydata_desc_ultrasound_photo" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/DailyLogCellTitle" />
+    <ImageView android:id="@id/photoView" android:visibility="gone" android:layout_width="300.0dp" android:layout_height="185.0dp" android:layout_marginTop="16.0dp" android:scaleType="fitCenter" app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+    <FrameLayout android:id="@id/button" android:background="@drawable/bg_round_corner_grey" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginTop="16.0dp" android:foreground="?selectableItemBackground" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/photoView" app:layout_goneMarginTop="16.0dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/buttonText" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/upload" android:drawablePadding="6.0dp" android:drawableStart="@drawable/ic_tool_camera" android:fontFamily="sans-serif-medium" app:drawableTint="@color/black" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

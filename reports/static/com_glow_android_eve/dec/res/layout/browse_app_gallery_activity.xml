@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/browse_app_gallery_activity_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/baby" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/app_item" />
+        <View android:background="@color/profile_separator" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <include android:id="@id/eve" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/app_item" />
+        <View android:background="@color/profile_separator" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <include android:id="@id/glow" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/app_item" />
+        <View android:background="@color/profile_separator" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/viewNoMoreItems" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/video_list_footer" android:alpha="128.0" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/viewWaitingLoadMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateTint="@color/colorAccent" android:indeterminateTintMode="src_in" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/time_to_glow_title" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/time_to_glow_subtitle" />
+        <ImageView android:id="@id/glow_image_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:src="@null" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="@string/popup_use_glow_msg_postpartum" android:lineSpacingMultiplier="1.5" />
+        <androidx.appcompat.widget.AppCompatButton android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/download" android:background="@drawable/blue_button_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:layout_marginTop="0.0dp" android:minHeight="48.0dp" android:text="@string/download_glow" android:textAllCaps="false" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+    <ImageView android:id="@id/buttonClose" android:padding="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_dark_gray" />
+</FrameLayout>

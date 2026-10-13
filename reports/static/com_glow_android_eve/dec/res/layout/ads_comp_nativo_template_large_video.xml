@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?android:selectableItemBackground" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/containerMedia" android:background="@color/black" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_centerHorizontal="true" app:layout_constraintDimensionRatio="H,16:9" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/ads_comp_nativo_video_frame" />
+    </FrameLayout>
+    <include android:id="@id/containerSponsor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintTop_toBottomOf="@id/containerMedia" layout="@layout/ads_comp_nativo_sponsor" />
+    <TextView android:id="@id/ad_headline" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="3" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/containerSponsor" style="@style/FeedItemTitle.Large" />
+    <TextView android:id="@id/ad_preview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:lines="2" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/ad_headline" style="@style/FeedItemDesc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

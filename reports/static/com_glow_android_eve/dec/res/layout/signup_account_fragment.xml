@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back_button" android:padding="16.0dp" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@drawable/ic_close_black_alpha_53" android:scaleType="centerInside" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/dark_periwinkle" android:id="@id/continue_button" android:paddingLeft="19.0dp" android:paddingTop="9.0dp" android:paddingRight="19.0dp" android:paddingBottom="9.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/normal_continue" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="19.0dp" android:layout_marginRight="19.0dp">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/name_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <EditText android:theme="@style/SignUpEditTextTheme" android:id="@id/full_name" android:hint="@string/full_name_hint" android:singleLine="true" android:capitalize="words" style="@style/UserInformationInputSignUp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/email_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <AutoCompleteTextView android:theme="@style/SignUpEditTextTheme" android:id="@id/email" android:hint="@string/email" android:capitalize="none" android:inputType="textEmailAddress" android:imeOptions="actionNext" style="@style/UserInformationInputSignUp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/password_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:passwordToggleEnabled="true">
+            <EditText android:theme="@style/SignUpEditTextTheme" android:id="@id/password" android:hint="@string/sign_up_password_hint" android:inputType="textPassword" android:imeOptions="actionDone" style="@style/UserInformationInputSignUp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#fd4343" android:id="@id/passwordHint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.glow.android.kaylee.ui.widget.MaterialPicker android:theme="@style/SignUpEditTextTheme" android:textSize="16.0sp" android:id="@id/birthday_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:hint="@string/set_birthday" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/gdprLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+            <CheckBox android:id="@id/gdprCheckBox" android:background="?android:listChoiceIndicatorMultiple" android:layout_width="36.0dp" android:layout_height="36.0dp" android:button="@null" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/gdprText" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/sign_up_tos_1" app:layout_constraintBottom_toBottomOf="@id/gdprCheckBox" app:layout_constraintLeft_toRightOf="@id/gdprCheckBox" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/gdprCheckBox" />
+            <CheckBox android:id="@id/gdprCheckBox1" android:background="?android:listChoiceIndicatorMultiple" android:layout_width="36.0dp" android:layout_height="36.0dp" android:button="@null" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/gdprCheckBox" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/gdprText1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/sign_up_tos_2" app:layout_constraintLeft_toRightOf="@id/gdprCheckBox1" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/gdprCheckBox1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/goMFALink" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:text="@string/sign_up_turn_on_mfa" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/privacy_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/sign_up_privacy_info" android:lineSpacingExtra="5.0dp" android:fontFamily="sans-serif-light" />
+    </LinearLayout>
+</LinearLayout>

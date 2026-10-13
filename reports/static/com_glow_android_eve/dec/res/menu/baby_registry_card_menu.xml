@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/hide" android:title="@string/baby_registry_card_hide" />
+    <item android:id="@id/cancel" android:title="@string/baby_registry_card_cancel" />
+</menu>

@@ -1,0 +1,12 @@
+ALTER TABLE `reminder` ADD `start_date1` INTEGER;
+ALTER TABLE `reminder` ADD `start_date2` INTEGER;
+ALTER TABLE `reminder` ADD `start_date3` INTEGER;
+ALTER TABLE `reminder` ADD `start_date4` INTEGER;
+ALTER TABLE `reminder` ADD `start_date5` INTEGER;
+ALTER TABLE `reminder` ADD `start_date6` INTEGER;
+ALTER TABLE `reminder` ADD `all_day` INTEGER;
+ALTER TABLE `reminder` ADD `end_date` INTEGER;
+ALTER TABLE `reminder` ADD `med_per_take` INTEGER;
+ALTER TABLE `reminder` ADD `med_per_take_unit` TEXT;
+ALTER TABLE `reminder` ADD `reserved` INTEGER;
+ALTER TABLE `reminder` ADD `type` INTEGER;

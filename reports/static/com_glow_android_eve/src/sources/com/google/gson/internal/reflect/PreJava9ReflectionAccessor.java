@@ -1,0 +1,11 @@
+package com.google.gson.internal.reflect;
+
+import java.lang.reflect.AccessibleObject;
+
+/* JADX INFO: loaded from: classes6.dex */
+final class PreJava9ReflectionAccessor extends ReflectionAccessor {
+    @Override // com.google.gson.internal.reflect.ReflectionAccessor
+    public final void a(AccessibleObject accessibleObject) {
+        accessibleObject.setAccessible(true);
+    }
+}

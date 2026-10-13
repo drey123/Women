@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/black999" android:id="@id/labelYouLogged" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trend_chart_label_you_logged" android:fontFamily="sans-serif" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/black999" android:id="@id/labelPercentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trend_chart_label_percentage_of_cycle_buddies" android:fontFamily="sans-serif" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

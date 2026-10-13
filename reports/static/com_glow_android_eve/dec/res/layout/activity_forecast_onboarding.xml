@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/closeBtn" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="16.0dp" android:src="@drawable/ic_close_dark_gray" />
+    <ImageView android:id="@id/babyImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38.0dp" android:layout_marginBottom="8.0dp" android:scaleType="centerInside" android:layout_below="@id/closeBtn" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/green_apple" android:id="@id/introBig" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="@string/forecast_intro_big_text" android:layout_below="@id/babyImage" android:lineSpacingExtra="8.0sp" android:fontFamily="sans-serif" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:id="@id/introText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forecast_intro_for_free" android:layout_below="@id/introBig" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+    <LinearLayout android:gravity="center" android:id="@id/exploreBtn" android:background="@drawable/bg_rect_green" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="10.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/exploreText" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="@string/explore_now" android:drawablePadding="10.0dp" android:drawableStart="@drawable/ic_premium_white" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</RelativeLayout>

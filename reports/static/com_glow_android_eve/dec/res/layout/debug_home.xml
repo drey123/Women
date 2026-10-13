@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="User info" android:fontFamily="sans-serif-medium" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:id="@id/user_id_view" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" />
+            <androidx.appcompat.widget.AppCompatButton android:id="@id/copyUserToken" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="click to copy token to clipboard" android:textAllCaps="true" style="@style/FlatButtonPurple" />
+            <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Glow First current page (do nothing)" />
+                <RadioButton android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="Glow First home page" />
+                <RadioButton android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="Glow First kick off page" />
+            </RadioGroup>
+        </LinearLayout>
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/testOnboardingSteps" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Test Onboarding Steps" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/testFtPaywall1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Test Free Trial Test Paywall 1" android:fontFamily="sans-serif-medium" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/testFtPaywall2TTC" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Test Free Trial Test Paywall 2 TTC" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/testFtPaywall2NONTTC" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Test Free Trial Test Paywall 2 NON-TTC" android:fontFamily="sans-serif-medium" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/testOnboarding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Test onboarding multi-selector" android:fontFamily="sans-serif-medium" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/testNewPregnancy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Test new switch pregnancy" android:fontFamily="sans-serif-medium" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <LinearLayout android:orientation="vertical" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/appOpenDayAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="App Open Day +1" android:fontFamily="sans-serif-medium" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/appOpenDayClear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="App Open Day clear" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <LinearLayout android:orientation="horizontal" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/promoPopupLastDate" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="promo popup last date:" android:layout_weight="1.0" />
+            <TextView android:textStyle="bold" android:id="@id/promoPopupLastDateClear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="clear" />
+        </LinearLayout>
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <LinearLayout android:orientation="horizontal" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/promoPopupTotalCount" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="promo popup total count:" android:layout_weight="1.0" />
+            <TextView android:textStyle="bold" android:id="@id/promoPopupTotalCountClear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="clear" />
+        </LinearLayout>
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Bottom sheet log type:" android:fontFamily="sans-serif-medium" />
+        <RadioGroup android:orientation="vertical" android:id="@id/bottomSheetLog" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/bottomSheetNone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="none" android:onClick="onBottomSheetLogTypeSelected" />
+            <RadioButton android:id="@id/bottomSheetPeriodLate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="period late" android:onClick="onBottomSheetLogTypeSelected" />
+            <RadioButton android:id="@id/bottomSheetBeforePeriod" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="before period" android:onClick="onBottomSheetLogTypeSelected" />
+            <RadioButton android:id="@id/bottomSheetPeriod" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="period" android:onClick="onBottomSheetLogTypeSelected" />
+            <RadioButton android:id="@id/bottomSheetFertile" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="in fertile" android:onClick="onBottomSheetLogTypeSelected" />
+            <RadioButton android:id="@id/bottomSheetOpk" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="opk" android:onClick="onBottomSheetLogTypeSelected" />
+            <RadioButton android:id="@id/bottomSheetPMS" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="pms" android:onClick="onBottomSheetLogTypeSelected" />
+        </RadioGroup>
+        <androidx.compose.ui.platform.ComposeView android:id="@id/testTX" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/paywallNew" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Paywall new" android:fontFamily="sans-serif-medium" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/addPeriod" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Period Editor Page" android:fontFamily="sans-serif-medium" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/debugNewPeriodEditor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Debug New Period Editor" android:fontFamily="sans-serif-medium" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/debugInsightV2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Debug Insights V2" android:fontFamily="sans-serif-medium" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/debugHealthTip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Debug Health Tip" android:fontFamily="sans-serif-medium" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/debugChart" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Debug Chart" android:fontFamily="sans-serif-medium" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Sync" android:fontFamily="sans-serif-medium" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="#808080" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Note sync method will just schedule a sync, it will run a push, but may not run a pull, it depends on the cache time. For pull, use the pull button" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+                <androidx.appcompat.widget.AppCompatButton android:id="@id/sync_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sync" android:textAllCaps="true" style="@style/FlatButtonPurple" />
+                <androidx.appcompat.widget.AppCompatButton android:id="@id/pushButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="Push" android:textAllCaps="true" style="@style/FlatButtonPurple" />
+                <androidx.appcompat.widget.AppCompatButton android:id="@id/pullDataButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="Pull" android:textAllCaps="true" style="@style/FlatButtonPurple" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Intent" android:fontFamily="sans-serif-medium" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/MFAQuickCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="MFA quick check" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/MFAFlow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="MFA confirm flow" />
+        </LinearLayout>
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/purple" android:id="@id/reviewCardPrefReset" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:text="Review card cache: reset" android:fontFamily="sans-serif-medium" />
+        <View android:layout_marginTop="16.0dp" style="@style/Divider" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="#808080" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="FertilityGeneralWeb.Activity Test \nInput API such as home or clinic/eb1b47fba01949e1aea5be6916e3be78 to test" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+                <EditText android:id="@id/url" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="/fertility/home" android:hint="enter email" android:layout_toLeftOf="@id/fertility_general" android:inputType="textUri" />
+                <androidx.appcompat.widget.AppCompatButton android:id="@id/fertility_general" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="GO" android:layout_alignParentRight="true" style="@style/FlatButtonPurple" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#808080" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="LinkDispatcher Test \nInput a deep link to test" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+                <EditText android:id="@id/link" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="http://glowing.com/glow-pages" android:hint="Input deep link" android:layout_toLeftOf="@id/deep_link" android:inputType="textUri" />
+                <androidx.appcompat.widget.AppCompatButton android:id="@id/deep_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="GO" android:layout_alignParentRight="true" style="@style/FlatButtonPurple" />
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton android:id="@id/adsDebugMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="Ads Debug Menu" android:textAllCaps="false" style="@style/FlatButtonPurple" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

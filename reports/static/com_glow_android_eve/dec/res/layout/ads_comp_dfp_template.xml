@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView android:id="@id/adView" android:background="?selectableItemBackground" android:paddingTop="12.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/containerSponsor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="24.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/ads_comp_dfp_sponsor" />
+        <androidx.cardview.widget.CardView android:id="@id/containerMediaView" android:layout_width="0.0dp" android:layout_height="88.0dp" android:layout_marginTop="6.0dp" app:cardCornerRadius="4.0dp" app:cardElevation="0.0dp" app:layout_constraintDimensionRatio="H,2:3" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/containerSponsor">
+            <com.google.android.gms.ads.nativead.MediaView android:id="@id/adMedia" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+        <TextView android:id="@id/adHeadline" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="3" android:layout_marginEnd="16.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/containerMediaView" app:layout_constraintTop_toTopOf="@id/containerMediaView" style="@style/FeedItemTitle.Small" />
+        <TextView android:id="@id/adDesc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginEnd="16.0dp" app:layout_constraintLeft_toLeftOf="@id/adHeadline" app:layout_constraintRight_toLeftOf="@id/containerMediaView" app:layout_constraintTop_toBottomOf="@id/adHeadline" style="@style/FeedItemDesc" />
+        <include android:id="@id/adsActionContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/adDesc" app:layout_constraintVertical_bias="1.0" layout="@layout/ads_comp_action_small_stroke" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>

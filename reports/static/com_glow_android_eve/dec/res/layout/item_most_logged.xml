@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/mostLoggedIcon" android:layout_width="54.0dp" android:layout_height="54.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/mostLoggedCount" android:background="@drawable/bg_round_gold_16dp" android:layout_width="wrap_content" android:layout_height="18.0dp" android:layout_margin="4.0dp" android:minWidth="18.0dp" app:layout_constraintBottom_toBottomOf="@id/mostLoggedIcon" app:layout_constraintRight_toRightOf="@id/mostLoggedIcon" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/mostLoggedName" android:layout_width="0.0dp" android:layout_height="wrap_content" android:lines="1" android:fontFamily="sans-serif" app:layout_constraintLeft_toLeftOf="@id/mostLoggedIcon" app:layout_constraintRight_toRightOf="@id/mostLoggedIcon" app:layout_constraintTop_toBottomOf="@id/mostLoggedIcon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

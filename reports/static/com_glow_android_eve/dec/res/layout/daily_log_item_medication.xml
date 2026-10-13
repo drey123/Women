@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/medicationListEntry" layout="@layout/medical_log_medication_list_entry" />
+    <include layout="@layout/daily_log_horizontal_divider" />
+</LinearLayout>

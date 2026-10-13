@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/Theme.Nurture.Timelapse" android:id="@id/theToolbar" android:background="?colorPrimary" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="4.0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <androidx.appcompat.widget.AppCompatSpinner android:textSize="14.0sp" android:textColor="@color/text_color" android:gravity="center_vertical" android:id="@id/babyNameSpinner" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dropDownWidth="216.0dp" app:backgroundTint="@color/nurture" />
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@id/statusBarBg" android:background="@color/nurture" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_alignParentTop="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/albumRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/theToolbar" />
+    <RelativeLayout android:id="@id/sampleMaskView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/theToolbar">
+        <RelativeLayout android:id="@id/playerMaskView" android:background="#b2333333" android:visibility="gone" android:layout_width="match_parent" android:layout_height="360.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/firstUseTimelapseView" android:layout_width="144.0dp" android:layout_height="wrap_content" android:layout_marginBottom="18.0dp" android:text="@string/first_time_use_timelapse_tips" android:layout_above="@id/startDemoButton" android:layout_centerHorizontal="true" android:lineSpacingExtra="6.0sp" />
+            <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:textColor="#ffffff" android:id="@id/startDemoButton" android:background="@drawable/bg_button_purple" android:layout_width="148.0dp" android:layout_height="36.0dp" android:text="@string/start_the_demo" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/photosMaskView" android:background="#e6ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/playerMaskView">
+            <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="#80808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sample_photos" android:layout_centerInParent="true" />
+            <RelativeLayout android:id="@id/uploadFirstPhotoView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="53.0dp" android:layout_marginBottom="130.0dp" android:layout_alignParentBottom="true">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:gravity="center" android:layout_width="177.0dp" android:layout_height="wrap_content" android:text="@string/upload_your_first_photo" android:lineSpacingExtra="4.0sp" android:layout_marginEnd="100.0dp" android:layout_alignParentEnd="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:src="@drawable/ic_timelapse_curly_arrow" android:layout_marginEnd="50.0dp" android:layout_alignParentEnd="true" app:tint="#808080" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/backToTopButtonWrap" android:layout_width="86.0dp" android:layout_height="76.0dp" android:layout_marginBottom="106.0dp" android:layout_alignParentBottom="true" android:layout_marginEnd="16.0dp" android:layout_alignParentEnd="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/backToTopButton" android:padding="0.0dp" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@null" android:scaleType="fitXY" android:layout_centerInParent="true" android:elevation="@dimen/blurr_base_4" app:backgroundTint="@color/white" app:fabCustomSize="56.0dp" app:useCompatPadding="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="86.0dp" android:layout_height="86.0dp" android:layout_marginBottom="16.0dp" android:layout_alignParentBottom="true" android:layout_marginEnd="16.0dp" android:layout_alignParentEnd="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/addPhotoButton" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@null" android:layout_centerInParent="true" app:backgroundTint="@color/white" app:fabSize="normal" />
+        <com.glow.android.kaylee.ui.widget.AnimRippleBg android:id="@id/addPhotoRipple" android:layout_width="86.0dp" android:layout_height="86.0dp" android:layout_centerVertical="true" android:layout_marginStart="0.0dp" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/theToolbar" android:translationZ="10.0dp" android:elevation="10.0dp">
+        <RelativeLayout android:id="@id/maskView" android:background="#f3ffffff" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="76.0dp" android:layout_height="109.0dp" android:layout_marginLeft="56.0dp" android:layout_marginTop="88.0dp" android:src="@null" />
+            <TextView android:textSize="18.0sp" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginRight="24.0dp" android:text="@string/timelapse_hide_photo_tip" android:layout_centerInParent="true" android:lineSpacingExtra="4.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:translationZ="10.0dp">
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/hideSwitch" android:paddingTop="18.0dp" android:paddingBottom="14.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="90.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.glow.android.kaylee.ui.widget.LoadingView android:id="@id/createTimelapseLoadingView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

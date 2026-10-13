@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/back_button" android:padding="16.0dp" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@drawable/ic_arrow_back_grey_24dp" android:scaleType="centerInside" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.glow.android.kaylee.ui.widget.ToolTipTextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_up_bmi_title" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:text="@string/sign_up_bmi_desc" android:fontFamily="sans-serif-light" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/dark_periwinkle" android:textColorHint="@color/dark_periwinkle" android:gravity="center" android:id="@id/weight_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:hint="@string/set_weight_hint" android:textAllCaps="true" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/dark_periwinkle" android:textColorHint="@color/dark_periwinkle" android:gravity="center" android:id="@id/height_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:hint="@string/set_height_hint" android:textAllCaps="true" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/bmi_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:fontFamily="sans-serif-light" />
+        <Space android:layout_width="wrap_content" android:layout_height="80.0dp" />
+    </LinearLayout>
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/submit_btn" android:padding="16.0dp" android:layout_width="200.0dp" android:layout_height="wrap_content" android:layout_marginBottom="21.0dp" android:text="@string/sign_me_up_button" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-medium" style="@style/Base.Widget.AppCompat.Button.Colored" />
+</RelativeLayout>

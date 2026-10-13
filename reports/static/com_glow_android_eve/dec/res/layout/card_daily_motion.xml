@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/card_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/author" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageViewAvatar" android:layout_width="16.0dp" android:layout_height="16.0dp" app:placeholderImage="@color/feed_item_avatar_default" app:roundedCornerRadius="8.0dp" />
+                <TextView android:id="@id/textViewAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageViewAvatar" android:layout_marginStart="4.0dp" style="@style/NewHomePageContentCardItemName" />
+            </LinearLayout>
+            <TextView android:id="@id/textViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" android:layout_below="@id/author" style="@style/NewHomePageContentCardItemTitle" />
+            <TextView android:ellipsize="end" android:id="@id/card_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" android:layout_below="@id/textViewTitle" style="@style/NewHomePageContentCardItemSubTitle" />
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView android:id="@id/containerMedia" android:layout_width="132.0dp" android:layout_height="88.0dp" app:cardCornerRadius="4.0dp" app:elevation="0.0dp">
+            <FrameLayout android:id="@id/containerPlayer" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ImageView android:id="@id/imageViewThumb" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/progressCircular" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:indeterminate="true" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <View android:id="@id/divider" android:layout_marginTop="16.0dp" android:layout_below="@id/card_body" style="@style/Divider" />
+</RelativeLayout>

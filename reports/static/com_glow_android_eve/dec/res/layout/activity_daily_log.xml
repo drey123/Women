@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/app_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:translationZ="4.0dp" app:theme="@style/Theme.Prime.Light.NoActionbar">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <ImageView android:layout_gravity="end" android:id="@id/customizeButton" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_logpage_customize_btn" android:layout_marginEnd="16.0dp" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:id="@id/scrollView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/app_bar_layout">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/hiddenHint" android:background="#eeeffa" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:text="@string/daily_log_section_hidden_from_partner" android:drawableLeft="@drawable/ic_daily_log_hidden_eye" android:drawablePadding="4.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/datePickSection" android:background="#ffffffff" android:paddingLeft="16.0dp" android:paddingRight="6.0dp" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_below="@id/hiddenHint" android:elevation="5.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="#99000000" android:ellipsize="end" android:gravity="start" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="@drawable/ic_arrow_drop_down_black_5dp" android:drawablePadding="14.0dp" android:textFontWeight="500" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <ImageView android:id="@id/btn_preday" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_logpage_pre_btn" />
+                <ImageView android:id="@id/btn_nextday" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_logpage_next_btn" android:layout_marginStart="10.0dp" />
+            </LinearLayout>
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/todayLogReminder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/datePickSection" android:fontFamily="sans-serif-medium" android:paddingHorizontal="16.0dp" android:paddingVertical="12.0dp" />
+            <LinearLayout android:orientation="vertical" android:id="@id/logItemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/todayLogReminder" />
+            <TextView android:layout_gravity="center" android:id="@id/exploreMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/daily_log_explore_more_button" android:layout_below="@id/logItemContainer" style="@style/FlatButtonWhite" />
+            <androidx.legacy.widget.Space android:layout_width="match_parent" android:layout_height="70.0dp" android:layout_below="@id/exploreMore" />
+            <View android:id="@id/tooltipsChangeDateView" android:background="@null" android:visibility="gone" android:layout_width="200.0dp" android:layout_height="38.0dp" android:layout_below="@id/datePickSection" />
+        </RelativeLayout>
+    </ScrollView>
+    <View android:id="@id/datePickerMask" android:background="#000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.5" />
+    <com.glow.android.ui.widget.calendarview.CalendarPopUpView android:id="@id/calendarContainer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?android:actionBarSize" android:layout_marginBottom="16.0dp" android:elevation="3.0dp" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/productList" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:background="@drawable/vague_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/saveButton" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginLeft="32.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="32.0dp" android:layout_marginBottom="16.0dp" android:text="@string/save_daily_log" style="@style/RaisedButtonPurple" />
+    </FrameLayout>
+    <View android:id="@id/loadingView" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

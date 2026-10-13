@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.glow.android.blurr.chat.ui.BlurrAvatar android:layout_gravity="center_horizontal" android:id="@id/req_in_avatar" android:layout_width="@dimen/blurr_request_avatar_size" android:layout_height="@dimen/blurr_request_avatar_size" android:layout_marginTop="@dimen/blurr_request_avatar_margintop" app:BlurrAvatarSizeLarge="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/sender_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/blurr_base_24" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/blurr_grey_88" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/blurr_base_8" android:text="@string/chat_text_chat_req" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/confirm_btn" android:background="@drawable/raised_btn_purple_bg_compat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/blurr_base_24" android:text="@string/chat_btn_confirm_req" android:fontFamily="sans-serif-medium" android:elevation="8.0dp" style="@style/RaisedButtonPurple" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/blurr_pastel_red" android:layout_gravity="center_horizontal" android:id="@id/block_btn" android:background="@drawable/flat_btn_white_bg_compat" android:paddingLeft="24.0dp" android:paddingTop="10.0dp" android:paddingRight="24.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:text="@string/chat_btn_block_req" android:textAllCaps="true" android:fontFamily="sans-serif-medium" />
+            <View android:background="@color/blurr_grey_dd" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/blurr_base_32" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/hit_msg" android:paddingLeft="@dimen/blurr_base_56" android:paddingRight="@dimen/blurr_base_56" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/blurr_base_24" android:lineSpacingExtra="8.0dp" android:textAlignment="center" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

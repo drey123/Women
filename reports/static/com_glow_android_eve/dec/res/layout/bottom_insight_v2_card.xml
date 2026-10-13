@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_white_top_corner_16dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView android:name="com.glow.android.kaylee.ui.insight.InsightContainerFragment" android:id="@id/insightv2Container" android:tag="InsightContainerFragment" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

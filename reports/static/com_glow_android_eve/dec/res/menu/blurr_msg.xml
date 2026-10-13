@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_delete_contact" android:title="@string/chat_msg_menu_delete_contact" app:showAsAction="never" />
+    <item android:id="@id/menu_block_contact" android:title="@string/chat_msg_menu_block_contact" app:showAsAction="never" />
+    <item android:id="@id/menu_report_contact" android:title="@string/chat_msg_menu_report_contact" app:showAsAction="never" />
+</menu>

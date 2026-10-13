@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/premium_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/icon" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/premium_small" android:scaleType="centerInside" />
+        <TextView android:textColor="@color/purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="@string/insight_comparative_insights" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" />
+    </RelativeLayout>
+    <WebView android:id="@id/html" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/premium_badge" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/insight_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/html" android:fontFamily="sans-serif-light" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/insight_color" android:textColorLink="@color/insight_color" android:id="@id/insight_source" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:layout_below="@id/insight_body" android:fontFamily="sans-serif-light" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+package kotlin.jvm.internal;
+
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: compiled from: PrimitiveCompanionObjects.kt */
+/* JADX INFO: loaded from: classes6.dex */
+public final class StringCompanionObject {
+
+    @NotNull
+    public static final StringCompanionObject a = new StringCompanionObject();
+}

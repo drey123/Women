@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/attachment" android:focusable="false" android:layout_width="@dimen/blurr_base_48" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" android:src="@drawable/ic_camera_black_24" android:scaleType="center" android:tint="@color/blue" style="?android:borderlessButtonStyle" />
+        <ImageView android:id="@id/emoji" android:focusable="false" android:visibility="gone" android:layout_width="@dimen/blurr_base_48" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:src="@null" android:scaleType="center" android:tint="@color/blue" style="?android:borderlessButtonStyle" />
+        <EditText android:textSize="16.0sp" android:layout_gravity="bottom" android:id="@id/edittext" android:background="@color/white" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:minHeight="@dimen/blurr_base_48" android:hint="@string/chat_msg_composer_hint" android:maxLines="3" android:maxLength="10000" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/blurr_msg_composer_cursor" />
+        <ImageView android:id="@id/send" android:focusable="false" android:layout_width="@dimen/blurr_base_48" android:layout_height="match_parent" android:layout_marginLeft="@dimen/blurr_base_4" android:layout_marginRight="@dimen/blurr_base_4" android:src="@drawable/ic_send_white_24" android:scaleType="center" android:tint="@color/blue" style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+    <com.glow.android.prime.sticker.PackPickerView android:id="@id/pack_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="223.0dp" />
+</LinearLayout>

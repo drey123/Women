@@ -1,0 +1,1 @@
+ALTER TABLE `daily_log` ADD `sleep` INT NOT NULL DEFAULT 0;

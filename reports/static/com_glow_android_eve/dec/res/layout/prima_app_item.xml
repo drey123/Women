@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:layout_toLeftOf="@id/button" android:layout_toRightOf="@id/icon">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#333" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="#333" android:id="@id/app_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/app_name" />
+    </RelativeLayout>
+    <Button android:id="@id/button" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="78.0dp" android:text="@string/prima_open" android:layout_alignParentRight="true" style="@style/Prima.RaisedButton.White" />
+</RelativeLayout>

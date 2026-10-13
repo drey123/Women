@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioGroup android:orientation="horizontal" android:id="@id/toggleButtonStore" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/buttonStoreAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="All" />
+                <RadioButton android:id="@id/buttonStoreGoogle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Google" />
+            </RadioGroup>
+            <RadioGroup android:orientation="horizontal" android:id="@id/toggleButtonType" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/buttonTypeSubs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Subs" />
+                <RadioButton android:id="@id/buttonTypeItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Item" />
+            </RadioGroup>
+            <RadioGroup android:orientation="horizontal" android:id="@id/toggleButtonMethod" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/buttonMethodPurchase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="queryPurchases" />
+                <RadioButton android:id="@id/buttonMethodHistory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="queryPurchaseHistory" />
+            </RadioGroup>
+            <Button android:id="@id/buttonQuery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="query" style="@style/FlatButtonWhite" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/button_force_no_purchase" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="false" android:text="Debug: force UI as no purchases before" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <Button android:layout_gravity="end|bottom" android:id="@id/buttonRedeem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="redeem" style="@style/RaisedButtonPurple" />
+</FrameLayout>

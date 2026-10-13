@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_height="wrap_content" android:minHeight="74.0dp" style="@style/DailyLogItemHeader"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.glow.android.ui.widget.UninterceptableTextView android:id="@id/medicine_name" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:layout_toLeftOf="@id/medicine_selector" android:layout_centerVertical="true" style="@style/DailyLogItemDesc" />
+    <com.glow.android.ui.widget.BooleanSelector android:id="@id/medicine_selector" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/DailyLogBooleanSelector" />
+</RelativeLayout>

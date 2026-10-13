@@ -1,0 +1,76 @@
+package androidx.compose.material.icons.rounded;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.ui.graphics.Color;
+import androidx.compose.ui.graphics.SolidColor;
+import androidx.compose.ui.graphics.StrokeCap;
+import androidx.compose.ui.graphics.StrokeJoin;
+import androidx.compose.ui.graphics.vector.ImageVector;
+import androidx.compose.ui.graphics.vector.PathBuilder;
+import androidx.compose.ui.graphics.vector.VectorKt;
+import androidx.compose.ui.unit.Dp;
+import e.a;
+import e.b;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* JADX INFO: compiled from: BrightnessMedium.kt */
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\"\u0010\u0010\u0000\u001a\u0004\u0018\u00010\u0001X\u0082\u000e¢\u0006\u0002\n\u0000\"\u0015\u0010\u0002\u001a\u00020\u0001*\u00020\u00038F¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, d2 = {"_brightnessMedium", "Landroidx/compose/ui/graphics/vector/ImageVector;", "BrightnessMedium", "Landroidx/compose/material/icons/Icons$Rounded;", "getBrightnessMedium", "(Landroidx/compose/material/icons/Icons$Rounded;)Landroidx/compose/ui/graphics/vector/ImageVector;", "material-icons-extended_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
+@SourceDebugExtension
+public final class BrightnessMediumKt {
+
+    @Nullable
+    private static ImageVector _brightnessMedium;
+
+    @NotNull
+    public static final ImageVector getBrightnessMedium(@NotNull Icons.Rounded rounded) {
+        ImageVector imageVector = _brightnessMedium;
+        if (imageVector != null) {
+            Intrinsics.checkNotNull(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Rounded.BrightnessMedium", Dp.m6628constructorimpl(24.0f), Dp.m6628constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.INSTANCE.m4190getBlack0d7_KjU(), null);
+        int iM4516getButtKaPHkGw = StrokeCap.INSTANCE.m4516getButtKaPHkGw();
+        int iM4526getBevelLxFBmk8 = StrokeJoin.INSTANCE.m4526getBevelLxFBmk8();
+        PathBuilder pathBuilderI = a.i(20.0f, 15.31f, 1.9f, -1.9f);
+        pathBuilderI.curveToRelative(0.78f, -0.78f, 0.78f, -2.05f, 0.0f, -2.83f);
+        pathBuilderI.lineTo(20.0f, 8.69f);
+        pathBuilderI.lineTo(20.0f, 6.0f);
+        pathBuilderI.curveToRelative(0.0f, -1.1f, -0.9f, -2.0f, -2.0f, -2.0f);
+        pathBuilderI.horizontalLineToRelative(-2.69f);
+        pathBuilderI.lineToRelative(-1.9f, -1.9f);
+        pathBuilderI.curveToRelative(-0.78f, -0.78f, -2.05f, -0.78f, -2.83f, 0.0f);
+        pathBuilderI.lineTo(8.69f, 4.0f);
+        pathBuilderI.lineTo(6.0f, 4.0f);
+        pathBuilderI.curveToRelative(-1.1f, 0.0f, -2.0f, 0.9f, -2.0f, 2.0f);
+        pathBuilderI.verticalLineToRelative(2.69f);
+        pathBuilderI.lineToRelative(-1.9f, 1.9f);
+        pathBuilderI.curveToRelative(-0.78f, 0.78f, -0.78f, 2.05f, 0.0f, 2.83f);
+        pathBuilderI.lineToRelative(1.9f, 1.9f);
+        pathBuilderI.lineTo(4.0f, 18.0f);
+        pathBuilderI.curveToRelative(0.0f, 1.1f, 0.9f, 2.0f, 2.0f, 2.0f);
+        pathBuilderI.horizontalLineToRelative(2.69f);
+        pathBuilderI.lineToRelative(1.9f, 1.9f);
+        pathBuilderI.curveToRelative(0.78f, 0.78f, 2.05f, 0.78f, 2.83f, 0.0f);
+        pathBuilderI.lineToRelative(1.9f, -1.9f);
+        pathBuilderI.lineTo(18.0f, 20.0f);
+        pathBuilderI.curveToRelative(1.1f, 0.0f, 2.0f, -0.9f, 2.0f, -2.0f);
+        b.h(pathBuilderI, -2.69f, 12.0f, 16.9f);
+        pathBuilderI.lineTo(12.0f, 7.1f);
+        pathBuilderI.curveToRelative(0.0f, -0.61f, 0.55f, -1.11f, 1.15f, -0.99f);
+        pathBuilderI.curveTo(15.91f, 6.65f, 18.0f, 9.08f, 18.0f, 12.0f);
+        pathBuilderI.reflectiveCurveToRelative(-2.09f, 5.35f, -4.85f, 5.89f);
+        pathBuilderI.curveToRelative(-0.6f, 0.12f, -1.15f, -0.38f, -1.15f, -0.99f);
+        pathBuilderI.close();
+        ImageVector imageVectorBuild = ImageVector.Builder.m4848addPathoIyEayM$default(builder, pathBuilderI.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, iM4516getButtKaPHkGw, iM4526getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _brightnessMedium = imageVectorBuild;
+        Intrinsics.checkNotNull(imageVectorBuild);
+        return imageVectorBuild;
+    }
+}

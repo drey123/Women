@@ -1,0 +1,11 @@
+package com.google.android.gms.common.util;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* JADX INFO: loaded from: classes5.dex */
+public interface Clock {
+    long a();
+
+    long b();
+
+    long nanoTime();
+}

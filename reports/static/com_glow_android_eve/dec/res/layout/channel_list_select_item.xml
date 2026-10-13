@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/purple" android:gravity="center" android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:text="@string/channel_icon" android:fontFamily="sans-serif-medium" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/purple" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:layout_marginStart="2.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/icon" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/closeButton" android:background="#2c5a62d2" android:padding="4.0dp" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@null" android:layout_marginStart="6.0dp" app:layout_constraintStart_toEndOf="@id/name" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

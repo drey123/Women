@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `pregnancy_client`(
+    `id` INTEGER PRIMARY KEY AUTOINCREMENT,
+	`status` INTEGER,
+	`due_date` INTEGER,
+	`child_number` INTEGER,
+	`weight` REAL,
+	`baby_gender` INTEGER,
+	`ever_miscarriage` INTEGER,
+	`how` INTEGER,
+	`born_date` INTEGER,
+	`doctor_name` STRING,
+	`baby_name` STRING,
+	`last_cycle` INTEGER,
+	`last_period` INTEGER,
+	`doctor_type` STRING,
+	`breast_feed` INTEGER,
+	`miscarriage_date` INTEGER,
+	`time_created` INTEGER,
+	`time_removed` INTEGER
+	);

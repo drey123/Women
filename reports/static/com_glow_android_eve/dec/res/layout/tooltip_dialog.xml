@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:background="@color/blue" android:layout_width="match_parent" android:layout_height="54.0dp" android:text="" />
+    <WebView android:id="@id/web_view" android:layout_width="match_parent" android:layout_height="300.0dp" android:layout_below="@id/title" />
+    <com.glow.android.ui.widget.LoadingView android:id="@id/loading" android:layout_width="match_parent" android:layout_height="300.0dp" android:layout_below="@id/title" />
+</RelativeLayout>

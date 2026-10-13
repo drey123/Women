@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="@color/insight_grey" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/cards" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.glow.android.kaylee.ui.insight.cards.ForecastV2AdCard android:id="@id/topAdView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <include android:id="@id/thisWeekCard" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/card_this_week" />
+            <include android:id="@id/upcomingCard" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/card_upcoming" />
+            <include android:id="@id/footerCard" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/card_footer" />
+            <View android:id="@id/footerSpaceCard" android:layout_width="match_parent" android:layout_height="120.0dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/specialConditionContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.glow.android.kaylee.ui.insight.cards.ForecastV2AdCard android:id="@id/topAdView2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/babyDownloadCard" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:src="@null" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_marginHorizontal="12.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black_999" android:gravity="center_horizontal" android:id="@id/smallWeekHint" android:background="@drawable/bg_round_corner_white_16dp" android:paddingTop="80.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_margin="12.0dp" android:text="@string/forecast_v2_week_too_small" android:layout_weight="1.0" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

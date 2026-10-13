@@ -1,0 +1,6 @@
+package kotlin.reflect.jvm.internal.impl.types.checker;
+
+/* JADX INFO: compiled from: KotlinTypeRefiner.kt */
+/* JADX INFO: loaded from: classes6.dex */
+public final class Ref<T> {
+}

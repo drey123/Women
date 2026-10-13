@@ -1,0 +1,34 @@
+package com.google.android.gms.internal.p002firebaseauthapi;
+
+import java.util.List;
+import java.util.Objects;
+
+/* JADX INFO: compiled from: com.google.firebase:firebase-auth@@23.0.0 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzrr {
+    private final zzrk zza;
+    private final List<zzrt> zzb;
+    private final Integer zzc;
+
+    public final boolean equals(Object obj) {
+        if (!(obj instanceof zzrr)) {
+            return false;
+        }
+        zzrr zzrrVar = (zzrr) obj;
+        return this.zza.equals(zzrrVar.zza) && this.zzb.equals(zzrrVar.zzb) && Objects.equals(this.zzc, zzrrVar.zzc);
+    }
+
+    public final int hashCode() {
+        return Objects.hash(this.zza, this.zzb);
+    }
+
+    public final String toString() {
+        return String.format("(annotations=%s, entries=%s, primaryKeyId=%s)", this.zza, this.zzb, this.zzc);
+    }
+
+    private zzrr(zzrk zzrkVar, List<zzrt> list, Integer num) {
+        this.zza = zzrkVar;
+        this.zzb = list;
+        this.zzc = num;
+    }
+}

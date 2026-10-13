@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.glow.android.ui.widget.NoDefaultSpinner android:id="@id/picker" android:hint="@string/sign_up_question_cycle_length" style="@style/OnBoardQuestionItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

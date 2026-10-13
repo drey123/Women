@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="22.0dp" android:width="29.0dp" android:viewportWidth="290.0" android:viewportHeight="220.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <path android:fillColor="#fbb3ff" android:pathData="M280.338,8.696a5.21,5.209 47.995,1 0,7.742 -6.971a5.21,5.209 47.995,1 0,-7.742 6.971z" android:strokeAlpha="0.733" android:fillAlpha="0.733" android:fillType="evenOdd" />
+    </group>
+    <group>
+        <path android:fillColor="@drawable/$img_bubbles__0" android:pathData="M109.767,260.94c22.395,0 40.55,-18.162 40.55,-40.568 0,-22.405 -18.155,-40.568 -40.55,-40.568 -22.396,0 -40.55,18.163 -40.55,40.568 0,22.406 18.154,40.569 40.55,40.569z" android:strokeAlpha="0.705" android:fillAlpha="0.705" android:fillType="evenOdd" />
+    </group>
+    <group>
+        <path android:fillColor="@drawable/$img_bubbles__1" android:pathData="M-18.829,266.524a66.344,66.374 0,1 0,132.688 0a66.344,66.374 0,1 0,-132.688 0z" android:strokeAlpha="0.521" android:fillAlpha="0.521" android:fillType="evenOdd" />
+    </group>
+    <group>
+        <path android:fillColor="@drawable/$img_bubbles__2" android:pathData="M211.082,228.56a40.569,40.551 90.004,1 1,-81.102 0a40.569,40.551 90.004,1 1,81.102 0z" android:strokeAlpha="0.208" android:fillAlpha="0.208" android:fillType="evenOdd" />
+    </group>
+    <group>
+        <path android:fillColor="@drawable/$img_bubbles__3" android:pathData="M188.512,240.594a34.474,34.49 0,1 0,68.948 0a34.474,34.49 0,1 0,-68.948 0z" android:strokeAlpha="0.683" android:fillAlpha="0.683" android:fillType="evenOdd" />
+    </group>
+    <group>
+        <path android:fillColor="#fbbeff" android:pathData="M49.375,177.322a9.177,9.181 0,1 0,18.354 0a9.177,9.181 0,1 0,-18.354 0z" android:strokeAlpha="0.395" android:fillAlpha="0.395" android:fillType="evenOdd" />
+    </group>
+    <group>
+        <path android:fillColor="#b4ceff" android:pathData="M186.776,181.044a3.72,3.722 0,1 0,7.44 0a3.72,3.722 0,1 0,-7.44 0z" android:fillType="evenOdd" />
+    </group>
+    <group>
+        <path android:fillColor="#cb8aeb" android:pathData="M185.04,207.842a1.736,1.737 0,1 0,3.472 0a1.736,1.737 0,1 0,-3.472 0z" android:fillType="evenOdd" />
+    </group>
+    <group>
+        <path android:fillColor="#85dc8d" android:pathData="M66.24,159.457a1.488,1.489 0,1 0,2.976 0a1.488,1.489 0,1 0,-2.976 0z" android:strokeAlpha="0.845" android:fillAlpha="0.845" android:fillType="evenOdd" />
+    </group>
+</vector>

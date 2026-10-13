@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/contentContainer" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.compose.ui.platform.ComposeView android:id="@id/bubbleAnimation" android:layout_width="match_parent" android:layout_height="400.0dp" />
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="top" android:id="@id/dailyList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="56.0dp" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <androidx.compose.ui.platform.ComposeView android:layout_gravity="end|bottom" android:id="@id/sync_bbt" android:background="@color/transparent" android:visibility="gone" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_marginBottom="10.0dp" android:layout_marginEnd="10.0dp" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@id/addLogButton" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginBottom="16.0dp" android:src="@null" android:layout_marginEnd="16.0dp" android:elevation="4.0dp" app:tint="@color/white" />
+        </LinearLayout>
+        <com.glow.android.ui.homeredesign.HomeTopNavView android:id="@id/topBar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

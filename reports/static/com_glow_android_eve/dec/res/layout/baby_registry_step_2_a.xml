@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/bg_light_green" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="match_parent" android:layout_height="56.0dp" android:src="@null" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay.Transparent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/buttonClose" android:padding="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_white" app:tint="@color/green_apple" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/viewTitle" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:paddingStart="56.0dp" android:paddingEnd="56.0dp" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/green_apple" app:tabSelectedTextColor="@color/green_apple" app:tabTextColor="#808080" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

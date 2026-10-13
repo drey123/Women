@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/container" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?android:selectableItemBackground" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cardIcon" android:layout_width="16.0dp" android:layout_height="16.0dp" fresco:actualImageScaleType="centerCrop" fresco:roundBottomLeft="false" fresco:roundBottomRight="false" fresco:roundedCornerRadius="15.0dp" fresco:viewAspectRatio="2.0" />
+            <TextView android:id="@id/cardNameLabel" android:text="@string/content_card_daily_scoop_title" style="@style/NewHomePageContentCardItemName" />
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@id/articleText" android:layout_width="match_parent" android:layout_marginTop="6.0dp" android:layout_marginBottom="4.0dp" android:maxLines="2" android:paddingEnd="8.0dp" style="@style/NewHomePageContentCardItemTitle" />
+        <TextView android:ellipsize="end" android:id="@id/briefContentText" android:layout_width="match_parent" android:maxLines="2" android:paddingEnd="8.0dp" style="@style/NewHomePageContentCardItemSubTitle" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/articleImage" android:layout_width="132.0dp" android:layout_height="88.0dp" fresco:actualImageScaleType="centerCrop" fresco:roundBottomLeft="false" fresco:roundBottomRight="false" fresco:roundedCornerRadius="8.0dp" fresco:viewAspectRatio="2.0" />
+</LinearLayout>

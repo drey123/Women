@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin20" android:layout_marginBottom="@dimen/margin20"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin20" android:layout_marginRight="@dimen/margin20">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/previous_pregnancy_live_birth" android:layout_weight="1.0" />
+        <com.glow.android.ui.widget.NoDefaultSpinner android:id="@id/live_birth_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/previous_pregnancy_choose" style="@style/BmiDialog" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin20" android:layout_marginRight="@dimen/margin20">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/previous_pregnancy_miscarriage" android:layout_weight="1.0" />
+        <com.glow.android.ui.widget.NoDefaultSpinner android:id="@id/miscarriage_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/previous_pregnancy_choose" style="@style/BmiDialog" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin20" android:layout_marginRight="@dimen/margin20">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/previous_pregnancy_tubal" android:layout_weight="1.0" />
+        <com.glow.android.ui.widget.NoDefaultSpinner android:id="@id/tubal_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/previous_pregnancy_choose" style="@style/BmiDialog" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin20" android:layout_marginRight="@dimen/margin20">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/previous_pregnancy_abortion" android:layout_weight="1.0" />
+        <com.glow.android.ui.widget.NoDefaultSpinner android:id="@id/abortion_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/previous_pregnancy_choose" style="@style/BmiDialog" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin20" android:layout_marginRight="@dimen/margin20">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/previous_pregnancy_stillbirth" android:layout_weight="1.0" />
+        <com.glow.android.ui.widget.NoDefaultSpinner android:id="@id/stillbirth_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/previous_pregnancy_choose" style="@style/BmiDialog" />
+    </LinearLayout>
+</LinearLayout>

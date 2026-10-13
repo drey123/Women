@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="exo_controls_fastforward" />
+    <drawable name="exo_controls_next" />
+    <drawable name="exo_controls_pause" />
+    <drawable name="exo_controls_play" />
+    <drawable name="exo_controls_previous" />
+    <drawable name="exo_controls_repeat_all" />
+    <drawable name="exo_controls_repeat_off" />
+    <drawable name="exo_controls_repeat_one" />
+    <drawable name="exo_controls_rewind" />
+    <drawable name="exo_controls_shuffle_off" />
+    <drawable name="exo_controls_shuffle_on" />
+    <drawable name="material_ic_keyboard_arrow_next_black_24dp">@drawable/material_ic_keyboard_arrow_right_black_24dp</drawable>
+    <drawable name="material_ic_keyboard_arrow_previous_black_24dp">@drawable/material_ic_keyboard_arrow_left_black_24dp</drawable>
+</resources>

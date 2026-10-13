@@ -1,0 +1,540 @@
+[
+  {
+    "index": 0,
+    "label": "Birth control",
+    "type": "degree",
+    "data": [
+      {
+        "date": 8,
+        "value": 1
+      },
+      {
+        "date": 15,
+        "value": 1
+      },
+      {
+        "date": 16,
+        "value": 3
+      },
+      {
+        "date": 21,
+        "value": 4
+      },
+      {
+        "date": 22,
+        "value": 4
+      },
+      {
+        "date": 26,
+        "value": 2
+      },
+      {
+        "date": 28,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "index": 0,
+    "label": "Sex position",
+    "type": "degree",
+    "data": [
+      {
+        "date": 8,
+        "value": 0
+      },
+      {
+        "date": 15,
+        "value": 0
+      },
+      {
+        "date": 16,
+        "value": 1
+      },
+      {
+        "date": 21,
+        "value": 2
+      },
+      {
+        "date": 22,
+        "value": 2
+      },
+      {
+        "date": 26,
+        "value": 3
+      },
+      {
+        "date": 28,
+        "value": 3
+      }
+    ]
+  },
+  {
+    "index": 0,
+    "label": "Orgasm",
+    "type": "degree",
+    "data": [
+      {
+        "date": 8,
+        "value": 1
+      },
+      {
+        "date": 16,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "label": "Sleep",
+    "type": "text",
+    "data": [
+      {
+        "date": 1,
+        "text": 8
+      },
+      {
+        "date": 2,
+        "text": 8.5
+      },
+      {
+        "date": 3,
+        "text": 8
+      },
+      {
+        "date": 6,
+        "text": 7.5
+      },
+      {
+        "date": 7,
+        "text": 7
+      },
+      {
+        "date": 8,
+        "text": 7
+      },
+      {
+        "date": 9,
+        "text": 6.5
+      },
+      {
+        "date": 10,
+        "text": 7
+      },
+      {
+        "date": 11,
+        "text": 8
+      },
+      {
+        "date": 13,
+        "text": 8
+      },
+      {
+        "date": 14,
+        "text": 8
+      },
+      {
+        "date": 15,
+        "text": 7
+      },
+      {
+        "date": 16,
+        "text": 7.5
+      },
+      {
+        "date": 17,
+        "text": 8.5
+      },
+      {
+        "date": 20,
+        "text": 8
+      },
+      {
+        "date": 21,
+        "text": 7.5
+      },
+      {
+        "date": 22,
+        "text": 8
+      },
+      {
+        "date": 23,
+        "text": 7
+      },
+      {
+        "date": 24,
+        "text": 8
+      },
+      {
+        "date": 25,
+        "text": 8
+      },
+      {
+        "date": 26,
+        "text": 7.5
+      },
+      {
+        "date": 27,
+        "text": 7
+      },
+      {
+        "date": 28,
+        "text": 7
+      },
+      {
+        "date": 29,
+        "text": 8
+      },
+      {
+        "date": 30,
+        "text": 8
+      },
+      {
+        "date": 31,
+        "text": 8
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "label": "Alcohol",
+    "type": "text",
+    "data": [
+      {
+        "date": 2,
+        "text": 1
+      },
+      {
+        "date": 9,
+        "text": 3
+      },
+      {
+        "date": 10,
+        "text": 1
+      },
+      {
+        "date": 25,
+        "text": 2
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "label": "Acne",
+    "type": "degree",
+    "data": [
+      {
+        "date": 1,
+        "value": 1
+      },
+      {
+        "date": 24,
+        "value": 3
+      },
+      {
+        "date": 25,
+        "value": 2
+      },
+      {
+        "date": 26,
+        "value": 2
+      },
+      {
+        "date": 27,
+        "value": 1
+      },
+      {
+        "date": 28,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "label": "Cramp",
+    "type": "degree",
+    "data": [
+      {
+        "date": 1,
+        "value": 3
+      },
+      {
+        "date": 2,
+        "value": 1
+      },
+      {
+        "date": 3,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "label": "Fatigue",
+    "type": "degree",
+    "data": [
+      {
+        "date": 25,
+        "value": 1
+      },
+      {
+        "date": 26,
+        "value": 2
+      },
+      {
+        "date": 27,
+        "value": 2
+      },
+      {
+        "date": 28,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "label": "Stress",
+    "type": "degree",
+    "data": [
+      {
+        "date": 9,
+        "value": 3
+      },
+      {
+        "date": 10,
+        "value": 2
+      },
+      {
+        "date": 11,
+        "value": 1
+      },
+      {
+        "date": 20,
+        "value": 1
+      },
+      {
+        "date": 24,
+        "value": 3
+      },
+      {
+        "date": 25,
+        "value": 2
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "label": "Emotional",
+    "type": "status",
+    "data": [
+      {
+        "date": 13,
+        "value": 1
+      },
+      {
+        "date": 14,
+        "value": 1
+      },
+      {
+        "date": 24,
+        "value": 1
+      },
+      {
+        "date": 25,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "label": "Happy",
+    "type": "status",
+    "data": [
+      {
+        "date": 5,
+        "value": 1
+      },
+      {
+        "date": 6,
+        "value": 1
+      },
+      {
+        "date": 7,
+        "value": 1
+      },
+      {
+        "date": 17,
+        "value": 1
+      },
+      {
+        "date": 18,
+        "value": 1
+      },
+      {
+        "date": 19,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "label": "Irritable",
+    "type": "status",
+    "data": [
+      {
+        "date": 1,
+        "value": 1
+      },
+      {
+        "date": 2,
+        "value": 1
+      },
+      {
+        "date": 26,
+        "value": 1
+      },
+      {
+        "date": 27,
+        "value": 1
+      },
+      {
+        "date": 28,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "label": "Asprin",
+    "type": "status",
+    "data": [
+      {
+        "date": 1,
+        "value": 1
+      },
+      {
+        "date": 2,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "label": "Folic Acid",
+    "type": "status",
+    "data": [
+      {
+        "date": 1,
+        "value": 1
+      },
+      {
+        "date": 2,
+        "value": 1
+      },
+      {
+        "date": 3,
+        "value": 1
+      },
+      {
+        "date": 5,
+        "value": 1
+      },
+      {
+        "date": 6,
+        "value": 1
+      },
+      {
+        "date": 7,
+        "value": 1
+      },
+      {
+        "date": 8,
+        "value": 1
+      },
+      {
+        "date": 9,
+        "value": 1
+      },
+      {
+        "date": 10,
+        "value": 1
+      },
+      {
+        "date": 11,
+        "value": 1
+      },
+      {
+        "date": 13,
+        "value": 1
+      },
+      {
+        "date": 14,
+        "value": 1
+      },
+      {
+        "date": 15,
+        "value": 1
+      },
+      {
+        "date": 16,
+        "value": 1
+      },
+      {
+        "date": 17,
+        "value": 1
+      },
+      {
+        "date": 19,
+        "value": 1
+      },
+      {
+        "date": 20,
+        "value": 1
+      },
+      {
+        "date": 21,
+        "value": 1
+      },
+      {
+        "date": 22,
+        "value": 1
+      },
+      {
+        "date": 23,
+        "value": 1
+      },
+      {
+        "date": 24,
+        "value": 1
+      },
+      {
+        "date": 25,
+        "value": 1
+      },
+      {
+        "date": 26,
+        "value": 1
+      },
+      {
+        "date": 27,
+        "value": 1
+      },
+      {
+        "date": 28,
+        "value": 1
+      },
+      {
+        "date": 29,
+        "value": 1
+      },
+      {
+        "date": 30,
+        "value": 1
+      },
+      {
+        "date": 31,
+        "value": 1
+      }
+    ]
+  }
+]

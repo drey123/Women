@@ -1,0 +1,72 @@
+package com.google.android.gms.internal.ads;
+
+import androidx.camera.camera2.internal.C0316y;
+import java.util.Arrays;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-ads@@24.7.0 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class zzaco implements zzaed {
+    public final int zza;
+    public final int[] zzb;
+    public final long[] zzc;
+    public final long[] zzd;
+    public final long[] zze;
+    private final long zzf;
+
+    public zzaco(int[] iArr, long[] jArr, long[] jArr2, long[] jArr3) {
+        this.zzb = iArr;
+        this.zzc = jArr;
+        this.zzd = jArr2;
+        this.zze = jArr3;
+        int length = iArr.length;
+        this.zza = length;
+        if (length <= 0) {
+            this.zzf = 0L;
+        } else {
+            int i = length - 1;
+            this.zzf = jArr2[i] + jArr3[i];
+        }
+    }
+
+    public final String toString() {
+        long[] jArr = this.zzd;
+        long[] jArr2 = this.zze;
+        long[] jArr3 = this.zzc;
+        String string = Arrays.toString(this.zzb);
+        String string2 = Arrays.toString(jArr3);
+        String string3 = Arrays.toString(jArr2);
+        String string4 = Arrays.toString(jArr);
+        int i = this.zza;
+        int length = String.valueOf(i).length();
+        int length2 = String.valueOf(string).length();
+        int length3 = String.valueOf(string2).length();
+        StringBuilder sb = new StringBuilder(length + 26 + length2 + 10 + length3 + 9 + String.valueOf(string3).length() + 14 + String.valueOf(string4).length() + 1);
+        com.facebook.react.views.image.a.r(i, "ChunkIndex(length=", ", sizes=", string, sb);
+        androidx.core.content.a.x(sb, ", offsets=", string2, ", timeUs=", string3);
+        return C0316y.i(sb, ", durationsUs=", string4, ")");
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzaed
+    public final long zza() {
+        return this.zzf;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzaed
+    public final boolean zzb() {
+        return true;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzaed
+    public final zzaeb zzc(long j4) {
+        long[] jArr = this.zze;
+        int iZzm = zzep.zzm(jArr, j4, true, true);
+        long j6 = jArr[iZzm];
+        long[] jArr2 = this.zzc;
+        zzaee zzaeeVar = new zzaee(j6, jArr2[iZzm]);
+        if (zzaeeVar.zzb >= j4 || iZzm == this.zza - 1) {
+            return new zzaeb(zzaeeVar, zzaeeVar);
+        }
+        int i = iZzm + 1;
+        return new zzaeb(zzaeeVar, new zzaee(jArr[i], jArr2[i]));
+    }
+}

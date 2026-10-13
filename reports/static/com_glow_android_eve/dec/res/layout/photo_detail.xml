@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="42.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="#808080" android:layout_gravity="left|center" android:id="@id/anonymous_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date" />
+            <TextView android:textSize="14.0sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="right|center" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="38.0dp" style="?android:spinnerStyle" />
+        </FrameLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="right|center" android:id="@id/length" android:layout_width="wrap_content" android:layout_height="42.0dp" android:layout_marginRight="16.0dp" />
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/bottom_bar">
+        <RelativeLayout android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/thumbnail" android:layout_width="@dimen/timelapse_upload_thumbnail_size" android:layout_height="@dimen/timelapse_upload_thumbnail_size" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <EditText android:textSize="14.0sp" android:textColor="#333333" android:textColorHint="#808080" android:gravity="left|top" android:id="@id/caption" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16.0dp" android:minHeight="100.0dp" android:hint="@string/timelapse_add_a_caption" android:layout_toRightOf="@id/thumbnail" android:inputType="textCapSentences|textMultiLine|textImeMultiLine" />
+        </RelativeLayout>
+    </ScrollView>
+    <com.glow.android.kaylee.ui.widget.LoadingView android:id="@id/loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/feed_header" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:weightSum="3.0">
+            <include android:id="@id/containerItems" layout="@layout/baby_registry_entry_header_item" />
+            <include android:id="@id/containerGift" layout="@layout/baby_registry_entry_header_item" />
+            <include android:id="@id/containerSetup" layout="@layout/baby_registry_entry_header_item" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+            <View android:layout_gravity="center_vertical" style="@style/Divider" />
+            <TextView android:layout_gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baby_registry_entry_card_ideas" android:textAllCaps="true" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" />
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/containerGoods" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <View style="@style/Divider" />
+        <include android:id="@id/feed_footer" layout="@layout/feed_footer" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/viewLoading" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.8">
+        <ProgressBar android:layout_gravity="center" android:layout_width="56.0dp" android:layout_height="56.0dp" style="?android:progressBarStyle" />
+    </FrameLayout>
+</FrameLayout>

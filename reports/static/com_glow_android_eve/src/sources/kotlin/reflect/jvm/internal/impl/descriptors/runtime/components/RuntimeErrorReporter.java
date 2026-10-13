@@ -1,0 +1,30 @@
+package kotlin.reflect.jvm.internal.impl.descriptors.runtime.components;
+
+import java.util.ArrayList;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
+import kotlin.reflect.jvm.internal.impl.serialization.deserialization.ErrorReporter;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: compiled from: RuntimeErrorReporter.kt */
+/* JADX INFO: loaded from: classes6.dex */
+public final class RuntimeErrorReporter implements ErrorReporter {
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    @NotNull
+    public static final RuntimeErrorReporter f25925b = new RuntimeErrorReporter();
+
+    @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.ErrorReporter
+    public final void a(@NotNull ClassDescriptor descriptor, @NotNull ArrayList unresolvedSuperClasses) {
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        Intrinsics.checkNotNullParameter(unresolvedSuperClasses, "unresolvedSuperClasses");
+        throw new IllegalStateException("Incomplete hierarchy for class " + descriptor.getName() + ", unresolved classes " + unresolvedSuperClasses);
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.ErrorReporter
+    public final void b(@NotNull CallableMemberDescriptor descriptor) {
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        throw new IllegalStateException("Cannot infer visibility for " + descriptor);
+    }
+}

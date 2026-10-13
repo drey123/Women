@@ -1,0 +1,1 @@
+# Remember to delete table in DbModel.clear() each time a new table is added.

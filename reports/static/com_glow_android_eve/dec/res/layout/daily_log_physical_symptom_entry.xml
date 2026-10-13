@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/titleContainer" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_toLeftOf="@id/edit_symptoms_entry" style="@style/DailyLogItemHeader">
+        <TextView android:layout_height="wrap_content" android:text="@string/daily_log_physical_symptom_title" android:layout_alignParentLeft="false" android:layout_centerVertical="true" style="@style/DailyLogItemDesc" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/link" android:id="@id/edit_symptoms_entry" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrowIcon" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/arrowIcon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_arrow_right_purple" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="6.0dp" android:top="6.0dp" android:right="6.0dp" android:bottom="6.0dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/purple" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_question_white" android:left="18.0dp" android:top="15.0dp" android:right="18.0dp" android:bottom="15.0dp" />
+</layer-list>

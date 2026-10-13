@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="100.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="30.0">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#333" android:id="@id/cycleDayTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="#999" android:id="@id/dateTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginBottom="4.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/stripeLayout" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_weight="70.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="100.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="50.0">
+                <View android:id="@id/stripeView" android:background="#fff" android:layout_width="4.0dp" android:layout_height="24.0dp" android:layout_marginLeft="32.0dp" />
+                <View android:background="#ff538d" android:layout_width="4.0dp" android:layout_height="24.0dp" android:layout_marginLeft="28.0dp" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#333" android:gravity="center_vertical" android:id="@id/resultTextView" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="30.0" />
+            <FrameLayout android:id="@id/chartButton" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="20.0">
+                <View android:layout_gravity="center" android:background="@drawable/ic_mode_edit_purple_24dp" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <com.glow.android.ui.opk.OpkResultView android:id="@id/opkResultView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginRight="16.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/imageLayout" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="50.0">
+        <ImageView android:layout_gravity="center" android:id="@id/originalImageView" android:layout_width="match_parent" android:layout_height="@dimen/opk_stripe_height" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/rcResult" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="20.0">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#333" android:id="@id/level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:layout_marginBottom="4.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="#999" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" />
+    </LinearLayout>
+</LinearLayout>

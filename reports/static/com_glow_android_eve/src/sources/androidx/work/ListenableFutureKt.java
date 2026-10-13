@@ -1,0 +1,67 @@
+package androidx.work;
+
+import androidx.annotation.RestrictTo;
+import com.google.common.util.concurrent.ListenableFuture;
+import java.util.concurrent.ExecutionException;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.CancellableContinuationImpl;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* JADX INFO: compiled from: ListenableFuture.kt */
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata(d1 = {"\u0000\f\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a!\u0010\u0000\u001a\u0002H\u0001\"\u0004\b\u0000\u0010\u0001*\b\u0012\u0004\u0012\u0002H\u00010\u0002H\u0087Hø\u0001\u0000¢\u0006\u0002\u0010\u0003\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u0004"}, d2 = {"await", "R", "Lcom/google/common/util/concurrent/ListenableFuture;", "(Lcom/google/common/util/concurrent/ListenableFuture;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "work-runtime-ktx_release"}, k = 2, mv = {1, 5, 1}, xi = 48)
+public final class ListenableFutureKt {
+    @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+    @Nullable
+    public static final <R> Object await(@NotNull ListenableFuture<R> listenableFuture, @NotNull Continuation<? super R> frame) throws Throwable {
+        if (listenableFuture.isDone()) {
+            try {
+                return listenableFuture.get();
+            } catch (ExecutionException e6) {
+                Throwable cause = e6.getCause();
+                if (cause == null) {
+                    throw e6;
+                }
+                throw cause;
+            }
+        }
+        CancellableContinuationImpl cancellableContinuationImpl = new CancellableContinuationImpl(1, IntrinsicsKt.b(frame));
+        cancellableContinuationImpl.t();
+        listenableFuture.addListener(new ListenableFutureKt$await$2$1(cancellableContinuationImpl, listenableFuture), DirectExecutor.INSTANCE);
+        cancellableContinuationImpl.c(new ListenableFutureKt$await$2$2(listenableFuture));
+        Object objS = cancellableContinuationImpl.s();
+        if (objS == CoroutineSingletons.f25414b) {
+            Intrinsics.checkNotNullParameter(frame, "frame");
+        }
+        return objS;
+    }
+
+    @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+    private static final <R> Object await$$forInline(ListenableFuture<R> listenableFuture, Continuation<? super R> frame) throws Throwable {
+        if (listenableFuture.isDone()) {
+            try {
+                return listenableFuture.get();
+            } catch (ExecutionException e6) {
+                Throwable cause = e6.getCause();
+                if (cause == null) {
+                    throw e6;
+                }
+                throw cause;
+            }
+        }
+        CancellableContinuationImpl cancellableContinuationImpl = new CancellableContinuationImpl(1, IntrinsicsKt.b(frame));
+        cancellableContinuationImpl.t();
+        listenableFuture.addListener(new ListenableFutureKt$await$2$1(cancellableContinuationImpl, listenableFuture), DirectExecutor.INSTANCE);
+        cancellableContinuationImpl.c(new ListenableFutureKt$await$2$2(listenableFuture));
+        Object objS = cancellableContinuationImpl.s();
+        if (objS == CoroutineSingletons.f25414b) {
+            Intrinsics.checkNotNullParameter(frame, "frame");
+        }
+        return objS;
+    }
+}

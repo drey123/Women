@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/home_feed_footer_backgroud" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="match_parent" android:layout_marginHorizontal="12.0dp" style="@style/Divider" />
+    <TextView android:textStyle="bold" android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="center" android:id="@id/textAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:minHeight="48.0dp" android:includeFontPadding="false" android:drawablePadding="8.0dp" android:textAllCaps="true" app:drawableEndCompat="@drawable/ic_arrow_right_green_corners" app:drawableTint="@color/colorAccent" />
+</FrameLayout>

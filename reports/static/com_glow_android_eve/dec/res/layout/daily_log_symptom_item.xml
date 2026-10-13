@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="63.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp">
+        <ImageView android:id="@id/symptomPic" android:layout_width="58.0dp" android:layout_height="58.0dp" android:src="@null" />
+        <ImageView android:id="@id/symptom_logged_icon" android:visibility="invisible" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="8.0dp" android:src="@drawable/ic_yes_marked" android:scaleType="fitXY" android:layout_alignRight="@id/symptomPic" android:layout_alignBottom="@id/symptomPic" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_color" android:id="@id/symptom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_toRightOf="@id/symptomPic" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="right|center" android:layout_width="@dimen/symptom_intensity_length" android:layout_height="match_parent" android:layout_marginRight="@dimen/margin10">
+        <com.glow.android.ui.widget.LevelSelectorView android:layout_gravity="center" android:id="@id/intensity" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" />
+    </FrameLayout>
+    <View android:layout_gravity="bottom" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="1.0dp" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cardHeader" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp">
+            <ImageView android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_insight_card" android:contentDescription="icon" android:layout_marginEnd="8.0dp" app:layout_constraintBottom_toBottomOf="@id/textTitle" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/textTitle" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="@string/home_analysis_insight" android:includeFontPadding="false" android:paddingStart="4.0dp" android:paddingEnd="12.0dp" app:layout_constraintStart_toEndOf="@id/icon" app:layout_constraintTop_toTopOf="parent" />
+            <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="8.0dp" app:layout_constraintTop_toBottomOf="@id/textTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/cardTitleMostCommon" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/insight_v2_symptoms_most_common_card_title" android:layout_below="@id/cardHeader" android:layout_centerHorizontal="true" android:fontFamily="sans-serif" android:layout_marginHorizontal="16.0dp" />
+        <com.glow.android.kaylee.ui.insight.widget.LayerTabBg android:id="@id/symptomTabBgMostCommon" android:layout_width="match_parent" android:layout_height="100.0dp" android:layout_below="@id/cardTitleMostCommon" android:paddingVertical="11.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/symptomTabInnerContainerMostCommon" android:layout_width="match_parent" android:layout_height="100.0dp" android:layout_marginTop="8.0dp" android:layout_alignTop="@id/symptomTabBgMostCommon" />
+        <include android:id="@id/symptomLoggedInWeekCardMostCommon" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12.0dp" android:layout_below="@id/symptomTabInnerContainerMostCommon" layout="@layout/card_insight_percentage" />
+        <ImageView android:id="@id/samplePic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@null" android:layout_alignTop="@id/symptomTabBgMostCommon" />
+        <ImageView android:id="@id/sampleOverlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@null" android:layout_alignTop="@id/symptomTabBgMostCommon" />
+    </RelativeLayout>
+</FrameLayout>

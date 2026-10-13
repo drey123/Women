@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolBar" android:layout_width="match_parent" app:layout_constraintTop_toTopOf="parent" style="@style/VideoToolBar">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/choose_topic_title" android:layout_weight="1.0" android:fontFamily="sans-serif-medium" />
+            <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/selectedDoneBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_video_done" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ProgressBar android:id="@id/progressCircular" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@android:style/Widget.Material.ProgressBar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/toolBar">
+        <LinearLayout android:orientation="vertical" android:id="@id/selectedTopicsLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="#757575" android:id="@id/selectedTopicsTextView" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <View android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

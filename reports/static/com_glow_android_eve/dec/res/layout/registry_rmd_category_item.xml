@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:id="@id/titleTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:fontFamily="sans-serif-medium" android:layout_marginStart="16.0dp" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/expandableIndicator" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="18.0dp" android:src="@null" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" app:tint="@color/purple" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/productList" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.glow.android.kaylee.ui.widget.HTMLTextView android:textSize="16.0sp" android:textColor="@color/purple" android:id="@id/productViewMoreAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/baby_registry_view_more" android:fontFamily="sans-serif-medium" android:paddingStart="16.0dp" />
+    <View android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="8.0dp" style="@style/Divider" />
+</LinearLayout>

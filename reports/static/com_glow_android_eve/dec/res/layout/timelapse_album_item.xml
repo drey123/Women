@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/timelapse_album_size" android:layout_height="@dimen/timelapse_album_size" android:layout_margin="@dimen/timelapse_album_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="@dimen/timelapse_album_size" android:layout_height="@dimen/timelapse_album_size" />
+    <FrameLayout android:id="@id/status_holder" android:layout_width="@dimen/timelapse_album_size" android:layout_height="@dimen/timelapse_album_size">
+        <View android:layout_gravity="right|bottom" android:id="@id/status_mark" android:background="@drawable/timelapse_album_selection_status" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="6.0dp" android:layout_marginBottom="6.0dp" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/oneWeekContainer" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.compose.ui.platform.ComposeView android:id="@id/weeDaysHeader" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/weekDays" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@id/place_holder_smt" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <androidx.compose.ui.platform.ComposeView android:id="@id/cardsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:transitionName="share_element_container" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

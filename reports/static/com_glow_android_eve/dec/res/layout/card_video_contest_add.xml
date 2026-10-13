@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="100.0dp" android:layout_height="160.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/backgroundImage" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/gradient_add_video" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/profileImage" android:layout_width="match_parent" android:layout_height="match_parent" app:roundWithOverlayColor="@color/white" app:roundedCornerRadius="4.0dp" />
+    <androidx.cardview.widget.CardView android:id="@id/shadow" android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="#33000000" app:cardCornerRadius="4.0dp" app:cardElevation="0.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView android:id="@id/circleCamera" android:layout_width="38.0dp" android:layout_height="38.0dp" android:layout_marginBottom="60.0dp" app:cardCornerRadius="25.0dp" app:cardElevation="4.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+            <LinearLayout android:gravity="center" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_add_video_white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:minHeight="48.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/circleCamera">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/action_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add your video" android:maxLines="2" android:shadowColor="#80000000" android:shadowDy="2.0" android:shadowRadius="4.0" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

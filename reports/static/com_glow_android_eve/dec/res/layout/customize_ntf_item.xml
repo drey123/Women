@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/categoryIcon" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/categoryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_toRightOf="@id/categoryIcon" />
+</RelativeLayout>

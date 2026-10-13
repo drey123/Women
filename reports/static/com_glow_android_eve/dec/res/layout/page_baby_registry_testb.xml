@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:background="#def5db" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="25.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/headerSection" android:layout_width="match_parent" android:layout_height="246.0dp">
+            <ImageView android:id="@id/headerImage" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.glow.android.kaylee.ui.widget.HTMLTextView android:textSize="16.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/headline" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.5" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <ImageView android:id="@id/backButton" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginTop="36.0dp" android:src="@null" android:scaleType="centerInside" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/green" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/registryItemsList" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.glow.android.kaylee.ui.widget.HTMLTextView android:textSize="14.0sp" android:textColor="#5b62d2" android:id="@id/alreadyRegisteredLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/already_registered" />
+        <com.glow.android.kaylee.ui.widget.HTMLTextView android:textSize="14.0sp" android:textColor="#5b62d2" android:id="@id/registerLaterLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/register_later" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

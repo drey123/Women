@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/circleContainer" android:clipChildren="false" android:clipToPadding="false" android:layout_width="306.0dp" android:layout_height="315.0dp" android:layout_marginTop="6.0dp" android:layout_marginBottom="10.0dp" android:transitionName="cards" app:layout_constraintBottom_toTopOf="@id/predictionStatusText" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed">
+        <include android:id="@id/homeBigCycle" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/home_big_circle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_color" android:gravity="center" android:id="@id/predictionStatusText" android:padding="24.0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/circleContainer" app:layout_constraintVertical_chainStyle="packed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

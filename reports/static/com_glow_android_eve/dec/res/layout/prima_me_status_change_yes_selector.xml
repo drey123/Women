@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="right|center" android:background="@drawable/prima_green_circle" android:layout_width="@dimen/prima_emotion_tick_size" android:layout_height="@dimen/prima_emotion_tick_size" android:layout_alignParentRight="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:background="@drawable/prima_status_tick" android:layout_width="@dimen/prima_tick_length" android:layout_height="@dimen/prima_tick_length" />
+</FrameLayout>

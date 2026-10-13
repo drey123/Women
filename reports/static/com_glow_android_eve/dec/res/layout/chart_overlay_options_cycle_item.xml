@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="9.0dp" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="9.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/chart_overlay_options_cycle_item_text_color" android:id="@id/cycle_begin_date" android:paddingLeft="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_widthPercent="45.000004%" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/chart_overlay_options_cycle_item_text_color" android:id="@id/cycle_length" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_toRightOf="@id/cycle_begin_date" app:layout_widthPercent="45.000004%" />
+    <CheckBox android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+</androidx.percentlayout.widget.PercentRelativeLayout>

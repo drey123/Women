@@ -1,0 +1,1 @@
+ALTER TABLE `article3` ADD COLUMN `topic_id` INTEGER;

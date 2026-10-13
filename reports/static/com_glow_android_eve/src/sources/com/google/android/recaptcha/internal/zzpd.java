@@ -1,0 +1,83 @@
+package com.google.android.recaptcha.internal;
+
+/* JADX INFO: compiled from: com.google.android.recaptcha:recaptcha@@18.4.0 */
+/* JADX INFO: loaded from: classes6.dex */
+public final class zzpd extends zzit implements zzkf {
+    private static final zzpd zzb;
+    private int zzd = 0;
+    private Object zze;
+
+    static {
+        zzpd zzpdVar = new zzpd();
+        zzb = zzpdVar;
+        zzit.zzD(zzpd.class, zzpdVar);
+    }
+
+    private zzpd() {
+    }
+
+    public static /* synthetic */ void zzH(zzpd zzpdVar, zznf zznfVar) {
+        zznfVar.getClass();
+        zzpdVar.zze = zznfVar;
+        zzpdVar.zzd = 1;
+    }
+
+    public static /* synthetic */ void zzI(zzpd zzpdVar, zznu zznuVar) {
+        zznuVar.getClass();
+        zzpdVar.zze = zznuVar;
+        zzpdVar.zzd = 2;
+    }
+
+    public static zzpc zzi() {
+        return (zzpc) zzb.zzp();
+    }
+
+    public static zzpd zzk(byte[] bArr) throws zzje {
+        return (zzpd) zzit.zzu(zzb, bArr);
+    }
+
+    public final int zzJ() {
+        int i = this.zzd;
+        if (i == 0) {
+            return 3;
+        }
+        int i6 = 1;
+        if (i != 1) {
+            i6 = 2;
+            if (i != 2) {
+                return 0;
+            }
+        }
+        return i6;
+    }
+
+    public final zznf zzf() {
+        return this.zzd == 1 ? (zznf) this.zze : zznf.zzH();
+    }
+
+    public final zznu zzg() {
+        return this.zzd == 2 ? (zznu) this.zze : zznu.zzg();
+    }
+
+    @Override // com.google.android.recaptcha.internal.zzit
+    public final Object zzh(int i, Object obj, Object obj2) {
+        int i6 = i - 1;
+        if (i6 == 0) {
+            return (byte) 1;
+        }
+        if (i6 == 2) {
+            return zzit.zzA(zzb, "\u0000\u0002\u0001\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001<\u0000\u0002<\u0000", new Object[]{"zze", "zzd", zznf.class, zznu.class});
+        }
+        if (i6 == 3) {
+            return new zzpd();
+        }
+        zzor zzorVar = null;
+        if (i6 == 4) {
+            return new zzpc(zzorVar);
+        }
+        if (i6 != 5) {
+            return null;
+        }
+        return zzb;
+    }
+}

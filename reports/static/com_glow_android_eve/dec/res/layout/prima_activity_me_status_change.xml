@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/blur_grey_fa" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/gray_80" android:gravity="center" android:id="@id/viewNewPregnancyHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="@string/change_status_new_pregnancy_desc" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/viewNewPregnancyCta" android:background="@drawable/round_corner_purple_button_bg" android:paddingLeft="16.0dp" android:paddingTop="6.0dp" android:paddingRight="16.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:minHeight="0.0dp" android:text="@string/change_status_new_pregnancy" android:textAllCaps="false" android:fontFamily="sans-serif-medium" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/viewNewPregnancyHint" />
+    <ScrollView android:id="@id/scroll_view" android:background="@color/blur_grey_fa" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/viewNewPregnancyCta">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:gravity="center" android:paddingTop="16.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:text="@string/prima_journey_title" android:fontFamily="sans-serif" />
+            <com.glow.android.prima.journeypage.JourneyCardEve android:id="@id/journey_card_eve" app:headerBg="@null" app:headerIcon="@null" app:headerText="@string/prima_journey_eve" style="@style/Prima_StatusCard" />
+            <include layout="@layout/prima_journey_card_connect" />
+            <com.glow.android.prima.journeypage.JourneyCardGlow android:id="@id/journey_card_glow" app:headerBg="@null" app:headerIcon="@null" app:headerText="@string/prima_journey_glow" style="@style/Prima_StatusCard" />
+            <include layout="@layout/prima_journey_card_connect" />
+            <com.glow.android.prima.journeypage.JourneyCardNurture android:id="@id/journey_card_nurture" app:headerBg="@null" app:headerIcon="@null" app:headerText="@string/prima_journey_nurture" style="@style/Prima_StatusCard" />
+            <include layout="@layout/prima_journey_card_connect" />
+            <com.glow.android.prima.journeypage.JourneyCardBaby android:id="@id/journey_card_baby" app:headerBg="@null" app:headerIcon="@null" app:headerText="@string/prima_journey_baby" style="@style/Prima_StatusCard" />
+            <ImageView android:layout_gravity="right" android:layout_width="172.0dp" android:layout_height="206.0dp" android:layout_marginRight="44.0dp" android:src="@null" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/grey_500" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:text="@string/prima_journey_future_awaits" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

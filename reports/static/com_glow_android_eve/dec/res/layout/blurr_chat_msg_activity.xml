@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/controllerLayout">
+        <com.glow.android.blurr.chat.ui.message.BlurrMessagesRecyclerView android:id="@id/messages_list" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/uploadImageProgressBar" android:background="@color/blurr_grey_ef" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/uploading_image" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="@color/blurr_grey_dd" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_above="@id/controllerLayout" />
+    <FrameLayout android:id="@id/controllerLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.glow.android.blurr.chat.ui.message.BlurrMessageComposer android:id="@id/message_composer" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48.0dp" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/err_lock" android:background="@color/white" android:paddingLeft="@dimen/blurr_base_40" android:paddingTop="@dimen/blurr_base_32" android:paddingRight="@dimen/blurr_base_40" android:paddingBottom="@dimen/blurr_base_16" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/blurr_chat_msg_bottom_locker_h" />
+        <FrameLayout android:id="@id/msg_loading" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/blurr_base_48">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>
