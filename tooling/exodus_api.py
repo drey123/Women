@@ -11,6 +11,7 @@ import urllib.request
 
 BASE = "https://reports.exodus-privacy.eu.org/api"
 UA = {"User-Agent": "Women-Privacy-Audit/1.1"}
+API_TOKEN = os.environ.get("EXODUS_API_TOKEN", "").strip()
 OUTDIR = "reports/exodus"
 
 PACKAGES = {
@@ -37,7 +38,10 @@ def get_json(url, retries=2):
     last_error = None
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(url, headers=UA)
+            headers = dict(UA)
+            if API_TOKEN:
+                headers["Authorization"] = f"Token {API_TOKEN}"
+            req = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(req, timeout=20) as response:
                 payload = json.loads(response.read().decode("utf-8"))
                 if not isinstance(payload, (dict, list)):
@@ -94,6 +98,12 @@ def main():
     for pkg, label in PACKAGES.items():
         # Official Exodus API documentation defines /api/search/<handle>/details.
         url = f"{BASE}/search/{pkg}/details"
+        if not API_TOKEN:
+            message = "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key."
+            errors[pkg] = message
+            statuses[pkg] = {"app": label, "status": "AUTH_REQUIRED", "error": message, "source_url": url}
+            print(f"AUTH REQUIRED {label:32s} configure the EXODUS_API_TOKEN Actions secret")
+            continue
         try:
             payload = get_json(url)
             if not debug_written:
