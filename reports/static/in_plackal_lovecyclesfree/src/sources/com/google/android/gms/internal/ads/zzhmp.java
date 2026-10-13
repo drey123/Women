@@ -18,7 +18,7 @@ public final class zzhmp extends zzhwo implements zzhya {
     private zzhmp() {
     }
 
-    public static zzhmp zzc(zzhvi zzhviVar, zzhvy zzhvyVar) {
+    public static zzhmp zzc(zzhvi zzhviVar, zzhvy zzhvyVar) throws zzhxd {
         return (zzhmp) zzhwo.zzbT(zzd, zzhviVar, zzhvyVar);
     }
 

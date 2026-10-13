@@ -19,16 +19,12 @@ final class zzmv extends zzmw {
         return Float.intBitsToFloat(zzj(obj, j10));
     }
 
-    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.measurement.zzmx.zzi(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.measurement.zzmx.zzj(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Unknown register number '(r5v0 'z10' boolean)' in method call: com.google.android.gms.internal.measurement.zzmx.zzi(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Unknown register number '(r5v0 'z10' boolean)' in method call: com.google.android.gms.internal.measurement.zzmx.zzj(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.measurement.zzmw
     public final void zzc(Object obj, long j10, boolean z10) {
         if (zzmx.zzb) {
-            zzmx.zzi(obj, j10, z10);
+            zzmx.zzD(obj, j10, z10 ? (byte) 1 : (byte) 0);
         } else {
-            zzmx.zzj(obj, j10, z10);
+            zzmx.zzE(obj, j10, z10 ? (byte) 1 : (byte) 0);
         }
     }
 

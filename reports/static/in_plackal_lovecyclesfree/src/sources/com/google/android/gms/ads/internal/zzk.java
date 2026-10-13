@@ -125,7 +125,6 @@ public final class zzk implements Runnable, zzawv {
         return zzaws.zza(zzt(context), (zzate) zzatdVarZze.zzbu(), z11);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
     @Override // java.lang.Runnable
     public final void run() {
         try {
@@ -162,10 +161,14 @@ public final class zzk implements Runnable, zzawv {
                     this.zzj.zzc(2031, System.currentTimeMillis() - jCurrentTimeMillis, e10);
                 }
             }
-        } finally {
             this.zzb.countDown();
             this.zzk = null;
             this.zzm = null;
+        } catch (Throwable th) {
+            this.zzb.countDown();
+            this.zzk = null;
+            this.zzm = null;
+            throw th;
         }
     }
 

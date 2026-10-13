@@ -85,18 +85,19 @@ public final class zzftl {
                     throw new zzftk(4001, sb2.toString());
                 }
                 synchronized (this.zzh) {
-                    zzfta zzftaVar2 = this.zzg;
-                    if (zzftaVar2 != null) {
-                        try {
-                            zzftaVar2.zzg();
-                        } catch (zzftk e10) {
-                            this.zzd.zzc(e10.zza(), -1L, e10);
+                    try {
+                        zzfta zzftaVar2 = this.zzg;
+                        if (zzftaVar2 != null) {
+                            try {
+                                zzftaVar2.zzg();
+                            } catch (zzftk e10) {
+                                this.zzd.zzc(e10.zza(), -1L, e10);
+                            }
                         }
                         this.zzg = zzftaVar;
-                    } else {
-                        this.zzg = zzftaVar;
+                    } catch (Throwable th) {
+                        throw th;
                     }
-                    throw th;
                 }
                 this.zzd.zzb(3000, System.currentTimeMillis() - jCurrentTimeMillis);
                 return true;

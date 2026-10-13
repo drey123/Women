@@ -68,52 +68,48 @@ public final class C1013Tf {
             BufferedReader bufferedReader = null;
             try {
                 try {
-                    try {
-                        if (new File(t10.getFilesDir(), ProcessUtils.getProcessSpecificName(A02(281, 9, 27), t10)).exists()) {
-                            fileInputStreamOpenFileInput = t10.openFileInput(ProcessUtils.getProcessSpecificName(A02(281, 9, 27), t10));
-                            inputStreamReader = new InputStreamReader(fileInputStreamOpenFileInput);
-                            bufferedReader = new BufferedReader(inputStreamReader);
-                            while (true) {
-                                String line = bufferedReader.readLine();
-                                if (line == null || i10 == 0) {
-                                    break;
+                    if (new File(t10.getFilesDir(), ProcessUtils.getProcessSpecificName(A02(281, 9, 27), t10)).exists()) {
+                        fileInputStreamOpenFileInput = t10.openFileInput(ProcessUtils.getProcessSpecificName(A02(281, 9, 27), t10));
+                        inputStreamReader = new InputStreamReader(fileInputStreamOpenFileInput);
+                        bufferedReader = new BufferedReader(inputStreamReader);
+                        while (true) {
+                            String line = bufferedReader.readLine();
+                            if (line == null || i10 == 0) {
+                                break;
+                            }
+                            JSONObject jSONObject = new JSONObject(line);
+                            if (!jSONObject.has(A02(260, 7, 82))) {
+                                jSONObject.put(A02(260, 7, 82), String.valueOf(0));
+                            }
+                            String string = jSONObject.getString(A02(343, 2, 110));
+                            if (!A05.contains(string)) {
+                                int i11 = jSONObject.getInt(A02(260, 7, 82));
+                                if (A04.containsKey(string)) {
+                                    jSONObject.put(A02(260, 7, 82), String.valueOf(A04.get(string)));
+                                } else {
+                                    A0E(string, i11);
                                 }
-                                JSONObject jSONObject = new JSONObject(line);
-                                if (!jSONObject.has(A02(260, 7, 82))) {
-                                    jSONObject.put(A02(260, 7, 82), String.valueOf(0));
-                                }
-                                String string = jSONObject.getString(A02(343, 2, 110));
-                                if (!A05.contains(string)) {
-                                    int i11 = jSONObject.getInt(A02(260, 7, 82));
-                                    if (A04.containsKey(string)) {
-                                        jSONObject.put(A02(260, 7, 82), String.valueOf(A04.get(string)));
-                                    } else {
-                                        A0E(string, i11);
-                                    }
-                                    jSONArray.put(jSONObject);
-                                    if (i10 > 0) {
-                                        i10--;
-                                    }
+                                jSONArray.put(jSONObject);
+                                if (i10 > 0) {
+                                    i10--;
                                 }
                             }
                         }
-                        if (bufferedReader != null) {
-                            try {
-                                bufferedReader.close();
-                            } catch (IOException e10) {
-                                e = e10;
-                                interfaceC1010TcA08 = t10.A08();
-                                interfaceC1010TcA08.A4I(e);
-                            }
+                    }
+                    if (bufferedReader != null) {
+                        try {
+                            bufferedReader.close();
+                        } catch (IOException e10) {
+                            e = e10;
+                            interfaceC1010TcA08 = t10.A08();
+                            interfaceC1010TcA08.A4I(e);
                         }
-                        if (inputStreamReader != null) {
-                            inputStreamReader.close();
-                        }
-                        if (fileInputStreamOpenFileInput != null) {
-                            fileInputStreamOpenFileInput.close();
-                        }
-                    } catch (Throwable th) {
-                        throw th;
+                    }
+                    if (inputStreamReader != null) {
+                        inputStreamReader.close();
+                    }
+                    if (fileInputStreamOpenFileInput != null) {
+                        fileInputStreamOpenFileInput.close();
                     }
                 } catch (IOException | JSONException e11) {
                     t10.A08().A4I(e11);
@@ -133,13 +129,13 @@ public final class C1013Tf {
                         fileInputStreamOpenFileInput.close();
                     }
                 }
-            } catch (Throwable th2) {
+            } catch (Throwable th) {
                 if (0 != 0) {
                     try {
                         bufferedReader.close();
                     } catch (IOException e13) {
                         t10.A08().A4I(e13);
-                        throw th2;
+                        throw th;
                     }
                 }
                 if (0 != 0) {
@@ -148,7 +144,7 @@ public final class C1013Tf {
                 if (0 != 0) {
                     fileInputStreamOpenFileInput.close();
                 }
-                throw th2;
+                throw th;
             }
         }
         return jSONArray;
@@ -171,51 +167,100 @@ public final class C1013Tf {
             FileOutputStream fileOutputStreamOpenFileOutput = null;
             try {
                 try {
-                    if (new File(t10.getFilesDir(), ProcessUtils.getProcessSpecificName(A02(281, 9, 27), t10)).exists()) {
-                        fileInputStreamOpenFileInput = t10.openFileInput(ProcessUtils.getProcessSpecificName(A02(281, 9, 27), t10));
-                        inputStreamReader = new InputStreamReader(fileInputStreamOpenFileInput);
-                        bufferedReader = new BufferedReader(inputStreamReader);
-                        while (true) {
-                            String line = bufferedReader.readLine();
-                            if (line == null) {
-                                break;
-                            }
-                            JSONObject jSONObject = new JSONObject(line);
-                            String string = jSONObject.getString(A02(343, 2, 110));
-                            if (!A05.contains(string)) {
-                                if (A04.containsKey(string)) {
-                                    Integer num = A04.get(string);
-                                    Integer numValueOf = Integer.valueOf(num != null ? num.intValue() : 0);
-                                    int iA02 = AbstractC1051Ur.A02(t10);
-                                    if (iA02 <= -1 || numValueOf.intValue() <= iA02 - 1) {
-                                        jSONObject.put(A02(260, 7, 82), String.valueOf(numValueOf));
-                                        jSONArray.put(jSONObject);
+                    try {
+                        if (new File(t10.getFilesDir(), ProcessUtils.getProcessSpecificName(A02(281, 9, 27), t10)).exists()) {
+                            fileInputStreamOpenFileInput = t10.openFileInput(ProcessUtils.getProcessSpecificName(A02(281, 9, 27), t10));
+                            inputStreamReader = new InputStreamReader(fileInputStreamOpenFileInput);
+                            bufferedReader = new BufferedReader(inputStreamReader);
+                            while (true) {
+                                String line = bufferedReader.readLine();
+                                if (line == null) {
+                                    break;
+                                }
+                                JSONObject jSONObject = new JSONObject(line);
+                                String string = jSONObject.getString(A02(343, 2, 110));
+                                if (!A05.contains(string)) {
+                                    if (A04.containsKey(string)) {
+                                        Integer num = A04.get(string);
+                                        Integer numValueOf = Integer.valueOf(num != null ? num.intValue() : 0);
+                                        int iA02 = AbstractC1051Ur.A02(t10);
+                                        if (iA02 <= -1 || numValueOf.intValue() <= iA02 - 1) {
+                                            jSONObject.put(A02(260, 7, 82), String.valueOf(numValueOf));
+                                            jSONArray.put(jSONObject);
+                                        } else {
+                                            A0D(string);
+                                            i10++;
+                                        }
                                     } else {
-                                        A0D(string);
-                                        i10++;
+                                        jSONArray.put(jSONObject);
                                     }
-                                } else {
-                                    jSONArray.put(jSONObject);
                                 }
                             }
+                            StringBuilder sb2 = new StringBuilder();
+                            int length = jSONArray.length();
+                            for (int i11 = 0; i11 < length; i11++) {
+                                sb2.append(jSONArray.getJSONObject(i11).toString()).append('\n');
+                            }
+                            fileOutputStreamOpenFileOutput = t10.openFileOutput(ProcessUtils.getProcessSpecificName(A02(281, 9, 27), t10), 0);
+                            fileOutputStreamOpenFileOutput.write(sb2.toString().getBytes());
                         }
-                        StringBuilder sb2 = new StringBuilder();
-                        int length = jSONArray.length();
-                        for (int i11 = 0; i11 < length; i11++) {
-                            sb2.append(jSONArray.getJSONObject(i11).toString()).append('\n');
+                        A09(t10, A00(t10));
+                        if (i10 > 0) {
+                            t10.A08().ABC(A02(271, 10, 5), AbstractC1011Td.A2Y, new C1012Te(A02(138, 15, 99), A02(367, 16, 84) + i10));
                         }
-                        fileOutputStreamOpenFileOutput = t10.openFileOutput(ProcessUtils.getProcessSpecificName(A02(281, 9, 27), t10), 0);
-                        fileOutputStreamOpenFileOutput.write(sb2.toString().getBytes());
+                        if (bufferedReader != null) {
+                            try {
+                                bufferedReader.close();
+                            } catch (IOException e10) {
+                                t10.A08().A4I(e10);
+                            }
+                        }
+                        if (inputStreamReader != null) {
+                            inputStreamReader.close();
+                        }
+                        if (fileInputStreamOpenFileInput != null) {
+                            fileInputStreamOpenFileInput.close();
+                        }
+                        if (fileOutputStreamOpenFileOutput != null) {
+                            fileOutputStreamOpenFileOutput.close();
+                        }
+                        A05.clear();
+                        A04.clear();
+                        return true;
+                    } catch (Throwable th) {
+                        if (0 != 0) {
+                            try {
+                                bufferedReader.close();
+                            } catch (IOException e11) {
+                                t10.A08().A4I(e11);
+                                A05.clear();
+                                A04.clear();
+                                throw th;
+                            }
+                        }
+                        if (0 != 0) {
+                            inputStreamReader.close();
+                        }
+                        if (0 != 0) {
+                            fileInputStreamOpenFileInput.close();
+                        }
+                        if (0 != 0) {
+                            fileOutputStreamOpenFileOutput.close();
+                        }
+                        A05.clear();
+                        A04.clear();
+                        throw th;
                     }
-                    A09(t10, A00(t10));
-                    if (i10 > 0) {
-                        t10.A08().ABC(A02(271, 10, 5), AbstractC1011Td.A2Y, new C1012Te(A02(138, 15, 99), A02(367, 16, 84) + i10));
-                    }
+                } catch (IOException | JSONException e12) {
+                    t10.A08().A4I(e12);
                     if (bufferedReader != null) {
                         try {
                             bufferedReader.close();
-                        } catch (IOException e10) {
-                            t10.A08().A4I(e10);
+                        } catch (IOException e13) {
+                            t10.A08().A4I(e13);
+                            A05.clear();
+                            A04.clear();
+                            return false;
                         }
                     }
                     if (inputStreamReader != null) {
@@ -229,55 +274,10 @@ public final class C1013Tf {
                     }
                     A05.clear();
                     A04.clear();
-                    return true;
-                } catch (Throwable th) {
-                    if (0 != 0) {
-                        try {
-                            bufferedReader.close();
-                        } catch (IOException e11) {
-                            t10.A08().A4I(e11);
-                            A05.clear();
-                            A04.clear();
-                            throw th;
-                        }
-                    }
-                    if (0 != 0) {
-                        inputStreamReader.close();
-                    }
-                    if (0 != 0) {
-                        fileInputStreamOpenFileInput.close();
-                    }
-                    if (0 != 0) {
-                        fileOutputStreamOpenFileOutput.close();
-                    }
-                    A05.clear();
-                    A04.clear();
-                    throw th;
+                    return false;
                 }
-            } catch (IOException | JSONException e12) {
-                t10.A08().A4I(e12);
-                if (bufferedReader != null) {
-                    try {
-                        bufferedReader.close();
-                    } catch (IOException e13) {
-                        t10.A08().A4I(e13);
-                        A05.clear();
-                        A04.clear();
-                        return false;
-                    }
-                }
-                if (inputStreamReader != null) {
-                    inputStreamReader.close();
-                }
-                if (fileInputStreamOpenFileInput != null) {
-                    fileInputStreamOpenFileInput.close();
-                }
-                if (fileOutputStreamOpenFileOutput != null) {
-                    fileOutputStreamOpenFileOutput.close();
-                }
-                A05.clear();
-                A04.clear();
-                return false;
+            } catch (Throwable th2) {
+                throw th2;
             }
         }
     }

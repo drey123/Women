@@ -18,7 +18,7 @@ public final class zzhjj extends zzhwo implements zzhya {
     private zzhjj() {
     }
 
-    public static zzhjj zzc(zzhvi zzhviVar, zzhvy zzhvyVar) {
+    public static zzhjj zzc(zzhvi zzhviVar, zzhvy zzhvyVar) throws zzhxd {
         return (zzhjj) zzhwo.zzbT(zzd, zzhviVar, zzhvyVar);
     }
 

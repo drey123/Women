@@ -378,7 +378,7 @@ public class h extends androidx.vectordrawable.graphics.drawable.g {
         }
     }
 
-    private void i(TypedArray typedArray, XmlPullParser xmlPullParser, Resources.Theme theme) {
+    private void i(TypedArray typedArray, XmlPullParser xmlPullParser, Resources.Theme theme) throws XmlPullParserException {
         C0062h c0062h = this.f4205c;
         g gVar = c0062h.f4261b;
         c0062h.f4263d = g(k.g(typedArray, xmlPullParser, "tintMode", 6, -1), PorterDuff.Mode.SRC_IN);

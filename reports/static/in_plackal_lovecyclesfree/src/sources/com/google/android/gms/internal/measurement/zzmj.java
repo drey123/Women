@@ -27,6 +27,19 @@ class zzmj extends AbstractMap {
         this.zzf = map;
     }
 
+    /* JADX WARN: Failed to analyze thrown exceptions
+    java.util.ConcurrentModificationException
+    	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1013)
+    	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:967)
+    	at jadx.core.dex.visitors.MethodThrowsVisitor.processInstructions(MethodThrowsVisitor.java:117)
+    	at jadx.core.dex.visitors.MethodThrowsVisitor.visit(MethodThrowsVisitor.java:68)
+    	at jadx.core.dex.visitors.MethodThrowsVisitor.checkInsn(MethodThrowsVisitor.java:178)
+    	at jadx.core.dex.visitors.MethodThrowsVisitor.processInstructions(MethodThrowsVisitor.java:131)
+    	at jadx.core.dex.visitors.MethodThrowsVisitor.visit(MethodThrowsVisitor.java:68)
+    	at jadx.core.dex.visitors.MethodThrowsVisitor.checkInsn(MethodThrowsVisitor.java:178)
+    	at jadx.core.dex.visitors.MethodThrowsVisitor.processInstructions(MethodThrowsVisitor.java:131)
+    	at jadx.core.dex.visitors.MethodThrowsVisitor.visit(MethodThrowsVisitor.java:68)
+     */
     private final int zzk(Comparable comparable) {
         int size = this.zzb.size();
         int i10 = size - 1;

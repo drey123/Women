@@ -13,7 +13,6 @@ import java.util.Date;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -26,7 +25,7 @@ public class XpathUtils {
     private static Log log = LogFactory.getLog((Class<?>) XpathUtils.class);
     private static DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
-    public static Boolean asBoolean(String str, Node node) throws XPathExpressionException {
+    public static Boolean asBoolean(String str, Node node) {
         String strEvaluateAsString = evaluateAsString(str, node);
         if (isEmptyString(strEvaluateAsString)) {
             return null;
@@ -34,7 +33,7 @@ public class XpathUtils {
         return Boolean.valueOf(strEvaluateAsString);
     }
 
-    public static Byte asByte(String str, Node node) throws XPathExpressionException {
+    public static Byte asByte(String str, Node node) {
         String strEvaluateAsString = evaluateAsString(str, node);
         if (isEmptyString(strEvaluateAsString)) {
             return null;
@@ -42,7 +41,7 @@ public class XpathUtils {
         return Byte.valueOf(strEvaluateAsString);
     }
 
-    public static ByteBuffer asByteBuffer(String str, Node node) throws XPathExpressionException {
+    public static ByteBuffer asByteBuffer(String str, Node node) {
         String strEvaluateAsString = evaluateAsString(str, node);
         if (isEmptyString(strEvaluateAsString) || isEmpty(node)) {
             return null;
@@ -50,7 +49,7 @@ public class XpathUtils {
         return ByteBuffer.wrap(Base64.decode(strEvaluateAsString));
     }
 
-    public static Date asDate(String str, Node node) throws XPathExpressionException {
+    public static Date asDate(String str, Node node) {
         String strEvaluateAsString = evaluateAsString(str, node);
         if (isEmptyString(strEvaluateAsString)) {
             return null;
@@ -58,7 +57,7 @@ public class XpathUtils {
         return DateUtils.parseISO8601Date(strEvaluateAsString);
     }
 
-    public static Double asDouble(String str, Node node) throws XPathExpressionException {
+    public static Double asDouble(String str, Node node) {
         String strEvaluateAsString = evaluateAsString(str, node);
         if (isEmptyString(strEvaluateAsString)) {
             return null;
@@ -66,7 +65,7 @@ public class XpathUtils {
         return Double.valueOf(strEvaluateAsString);
     }
 
-    public static Float asFloat(String str, Node node) throws XPathExpressionException {
+    public static Float asFloat(String str, Node node) {
         String strEvaluateAsString = evaluateAsString(str, node);
         if (isEmptyString(strEvaluateAsString)) {
             return null;
@@ -74,7 +73,7 @@ public class XpathUtils {
         return Float.valueOf(strEvaluateAsString);
     }
 
-    public static Integer asInteger(String str, Node node) throws XPathExpressionException {
+    public static Integer asInteger(String str, Node node) {
         String strEvaluateAsString = evaluateAsString(str, node);
         if (isEmptyString(strEvaluateAsString)) {
             return null;
@@ -82,7 +81,7 @@ public class XpathUtils {
         return Integer.valueOf(strEvaluateAsString);
     }
 
-    public static Long asLong(String str, Node node) throws XPathExpressionException {
+    public static Long asLong(String str, Node node) {
         String strEvaluateAsString = evaluateAsString(str, node);
         if (isEmptyString(strEvaluateAsString)) {
             return null;
@@ -90,14 +89,14 @@ public class XpathUtils {
         return Long.valueOf(strEvaluateAsString);
     }
 
-    public static Node asNode(String str, Node node) throws XPathExpressionException {
+    public static Node asNode(String str, Node node) {
         if (node == null) {
             return null;
         }
         return (Node) xpath().evaluate(str, node, XPathConstants.NODE);
     }
 
-    public static String asString(String str, Node node) throws XPathExpressionException {
+    public static String asString(String str, Node node) {
         return evaluateAsString(str, node);
     }
 
@@ -108,7 +107,7 @@ public class XpathUtils {
         return document;
     }
 
-    private static String evaluateAsString(String str, Node node) throws XPathExpressionException {
+    private static String evaluateAsString(String str, Node node) {
         if (isEmpty(node)) {
             return null;
         }

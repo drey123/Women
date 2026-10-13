@@ -17,21 +17,17 @@ final class zzacv {
         Constructor constructorZza;
         AtomicBoolean atomicBoolean = this.zzb;
         synchronized (atomicBoolean) {
-            try {
-                if (!atomicBoolean.get()) {
-                    try {
-                        constructorZza = this.zza.zza();
-                    } catch (ClassNotFoundException unused) {
-                        this.zzb.set(true);
-                        constructorZza = null;
-                    } catch (Exception e10) {
-                        throw new RuntimeException("Error instantiating extension", e10);
-                    }
+            if (!atomicBoolean.get()) {
+                try {
+                    constructorZza = this.zza.zza();
+                } catch (ClassNotFoundException unused) {
+                    this.zzb.set(true);
+                    constructorZza = null;
+                } catch (Exception e10) {
+                    throw new RuntimeException("Error instantiating extension", e10);
                 }
-                constructorZza = null;
-            } catch (Throwable th) {
-                throw th;
             }
+            constructorZza = null;
         }
         if (constructorZza == null) {
             return null;

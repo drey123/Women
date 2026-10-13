@@ -3,7 +3,6 @@ package com.amazonaws.transform;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.util.XpathUtils;
 import java.lang.reflect.InvocationTargetException;
-import javax.xml.xpath.XPathExpressionException;
 import org.w3c.dom.Node;
 
 /* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
@@ -28,7 +27,7 @@ public class LegacyErrorUnmarshaller implements Unmarshaller<AmazonServiceExcept
     }
 
     @Override // com.amazonaws.transform.Unmarshaller
-    public AmazonServiceException unmarshall(Node node) throws IllegalAccessException, XPathExpressionException, InstantiationException, InvocationTargetException {
+    public AmazonServiceException unmarshall(Node node) throws IllegalAccessException, InstantiationException, InvocationTargetException {
         String errorCode = parseErrorCode(node);
         String strAsString = XpathUtils.asString("Response/Errors/Error/Message", node);
         String strAsString2 = XpathUtils.asString("Response/RequestID", node);

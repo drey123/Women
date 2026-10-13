@@ -460,66 +460,33 @@ public final class C03211k extends AQ implements AJ {
         }
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x003f */
     @Override // com.instagram.common.viewpoint.core.InterfaceC2095pF
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final void close() throws com.instagram.common.viewpoint.core.C2085p5 {
-        /*
-            r9 = this;
-            r5 = 0
-            r6 = 0
-            java.io.InputStream r4 = r9.A06     // Catch: java.lang.Throwable -> L3f
-            if (r4 == 0) goto L30
-            long r7 = r9.A03     // Catch: java.lang.Throwable -> L3f
-            r2 = -1
-            int r0 = (r7 > r2 ? 1 : (r7 == r2 ? 0 : -1))
-            if (r0 != 0) goto L14
-        Le:
-            java.net.HttpURLConnection r0 = r9.A07     // Catch: java.lang.Throwable -> L3f
-            A0B(r0, r2)     // Catch: java.lang.Throwable -> L3f
-            goto L1a
-        L14:
-            long r2 = r9.A03     // Catch: java.lang.Throwable -> L3f
-            long r0 = r9.A02     // Catch: java.lang.Throwable -> L3f
-            long r2 = r2 - r0
-            goto Le
-        L1a:
-            r4.close()     // Catch: java.io.IOException -> L1e java.lang.Throwable -> L3f
-            goto L30
-        L1e:
-            r4 = move-exception
-            com.facebook.ads.redexgen.X.5i r0 = r9.A04     // Catch: java.lang.Throwable -> L3f
-            java.lang.Object r3 = com.instagram.common.viewpoint.core.C5C.A0f(r0)     // Catch: java.lang.Throwable -> L3f
-            com.facebook.ads.redexgen.X.5i r3 = (com.instagram.common.viewpoint.core.C04195i) r3     // Catch: java.lang.Throwable -> L3f
-            r2 = 2000(0x7d0, float:2.803E-42)
-            r1 = 3
-            com.facebook.ads.redexgen.X.p5 r0 = new com.facebook.ads.redexgen.X.p5     // Catch: java.lang.Throwable -> L3f
-            r0.<init>(r4, r3, r2, r1)     // Catch: java.lang.Throwable -> L3f
-            throw r0     // Catch: java.lang.Throwable -> L3f
-        L30:
-            r9.A06 = r6
-            r9.A08()
-            boolean r0 = r9.A08
-            if (r0 == 0) goto L3e
-            r9.A08 = r5
-            r9.A0E()
-        L3e:
-            return
-        L3f:
-            r1 = move-exception
-            r9.A06 = r6
-            r9.A08()
-            boolean r0 = r9.A08
-            if (r0 == 0) goto L4e
-            r9.A08 = r5
-            r9.A0E()
-        L4e:
-            throw r1
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.instagram.common.viewpoint.core.C03211k.close():void");
+    public final void close() throws C2085p5 {
+        try {
+            InputStream inputStream = this.A06;
+            if (inputStream != null) {
+                A0B(this.A07, this.A03 != -1 ? this.A03 - this.A02 : -1L);
+                try {
+                    inputStream.close();
+                } catch (IOException e10) {
+                    throw new C2085p5(e10, (C04195i) C5C.A0f(this.A04), AdError.SERVER_ERROR_CODE, 3);
+                }
+            }
+            this.A06 = null;
+            A08();
+            if (this.A08) {
+                this.A08 = false;
+                A0E();
+            }
+        } catch (Throwable th) {
+            this.A06 = null;
+            A08();
+            if (this.A08) {
+                this.A08 = false;
+                A0E();
+            }
+            throw th;
+        }
     }
 
     @Override // com.instagram.common.viewpoint.core.InterfaceC03392c

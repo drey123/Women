@@ -19,7 +19,7 @@ public final class zzhkk extends zzhwo implements zzhya {
     private zzhkk() {
     }
 
-    public static zzhkk zzd(zzhvi zzhviVar, zzhvy zzhvyVar) {
+    public static zzhkk zzd(zzhvi zzhviVar, zzhvy zzhvyVar) throws zzhxd {
         return (zzhkk) zzhwo.zzbT(zze, zzhviVar, zzhvyVar);
     }
 
