@@ -1,5 +1,5 @@
 # FemTech Signal Intelligence & Dataset Architecture Brief — Nigerian Market
-## Research & Specification Document v1.0.0
+## Research & Specification Document v1.1.0 (evidence update: run 38384771314 artifacts — Clue/Ovia/Glow/Premom real decompiles integrated; tracker-scan readings voided pending signature-registry fix; Period Calendar honestly NOT ANALYSED)
 
 **Prepared:** 2026-10-13 · **Workspace:** `drey123/women` (private repo, CI-executed evidence pipeline) · **Methodology base:** OWASP MASTG, Exodus Privacy static SDK detection, HAR-based traffic analysis (TrackHAR/tweasel), public regulatory record
 
@@ -143,13 +143,14 @@ Every report commits `report.md` + `evidence/` (badging, permissions, manifest t
 
 ### 2.2 Evidence base at document cut-off
 
-**Full decompilation + SDK analysis complete for 9 packages; 2 incomplete; 5 not run in-window.**
+**Real decompilation complete for 13 of the 14 CI-matrix packages; 1 honestly not analysed (acquisition failure, no overclaim); 2 outside the CI matrix remain unacquired in-window.**
 
 | Status | Apps |
 |---|---|
-| Analyzed (real `classes.dex`, SHA-256 recorded) | Flo, Period Tracker (Simple Design), Maya, Fertility Friend, Eve, Natural Cycles, BabyCenter, Pregnancy+, Stardust |
-| Stub-only retained (split APK without dex from earlier run) | Clue, Ovia |
-| Pipeline pending rerun at cut-off | Glow, Period Calendar, Premom, SMSRobot, Femometer |
+| Analyzed (real `classes.dex`, SHA-256 recorded) | Flo, Period Tracker (Simple Design), Maya, Fertility Friend, Eve, Natural Cycles, BabyCenter, Pregnancy+, Stardust, **Clue (42.0 MB), Ovia (32.1 MB), Glow (132.9 MB), Premom (92.1 MB)** — the last four from CI run `38384771314` artifacts after the split-stub acquisition fix |
+| Honest `NOT ANALYSED` (acquisition failure recorded, no claim made) | Period Calendar (`com.popularapp.periodcalendar`) |
+| Not acquired in-window (outside current CI matrix) | SMSRobot, Femometer |
+| Tracker-signature scan: **VOID pending re-scan** | all of the above — the scan's signature source (`exodus-core/signatures/*.py`) was silently removed upstream by the Exodus-Privacy repo restructure; every "0 trackers" reading in earlier runs is an artifact of an empty signature set, not evidence of cleanliness. Fix loaded (registry endpoint `/api/trackers`), functional run queued |
 
 APK SHA-256 for every analyzed package is in the committed reports. The pipeline reruns on push; the evidence chain keeps growing past this document's cut-off without modification to its claims below (all artifact paths cited).
 
@@ -168,15 +169,17 @@ Method: package-path analysis over the full decompiled tree of each app (file co
 | **BabyCenter** (ad-funded media) | AdMob **649**, Vungle **128** | AppsFlyer **428** | measurement 454 | Facebook 1 |
 | **Pregnancy+** (ad-funded) | AdMob **589** | Branch **179** | measurement 438, Firebase 1171 | Facebook **1,776** (appevents 174), OneSignal **1,026** |
 | **Stardust** (privacy-positioned indie) | gms/ads 6 | **AppsFlyer 473** | measurement 418, Firebase 341 | **RudderStack CDP 249**, OneSignal **733** |
-| Clue (subscription, GDPR) | *stub-only artifact — pending* | | | |
-| Ovia (Labcorp-owned) | *pipeline incomplete at cut-off* | | | |
+| Clue (subscription, GDPR) | real decompile complete (42,021,951 B, sha256 `3b3984a7…18e9b1c7`); hosts: `api.helloclue.com`, `googleadservices.com` (5), `app-measurement.com` (5) = GA4-class measurement, plus wearable vendors Withings/Whoop/Polar/Ultrahuman; permissions: `AD_ID` + `ACCESS_ADSERVICES_AD_ID`/`_ATTRIBUTION`, **8× `health.READ_*` + `READ_HEALTH_DATA_IN_BACKGROUND`**, BILLING, biometrics | tracker scan VOID (above); SDK file-count pass pending re-scan |
+| Ovia (Labcorp-owned) | real decompile complete (32,109,771 B, sha256 `c6add81a…d39dc395`); **11× `health.READ_*` incl. MENSTRUATION, SEXUAL_ACTIVITY, OVULATION_TEST, CERVICAL_MUCUS, INTERMENSTRUAL_BLEEDING, BASAL_BODY_TEMPERATURE**; AWS STS (`sts.amazonaws.com`×17) | tracker scan VOID (above); SDK file-count pass pending re-scan |
+| Glow (132.9 MB) | full Privacy Sandbox set (`AD_ID`, `ATTRIBUTION`, `TOPICS`, `CUSTOM_AUDIENCE`) + `googleads.g.doubleclick.net`×24 = live ad funnel; `ACCESS_FINE_LOCATION` (maxSdk 30) | tracker scan VOID (above) |
+| Premom (FTC 2023 order) | real decompile complete (92,088,292 B, sha256 `a68a7798…92b40a878`); `ACCESS_FINE/COARSE_LOCATION`; `api.razorpay.com`×24 (India payment rails — emerging-market monetization evidence); S3-backed `premom.com` stack | tracker scan VOID (above) |
 
 **Headline reading of the matrix:**
 1. **The business-model prediction (P-01) holds with violence.** Subscription-first Fertility Friend embeds one analytics family (41 files); the ad-funded tier embeds two orders of magnitude more third-party code. Eve's Facebook-class file count (4,228) is a category outlier.
 2. **Flo's post-consent-order stack did not shrink — it diversified.** The FTC's 2021 action named Facebook, Google, AppsFlyer, Flurry, Mixpanel. The 2026 tree still carries Facebook and AppsFlyer (473 files), and adds **TikTok Business SDK (161 files, including commerce `iap` event classes)** — an SDK family the 2021 order did not and could not name. This is direct static evidence for the **consent-order migration hypothesis** (§6.3): health-data channels get policed; the ad-tech stack updates around them.
 3. **Stardust's privacy positioning is not reflected in its build.** The indie "privacy-friendly, LGBTQ+ friendly" app embeds a CDP (RudderStack), AppsFlyer, and OneSignal — a full surveillance stack in miniature. Reputation is not architecture; only the scan is.
 4. **Natural Cycles carries a 440-file attribution SDK (Adjust)** despite being a CE-marked medical device — marketing attribution is orthogonal to clinical duty of care.
-5. **Clue's decompilation did not complete in-window; no claim is made about its current tree** — the one major target where this audit's evidence stays pending (stub artifact retained; Exodus-API cross-check failed network-side; re-run queued by pipeline).
+5. **Clue's first real decompile is in (42 MB base APK) and the picture is nuanced, not clean.** The subscription/GDPR-positioned app carries **ad-ID plumbing (`AD_ID`, `ACCESS_ADSERVICES_AD_ID/_ATTRIBUTION`) and eight Health Connect read permissions including `READ_HEALTH_DATA_IN_BACKGROUND`** — background health reads in a cycle tracker are a data-exhaust surface independent of ads. Its host profile is the category's most restrained (first-party API + GA4-class measurement + wearable integrations; no AppsFlyer/Facebook/TikTok-class host in the top-100), but the tracker-signature verdict is intentionally **VOID** until the re-scan runs — this audit does not report absence-of-evidence as evidence-of-absence.
 
 ### 2.4 Flo deep-dive (`org.iggymedia.periodtracker`, APK SHA-256 `e19a26a3…bf79`, decompiled this audit)
 
@@ -201,7 +204,7 @@ Method (§2.5 of charter): declared categories from Play Data Safety vs. embedde
 | Eve | Ad-supported | Facebook 4,228 files + AdMob + AppsFlyer + full ADSERVICES quartet (`AD_ID`, `ATTRIBUTION`, `TOPICS`, `CUSTOM_AUDIENCE`) + fine location + Bluetooth | **G2** |
 | Period Tracker (Simple Design) | Ad-supported | AdMob 657 + ADSERVICES `AD_ID`/`ATTRIBUTION`/`TOPICS` | **G2** |
 | Stardust | Privacy-positioned marketing | AppsFlyer + RudderStack CDP + OneSignal | **G2 with disclosure asymmetry** — marketing says privacy, build says surveillance stack |
-| Premom | — | (pipeline pending) | **G3 established** by FTC 2023 order regardless of current tree |
+| Premom | FTC-ordered compliance regime (G3) | real decompile: `ACCESS_FINE/COARSE_LOCATION` in a fertility app + Razorpay payment rails + S3 ingestion of strip scans | **G3** (order) + G2-grade static surface observed in the 2026 build |
 | BabyCenter | Ad-funded media | AdMob + Vungle + AppsFlyer | **G2** |
 
 Rows for the pending packages fill in on rerun without changing the table's structure.
