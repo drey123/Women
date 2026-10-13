@@ -36,20 +36,24 @@ public final class zzq {
     }
 
     private final synchronized void zzi() {
-        long jCurrentTimeMillis = com.google.android.gms.ads.internal.zzt.zzk().currentTimeMillis();
         try {
-            Iterator it = this.zze.entrySet().iterator();
-            while (it.hasNext()) {
-                Map.Entry entry = (Map.Entry) it.next();
-                if (jCurrentTimeMillis - ((zzo) entry.getValue()).zza.longValue() <= this.zzb) {
-                    break;
+            long jCurrentTimeMillis = com.google.android.gms.ads.internal.zzt.zzk().currentTimeMillis();
+            try {
+                Iterator it = this.zze.entrySet().iterator();
+                while (it.hasNext()) {
+                    Map.Entry entry = (Map.Entry) it.next();
+                    if (jCurrentTimeMillis - ((zzo) entry.getValue()).zza.longValue() <= this.zzb) {
+                        break;
+                    }
+                    this.zzg.add(new Pair((String) entry.getKey(), ((zzo) entry.getValue()).zzb));
+                    it.remove();
+                    throw th;
                 }
-                this.zzg.add(new Pair((String) entry.getKey(), ((zzo) entry.getValue()).zzb));
-                it.remove();
-                throw th;
+            } catch (ConcurrentModificationException e) {
+                com.google.android.gms.ads.internal.zzt.zzh().zzg(e, "QueryJsonMap.removeExpiredEntries");
             }
-        } catch (ConcurrentModificationException e) {
-            com.google.android.gms.ads.internal.zzt.zzh().zzg(e, "QueryJsonMap.removeExpiredEntries");
+        } catch (Throwable th) {
+            throw th;
         }
     }
 

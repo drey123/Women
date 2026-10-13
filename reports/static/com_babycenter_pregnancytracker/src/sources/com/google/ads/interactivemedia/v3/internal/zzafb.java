@@ -23,30 +23,12 @@ final class zzafb extends zzafc {
         return zzafd.zzb ? zzafd.zzu(obj, j) : zzafd.zzv(obj, j);
     }
 
-    /* JADX WARN: Failed to inline method: com.google.ads.interactivemedia.v3.internal.zzafd.zzw(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Failed to inline method: com.google.ads.interactivemedia.v3.internal.zzafd.zzx(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Method inline failed with exception
-    java.util.ConcurrentModificationException
-    	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1685)
-    	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1660)
-    	at jadx.core.dex.instructions.args.SSAVar.removeUse(SSAVar.java:139)
-    	at jadx.core.utils.InsnRemover.unbindArgUsage(InsnRemover.java:172)
-    	at jadx.core.dex.nodes.InsnNode.replaceArg(InsnNode.java:137)
-    	at jadx.core.dex.regions.conditions.IfCondition.replaceArg(IfCondition.java:270)
-    	at jadx.core.dex.instructions.mods.TernaryInsn.replaceArg(TernaryInsn.java:67)
-    	at jadx.core.dex.nodes.InsnNode.replaceArg(InsnNode.java:141)
-    	at jadx.core.dex.visitors.InlineMethods.replaceRegs(InlineMethods.java:127)
-    	at jadx.core.dex.visitors.InlineMethods.inlineMethod(InlineMethods.java:86)
-    	at jadx.core.dex.visitors.InlineMethods.processInvokeInsn(InlineMethods.java:78)
-    	at jadx.core.dex.visitors.InlineMethods.visit(InlineMethods.java:50)
-     */
-    /* JADX WARN: Unknown register number '(r4v0 boolean)' in method call: com.google.ads.interactivemedia.v3.internal.zzafd.zzx(java.lang.Object, long, boolean):void */
     @Override // com.google.ads.interactivemedia.v3.internal.zzafc
     public final void zzc(Object obj, long j, boolean z) {
         if (zzafd.zzb) {
-            zzafd.zzw(obj, j, z);
+            zzafd.zzD(obj, j, z ? (byte) 1 : (byte) 0);
         } else {
-            zzafd.zzx(obj, j, z);
+            zzafd.zzE(obj, j, z ? (byte) 1 : (byte) 0);
         }
     }
 

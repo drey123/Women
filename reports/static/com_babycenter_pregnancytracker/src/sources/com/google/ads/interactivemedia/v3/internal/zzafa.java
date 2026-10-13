@@ -23,12 +23,16 @@ final class zzafa extends zzafc {
         return zzafd.zzb ? zzafd.zzu(obj, j) : zzafd.zzv(obj, j);
     }
 
+    /* JADX WARN: Failed to inline method: com.google.ads.interactivemedia.v3.internal.zzafd.zzw(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Failed to inline method: com.google.ads.interactivemedia.v3.internal.zzafd.zzx(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r4v0 'z' boolean)' in method call: com.google.ads.interactivemedia.v3.internal.zzafd.zzw(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r4v0 'z' boolean)' in method call: com.google.ads.interactivemedia.v3.internal.zzafd.zzx(java.lang.Object, long, boolean):void */
     @Override // com.google.ads.interactivemedia.v3.internal.zzafc
     public final void zzc(Object obj, long j, boolean z) {
         if (zzafd.zzb) {
-            zzafd.zzD(obj, j, z ? (byte) 1 : (byte) 0);
+            zzafd.zzw(obj, j, z);
         } else {
-            zzafd.zzE(obj, j, z ? (byte) 1 : (byte) 0);
+            zzafd.zzx(obj, j, z);
         }
     }
 

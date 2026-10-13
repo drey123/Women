@@ -337,10 +337,8 @@ public final class r26 implements e5, Callback, sp7, j08, s55, m45, t2 {
             } else {
                 qg7Var.q(my5.ERROR, new IOException(Integer.toString(response.code())));
             }
+        } finally {
             response.close();
-        } catch (Throwable th) {
-            response.close();
-            throw th;
         }
     }
 

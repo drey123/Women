@@ -98,38 +98,42 @@ public final class nk6 extends Binder implements tr4 {
         strArrCreateStringArray.getClass();
         MultiInstanceInvalidationService multiInstanceInvalidationService3 = this.a;
         synchronized (multiInstanceInvalidationService3.c) {
-            String str2 = (String) multiInstanceInvalidationService3.b.get(Integer.valueOf(i6));
-            if (str2 == null) {
-                Log.w("ROOM", "Remote invalidation client ID not registered");
-            } else {
-                int iBeginBroadcast = multiInstanceInvalidationService3.c.beginBroadcast();
-                while (true) {
-                    ok6Var = multiInstanceInvalidationService3.c;
-                    if (i3 >= iBeginBroadcast) {
-                        break;
-                    }
-                    try {
-                        Object broadcastCookie = ok6Var.getBroadcastCookie(i3);
-                        broadcastCookie.getClass();
-                        Integer num = (Integer) broadcastCookie;
-                        int iIntValue = num.intValue();
-                        String str3 = (String) multiInstanceInvalidationService3.b.get(num);
-                        if (i6 != iIntValue && Intrinsics.areEqual(str2, str3)) {
-                            try {
-                                ((sr4) multiInstanceInvalidationService3.c.getBroadcastItem(i3)).f(strArrCreateStringArray);
-                                Unit unit = Unit.a;
-                            } catch (RemoteException e) {
-                                Log.w("ROOM", "Error invoking a remote callback", e);
-                            }
+            try {
+                String str2 = (String) multiInstanceInvalidationService3.b.get(Integer.valueOf(i6));
+                if (str2 == null) {
+                    Log.w("ROOM", "Remote invalidation client ID not registered");
+                } else {
+                    int iBeginBroadcast = multiInstanceInvalidationService3.c.beginBroadcast();
+                    while (true) {
+                        ok6Var = multiInstanceInvalidationService3.c;
+                        if (i3 >= iBeginBroadcast) {
+                            break;
                         }
-                        i3++;
-                    } catch (Throwable th2) {
-                        multiInstanceInvalidationService3.c.finishBroadcast();
-                        throw th2;
+                        try {
+                            Object broadcastCookie = ok6Var.getBroadcastCookie(i3);
+                            broadcastCookie.getClass();
+                            Integer num = (Integer) broadcastCookie;
+                            int iIntValue = num.intValue();
+                            String str3 = (String) multiInstanceInvalidationService3.b.get(num);
+                            if (i6 != iIntValue && Intrinsics.areEqual(str2, str3)) {
+                                try {
+                                    ((sr4) multiInstanceInvalidationService3.c.getBroadcastItem(i3)).f(strArrCreateStringArray);
+                                    Unit unit = Unit.a;
+                                } catch (RemoteException e) {
+                                    Log.w("ROOM", "Error invoking a remote callback", e);
+                                }
+                            }
+                            i3++;
+                        } catch (Throwable th2) {
+                            multiInstanceInvalidationService3.c.finishBroadcast();
+                            throw th2;
+                        }
                     }
+                    ok6Var.finishBroadcast();
+                    Unit unit2 = Unit.a;
                 }
-                ok6Var.finishBroadcast();
-                Unit unit2 = Unit.a;
+            } catch (Throwable th3) {
+                throw th3;
             }
         }
         return true;

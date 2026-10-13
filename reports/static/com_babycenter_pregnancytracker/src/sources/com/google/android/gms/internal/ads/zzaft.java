@@ -18,17 +18,21 @@ final class zzaft {
         Constructor constructorZza;
         AtomicBoolean atomicBoolean = this.zzb;
         synchronized (atomicBoolean) {
-            if (!atomicBoolean.get()) {
-                try {
-                    constructorZza = this.zza.zza();
-                } catch (ClassNotFoundException unused) {
-                    this.zzb.set(true);
-                    constructorZza = null;
-                } catch (Exception e) {
-                    throw new RuntimeException("Error instantiating extension", e);
+            try {
+                if (!atomicBoolean.get()) {
+                    try {
+                        constructorZza = this.zza.zza();
+                    } catch (ClassNotFoundException unused) {
+                        this.zzb.set(true);
+                        constructorZza = null;
+                    } catch (Exception e) {
+                        throw new RuntimeException("Error instantiating extension", e);
+                    }
                 }
+                constructorZza = null;
+            } catch (Throwable th) {
+                throw th;
             }
-            constructorZza = null;
         }
         if (constructorZza == null) {
             return null;

@@ -69,7 +69,7 @@ public class MutableDouble extends Number implements Comparable<MutableDouble>, 
 
     @Override // org.apache.commons.lang3.mutable.Mutable
     @Deprecated
-    /* JADX INFO: renamed from: getValue */
+    /* JADX INFO: renamed from: getValue, reason: merged with bridge method [inline-methods] */
     public Number getValue2() {
         return Double.valueOf(this.value);
     }

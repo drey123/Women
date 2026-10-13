@@ -19,12 +19,16 @@ final class zzsu extends zzsv {
         return Float.intBitsToFloat(this.zza.getInt(obj, j));
     }
 
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.consent_sdk.zzsw.zzi(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.consent_sdk.zzsw.zzj(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r4v0 'z' boolean)' in method call: com.google.android.gms.internal.consent_sdk.zzsw.zzi(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r4v0 'z' boolean)' in method call: com.google.android.gms.internal.consent_sdk.zzsw.zzj(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.consent_sdk.zzsv
     public final void zzc(Object obj, long j, boolean z) {
         if (zzsw.zzb) {
-            zzsw.zzD(obj, j, z ? (byte) 1 : (byte) 0);
+            zzsw.zzi(obj, j, z);
         } else {
-            zzsw.zzE(obj, j, z ? (byte) 1 : (byte) 0);
+            zzsw.zzj(obj, j, z);
         }
     }
 

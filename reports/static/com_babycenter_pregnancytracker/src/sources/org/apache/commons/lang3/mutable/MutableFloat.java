@@ -69,7 +69,7 @@ public class MutableFloat extends Number implements Comparable<MutableFloat>, Mu
 
     @Override // org.apache.commons.lang3.mutable.Mutable
     @Deprecated
-    /* JADX INFO: renamed from: getValue, reason: merged with bridge method [inline-methods] */
+    /* JADX INFO: renamed from: getValue */
     public Number getValue2() {
         return Float.valueOf(this.value);
     }

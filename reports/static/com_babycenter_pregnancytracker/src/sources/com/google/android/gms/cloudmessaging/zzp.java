@@ -238,45 +238,41 @@ final class zzp implements ServiceConnection {
     }
 
     public final synchronized boolean zzg(zzs zzsVar) {
-        try {
-            int i = this.zza;
-            if (i != 0) {
-                if (i == 1) {
-                    this.zzd.add(zzsVar);
-                    return true;
-                }
-                if (i != 2) {
-                    return false;
-                }
+        int i = this.zza;
+        if (i != 0) {
+            if (i == 1) {
                 this.zzd.add(zzsVar);
-                zzc();
                 return true;
             }
+            if (i != 2) {
+                return false;
+            }
             this.zzd.add(zzsVar);
-            Preconditions.checkState(this.zza == 0);
-            if (Log.isLoggable("MessengerIpcClient", 2)) {
-                Log.v("MessengerIpcClient", "Starting bind to GmsCore");
-            }
-            this.zza = 1;
-            Intent intent = new Intent("com.google.android.c2dm.intent.REGISTER");
-            intent.setPackage("com.google.android.gms");
-            try {
-                if (ConnectionTracker.getInstance().bindService(this.zzf.zzb, intent, this, 1)) {
-                    this.zzf.zzc.schedule(new Runnable() { // from class: com.google.android.gms.cloudmessaging.zzk
-                        @Override // java.lang.Runnable
-                        public final void run() {
-                            this.zza.zzd();
-                        }
-                    }, 30L, TimeUnit.SECONDS);
-                } else {
-                    zza(0, "Unable to bind to service");
-                }
-            } catch (SecurityException e) {
-                zzb(0, "Unable to bind to service", e);
-            }
+            zzc();
             return true;
-        } catch (Throwable th) {
-            throw th;
         }
+        this.zzd.add(zzsVar);
+        Preconditions.checkState(this.zza == 0);
+        if (Log.isLoggable("MessengerIpcClient", 2)) {
+            Log.v("MessengerIpcClient", "Starting bind to GmsCore");
+        }
+        this.zza = 1;
+        Intent intent = new Intent("com.google.android.c2dm.intent.REGISTER");
+        intent.setPackage("com.google.android.gms");
+        try {
+            if (ConnectionTracker.getInstance().bindService(this.zzf.zzb, intent, this, 1)) {
+                this.zzf.zzc.schedule(new Runnable() { // from class: com.google.android.gms.cloudmessaging.zzk
+                    @Override // java.lang.Runnable
+                    public final void run() {
+                        this.zza.zzd();
+                    }
+                }, 30L, TimeUnit.SECONDS);
+            } else {
+                zza(0, "Unable to bind to service");
+            }
+        } catch (SecurityException e) {
+            zzb(0, "Unable to bind to service", e);
+        }
+        return true;
     }
 }

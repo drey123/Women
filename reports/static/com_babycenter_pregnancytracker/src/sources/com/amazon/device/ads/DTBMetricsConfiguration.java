@@ -268,18 +268,22 @@ public class DTBMetricsConfiguration {
     }
 
     public synchronized boolean isTypeEnabled(String str) {
-        JSONObject jSONObject = this.configuration;
-        if (jSONObject != null) {
-            try {
-                JSONObject jSONObject2 = jSONObject.getJSONObject("metrics");
-                if (jSONObject2.has(str)) {
-                    return jSONObject2.getBoolean(str);
+        try {
+            JSONObject jSONObject = this.configuration;
+            if (jSONObject != null) {
+                try {
+                    JSONObject jSONObject2 = jSONObject.getJSONObject("metrics");
+                    if (jSONObject2.has(str)) {
+                        return jSONObject2.getBoolean(str);
+                    }
+                } catch (JSONException unused) {
+                    DtbLog.error("Unable to get metrics from configuration");
                 }
-            } catch (JSONException unused) {
-                DtbLog.error("Unable to get metrics from configuration");
             }
+            return false;
+        } catch (Throwable th) {
+            throw th;
         }
-        return false;
     }
 
     public synchronized void loadConfiguration(String str) {

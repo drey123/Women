@@ -17,7 +17,7 @@ public final class zzhrk extends zziee implements zzifq {
     private zzhrk() {
     }
 
-    public static zzhrk zzc(zzida zzidaVar, zzido zzidoVar) {
+    public static zzhrk zzc(zzida zzidaVar, zzido zzidoVar) throws zziet {
         return (zzhrk) zziee.zzbT(zzc, zzidaVar, zzidoVar);
     }
 

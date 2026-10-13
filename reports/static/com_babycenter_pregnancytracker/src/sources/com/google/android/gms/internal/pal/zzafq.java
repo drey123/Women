@@ -19,16 +19,12 @@ final class zzafq extends zzafr {
         return Float.intBitsToFloat(zzj(obj, j));
     }
 
-    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.pal.zzafs.zzi(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.pal.zzafs.zzj(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Unknown register number '(r4v0 'z' boolean)' in method call: com.google.android.gms.internal.pal.zzafs.zzi(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Unknown register number '(r4v0 'z' boolean)' in method call: com.google.android.gms.internal.pal.zzafs.zzj(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.pal.zzafr
     public final void zzc(Object obj, long j, boolean z) {
         if (zzafs.zzb) {
-            zzafs.zzi(obj, j, z);
+            zzafs.zzD(obj, j, z ? (byte) 1 : (byte) 0);
         } else {
-            zzafs.zzj(obj, j, z);
+            zzafs.zzE(obj, j, z ? (byte) 1 : (byte) 0);
         }
     }
 

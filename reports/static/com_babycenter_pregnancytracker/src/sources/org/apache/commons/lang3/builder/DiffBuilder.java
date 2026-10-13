@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.function.Supplier;
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.ObjectUtils;
 
 /* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
@@ -119,6 +120,16 @@ public class DiffBuilder<T> implements org.apache.commons.lang3.builder.Builder<
         StringBuilder sbY = fu3.y(str, ".");
         sbY.append(diff.getFieldName());
         append(sbY.toString(), diff.getLeft(), diff.getRight());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static /* synthetic */ Long[] lambda$append$f1245938$1(long[] jArr) {
+        return ArrayUtils.toObject(jArr);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static /* synthetic */ Long[] lambda$append$f1271372$1(long[] jArr) {
+        return ArrayUtils.toObject(jArr);
     }
 
     public DiffBuilder<T> append(String str, Object obj, Object obj2) {

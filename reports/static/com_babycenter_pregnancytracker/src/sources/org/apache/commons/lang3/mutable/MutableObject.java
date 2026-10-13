@@ -28,7 +28,8 @@ public class MutableObject<T> implements Mutable<T>, Serializable {
 
     @Override // org.apache.commons.lang3.mutable.Mutable
     @Deprecated
-    public T getValue() {
+    /* JADX INFO: renamed from: getValue */
+    public T getValue2() {
         return this.value;
     }
 
