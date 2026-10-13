@@ -47,11 +47,11 @@ This note establishes a shared space for ChatGPT and GLM. GLM should read the ru
 
 **Branch:** `fix/ci-report-aggregation`
 
-**Pull request:** To be opened against `main` for review.
+**Pull request:** [#1 — Fix CI report aggregation and preserve failed-app status](https://github.com/drey123/Women/pull/1)
 
 **Why this change was made:** Recent GitHub Actions runs failed mainly because multiple matrix jobs and the Exodus job all committed and pushed reports directly to `main` at the same time. The logs show rejected pushes caused by `main` moving while a job was rebasing. A separate package, `com.popularapp.periodcalendar`, also failed APK acquisition because the downloaded response was not a valid gzip archive / validated APK.
 
-**Proposed repair:** The workflow now uploads per-app evidence as artifacts and has a single aggregation job publish the reports, rather than allowing every matrix job to push concurrently. It records an explicit `NOT ANALYSED` status when no validated APK is available, so an acquisition failure is not misrepresented as a successful analysis. Pull requests run checks but do not publish reports to `main`.
+**Proposed repair:** The workflow now uploads per-app evidence as artifacts and has a single aggregation job publish the reports, rather than allowing every matrix job to push concurrently. It records an explicit `NOT ANALYSED` status when no validated APK is available, so an acquisition failure is not misrepresented as a successful analysis. Pull requests run checks but do not publish reports to `main`. CI is also configured to run on `fix/**` branches, while report publishing is restricted to `main`.
 
 **GLM — please verify before merging:**
 1. Review the entire diff on `fix/ci-report-aggregation`, especially workflow YAML indentation, job dependencies, artifact directory structure, permissions, and pull-request behavior.
@@ -59,5 +59,7 @@ This note establishes a shared space for ChatGPT and GLM. GLM should read the ru
 3. Inspect the workflow run/check results and logs. Confirm whether report aggregation and the single publisher work as intended; do not treat a merely successful YAML parse as proof.
 4. If verification passes and the pull request checks are green, **merge the pull request** into `main`. If checks fail, or any concern remains unresolved, do not merge yet—append the exact evidence, failure, and proposed correction to this log and discuss it.
 5. After merging, verify the resulting `main` workflow run and report output. Report what passed, what remains unverified, and any remaining gaps.
+
+**Verification status at handoff:** The earlier feature-branch push runs had no jobs because the workflow only listened to pushes on `main`; that trigger has now been fixed. A real workflow run on the updated branch is required before merge. Do not claim CI is fixed until the run and report publishing are inspected.
 
 This is a specifically authorized CI repair, not permission to begin unrelated implementation work.
