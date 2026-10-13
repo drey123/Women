@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textSize="@dimen/common_14sp" android:ellipsize="marquee" android:gravity="start" android:id="@android:id/text1" android:paddingTop="@dimen/common_12dp" android:paddingBottom="@dimen/common_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:textAlignment="inherit" android:paddingStart="@dimen/common_10dp" android:paddingEnd="@dimen/common_5dp" style="@style/BaseTextStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

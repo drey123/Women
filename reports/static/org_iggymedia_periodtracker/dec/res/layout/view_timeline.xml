@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="?actionBarItemBackground" android:layout_width="@dimen/timeline_view_width" android:layout_height="@dimen/timeline_view_height"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <org.iggymedia.periodtracker.core.base.ui.widget.ToolbarBadgedMenuIconView android:layout_gravity="center" android:id="@id/timelineIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/medium_notifications_stroke" app:tint="?foregroundPrimary" />
-    <View android:layout_gravity="end|top" android:id="@id/timelineBadgeRipple" android:background="@drawable/shape_bg_timeline_badge_ripple" android:visibility="gone" android:layout_width="@dimen/menu_badge_size" android:layout_height="@dimen/menu_badge_size" android:layout_marginTop="@dimen/spacing_3x" android:layout_marginEnd="@dimen/spacing_2x" />
-    <TextView android:textAppearance="@style/Caption2Regular" android:textColor="?foregroundPrimaryWhite" android:gravity="center" android:layout_gravity="end|top" android:id="@id/timelineBadge" android:background="@drawable/shape_bg_timeline_badge" android:visibility="gone" android:layout_width="@dimen/menu_badge_size" android:layout_height="@dimen/menu_badge_size" android:layout_marginTop="@dimen/spacing_3x" android:layout_marginEnd="@dimen/spacing_2x" />
-</FrameLayout>

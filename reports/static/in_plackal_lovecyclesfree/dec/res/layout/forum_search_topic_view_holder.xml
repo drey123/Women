@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:id="@id/forum_search_topic_Layout" android:paddingTop="25.0dp" android:paddingBottom="25.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
-        <TextView android:id="@id/forum_search_topic_title_text" android:text="@string/UserNameText" style="@style/DefaultTextStyle" />
-        <TextView android:textSize="12.0dp" android:textColor="@color/disable_grey_color" android:id="@id/forum_search_topic_desc_text" android:text="@string/UserNameText" style="@style/DefaultTextStyle" />
-    </LinearLayout>
-    <ImageView android:id="@id/forum_search_topic_divider" android:layout_below="@id/forum_search_topic_Layout" android:contentDescription="@string/ImageAccessibilityText" style="@style/GreyDashDividerStyle" />
-</RelativeLayout>

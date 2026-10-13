@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textAppearance="?textAppearanceBody2" android:textColor="@color/consent_submit_text" android:id="@id/consentSubmitText" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="?spacingS"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

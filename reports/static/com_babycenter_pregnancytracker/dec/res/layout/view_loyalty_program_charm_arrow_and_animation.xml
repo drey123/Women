@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.airbnb.lottie.LottieAnimationView android:id="@id/loyaltyProgramIndicatorAnimation" android:paddingTop="?spacingXS" android:paddingBottom="?spacingXS" android:layout_width="40.0dp" android:layout_height="?spacingTouchTarget" android:contentDescription="@null" app:lottie_autoPlay="true" app:lottie_enableMergePathsForKitKatAndAbove="true" app:lottie_fileName="lottie/loyalty_program_charm.zip" app:lottie_loop="true" />
-    <ImageView android:id="@id/loyaltyProgramIndicatorArrow" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_baseline_arrow_forward_24" android:contentDescription="@null" app:tint="@color/colorLinkStandalone" />
-    <androidx.constraintlayout.helper.widget.Flow android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="loyaltyProgramIndicatorAnimation,loyaltyProgramIndicatorArrow" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-</merge>

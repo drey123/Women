@@ -1,1 +1,0 @@
-ALTER TABLE `daily_log` ADD COLUMN `physical_symptom_2` INTEGER DEFAULT 0;

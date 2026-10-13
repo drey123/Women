@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="11.0dp" android:width="11.0dp" android:viewportWidth="11.0" android:viewportHeight="11.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <group>
-        <clip-path android:pathData="M0,0h11v11h-11z" />
-        <path android:pathData="M1.5,1.5L9.5,9.5M9.5,1.5L1.5,9.5" android:strokeColor="@color/crisp_sdk_chat_mediaselection_gifselection_textfield_searchicon" android:strokeWidth="1.5" android:strokeLineCap="round" />
-    </group>
-</vector>

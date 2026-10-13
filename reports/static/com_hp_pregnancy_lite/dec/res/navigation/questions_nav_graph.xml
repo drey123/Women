@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<navigation android:id="@id/questions_nav_graph" app:startDestination="@id/questionsScreen"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <fragment android:label="QuestionsBaseScreen" android:name="com.hp.pregnancy.lite.me.appointment.questions.QuestionsBaseScreen" android:id="@id/questionsScreen">
-        <argument android:name="TAB_SELECTION" android:defaultValue="0" app:argType="integer" />
-        <deepLink android:id="@id/questions_deep_link" app:uri="@string/questions_deeplink_uri" />
-    </fragment>
-</navigation>

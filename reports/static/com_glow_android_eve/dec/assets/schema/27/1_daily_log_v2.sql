@@ -1,1 +1,0 @@
-ALTER TABLE `daily_log_v2` ADD `meditation` INTEGER NOT NULL DEFAULT 0;

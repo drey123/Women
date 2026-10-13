@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:id="@id/container" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="128.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="12.0sp" android:textColor="@color/grey_500" android:id="@id/titleView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="@color/thumbnail_card_text_color" android:gravity="center" android:id="@id/valueView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/titleView" />
-    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="@color/thumbnail_card_text_color" android:id="@id/descView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_below="@id/valueView" android:layout_centerHorizontal="true" />
-    <com.glow.android.kaylee.ui.dashboard.TrendView android:id="@id/trendView" android:layout_width="match_parent" android:layout_height="16.0dp" android:layout_alignParentBottom="true" />
-</RelativeLayout>

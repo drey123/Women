@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/root" android:background="@color/appWidgetDefaultBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/selectable_item_background"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_widget__loading_state__bottom" android:adjustViewBounds="true" />
-    <ImageView android:layout_gravity="center" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="160.0dp" android:src="@drawable/app_widget__logo__babycenter_2" />
-    <ImageView android:layout_gravity="end|top" android:id="@id/reload" android:padding="12.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_baseline_refresh_24" android:tint="@color/appWidgetProgress" />
-</FrameLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/bg_round_rect_white" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:textSize="18.0sp" android:id="@id/bbt_input" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/bbt_input_hint" android:digits="0123456789.," android:layout_toLeftOf="@id/units" android:layout_centerVertical="true" android:inputType="numberDecimal" />
-    <LinearLayout android:orientation="horizontal" android:id="@id/units" android:layout_width="80.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin20" android:layout_alignParentRight="true" android:layout_centerVertical="true">
-        <TextView android:textSize="14.0sp" android:textColor="@color/green_button" android:gravity="center" android:layout_gravity="center_vertical" android:background="@drawable/green_thin_circle" android:layout_width="35.0dp" android:layout_height="35.0dp" android:text="@string/fahrenheit_value" />
-        <TextView android:textSize="14.0sp" android:textColor="@color/purple_button" android:gravity="center" android:layout_gravity="center_vertical" android:background="@drawable/purple_circle" android:layout_width="35.0dp" android:layout_height="35.0dp" android:layout_marginLeft="@dimen/margin10" android:text="@string/celsius_value" />
-    </LinearLayout>
-</RelativeLayout>

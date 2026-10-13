@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:id="@id/viewAllRepliesButton" android:layout_width="wrap_content" android:layout_height="@dimen/size_8x" android:layout_marginBottom="@dimen/spacing_2x" android:layout_marginStart="@dimen/spacing_22x" style="@style/Widget.Button.TextButton" />
-</FrameLayout>

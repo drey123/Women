@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingL"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_tooltip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="?spacing" android:paddingHorizontal="?spacingS">
-        <TextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/stage_pages__baby_size__measurement" android:layout_weight="1.0" />
-        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@id/measurementUnitsSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="?spacingTouchTarget" />
-    </LinearLayout>
-</FrameLayout>

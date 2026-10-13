@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:padding="@dimen/size_4x" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/contactSupportRequestButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4x" android:text="@string/anonymous_mode_wizard_request_footer_error_button_contact_support" style="@style/Widget.Flo.Button.Primary" />
-    <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/cancelContactSupportRequestButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_2x" android:text="@string/anonymous_mode_wizard_request_footer_error_button_cancel" style="@style/Widget.Flo.Button.Transparent" />
-</LinearLayout>

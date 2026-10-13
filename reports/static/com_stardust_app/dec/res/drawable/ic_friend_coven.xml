@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="19.0dp" android:width="20.0dp" android:viewportWidth="20.0" android:viewportHeight="19.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
-    <path android:fillColor="@drawable/$ic_friend_coven__0" android:pathData="M16.886,0H6.716C5.104,0 3.791,1.535 3.791,3.433V5.964C3.791,7.862 5.099,9.396 6.716,9.396H12.93C13.774,9.396 14.462,10.198 14.462,11.194V12.528L16.886,9.396C18.504,9.396 19.812,7.862 19.812,5.964V3.433C19.812,1.535 18.504,0 16.886,0Z" />
-    <path android:fillColor="@drawable/$ic_friend_coven__1" android:pathData="M9.615,6.992H3.205C1.436,6.992 0,8.646 0,10.683C0,12.72 1.436,14.373 3.205,14.373H3.231L6.141,18.064V16.492C6.141,15.325 6.961,14.373 7.98,14.373H9.615C11.384,14.373 12.82,12.72 12.82,10.683C12.82,8.646 11.384,6.992 9.615,6.992Z" android:strokeAlpha="0.8" android:fillAlpha="0.8" />
-</vector>

@@ -1,9 +1,0 @@
-package com.instagram.common.viewpoint.core;
-
-/* JADX INFO: renamed from: com.facebook.ads.redexgen.X.Mk, reason: case insensitive filesystem */
-/* JADX INFO: loaded from: assets/audience_network/classes2.dex */
-public interface InterfaceC0842Mk {
-    long A6h(String str, long j10);
-
-    String A6j(String str, String str2);
-}

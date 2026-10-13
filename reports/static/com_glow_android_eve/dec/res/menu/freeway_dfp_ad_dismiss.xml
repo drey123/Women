@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/hide" android:title="@string/freeway_hide_ad" />
-    <item android:id="@id/glow_ad" android:title="@string/freeway_about_glow_ads" />
-</menu>

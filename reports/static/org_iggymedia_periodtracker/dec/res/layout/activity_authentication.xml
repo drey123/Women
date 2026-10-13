@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/v2_white" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@id/toolbarContainer" android:background="@color/v2_gray_light" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/HeadlineSemibold" />
-        <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabGravity="fill" app:tabMode="fixed" style="@style/Widget.TabLayout" />
-    </com.google.android.material.appbar.AppBarLayout>
-    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" />
-</LinearLayout>

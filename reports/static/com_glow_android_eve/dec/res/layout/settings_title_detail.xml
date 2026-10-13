@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/settingItem" android:layout_height="wrap_content" android:minHeight="70.0dp" style="@style/SettingItem"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout style="@style/SettingItemTitleContainer">
-        <TextView android:id="@id/title" android:layout_width="match_parent" android:layout_marginTop="7.0dp" style="@style/SettingItemTitle" />
-        <TextView android:id="@id/subtitle" android:layout_marginBottom="7.0dp" style="@style/SettingItemSubTitle" />
-    </LinearLayout>
-    <View android:layout_gravity="bottom" android:id="@id/divider" android:visibility="gone" style="@style/ItemDivider" />
-</FrameLayout>

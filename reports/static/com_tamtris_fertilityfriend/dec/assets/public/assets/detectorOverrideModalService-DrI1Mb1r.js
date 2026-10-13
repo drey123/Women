@@ -1,1 +1,0 @@
-import{n as a,q as s}from"./index-flPLuAHJ.js";import n from"./DetectorOverrideModal-DGv4_mwG.js";const d={async open(e){const o=await a.create(s({component:n,componentProps:{chartId:e},cssClass:"detector-override-modal"}));await o.present();const{data:t,role:r}=await o.onWillDismiss();return{data:t,role:r}}};export{d as detectorOverrideModalService};

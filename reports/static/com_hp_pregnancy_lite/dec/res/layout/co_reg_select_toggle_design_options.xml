@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:tag="layout/co_reg_select_toggle_design_options_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/co_reg_expanded_partner_list_item_iv_partner_image"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.materialswitch.MaterialSwitch android:textColor="@color/white" android:id="@id/design_option_switch" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/CoRegSwitchCompat" />
-    <CheckBox android:id="@id/design_option_checkbox" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CheckBoxMaterialPink" />
-</FrameLayout>

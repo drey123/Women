@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<navigation android:id="@id/gam_carousel_nav_graph" app:startDestination="@id/gamCarouselFragment"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <fragment android:label="GamCarouselFragment" android:name="com.hp.pregnancy.util.daryl.GamCarouselFragment" android:id="@id/gamCarouselFragment">
-        <argument android:name="ScreenTitle" app:argType="string" app:nullable="true" />
-    </fragment>
-</navigation>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bannerContainer" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/publisherAdViewContainer" android:layout_width="match_parent" android:layout_height="wrap_content" />
-    <FrameLayout android:id="@id/containerSponsor" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="12.0sp" android:textColor="#cccccc" android:layout_gravity="left|center" android:id="@id/sponsoredLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sponsored" />
-        <ImageButton android:layout_gravity="right|center" android:id="@id/buttonMore" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ads_more" />
-    </FrameLayout>
-</LinearLayout>

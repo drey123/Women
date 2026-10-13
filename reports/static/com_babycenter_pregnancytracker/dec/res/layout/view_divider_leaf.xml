@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:background="?listDividerLeaf" android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
-    <View android:background="@drawable/ic_divider_leaf" android:layout_width="18.0dp" android:layout_height="28.0dp" android:backgroundTint="?listDividerLeaf" android:layout_marginHorizontal="16.0dp" />
-    <View android:background="?listDividerLeaf" android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
-</LinearLayout>

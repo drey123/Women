@@ -1,3 +1,0 @@
-import"./chunk-BX6A29kF.js";var o=[{path:``,loadComponent:()=>import(`./partner.page-DfesGxi0.js`).then(t=>t.PartnerPage)},{path:`month`,loadComponent:()=>import(`./month.page-C8S-TSbf.js`).then(t=>t.MonthPage)},{path:`notifications`,loadComponent:()=>import(`./partner-notification-settings.page-AsZ6As9c.js`).then(t=>t.PartnerNotificationSettingsPage)},{path:`consent`,loadComponent:()=>import(`./partner-consent-settings.page-8Q2RVR_j.js`).then(t=>t.PartnerConsentSettingsPage)}];export{o as partnerRoutes};
-//# debugId=b9c991cd-8ae0-5455-ad8e-6614fcbb4c9b
-//# sourceMappingURL=partner.page.router-J7tMNd1N.js.map

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="?foregroundSecondary" />
-    <corners android:radius="@dimen/social_comment_quote_on_reply_line_radius" />
-</shape>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="match_parent" android:layout_height="wrap_content" />
-    <TextView android:textColor="@color/white" android:layout_gravity="center|bottom" android:id="@id/caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="15.0dp" android:shadowColor="@color/dark_gray" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
-    <com.glow.android.kaylee.ui.widget.LoadingView android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
-</FrameLayout>

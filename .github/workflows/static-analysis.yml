@@ -11,10 +11,14 @@ on:
       - "fix/**"
     paths-ignore:
       - "reports/**"
+      - "note.md"
+      - "spec/**"
   pull_request:
     branches: [main]
     paths-ignore:
       - "reports/**"
+      - "note.md"
+      - "spec/**"
   workflow_dispatch: {}
 
 permissions:
@@ -145,6 +149,7 @@ jobs:
           printf '# Analysis status: %s\n\n- Package: `%s`\n- Result: %s\n- Toolchain step: `%s`\n- APK download step: `%s`\n- Analysis step: `%s`\n- Reason: %s\n- Interpretation: an unavailable or failed analysis is not evidence that the app is safe or unsafe.\n' \
             "$APP_LABEL" "$PACKAGE_NAME" "$RESULT" "$TOOL_OUTCOME" "$DOWNLOAD_OUTCOME" "$ANALYSIS_OUTCOME" "$REASON" \
             > "reports/static/$APP_LABEL/STATUS.md"
+          cp "reports/static/$APP_LABEL/STATUS.md" "reports/static/$APP_LABEL/report.md"
       - name: Upload per-app evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -189,6 +194,14 @@ jobs:
           git config user.email "audit-bot@users.noreply.github.com"
           # Remove legacy decompiled trees from the index; they are not report artifacts.
           git rm -r --cached --sparse --ignore-unmatch ':(glob)reports/static/*/dec/**' ':(glob)reports/static/*/src/**'
+          # Remove stale per-app evidence when this run's artifact says the app was not analysed;
+          # evidence from a previous run must not sit next to a fresh failure status.
+          for d in reports/static/*/; do
+            [ -f "${d}STATUS.md" ] || continue
+            grep -qE "Result: (NOT ANALYSED|ANALYSIS FAILED)" "${d}STATUS.md" || continue
+            rm -rf "${d}evidence"
+            rm -f "${d}exodus_scan.tsv" "${d}report.md"
+          done
           git add --sparse -A reports/
           if git diff --cached --quiet; then
             echo "No report changes to commit."

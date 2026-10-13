@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<View android:background="?borderMinor" android:layout_width="match_parent" android:layout_height="@dimen/border_050" android:layout_marginStart="@dimen/spacing_4x" android:layout_marginEnd="@dimen/spacing_4x"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

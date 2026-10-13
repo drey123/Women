@@ -1,1 +1,0 @@
-ALTER TABLE `daily_log` ADD COLUMN `cervical` INTEGER DEFAULT 0;

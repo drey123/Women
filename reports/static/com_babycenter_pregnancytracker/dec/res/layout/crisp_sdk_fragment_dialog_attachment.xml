@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="22.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.button.MaterialButton android:id="@id/crisp_sdk_button_attachment_camera" android:text="@string/crisp_sdk_chat_chat_attachment_take_photo" app:icon="@drawable/crisp_sdk_attachment_camera" style="@style/Widget.Crisp.SDK.Button.Text.Attachment" />
-    <com.google.android.material.button.MaterialButton android:id="@id/crisp_sdk_button_attachment_photo" android:text="@string/crisp_sdk_chat_chat_attachment_select_photo" app:icon="@drawable/crisp_sdk_attachment_photo" style="@style/Widget.Crisp.SDK.Button.Text.Attachment" />
-    <com.google.android.material.button.MaterialButton android:id="@id/crisp_sdk_button_attachment_file" android:text="@string/crisp_sdk_chat_chat_attachment_select_file" app:icon="@drawable/crisp_sdk_attachment_file" style="@style/Widget.Crisp.SDK.Button.Text.Attachment" />
-</LinearLayout>

@@ -1,3 +1,0 @@
-import{J as Xt}from"./chunk-CX5ab52I.js";var N=(function(O){return O[O.NOT_INTERACTED=1]=`NOT_INTERACTED`,O[O.NOTIFICATION_NOT_SENT=2]=`NOTIFICATION_NOT_SENT`,O[O.SNOOZED=3]=`SNOOZED`,O[O.TAKEN=4]=`TAKEN`,O[O.SKIPPED=5]=`SKIPPED`,O[O.NOT_LOGGED=6]=`NOT_LOGGED`,O})(N||{});var r=[N.TAKEN,N.SKIPPED,N.NOT_LOGGED];var D={minOSVersion:26,os:Xt.IOS};export{N as n,r,D as t};
-//# debugId=61ba00fc-1381-54ac-b161-64492f332389
-//# sourceMappingURL=chunk-CnLS1vY5.js.map

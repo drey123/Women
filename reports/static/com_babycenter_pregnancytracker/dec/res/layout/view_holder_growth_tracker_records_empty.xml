@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textAppearance="?textAppearanceBody1" android:textStyle="italic" android:gravity="center" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/growth_tracker__label__no_entries"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

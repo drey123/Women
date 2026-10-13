@@ -1,1 +1,0 @@
-ALTER TABLE `daily_log` ADD COLUMN `emotional_symptom_2` INTEGER DEFAULT 0;

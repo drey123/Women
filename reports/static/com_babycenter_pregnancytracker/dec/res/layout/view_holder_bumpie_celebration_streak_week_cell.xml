@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline2" android:textColor="@color/bumpie_streak_celebration_week_label" android:gravity="center" android:id="@id/week_label" android:layout_width="@dimen/bumpie_streak_celebration_week_cell_width" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawableBottom="@drawable/bumpie_streak_celebration_week_indicator" android:drawablePadding="?spacingS"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

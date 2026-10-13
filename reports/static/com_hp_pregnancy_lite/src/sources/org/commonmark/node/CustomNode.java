@@ -1,9 +1,0 @@
-package org.commonmark.node;
-
-/* JADX INFO: loaded from: classes7.dex */
-public abstract class CustomNode extends Node {
-    @Override // org.commonmark.node.Node
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
-    }
-}

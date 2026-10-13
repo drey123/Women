@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.media3.ui.DefaultTimeBar android:layout_width="0.0dp" android:layout_height="wrap_content" app:bar_height="@dimen/border_200" app:buffered_color="@color/v2_white_50" app:played_color="@color/v2_white" app:scrubber_color="@color/v2_white" app:scrubber_disabled_size="@dimen/size_4x" app:scrubber_dragged_size="@dimen/size_4x" app:scrubber_enabled_size="@dimen/size_4x" app:unplayed_color="@color/v2_white_30"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

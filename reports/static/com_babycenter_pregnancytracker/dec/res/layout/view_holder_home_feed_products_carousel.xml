@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/colorModuleBackground" android:paddingBottom="?spacingXL" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_delight_products" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline2" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="?spacingXL" android:paddingHorizontal="?spacingL" app:layout_constraintEnd_toStartOf="@id/icon" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceCaption" android:id="@id/finePrint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/products_module__disclaimer" android:paddingHorizontal="?spacingL" app:layout_constraintTop_toBottomOf="@id/title" />
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="@dimen/home_feed__products_carousel__height" android:layout_marginTop="?spacingXS" app:layout_constraintTop_toBottomOf="@id/finePrint" />
-</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.button.MaterialButton android:id="@id/buttonNext" android:layout_width="match_parent" android:layout_height="@dimen/spacing_12x" android:layout_marginTop="@dimen/spacing_4x" android:layout_marginBottom="@dimen/spacing_5x" android:layout_marginHorizontal="@dimen/spacing_8x" app:backgroundTint="@color/selector_button_light_bg" app:rippleColor="?buttonPressed" style="@style/Widget.Flo.Button.Primary" />
-</LinearLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="55.0dp" android:width="36.0dp" android:viewportWidth="36.0" android:viewportHeight="55.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
-    <path android:fillColor="@drawable/$selected_period_drop__0" android:pathData="M0,35.75C0,26.409 10.643,10.243 16.436,1.399C17.198,0.236 18.882,0.177 19.691,1.309C25.998,10.133 36,26.377 36,35.75C36,48.583 26.357,55 18,55C9.643,55 0,48.583 0,35.75Z" android:strokeAlpha="0.6" android:fillAlpha="0.6" />
-</vector>

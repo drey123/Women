@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" style="@style/SignUpCell"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.glow.android.kaylee.ui.widget.AutoTooltipTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="normal" />
-    <com.glow.android.kaylee.ui.widget.GLRaisedPillButton android:id="@id/button" android:layout_width="wrap_content" style="@style/RoundButton" />
-</LinearLayout>

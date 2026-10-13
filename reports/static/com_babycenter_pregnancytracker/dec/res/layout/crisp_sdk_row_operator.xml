@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.imageview.ShapeableImageView android:background="?colorOnPrimary" android:padding="1.5dp" android:layout_width="@dimen/crisp_sdk_header_operator_size" android:layout_height="@dimen/crisp_sdk_header_operator_size" app:contentPadding="1.5dp" app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full" app:strokeColor="?colorPrimary" app:strokeWidth="3.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

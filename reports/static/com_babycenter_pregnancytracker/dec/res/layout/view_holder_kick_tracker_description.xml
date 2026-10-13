@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:background="?android:colorBackground" android:paddingTop="?spacingS" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/kick_tracker__label__counter_description" android:includeFontPadding="false" android:paddingHorizontal="?spacing"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

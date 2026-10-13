@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<navigation android:id="@id/size_guide_nav_graph" app:startDestination="@id/sizeGuideScreen"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <fragment android:label="SizeGuideScreen" android:name="com.hp.pregnancy.lite.baby.size.SizeGuideScreen" android:id="@id/sizeGuideScreen">
-        <argument android:name="size_by" android:defaultValue="" app:argType="string" />
-        <argument android:name="pregnancy_week" android:defaultValue="-1" app:argType="integer" />
-        <deepLink android:id="@id/size_guide_deep_link" app:uri="@string/size_deeplink_uri" />
-    </fragment>
-</navigation>

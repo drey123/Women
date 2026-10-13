@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/closeBtn" android:layout_width="44.0dp" android:layout_height="44.0dp" android:src="@drawable/ic_close" android:scaleType="center" />
-    <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="44.0dp" android:text="@string/insight_title" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-medium" />
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/insight_list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/more_insights_button" android:layout_below="@id/title" />
-    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/more_insights_button" android:background="@drawable/raised_button_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/insight_popup_more" android:height="50.0dp" android:layout_alignParentBottom="true" android:fontFamily="sans-serif" android:elevation="2.0dp" />
-    <include android:id="@id/empty_insight_view" android:visibility="gone" layout="@layout/layout_empty_insight" />
-</RelativeLayout>

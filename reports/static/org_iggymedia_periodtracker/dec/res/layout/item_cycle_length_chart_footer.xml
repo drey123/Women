@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:paddingBottom="48.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <me.grantland.widget.AutofitTextView android:textColor="@color/turquoise" android:gravity="center_horizontal" android:id="@id/addPreviousCyclesFooterButton" android:text="@string/periods_graph_screen_add_cycles" android:maxLines="1" android:singleLine="true" style="@style/TextButtonStyle" />
-</FrameLayout>

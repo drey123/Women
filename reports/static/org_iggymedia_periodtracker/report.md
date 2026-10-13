@@ -3,7 +3,7 @@ Static analysis report — org_iggymedia_periodtracker
 - Package: `org.iggymedia.periodtracker`
 - APK: `/tmp/apk/org.iggymedia.periodtracker.apk` (93077854 bytes, sha256 `8415480aeea113a5489efaf7ea2179eedb4dfa4bf3872d53bbafaee2c359ee5c`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:23:45Z | Runner: x86_64
+- Date: 2026-10-13T09:45:12Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```

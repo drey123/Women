@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <me.grantland.widget.AutofitTextView android:textAppearance="@style/Caption1Regular" android:textColor="?foregroundSecondary" android:ellipsize="end" android:gravity="start|center" android:id="@id/monthName" android:layout_width="wrap_content" android:layout_height="16.0dp" android:maxLines="1" android:singleLine="true" android:layout_marginStart="2.0dp" android:layout_alignStart="@id/chartMonthView" android:layout_alignEnd="@id/chartMonthView" />
-    <org.iggymedia.periodtracker.ui.charts.views.ChartMonthView android:id="@id/chartMonthView" android:layout_width="wrap_content" android:layout_height="match_parent" />
-</RelativeLayout>

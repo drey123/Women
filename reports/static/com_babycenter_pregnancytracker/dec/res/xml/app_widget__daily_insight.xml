@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<appwidget-provider android:description="@string/app_widget__daily_insight__label" android:minWidth="@dimen/app_widget__default__size__unspecified__min_w" android:minHeight="@dimen/app_widget__default__size__unspecified__min_h" android:updatePeriodMillis="@integer/app_widget__default__update_interval" android:initialLayout="@layout/app_widget__default__state_loading" android:previewImage="@drawable/app_widget__preview__daily_insight" android:resizeMode="horizontal|vertical" android:widgetCategory="home_screen" android:previewLayout="@layout/app_widget__daily_insight__preview_layout" android:targetCellWidth="2" android:targetCellHeight="2"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

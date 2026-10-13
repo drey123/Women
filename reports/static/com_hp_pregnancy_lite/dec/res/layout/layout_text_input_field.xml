@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_text_input_field_0" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.textfield.TextInputLayout android:id="@id/textInputLayout" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:errorTextAppearance="@style/error_appearance" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextLabel">
-        <com.google.android.material.textfield.TextInputEditText android:id="@id/textInputEditText" android:tag="binding_2" android:paddingTop="@dimen/dpui_2dp" android:paddingBottom="@dimen/dpui_2dp" android:layout_width="match_parent" android:layout_height="@dimen/dpui_45dp" android:singleLine="true" android:paddingStart="@dimen/view_spacing" android:paddingEnd="@dimen/view_spacing" style="@style/RobotoRegularStyle" />
-    </com.google.android.material.textfield.TextInputLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>

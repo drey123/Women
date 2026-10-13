@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/spacing_600" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/rate_me_bad_title" android:paddingHorizontal="@dimen/spacing_600" />
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/rateMeIssuesRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_500" />
-    <Button android:layout_gravity="end" android:id="@id/rateMeSendReview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_600" android:layout_marginBottom="@dimen/spacing_200" android:text="@string/rate_me_review_button" android:layout_marginEnd="@dimen/spacing_200" style="@style/Widget.Flo.Button.TextButton.Dialog" />
-    <Button android:layout_gravity="end" android:id="@id/rateMeCancelBad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_200" android:text="@string/common_cancel" android:layout_marginEnd="@dimen/spacing_200" style="@style/Widget.Flo.Button.TextButton.Dialog" />
-</LinearLayout>

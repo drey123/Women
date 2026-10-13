@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/root_appwidget_fertiledays" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:background="@drawable/widget_background" android:layout_width="59.0dp" android:layout_height="59.0dp" android:layout_centerInParent="true">
-        <ImageView android:layout_gravity="end|top" android:layout_width="15.0dp" android:layout_height="13.0dp" android:layout_marginTop="5.0dp" android:src="@drawable/butterfly_icon" android:layout_marginEnd="5.0dp" />
-        <TextView android:textSize="25.0sp" android:typeface="serif" android:textColor="#3d0e00" android:layout_gravity="center" android:id="@id/text_appwidget_fertile_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#efefef" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
-        <ImageView android:layout_gravity="end|bottom" android:id="@id/image_appwidget_flowers" android:visibility="visible" android:layout_width="20.0dp" android:layout_height="14.0dp" android:layout_marginBottom="5.0dp" android:src="@drawable/widgetflower" />
-    </FrameLayout>
-</RelativeLayout>

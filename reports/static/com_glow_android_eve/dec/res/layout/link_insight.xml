@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/insight_color" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:id="@id/insightCard" layout="@layout/insight_card" />
-    <View android:background="@color/gg_box_shadow" android:layout_width="match_parent" android:layout_height="2.0dp" />
-</LinearLayout>

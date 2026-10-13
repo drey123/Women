@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<navigation android:id="@id/gam_detail_sub_nav_graph" app:startDestination="@id/gamDetailFragment"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <fragment android:label="GamDetailFragment" android:name="com.hp.pregnancy.util.daryl.GamDetailFragment" android:id="@id/gamDetailFragment">
-        <argument android:name="gamType" app:argType="string" />
-    </fragment>
-</navigation>

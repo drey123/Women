@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dpuiCardParentLayout" android:tag="layout/dpui_layout_card_header_0" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:ellipsize="end" android:gravity="left" android:id="@id/dpuiHeaderCardTextTitle" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="ltr" app:layout_constraintTop_toTopOf="parent" style="@style/DPUI_BaseText" />
-    <TextView android:ellipsize="end" android:gravity="left" android:id="@id/dpuiHeaderCardTextSubtitle" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="ltr" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dpuiHeaderCardTextTitle" style="@style/DPUI_BaseText" />
-</androidx.constraintlayout.widget.ConstraintLayout>

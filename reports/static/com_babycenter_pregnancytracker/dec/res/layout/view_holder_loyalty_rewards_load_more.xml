@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:paddingTop="?spacingXXL" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?spacingXXXL"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.button.MaterialButton android:id="@id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/loyalty_program__rewards__label__load_more" app:iconGravity="textStart" app:iconSize="?spacingXL" style="?materialButtonOutlinedStyle" />
-</FrameLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/container" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="128.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="12.0sp" android:textColor="@color/grey_500" android:id="@id/titleView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8.0dp" android:layout_below="@id/titleView" android:layout_centerHorizontal="true" app:actualImageScaleType="focusCrop" app:placeholderImage="@drawable/ic_dashboard_photo_not_uploaded" app:placeholderImageScaleType="centerInside" />
-    <ImageView android:id="@id/iconView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:src="@drawable/ic_dashboard_photo_not_uploaded" android:scaleType="centerInside" android:layout_centerInParent="true" />
-    <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@color/thumbnail_card_text_color" android:id="@id/valueView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/not_uploaded" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
-</RelativeLayout>

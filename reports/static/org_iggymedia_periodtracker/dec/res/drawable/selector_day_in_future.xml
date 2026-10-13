@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="false" android:drawable="@drawable/medium_checkbox_dot_unselected_stroke" />
-    <item android:state_checked="true" android:drawable="@drawable/medium_checkbox_dot_selected_stroke" />
-    <item android:drawable="@drawable/medium_checkbox_dot_unselected_stroke" />
-</selector>

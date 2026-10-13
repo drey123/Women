@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<navigation app:startDestination="@id/navigation_today"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <fragment android:label="CardsFeedFragment" android:name="com.hp.pregnancy.lite.today.CardsFeedFragment" android:id="@id/navigation_today" />
-</navigation>

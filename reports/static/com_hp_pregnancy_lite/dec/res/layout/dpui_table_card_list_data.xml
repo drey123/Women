@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:tag="layout/dpui_table_card_list_data_0" android:layout_width="wrap_content" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.chip.Chip android:id="@id/dpuiCardCoverTitle" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dpui_25dp" android:layout_centerHorizontal="true" app:layout_constraintBottom_toTopOf="@id/dpuiRvListCard" app:layout_constraintEnd_toEndOf="@id/dpuiRvListCard" app:layout_constraintStart_toStartOf="@id/dpuiRvListCard" app:layout_constraintTop_toTopOf="parent" style="@style/DPUI_TableCardListTitle" />
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/dpuiRvListCard" android:tag="binding_2" android:paddingBottom="@dimen/dpui_40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-10.0dp" android:layout_below="@id/dpuiCardCoverTitle" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-</RelativeLayout>

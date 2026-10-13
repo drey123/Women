@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:padding="?spacing" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.card.MaterialCardView android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="352.0dp">
-        <TextView android:textAppearance="?textAppearanceHeadline5" android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/baby_names__tutorial__text__6__final" android:drawablePadding="?spacingXL" android:paddingHorizontal="?spacingXXXL" android:paddingVertical="?spacing" app:drawableTopCompat="@drawable/ic_tools_baby_names_tutorial_6_final" />
-    </com.google.android.material.card.MaterialCardView>
-</FrameLayout>

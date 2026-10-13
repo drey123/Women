@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/img_fetal" android:scaleType="centerCrop" android:adjustViewBounds="true" />
-    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:id="@id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/precon_transition_dialog_message" android:paddingHorizontal="?spacingXL" android:paddingVertical="?spacing" />
-</LinearLayout>

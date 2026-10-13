@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/relative_generic_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onClickLayout"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:background="@drawable/bg_selector" android:layout_width="match_parent" android:layout_height="44.0dp">
-        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#000000" android:gravity="start|center" android:id="@id/textview_generic_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="10.0dp" />
-        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview_generic_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
-    </RelativeLayout>
-</RelativeLayout>

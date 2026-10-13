@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.iggymedia.periodtracker.ui.views.DividerView android:id="@id/divider" style="@style/DividerStyle" />
-    <org.iggymedia.periodtracker.ui.calendar.SlowerScrollRecyclerView android:orientation="vertical" android:id="@id/calendar" android:layout_width="match_parent" android:layout_height="match_parent" />
-</LinearLayout>

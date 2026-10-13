@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/root_appwidget_perioddays" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:background="@drawable/widget_background" android:layout_width="59.0dp" android:layout_height="59.0dp" android:layout_centerInParent="true">
-        <ImageView android:layout_gravity="end|top" android:layout_width="15.0dp" android:layout_height="13.0dp" android:layout_marginTop="5.0dp" android:src="@drawable/butterfly_icon" android:layout_marginEnd="5.0dp" />
-        <TextView android:textSize="12.0sp" android:typeface="serif" android:textColor="#3d0e00" android:gravity="left" android:layout_gravity="top" android:id="@id/text_appwidget_day_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/day" android:layout_marginStart="3.0dp" android:paddingHorizontal="5.0dp" />
-        <TextView android:textSize="23.0sp" android:typeface="serif" android:textStyle="bold" android:textColor="#3d0e00" android:layout_gravity="center" android:id="@id/text_appwidget_periodday" android:paddingTop="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:shadowColor="#efefef" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
-    </FrameLayout>
-</RelativeLayout>

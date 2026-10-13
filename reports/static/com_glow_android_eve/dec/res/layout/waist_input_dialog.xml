@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:id="@id/input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/waist" android:digits="0123456789.," android:layout_toLeftOf="@id/unit" android:layout_centerVertical="true" android:inputType="numberDecimal" style="@style/BmiDialog" />
-    <TextView android:id="@id/unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="@string/unit_cm" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BmiDialog" />
-</RelativeLayout>

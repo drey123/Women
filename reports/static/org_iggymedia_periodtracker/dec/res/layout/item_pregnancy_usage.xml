@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="horizontal" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="16.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <org.iggymedia.periodtracker.ui.views.TintImageView android:id="@id/pregnancyUsageImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" app:colorType="light" />
-    <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundSecondary" android:id="@id/pregnancyUsageDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="72.0dp" />
-</RelativeLayout>

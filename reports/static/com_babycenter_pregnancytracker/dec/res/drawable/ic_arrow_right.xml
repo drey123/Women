@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="24.0dp" android:width="24.0dp" android:viewportWidth="24.0" android:viewportHeight="24.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="@color/button2PrimaryBackgroundEnabled" android:pathData="M8.177,5.823C7.723,6.277 7.722,7.013 8.176,7.468L12.698,12L8.176,16.532C7.722,16.987 7.723,17.723 8.177,18.177C8.632,18.632 9.368,18.632 9.823,18.177L16,12L9.823,5.823C9.368,5.368 8.632,5.368 8.177,5.823Z" />
-</vector>

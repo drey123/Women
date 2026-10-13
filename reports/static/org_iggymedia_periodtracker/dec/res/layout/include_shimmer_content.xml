@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.google.android.material.imageview.ShapeableImageView android:id="@id/placeholderProduct1" android:background="?placeholderDefault" android:layout_width="match_parent" android:layout_height="@dimen/size_15x" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shapeAppearance="@style/ShapeAppearanceOverlay.Flo.Rounded.CornerRadius2_5x" />
-    <com.google.android.material.imageview.ShapeableImageView android:id="@id/placeholderProduct2" android:background="?placeholderDefault" android:layout_width="match_parent" android:layout_height="@dimen/size_15x" android:layout_marginTop="@dimen/spacing_4x" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/placeholderProduct1" app:shapeAppearance="@style/ShapeAppearanceOverlay.Flo.Rounded.CornerRadius2_5x" />
-    <com.google.android.material.imageview.ShapeableImageView android:background="?placeholderDefault" android:layout_width="match_parent" android:layout_height="@dimen/size_12x" android:layout_marginTop="@dimen/spacing_6x" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/placeholderProduct2" app:shapeAppearance="@style/ShapeAppearanceOverlay.Flo.Rounded.CornerSize50Percent" />
-</merge>

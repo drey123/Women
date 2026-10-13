@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:background="?android:listDivider" android:layout_width="1.0dp" android:layout_height="16.0dp" />
-    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline4" android:textColor="?colorOnBackgroundSecondary" android:id="@id/text" android:padding="?spacingXS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
-    <View android:background="?android:listDivider" android:layout_width="1.0dp" android:layout_height="16.0dp" />
-</LinearLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="34.0dp" android:width="34.0dp" android:viewportWidth="34.0" android:viewportHeight="34.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
-    <path android:fillColor="@drawable/$icn_facebook__0" android:pathData="M16.59,0C7.43,0 0,7.43 0,16.59C0,25.75 7.43,33.18 16.59,33.18C25.75,33.18 33.18,25.75 33.18,16.59C33.18,7.43 25.75,0 16.59,0ZM23.12,8.38H21.18C19.27,8.38 18.67,9.57 18.67,10.79V13.68H22.94L22.26,18.13H18.67V28.9H13.85V18.13H9.94V13.68H13.85V10.29C13.85,6.43 16.15,4.3 19.67,4.3C21.36,4.3 23.12,4.6 23.12,4.6V8.39V8.38Z" />
-</vector>

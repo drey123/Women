@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:layout_gravity="center_horizontal" android:background="@drawable/bg_drag_handle" android:layout_width="@dimen/size_9x" android:layout_height="@dimen/size_1x" android:layout_marginVertical="@dimen/spacing_2x" />
-    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
-        <FrameLayout android:id="@id/uicContainer" android:layout_width="match_parent" android:layout_height="wrap_content" />
-    </androidx.core.widget.NestedScrollView>
-</LinearLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="24.0dp" android:width="83.0dp" android:viewportWidth="83.0" android:viewportHeight="24.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
-    <path android:fillColor="@drawable/$premium_badge__0" android:pathData="M0,8C0,3.5817 3.5817,0 8,0H75C79.4183,0 83,3.5817 83,8V16C83,20.4183 79.4183,24 75,24H8C3.5817,24 0,20.4183 0,16V8Z" />
-</vector>

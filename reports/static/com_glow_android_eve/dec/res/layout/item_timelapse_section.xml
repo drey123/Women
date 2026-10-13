@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="4.0dp" android:src="@drawable/shape_dot_green" />
-        <TextView android:textColor="#333333" android:id="@id/title" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:textAllCaps="true" android:fontFamily="sans-serif-medium" />
-    </LinearLayout>
-    <com.glow.android.kaylee.ui.timelapse.WrapLayout android:gravity="left|top" android:id="@id/wrapLayout" android:layout_width="match_parent" android:layout_height="wrap_content" />
-</LinearLayout>

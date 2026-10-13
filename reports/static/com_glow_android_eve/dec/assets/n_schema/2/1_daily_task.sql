@@ -1,1 +1,0 @@
-ALTER TABLE `task` ADD COLUMN `time_removed` INTEGER NOT NULL DEFAULT 0;

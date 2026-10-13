@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.recyclerview.widget.RecyclerView android:scrollbarSize="100.0dp" android:scrollbarThumbHorizontal="@drawable/topics_carousel_scrollbar_drawable" android:scrollbarAlwaysDrawHorizontalTrack="true" android:scrollbarStyle="outsideInset" android:id="@id/topicsCarousel" android:scrollbars="horizontal" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="200.0dp" android:fadeScrollbars="false"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

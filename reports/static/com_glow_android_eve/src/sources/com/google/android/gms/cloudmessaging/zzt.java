@@ -1,6 +1,0 @@
-package com.google.android.gms.cloudmessaging;
-
-/* JADX INFO: compiled from: com.google.android.gms:play-services-cloud-messaging@@17.2.0 */
-/* JADX INFO: loaded from: classes5.dex */
-public final class zzt extends Exception {
-}

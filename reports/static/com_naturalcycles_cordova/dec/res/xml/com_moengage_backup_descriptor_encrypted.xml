@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<full-backup-content>
-    <exclude domain="database" path="MOEInteractions_Encrypted" />
-    <exclude domain="sharedpref" path="pref_moe_encrypted.xml" />
-    <exclude domain="sharedpref" path="pref_moe_common.xml" />
-</full-backup-content>

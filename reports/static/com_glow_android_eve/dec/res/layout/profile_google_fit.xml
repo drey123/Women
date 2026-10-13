@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:paddingLeft="27.0dp" android:paddingRight="27.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:src="@null" />
-    <TextView android:textSize="15.0sp" android:id="@id/fit_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/google_fit_introduction" android:lineSpacingMultiplier="1.1" />
-    <TextView android:textSize="12.0sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/google_fit_warning" />
-    <androidx.appcompat.widget.AppCompatButton android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/connect_button" android:background="#c51263" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:text="@string/google_fit_connect" />
-    <androidx.appcompat.widget.AppCompatButton android:textSize="14.0sp" android:textColor="@color/dark_grey" android:id="@id/cancel_button" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/normal_cancel" />
-</LinearLayout>

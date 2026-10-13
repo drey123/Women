@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|top" android:id="@id/ivCancel" android:layout_width="@dimen/symptom_popup_cancel_button_size" android:layout_height="@dimen/symptom_popup_cancel_button_size" android:layout_marginTop="@dimen/spacing_4x" android:src="@drawable/medium_cancel_solid" android:layout_marginEnd="@dimen/spacing_4x" app:tint="?foregroundMinor" />
-</merge>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/color" android:layout_width="20.0dp" android:layout_height="@dimen/chart_overlay_des_color_indicator" />
-    <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/cycle_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:fontFamily="sans-serif" />
-</LinearLayout>

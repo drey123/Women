@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/spacing_4x" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="@style/Title3Bold" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/social_groups_empty_list_title" />
-    <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundSecondary" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4x" android:text="@string/social_groups_empty_list_subtitle" />
-</LinearLayout>

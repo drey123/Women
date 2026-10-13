@@ -1,3 +1,0 @@
-import"./chunk-BX6A29kF.js";import"./chunk-CNRdwRwW.js";import{E as f}from"./chunk-C2zCjFfo.js";var p=[{path:``,loadComponent:()=>import(`./graph.page-gW6UQbHf.js`).then(o=>o.GraphPage),children:[{path:`cycle`,loadComponent:()=>import(`./graph.cycle.page-DLELxSX3.js`).then(o=>o.GraphCyclePage)},{path:`compare`,loadComponent:()=>import(`./graph.compare.page-DjQgz1Kb.js`).then(o=>o.GraphComparePage)},{path:`holistic`,loadComponent:()=>import(`./graph.holistic.page-DKvnGNUb.js`).then(o=>o.GraphHolisticPage)},{path:`**`,redirectTo:f.GraphCyclePage}]}];export{p as graphRoutes};
-//# debugId=d54471e9-26e3-5186-b352-248d963b3509
-//# sourceMappingURL=graph.page.router-CALmHLJE.js.map

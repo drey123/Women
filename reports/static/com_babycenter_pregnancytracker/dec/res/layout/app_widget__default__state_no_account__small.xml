@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/root" android:background="@color/appWidgetDefaultBackground" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/selectable_item_background"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_width="45.0dp" android:layout_height="51.0dp" android:src="@drawable/app_widget__logo__babycenter_1" android:adjustViewBounds="true" />
-    <TextView android:textAppearance="@style/BabyCenter2.TextAppearance.Body1" android:textColor="@color/colorOnBackground" android:gravity="center" android:id="@id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/app_widget__default__label__no_account_two_lines" />
-</LinearLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.google.android.material.textview.MaterialTextView android:id="@id/category_filter" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/StoryFilter" />
-    <com.google.android.material.switchmaterial.SwitchMaterial android:id="@id/filter_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="?spacingTouchTarget" />
-</LinearLayout>

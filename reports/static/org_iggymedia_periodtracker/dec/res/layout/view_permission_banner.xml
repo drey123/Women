@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:padding="@dimen/spacing_4x" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/notificationsPermissionBanner" android:background="@drawable/bg_permission_banner" android:padding="@dimen/spacing_4x" android:layout_width="match_parent" android:layout_height="wrap_content"
-      xmlns:app="http://schemas.android.com/apk/res-auto">
-        <androidx.appcompat.widget.AppCompatImageView android:id="@id/permissionWarning" android:layout_width="wrap_content" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/medium_warning_solid" app:tint="?foregroundWarning" />
-        <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundPrimary" android:id="@id/permissionBannerText" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/notification_permission_full_request" android:drawablePadding="@dimen/spacing_2x" android:paddingStart="@dimen/spacing_4x" app:drawableEndCompat="@drawable/small_chevron_right" app:drawableTint="?foregroundMinor" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/permissionWarning" app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>

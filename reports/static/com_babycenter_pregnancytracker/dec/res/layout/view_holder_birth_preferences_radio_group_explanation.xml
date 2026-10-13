@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-16.0dp" android:layout_marginBottom="-16.0dp" android:layout_marginHorizontal="?spacing">
-        <TextView android:textAppearance="?textAppearanceBody2" android:textColor="@color/colorOnBackgroundSecondary" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?spacingL" android:paddingEnd="?spacingS" android:layout_marginVertical="?spacing" />
-    </com.google.android.material.card.MaterialCardView>
-</FrameLayout>

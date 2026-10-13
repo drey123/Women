@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:layout_marginStart="?spacing" android:layout_marginEnd="?spacing"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.imageview.ShapeableImageView android:id="@id/image" android:layout_width="40.0dp" android:layout_height="40.0dp" android:scaleType="centerCrop" android:layout_marginEnd="?spacingS" app:shapeAppearance="@style/BabyCenter.ShapeAppearance.Circle" />
-    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" />
-</LinearLayout>

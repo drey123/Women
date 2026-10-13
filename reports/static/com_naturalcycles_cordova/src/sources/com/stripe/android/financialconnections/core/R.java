@@ -1,7 +1,0 @@
-package com.stripe.android.financialconnections.core;
-
-/* JADX INFO: loaded from: classes4.dex */
-public final class R {
-    private R() {
-    }
-}

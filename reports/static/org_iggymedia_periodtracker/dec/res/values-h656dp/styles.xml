@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="EmptyDayInsights">
-        <item name="android:layout">@layout/view_day_insights_empty</item>
-    </style>
-    <style name="SymptomsCard.Stack" parent="@style/FootnoteRegular" />
-    <style name="SymptomsCard.Title" parent="@style/FootnoteSemibold" />
-</resources>

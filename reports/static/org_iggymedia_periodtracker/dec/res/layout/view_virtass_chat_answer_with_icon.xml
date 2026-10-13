@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_5x" android:layout_marginBottom="@dimen/spacing_5x" android:layout_marginStart="@dimen/spacing_18x" android:layout_marginEnd="@dimen/spacing_5x"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.iggymedia.periodtracker.core.markdown.view.MarkdownTextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundPrimaryWhite" android:gravity="start|center" android:layout_gravity="end" android:id="@id/text" android:background="@drawable/shape_user_answer_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/spacing_8x" android:minHeight="@dimen/spacing_10x" android:paddingHorizontal="@dimen/spacing_3x" android:paddingVertical="@dimen/spacing_2x" />
-</FrameLayout>

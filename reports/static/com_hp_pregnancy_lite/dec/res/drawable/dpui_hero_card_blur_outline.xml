@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/dpui_hero_card_blur_overlay" />
-    <corners android:radius="@dimen/dpui_hero_card_blur_radius" />
-</shape>

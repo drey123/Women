@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textColor="@color/black" android:textColorHint="@color/light_grey" android:layout_gravity="center_vertical" android:id="@id/ttc_length_text_view" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:hint="@string/sign_up_question_ttc_length" style="?android:spinnerStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

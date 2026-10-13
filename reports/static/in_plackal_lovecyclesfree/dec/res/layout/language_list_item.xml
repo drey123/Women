@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:id="@id/language_page_list_item_layout" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="@dimen/sp_size_phone_18_tablet_25" android:textColor="#121212" android:id="@id/language_display_name_text" android:paddingTop="@dimen/dp_size_phone_15_tablet_25" android:paddingBottom="@dimen/dp_size_phone_20_tablet_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_size_phone_15_tablet_20" android:paddingEnd="20.0dp" android:layout_toStartOf="@id/language_display_name_image_view" android:layout_alignParentStart="true" />
-        <ImageView android:id="@id/language_display_name_image_view" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginEnd="15.0dp" android:layout_alignParentEnd="true" />
-    </RelativeLayout>
-    <ImageView android:id="@id/image_divider" android:background="@drawable/img_pink_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/ImageAccessibilityText" />
-</LinearLayout>

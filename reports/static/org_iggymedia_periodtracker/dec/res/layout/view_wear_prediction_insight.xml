@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.appcompat.widget.AppCompatImageView android:id="@id/predictionInsightIcon" android:layout_width="@dimen/size_8x" android:layout_height="@dimen/size_8x" android:layout_marginTop="@dimen/spacing_0_5x" android:layout_marginStart="@dimen/spacing_2_5x" android:layout_marginEnd="@dimen/spacing_1_5x" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/predictionInsightText" />
-    <TextView android:textAppearance="@style/BodyRegularWear" android:textColor="@color/v2_white" android:gravity="start" android:id="@id/predictionInsightText" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_1_5x" android:layout_marginStart="@dimen/spacing_1_5x" android:layout_marginEnd="@dimen/spacing_1x" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/predictionInsightIcon" app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>

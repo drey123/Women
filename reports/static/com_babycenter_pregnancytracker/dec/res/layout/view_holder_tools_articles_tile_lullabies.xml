@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:background="?selectableItemBackground" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/icon" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:layout_constraintDimensionRatio="1:1" app:layout_constraintTop_toTopOf="parent" />
-    <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:gravity="center" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="2" app:layout_constraintTop_toBottomOf="@id/icon" />
-</androidx.constraintlayout.widget.ConstraintLayout>

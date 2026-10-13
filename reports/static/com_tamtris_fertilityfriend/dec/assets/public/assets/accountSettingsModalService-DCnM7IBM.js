@@ -1,1 +1,0 @@
-import{n as t,q as e}from"./index-flPLuAHJ.js";import n from"./AccountSettingsModal-JMWZMm93.js";import"./index-CEz_XJj9.js";import"./settingsChangeNotifier-ChnsXUGX.js";const m={async open(){const o=await t.create(e({component:n,presentingElement:document.querySelector("ion-nav")||void 0}));return await o.present(),o}};export{m as accountSettingsModalService};

@@ -1,3 +1,0 @@
-.class public interface abstract Lh/b;
-.super Ljava/lang/Object;
-.source "ActionBarDrawerToggle.java"

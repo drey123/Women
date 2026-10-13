@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.iggymedia.periodtracker.ui.day.WeekDaysView android:id="@id/weekDaysView" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/calendar_weekly_week_days_height" />
-    <org.iggymedia.periodtracker.feature.calendar.week.ui.WeekView android:id="@id/weekView" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
-</LinearLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lottieAnimation" android:layout_width="150.0dp" android:layout_height="150.0dp" android:layout_marginTop="?spacing" app:lottie_autoPlay="true" app:lottie_fileName="lottie/reg_flow_sparkle_animation.zip" app:lottie_loop="true" />
-    <com.google.android.material.imageview.ShapeableImageView android:layout_gravity="center" android:id="@id/fruitImageDropShadow" android:layout_width="120.0dp" android:layout_height="120.0dp" android:layout_marginTop="?spacingXXS" android:layout_marginEnd="?spacingXS" app:shapeAppearance="@style/BabyCenter.ShapeAppearance.Circle" />
-    <com.google.android.material.imageview.ShapeableImageView android:layout_gravity="center" android:id="@id/fruitImage" android:background="@color/white" android:layout_width="120.0dp" android:layout_height="120.0dp" android:scaleType="centerInside" app:shapeAppearance="@style/BabyCenter.ShapeAppearance.Circle" />
-    <TextView android:textAppearance="?textAppearanceHeadline4" android:gravity="center" android:id="@id/stage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="42.0dp" android:layout_marginHorizontal="64.0dp" />
-    <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:layout_gravity="bottom" android:id="@id/size" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="44.0dp" android:layout_marginHorizontal="?spacing" />
-</FrameLayout>

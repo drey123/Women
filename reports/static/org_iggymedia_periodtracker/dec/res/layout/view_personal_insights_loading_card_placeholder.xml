@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/section_1" android:background="@drawable/shape_bg_personal_insights_loading_container_placeholder" android:padding="@dimen/spacing_4x" android:layout_width="match_parent" android:layout_height="367.0dp" android:layout_marginTop="@dimen/spacing_3x" android:layout_marginBottom="@dimen/spacing_3x" android:layout_marginStart="@dimen/spacing_4x" android:layout_marginEnd="@dimen/spacing_4x" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:id="@id/placeholder_header_1" android:background="@drawable/shape_bg_personal_insights_loading_element_placeholder" android:layout_width="77.0dp" android:layout_height="@dimen/size_6x" android:layout_marginBottom="@dimen/spacing_4x" app:layout_constraintStart_toEndOf="@id/start_margin" app:layout_constraintTop_toTopOf="@id/section_1" />
-    <include android:id="@id/placeholder_item_1" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_personal_insights_loading_item" />
-    <include android:id="@id/placeholder_item_2" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_personal_insights_loading_item" />
-    <include android:id="@id/placeholder_footer" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_personal_insights_loading_footer" />
-</LinearLayout>

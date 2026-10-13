@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:background="?android:colorBackground" android:paddingTop="30.0dp" android:paddingBottom="30.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/brand_logo" android:visibility="gone" android:layout_width="96.0dp" android:layout_height="63.0dp" android:layout_marginBottom="36.0dp" android:contentDescription="@null" android:layout_marginHorizontal="40.0dp" />
-    <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:indeterminate="true" style="@style/Widget.MaterialComponents.CircularProgressIndicator" />
-    <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stripe_3ds2_processing" />
-</LinearLayout>

@@ -1,6 +1,0 @@
-package org.luaj.vm2.parser;
-
-/* JADX INFO: loaded from: classes6.dex */
-public interface LuaParserConstants {
-    public static final String[] a = {"<EOF>", "\" \"", "\"\\t\"", "\"\\n\"", "\"\\r\"", "\"\\f\"", "\"--[[\"", "\"--[=[\"", "\"--[==[\"", "\"--[===[\"", "<token of kind 10>", "\"[[\"", "\"[=[\"", "\"[==[\"", "\"[===[\"", "<token of kind 15>", "\"--\"", "<COMMENT>", "\"]]\"", "\"]=]\"", "\"]==]\"", "\"]===]\"", "<LONGCOMMENTN>", "\"]]\"", "\"]=]\"", "\"]==]\"", "\"]===]\"", "<LONGSTRINGN>", "<token of kind 28>", "\"and\"", "\"break\"", "\"do\"", "\"else\"", "\"elseif\"", "\"end\"", "\"false\"", "\"for\"", "\"function\"", "\"goto\"", "\"if\"", "\"in\"", "\"local\"", "\"nil\"", "\"not\"", "\"or\"", "\"return\"", "\"repeat\"", "\"then\"", "\"true\"", "\"until\"", "\"while\"", "<NAME>", "<NUMBER>", "<FLOAT>", "<FNUM>", "<DIGIT>", "<EXP>", "<HEX>", "<HEXNUM>", "<HEXDIGIT>", "<HEXEXP>", "<STRING>", "<CHARSTRING>", "<QUOTED>", "<DECIMAL>", "\"::\"", "<UNICODE>", "<CHAR>", "<LF>", "\"#\"", "\";\"", "\"=\"", "\",\"", "\".\"", "\":\"", "\"(\"", "\")\"", "\"[\"", "\"]\"", "\"...\"", "\"{\"", "\"}\"", "\"+\"", "\"-\"", "\"*\"", "\"/\"", "\"^\"", "\"%\"", "\"..\"", "\"<\"", "\"<=\"", "\">\"", "\">=\"", "\"==\"", "\"~=\""};
-}

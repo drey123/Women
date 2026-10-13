@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/emptyImage" android:layout_width="0.0dp" android:layout_height="0.0dp" android:src="@null" android:contentDescription="@null" android:layout_marginStart="@dimen/spacing_7x" android:layout_marginEnd="@dimen/spacing_7x" app:layout_constraintDimensionRatio="16:9" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundSecondary" android:gravity="center_horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_1_5x" android:text="@string/social_comments_empty_state_text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/emptyImage" />
-</androidx.constraintlayout.widget.ConstraintLayout>

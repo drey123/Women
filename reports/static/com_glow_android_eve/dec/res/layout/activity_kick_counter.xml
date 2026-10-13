@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <include android:id="@id/recordView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/kick_counter_record" />
-    <include android:id="@id/launchView" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/kick_counter_launch" />
-    <androidx.fragment.app.FragmentContainerView android:name="com.glow.android.kaylee.ui.tool.KickCounterHistoryFragment" android:id="@id/historyView" android:tag="history" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="16.0dp" app:behavior_peekHeight="60.0dp" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
-</androidx.coordinatorlayout.widget.CoordinatorLayout>

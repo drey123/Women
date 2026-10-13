@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.rambler.libs.swipe_layout.SwipeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:id="@id/uicBottomSheetContainer" android:layout_width="match_parent" android:layout_height="wrap_content" />
-    <View android:layout_width="match_parent" android:layout_height="0.0dp" app:bring_to_clamp="150.0dp" app:clamp="parent" app:gravity="right" />
-</ru.rambler.libs.swipe_layout.SwipeLayout>

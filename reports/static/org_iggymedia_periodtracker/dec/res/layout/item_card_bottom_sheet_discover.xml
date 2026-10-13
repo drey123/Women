@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textAppearance="@style/BodySemibold" android:textColor="?foregroundBrand" android:gravity="center_vertical" android:padding="@dimen/spacing_4x" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawableEndCompat="@drawable/small_chevron_right" app:drawableTint="?foregroundBrand"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/uicCalendarContainer" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navigationIcon="@drawable/medium_close_stroke" app:navigationIconTint="?foregroundPrimary" app:titleTextAppearance="@style/HeadlineSemibold" />
-    <include android:id="@id/contentPanel" layout="@layout/layout_standalone_uic" />
-    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottomBar" android:background="?backgroundSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" />
-</LinearLayout>

@@ -67,5 +67,25 @@ APK="$OUT/${PKG}.apk"
 if [ ! -s "$APK" ] || ! unzip -l "$APK" 2>/dev/null | grep -q "classes.dex"; then
   echo "DOWNLOAD_FAILED for $PKG (no classes.dex artifact)"; exit 1
 fi
+
+# --- base-APK validation: reject split-config stubs (NF-09) ---
+# A config split (e.g. config.arm64_v8a) carries resources/libs but no runnable code.
+# Such stubs previously passed the zip-listing check and produced all-zero "0 trackers"
+# reports (com.clue.android 1.4 MB, com.ovuline.fertility 0.8 MB on 2026-10-13).
+STUB=0
+AAPT2="$(command -v aapt2 2>/dev/null || ls /usr/local/lib/android/sdk/build-tools/*/aapt2 2>/dev/null | tail -1 || true)"
+if [ -n "$AAPT2" ] && "$AAPT2" dump badging "$APK" > "$STAGE/badging.txt" 2>/dev/null; then
+  if grep -qE "(^|[[:space:]])split='[^']+'" "$STAGE/badging.txt"; then
+    echo "REJECT for $PKG: artifact is an APK split (config.*), not a base APK"; STUB=1
+  fi
+fi
+DEX_BYTES=$(unzip -l "$APK" 2>/dev/null | awk '$NF ~ /^classes[0-9]*\.dex$/ {s+=$1} END {print s+0}')
+if [ "$DEX_BYTES" -lt 262144 ]; then
+  echo "REJECT for $PKG: total dex bytes = $DEX_BYTES (< 262144) — stub or code-less artifact"; STUB=1
+fi
+if [ "$STUB" -eq 1 ]; then
+  rm -f "$APK"
+  echo "DOWNLOAD_FAILED for $PKG (split-stub / code-less artifact)"; exit 1
+fi
 echo "APK OK: $APK size=$(stat -c%s "$APK") sha256=$(sha256sum "$APK" | cut -d' ' -f1)"
-unzip -l "$APK" | grep -c "classes" | xargs echo "dex count:"
+echo "dex count: $(unzip -l "$APK" | grep -c "classes") total dex bytes: $DEX_BYTES"

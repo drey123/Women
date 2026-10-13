@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/closeButton" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:src="@drawable/ic_close_white_24dp" />
-    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" app:actualImageScaleType="fitCenter" app:placeholderImage="@drawable/ic_dashboard_photo_not_uploaded" app:placeholderImageScaleType="centerInside" />
-</RelativeLayout>

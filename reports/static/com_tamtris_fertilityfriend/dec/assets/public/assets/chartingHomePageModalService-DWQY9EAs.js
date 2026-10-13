@@ -1,1 +1,0 @@
-import{n as s,q as e}from"./index-flPLuAHJ.js";import t from"./ChartingHomePageModal-C3-ILyDj.js";class i{async show(){const a=await s.create(e({component:t,cssClass:"fullscreen-modal"}));await a.present();const{data:o}=await a.onWillDismiss();return o===!0}async dismiss(a){await s.dismiss(a)}}const m=new i;export{m as chartingHomePageModalService};

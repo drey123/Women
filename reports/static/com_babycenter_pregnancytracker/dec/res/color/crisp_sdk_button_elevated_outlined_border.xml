@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:color="@color/crisp_sdk_button_elevated_outlined_border_pressed" />
-    <item android:state_focused="true" android:color="@color/crisp_sdk_button_elevated_outlined_border_pressed" />
-    <item android:state_enabled="true" android:color="@color/crisp_sdk_button_elevated_outlined_border_default" />
-    <item android:color="@color/crisp_sdk_button_elevated_outlined_border_default" android:alpha="@dimen/crisp_sdk_button_elevated_outlined_disabled" />
-</selector>

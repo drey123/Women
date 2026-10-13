@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.recyclerview.widget.RecyclerView android:id="@id/note_list" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" />
-    <com.glow.android.kaylee.ui.widget.FloatingActionButton android:id="@id/note_add_button" app:button_color="@color/blue" app:button_icon="@null" style="@style/KayleeFloatingActionButton" />
-</FrameLayout>

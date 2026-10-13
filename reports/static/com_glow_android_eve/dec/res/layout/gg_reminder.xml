@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.glow.android.ui.alert.BlockScrollListView android:id="@id/list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:divider="@drawable/divider" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
-    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/add_new_reminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_white_24dp_glow" app:rippleColor="@color/fab_ripple_grey" app:tint="@color/white" style="@style/FloatingActionButton" />
-    <com.glow.android.ui.alert.ReminderTutorialView android:id="@id/reminder_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dp" />
-</RelativeLayout>

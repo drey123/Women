@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:layout_gravity="center" android:id="@id/withoutContent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <LinearLayout android:orientation="vertical" android:id="@id/withContent" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
-        <TextView android:textSize="16.0sp" android:textColor="#515151" android:id="@id/headerHint" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="We’ve removed all content creator’s profile information in the screenshot, so you can feel safe sharing on:" />
-        <GridView android:id="@id/appContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4" />
-    </LinearLayout>
-</FrameLayout>

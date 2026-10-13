@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textColor="@color/black" android:paddingLeft="@dimen/prima_normal_card_padding" android:paddingRight="@dimen/prima_normal_card_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/prima_journey_eve_des" android:fontFamily="sans-serif" />
-</merge>

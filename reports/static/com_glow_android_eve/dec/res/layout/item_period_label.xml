@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textSize="20.0sp" android:textColor="@color/text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/labelTextView" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="88.0dp" android:fontFamily="sans-serif-medium"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

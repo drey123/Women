@@ -1,1 +1,0 @@
-ALTER TABLE `insight` ADD COLUMN `date` STRING;

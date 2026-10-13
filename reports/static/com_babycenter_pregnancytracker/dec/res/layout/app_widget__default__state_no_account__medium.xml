@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/root" android:background="@color/appWidgetDefaultBackground" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_widget__loading_state__bottom" android:adjustViewBounds="true" />
-    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <ImageView android:layout_width="wrap_content" android:layout_height="40.0dp" android:src="@drawable/app_widget__logo__babycenter_1" android:adjustViewBounds="true" />
-        <TextView android:textAppearance="@style/BabyCenter2.TextAppearance.Heading1" android:textColor="@color/colorOnBackground" android:id="@id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_widget__default__label__no_account" android:paddingStart="8.0dp" />
-    </LinearLayout>
-</FrameLayout>

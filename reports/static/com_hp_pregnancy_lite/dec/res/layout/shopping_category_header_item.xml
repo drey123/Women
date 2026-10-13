@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:tag="layout/shopping_category_header_item_0" android:background="@color/white_with_80transparency" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.card.MaterialCardView android:tag="binding_1" android:layout_width="match_parent" android:layout_height="188.0dp" android:layout_marginTop="10.0dp" android:layout_marginBottom="0.0dp" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" app:cardCornerRadius="2.0dp" app:cardElevation="1.0dp">
-        <ImageView android:id="@id/iv_shopping_banner" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shop_header" android:scaleType="fitXY" android:adjustViewBounds="true" />
-    </com.google.android.material.card.MaterialCardView>
-</RelativeLayout>

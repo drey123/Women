@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="142.0dp" android:src="@drawable/ic_reminder_empty_alarm" android:layout_centerHorizontal="true" />
-    <ImageView android:id="@id/empty_reminder_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dp" android:layout_marginBottom="148.0dp" android:src="@drawable/ic_curling_arrow_down" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
-    <TextView android:textSize="14.0sp" android:textColor="@color/gray_80" android:gravity="center" android:id="@id/empty_reminder_header" android:paddingLeft="32.0dp" android:paddingRight="32.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dp" android:text="@string/appt_header_remnder_intro" android:layout_above="@id/empty_reminder_arrow" android:fontFamily="normal" />
-</RelativeLayout>
