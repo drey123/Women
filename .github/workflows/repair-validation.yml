@@ -1,0 +1,64 @@
+name: repair-validation
+
+on:
+  push:
+    branches:
+      - "fix/**"
+    paths-ignore:
+      - "reports/**"
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - "reports/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install actionlint
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY' > /tmp/actionlint-url
+          import json, urllib.request
+          req = urllib.request.Request(
+              "https://api.github.com/repos/rhysd/actionlint/releases/latest",
+              headers={"Accept": "application/vnd.github+json", "User-Agent": "Women-CI-Repair"}
+          )
+          with urllib.request.urlopen(req, timeout=30) as r:
+              release = json.load(r)
+          assets = [a["browser_download_url"] for a in release["assets"]
+                    if a["name"].endswith("_linux_amd64.tar.gz")]
+          if not assets:
+              raise SystemExit("No Linux amd64 actionlint release asset found")
+          print(assets[0])
+          PY
+          curl --fail --show-error --silent --location "$(cat /tmp/actionlint-url)" -o /tmp/actionlint.tar.gz
+          tar -xzf /tmp/actionlint.tar.gz -C /tmp actionlint
+          chmod +x /tmp/actionlint
+      - name: Lint GitHub Actions workflow
+        run: /tmp/actionlint -color .github/workflows/static-analysis.yml
+      - name: Check shell syntax
+        run: |
+          bash -n tooling/setup_tools.sh
+          bash -n tooling/download_apk.sh
+          bash -n tooling/analyze_static.sh
+      - name: Check app matrix
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          text = Path(".github/workflows/static-analysis.yml").read_text()
+          block = text.split("        pkg:", 1)[1].split("\n    steps:", 1)[0]
+          packages = re.findall(r"^          - ([A-Za-z0-9_.]+)$", block, re.M)
+          assert len(packages) == 14, f"Expected 14 app packages, found {len(packages)}"
+          assert len(packages) == len(set(packages)), "Duplicate app package IDs found"
+          print(f"Validated {len(packages)} unique app package IDs")
+          PY
