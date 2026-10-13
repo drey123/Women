@@ -27,13 +27,13 @@ public final class TimerDataCardModel extends IndexedBaseCardModel {
 
     @Override // com.philips.uicomponent.models.base.IndexedBaseCardModel
     /* JADX INFO: renamed from: Q, reason: from getter */
-    public int getT() {
+    public int getK() {
         return this.K;
     }
 
     @Override // com.philips.uicomponent.models.base.IndexedBaseCardModel
     /* JADX INFO: renamed from: R, reason: from getter */
-    public int getP() {
+    public int getI() {
         return this.I;
     }
 
@@ -59,13 +59,13 @@ public final class TimerDataCardModel extends IndexedBaseCardModel {
 
     @Override // com.philips.uicomponent.models.base.IndexedBaseCardModel, com.philips.uicomponent.models.base.BaseCardModel
     /* JADX INFO: renamed from: j, reason: from getter */
-    public CardTextModel getO() {
+    public CardTextModel getH() {
         return this.H;
     }
 
     @Override // com.philips.uicomponent.models.base.BaseCardModel
     /* JADX INFO: renamed from: n, reason: from getter */
-    public ArrayList getQ() {
+    public ArrayList getJ() {
         return this.J;
     }
 

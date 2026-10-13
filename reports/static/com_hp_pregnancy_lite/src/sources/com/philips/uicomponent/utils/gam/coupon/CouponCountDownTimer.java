@@ -52,14 +52,14 @@ public final class CouponCountDownTimer extends CountDownTimer {
         TextView textView2;
         Resources resources;
         DPUICouponCardModel dPUICouponCardModel;
-        CardTextModel h;
+        CardTextModel o;
         TitleSubtitleModel titleSubtitleModel;
         String string;
         Context context;
         Resources resources2;
         this.i = false;
         WeakReference weakReference = this.g;
-        if (weakReference != null && (dPUICouponCardModel = (DPUICouponCardModel) weakReference.get()) != null && (h = dPUICouponCardModel.getH()) != null && (titleSubtitleModel = h.getTitleSubtitleModel()) != null) {
+        if (weakReference != null && (dPUICouponCardModel = (DPUICouponCardModel) weakReference.get()) != null && (o = dPUICouponCardModel.getO()) != null && (titleSubtitleModel = o.getTitleSubtitleModel()) != null) {
             WeakReference weakReference2 = this.f20572a;
             if (weakReference2 == null || (context = (Context) weakReference2.get()) == null || (resources2 = context.getResources()) == null || (string = resources2.getString(this.b)) == null) {
                 string = "";
@@ -84,7 +84,7 @@ public final class CouponCountDownTimer extends CountDownTimer {
         sb.append(strA);
         WeakReference weakReference = this.g;
         if (weakReference != null && (dPUICouponCardModel = (DPUICouponCardModel) weakReference.get()) != null) {
-            dPUICouponCardModel.getH().getTitleSubtitleModel().i(new SpannableString(strA == null ? "" : strA));
+            dPUICouponCardModel.getO().getTitleSubtitleModel().i(new SpannableString(strA == null ? "" : strA));
         }
         WeakReference weakReference2 = this.h;
         TextView textView = weakReference2 != null ? (TextView) weakReference2.get() : null;

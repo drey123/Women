@@ -18,12 +18,16 @@ final class zzfm extends zzfo {
         return Float.intBitsToFloat(this.f14383a.getInt(obj, j));
     }
 
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.play_billing.zzfp.n(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.play_billing.zzfp.o(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 'z' boolean)' in method call: com.google.android.gms.internal.play_billing.zzfp.o(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 boolean)' in method call: com.google.android.gms.internal.play_billing.zzfp.n(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.play_billing.zzfo
     public final void c(Object obj, long j, boolean z) {
         if (zzfp.h) {
-            zzfp.d(obj, j, z ? (byte) 1 : (byte) 0);
+            zzfp.n(obj, j, z);
         } else {
-            zzfp.e(obj, j, z ? (byte) 1 : (byte) 0);
+            zzfp.o(obj, j, z);
         }
     }
 

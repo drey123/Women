@@ -74,7 +74,7 @@ public final class KCallables {
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public static final Object b(KCallable kCallable, Map map, Continuation continuation) throws CloneNotSupportedException {
+    public static final Object b(KCallable kCallable, Map map, Continuation continuation) {
         KCallables$callSuspendBy$1 kCallables$callSuspendBy$1;
         if (continuation instanceof KCallables$callSuspendBy$1) {
             kCallables$callSuspendBy$1 = (KCallables$callSuspendBy$1) continuation;

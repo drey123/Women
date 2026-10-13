@@ -77,7 +77,7 @@ public final class JsonLiteral extends JsonPrimitive {
         this.isString = z;
         this.coerceToInlineType = serialDescriptor;
         this.content = body.toString();
-        if (serialDescriptor != null && !serialDescriptor.isInline()) {
+        if (serialDescriptor != null && !serialDescriptor.getIsInline()) {
             throw new IllegalArgumentException("Failed requirement.");
         }
     }

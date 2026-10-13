@@ -97,33 +97,37 @@ public final class zzalk implements zzajy {
 
     @Override // com.google.android.gms.internal.ads.zzajy
     public final synchronized void a() {
-        File fileZza = this.c.zza();
-        if (!fileZza.exists()) {
-            if (fileZza.mkdirs()) {
+        try {
+            File fileZza = this.c.zza();
+            if (!fileZza.exists()) {
+                if (fileZza.mkdirs()) {
+                    return;
+                }
+                zzala.b("Unable to create cache dir %s", fileZza.getAbsolutePath());
                 return;
             }
-            zzala.b("Unable to create cache dir %s", fileZza.getAbsolutePath());
-            return;
-        }
-        File[] fileArrListFiles = fileZza.listFiles();
-        if (fileArrListFiles != null) {
-            for (File file : fileArrListFiles) {
-                try {
-                    long length = file.length();
-                    zzali zzaliVar = new zzali(new BufferedInputStream(new FileInputStream(file)), length);
+            File[] fileArrListFiles = fileZza.listFiles();
+            if (fileArrListFiles != null) {
+                for (File file : fileArrListFiles) {
                     try {
-                        zzalh zzalhVarA = zzalh.a(zzaliVar);
-                        zzalhVarA.f10853a = length;
-                        o(zzalhVarA.b, zzalhVarA);
-                        zzaliVar.close();
-                    } catch (Throwable th) {
-                        zzaliVar.close();
-                        throw th;
+                        long length = file.length();
+                        zzali zzaliVar = new zzali(new BufferedInputStream(new FileInputStream(file)), length);
+                        try {
+                            zzalh zzalhVarA = zzalh.a(zzaliVar);
+                            zzalhVarA.f10853a = length;
+                            o(zzalhVarA.b, zzalhVarA);
+                            zzaliVar.close();
+                        } catch (Throwable th) {
+                            zzaliVar.close();
+                            throw th;
+                        }
+                    } catch (IOException unused) {
+                        file.delete();
                     }
-                } catch (IOException unused) {
-                    file.delete();
                 }
             }
+        } catch (Throwable th2) {
+            throw th2;
         }
     }
 

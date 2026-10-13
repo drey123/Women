@@ -117,9 +117,11 @@ final class zzn {
             } catch (DynamiteModule.LoadingException e3) {
                 zzxVarD = zzx.d("module init: ".concat(String.valueOf(e3.getMessage())), e3);
             }
-            return zzxVarD;
-        } finally {
             StrictMode.setThreadPolicy(threadPolicyAllowThreadDiskReads);
+            return zzxVarD;
+        } catch (Throwable th) {
+            StrictMode.setThreadPolicy(threadPolicyAllowThreadDiskReads);
+            throw th;
         }
     }
 

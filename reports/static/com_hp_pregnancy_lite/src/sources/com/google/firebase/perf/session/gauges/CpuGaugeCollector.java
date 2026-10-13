@@ -73,20 +73,16 @@ public class CpuGaugeCollector {
     }
 
     public final synchronized void j(long j, final Timer timer) {
+        this.f = j;
         try {
-            this.f = j;
-            try {
-                this.e = this.b.scheduleAtFixedRate(new Runnable() { // from class: pc0
-                    @Override // java.lang.Runnable
-                    public final void run() {
-                        this.f27546a.h(timer);
-                    }
-                }, 0L, j, TimeUnit.MILLISECONDS);
-            } catch (RejectedExecutionException e) {
-                g.j("Unable to start collecting Cpu Metrics: " + e.getMessage());
-            }
-        } catch (Throwable th) {
-            throw th;
+            this.e = this.b.scheduleAtFixedRate(new Runnable() { // from class: pc0
+                @Override // java.lang.Runnable
+                public final void run() {
+                    this.f27546a.h(timer);
+                }
+            }, 0L, j, TimeUnit.MILLISECONDS);
+        } catch (RejectedExecutionException e) {
+            g.j("Unable to start collecting Cpu Metrics: " + e.getMessage());
         }
     }
 

@@ -22,6 +22,7 @@ import io.perfmark.Link;
 import io.perfmark.PerfMark;
 import io.perfmark.Tag;
 import io.perfmark.TaskCloseable;
+import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.util.Locale;
 import java.util.concurrent.CancellationException;
@@ -163,57 +164,30 @@ final class ClientCallImpl<ReqT, RespT> extends ClientCall<ReqT, RespT> {
                         super(ClientCallImpl.this.f);
                     }
 
-                    /* JADX WARN: Bottom block not found for handler: all -> 0x002f */
-                    /* JADX WARN: Code restructure failed: missing block: B:16:0x004c, code lost:
-                    
-                        return;
-                     */
-                    /*
-                        Code decompiled incorrectly, please refer to instructions dump.
-                        To view partially-correct add '--show-bad-code' argument
-                    */
                     private void b() {
-                        /*
-                            r3 = this;
-                            io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl r0 = io.grpc.internal.ClientCallImpl.ClientStreamListenerImpl.this
-                            io.grpc.Status r0 = io.grpc.internal.ClientCallImpl.ClientStreamListenerImpl.h(r0)
-                            if (r0 == 0) goto Le
-                            io.grpc.internal.StreamListener$MessageProducer r0 = r3
-                            io.grpc.internal.GrpcUtil.d(r0)
-                            return
-                        Le:
-                            io.grpc.internal.StreamListener$MessageProducer r0 = r3     // Catch: java.lang.Throwable -> L2f
-                            java.io.InputStream r0 = r0.next()     // Catch: java.lang.Throwable -> L2f
-                            if (r0 == 0) goto L4c
-                            io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl r1 = io.grpc.internal.ClientCallImpl.ClientStreamListenerImpl.this     // Catch: java.lang.Throwable -> L31
-                            io.grpc.ClientCall$Listener r1 = io.grpc.internal.ClientCallImpl.ClientStreamListenerImpl.i(r1)     // Catch: java.lang.Throwable -> L31
-                            io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl r2 = io.grpc.internal.ClientCallImpl.ClientStreamListenerImpl.this     // Catch: java.lang.Throwable -> L31
-                            io.grpc.internal.ClientCallImpl r2 = io.grpc.internal.ClientCallImpl.this     // Catch: java.lang.Throwable -> L31
-                            io.grpc.MethodDescriptor r2 = io.grpc.internal.ClientCallImpl.j(r2)     // Catch: java.lang.Throwable -> L31
-                            java.lang.Object r2 = r2.l(r0)     // Catch: java.lang.Throwable -> L31
-                            r1.c(r2)     // Catch: java.lang.Throwable -> L31
-                            r0.close()     // Catch: java.lang.Throwable -> L2f
-                            goto Le
-                        L2f:
-                            r0 = move-exception
-                            goto L36
-                        L31:
-                            r1 = move-exception
-                            io.grpc.internal.GrpcUtil.e(r0)     // Catch: java.lang.Throwable -> L2f
-                            throw r1     // Catch: java.lang.Throwable -> L2f
-                        L36:
-                            io.grpc.internal.StreamListener$MessageProducer r1 = r3
-                            io.grpc.internal.GrpcUtil.d(r1)
-                            io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl r1 = io.grpc.internal.ClientCallImpl.ClientStreamListenerImpl.this
-                            io.grpc.Status r2 = io.grpc.Status.f
-                            io.grpc.Status r0 = r2.q(r0)
-                            java.lang.String r2 = "Failed to read message."
-                            io.grpc.Status r0 = r0.r(r2)
-                            io.grpc.internal.ClientCallImpl.ClientStreamListenerImpl.g(r1, r0)
-                        L4c:
-                            return
-                        */
-                        throw new UnsupportedOperationException("Method not decompiled: io.grpc.internal.ClientCallImpl.ClientStreamListenerImpl.C1MessagesAvailable.b():void");
+                        if (ClientStreamListenerImpl.this.b != null) {
+                            GrpcUtil.d(messageProducer);
+                            return;
+                        }
+                        while (true) {
+                            try {
+                                InputStream next = messageProducer.next();
+                                if (next == null) {
+                                    return;
+                                }
+                                try {
+                                    ClientStreamListenerImpl.this.f21816a.c(ClientCallImpl.this.f21814a.l(next));
+                                    next.close();
+                                } catch (Throwable th) {
+                                    GrpcUtil.e(next);
+                                    throw th;
+                                }
+                            } catch (Throwable th2) {
+                                GrpcUtil.d(messageProducer);
+                                ClientStreamListenerImpl.this.k(Status.f.q(th2).r("Failed to read message."));
+                                return;
+                            }
+                        }
                     }
 
                     @Override // io.grpc.internal.ContextRunnable

@@ -67,20 +67,16 @@ public class MemoryGaugeCollector {
     }
 
     public final synchronized void i(long j, final Timer timer) {
+        this.e = j;
         try {
-            this.e = j;
-            try {
-                this.d = this.f17136a.scheduleAtFixedRate(new Runnable() { // from class: pb2
-                    @Override // java.lang.Runnable
-                    public final void run() {
-                        this.f27545a.g(timer);
-                    }
-                }, 0L, j, TimeUnit.MILLISECONDS);
-            } catch (RejectedExecutionException e) {
-                f.j("Unable to start collecting Memory Metrics: " + e.getMessage());
-            }
-        } catch (Throwable th) {
-            throw th;
+            this.d = this.f17136a.scheduleAtFixedRate(new Runnable() { // from class: pb2
+                @Override // java.lang.Runnable
+                public final void run() {
+                    this.f27545a.g(timer);
+                }
+            }, 0L, j, TimeUnit.MILLISECONDS);
+        } catch (RejectedExecutionException e) {
+            f.j("Unable to start collecting Memory Metrics: " + e.getMessage());
         }
     }
 

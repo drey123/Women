@@ -26,13 +26,13 @@ public final class TableDataCardModel extends DataCardModel {
 
     @Override // com.philips.uicomponent.models.datacards.DataCardModel, com.philips.uicomponent.models.base.IndexedBaseCardModel
     /* JADX INFO: renamed from: Q, reason: from getter */
-    public int getS() {
+    public int getK() {
         return this.S;
     }
 
     @Override // com.philips.uicomponent.models.datacards.DataCardModel, com.philips.uicomponent.models.base.IndexedBaseCardModel
     /* JADX INFO: renamed from: R, reason: from getter */
-    public int getQ() {
+    public int getG() {
         return this.Q;
     }
 
@@ -53,13 +53,13 @@ public final class TableDataCardModel extends DataCardModel {
 
     @Override // com.philips.uicomponent.models.datacards.DataCardModel, com.philips.uicomponent.models.base.IndexedBaseCardModel, com.philips.uicomponent.models.base.BaseCardModel
     /* JADX INFO: renamed from: j, reason: from getter */
-    public CardTextModel getP() {
+    public CardTextModel getF() {
         return this.P;
     }
 
     @Override // com.philips.uicomponent.models.datacards.DataCardModel, com.philips.uicomponent.models.base.BaseCardModel
     /* JADX INFO: renamed from: n, reason: from getter */
-    public ArrayList getR() {
+    public ArrayList getH() {
         return this.R;
     }
 

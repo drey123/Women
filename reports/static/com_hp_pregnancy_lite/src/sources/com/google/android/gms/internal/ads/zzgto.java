@@ -29,12 +29,16 @@ final class zzgto extends zzgtp {
         Memory.peekByteArray(j, bArr, (int) j2, (int) j3);
     }
 
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.ads.zzgtq.s(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.ads.zzgtq.t(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 'z' boolean)' in method call: com.google.android.gms.internal.ads.zzgtq.s(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 'z' boolean)' in method call: com.google.android.gms.internal.ads.zzgtq.t(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.ads.zzgtp
     public final void e(Object obj, long j, boolean z) {
         if (zzgtq.i) {
-            zzgtq.g(obj, j, z ? (byte) 1 : (byte) 0);
+            zzgtq.s(obj, j, z);
         } else {
-            zzgtq.h(obj, j, z ? (byte) 1 : (byte) 0);
+            zzgtq.t(obj, j, z);
         }
     }
 

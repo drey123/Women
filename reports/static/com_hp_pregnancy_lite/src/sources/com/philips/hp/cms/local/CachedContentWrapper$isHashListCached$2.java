@@ -50,33 +50,37 @@ public final class CachedContentWrapper$isHashListCached$2 extends SuspendLambda
         String str = this.this$0.f;
         CachedContentWrapper cachedContentWrapper = this.this$0;
         synchronized (str) {
-            DbRetry dbRetry = DbRetry.f17941a;
-            cursorG = null;
-            SQLiteDatabaseLockedException e = null;
-            int i2 = 0;
-            while (true) {
-                if (i2 >= 5) {
-                    if (e != null) {
-                        throw e;
+            try {
+                DbRetry dbRetry = DbRetry.f17941a;
+                cursorG = null;
+                SQLiteDatabaseLockedException e = null;
+                int i2 = 0;
+                while (true) {
+                    if (i2 >= 5) {
+                        if (e != null) {
+                            throw e;
+                        }
+                        throw new IllegalStateException("DB operation failed");
                     }
-                    throw new IllegalStateException("DB operation failed");
-                }
-                try {
-                    CachedContentDBHelper cachedContentDBHelper = cachedContentWrapper.c;
-                    if (cachedContentDBHelper == null) {
-                        break;
-                    }
-                    cursorG = cachedContentDBHelper.g();
-                    break;
-                } catch (SQLiteDatabaseLockedException e2) {
-                    e = e2;
-                    i2++;
                     try {
-                        Thread.sleep(((long) i2) * 50);
-                    } catch (InterruptedException e3) {
-                        Logger.g("DbRetry", "Thread interrupted during database retry sleep: " + e3.getMessage());
+                        CachedContentDBHelper cachedContentDBHelper = cachedContentWrapper.c;
+                        if (cachedContentDBHelper == null) {
+                            break;
+                        }
+                        cursorG = cachedContentDBHelper.g();
+                        break;
+                    } catch (SQLiteDatabaseLockedException e2) {
+                        e = e2;
+                        i2++;
+                        try {
+                            Thread.sleep(((long) i2) * 50);
+                        } catch (InterruptedException e3) {
+                            Logger.g("DbRetry", "Thread interrupted during database retry sleep: " + e3.getMessage());
+                        }
                     }
+                    throw th;
                 }
+            } catch (Throwable th) {
                 throw th;
             }
         }
@@ -96,9 +100,9 @@ public final class CachedContentWrapper$isHashListCached$2 extends SuspendLambda
                     cursorG.close();
                     i = 0;
                 }
-            } catch (Throwable th) {
+            } catch (Throwable th2) {
                 cursorG.close();
-                throw th;
+                throw th2;
             }
         } else {
             i = 0;

@@ -1701,11 +1701,14 @@ public abstract class CodedInputStream {
                         } else {
                             i6 += (int) jX;
                         }
-                    } finally {
+                    } catch (Throwable th) {
                         this.m += i6;
                         V();
+                        throw th;
                     }
                 }
+                this.m += i6;
+                V();
             }
             if (i6 >= i) {
                 return;

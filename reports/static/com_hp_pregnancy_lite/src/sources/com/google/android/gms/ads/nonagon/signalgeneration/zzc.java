@@ -108,24 +108,20 @@ public final class zzc {
     }
 
     public final synchronized void i() {
+        long jB = com.google.android.gms.ads.internal.zzt.b().b();
         try {
-            long jB = com.google.android.gms.ads.internal.zzt.b().b();
-            try {
-                Iterator it = this.e.entrySet().iterator();
-                while (it.hasNext()) {
-                    Map.Entry entry = (Map.Entry) it.next();
-                    if (jB - ((Long) ((Pair) entry.getValue()).first).longValue() <= this.b) {
-                        break;
-                    }
-                    this.g.add(new Pair((String) entry.getKey(), (String) ((Pair) entry.getValue()).second));
-                    it.remove();
-                    throw th;
+            Iterator it = this.e.entrySet().iterator();
+            while (it.hasNext()) {
+                Map.Entry entry = (Map.Entry) it.next();
+                if (jB - ((Long) ((Pair) entry.getValue()).first).longValue() <= this.b) {
+                    break;
                 }
-            } catch (ConcurrentModificationException e) {
-                com.google.android.gms.ads.internal.zzt.q().u(e, "QueryJsonMap.removeExpiredEntries");
+                this.g.add(new Pair((String) entry.getKey(), (String) ((Pair) entry.getValue()).second));
+                it.remove();
+                throw th;
             }
-        } catch (Throwable th) {
-            throw th;
+        } catch (ConcurrentModificationException e) {
+            com.google.android.gms.ads.internal.zzt.q().u(e, "QueryJsonMap.removeExpiredEntries");
         }
     }
 }

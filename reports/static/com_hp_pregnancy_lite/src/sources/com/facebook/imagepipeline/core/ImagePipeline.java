@@ -253,11 +253,9 @@ public final class ImagePipeline {
             } catch (Exception e2) {
                 dataSourceB = DataSources.b(e2);
             }
-            FrescoSystrace.b();
             return dataSourceB;
-        } catch (Throwable th) {
+        } finally {
             FrescoSystrace.b();
-            throw th;
         }
     }
 }

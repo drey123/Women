@@ -43,23 +43,27 @@ public final class DiskLruCache$launchCleanup$1 extends SuspendLambda implements
         ResultKt.b(obj);
         DiskLruCache diskLruCache = this.this$0;
         synchronized (diskLruCache) {
-            if (!diskLruCache.initialized || diskLruCache.closed) {
-                return Unit.f24295a;
-            }
             try {
-                diskLruCache.K();
-            } catch (IOException unused) {
-                diskLruCache.mostRecentTrimFailed = true;
-            }
-            try {
-                if (diskLruCache.x()) {
-                    diskLruCache.M();
+                if (!diskLruCache.initialized || diskLruCache.closed) {
+                    return Unit.f24295a;
                 }
-            } catch (IOException unused2) {
-                diskLruCache.mostRecentRebuildFailed = true;
-                diskLruCache.journalWriter = Okio.c(Okio.b());
+                try {
+                    diskLruCache.K();
+                } catch (IOException unused) {
+                    diskLruCache.mostRecentTrimFailed = true;
+                }
+                try {
+                    if (diskLruCache.x()) {
+                        diskLruCache.M();
+                    }
+                } catch (IOException unused2) {
+                    diskLruCache.mostRecentRebuildFailed = true;
+                    diskLruCache.journalWriter = Okio.c(Okio.b());
+                }
+                return Unit.f24295a;
+            } catch (Throwable th) {
+                throw th;
             }
-            return Unit.f24295a;
         }
     }
 

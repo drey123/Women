@@ -292,11 +292,11 @@ public final class MotionMeasurer extends Measurer {
         x(measureScope);
         boolean zG = G(constraints);
         if (this.motionProgress == progress) {
-            LayoutInformationReceiver layoutInformationReceiverN = getLayoutInformationReceiver();
-            Integer numValueOf = layoutInformationReceiverN == null ? null : Integer.valueOf(layoutInformationReceiverN.getForcedWidth());
+            LayoutInformationReceiver layoutInformationReceiver = getLayoutInformationReceiver();
+            Integer numValueOf = layoutInformationReceiver == null ? null : Integer.valueOf(layoutInformationReceiver.getForcedWidth());
             if (numValueOf == null || numValueOf.intValue() != Integer.MIN_VALUE) {
-                LayoutInformationReceiver layoutInformationReceiverN2 = getLayoutInformationReceiver();
-                Integer numValueOf2 = layoutInformationReceiverN2 != null ? Integer.valueOf(layoutInformationReceiverN2.getForcedHeight()) : null;
+                LayoutInformationReceiver layoutInformationReceiver2 = getLayoutInformationReceiver();
+                Integer numValueOf2 = layoutInformationReceiver2 != null ? Integer.valueOf(layoutInformationReceiver2.getForcedHeight()) : null;
                 if (numValueOf2 == null || numValueOf2.intValue() != Integer.MIN_VALUE) {
                     I(constraints, layoutDirection, constraintSetStart, constraintSetEnd, transition, measurables, optimizationLevel, progress, zG);
                 } else if (zG) {
@@ -368,8 +368,8 @@ public final class MotionMeasurer extends Measurer {
                 }
             }
         }
-        LayoutInformationReceiver layoutInformationReceiverN = getLayoutInformationReceiver();
-        if ((layoutInformationReceiverN != null ? layoutInformationReceiverN.getLayoutInformationMode() : null) == LayoutInfoFlags.BOUNDS) {
+        LayoutInformationReceiver layoutInformationReceiver = getLayoutInformationReceiver();
+        if ((layoutInformationReceiver != null ? layoutInformationReceiver.getLayoutInformationMode() : null) == LayoutInfoFlags.BOUNDS) {
             d();
         }
     }
@@ -409,13 +409,13 @@ public final class MotionMeasurer extends Measurer {
             sb.append("}, ");
         }
         sb.append(" }");
-        LayoutInformationReceiver layoutInformationReceiverN = getLayoutInformationReceiver();
-        if (layoutInformationReceiverN == null) {
+        LayoutInformationReceiver layoutInformationReceiver = getLayoutInformationReceiver();
+        if (layoutInformationReceiver == null) {
             return;
         }
         String string = sb.toString();
         Intrinsics.i(string, "json.toString()");
-        layoutInformationReceiverN.e(string);
+        layoutInformationReceiver.e(string);
     }
 
     public final void z(final BoxScope boxScope, Composer composer, final int i) {

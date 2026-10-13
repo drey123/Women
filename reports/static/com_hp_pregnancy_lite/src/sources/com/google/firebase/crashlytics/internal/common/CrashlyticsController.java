@@ -226,50 +226,46 @@ class CrashlyticsController {
     }
 
     public synchronized void J(final SettingsProvider settingsProvider, final Thread thread, final Throwable th, final boolean z) {
-        try {
-            Logger.f().b("Handling uncaught exception \"" + th + "\" from thread " + thread.getName());
-            final long jCurrentTimeMillis = System.currentTimeMillis();
-            Task taskG = this.e.common.g(new Callable<Task<Void>>() { // from class: com.google.firebase.crashlytics.internal.common.CrashlyticsController.2
-                @Override // java.util.concurrent.Callable
-                /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-                public Task call() {
-                    long jG = CrashlyticsController.G(jCurrentTimeMillis);
-                    final String strC = CrashlyticsController.this.C();
-                    if (strC == null) {
-                        Logger.f().d("Tried to write a fatal exception while no session was open.");
+        Logger.f().b("Handling uncaught exception \"" + th + "\" from thread " + thread.getName());
+        final long jCurrentTimeMillis = System.currentTimeMillis();
+        Task taskG = this.e.common.g(new Callable<Task<Void>>() { // from class: com.google.firebase.crashlytics.internal.common.CrashlyticsController.2
+            @Override // java.util.concurrent.Callable
+            /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+            public Task call() {
+                long jG = CrashlyticsController.G(jCurrentTimeMillis);
+                final String strC = CrashlyticsController.this.C();
+                if (strC == null) {
+                    Logger.f().d("Tried to write a fatal exception while no session was open.");
+                    return Tasks.e(null);
+                }
+                CrashlyticsController.this.c.a();
+                CrashlyticsController.this.m.v(th, thread, strC, jG);
+                CrashlyticsController.this.x(jCurrentTimeMillis);
+                CrashlyticsController.this.u(settingsProvider);
+                CrashlyticsController.this.w(new CLSUUID().c(), Boolean.valueOf(z));
+                return !CrashlyticsController.this.b.d() ? Tasks.e(null) : settingsProvider.a().s(CrashlyticsController.this.e.common, new SuccessContinuation<Settings, Void>() { // from class: com.google.firebase.crashlytics.internal.common.CrashlyticsController.2.1
+                    @Override // com.google.android.gms.tasks.SuccessContinuation
+                    /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
+                    public Task a(Settings settings) {
+                        if (settings != null) {
+                            return Tasks.g(CrashlyticsController.this.P(), CrashlyticsController.this.m.A(CrashlyticsController.this.e.common, z ? strC : null));
+                        }
+                        Logger.f().k("Received null app settings, cannot send reports at crash time.");
                         return Tasks.e(null);
                     }
-                    CrashlyticsController.this.c.a();
-                    CrashlyticsController.this.m.v(th, thread, strC, jG);
-                    CrashlyticsController.this.x(jCurrentTimeMillis);
-                    CrashlyticsController.this.u(settingsProvider);
-                    CrashlyticsController.this.w(new CLSUUID().c(), Boolean.valueOf(z));
-                    return !CrashlyticsController.this.b.d() ? Tasks.e(null) : settingsProvider.a().s(CrashlyticsController.this.e.common, new SuccessContinuation<Settings, Void>() { // from class: com.google.firebase.crashlytics.internal.common.CrashlyticsController.2.1
-                        @Override // com.google.android.gms.tasks.SuccessContinuation
-                        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
-                        public Task a(Settings settings) {
-                            if (settings != null) {
-                                return Tasks.g(CrashlyticsController.this.P(), CrashlyticsController.this.m.A(CrashlyticsController.this.e.common, z ? strC : null));
-                            }
-                            Logger.f().k("Received null app settings, cannot send reports at crash time.");
-                            return Tasks.e(null);
-                        }
-                    });
-                }
-            });
-            if (!z) {
-                try {
-                    try {
-                        Utils.b(taskG);
-                    } catch (TimeoutException unused) {
-                        Logger.f().d("Cannot send reports. Timed out while fetching settings.");
-                    }
-                } catch (Exception e) {
-                    Logger.f().e("Error handling uncaught exception", e);
-                }
+                });
             }
-        } catch (Throwable th2) {
-            throw th2;
+        });
+        if (!z) {
+            try {
+                try {
+                    Utils.b(taskG);
+                } catch (TimeoutException unused) {
+                    Logger.f().d("Cannot send reports. Timed out while fetching settings.");
+                }
+            } catch (Exception e) {
+                Logger.f().e("Error handling uncaught exception", e);
+            }
         }
     }
 

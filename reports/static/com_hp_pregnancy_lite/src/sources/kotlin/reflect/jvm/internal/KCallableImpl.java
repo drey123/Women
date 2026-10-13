@@ -369,7 +369,7 @@ public abstract class KCallableImpl<R> implements KCallable<R>, KTypeParameterOw
         throw new KotlinReflectionInternalError("This callable does not support a default call: " + V());
     }
 
-    public final Object J(Map args, Continuation continuation) throws CloneNotSupportedException {
+    public final Object J(Map args, Continuation continuation) {
         Intrinsics.j(args, "args");
         List<KParameter> parameters = getParameters();
         boolean z = false;
@@ -465,7 +465,7 @@ public abstract class KCallableImpl<R> implements KCallable<R>, KTypeParameterOw
         return (Type) ArraysKt.X(lowerBounds);
     }
 
-    public final Object[] M() throws CloneNotSupportedException {
+    public final Object[] M() {
         return (Object[]) ((Object[]) this.e.invoke()).clone();
     }
 

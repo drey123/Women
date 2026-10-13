@@ -45,35 +45,31 @@ public final class CachedContentWrapper$checkAndUpdateDirtyContent$2 extends Sus
         String str = this.this$0.f;
         CachedContentWrapper cachedContentWrapper = this.this$0;
         synchronized (str) {
-            try {
-                DbRetry dbRetry = DbRetry.f17941a;
-                unit = null;
-                int i = 0;
-                SQLiteDatabaseLockedException e = null;
-                while (i < 5) {
+            DbRetry dbRetry = DbRetry.f17941a;
+            unit = null;
+            int i = 0;
+            SQLiteDatabaseLockedException e = null;
+            while (i < 5) {
+                try {
+                    CachedContentDBHelper cachedContentDBHelper = cachedContentWrapper.c;
+                    if (cachedContentDBHelper != null) {
+                        cachedContentDBHelper.c();
+                        unit = Unit.f24295a;
+                    }
+                } catch (SQLiteDatabaseLockedException e2) {
+                    e = e2;
+                    i++;
                     try {
-                        CachedContentDBHelper cachedContentDBHelper = cachedContentWrapper.c;
-                        if (cachedContentDBHelper != null) {
-                            cachedContentDBHelper.c();
-                            unit = Unit.f24295a;
-                        }
-                    } catch (SQLiteDatabaseLockedException e2) {
-                        e = e2;
-                        i++;
-                        try {
-                            Thread.sleep(((long) i) * 50);
-                        } catch (InterruptedException e3) {
-                            Logger.g("DbRetry", "Thread interrupted during database retry sleep: " + e3.getMessage());
-                        }
+                        Thread.sleep(((long) i) * 50);
+                    } catch (InterruptedException e3) {
+                        Logger.g("DbRetry", "Thread interrupted during database retry sleep: " + e3.getMessage());
                     }
                 }
-                if (e != null) {
-                    throw e;
-                }
-                throw new IllegalStateException("DB operation failed");
-            } catch (Throwable th) {
-                throw th;
             }
+            if (e != null) {
+                throw e;
+            }
+            throw new IllegalStateException("DB operation failed");
         }
         return unit;
     }

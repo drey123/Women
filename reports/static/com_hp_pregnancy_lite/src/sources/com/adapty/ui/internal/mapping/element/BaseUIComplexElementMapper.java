@@ -11,7 +11,6 @@ import com.adapty.ui.internal.ui.element.BaseProps;
 import com.adapty.ui.internal.ui.element.GridItem;
 import com.adapty.ui.internal.ui.element.ReferenceElement;
 import com.adapty.ui.internal.ui.element.UIElement;
-import com.parse.ParseException;
 import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -363,7 +362,7 @@ public abstract class BaseUIComplexElementMapper extends BaseUIElementMapper {
                 if (widthSpec$adapty_ui_release == null) {
                     widthSpec$adapty_ui_release = basePropsExtractBaseProps.getWidthSpec$adapty_ui_release();
                 }
-                basePropsExtractBaseProps = basePropsExtractBaseProps.copy((ParseException.UNSUPPORTED_SERVICE & 1) != 0 ? basePropsExtractBaseProps.widthSpec : widthSpec$adapty_ui_release, (ParseException.UNSUPPORTED_SERVICE & 2) != 0 ? basePropsExtractBaseProps.heightSpec : shrink == null ? basePropsExtractBaseProps.getHeightSpec$adapty_ui_release() : shrink, (ParseException.UNSUPPORTED_SERVICE & 4) != 0 ? basePropsExtractBaseProps.weight : null, (ParseException.UNSUPPORTED_SERVICE & 8) != 0 ? basePropsExtractBaseProps.shape : null, (ParseException.UNSUPPORTED_SERVICE & 16) != 0 ? basePropsExtractBaseProps.padding : null, (ParseException.UNSUPPORTED_SERVICE & 32) != 0 ? basePropsExtractBaseProps.offset : null, (ParseException.UNSUPPORTED_SERVICE & 64) != 0 ? basePropsExtractBaseProps.opacity : 0.0f, (ParseException.UNSUPPORTED_SERVICE & 128) != 0 ? basePropsExtractBaseProps.onAppear : null);
+                basePropsExtractBaseProps = basePropsExtractBaseProps.copy((254 & 1) != 0 ? basePropsExtractBaseProps.widthSpec : widthSpec$adapty_ui_release, (254 & 2) != 0 ? basePropsExtractBaseProps.heightSpec : shrink == null ? basePropsExtractBaseProps.getHeightSpec$adapty_ui_release() : shrink, (254 & 4) != 0 ? basePropsExtractBaseProps.weight : null, (254 & 8) != 0 ? basePropsExtractBaseProps.shape : null, (254 & 16) != 0 ? basePropsExtractBaseProps.padding : null, (254 & 32) != 0 ? basePropsExtractBaseProps.offset : null, (254 & 64) != 0 ? basePropsExtractBaseProps.opacity : 0.0f, (254 & 128) != 0 ? basePropsExtractBaseProps.onAppear : null);
             }
             children = BaseUIComplexElementMapperKt.getChildren(map);
             if (children != null) {

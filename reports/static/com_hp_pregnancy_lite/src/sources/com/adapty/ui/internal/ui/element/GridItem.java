@@ -30,7 +30,6 @@ import com.adapty.ui.internal.ui.attributes.Align;
 import com.adapty.ui.internal.ui.attributes.AlignKt;
 import com.adapty.ui.internal.ui.attributes.DimSpec;
 import com.adapty.ui.internal.utils.EventCallback;
-import com.parse.ParseException;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -64,7 +63,7 @@ public final class GridItem implements UIElement, SingleContainer {
         Intrinsics.j(baseProps, "baseProps");
         this.content = content;
         this.align = align;
-        this.baseProps = dimAxis == DimSpec.Axis.X ? baseProps.copy((ParseException.UNSUPPORTED_SERVICE & 1) != 0 ? baseProps.widthSpec : dimSpec, (ParseException.UNSUPPORTED_SERVICE & 2) != 0 ? baseProps.heightSpec : null, (ParseException.UNSUPPORTED_SERVICE & 4) != 0 ? baseProps.weight : null, (ParseException.UNSUPPORTED_SERVICE & 8) != 0 ? baseProps.shape : null, (ParseException.UNSUPPORTED_SERVICE & 16) != 0 ? baseProps.padding : null, (ParseException.UNSUPPORTED_SERVICE & 32) != 0 ? baseProps.offset : null, (ParseException.UNSUPPORTED_SERVICE & 64) != 0 ? baseProps.opacity : 0.0f, (ParseException.UNSUPPORTED_SERVICE & 128) != 0 ? baseProps.onAppear : null) : baseProps.copy((ParseException.UNSUPPORTED_SERVICE & 1) != 0 ? baseProps.widthSpec : null, (ParseException.UNSUPPORTED_SERVICE & 2) != 0 ? baseProps.heightSpec : dimSpec, (ParseException.UNSUPPORTED_SERVICE & 4) != 0 ? baseProps.weight : null, (ParseException.UNSUPPORTED_SERVICE & 8) != 0 ? baseProps.shape : null, (ParseException.UNSUPPORTED_SERVICE & 16) != 0 ? baseProps.padding : null, (ParseException.UNSUPPORTED_SERVICE & 32) != 0 ? baseProps.offset : null, (ParseException.UNSUPPORTED_SERVICE & 64) != 0 ? baseProps.opacity : 0.0f, (ParseException.UNSUPPORTED_SERVICE & 128) != 0 ? baseProps.onAppear : null);
+        this.baseProps = dimAxis == DimSpec.Axis.X ? baseProps.copy((254 & 1) != 0 ? baseProps.widthSpec : dimSpec, (254 & 2) != 0 ? baseProps.heightSpec : null, (254 & 4) != 0 ? baseProps.weight : null, (254 & 8) != 0 ? baseProps.shape : null, (254 & 16) != 0 ? baseProps.padding : null, (254 & 32) != 0 ? baseProps.offset : null, (254 & 64) != 0 ? baseProps.opacity : 0.0f, (254 & 128) != 0 ? baseProps.onAppear : null) : baseProps.copy((254 & 1) != 0 ? baseProps.widthSpec : null, (254 & 2) != 0 ? baseProps.heightSpec : dimSpec, (254 & 4) != 0 ? baseProps.weight : null, (254 & 8) != 0 ? baseProps.shape : null, (254 & 16) != 0 ? baseProps.padding : null, (254 & 32) != 0 ? baseProps.offset : null, (254 & 64) != 0 ? baseProps.opacity : 0.0f, (254 & 128) != 0 ? baseProps.onAppear : null);
     }
 
     @NotNull

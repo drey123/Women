@@ -231,6 +231,7 @@ public final class zzi implements Runnable, zzaps {
         this.b.set(zzapv.y(this.k.f11341a, q(this.i), z, this.o));
     }
 
+    /* JADX WARN: Multi-variable type inference failed */
     @Override // java.lang.Runnable
     public final void run() {
         try {
@@ -267,14 +268,10 @@ public final class zzi implements Runnable, zzaps {
                     this.h.c(2031, System.currentTimeMillis() - jCurrentTimeMillis, e);
                 }
             }
+        } finally {
             this.n.countDown();
             this.i = null;
             this.k = null;
-        } catch (Throwable th) {
-            this.n.countDown();
-            this.i = null;
-            this.k = null;
-            throw th;
         }
     }
 }

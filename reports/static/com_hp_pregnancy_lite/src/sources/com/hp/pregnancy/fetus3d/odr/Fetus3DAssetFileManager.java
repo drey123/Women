@@ -246,10 +246,11 @@ public final class Fetus3DAssetFileManager {
     /* JADX WARN: Code duplicated, block: B:37:0x00e4  */
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:33:0x00dd -> B:35:0x00e0). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public final java.lang.Object n(java.lang.String r11, java.util.Set r12, kotlin.coroutines.Continuation r13) {
         /*
