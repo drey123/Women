@@ -149,7 +149,7 @@ print('sha256 '+hashlib.sha256(blob).hexdigest()[:16])")
   echo "## Tracker detection (Exodus-Privacy registry; dual surface per NF-17)" >> "$OUT/report.md"
   echo "- Signatures checked: $NSIGS (registry digest $RDIGEST; source: reports.exodus-privacy.eu.org/api/trackers)" >> "$OUT/report.md"
   echo "- Surfaces: \`dex_class\` = regex signature over the dexdump class list of every classes*.dex (exodus-core semantics, primary); \`Files (tree)\` = fixed-string hits over the apktool tree incl. manifest/resources (string-presence, NOT class-presence; reconciliation run 38415446421 showed the tree surface alone both over- and under-reports)." >> "$OUT/report.md"
-  echo "- Reading rule: \`dex_class=Y\` = tracker classes present (strong claim). \`dex_class=n\` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown \u2260 absence." >> "$OUT/report.md"
+  echo "- Reading rule: \`dex_class=Y\` = tracker classes present (strong claim). \`dex_class=n\` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown != absence." >> "$OUT/report.md"
   echo "| Tracker | Files (tree) | dex_class | Code signature |" >> "$OUT/report.md"
   echo "|---|---|---|---|" >> "$OUT/report.md"
   tail -n +2 "$OUT/exodus_scan.tsv" | while IFS=$'\t' read -r t n d s; do echo "| $t | $n | $d | \`$s\` |" >> "$OUT/report.md"; done
