@@ -1,5 +1,127 @@
 {
- "fetched_utc": "2026-10-13T09:00:09Z",
- "source": "https://reports.exodus-privacy.eu.org/api",
- "results": {}
+  "fetched_utc": "2026-10-13T12:33:57Z",
+  "source": "https://reports.exodus-privacy.eu.org/api",
+  "endpoint_pattern": "https://reports.exodus-privacy.eu.org/api/search/<package>/details",
+  "tracker_registry_count": 432,
+  "target_count": 16,
+  "found_count": 0,
+  "no_report_count": 0,
+  "error_count": 16,
+  "statuses": {
+    "org.iggymedia.periodtracker": {
+      "app": "Flo",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/org.iggymedia.periodtracker/details"
+    },
+    "com.clue.android": {
+      "app": "Clue",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.clue.android/details"
+    },
+    "com.period.tracker.lite": {
+      "app": "Period Tracker (Simple Design)",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.period.tracker.lite/details"
+    },
+    "com.glow.android": {
+      "app": "Glow",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.glow.android/details"
+    },
+    "com.glow.android.eve": {
+      "app": "Eve (Glow)",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.glow.android.eve/details"
+    },
+    "com.ovuline.fertility": {
+      "app": "Ovia Fertility",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.ovuline.fertility/details"
+    },
+    "com.ovuline.pregnancy": {
+      "app": "Ovia Pregnancy",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.ovuline.pregnancy/details"
+    },
+    "in.plackal.lovecyclesfree": {
+      "app": "Maya (LoveCycles)",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/in.plackal.lovecyclesfree/details"
+    },
+    "com.popularapp.periodcalendar": {
+      "app": "Period Calendar",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.popularapp.periodcalendar/details"
+    },
+    "com.smsrobot.period": {
+      "app": "Period Tracker (SMSRobot)",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.smsrobot.period/details"
+    },
+    "com.stardust.app": {
+      "app": "Stardust",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.stardust.app/details"
+    },
+    "com.naturalcycles.cordova": {
+      "app": "Natural Cycles",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.naturalcycles.cordova/details"
+    },
+    "premom.eh.com.ehpremomapp": {
+      "app": "Premom",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/premom.eh.com.ehpremomapp/details"
+    },
+    "com.tamtris.fertilityfriend": {
+      "app": "Fertility Friend",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.tamtris.fertilityfriend/details"
+    },
+    "com.hp.pregnancy.lite": {
+      "app": "Pregnancy+",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.hp.pregnancy.lite/details"
+    },
+    "com.babycenter.pregnancytracker": {
+      "app": "BabyCenter",
+      "status": "AUTH_REQUIRED",
+      "error": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+      "source_url": "https://reports.exodus-privacy.eu.org/api/search/com.babycenter.pregnancytracker/details"
+    }
+  },
+  "errors": {
+    "org.iggymedia.periodtracker": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.clue.android": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.period.tracker.lite": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.glow.android": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.glow.android.eve": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.ovuline.fertility": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.ovuline.pregnancy": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "in.plackal.lovecyclesfree": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.popularapp.periodcalendar": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.smsrobot.period": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.stardust.app": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.naturalcycles.cordova": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "premom.eh.com.ehpremomapp": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.tamtris.fertilityfriend": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.hp.pregnancy.lite": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key.",
+    "com.babycenter.pregnancytracker": "EXODUS_API_TOKEN is not configured; the official Exodus API requires an API key."
+  },
+  "results": {}
 }
