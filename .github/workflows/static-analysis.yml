@@ -133,7 +133,7 @@ jobs:
         run: |
           chmod +x tooling/analyze_static.sh
           bash tooling/analyze_static.sh "${{ steps.app.outputs.label }}" "${{ matrix.pkg }}" "/tmp/apk/${{ matrix.pkg }}.apk" reports/static
-      - name: Record unavailable or skipped analysis
+      - name: Record analysis status (always — success included)
         if: always()
         env:
           APP_LABEL: ${{ steps.app.outputs.label }}
@@ -150,14 +150,20 @@ jobs:
             RESULT="ANALYSIS FAILED"
             REASON="analysis command failed after acquisition; the partial output is not a completed assessment."
           else
-            exit 0
+            RESULT="ANALYSED"
+            REASON="all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
           fi
+          # Every run writes a fresh STATUS.md. This closes the evidence
+          # consistency defect where success-path runs emitted no status and
+          # stale failure-era STATUS.md files survived beside fresh reports.
           # shellcheck disable=SC2016
           # Backticks below are literal Markdown delimiters, not shell substitutions.
           printf '# Analysis status: %s\n\n- Package: `%s`\n- Result: %s\n- Toolchain step: `%s`\n- APK download step: `%s`\n- Analysis step: `%s`\n- Reason: %s\n- Interpretation: an unavailable or failed analysis is not evidence that the app is safe or unsafe.\n' \
             "$APP_LABEL" "$PACKAGE_NAME" "$RESULT" "$TOOL_OUTCOME" "$DOWNLOAD_OUTCOME" "$ANALYSIS_OUTCOME" "$REASON" \
             > "reports/static/$APP_LABEL/STATUS.md"
-          cp "reports/static/$APP_LABEL/STATUS.md" "reports/static/$APP_LABEL/report.md"
+          if [ "$RESULT" != "ANALYSED" ]; then
+            cp "reports/static/$APP_LABEL/STATUS.md" "reports/static/$APP_LABEL/report.md"
+          fi
       - name: Upload per-app evidence
         if: always()
         uses: actions/upload-artifact@v4

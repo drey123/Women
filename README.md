@@ -5,14 +5,17 @@ privacy-protective competing dataset architecture specification for the Nigerian
 market (NDPA 2023 compliant).
 
 ## Structure
-- `tooling/` — execution pipeline (Exodus API fetch, APK acquisition, static analysis)
-- `.github/workflows/static-analysis.yml` — CI that runs Phase 1 static analysis
-- `.github/workflows/trace-replay.yml` — CI for the golden-trace replay selftest
+- `tooling/` — execution pipeline (Exodus API fetch, APK acquisition, static analysis, standalone-scan validation)
+- `.github/workflows/static-analysis.yml` — CI that runs Phase 1 static analysis (fresh STATUS.md in every terminal state)
+- `.github/workflows/trace-replay.yml` — CI for the golden-trace replay selftest (+ wire-tier HAR round trip)
+- `.github/workflows/exodus-standalone.yml` — independent second attribution engine (official docker scanner, no token)
 - `reports/` — machine-generated evidence artifacts (committed by CI)
-- `spec/` — the deliverable specification document (v1.2.0)
+- `reports/standalone/` — exodus-standalone scan artifacts (uploaded as clearly-attributed CI artifacts)
+- `spec/` — the deliverable specification document (v1.3.0)
 - `research/` — validation protocol, tracker-intel sourcing matrix, REA notes
-- `blueprint/` — product blueprint: from decompiled intelligence to the Nkwo web platform
-- `harness/` — golden-trace replay kit ("diff, don't review" — a decompile is a hypothesis; replay is the test)
+- `blueprint/` — product blueprint + `build_receipts.py` + `trust-receipts-dataset.json`
+- `blueprint/prototype/` — interactive research-phase prototype (open `index.html`; zero third-party resources, everything stays on-device)
+- `harness/` — golden-trace replay kit ("diff, don't review" — a decompile is a hypothesis; replay is the test) + `har_to_trace.py` (HAR → GoldenTrace)
 - `note.md` — ChatGPT ↔ GLM multi-agent conversation space (owner-adjudicated)
 
 ## Methodology

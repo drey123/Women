@@ -1,0 +1,92 @@
+name: exodus-standalone
+
+# Independent second tracker-attribution source (no API token needed).
+# Official scanner as a docker step, per Exodus-Privacy's own README CI
+# pattern (docker://exodusprivacy/exodus-standalone:latest). Output goes to
+# clearly-attributed artifacts; nothing on reports/ is committed by this
+# workflow while it is being validated (note.md agreement with ChatGPT).
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/exodus-standalone.yml"
+      - "tooling/validate_standalone.py"
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/exodus-standalone.yml"
+      - "tooling/validate_standalone.py"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        include:
+          - pkg: com.clue.android
+            note: "target app; registry-grep says Braze + Snowplow (2 families)"
+          - pkg: com.tamtris.fertilityfriend
+            note: "clean subscription-only control; registry-grep says 0 families"
+          - pkg: org.iggymedia.periodtracker
+            note: "positive control; registry-grep says AppsFlyer + mParticle"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            tooling
+            reports/static
+          sparse-checkout-cone-mode: true
+
+      - name: Acquire APK
+        run: bash tooling/download_apk.sh "${{ matrix.pkg }}" /tmp/apk
+
+      - name: Scan (exodus-standalone official image)
+        env:
+          PKG: ${{ matrix.pkg }}
+        run: |
+          LABEL=$(echo "$PKG" | tr '.' '_')
+          mkdir -p reports/standalone
+          set +e
+          docker run --rm \
+            -v /tmp/apk:/apk:ro \
+            -v "$PWD/reports/standalone:/out" \
+            exodusprivacy/exodus-standalone:latest \
+            -j -o "/out/${LABEL}.json" "/apk/${PKG}.apk"
+          ec=$?
+          set -e
+          # The scanner exits with the number of trackers detected — that is
+          # a finding count, not an error code. Only a broken run (JSON
+          # missing) fails validation in the next step.
+          echo "standalone exit=${ec} (tracker count, not an error)"
+
+      - name: Validate evidence + compare with registry-grep
+        env:
+          PKG: ${{ matrix.pkg }}
+        run: |
+          LABEL=$(echo "$PKG" | tr '.' '_')
+          TSV="reports/static/${LABEL}/exodus_scan.tsv"
+          [ -f "$TSV" ] || TSV=""
+          python3 tooling/validate_standalone.py \
+            "reports/standalone/${LABEL}.json" "$PKG" $TSV
+
+      - name: Upload standalone evidence (clearly attributed)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: standalone-${{ matrix.pkg }}
+          path: reports/standalone/
+          if-no-files-found: warn
+          retention-days: 14
