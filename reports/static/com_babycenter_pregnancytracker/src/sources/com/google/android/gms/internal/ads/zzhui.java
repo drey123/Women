@@ -18,7 +18,7 @@ public final class zzhui extends zziee implements zzifq {
     private zzhui() {
     }
 
-    public static zzhui zzc(zzida zzidaVar, zzido zzidoVar) {
+    public static zzhui zzc(zzida zzidaVar, zzido zzidoVar) throws zziet {
         return (zzhui) zziee.zzbT(zzd, zzidaVar, zzidoVar);
     }
 

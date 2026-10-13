@@ -78,7 +78,7 @@ final class zzaca extends zzacc {
         return (bArr[i] & UnsignedBytes.MAX_VALUE) | ((bArr[i + 1] & UnsignedBytes.MAX_VALUE) << 8) | ((bArr[i + 2] & UnsignedBytes.MAX_VALUE) << 16) | ((bArr[i + 3] & UnsignedBytes.MAX_VALUE) << 24);
     }
 
-    public final int zze() throws zzadi {
+    public final int zze() {
         int i;
         int i2 = this.zzh;
         int i3 = this.zzf;

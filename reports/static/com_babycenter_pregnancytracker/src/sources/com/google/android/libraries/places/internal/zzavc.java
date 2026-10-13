@@ -258,14 +258,6 @@ final class zzavc {
         return ((byte) ((zzf.zza.getInt(obj, (-4) & j) >>> ((int) ((j & 3) << 3))) & 255)) != 0;
     }
 
-    public static /* synthetic */ void zzw(Object obj, long j, boolean z) {
-        zzD(obj, j, z ? (byte) 1 : (byte) 0);
-    }
-
-    public static /* synthetic */ void zzx(Object obj, long j, boolean z) {
-        zzE(obj, j, z ? (byte) 1 : (byte) 0);
-    }
-
     public static /* synthetic */ void zzy(Throwable th) {
         Logger.getLogger(zzavc.class.getName()).logp(Level.WARNING, "com.google.protobuf.UnsafeUtil", "logMissingMethod", "platform method missing - proto runtime falling back to safer methods: ".concat(th.toString()));
     }

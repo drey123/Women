@@ -288,6 +288,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements Render
             }
             Spatializer spatializer = audioManagerE.getSpatializer();
             this.spatializer = spatializer;
+            int i = 1;
             this.spatializationSupported = spatializer.getImmersiveAudioLevel() != 0;
             Spatializer$OnSpatializerStateChangedListener spatializer$OnSpatializerStateChangedListener = new Spatializer$OnSpatializerStateChangedListener() { // from class: androidx.media3.exoplayer.trackselection.DefaultTrackSelector.SpatializerWrapperV32.1
                 public void onSpatializerAvailableChanged(Spatializer spatializer2, boolean z) {
@@ -303,7 +304,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements Render
             ny8.o(looperMyLooper);
             Handler handler = new Handler(looperMyLooper);
             this.handler = handler;
-            spatializer.addOnSpatializerStateChangedListener(new ay2(handler, 1), spatializer$OnSpatializerStateChangedListener);
+            spatializer.addOnSpatializerStateChangedListener(new ay2(handler, i), spatializer$OnSpatializerStateChangedListener);
         }
 
         public boolean canBeSpatialized(va0 va0Var, u14 u14Var) {

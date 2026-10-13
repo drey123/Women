@@ -25,7 +25,7 @@ public final class fw5 {
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0019  */
-    public final Object b(aw5 aw5Var, w29 w29Var, ContinuationImpl continuationImpl) {
+    public final Object b(aw5 aw5Var, w29 w29Var, ContinuationImpl continuationImpl) throws Throwable {
         cw5 cw5Var;
         long jF;
         aw5 aw5Var2 = aw5Var;

@@ -19,11 +19,12 @@ public final class zzbno implements Executor, Runnable {
 
     static {
         zzbnl zzbnnVar;
+        byte[] bArr = null;
         try {
-            zzbnnVar = new zzbnm(AtomicIntegerFieldUpdater.newUpdater(zzbno.class, "zze"), null);
+            zzbnnVar = new zzbnm(AtomicIntegerFieldUpdater.newUpdater(zzbno.class, "zze"), bArr);
         } catch (Throwable th) {
             zza.logp(Level.SEVERE, "io.grpc.internal.SerializingExecutor", "getAtomicHelper", "FieldUpdaterAtomicHelper failed", th);
-            zzbnnVar = new zzbnn(null);
+            zzbnnVar = new zzbnn(bArr);
         }
         zzb = zzbnnVar;
     }

@@ -31,7 +31,7 @@ public final class zzhtu extends zziee implements zzifq {
         this.zzi = zzidaVar;
     }
 
-    public static zzhtu zzj(zzida zzidaVar, zzido zzidoVar) throws zziet {
+    public static zzhtu zzj(zzida zzidaVar, zzido zzidoVar) {
         return (zzhtu) zziee.zzbT(zzj, zzidaVar, zzidoVar);
     }
 

@@ -19,9 +19,8 @@ public final /* synthetic */ class b implements DiffBuilder.SerializableSupplier
         char c = this.b;
         switch (i) {
             case 0:
-                return DiffBuilder.lambda$append$cfd1295e$1(c);
-            default:
-                return DiffBuilder.lambda$append$cfd3e398$1(c);
+                break;
         }
+        return Character.valueOf(c);
     }
 }

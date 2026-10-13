@@ -440,17 +440,21 @@ public final class ql {
     }
 
     public final synchronized void logError$vungle_ads_release(@NotNull Sdk$SDKError.b bVar, @NotNull String str, @Nullable jj5 jj5Var) {
-        bVar.getClass();
-        str.getClass();
         try {
-            t2b t2bVar = executor;
-            if (t2bVar != null) {
-                t2bVar.execute(new k(bVar, str, 1, jj5Var));
-            } else {
-                pendingErrors.put(genSDKError(bVar, str, jj5Var));
+            bVar.getClass();
+            str.getClass();
+            try {
+                t2b t2bVar = executor;
+                if (t2bVar != null) {
+                    t2bVar.execute(new k(bVar, str, 1, jj5Var));
+                } else {
+                    pendingErrors.put(genSDKError(bVar, str, jj5Var));
+                }
+            } catch (Exception e) {
+                qk5.Companion.e(TAG, "Cannot logError " + bVar + ", " + str + ", " + jj5Var, e);
             }
-        } catch (Exception e) {
-            qk5.Companion.e(TAG, "Cannot logError " + bVar + ", " + str + ", " + jj5Var, e);
+        } catch (Throwable th) {
+            throw th;
         }
     }
 

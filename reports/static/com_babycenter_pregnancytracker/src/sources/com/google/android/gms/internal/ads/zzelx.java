@@ -78,26 +78,22 @@ public final class zzelx {
     }
 
     public final synchronized void zzc(String str, List list) {
-        try {
-            Map map = this.zzb;
-            if (map.containsKey(str)) {
-                com.google.android.gms.ads.internal.client.zzv zzvVar = (com.google.android.gms.ads.internal.client.zzv) map.get(str);
-                List list2 = this.zza;
-                int iIndexOf = list2.indexOf(zzvVar);
-                try {
-                    list2.remove(iIndexOf);
-                } catch (IndexOutOfBoundsException e) {
-                    com.google.android.gms.ads.internal.zzt.zzh().zzg(e, "AdapterResponseInfoCollector.replaceAdapterResponseInfoEntry");
-                }
-                this.zzb.remove(str);
-                Iterator it = list.iterator();
-                while (it.hasNext()) {
-                    zzj((zzfkf) it.next(), iIndexOf);
-                    iIndexOf++;
-                }
+        Map map = this.zzb;
+        if (map.containsKey(str)) {
+            com.google.android.gms.ads.internal.client.zzv zzvVar = (com.google.android.gms.ads.internal.client.zzv) map.get(str);
+            List list2 = this.zza;
+            int iIndexOf = list2.indexOf(zzvVar);
+            try {
+                list2.remove(iIndexOf);
+            } catch (IndexOutOfBoundsException e) {
+                com.google.android.gms.ads.internal.zzt.zzh().zzg(e, "AdapterResponseInfoCollector.replaceAdapterResponseInfoEntry");
             }
-        } catch (Throwable th) {
-            throw th;
+            this.zzb.remove(str);
+            Iterator it = list.iterator();
+            while (it.hasNext()) {
+                zzj((zzfkf) it.next(), iIndexOf);
+                iIndexOf++;
+            }
         }
     }
 

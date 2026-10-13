@@ -3,7 +3,7 @@ Static analysis report — com_babycenter_pregnancytracker
 - Package: `com.babycenter.pregnancytracker`
 - APK: `/tmp/apk/com.babycenter.pregnancytracker.apk` (67082565 bytes, sha256 `3816927114ee91d9837dfc35535dd33c449ab1555b979ede30cd0e0b72aa3c5f`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:12:58Z | Runner: x86_64
+- Date: 2026-10-13T09:23:52Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```

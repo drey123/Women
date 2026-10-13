@@ -19,7 +19,7 @@ public final class zzhsd extends zziee implements zzifq {
     private zzhsd() {
     }
 
-    public static zzhsd zzd(zzida zzidaVar, zzido zzidoVar) {
+    public static zzhsd zzd(zzida zzidaVar, zzido zzidoVar) throws zziet {
         return (zzhsd) zziee.zzbT(zze, zzidaVar, zzidoVar);
     }
 

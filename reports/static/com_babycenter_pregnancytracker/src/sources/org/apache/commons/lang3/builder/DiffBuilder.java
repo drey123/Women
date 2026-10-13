@@ -121,16 +121,6 @@ public class DiffBuilder<T> implements org.apache.commons.lang3.builder.Builder<
         append(sbY.toString(), diff.getLeft(), diff.getRight());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static /* synthetic */ Character lambda$append$cfd1295e$1(char c) {
-        return Character.valueOf(c);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static /* synthetic */ Character lambda$append$cfd3e398$1(char c) {
-        return Character.valueOf(c);
-    }
-
     public DiffBuilder<T> append(String str, Object obj, Object obj2) {
         if (this.equals || obj == obj2) {
             return this;

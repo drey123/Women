@@ -80,9 +80,11 @@ final class zzo {
                 Log.e("GoogleCertificates", "Failed to get Google certificates from remote", e2);
                 zzyVarZzd = zzy.zzd("module init: ".concat(String.valueOf(e2.getMessage())), e2);
             }
-            return zzyVarZzd;
-        } finally {
             StrictMode.setThreadPolicy(threadPolicyAllowThreadDiskReads);
+            return zzyVarZzd;
+        } catch (Throwable th) {
+            StrictMode.setThreadPolicy(threadPolicyAllowThreadDiskReads);
+            throw th;
         }
     }
 

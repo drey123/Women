@@ -85,8 +85,10 @@ public final class cb9 {
     /* JADX WARN: Code duplicated, block: B:27:0x0050  */
     /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
         java.lang.StackOverflowError
-        	at java.base/java.util.HashSet.iterator(HashSet.java:174)
-        	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:335)
+        	at java.base/java.util.HashMap.putVal(HashMap.java:627)
+        	at java.base/java.util.HashMap.put(HashMap.java:610)
+        	at java.base/java.util.HashSet.add(HashSet.java:221)
+        	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:336)
         	at java.base/java.util.HashSet.<init>(HashSet.java:121)
         	at jadx.core.dex.visitors.regions.maker.RegionStack$State.<init>(RegionStack.java:39)
         	at jadx.core.dex.visitors.regions.maker.RegionStack$State.copyWith(RegionStack.java:44)
@@ -1106,8 +1108,6 @@ public final class cb9 {
         	at jadx.core.dex.visitors.regions.maker.RegionMaker.traverse(RegionMaker.java:92)
         	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeRegion(RegionMaker.java:69)
         	at jadx.core.dex.visitors.regions.maker.SwitchRegionMaker.addCases(SwitchRegionMaker.java:127)
-        	at jadx.core.dex.visitors.regions.maker.SwitchRegionMaker.process(SwitchRegionMaker.java:75)
-        	at jadx.core.dex.visitors.regions.maker.RegionMaker.traverse(RegionMaker.java:115)
         */
     public final boolean b(int r11) {
         /*

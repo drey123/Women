@@ -116,7 +116,7 @@ public final /* synthetic */ class ji4 extends FunctionReferenceImpl implements 
     /* JADX WARN: Code duplicated, block: B:81:0x02b0  */
     /* JADX WARN: Multi-variable type inference failed */
     @Override // kotlin.jvm.functions.Function2
-    public final Object invoke(Object obj, Object obj2) {
+    public final Object invoke(Object obj, Object obj2) throws Throwable {
         boolean z;
         CardArtifact cardArtifact;
         CardArtifact cardArtifact2;
