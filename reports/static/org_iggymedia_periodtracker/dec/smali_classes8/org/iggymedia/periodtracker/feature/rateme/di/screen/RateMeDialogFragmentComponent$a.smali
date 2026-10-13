@@ -1,0 +1,248 @@
+.class public final Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$a;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# static fields
+.field public static final a:Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$a;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$a;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$a;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$a;->a:Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$a;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static final b(Lorg/iggymedia/periodtracker/feature/rateme/ui/RateMeDialogFragment;Lorg/iggymedia/periodtracker/feature/rateme/navigation/RateMeDialogNavigationDelegate;)Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-static {}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/a;->a()Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$Builder;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    sget-object v1, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$a;->a:Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$a;
+
+    .line 12
+    .line 13
+    invoke-static {p0}, Lrv/b;->e(Landroidx/fragment/app/t;)Lorg/iggymedia/periodtracker/core/base/di/CoreBaseApi;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v2
+
+    .line 17
+    invoke-virtual {v1, v2}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$a;->a(Lorg/iggymedia/periodtracker/core/base/di/CoreBaseApi;)Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentDependencies;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v1
+
+    .line 21
+    invoke-interface {v0, v1}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$Builder;->a(Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentDependencies;)Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$Builder;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    invoke-virtual {p0}, Landroidx/fragment/app/t;->requireActivity()Landroidx/fragment/app/y;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-interface {v0, v1}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$Builder;->b(Landroid/app/Activity;)Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$Builder;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    invoke-interface {v0, p0}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$Builder;->c(Lorg/iggymedia/periodtracker/feature/rateme/ui/RateMeDialogFragment;)Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$Builder;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p0
+
+    .line 40
+    invoke-interface {p0, p1}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$Builder;->d(Lorg/iggymedia/periodtracker/feature/rateme/navigation/RateMeDialogNavigationDelegate;)Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$Builder;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object p0
+
+    .line 44
+    invoke-interface {p0}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent$Builder;->build()Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentComponent;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object p0
+
+    .line 48
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final a(Lorg/iggymedia/periodtracker/core/base/di/CoreBaseApi;)Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentDependencies;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/b;->a()Lorg/iggymedia/periodtracker/feature/rateme/di/screen/b$a;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-virtual {p0, p1}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/b$a;->c(Lorg/iggymedia/periodtracker/core/base/di/CoreBaseApi;)Lorg/iggymedia/periodtracker/feature/rateme/di/screen/b$a;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    sget-object v0, Lorg/iggymedia/periodtracker/core/analytics/CoreAnalyticsApi;->Companion:Lorg/iggymedia/periodtracker/core/analytics/CoreAnalyticsApi$a;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0, p1}, Lorg/iggymedia/periodtracker/core/analytics/CoreAnalyticsApi$a;->e(Lorg/iggymedia/periodtracker/core/base/di/SourceClientProvider;)Lorg/iggymedia/periodtracker/core/analytics/CoreAnalyticsApi;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    invoke-virtual {p0, v0}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/b$a;->b(Lorg/iggymedia/periodtracker/core/analytics/CoreAnalyticsApi;)Lorg/iggymedia/periodtracker/feature/rateme/di/screen/b$a;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p0
+
+    .line 19
+    sget-object v0, Lorg/iggymedia/periodtracker/core/featureconfig/FeatureConfigApi;->Companion:Lorg/iggymedia/periodtracker/core/featureconfig/FeatureConfigApi$a;
+
+    .line 20
+    .line 21
+    invoke-virtual {v0, p1}, Lorg/iggymedia/periodtracker/core/featureconfig/FeatureConfigApi$a;->c(Lorg/iggymedia/periodtracker/core/base/di/WearCoreBaseApi;)Lorg/iggymedia/periodtracker/core/featureconfig/FeatureConfigApi;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p1
+
+    .line 25
+    invoke-virtual {p0, p1}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/b$a;->d(Lorg/iggymedia/periodtracker/core/featureconfig/FeatureConfigApi;)Lorg/iggymedia/periodtracker/feature/rateme/di/screen/b$a;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p0
+
+    .line 29
+    sget-object p1, Lorg/iggymedia/periodtracker/utils/di/UtilsApi;->a:Lorg/iggymedia/periodtracker/utils/di/UtilsApi$a;
+
+    .line 30
+    .line 31
+    invoke-virtual {p1}, Lorg/iggymedia/periodtracker/utils/di/UtilsApi$a;->a()Lorg/iggymedia/periodtracker/utils/di/UtilsApi;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p1
+
+    .line 35
+    invoke-virtual {p0, p1}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/b$a;->e(Lorg/iggymedia/periodtracker/utils/di/UtilsApi;)Lorg/iggymedia/periodtracker/feature/rateme/di/screen/b$a;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p0
+
+    .line 39
+    invoke-virtual {p0}, Lorg/iggymedia/periodtracker/feature/rateme/di/screen/b$a;->a()Lorg/iggymedia/periodtracker/feature/rateme/di/screen/RateMeDialogFragmentDependenciesComponent;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p0
+
+    .line 43
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 44
+    .line 45
+    .line 46
+    return-object p0
+.end method

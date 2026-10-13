@@ -1,0 +1,18 @@
+package org.chromium.support_lib_boundary;
+
+import java.lang.reflect.InvocationHandler;
+import java.util.List;
+import org.jspecify.annotations.NullMarked;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes5.dex */
+@NullMarked
+public interface ProfileStoreBoundaryInterface {
+    boolean deleteProfile(String str);
+
+    List<String> getAllProfileNames();
+
+    InvocationHandler getOrCreateProfile(String str);
+
+    InvocationHandler getProfile(String str);
+}

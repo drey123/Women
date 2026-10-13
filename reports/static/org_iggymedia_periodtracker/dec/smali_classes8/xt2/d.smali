@@ -1,0 +1,252 @@
+.class public final Lxt2/d;
+.super Lxt2/b;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+
+# static fields
+.field public static final e:I
+
+
+# instance fields
+.field public final d:Ljava/util/Map;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    sget v0, Lxt2/b;->c:I
+
+    .line 2
+    .line 3
+    sput v0, Lxt2/d;->e:I
+
+    .line 4
+    .line 5
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/Map;)V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    const/16 v0, 0x2a
+
+    .line 5
+    .line 6
+    invoke-direct {p0, v0, p1}, Lxt2/b;-><init>(ILjava/util/Map;)V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object p1, p0, Lxt2/d;->d:Ljava/util/Map;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/util/Map;
+    .locals 3
+
+    .line 1
+    invoke-super {p0}, Lxt2/b;->a()Ljava/util/Map;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    const-string v0, "screen"
+
+    .line 6
+    .line 7
+    const-string v1, "promo"
+
+    .line 8
+    .line 9
+    invoke-static {v0, v1}, Lxg/v;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    const-string v1, "source"
+
+    .line 14
+    .line 15
+    const-string v2, "back_button"
+
+    .line 16
+    .line 17
+    invoke-static {v1, v2}, Lxg/v;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v1
+
+    .line 21
+    filled-new-array {v0, v1}, [Lkotlin/Pair;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    invoke-static {v0}, Lkotlin/collections/s0;->m([Lkotlin/Pair;)Ljava/util/Map;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    invoke-static {p0, v0}, Lkotlin/collections/s0;->r(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p0
+
+    .line 33
+    return-object p0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lxt2/d;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lxt2/d;
+
+    .line 12
+    .line 13
+    iget-object p0, p0, Lxt2/d;->d:Ljava/util/Map;
+
+    .line 14
+    .line 15
+    iget-object p1, p1, Lxt2/d;->d:Ljava/util/Map;
+
+    .line 16
+    .line 17
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
+
+    .line 21
+    if-nez p0, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lxt2/d;->d:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    iget-object p0, p0, Lxt2/d;->d:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    const-string v1, "BackPressedEvent(basicParams="
+
+    .line 6
+    .line 7
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string p0, ")"
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
+.end method

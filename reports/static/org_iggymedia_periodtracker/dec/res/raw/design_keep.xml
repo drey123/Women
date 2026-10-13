@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/xsmall_*,@drawable/small_*,@drawable/medium_*,@drawable/upper_medium_*,@drawable/large_*,@drawable/tutorial_*" />

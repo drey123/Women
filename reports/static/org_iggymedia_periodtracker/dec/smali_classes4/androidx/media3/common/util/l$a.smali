@@ -1,0 +1,146 @@
+.class public final Landroidx/media3/common/util/l$a;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/media3/common/util/l;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/lang/String;
+
+.field public final b:I
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/media3/common/util/l$a;->a:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iput p2, p0, Landroidx/media3/common/util/l$a;->b:I
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public static a(II)Landroidx/media3/common/util/l$a;
+    .locals 12
+
+    .line 1
+    const/4 v1, 0x1
+
+    .line 2
+    new-array v2, v1, [I
+
+    .line 3
+    .line 4
+    const v3, 0x8b8a
+
+    .line 5
+    .line 6
+    .line 7
+    const/4 v11, 0x0
+
+    .line 8
+    invoke-static {p0, v3, v2, v11}, Landroid/opengl/GLES20;->glGetProgramiv(II[II)V
+
+    .line 9
+    .line 10
+    .line 11
+    aget v2, v2, v11
+
+    .line 12
+    .line 13
+    new-array v9, v2, [B
+
+    .line 14
+    .line 15
+    new-array v3, v1, [I
+
+    .line 16
+    .line 17
+    new-array v5, v1, [I
+
+    .line 18
+    .line 19
+    new-array v7, v1, [I
+
+    .line 20
+    .line 21
+    const/4 v8, 0x0
+
+    .line 22
+    const/4 v10, 0x0
+
+    .line 23
+    const/4 v4, 0x0
+
+    .line 24
+    const/4 v6, 0x0
+
+    .line 25
+    move v0, p0
+
+    .line 26
+    move v1, p1
+
+    .line 27
+    invoke-static/range {v0 .. v10}, Landroid/opengl/GLES20;->glGetActiveAttrib(III[II[II[II[BI)V
+
+    .line 28
+    .line 29
+    .line 30
+    new-instance v1, Ljava/lang/String;
+
+    .line 31
+    .line 32
+    invoke-static {v9}, Landroidx/media3/common/util/l;->a([B)I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v2
+
+    .line 36
+    invoke-direct {v1, v9, v11, v2}, Ljava/lang/String;-><init>([BII)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-static {p0, v1}, Landroidx/media3/common/util/l;->b(ILjava/lang/String;)I
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v0
+
+    .line 43
+    new-instance v2, Landroidx/media3/common/util/l$a;
+
+    .line 44
+    .line 45
+    invoke-direct {v2, v1, v0}, Landroidx/media3/common/util/l$a;-><init>(Ljava/lang/String;I)V
+
+    .line 46
+    .line 47
+    .line 48
+    return-object v2
+.end method

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/leftSpace" android:layout_width="0.0dp" android:layout_height="14.0dp" android:layout_marginBottom="8.0dp" android:layout_marginStart="16.0dp" />
+    <TextView android:textAppearance="@style/FootnoteSemibold" android:textColor="?foregroundSecondary" android:id="@id/topLeftCycleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/leftSpace" android:textAllCaps="true" android:paddingEnd="8.0dp" android:layout_toEndOf="@id/leftSpace" />
+    <TextView android:textAppearance="@style/FootnoteRegular" android:textColor="?foregroundSecondary" android:id="@id/topRightCycleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_alignBaseline="@id/topLeftCycleText" android:paddingEnd="16.0dp" android:layout_toEndOf="@id/topLeftCycleText" />
+    <TextView android:textAppearance="@style/FootnoteRegular" android:textColor="?foregroundSecondary" android:id="@id/bottomLeftCycleText" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_below="@id/leftSpace" android:paddingEnd="16.0dp" android:layout_marginStart="16.0dp" android:layout_alignParentStart="true" />
+    <RelativeLayout android:id="@id/cycleViewContainer" android:paddingBottom="32.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/bottomLeftCycleText">
+        <org.iggymedia.periodtracker.ui.newcharts.views.CycleView android:id="@id/cycleView" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_alignParentTop="true" app:themeState="light" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/daysCountLayout" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_alignTop="@id/cycleViewContainer" android:layout_alignParentStart="true">
+        <TextView android:textAppearance="@style/BodySemibold" android:textColor="?foregroundPrimary" android:id="@id/cycleDaysCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="16.0dp" />
+        <TextView android:textAppearance="@style/FootnoteRegular" android:textColor="?foregroundPrimary" android:id="@id/cycleDaysText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/cycleDaysCount" android:paddingStart="8.0dp" android:paddingEnd="16.0dp" android:layout_toEndOf="@id/cycleDaysCount" />
+    </RelativeLayout>
+    <HorizontalScrollView android:id="@id/scrolledChartContainer" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_below="@id/bottomLeftCycleText" android:overScrollMode="never">
+        <RelativeLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Space android:id="@id/scrollableSpace" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+    <View android:id="@id/normalLineBottomPart" android:background="?borderPrimary" android:layout_width="1.0dp" android:layout_height="32.0dp" android:layout_alignBottom="@id/cycleViewContainer" android:layout_alignParentBottom="false" android:layout_marginStart="20.0dp" android:layout_alignParentStart="true" />
+    <View android:id="@id/normalLineTopPart" android:background="?borderPrimary" android:layout_width="1.0dp" android:layout_height="wrap_content" android:layout_above="@id/normalLineBottomPart" android:layout_alignParentTop="true" android:layout_alignParentBottom="false" android:layout_marginStart="20.0dp" android:layout_alignParentStart="true" />
+    <View android:id="@id/normalLineBottomGradient" android:background="?borderSecondary" android:layout_width="1.0dp" android:layout_height="32.0dp" android:layout_alignBottom="@id/cycleViewContainer" android:layout_alignParentBottom="false" android:layout_marginStart="25.0dp" android:layout_alignParentStart="true" />
+</RelativeLayout>

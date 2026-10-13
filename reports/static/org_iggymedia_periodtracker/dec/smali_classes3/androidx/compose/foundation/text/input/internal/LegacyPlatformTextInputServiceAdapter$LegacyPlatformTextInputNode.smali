@@ -1,0 +1,81 @@
+.class public interface abstract Landroidx/compose/foundation/text/input/internal/LegacyPlatformTextInputServiceAdapter$LegacyPlatformTextInputNode;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/foundation/text/input/internal/LegacyPlatformTextInputServiceAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "LegacyPlatformTextInputNode"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008f\u0018\u00002\u00020\u0001J:\u0010\t\u001a\u0004\u0018\u00010\u00082\'\u0010\u0007\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0003\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00050\u0004\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0002\u00a2\u0006\u0002\u0008\u0006H&\u00a2\u0006\u0004\u0008\t\u0010\nR\u0016\u0010\u000e\u001a\u0004\u0018\u00010\u000b8&X\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\rR\u0016\u0010\u0012\u001a\u0004\u0018\u00010\u000f8&X\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011R\u0016\u0010\u0016\u001a\u0004\u0018\u00010\u00138&X\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R\u0016\u0010\u001a\u001a\u0004\u0018\u00010\u00178&X\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0019R\u0014\u0010\u001e\u001a\u00020\u001b8&X\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001c\u0010\u001d\u00f8\u0001\u0000\u0082\u0002\u0006\n\u0004\u0008!0\u0001\u00a8\u0006\u001f\u00c0\u0006\u0001"
+    }
+    d2 = {
+        "Landroidx/compose/foundation/text/input/internal/LegacyPlatformTextInputServiceAdapter$LegacyPlatformTextInputNode;",
+        "",
+        "Lkotlin/Function2;",
+        "Landroidx/compose/ui/platform/PlatformTextInputSession;",
+        "Lkotlin/coroutines/Continuation;",
+        "",
+        "Lkotlin/ExtensionFunctionType;",
+        "block",
+        "Lkotlinx/coroutines/Job;",
+        "b2",
+        "(Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/Job;",
+        "Landroidx/compose/ui/platform/SoftwareKeyboardController;",
+        "getSoftwareKeyboardController",
+        "()Landroidx/compose/ui/platform/SoftwareKeyboardController;",
+        "softwareKeyboardController",
+        "Landroidx/compose/ui/layout/LayoutCoordinates;",
+        "p0",
+        "()Landroidx/compose/ui/layout/LayoutCoordinates;",
+        "layoutCoordinates",
+        "Lh0/d4;",
+        "f1",
+        "()Lh0/d4;",
+        "legacyTextFieldState",
+        "Landroidx/compose/foundation/text/selection/p1;",
+        "N0",
+        "()Landroidx/compose/foundation/text/selection/p1;",
+        "textFieldSelectionManager",
+        "Landroidx/compose/ui/platform/ViewConfiguration;",
+        "getViewConfiguration",
+        "()Landroidx/compose/ui/platform/ViewConfiguration;",
+        "viewConfiguration",
+        "foundation"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# virtual methods
+.method public abstract N0()Landroidx/compose/foundation/text/selection/p1;
+.end method
+
+.method public abstract b2(Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/Job;
+.end method
+
+.method public abstract f1()Lh0/d4;
+.end method
+
+.method public abstract getSoftwareKeyboardController()Landroidx/compose/ui/platform/SoftwareKeyboardController;
+.end method
+
+.method public abstract getViewConfiguration()Landroidx/compose/ui/platform/ViewConfiguration;
+.end method
+
+.method public abstract p0()Landroidx/compose/ui/layout/LayoutCoordinates;
+.end method

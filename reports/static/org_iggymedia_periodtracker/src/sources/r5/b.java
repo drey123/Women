@@ -1,0 +1,15 @@
+package r5;
+
+import androidx.glance.unit.ColorProvider;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes3.dex */
+public abstract class b {
+    public static final ColorProvider a(int i14) {
+        return new e(i14);
+    }
+
+    public static final ColorProvider b(long j14) {
+        return new d(j14, null);
+    }
+}

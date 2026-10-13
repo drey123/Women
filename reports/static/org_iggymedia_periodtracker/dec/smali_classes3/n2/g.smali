@@ -1,0 +1,16 @@
+.class public abstract Ln2/g;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+
+# direct methods
+.method public static final a()Ln2/f;
+    .locals 1
+
+    .line 1
+    sget-object v0, Ln2/b;->a:Ln2/b;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

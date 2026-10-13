@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/FootnoteSemibold" android:textColor="?foregroundOvulation" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/size_12x" android:text="@string/notifications_screen_period_notifications" android:paddingHorizontal="@dimen/spacing_4x"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

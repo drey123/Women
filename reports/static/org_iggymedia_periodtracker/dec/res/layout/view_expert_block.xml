@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/expertBlock" android:background="@drawable/shape_bg_expert_block" android:paddingTop="@dimen/spacing_5x" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/expertView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/spacing_5x" layout="@layout/view_reviewed_by" />
+    <org.iggymedia.periodtracker.core.markdown.view.MarkdownTextView android:textAppearance="@style/FootnoteRegular" android:textColor="?foregroundPrimary" android:id="@id/expertDisclaimer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_3x" android:layout_marginHorizontal="@dimen/spacing_5x" />
+    <View android:id="@id/footerDivider" android:background="?borderMinor" android:layout_width="match_parent" android:layout_height="@dimen/border_050" android:layout_marginTop="@dimen/spacing_4x" />
+    <FrameLayout android:id="@id/footerContentContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/spacing_4x" />
+    <Space android:id="@id/bottomPaddingSpace" android:layout_width="match_parent" android:layout_height="@dimen/spacing_5x" />
+</LinearLayout>

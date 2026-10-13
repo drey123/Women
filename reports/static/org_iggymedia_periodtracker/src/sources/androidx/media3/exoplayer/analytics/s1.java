@@ -1,0 +1,11 @@
+package androidx.media3.exoplayer.analytics;
+
+import android.media.metrics.TrackChangeEvent;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes4.dex */
+public abstract /* synthetic */ class s1 {
+    public static /* synthetic */ TrackChangeEvent.Builder a(int i14) {
+        return new TrackChangeEvent.Builder(i14);
+    }
+}

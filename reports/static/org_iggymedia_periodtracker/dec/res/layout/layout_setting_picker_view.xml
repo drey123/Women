@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tvSettingValue" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawablePadding="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/DefaultSettingsSpinnerStyle" />
+    <org.iggymedia.periodtracker.ui.views.DividerView android:layout_width="match_parent" app:layout_constraintTop_toBottomOf="@id/tvSettingValue" style="@style/DividerStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

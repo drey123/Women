@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.iggymedia.periodtracker.feature.more.ui.MembershipCardView android:id="@id/membershipCardView" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_4x" app:cardCornerRadius="@dimen/size_3x" app:cardElevation="@dimen/size_2x" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/topBanner"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

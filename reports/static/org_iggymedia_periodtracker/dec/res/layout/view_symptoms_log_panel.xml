@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/HeadlineSemibold" android:id="@id/symptomsLogPanelTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/day_screen_symptoms_title" android:layout_marginHorizontal="@dimen/spacing_4x" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/symptomsLogPanelLayout" android:background="@drawable/bg_symptoms_log_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/spacing_4x">
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/spacing_4x" android:layout_marginVertical="@dimen/spacing_4x">
+            <TextView android:textAppearance="@style/FootnoteRegular" android:textColor="?foregroundSecondary" android:layout_gravity="center_vertical" android:id="@id/symptomsLogPanelTutorialTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/day_screen_tutorial_text" android:contentDescription="@string/calendar_day_info_no_symptoms_content_description" />
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/symptomsLogPanelRecyclerView" android:visibility="gone" android:fadingEdgeLength="@dimen/spacing_4x" android:layout_width="wrap_content" android:layout_height="@dimen/size_14x" android:requiresFadingEdge="horizontal" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </FrameLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|center" android:id="@id/symptomsLogPanelAddFloatingActionButton" android:layout_width="@dimen/size_14x" android:layout_height="@dimen/size_14x" android:contentDescription="@string/calendar_day_info_log_symptoms_content_description" android:layout_marginEnd="@dimen/spacing_4x" android:layout_marginVertical="@dimen/spacing_4x" app:backgroundTint="?buttonAccent" app:rippleColor="?buttonPressed" app:srcCompat="@drawable/medium_add_clear" app:tint="?foregroundPrimaryWhite" />
+    </LinearLayout>
+</LinearLayout>

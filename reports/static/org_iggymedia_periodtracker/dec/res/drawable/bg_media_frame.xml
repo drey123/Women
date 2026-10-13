@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/spacing_minus_4x" android:top="@dimen/spacing_minus_4x" android:right="@dimen/spacing_minus_4x" android:bottom="@dimen/spacing_minus_4x">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/size_4x" android:color="@color/v2_white" />
+            <solid android:color="@android:color/transparent" />
+            <corners android:radius="@dimen/radius_400" />
+        </shape>
+    </item>
+</layer-list>

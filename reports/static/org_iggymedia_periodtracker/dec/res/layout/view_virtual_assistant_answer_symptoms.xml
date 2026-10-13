@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/answerContent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/symptomsPickerContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_3x" android:layout_marginBottom="@dimen/spacing_2x" />
+    <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="wrap_content" app:dividerColor="?borderMinor" app:dividerThickness="@dimen/border_050" />
+    <include android:id="@id/nextContainerLayout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_va_bottom_button" />
+</LinearLayout>

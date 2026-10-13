@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:id="@id/rateMeFlipper" android:layout_width="match_parent" android:layout_height="wrap_content" android:measureAllChildren="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_rate_me_dialog" />
+    <include layout="@layout/fragment_rate_me_dialog_bad" />
+    <include layout="@layout/fragment_rate_me_dialog_good" />
+</ViewFlipper>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/shape_bg_personal_insights_loading_element_placeholder" android:layout_width="@dimen/size_34x" android:layout_height="@dimen/size_6x" android:layout_marginTop="@dimen/spacing_4x" />
+    <View android:background="@drawable/shape_bg_personal_insights_loading_element_placeholder" android:layout_width="77.0dp" android:layout_height="@dimen/size_4x" android:layout_marginTop="@dimen/spacing_2x" />
+    <View android:background="@drawable/shape_bg_personal_insights_loading_element_placeholder" android:layout_width="match_parent" android:layout_height="@dimen/size_4x" android:layout_marginTop="@dimen/spacing_2x" />
+</LinearLayout>

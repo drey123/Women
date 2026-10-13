@@ -1,0 +1,78 @@
+package io.realm.exceptions;
+
+import io.realm.internal.Keep;
+import io.realm.internal.c;
+import java.util.Locale;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes5.dex */
+@Keep
+public class RealmFileException extends RuntimeException {
+    private final Kind kind;
+
+    /* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+    @Keep
+    public enum Kind {
+        ACCESS_ERROR,
+        BAD_HISTORY,
+        PERMISSION_DENIED,
+        EXISTS,
+        NOT_FOUND,
+        INCOMPATIBLE_LOCK_FILE,
+        FORMAT_UPGRADE_REQUIRED,
+        INCOMPATIBLE_SYNC_FILE;
+
+        public static Kind getKind(byte b14) {
+            switch (b14) {
+                case 0:
+                    return ACCESS_ERROR;
+                case 1:
+                    return BAD_HISTORY;
+                case 2:
+                    return PERMISSION_DENIED;
+                case 3:
+                    return EXISTS;
+                case 4:
+                    return NOT_FOUND;
+                case 5:
+                    return INCOMPATIBLE_LOCK_FILE;
+                case 6:
+                    return FORMAT_UPGRADE_REQUIRED;
+                case 7:
+                    return INCOMPATIBLE_SYNC_FILE;
+                default:
+                    c.a("Unknown value for RealmFileException kind.");
+                    return null;
+            }
+        }
+    }
+
+    public RealmFileException(byte b14, String str) {
+        super(str);
+        this.kind = Kind.getKind(b14);
+    }
+
+    public Kind getKind() {
+        return this.kind;
+    }
+
+    @Override // java.lang.Throwable
+    public String toString() {
+        return String.format(Locale.US, "%s Kind: %s.", super.toString(), this.kind);
+    }
+
+    public RealmFileException(Kind kind, String str) {
+        super(str);
+        this.kind = kind;
+    }
+
+    public RealmFileException(Kind kind, Throwable th4) {
+        super(th4);
+        this.kind = kind;
+    }
+
+    public RealmFileException(Kind kind, String str, Throwable th4) {
+        super(str, th4);
+        this.kind = kind;
+    }
+}

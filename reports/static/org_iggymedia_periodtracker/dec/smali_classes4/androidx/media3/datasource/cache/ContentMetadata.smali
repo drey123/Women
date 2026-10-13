@@ -1,0 +1,79 @@
+.class public interface abstract Landroidx/media3/datasource/cache/ContentMetadata;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+
+# annotations
+.annotation build Landroidx/media3/common/util/UnstableApi;
+.end annotation
+
+
+# direct methods
+.method public static c(Landroidx/media3/datasource/cache/ContentMetadata;)Landroid/net/Uri;
+    .locals 2
+
+    .line 1
+    const-string v0, "exo_redir"
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-interface {p0, v0, v1}, Landroidx/media3/datasource/cache/ContentMetadata;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p0
+
+    .line 8
+    if-nez p0, :cond_0
+
+    .line 9
+    .line 10
+    return-object v1
+
+    .line 11
+    :cond_0
+    invoke-static {p0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    return-object p0
+.end method
+
+.method public static d(Landroidx/media3/datasource/cache/ContentMetadata;)J
+    .locals 3
+
+    .line 1
+    const-string v0, "exo_len"
+
+    .line 2
+    .line 3
+    const-wide/16 v1, -0x1
+
+    .line 4
+    .line 5
+    invoke-interface {p0, v0, v1, v2}, Landroidx/media3/datasource/cache/ContentMetadata;->b(Ljava/lang/String;J)J
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    return-wide v0
+.end method
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.end method
+
+.method public abstract b(Ljava/lang/String;J)J
+.end method

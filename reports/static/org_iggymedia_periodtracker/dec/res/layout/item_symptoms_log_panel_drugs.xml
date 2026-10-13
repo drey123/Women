@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/size_12x" android:layout_height="@dimen/size_12x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/drugsSymptomImageView" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="@dimen/size_0_5x" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/drugsSymptomTimeTextView" />
+    <TextView android:textAppearance="@style/Caption2Regular" android:id="@id/drugsSymptomTimeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

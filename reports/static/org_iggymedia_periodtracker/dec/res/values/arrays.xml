@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="android_wear_capabilities">
+        <item>flo_phone_app</item>
+        <item>data_layer_login_v1</item>
+    </string-array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <array name="event_breasts_breast_atypical_discharge">
+        <item>@null</item>
+    </array>
+    <array name="event_breasts_breast_crack">
+        <item>@null</item>
+    </array>
+    <array name="event_breasts_breast_engorgement">
+        <item>@null</item>
+    </array>
+    <array name="event_breasts_breast_lamp">
+        <item>@null</item>
+    </array>
+    <array name="event_breasts_breast_pain">
+        <item>@null</item>
+    </array>
+    <array name="event_breasts_breast_skin_redness">
+        <item>@null</item>
+    </array>
+    <array name="event_breasts_fine">
+        <item>@null</item>
+    </array>
+    <array name="event_flow_heavy">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_flow_light">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_flow_medium">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_fluid_bloody">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_fluid_creamy">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_fluid_dry">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_fluid_eggwhite">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_fluid_increased_discharge">
+        <item>@drawable/medium_event_discharge_increased_color</item>
+    </array>
+    <array name="event_fluid_sticky">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_fluid_unusual">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_fluid_watery">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_ic_distance">
+        <item>@null</item>
+    </array>
+    <array name="event_ic_food">
+        <item>@null</item>
+    </array>
+    <array name="event_ic_pedometer">
+        <item>@null</item>
+    </array>
+    <array name="event_ic_sleep">
+        <item>@null</item>
+    </array>
+    <array name="event_ic_water">
+        <item>@null</item>
+    </array>
+    <array name="event_ic_weight">
+        <item>@null</item>
+    </array>
+    <array name="event_lochia_alba">
+        <item>@null</item>
+    </array>
+    <array name="event_lochia_none">
+        <item>@null</item>
+    </array>
+    <array name="event_lochia_rubra">
+        <item>@null</item>
+    </array>
+    <array name="event_lochia_serosa">
+        <item>@null</item>
+    </array>
+    <array name="event_mood_angry">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_mood_apathetic">
+        <item>@null</item>
+    </array>
+    <array name="event_mood_confused">
+        <item>@null</item>
+    </array>
+    <array name="event_mood_depressed">
+        <item>@null</item>
+    </array>
+    <array name="event_mood_energetic">
+        <item>@null</item>
+    </array>
+    <array name="event_mood_feeling_guilty">
+        <item>@null</item>
+    </array>
+    <array name="event_mood_frisky">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_mood_happy">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_mood_neutral">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_mood_obsessive_thoughts">
+        <item>@null</item>
+    </array>
+    <array name="event_mood_panic">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_mood_sad">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_mood_swings">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_mood_very_self_critical">
+        <item>@null</item>
+    </array>
+    <array name="event_other_alcohol">
+        <item>@null</item>
+    </array>
+    <array name="event_other_sick">
+        <item>@null</item>
+    </array>
+    <array name="event_other_stress">
+        <item>@null</item>
+    </array>
+    <array name="event_other_travel">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_abdominal">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_acne">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_backache">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_bloating">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_breast">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_constipation">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_craving">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_diarrhea">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_fatigue">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_headache">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_insomnia">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_no">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_nousea">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_perineum">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_stomach">
+        <item>@null</item>
+    </array>
+    <array name="event_pain_swelling">
+        <item>@null</item>
+    </array>
+    <array name="event_pill_1">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_pill_2">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_pill_3">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_pill_4">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_pill_oc_missed">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_pill_oc_taken">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_sex_craving">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_sex_low_drive">
+        <item>@drawable/medium_event_sex_low_sex_drive_color</item>
+    </array>
+    <array name="event_sex_masturbation">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_sex_no">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_sex_protected">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_sex_unprotected">
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="event_sport_aerobics">
+        <item>@null</item>
+    </array>
+    <array name="event_sport_cycling">
+        <item>@null</item>
+    </array>
+    <array name="event_sport_gym">
+        <item>@null</item>
+    </array>
+    <array name="event_sport_no">
+        <item>@null</item>
+    </array>
+    <array name="event_sport_running">
+        <item>@null</item>
+    </array>
+    <array name="event_sport_swimming">
+        <item>@null</item>
+    </array>
+    <array name="event_sport_team">
+        <item>@null</item>
+    </array>
+    <array name="event_sport_yoga">
+        <item>@null</item>
+    </array>
+    <array name="event_swelling_face_swelling">
+        <item>@drawable/medium_event_swelling_face_color</item>
+    </array>
+    <array name="event_swelling_limbs_swelling">
+        <item>@drawable/medium_event_swelling_limbs_color</item>
+    </array>
+    <array name="event_swelling_nasal_congestion">
+        <item>@drawable/medium_event_swelling_nasal_color</item>
+    </array>
+    <array name="event_symptom_bleeding_gums">
+        <item>@drawable/medium_event_symptoms_bleeding_gums_color</item>
+    </array>
+    <array name="event_symptom_decreased_appetite">
+        <item>@drawable/medium_event_symptoms_decreased_color</item>
+    </array>
+    <array name="event_symptom_food_aversions">
+        <item>@drawable/medium_event_symptoms_aversion_color</item>
+    </array>
+    <array name="event_symptom_frequent_urination">
+        <item>@drawable/medium_event_symptoms_urination_color</item>
+    </array>
+    <array name="event_symptom_heartburn">
+        <item>@drawable/medium_event_symptoms_heartburn_color</item>
+    </array>
+    <array name="event_symptom_hyperpigmentation">
+        <item>@drawable/medium_event_symptoms_hyperpigmentation_color</item>
+    </array>
+    <array name="event_symptom_joint_pain">
+        <item>@drawable/medium_event_symptoms_joint_pain_color</item>
+    </array>
+    <array name="event_symptom_leg_cramps">
+        <item>@drawable/medium_event_symptoms_leg_cramps_color</item>
+    </array>
+    <array name="event_symptom_milky_nipple_discharge">
+        <item>@drawable/medium_event_symptoms_milky_color</item>
+    </array>
+    <array name="event_symptom_normal_digestion">
+        <item>@drawable/medium_event_symptoms_normal_digestion_color</item>
+    </array>
+    <array name="event_symptom_normal_stool">
+        <item>@drawable/medium_event_symptoms_normal_stool_color</item>
+    </array>
+    <array name="event_symptom_sleepiness">
+        <item>@drawable/medium_event_symptoms_sleepiness_color</item>
+    </array>
+    <array name="event_symptom_stretch_marks">
+        <item>@drawable/medium_event_symptoms_stretch_marks_color</item>
+    </array>
+    <array name="event_symptom_vomiting">
+        <item>@drawable/medium_event_symptoms_vomiting_color</item>
+    </array>
+    <array name="event_test_ovulation_neg">
+        <item>@null</item>
+    </array>
+    <array name="event_test_ovulation_none">
+        <item>@null</item>
+    </array>
+    <array name="event_test_ovulation_other_methods">
+        <item>@null</item>
+    </array>
+    <array name="event_test_ovulation_pos">
+        <item>@null</item>
+    </array>
+    <array name="event_test_pregnancy_faint_pos">
+        <item>@null</item>
+    </array>
+    <array name="event_test_pregnancy_neg">
+        <item>@null</item>
+    </array>
+    <array name="event_test_pregnancy_none">
+        <item>@null</item>
+    </array>
+    <array name="event_test_pregnancy_pos">
+        <item>@null</item>
+    </array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <array name="keyguard_biometric_and_credential_exclude_vendors" />
+    <array name="symptom_popup_none">
+        <item>@drawable/symptom_popup_none</item>
+    </array>
+    <array name="symptom_widget_none">
+        <item>@drawable/symptom_popup_none</item>
+    </array>
+</resources>

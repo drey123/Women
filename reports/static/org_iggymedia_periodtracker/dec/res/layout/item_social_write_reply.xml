@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/Theme.Flo.Light.NoActionBar" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundSecondary" android:gravity="center_vertical" android:id="@id/writeReplyTextView" android:background="@drawable/shape_bg_write_reply" android:layout_width="match_parent" android:layout_height="@dimen/size_9x" android:layout_marginTop="@dimen/spacing_1x" android:layout_marginBottom="@dimen/spacing_1x" android:text="@string/social_comments_write_reply_placeholder" android:paddingStart="@dimen/spacing_3x" android:paddingEnd="@dimen/spacing_3x" android:layout_marginStart="@dimen/spacing_24x" android:layout_marginEnd="@dimen/spacing_7x" />
+</FrameLayout>

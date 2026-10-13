@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.iggymedia.periodtracker.core.markdown.view.MarkdownTypefaceCheckBox android:id="@id/selector" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="@dimen/size_13_5x" android:layout_marginHorizontal="@dimen/spacing_4x" android:paddingVertical="@dimen/spacing_3x" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.VirtualAssistant.Selector" />
+    <com.google.android.material.divider.MaterialDivider android:id="@id/divider" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_12x" app:dividerColor="?borderMinor" app:dividerThickness="@dimen/border_050" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/selector" />
+</androidx.constraintlayout.widget.ConstraintLayout>

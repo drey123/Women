@@ -1,0 +1,13 @@
+package com.bumptech.glide.load.engine.bitmap_recycle;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes4.dex */
+interface ArrayAdapterInterface<T> {
+    int a(Object obj);
+
+    int b();
+
+    String getTag();
+
+    Object newArray(int i14);
+}

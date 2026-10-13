@@ -1,0 +1,93 @@
+.class public interface abstract Lorg/iggymedia/periodtracker/core/premium/di/CorePremiumDependencies;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/iggymedia/periodtracker/core/premium/di/CorePremiumDependencies$a;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008f\u0018\u0000 \u00142\u00020\u0001:\u0001\u0015J\u000f\u0010\u0003\u001a\u00020\u0002H&\u00a2\u0006\u0004\u0008\u0003\u0010\u0004J\u000f\u0010\u0006\u001a\u00020\u0005H\'\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u000f\u0010\t\u001a\u00020\u0008H&\u00a2\u0006\u0004\u0008\t\u0010\nJ\u000f\u0010\u000c\u001a\u00020\u000bH&\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u000f\u0010\u000f\u001a\u00020\u000eH&\u00a2\u0006\u0004\u0008\u000f\u0010\u0010J\u000f\u0010\u0012\u001a\u00020\u0011H&\u00a2\u0006\u0004\u0008\u0012\u0010\u0013\u00a8\u0006\u0016\u00c0\u0006\u0003"
+    }
+    d2 = {
+        "Lorg/iggymedia/periodtracker/core/premium/di/CorePremiumDependencies;",
+        "",
+        "Lorg/iggymedia/periodtracker/core/billing/domain/interactor/GetPurchasesUseCase;",
+        "l",
+        "()Lorg/iggymedia/periodtracker/core/billing/domain/interactor/GetPurchasesUseCase;",
+        "Lorg/iggymedia/periodtracker/core/sharedprefs/data/SharedPreferenceApi;",
+        "z",
+        "()Lorg/iggymedia/periodtracker/core/sharedprefs/data/SharedPreferenceApi;",
+        "Lretrofit2/x;",
+        "s",
+        "()Lretrofit2/x;",
+        "Lcom/google/gson/Gson;",
+        "D",
+        "()Lcom/google/gson/Gson;",
+        "Lorg/iggymedia/periodtracker/core/featureconfig/domain/interactor/GetFeatureConfigUseCase;",
+        "d",
+        "()Lorg/iggymedia/periodtracker/core/featureconfig/domain/interactor/GetFeatureConfigUseCase;",
+        "Lorg/iggymedia/periodtracker/platform/googleplay/GooglePlayUriBuilder;",
+        "X",
+        "()Lorg/iggymedia/periodtracker/platform/googleplay/GooglePlayUriBuilder;",
+        "Companion",
+        "a",
+        "core-premium"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x4,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lorg/iggymedia/periodtracker/core/premium/di/CorePremiumDependencies$a;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    sget-object v0, Lorg/iggymedia/periodtracker/core/premium/di/CorePremiumDependencies$a;->a:Lorg/iggymedia/periodtracker/core/premium/di/CorePremiumDependencies$a;
+
+    .line 2
+    .line 3
+    sput-object v0, Lorg/iggymedia/periodtracker/core/premium/di/CorePremiumDependencies;->Companion:Lorg/iggymedia/periodtracker/core/premium/di/CorePremiumDependencies$a;
+
+    .line 4
+    .line 5
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract D()Lcom/google/gson/Gson;
+.end method
+
+.method public abstract X()Lorg/iggymedia/periodtracker/platform/googleplay/GooglePlayUriBuilder;
+.end method
+
+.method public abstract d()Lorg/iggymedia/periodtracker/core/featureconfig/domain/interactor/GetFeatureConfigUseCase;
+.end method
+
+.method public abstract l()Lorg/iggymedia/periodtracker/core/billing/domain/interactor/GetPurchasesUseCase;
+.end method
+
+.method public abstract s()Lretrofit2/x;
+.end method
+
+.method public abstract z()Lorg/iggymedia/periodtracker/core/sharedprefs/data/SharedPreferenceApi;
+.end method

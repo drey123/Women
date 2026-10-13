@@ -1,0 +1,192 @@
+.class public Lcom/bumptech/glide/load/engine/DecodeJob$c;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bumptech/glide/load/engine/DecodeJob;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "c"
+.end annotation
+
+
+# instance fields
+.field public a:Lcom/bumptech/glide/load/Key;
+
+.field public b:Lcom/bumptech/glide/load/ResourceEncoder;
+
+.field public c:Lcom/bumptech/glide/load/engine/n;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->a:Lcom/bumptech/glide/load/Key;
+
+    .line 3
+    .line 4
+    iput-object v0, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->b:Lcom/bumptech/glide/load/ResourceEncoder;
+
+    .line 5
+    .line 6
+    iput-object v0, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->c:Lcom/bumptech/glide/load/engine/n;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public b(Lcom/bumptech/glide/load/engine/DecodeJob$DiskCacheProvider;Lcom/bumptech/glide/load/e;)V
+    .locals 4
+
+    .line 1
+    const-string v0, "DecodeJob.encode"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lo9/a;->a(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    invoke-interface {p1}, Lcom/bumptech/glide/load/engine/DecodeJob$DiskCacheProvider;->a()Lcom/bumptech/glide/load/engine/cache/DiskCache;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    iget-object v0, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->a:Lcom/bumptech/glide/load/Key;
+
+    .line 11
+    .line 12
+    new-instance v1, Lcom/bumptech/glide/load/engine/d;
+
+    .line 13
+    .line 14
+    iget-object v2, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->b:Lcom/bumptech/glide/load/ResourceEncoder;
+
+    .line 15
+    .line 16
+    iget-object v3, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->c:Lcom/bumptech/glide/load/engine/n;
+
+    .line 17
+    .line 18
+    invoke-direct {v1, v2, v3, p2}, Lcom/bumptech/glide/load/engine/d;-><init>(Lcom/bumptech/glide/load/Encoder;Ljava/lang/Object;Lcom/bumptech/glide/load/e;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-interface {p1, v0, v1}, Lcom/bumptech/glide/load/engine/cache/DiskCache;->a(Lcom/bumptech/glide/load/Key;Lcom/bumptech/glide/load/engine/cache/DiskCache$Writer;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 22
+    .line 23
+    .line 24
+    iget-object p0, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->c:Lcom/bumptech/glide/load/engine/n;
+
+    .line 25
+    .line 26
+    invoke-virtual {p0}, Lcom/bumptech/glide/load/engine/n;->h()V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-static {}, Lo9/a;->e()V
+
+    .line 30
+    .line 31
+    .line 32
+    return-void
+
+    .line 33
+    :catchall_0
+    move-exception p1
+
+    .line 34
+    iget-object p0, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->c:Lcom/bumptech/glide/load/engine/n;
+
+    .line 35
+    .line 36
+    invoke-virtual {p0}, Lcom/bumptech/glide/load/engine/n;->h()V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-static {}, Lo9/a;->e()V
+
+    .line 40
+    .line 41
+    .line 42
+    throw p1
+.end method
+
+.method public c()Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->c:Lcom/bumptech/glide/load/engine/n;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x1
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 8
+    return p0
+.end method
+
+.method public d(Lcom/bumptech/glide/load/Key;Lcom/bumptech/glide/load/ResourceEncoder;Lcom/bumptech/glide/load/engine/n;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->a:Lcom/bumptech/glide/load/Key;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->b:Lcom/bumptech/glide/load/ResourceEncoder;
+
+    .line 4
+    .line 5
+    iput-object p3, p0, Lcom/bumptech/glide/load/engine/DecodeJob$c;->c:Lcom/bumptech/glide/load/engine/n;
+
+    .line 6
+    .line 7
+    return-void
+.end method

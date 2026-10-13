@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:background="?backgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:titleTextAppearance="@style/HeadlineSemibold" />
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cyclesView" android:layout_width="wrap_content" android:layout_height="@dimen/size_12x" android:layout_marginTop="@dimen/spacing_2x" android:layout_centerHorizontal="true">
+            <TextView android:textAppearance="@style/Caption1Regular" android:textColor="?foregroundSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/graph_screen_current_cycle" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <org.iggymedia.periodtracker.ui.views.TintImageView android:id="@id/leftArrow" android:layout_width="@dimen/size_8x" android:layout_height="match_parent" android:foreground="?selectableItemBackground" android:src="@null" app:tint="@color/turquoise" />
+                <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="@dimen/size_62_5x" android:layout_height="wrap_content" />
+                <org.iggymedia.periodtracker.ui.views.TintImageView android:id="@id/rightArrow" android:layout_width="@dimen/size_8x" android:layout_height="match_parent" android:foreground="?selectableItemBackground" android:src="@null" app:tint="@color/turquoise" />
+            </LinearLayout>
+        </LinearLayout>
+        <org.iggymedia.periodtracker.ui.charts.views.BttChartView android:id="@id/chartView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/spacing_4x" android:layout_marginBottom="@dimen/spacing_4x" android:layout_below="@id/cyclesView" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

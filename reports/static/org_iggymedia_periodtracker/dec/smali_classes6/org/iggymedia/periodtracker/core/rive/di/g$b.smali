@@ -1,0 +1,145 @@
+.class public final Lorg/iggymedia/periodtracker/core/rive/di/g$b;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+# interfaces
+.implements Lorg/iggymedia/periodtracker/core/rive/di/RiveUiComponentV2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/iggymedia/periodtracker/core/rive/di/g;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+
+# instance fields
+.field public final a:Lkotlinx/coroutines/CoroutineScope;
+
+.field public final b:Lorg/iggymedia/periodtracker/core/rive/di/RivePresentationComponentV2;
+
+.field public final c:Lorg/iggymedia/periodtracker/core/rive/di/g$b;
+
+
+# direct methods
+.method public constructor <init>(Lorg/iggymedia/periodtracker/core/rive/di/RivePresentationComponentV2;Lkotlinx/coroutines/CoroutineScope;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p0, p0, Lorg/iggymedia/periodtracker/core/rive/di/g$b;->c:Lorg/iggymedia/periodtracker/core/rive/di/g$b;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lorg/iggymedia/periodtracker/core/rive/di/g$b;->a:Lkotlinx/coroutines/CoroutineScope;
+
+    .line 7
+    .line 8
+    iput-object p1, p0, Lorg/iggymedia/periodtracker/core/rive/di/g$b;->b:Lorg/iggymedia/periodtracker/core/rive/di/RivePresentationComponentV2;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Lorg/iggymedia/periodtracker/core/rive/ui/b;
+    .locals 4
+
+    .line 1
+    new-instance v0, Lorg/iggymedia/periodtracker/core/rive/ui/b;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lorg/iggymedia/periodtracker/core/rive/di/g$b;->a:Lkotlinx/coroutines/CoroutineScope;
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Lorg/iggymedia/periodtracker/core/rive/di/g$b;->b:Lorg/iggymedia/periodtracker/core/rive/di/RivePresentationComponentV2;
+
+    .line 6
+    .line 7
+    invoke-interface {v2}, Lorg/iggymedia/periodtracker/core/rive/di/RivePresentationComponentV2;->a()Lbr0/d;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v2
+
+    .line 11
+    invoke-static {v2}, Ldagger/internal/j;->d(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v2
+
+    .line 15
+    check-cast v2, Lbr0/d;
+
+    .line 16
+    .line 17
+    iget-object v3, p0, Lorg/iggymedia/periodtracker/core/rive/di/g$b;->b:Lorg/iggymedia/periodtracker/core/rive/di/RivePresentationComponentV2;
+
+    .line 18
+    .line 19
+    invoke-interface {v3}, Lorg/iggymedia/periodtracker/core/rive/di/RivePresentationComponentV2;->e()Ltq0/r;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v3
+
+    .line 23
+    invoke-static {v3}, Ldagger/internal/j;->d(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v3
+
+    .line 27
+    check-cast v3, Ltq0/r;
+
+    .line 28
+    .line 29
+    iget-object p0, p0, Lorg/iggymedia/periodtracker/core/rive/di/g$b;->b:Lorg/iggymedia/periodtracker/core/rive/di/RivePresentationComponentV2;
+
+    .line 30
+    .line 31
+    invoke-interface {p0}, Lorg/iggymedia/periodtracker/core/rive/di/RivePresentationComponentV2;->g()Lre0/f;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p0
+
+    .line 35
+    invoke-static {p0}, Ldagger/internal/j;->d(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p0
+
+    .line 39
+    check-cast p0, Lre0/f;
+
+    .line 40
+    .line 41
+    invoke-direct {v0, v1, v2, v3, p0}, Lorg/iggymedia/periodtracker/core/rive/ui/b;-><init>(Lkotlinx/coroutines/CoroutineScope;Lbr0/d;Ltq0/r;Lre0/f;)V
+
+    .line 42
+    .line 43
+    .line 44
+    return-object v0
+.end method

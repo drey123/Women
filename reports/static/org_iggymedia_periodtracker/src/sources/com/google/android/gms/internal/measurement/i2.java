@@ -1,0 +1,25 @@
+package com.google.android.gms.internal.measurement;
+
+import java.util.Objects;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class i2 extends v2 {
+    public final /* synthetic */ f3 E;
+
+    /* JADX INFO: renamed from: w, reason: collision with root package name */
+    public final /* synthetic */ Runnable f32138w;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public i2(f3 f3Var, Runnable runnable) {
+        super(f3Var, true);
+        this.f32138w = runnable;
+        Objects.requireNonNull(f3Var);
+        this.E = f3Var;
+    }
+
+    @Override // com.google.android.gms.internal.measurement.v2
+    public final void a() {
+        ((zzcr) wa.j.k(this.E.k())).retrieveAndUploadBatches(new h2(this, this.f32138w));
+    }
+}

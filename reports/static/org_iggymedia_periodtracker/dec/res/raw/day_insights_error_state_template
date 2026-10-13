@@ -1,0 +1,60 @@
+{
+  "type": "container-flex",
+  "clip_children": false,
+  "layout": {
+    "margin_top": 12,
+    "margin_bottom": 12,
+    "margin_start": 12,
+    "margin_end": 12
+  },
+  "children": [
+    {{LOG_YOUR_SYMPTOMS_BUTTON}}
+    {
+      "type": "container-flex",
+      "direction": "column",
+      "align_items": "center",
+      "justify_content": "center",
+      "clip_children": false,
+      "layout": {
+        "flex_item": {
+          "flex_grow": 1
+        },
+        "margin_end": 8,
+        "margin_start": 8,
+        "margin_top": 4,
+        "margin_bottom": 4
+      },
+      "style": {
+        "$style:background_color": "color.background.base",
+        "$style:corner_radius": "radius200"
+      },
+      "children": [
+        {
+          "type": "image_local",
+          "resource": "medium_retry_stroke",
+          "style": {
+            "$style:foreground_color": "color.foreground.secondary"
+          },
+          "action_click": {
+            "type": "stories.reload_carousel"
+          }
+        },
+        {
+          "type": "text",
+          "text": "${ERROR_STATE_TEXT}",
+          "style": {
+            "$style:typography": "typography.footnote.regular",
+            "$style:foreground_color": "color.foreground.secondary",
+            "text_align": "center"
+          },
+          "layout": {
+            "margin_start": 12,
+            "margin_end": 12,
+            "margin_top": 2,
+            "margin_bottom": 8
+          }
+        }
+      ]
+    }
+  ]
+}

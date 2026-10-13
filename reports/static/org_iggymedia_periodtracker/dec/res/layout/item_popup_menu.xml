@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?android:selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundPrimary" android:gravity="start|center" android:id="@id/tvItemText" android:layout_width="match_parent" android:layout_height="@dimen/size_12x" android:maxLines="1" android:lines="1" android:paddingStart="@dimen/spacing_4x" android:paddingEnd="@dimen/spacing_4x" />
+</LinearLayout>

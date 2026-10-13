@@ -1,0 +1,506 @@
+{
+  "group_id": "android_built_in_client_constructor_onboarding_referral_promo",
+  "screen_id": 1,
+  "analytics_data": {
+    "price_set_id": "android_built_in_client_default_price_set"
+  },
+  "screen_config": {
+    "ui": {
+      "blocks": [
+        {
+          "children": [
+            {
+              "component": "Css",
+              "id": "FxbwlcjDaDFhlugP",
+              "props": {
+                "blockName": "Css",
+                "css": ".customHeader {\n    height: 44px !important;\n}\n\n.customHeader > div {\n    padding-top: 0;\n    padding-bottom: 0;\n}\n\n.content {\n    padding-left: 16px;\n    padding-right: 16px;\n    margin-top: -20px;\n}\n\n@media screen and (max-width: 320px), screen and (max-height: 640px) {\n    .step2image {\n        max-width: 70%;\n    }\n}\n"
+              }
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "component": "ButtonContinue",
+                          "id": "gmqMMIkjSnGdXSCg",
+                          "props": {
+                            "action": "none",
+                            "ariaLabel": {
+                              "i18nKey": "labels.close.text"
+                            },
+                            "blockName": "Trial | Button | Close",
+                            "conditions": {
+                              "isTrialProductAvailable": true
+                            },
+                            "defaultBackground": "transparent",
+                            "defaultText": "✕",
+                            "interactive": true,
+                            "style": {
+                              "borderRadius": 0,
+                              "color": "#000000",
+                              "flexBasis": 0,
+                              "flexGrow": 0,
+                              "flexShrink": 1,
+                              "fontSize": "24px",
+                              "margin": 0,
+                              "padding": 0
+                            },
+                            "subtitleText": "",
+                            "type": "icon"
+                          }
+                        }
+                      ],
+                      "component": "VirtualGroup",
+                      "id": "OlPAWWxbFICGvRlc",
+                      "props": {
+                        "blockName": "Close Button With Before you go",
+                        "snippetName": "CloseButtonWithBeforeYouGo"
+                      },
+                      "refs": {
+                        "buttonCloseNextStep": "",
+                        "closeText": {
+                          "i18nKey": "labels.iDontWantIt.text"
+                        },
+                        "ctaButtonText": {
+                          "i18nKey": "labels.startYourFreeTrial.text"
+                        },
+                        "imageUrl": "https://content.owhealth.com/release_v2/media/en-US/4BNORGDvLIO9rpN0vbZN9C.png",
+                        "pricingText": {
+                          "i18nKey": "labels.trialDurationDaysForFreeThenPriceYear.text",
+                          "values": {
+                            "price": "{{ GET price WHERE *tier_1*_duration_(y_1|m_12)_trial_*>>maxPrice }}",
+                            "trialDurationDays": "{{ GET trialDuration>>toDays WHERE *tier_1*_duration_(y_1|m_12)_trial_*>>maxPrice }}"
+                          }
+                        },
+                        "rejectOfferNextStep": "",
+                        "subtitleText": {
+                          "i18nKey": "labels.heresYourChanceToEnjoyTrialDurationDaysOfFloForFree.text",
+                          "values": {
+                            "trialDurationDays": "{{ GET trialDuration>>toDays WHERE *tier_1_duration_(y_1|m_12)_trial_*>>maxPrice }}"
+                          }
+                        },
+                        "titleText": {
+                          "i18nKey": "labels.beforeYourGo.text"
+                        }
+                      }
+                    }
+                  ],
+                  "component": "Header",
+                  "id": "gsiAUTHpNTWTZAhP",
+                  "props": {
+                    "blockName": "Header",
+                    "className": "customHeader"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "component": "Lottie",
+                          "id": "zlarMOPbsBJNzLWD",
+                          "props": {
+                            "blockName": "Lottie",
+                            "lottieFile": "static_ticket_flat",
+                            "loop": true
+                          }
+                        },
+                        {
+                          "component": "Text",
+                          "id": "UkKiIerxCZTNBGsY",
+                          "props": {
+                            "blockName": "Subtitle | Your Premium is Ready | Text",
+                            "text": {
+                              "i18nKey": "labels.Your_Premium_free_trial_is_ready.text"
+                            },
+                            "variant": "headlineSemibold",
+                            "tag": "h3",
+                            "color": "#00000099"
+                          }
+                        },
+                        {
+                          "component": "Space",
+                          "id": "fHwDFBveJfDNHIdT",
+                          "props": {
+                            "blockName": "Space ",
+                            "size": 4
+                          }
+                        },
+                        {
+                          "component": "Text",
+                          "id": "yCFoHSOmJVUhgISi",
+                          "props": {
+                            "blockName": "Title | Start Your 30 Days | Text",
+                            "text": {
+                              "i18nKey": "labels.startYourTrialDaysNow.text",
+                              "values": {
+                                "trialDurationDays": "{{GET trialDuration>>toDays>>floor WHERE *_duration_(y_1|m_12)_trial_*}}"
+                              }
+                            },
+                            "variant": "title2Bold",
+                            "tag": "h2",
+                            "highlightTheme": "pink"
+                          }
+                        },
+                        {
+                          "component": "Space",
+                          "id": "KirUGFIYXmHSXQrn",
+                          "props": {
+                            "blockName": "Space",
+                            "size": 4
+                          }
+                        },
+                        {
+                          "component": "Text",
+                          "id": "vtsjqbztSvgOuCnT",
+                          "props": {
+                            "blockName": "Body | Text",
+                            "text": {
+                              "i18nKey": "labels.That’s_double_the_length_of_our_usual_trial.text"
+                            },
+                            "variant": "bodyRegular",
+                            "color": "#00000099"
+                          }
+                        }
+                      ],
+                      "component": "Group",
+                      "id": "ttlrSLnQpYqgrkdb",
+                      "props": {
+                        "blockName": "Group | Content",
+                        "className": "content"
+                      }
+                    }
+                  ],
+                  "component": "Group",
+                  "id": "SKtsyyBKoNGDFVxn",
+                  "props": {
+                    "blockName": "Image & Title | Group"
+                  }
+                },
+                {
+                  "component": "Space",
+                  "id": "EiQvpqAXCOaOjxQw",
+                  "props": {
+                    "blockName": "Space",
+                    "size": 20,
+                    "sizeCompact": 1
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "component": "Text",
+                      "id": "ZwSOQNnbZAITlNgv",
+                      "props": {
+                        "blockName": "Payment Terms ",
+                        "text": {
+                          "i18nKey": "labels.After_that_youll_pay.text",
+                          "values": {
+                            "price": "{{ GET price WHERE *_duration_(y_1|m_12)_trial_* }}"
+                          }
+                        },
+                        "variant": "footnoteRegular",
+                        "style": {
+                          "padding": "16px"
+                        }
+                      }
+                    },
+                    {
+                      "children": [
+                        {
+                          "component": "ButtonCTAAnimated",
+                          "id": "GnplxFHfUhQkFCgr",
+                          "props": {
+                            "blockName": "CTA | Continue",
+                            "defaultText": {
+                              "i18nKey": "labels.ctaButton.text"
+                            },
+                            "showPurchaseLoader": true,
+                            "trialText": {
+                              "i18nKey": "labels.ctaButton.text"
+                            }
+                          }
+                        }
+                      ],
+                      "component": "Group",
+                      "id": "lYwphMYMgItvSdFi",
+                      "props": {
+                        "blockName": "Group",
+                        "style": {
+                          "minHeight": "80px"
+                        }
+                      }
+                    }
+                  ],
+                  "component": "ProductsContext",
+                  "id": "APkURSBEigKxhBjj",
+                  "props": {
+                    "blockName": "ProductsContext",
+                    "productQuery": "*_duration_(y_1|m_12)_trial_*"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "component": "Css",
+                      "id": "GsWLdtejQrLEcVNP",
+                      "props": {
+                        "blockName": "CSS",
+                        "css": ".beforeYouGo__content .blockModal__content {\n  border-radius: 12px 12px 0 0;\n}\n\n.beforeYouGo__contentImage {\n  height: 132px;\n  margin: -52px auto 0;\n  width: 260px;\n}\n\n.beforeYouGo__contentTitle[class] {\n  font-weight: 700;\n  margin: calc(var(--space) * 3) 0;\n}\n\n.beforeYouGo__contentSubtitle {\n  margin: calc(var(--space) * 6) 0;\n}\n\n.beforeYouGo__buttonNo {\n  color: rgba(0, 0, 0, 0.60);\n  font-size: 16px;\n  font-weight: 700;\n}\n\n.beforeYouGo__content .blockButtonLoader {\n display: flex;\n justify-content: center;\n}\n\n.screenBuilder .block.blockHeader {\n  z-index: 21;\n}"
+                      }
+                    },
+                    {
+                      "component": "Text",
+                      "id": "lUQdIRdSEZXwJJqn",
+                      "props": {
+                        "blockName": "Title",
+                        "className": "beforeYouGo__contentTitle",
+                        "tag": "h2",
+                        "text": "$refs[SRLpPLQdlQxTxOWL][titleText]",
+                        "style": {
+                          "padding-top": "16px",
+                          "padding-left": "16px",
+                          "padding-right": "16px"
+                        }
+                      }
+                    },
+                    {
+                      "component": "Text",
+                      "id": "devNSxOQkqsupVVl",
+                      "props": {
+                        "blockName": "Subtitle",
+                        "className": "beforeYouGo__contentSubtitle",
+                        "color": "rgba(0, 0, 0, 0.6)",
+                        "tag": "h3",
+                        "text": "$refs[SRLpPLQdlQxTxOWL][subtitleText]"
+                      }
+                    },
+                    {
+                      "children": [
+                        {
+                          "component": "ButtonContinue",
+                          "id": "KLunAgmlIMHlnJnE",
+                          "props": {
+                            "blockName": "Button | Go Back ",
+                            "defaultBackground": "",
+                            "showPurchaseLoader": true,
+                            "trialText": {
+                              "i18nKey": "labels.goBackButton.text"
+                            },
+                            "action": "none",
+                            "defaultText": {
+                              "i18nKey": "labels.goBackButton.text"
+                            },
+                            "interactive": true
+                          }
+                        },
+                        {
+                          "component": "ButtonContinue",
+                          "id": "ukGuEYfHuWzRgRQt",
+                          "props": {
+                            "action": "close",
+                            "blockName": "Button | No",
+                            "className": "beforeYouGo__buttonNo",
+                            "defaultBackground": "transparent",
+                            "defaultText": "$refs[SRLpPLQdlQxTxOWL][closeText]",
+                            "nextStepId": "$refs[SRLpPLQdlQxTxOWL][rejectOfferNextStep]"
+                          }
+                        },
+                        {
+                          "component": "Space",
+                          "id": "ohJpHWfPgtasIXjk",
+                          "props": {
+                            "blockName": "Space",
+                            "size": 6
+                          }
+                        }
+                      ],
+                      "component": "ProductsContext",
+                      "id": "MgOutDKIAyRUsjQe",
+                      "props": {
+                        "blockName": "ProductsContext BeforeYouGo",
+                        "productQuery": "*tier_1_duration_(y_1|m_12)_trial*>>maxPrice",
+                        "useProductQuery": true
+                      }
+                    }
+                  ],
+                  "component": "Modal",
+                  "id": "SRLpPLQdlQxTxOWL",
+                  "props": {
+                    "backgroundColor": "white",
+                    "blockName": "Before you go",
+                    "className": "beforeYouGo__content",
+                    "hidden": true,
+                    "interactions": [
+                      {
+                        "fromBlockId": "gmqMMIkjSnGdXSCg",
+                        "handler": "show"
+                      },
+                      {
+                        "fromBlockId": "KLunAgmlIMHlnJnE",
+                        "handler": "hide"
+                      }
+                    ],
+                    "snippetName": "BeforeYouGo"
+                  },
+                  "refs": {
+                    "closeText": {
+                      "i18nKey": "labels.I_don’t_want_trialDurationDays_free days.text",
+                      "values": {
+                        "trialDurationDays": "{{ GET trialDuration>>toDays>>floor WHERE *_duration_(y_1|m_12)_trial_* }}"
+                      }
+                    },
+                    "ctaButtonText": {
+                      "i18nKey": "labels.goBackButton.text"
+                    },
+                    "hidden": true,
+                    "imageUrl": "https://content.owhealth.com/release_v2/media/en-US/4BNORGDvLIO9rpN0vbZN9C.png",
+                    "interactions": [
+                      {
+                        "fromBlockId": "gmqMMIkjSnGdXSCg",
+                        "handler": "show"
+                      },
+                      {
+                        "fromBlockId": "KLunAgmlIMHlnJnE",
+                        "handler": "hide"
+                      }
+                    ],
+                    "pricingText": {
+                      "i18nKey": "labels.trialDurationDaysForFreeThenPriceYear.text",
+                      "values": {
+                        "trialDurationDays": "{{ GET trialDuration>>toDays>>floor WHERE *tier_1*_duration_(y_1|m_12)_trial_*>>maxPrice }}",
+                        "price": "{{ GET price WHERE *tier_1*_duration_(y_1|m_12)_trial_*>>maxPrice }}"
+                      }
+                    },
+                    "rejectOfferNextStep": "",
+                    "subtitleText": {
+                      "i18nKey": "labels.youLoseYourFreeTrialsIfYouSkip.text",
+                      "values": {
+                        "trialDays": "{{ GET trialDuration>>toDays>>floor WHERE *_duration_(y_1|m_12)_trial_* }}"
+                      }
+                    },
+                    "titleText": {
+                      "i18nKey": "labels.Youre_about_to_miss_out_on_your_30-day_free_trial.text"
+                    }
+                  }
+                }
+              ],
+              "component": "Multistep",
+              "id": "qaewXzsqxneDmSas",
+              "props": {
+                "blockName": "Referral | Step 1"
+              }
+            },
+            {
+              "children": [
+                {
+                  "component": "Group",
+                  "id": "CFHolWkerUgXoapD",
+                  "props": {
+                    "blockName": "Position fix | Group"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "component": "Image",
+                      "id": "vnfcMiqgnUEzSDft",
+                      "props": {
+                        "blockName": "Image",
+                        "removeLegacyMargins": true,
+                        "src": "https://content.owhealth.com/cdn-cgi/image/format=auto/release_v2/media/en-US/45Je1nvzQqmIt2Gn6JHsqC.png",
+                        "preload": true,
+                        "className": "step2image"
+                      }
+                    },
+                    {
+                      "component": "Space",
+                      "id": "GDXOxQMtzUFMTbBi",
+                      "props": {
+                        "blockName": "Space",
+                        "size": 8,
+                        "sizeCompact": 8
+                      }
+                    },
+                    {
+                      "component": "Text",
+                      "id": "dXxnJaaQFXGSnbKo",
+                      "props": {
+                        "blockName": "Title",
+                        "variant": "title2Bold",
+                        "text": {
+                          "i18nKey": "labels.Your_trialDurationDays_day_free_trial_has_started.text",
+                          "values": {
+                            "trialDurationDays": "{{ GET trialDuration>>toDays>>floor WHERE *tier_1*_duration_(y_1|m_12)_trial_*>>maxPrice }}"
+                          }
+                        },
+                        "style": {
+                          "padding": "16px"
+                        }
+                      }
+                    },
+                    {
+                      "component": "Text",
+                      "id": "jRRNQodNXiGszRhR",
+                      "props": {
+                        "blockName": "Body",
+                        "variant": "bodyRegular",
+                        "text": {
+                          "i18nKey": "labels.Take_a_few_minutes_to_finish.text"
+                        },
+                        "style": {
+                          "padding": "0 16px"
+                        },
+                        "color": "#00000099"
+                      }
+                    }
+                  ],
+                  "component": "Group",
+                  "id": "bPjKmdzhUmqIQfIp",
+                  "props": {
+                    "blockName": "Image & Title | Group"
+                  }
+                },
+                {
+                  "component": "ButtonContinue",
+                  "id": "ZdhuXUFAIyfCEzRO",
+                  "props": {
+                    "blockName": "CTA | Close | ButtonContinue",
+                    "defaultText": {
+                      "i18nKey": "labels.okayLetsGo.text"
+                    },
+                    "interactive": true,
+                    "action": "close",
+                    "defaultBackground": "var(--premium-gradient)"
+                  }
+                }
+              ],
+              "component": "Multistep",
+              "id": "LCYrdeOmKIcnkRhD",
+              "props": {
+                "blockName": "Referral | Step 2",
+                "trigger": "onPurchase"
+              }
+            }
+          ],
+          "component": "Wrapper",
+          "id": "jdSDuArzarzNROVZ",
+          "props": {
+            "bgColor": "linear-gradient(180deg, #E6D9FF 0.23%, #FFF6F2 64.93%, #FFF 99.77%), #FFF",
+            "blockName": "Wrapper",
+            "version": "6.23.2"
+          }
+        }
+      ]
+    }
+  },
+  "target_config_id": "android_built_in_client_constructor_onboarding_referral_promo",
+  "products": [
+    {
+      "id": "andr_tier1_d1y_t30d_opt1_20250611"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+.class public final Landroidx/compose/ui/c$a;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+# interfaces
+.implements Landroidx/compose/ui/Alignment$Horizontal;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/ui/c;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field public final a:F
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>(F)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Landroidx/compose/ui/c$a;->a:F
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(IILk3/q;)I
+    .locals 0
+
+    .line 1
+    sub-int/2addr p2, p1
+
+    .line 2
+    int-to-float p1, p2
+
+    .line 3
+    const/high16 p2, 0x40000000    # 2.0f
+
+    .line 4
+    .line 5
+    div-float/2addr p1, p2
+
+    .line 6
+    sget-object p2, Lk3/q;->d:Lk3/q;
+
+    .line 7
+    .line 8
+    iget p0, p0, Landroidx/compose/ui/c$a;->a:F
+
+    .line 9
+    .line 10
+    if-ne p3, p2, :cond_0
+
+    .line 11
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    const/high16 p2, -0x40800000    # -1.0f
+
+    .line 14
+    .line 15
+    mul-float/2addr p0, p2
+
+    .line 16
+    :goto_0
+    const/high16 p2, 0x3f800000    # 1.0f
+
+    .line 17
+    .line 18
+    add-float/2addr p2, p0
+
+    .line 19
+    mul-float/2addr p1, p2
+
+    .line 20
+    invoke-static {p1}, Ljava/lang/Math;->round(F)I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result p0
+
+    .line 24
+    return p0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Landroidx/compose/ui/c$a;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Landroidx/compose/ui/c$a;
+
+    .line 12
+    .line 13
+    iget p0, p0, Landroidx/compose/ui/c$a;->a:F
+
+    .line 14
+    .line 15
+    iget p1, p1, Landroidx/compose/ui/c$a;->a:F
+
+    .line 16
+    .line 17
+    invoke-static {p0, p1}, Ljava/lang/Float;->compare(FF)I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
+
+    .line 21
+    if-eqz p0, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public hashCode()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Landroidx/compose/ui/c$a;->a:F
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Ljava/lang/Float;->hashCode(F)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Horizontal(bias="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget p0, p0, Landroidx/compose/ui/c$a;->a:F
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const/16 p0, 0x29
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
+.end method

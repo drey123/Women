@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/week_badge_item_padding_top" android:paddingBottom="@dimen/week_badge_item_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/spacing_1_5x" android:paddingEnd="@dimen/spacing_1_5x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/FootnoteSemibold" android:textColor="?foregroundPrimaryWhite" android:gravity="center" android:id="@id/text" android:background="@drawable/bg_week_badge_default" android:layout_width="wrap_content" android:layout_height="@dimen/week_badge_height" android:paddingStart="@dimen/week_badge_half_height" android:paddingEnd="@dimen/week_badge_half_height" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rambler.libs.swipe_layout.SwipeLayout android:id="@id/swipeMenuLayout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:paddingTop="@dimen/spacing_4x" android:paddingBottom="@dimen/spacing_4x" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@id/itemIcon" android:layout_width="@dimen/size_9x" android:layout_height="@dimen/size_9x" android:src="?placeholderDefault" android:scaleType="centerCrop" android:layout_marginStart="@dimen/spacing_4x" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Flo.Rounded.CornerRadius1x" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/menuItemsContainer" android:layout_width="wrap_content" android:layout_height="match_parent" app:gravity="right" />
+</ru.rambler.libs.swipe_layout.SwipeLayout>
