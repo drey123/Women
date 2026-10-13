@@ -55,7 +55,16 @@ def main():
             json.dump(raw, f, indent=1)
         print(f"DEBUG keys of first response: {list(raw.keys()) if isinstance(raw, dict) else type(raw)}")
     except Exception as e:
-        print(f"DEBUG fetch failed: {e}")
+        body = ""
+        try:
+            import urllib.error
+            if isinstance(e, urllib.error.HTTPError):
+                body = e.read(400).decode(errors="replace")
+        except Exception:
+            pass
+        with open(f"{OUTDIR}/debug_raw_response.json", "w") as f:
+            f.write(f"EXCEPTION {type(e).__name__}: {e}\nBODY: {body}\n")
+        print(f"DEBUG fetch failed: {type(e).__name__} {body[:200]}")
 
     for pkg, label in PACKAGES.items():
         try:
