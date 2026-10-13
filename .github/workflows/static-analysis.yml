@@ -116,7 +116,8 @@ jobs:
         continue-on-error: true
         run: bash tooling/download_apk.sh "${{ matrix.pkg }}" /tmp/apk
       - name: Static analysis
-        if: steps.download.outcome == 'success'
+        id: analysis
+        if: steps.tools.outcome == 'success' && steps.download.outcome == 'success'
         run: |
           chmod +x tooling/analyze_static.sh
           bash tooling/analyze_static.sh "${{ steps.app.outputs.label }}" "${{ matrix.pkg }}" "/tmp/apk/${{ matrix.pkg }}.apk" reports/static
@@ -127,13 +128,21 @@ jobs:
           PACKAGE_NAME: ${{ matrix.pkg }}
           TOOL_OUTCOME: ${{ steps.tools.outcome }}
           DOWNLOAD_OUTCOME: ${{ steps.download.outcome }}
+          ANALYSIS_OUTCOME: ${{ steps.analysis.outcome }}
         run: |
           mkdir -p "reports/static/$APP_LABEL"
-          if [ ! -s "/tmp/apk/$PACKAGE_NAME.apk" ]; then
-            printf '# Analysis status: %s\n\n- Package: `%s`\n- Result: NOT ANALYSED\n- Toolchain step: `%s`\n- APK download step: `%s`\n- Reason: no validated APK was available to analyse in this run.\n- Interpretation: this is an acquisition/tooling gap, not evidence that the app is safe or unsafe.\n' \
-              "$APP_LABEL" "$PACKAGE_NAME" "$TOOL_OUTCOME" "$DOWNLOAD_OUTCOME" \
-              > "reports/static/$APP_LABEL/STATUS.md"
+          if [ "$TOOL_OUTCOME" != "success" ] || [ "$DOWNLOAD_OUTCOME" != "success" ] || [ ! -s "/tmp/apk/$PACKAGE_NAME.apk" ]; then
+            RESULT="NOT ANALYSED"
+            REASON="required toolchain or APK acquisition was unavailable; no valid analysis result can be claimed."
+          elif [ "$ANALYSIS_OUTCOME" != "success" ]; then
+            RESULT="ANALYSIS FAILED"
+            REASON="analysis command failed after acquisition; the partial output is not a completed assessment."
+          else
+            exit 0
           fi
+          printf '# Analysis status: %s\n\n- Package: `%s`\n- Result: %s\n- Toolchain step: `%s`\n- APK download step: `%s`\n- Analysis step: `%s`\n- Reason: %s\n- Interpretation: an unavailable or failed analysis is not evidence that the app is safe or unsafe.\n' \
+            "$APP_LABEL" "$PACKAGE_NAME" "$RESULT" "$TOOL_OUTCOME" "$DOWNLOAD_OUTCOME" "$ANALYSIS_OUTCOME" "$REASON" \
+            > "reports/static/$APP_LABEL/STATUS.md"
       - name: Upload per-app evidence
         if: always()
         uses: actions/upload-artifact@v4
