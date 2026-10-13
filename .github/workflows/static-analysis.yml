@@ -48,7 +48,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Pull live Exodus tracker inventories
-        run: timeout 300 python3 tooling/exodus_api.py || echo "WARNING: Exodus fetch incomplete; inspect reports/exodus/debug_raw_response.json"
+        shell: bash
+        run: |
+          timeout 300 python3 tooling/exodus_api.py || echo "WARNING: Exodus fetch incomplete; inspect reports/exodus/debug_raw_response.json"
       - name: Upload Exodus evidence
         if: always()
         uses: actions/upload-artifact@v4
