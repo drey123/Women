@@ -595,7 +595,7 @@ public class FastDatePrinter implements DatePrinter, Serializable {
         init();
     }
 
-    private <B extends Appendable> B applyRules(Calendar calendar, B b) {
+    private <B extends Appendable> B applyRules(Calendar calendar, B b) throws Throwable {
         try {
             for (Rule rule : this.rules) {
                 rule.appendTo(b, calendar);

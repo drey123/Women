@@ -13,8 +13,7 @@ public abstract class ProfilingRequestBuilder<T extends ProfilingRequestBuilder<
     private android.os.CancellationSignal mCancellationSignal;
     private String mTag;
 
-    /* JADX INFO: renamed from: getParams */
-    protected abstract Bundle getMParams();
+    protected abstract Bundle getParams();
 
     protected abstract int getProfilingType();
 
@@ -33,6 +32,6 @@ public abstract class ProfilingRequestBuilder<T extends ProfilingRequestBuilder<
     }
 
     public final ProfilingRequest build() {
-        return new ProfilingRequest(getProfilingType(), getMParams(), this.mTag, this.mCancellationSignal);
+        return new ProfilingRequest(getProfilingType(), getParams(), this.mTag, this.mCancellationSignal);
     }
 }

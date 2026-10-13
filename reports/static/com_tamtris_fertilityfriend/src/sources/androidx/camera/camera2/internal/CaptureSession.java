@@ -571,103 +571,107 @@ final class CaptureSession implements CaptureSessionInterface {
 
     int issueBurstCaptureRequest(List<CaptureConfig> list) {
         synchronized (this.mSessionLock) {
-            if (this.mState != State.OPENED) {
-                Logger.d(TAG, "Skipping issueBurstCaptureRequest due to session closed");
-                return -1;
-            }
-            if (list.isEmpty()) {
-                return -1;
-            }
             try {
-                CameraBurstCaptureCallback cameraBurstCaptureCallback = new CameraBurstCaptureCallback();
-                ArrayList arrayList = new ArrayList();
-                Logger.d(TAG, "Issuing capture request.");
-                boolean z = false;
-                for (CaptureConfig captureConfig : list) {
-                    if (captureConfig.getSurfaces().isEmpty()) {
-                        Logger.d(TAG, "Skipping issuing empty capture request.");
-                    } else {
-                        Iterator<DeferrableSurface> it = captureConfig.getSurfaces().iterator();
-                        while (true) {
-                            if (it.hasNext()) {
-                                DeferrableSurface next = it.next();
-                                if (!this.mConfiguredSurfaceMap.containsKey(next)) {
-                                    Logger.d(TAG, "Skipping capture request with invalid surface: " + next);
+                if (this.mState != State.OPENED) {
+                    Logger.d(TAG, "Skipping issueBurstCaptureRequest due to session closed");
+                    return -1;
+                }
+                if (list.isEmpty()) {
+                    return -1;
+                }
+                try {
+                    CameraBurstCaptureCallback cameraBurstCaptureCallback = new CameraBurstCaptureCallback();
+                    ArrayList arrayList = new ArrayList();
+                    Logger.d(TAG, "Issuing capture request.");
+                    boolean z = false;
+                    for (CaptureConfig captureConfig : list) {
+                        if (captureConfig.getSurfaces().isEmpty()) {
+                            Logger.d(TAG, "Skipping issuing empty capture request.");
+                        } else {
+                            Iterator<DeferrableSurface> it = captureConfig.getSurfaces().iterator();
+                            while (true) {
+                                if (it.hasNext()) {
+                                    DeferrableSurface next = it.next();
+                                    if (!this.mConfiguredSurfaceMap.containsKey(next)) {
+                                        Logger.d(TAG, "Skipping capture request with invalid surface: " + next);
+                                        break;
+                                    }
+                                } else {
+                                    if (captureConfig.getTemplateType() == 2) {
+                                        z = true;
+                                    }
+                                    CaptureConfig.Builder builderFrom = CaptureConfig.Builder.from(captureConfig);
+                                    if (captureConfig.getTemplateType() == 5 && captureConfig.getCameraCaptureResult() != null) {
+                                        builderFrom.setCameraCaptureResult(captureConfig.getCameraCaptureResult());
+                                    }
+                                    SessionConfig sessionConfig = this.mSessionConfig;
+                                    if (sessionConfig != null) {
+                                        builderFrom.addImplementationOptions(sessionConfig.getRepeatingCaptureConfig().getImplementationOptions());
+                                    }
+                                    builderFrom.addImplementationOptions(captureConfig.getImplementationOptions());
+                                    CaptureRequest captureRequestBuild = Camera2CaptureRequestBuilder.build(builderFrom.build(), this.mSynchronizedCaptureSession.getDevice(), this.mConfiguredSurfaceMap, false, this.mTemplateParamsOverride);
+                                    if (captureRequestBuild == null) {
+                                        Logger.d(TAG, "Skipping issuing request without surface.");
+                                        return -1;
+                                    }
+                                    ArrayList arrayList2 = new ArrayList();
+                                    Iterator<CameraCaptureCallback> it2 = captureConfig.getCameraCaptureCallbacks().iterator();
+                                    while (it2.hasNext()) {
+                                        CaptureCallbackConverter.toCaptureCallback(it2.next(), arrayList2);
+                                    }
+                                    cameraBurstCaptureCallback.addCamera2Callbacks(captureRequestBuild, arrayList2);
+                                    arrayList.add(captureRequestBuild);
                                     break;
                                 }
-                            } else {
-                                if (captureConfig.getTemplateType() == 2) {
-                                    z = true;
-                                }
-                                CaptureConfig.Builder builderFrom = CaptureConfig.Builder.from(captureConfig);
-                                if (captureConfig.getTemplateType() == 5 && captureConfig.getCameraCaptureResult() != null) {
-                                    builderFrom.setCameraCaptureResult(captureConfig.getCameraCaptureResult());
-                                }
-                                SessionConfig sessionConfig = this.mSessionConfig;
-                                if (sessionConfig != null) {
-                                    builderFrom.addImplementationOptions(sessionConfig.getRepeatingCaptureConfig().getImplementationOptions());
-                                }
-                                builderFrom.addImplementationOptions(captureConfig.getImplementationOptions());
-                                CaptureRequest captureRequestBuild = Camera2CaptureRequestBuilder.build(builderFrom.build(), this.mSynchronizedCaptureSession.getDevice(), this.mConfiguredSurfaceMap, false, this.mTemplateParamsOverride);
-                                if (captureRequestBuild == null) {
-                                    Logger.d(TAG, "Skipping issuing request without surface.");
-                                    return -1;
-                                }
-                                ArrayList arrayList2 = new ArrayList();
-                                Iterator<CameraCaptureCallback> it2 = captureConfig.getCameraCaptureCallbacks().iterator();
-                                while (it2.hasNext()) {
-                                    CaptureCallbackConverter.toCaptureCallback(it2.next(), arrayList2);
-                                }
-                                cameraBurstCaptureCallback.addCamera2Callbacks(captureRequestBuild, arrayList2);
-                                arrayList.add(captureRequestBuild);
-                                break;
                             }
                         }
                     }
-                }
-                if (!arrayList.isEmpty()) {
-                    if (this.mStillCaptureFlow.shouldStopRepeatingBeforeCapture(arrayList, z)) {
-                        this.mSynchronizedCaptureSession.stopRepeating();
-                        cameraBurstCaptureCallback.setCaptureSequenceCallback(new CameraBurstCaptureCallback.CaptureSequenceCallback() { // from class: androidx.camera.camera2.internal.CaptureSession$$ExternalSyntheticLambda0
-                            @Override // androidx.camera.camera2.internal.CameraBurstCaptureCallback.CaptureSequenceCallback
-                            public final void onCaptureSequenceCompletedOrAborted(CameraCaptureSession cameraCaptureSession, int i, boolean z2) {
-                                this.f$0.m65xac56a034(cameraCaptureSession, i, z2);
-                            }
-                        });
-                    }
-                    if (this.mTorchStateReset.isTorchResetRequired(arrayList, z)) {
-                        cameraBurstCaptureCallback.addCamera2Callbacks(arrayList.get(arrayList.size() - 1), Collections.singletonList(new CameraCaptureSession.CaptureCallback() { // from class: androidx.camera.camera2.internal.CaptureSession.2
-                            @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
-                            public void onCaptureCompleted(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, TotalCaptureResult totalCaptureResult) {
-                                synchronized (CaptureSession.this.mSessionLock) {
-                                    if (CaptureSession.this.mSessionConfig == null) {
-                                        return;
+                    if (!arrayList.isEmpty()) {
+                        if (this.mStillCaptureFlow.shouldStopRepeatingBeforeCapture(arrayList, z)) {
+                            this.mSynchronizedCaptureSession.stopRepeating();
+                            cameraBurstCaptureCallback.setCaptureSequenceCallback(new CameraBurstCaptureCallback.CaptureSequenceCallback() { // from class: androidx.camera.camera2.internal.CaptureSession$$ExternalSyntheticLambda0
+                                @Override // androidx.camera.camera2.internal.CameraBurstCaptureCallback.CaptureSequenceCallback
+                                public final void onCaptureSequenceCompletedOrAborted(CameraCaptureSession cameraCaptureSession, int i, boolean z2) {
+                                    this.f$0.m65xac56a034(cameraCaptureSession, i, z2);
+                                }
+                            });
+                        }
+                        if (this.mTorchStateReset.isTorchResetRequired(arrayList, z)) {
+                            cameraBurstCaptureCallback.addCamera2Callbacks(arrayList.get(arrayList.size() - 1), Collections.singletonList(new CameraCaptureSession.CaptureCallback() { // from class: androidx.camera.camera2.internal.CaptureSession.2
+                                @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
+                                public void onCaptureCompleted(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, TotalCaptureResult totalCaptureResult) {
+                                    synchronized (CaptureSession.this.mSessionLock) {
+                                        if (CaptureSession.this.mSessionConfig == null) {
+                                            return;
+                                        }
+                                        CaptureConfig repeatingCaptureConfig = CaptureSession.this.mSessionConfig.getRepeatingCaptureConfig();
+                                        Logger.d(CaptureSession.TAG, "Submit FLASH_MODE_OFF request");
+                                        CaptureSession captureSession = CaptureSession.this;
+                                        captureSession.issueCaptureRequests(Collections.singletonList(captureSession.mTorchStateReset.createTorchResetRequest(repeatingCaptureConfig)));
                                     }
-                                    CaptureConfig repeatingCaptureConfig = CaptureSession.this.mSessionConfig.getRepeatingCaptureConfig();
-                                    Logger.d(CaptureSession.TAG, "Submit FLASH_MODE_OFF request");
-                                    CaptureSession captureSession = CaptureSession.this;
-                                    captureSession.issueCaptureRequests(Collections.singletonList(captureSession.mTorchStateReset.createTorchResetRequest(repeatingCaptureConfig)));
                                 }
-                            }
-                        }));
-                    }
-                    if (this.mCaptureRequestConfigurator != null) {
-                        Iterator<CaptureRequest> it3 = arrayList.iterator();
-                        while (it3.hasNext()) {
-                            this.mCaptureRequestConfigurator.configureWith(it3.next());
+                            }));
                         }
+                        if (this.mCaptureRequestConfigurator != null) {
+                            Iterator<CaptureRequest> it3 = arrayList.iterator();
+                            while (it3.hasNext()) {
+                                this.mCaptureRequestConfigurator.configureWith(it3.next());
+                            }
+                        }
+                        SessionConfig sessionConfig2 = this.mSessionConfig;
+                        if (sessionConfig2 != null && sessionConfig2.getSessionType() == 1) {
+                            return captureHighSpeedBurst(arrayList, cameraBurstCaptureCallback);
+                        }
+                        return this.mSynchronizedCaptureSession.captureBurstRequests(arrayList, cameraBurstCaptureCallback);
                     }
-                    SessionConfig sessionConfig2 = this.mSessionConfig;
-                    if (sessionConfig2 != null && sessionConfig2.getSessionType() == 1) {
-                        return captureHighSpeedBurst(arrayList, cameraBurstCaptureCallback);
-                    }
-                    return this.mSynchronizedCaptureSession.captureBurstRequests(arrayList, cameraBurstCaptureCallback);
+                    Logger.d(TAG, "Skipping issuing burst request due to no valid request elements");
+                    return -1;
+                } catch (CameraAccessException e) {
+                    Logger.e(TAG, "Unable to access camera: " + e.getMessage());
+                    Thread.dumpStack();
                 }
-                Logger.d(TAG, "Skipping issuing burst request due to no valid request elements");
-                return -1;
-            } catch (CameraAccessException e) {
-                Logger.e(TAG, "Unable to access camera: " + e.getMessage());
-                Thread.dumpStack();
+            } catch (Throwable th) {
+                throw th;
             }
         }
     }

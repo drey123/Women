@@ -80,7 +80,7 @@ public class BackgroundInitializer<T> extends AbstractConcurrentInitializer<T, E
     }
 
     @Override // org.apache.commons.lang3.function.FailableSupplier
-    public T get() throws ConcurrentException {
+    public T get() throws Throwable {
         try {
             return getFuture().get();
         } catch (InterruptedException e) {

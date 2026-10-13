@@ -221,7 +221,7 @@ public class Functions {
         }
     }
 
-    public static RuntimeException rethrow(Throwable th) {
+    public static RuntimeException rethrow(Throwable th) throws Throwable {
         Objects.requireNonNull(th, "throwable");
         ExceptionUtils.throwUnchecked(th);
         if (th instanceof IOException) {

@@ -78,9 +78,11 @@ final class zzo {
                 String.valueOf(message);
                 zzyVarZzd = zzy.zzd("module init: ".concat(String.valueOf(message)), e2);
             }
-            return zzyVarZzd;
-        } finally {
             StrictMode.setThreadPolicy(threadPolicyAllowThreadDiskReads);
+            return zzyVarZzd;
+        } catch (Throwable th) {
+            StrictMode.setThreadPolicy(threadPolicyAllowThreadDiskReads);
+            throw th;
         }
     }
 

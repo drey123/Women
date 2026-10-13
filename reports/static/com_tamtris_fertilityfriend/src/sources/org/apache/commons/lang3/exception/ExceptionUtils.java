@@ -26,7 +26,7 @@ public class ExceptionUtils {
     private static final int NOT_FOUND = -1;
     static final String WRAPPED_MARKER = " [wrapped] ";
 
-    public static <T extends RuntimeException> T asRuntimeException(Throwable th) {
+    public static <T extends RuntimeException> T asRuntimeException(Throwable th) throws Throwable {
         return (T) eraseType(th);
     }
 
@@ -378,7 +378,7 @@ public class ExceptionUtils {
         return t;
     }
 
-    public static <T extends Throwable> T throwUnchecked(T t) {
+    public static <T extends Throwable> T throwUnchecked(T t) throws Throwable {
         if (isUnchecked(t)) {
             throw asRuntimeException(t);
         }

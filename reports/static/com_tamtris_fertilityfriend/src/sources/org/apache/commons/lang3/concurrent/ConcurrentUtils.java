@@ -68,7 +68,7 @@ public class ConcurrentUtils {
         }
     }
 
-    public static ConcurrentException extractCause(ExecutionException executionException) {
+    public static ConcurrentException extractCause(ExecutionException executionException) throws Throwable {
         if (executionException == null || executionException.getCause() == null) {
             return null;
         }
@@ -76,7 +76,7 @@ public class ConcurrentUtils {
         return new ConcurrentException(executionException.getMessage(), executionException.getCause());
     }
 
-    public static ConcurrentRuntimeException extractCauseUnchecked(ExecutionException executionException) {
+    public static ConcurrentRuntimeException extractCauseUnchecked(ExecutionException executionException) throws Throwable {
         if (executionException == null || executionException.getCause() == null) {
             return null;
         }
@@ -84,14 +84,14 @@ public class ConcurrentUtils {
         return new ConcurrentRuntimeException(executionException.getMessage(), executionException.getCause());
     }
 
-    public static void handleCause(ExecutionException executionException) throws ConcurrentException {
+    public static void handleCause(ExecutionException executionException) throws Throwable {
         ConcurrentException concurrentExceptionExtractCause = extractCause(executionException);
         if (concurrentExceptionExtractCause != null) {
             throw concurrentExceptionExtractCause;
         }
     }
 
-    public static void handleCauseUnchecked(ExecutionException executionException) {
+    public static void handleCauseUnchecked(ExecutionException executionException) throws Throwable {
         ConcurrentRuntimeException concurrentRuntimeExceptionExtractCauseUnchecked = extractCauseUnchecked(executionException);
         if (concurrentRuntimeExceptionExtractCauseUnchecked != null) {
             throw concurrentRuntimeExceptionExtractCauseUnchecked;

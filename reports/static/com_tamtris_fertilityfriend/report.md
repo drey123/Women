@@ -3,7 +3,7 @@ Static analysis report — com_tamtris_fertilityfriend
 - Package: `com.tamtris.fertilityfriend`
 - APK: `/tmp/apk/com.tamtris.fertilityfriend.apk` (26429760 bytes, sha256 `dde3256e30b7090f67a0f93bef947b5e8409dfbab63ac64e47cfde02ecc3f696`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:23:50Z | Runner: x86_64
+- Date: 2026-10-13T09:44:10Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```

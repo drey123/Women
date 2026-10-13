@@ -230,7 +230,7 @@ public class Failable {
         }
     }
 
-    public static RuntimeException rethrow(Throwable th) {
+    public static RuntimeException rethrow(Throwable th) throws Throwable {
         Objects.requireNonNull(th, "throwable");
         ExceptionUtils.throwUnchecked(th);
         if (th instanceof IOException) {
@@ -278,7 +278,7 @@ public class Failable {
         if (failableConsumer == null) {
             failableConsumer = new FailableConsumer() { // from class: org.apache.commons.lang3.function.Failable$$ExternalSyntheticLambda4
                 @Override // org.apache.commons.lang3.function.FailableConsumer
-                public final void accept(Object obj) {
+                public final void accept(Object obj) throws Throwable {
                     Failable.rethrow((Throwable) obj);
                 }
             };
