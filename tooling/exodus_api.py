@@ -28,16 +28,16 @@ PACKAGES = {
     "com.babycenter.pregnancytracker": "BabyCenter",
 }
 
-def get_json(url, retries=3):
+def get_json(url, retries=2):
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers=UA)
-            with urllib.request.urlopen(req, timeout=40) as r:
+            with urllib.request.urlopen(req, timeout=15) as r:
                 return json.loads(r.read().decode())
         except Exception as e:
             if i == retries - 1:
                 raise
-            time.sleep(3 * (i + 1))
+            time.sleep(2)
 
 def main():
     os.makedirs(OUTDIR, exist_ok=True)
