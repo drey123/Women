@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/errorPlaceholderStub" android:layout="@layout/view_error_placeholder_stub" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/listPanel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <org.iggymedia.periodtracker.core.ui.epoxy.DisablePoolEpoxyRecyclerView android:id="@id/listContainer" android:background="?backgroundBase" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ViewStub android:id="@id/emptyListStub" android:visibility="gone" android:layout="@layout/view_empty_list_placeholder" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</merge>

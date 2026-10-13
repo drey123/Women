@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.iggymedia.periodtracker.ui.charts.views.ChartRecyclerView android:id="@id/recycler" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingEnd="16.0dp" />
+    <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundSecondary" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/noData" android:visibility="gone" android:layout_width="150.0dp" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="@string/common_no_cycle_data" android:layout_centerInParent="true" />
+    <org.iggymedia.periodtracker.ui.views.TintImageView android:id="@id/noDataImage" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="80.0dp" android:src="@null" android:layout_below="@id/noData" android:layout_centerHorizontal="true" />
+</RelativeLayout>

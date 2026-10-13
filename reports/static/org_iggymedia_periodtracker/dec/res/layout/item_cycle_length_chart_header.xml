@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/BodySemibold" android:textColor="?foregroundPrimary" android:gravity="center|bottom" android:id="@id/headerCycleLengthHeader" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+    <View android:id="@id/headerTopSeparator" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <TextView android:textAppearance="@style/FootnoteSemibold" android:textColor="?foregroundSecondary" android:layout_gravity="start" android:id="@id/headerNormalText" android:paddingTop="16.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cycle_length_graph_screen_normal" android:textAllCaps="true" />
+    <View android:id="@id/normalLengthLineHeader" android:background="?borderPrimary" android:layout_width="1.0dp" android:layout_height="16.0dp" android:layout_marginStart="40.0dp" />
+</LinearLayout>

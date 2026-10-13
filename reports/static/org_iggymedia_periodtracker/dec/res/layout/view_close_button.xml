@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:id="@id/buttonClose" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_2x" android:src="@drawable/medium_close_stroke" android:minWidth="@dimen/size_12x" android:minHeight="@dimen/size_12x" android:contentDescription="@string/button_close_story_viewer_content_description" android:layout_marginEnd="@dimen/spacing_4x" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="?foregroundPrimaryWhite" />
+</merge>

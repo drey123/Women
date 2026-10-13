@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.iggymedia.periodtracker.feature.day.insights.ui.DayInsightsErrorView android:background="@drawable/shape_rounded_panel_small" android:layout_width="match_parent" android:layout_height="match_parent" app:errorLayout="@layout/view_day_insights_error_placeholder_universal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

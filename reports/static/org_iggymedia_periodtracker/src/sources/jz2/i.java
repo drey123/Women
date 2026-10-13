@@ -1,0 +1,36 @@
+package jz2;
+
+import android.content.Context;
+import dagger.internal.Factory;
+import dagger.internal.Provider;
+import org.iggymedia.periodtracker.core.base.general.Router;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes8.dex */
+public final class i implements Factory {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final e f70592a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public final Provider f70593b;
+
+    public i(e eVar, Provider provider) {
+        this.f70592a = eVar;
+        this.f70593b = provider;
+    }
+
+    public static i a(e eVar, Provider provider) {
+        return new i(eVar, provider);
+    }
+
+    public static Router c(e eVar, Context context) {
+        return (Router) dagger.internal.j.e(eVar.d(context));
+    }
+
+    @Override // javax.inject.Provider, jakarta.inject.Provider
+    /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
+    public Router get() {
+        return c(this.f70592a, (Context) this.f70593b.get());
+    }
+}

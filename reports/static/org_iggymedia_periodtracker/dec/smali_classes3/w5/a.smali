@@ -1,0 +1,120 @@
+.class public final Lw5/a;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+# interfaces
+.implements Landroidx/health/connect/client/HealthConnectFeatures;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lw5/a$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final d:Lw5/a$a;
+
+
+# instance fields
+.field public final b:Landroid/content/Context;
+
+.field public final c:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lw5/a$a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lw5/a$a;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lw5/a;->d:Lw5/a$a;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    iput-object p1, p0, Lw5/a;->b:Landroid/content/Context;
+
+    .line 11
+    .line 12
+    iput-object p2, p0, Lw5/a;->c:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(I)I
+    .locals 3
+
+    .line 1
+    sget-object v0, Lw5/a;->d:Lw5/a$a;
+
+    .line 2
+    .line 3
+    sget-object v1, Landroidx/health/connect/client/HealthConnectFeatures;->a:Landroidx/health/connect/client/HealthConnectFeatures$Companion;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1}, Landroidx/health/connect/client/HealthConnectFeatures$Companion;->a()Ljava/util/Map;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    iget-object v2, p0, Lw5/a;->b:Landroid/content/Context;
+
+    .line 10
+    .line 11
+    iget-object p0, p0, Lw5/a;->c:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1, v2, p0, p1}, Lw5/a$a;->a(Ljava/util/Map;Landroid/content/Context;Ljava/lang/String;I)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result p0
+
+    .line 17
+    return p0
+.end method

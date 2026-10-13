@@ -1,0 +1,46 @@
+.class public final synthetic Landroidx/media3/exoplayer/audio/n0;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+# interfaces
+.implements Ljava/util/concurrent/Executor;
+
+
+# instance fields
+.field public final synthetic d:Landroid/os/Handler;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroid/os/Handler;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/media3/exoplayer/audio/n0;->d:Landroid/os/Handler;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final execute(Ljava/lang/Runnable;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Landroidx/media3/exoplayer/audio/n0;->d:Landroid/os/Handler;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

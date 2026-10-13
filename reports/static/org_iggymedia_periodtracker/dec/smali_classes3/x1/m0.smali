@@ -1,0 +1,43 @@
+.class public abstract Lx1/m0;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+
+# static fields
+.field public static final a:F
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    const/high16 v0, 0x3f000000    # 0.5f
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    sput v0, Lx1/m0;->a:F
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static final synthetic a()F
+    .locals 1
+
+    .line 1
+    sget v0, Lx1/m0;->a:F
+
+    .line 2
+    .line 3
+    return v0
+.end method

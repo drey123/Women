@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/featureOverviewRoot" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:paddingBottom="@dimen/size_10x" android:clipToPadding="false" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/featureImageContainer" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed">
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/featureImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+            </FrameLayout>
+            <TextView android:textAppearance="@style/Title3Bold" android:textColor="?foregroundPrimary" android:gravity="center" android:id="@id/featureTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/features_overview_title_top_margin" android:layout_marginStart="@dimen/spacing_4x" android:layout_marginEnd="@dimen/spacing_4x" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/featureImageContainer" />
+            <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundSecondary" android:gravity="center" android:id="@id/featureDescription" android:visibility="@integer/feature_description_visibility" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4x" android:layout_marginStart="@dimen/spacing_4x" android:layout_marginEnd="@dimen/spacing_4x" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/featureTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

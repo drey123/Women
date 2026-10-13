@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@drawable/flo_feather" android:insetTop="@dimen/feature_card_image_top_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

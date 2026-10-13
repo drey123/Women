@@ -1,0 +1,132 @@
+.class public abstract Landroidx/compose/foundation/lazy/layout/d;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+
+# direct methods
+.method public static final synthetic a(Le1/c;I)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/compose/foundation/lazy/layout/d;->b(Le1/c;I)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static final b(Le1/c;I)I
+    .locals 4
+
+    .line 1
+    invoke-virtual {p0}, Le1/c;->p()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    add-int/lit8 v0, v0, -0x1
+
+    .line 6
+    .line 7
+    const/4 v1, 0x0
+
+    .line 8
+    :cond_0
+    :goto_0
+    if-ge v1, v0, :cond_3
+
+    .line 9
+    .line 10
+    sub-int v2, v0, v1
+
+    .line 11
+    .line 12
+    div-int/lit8 v2, v2, 0x2
+
+    .line 13
+    .line 14
+    add-int/2addr v2, v1
+
+    .line 15
+    iget-object v3, p0, Le1/c;->d:[Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    aget-object v3, v3, v2
+
+    .line 18
+    .line 19
+    check-cast v3, Landroidx/compose/foundation/lazy/layout/IntervalList$a;
+
+    .line 20
+    .line 21
+    invoke-virtual {v3}, Landroidx/compose/foundation/lazy/layout/IntervalList$a;->b()I
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v3
+
+    .line 25
+    if-ne v3, p1, :cond_1
+
+    .line 26
+    .line 27
+    goto :goto_1
+
+    .line 28
+    :cond_1
+    if-ge v3, p1, :cond_2
+
+    .line 29
+    .line 30
+    add-int/lit8 v1, v2, 0x1
+
+    .line 31
+    .line 32
+    iget-object v3, p0, Le1/c;->d:[Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    aget-object v3, v3, v1
+
+    .line 35
+    .line 36
+    check-cast v3, Landroidx/compose/foundation/lazy/layout/IntervalList$a;
+
+    .line 37
+    .line 38
+    invoke-virtual {v3}, Landroidx/compose/foundation/lazy/layout/IntervalList$a;->b()I
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v3
+
+    .line 42
+    if-ge p1, v3, :cond_0
+
+    .line 43
+    .line 44
+    :goto_1
+    return v2
+
+    .line 45
+    :cond_2
+    add-int/lit8 v0, v2, -0x1
+
+    .line 46
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :cond_3
+    return v1
+.end method

@@ -1,0 +1,11 @@
+package av;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes6.dex */
+public final class b extends Exception {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(Throwable th4) {
+        super(th4.getMessage(), th4);
+        th4.getClass();
+    }
+}

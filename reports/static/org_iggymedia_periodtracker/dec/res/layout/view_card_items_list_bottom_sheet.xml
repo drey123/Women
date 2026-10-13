@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/bottomSheetContainer" android:paddingTop="@dimen/spacing_5x" android:focusable="true" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_comments_bottom_sheet" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/size_4x">
+        <View android:layout_gravity="center_horizontal" android:id="@id/lineDragControl" android:background="@drawable/bg_bottom_sheet_line_control" android:layout_width="@dimen/size_9x" android:layout_height="@dimen/size_1x" android:layout_marginTop="@dimen/spacing_2x" />
+        <TextView android:textAppearance="@style/Title3Bold" android:id="@id/bottomSheetTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4x" android:layout_marginStart="@dimen/spacing_4x" android:layout_marginEnd="@dimen/spacing_4x" />
+        <com.airbnb.epoxy.EpoxyRecyclerView android:id="@id/bottomSheetItemRecycleView" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</FrameLayout>

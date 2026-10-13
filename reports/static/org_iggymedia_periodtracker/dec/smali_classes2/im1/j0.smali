@@ -1,0 +1,141 @@
+.class public final Lim1/j0;
+.super Ljava/lang/Object;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+# interfaces
+.implements Lorg/iggymedia/periodtracker/core/userdatasync/domain/interactor/IsBackgroundSyncEnabledUseCase;
+
+
+# instance fields
+.field public final a:Lorg/iggymedia/periodtracker/core/featureconfig/domain/interactor/GetFeatureConfigUseCase;
+
+
+# direct methods
+.method public constructor <init>(Lorg/iggymedia/periodtracker/core/featureconfig/domain/interactor/GetFeatureConfigUseCase;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Lim1/j0;->a:Lorg/iggymedia/periodtracker/core/featureconfig/domain/interactor/GetFeatureConfigUseCase;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static b(Lr70/q2;)Ljava/lang/Boolean;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lr70/q2;->c()Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result p0
+
+    .line 8
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    return-object p0
+.end method
+
+.method public static c(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;)Ljava/lang/Boolean;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p0
+
+    .line 8
+    check-cast p0, Ljava/lang/Boolean;
+
+    .line 9
+    .line 10
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public a()Luf/j;
+    .locals 2
+
+    .line 1
+    iget-object p0, p0, Lim1/j0;->a:Lorg/iggymedia/periodtracker/core/featureconfig/domain/interactor/GetFeatureConfigUseCase;
+
+    .line 2
+    .line 3
+    sget-object v0, Ls70/g4;->a:Ls70/g4;
+
+    .line 4
+    .line 5
+    invoke-interface {p0, v0}, Lorg/iggymedia/periodtracker/core/featureconfig/domain/interactor/GetFeatureConfigUseCase;->b(Lorg/iggymedia/periodtracker/core/featureconfig/domain/util/FeatureSupplier;)Luf/j;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    new-instance v0, Lim1/h0;
+
+    .line 10
+    .line 11
+    invoke-direct {v0}, Lim1/h0;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
+    new-instance v1, Lim1/i0;
+
+    .line 15
+    .line 16
+    invoke-direct {v1, v0}, Lim1/i0;-><init>(Lkotlin/jvm/functions/Function1;)V
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {p0, v1}, Luf/j;->F(Lio/reactivex/functions/Function;)Luf/j;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p0
+
+    .line 23
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 24
+    .line 25
+    .line 26
+    return-object p0
+.end method

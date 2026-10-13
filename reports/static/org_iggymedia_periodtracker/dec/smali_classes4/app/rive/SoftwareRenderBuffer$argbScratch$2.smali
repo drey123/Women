@@ -1,0 +1,121 @@
+.class final Lapp/rive/SoftwareRenderBuffer$argbScratch$2;
+.super Lkotlin/jvm/internal/s;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lapp/rive/SoftwareRenderBuffer;-><init>(IILapp/rive/core/CommandQueue;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/s;",
+        "Lkotlin/jvm/functions/Function0<",
+        "[I>;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0008\n\u0000\n\u0002\u0010\u0015\n\u0000\u0010\u0000\u001a\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0002"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "invoke"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lapp/rive/SoftwareRenderBuffer;
+
+
+# direct methods
+.method public constructor <init>(Lapp/rive/SoftwareRenderBuffer;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lapp/rive/SoftwareRenderBuffer$argbScratch$2;->this$0:Lapp/rive/SoftwareRenderBuffer;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/s;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 0
+
+    .line 17
+    invoke-virtual {p0}, Lapp/rive/SoftwareRenderBuffer$argbScratch$2;->invoke()[I
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final invoke()[I
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lapp/rive/SoftwareRenderBuffer$argbScratch$2;->this$0:Lapp/rive/SoftwareRenderBuffer;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lapp/rive/SoftwareRenderBuffer;->getWidth()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    iget-object p0, p0, Lapp/rive/SoftwareRenderBuffer$argbScratch$2;->this$0:Lapp/rive/SoftwareRenderBuffer;
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Lapp/rive/SoftwareRenderBuffer;->getHeight()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p0
+
+    .line 13
+    mul-int/2addr v0, p0
+
+    .line 14
+    new-array p0, v0, [I
+
+    .line 15
+    .line 16
+    return-object p0
+.end method

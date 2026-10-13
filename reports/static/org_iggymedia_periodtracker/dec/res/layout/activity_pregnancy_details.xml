@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/detailsView" layout="@layout/view_pregnancy_details" />
+    <View android:id="@id/contentShadowView" android:background="?overlayBlack60" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/bottomSheetContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/weekDescription" layout="@layout/view_week_description" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottomBar" android:background="?backgroundSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

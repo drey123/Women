@@ -1,0 +1,18 @@
+package com.bumptech.glide.load;
+
+import java.nio.charset.Charset;
+import java.security.MessageDigest;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes4.dex */
+public interface Key {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static final Charset f30389a = Charset.forName("UTF-8");
+
+    void b(MessageDigest messageDigest);
+
+    boolean equals(Object obj);
+
+    int hashCode();
+}

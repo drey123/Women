@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?android:selectableItemBackground" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundPrimary" android:layout_gravity="center_vertical" android:id="@id/debugTitle" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

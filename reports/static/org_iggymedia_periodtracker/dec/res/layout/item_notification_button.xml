@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="?foregroundOvulation" android:id="@id/notificationButton" android:text="@string/notifications_screen_add_medication" android:maxLines="1" android:singleLine="true" style="@style/TextButtonStyle" />
+    <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="wrap_content" app:dividerColor="?borderMinor" app:dividerThickness="@dimen/border_100" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_12dp">12.0dp</dimen>
+    <dimen name="font_size_14dp">14.0dp</dimen>
+    <dimen name="intro_picker_margin_top">16.0dp</dimen>
+    <dimen name="login_field_margin_top">24.0dp</dimen>
+    <dimen name="login_title_margin_top">8.0dp</dimen>
+    <dimen name="main_button_radius">16.0dp</dimen>
+    <dimen name="main_button_radius_decrement">2.0dp</dimen>
+    <dimen name="main_button_radius_large">32.0dp</dimen>
+    <dimen name="spacing_10x_or_11x">44.0dp</dimen>
+    <dimen name="spacing_13x_or_14x">56.0dp</dimen>
+    <dimen name="spacing_3x_or_4x">16.0dp</dimen>
+    <dimen name="spacing_4x_or_5x">20.0dp</dimen>
+    <dimen name="spacing_5x_or_7x">28.0dp</dimen>
+    <dimen name="spacing_5x_or_9x">36.0dp</dimen>
+    <dimen name="symptoms_popup_send_button_radius">32.0dp</dimen>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="day_insights_placeholder_ratio">H,124:103</string>
+    <string name="symptoms_card_ratio">W,103:124</string>
+</resources>

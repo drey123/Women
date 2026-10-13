@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/spacing_6x" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/dayInfoHeading" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4x" android:screenReaderFocusable="true" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textAppearance="@style/Title3Bold" android:id="@id/dayInfoDayTitleTextView" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_4x" android:layout_marginEnd="@dimen/size_15x" />
+            <LinearLayout android:id="@id/dayInfoStatus" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_1x" android:layout_marginHorizontal="@dimen/spacing_4x">
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/dayInfoStatusIconContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/size_2x">
+                    <ImageView android:id="@id/dayInfoStatusIconBackdrop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+                    <ImageView android:id="@id/dayInfoStatusIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+                </FrameLayout>
+                <org.iggymedia.periodtracker.core.markdown.view.MarkdownTextView android:textAppearance="@style/FootnoteRegular" android:textColor="?foregroundSecondary" android:layout_gravity="center_vertical" android:id="@id/dayInfoStatusTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/dayInfoCloseImageView" android:background="?selectableItemBackgroundBorderless" android:padding="@dimen/spacing_4x" android:layout_width="@dimen/size_15x" android:layout_height="@dimen/size_15x" android:contentDescription="@string/calendar_day_info_close_button_content_description" android:accessibilityTraversalAfter="@id/dayInfoHeading" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/medium_cancel_solid" app:tint="?foregroundMinor" />
+        <TextView android:textAppearance="@style/BodySemibold" android:textColor="?foregroundBrand" android:id="@id/dayInfoPregnancyInfoTextView" android:background="?selectableItemBackground" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/calendar_screen_pregnancy_info" android:paddingHorizontal="@dimen/spacing_4x" android:paddingVertical="@dimen/spacing_2x" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dayInfoHeading" />
+        <FrameLayout android:id="@id/dayInfoSymptomsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4x" app:layout_constraintTop_toBottomOf="@id/dayInfoPregnancyInfoTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

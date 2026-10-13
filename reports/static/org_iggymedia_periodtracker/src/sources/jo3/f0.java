@@ -1,0 +1,18 @@
+package jo3;
+
+import dagger.MembersInjector;
+import javax.inject.Provider;
+import org.iggymedia.periodtracker.core.promo.ui.standalone.PromoScreenFactory;
+import org.iggymedia.periodtracker.ui.pregnancy.start.PregnancyWeekSelectActivity;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes8.dex */
+public abstract class f0 implements MembersInjector {
+    public static void a(PregnancyWeekSelectActivity pregnancyWeekSelectActivity, Provider provider) {
+        pregnancyWeekSelectActivity.presenterProvider = provider;
+    }
+
+    public static void b(PregnancyWeekSelectActivity pregnancyWeekSelectActivity, PromoScreenFactory promoScreenFactory) {
+        pregnancyWeekSelectActivity.promoScreenFactory = promoScreenFactory;
+    }
+}

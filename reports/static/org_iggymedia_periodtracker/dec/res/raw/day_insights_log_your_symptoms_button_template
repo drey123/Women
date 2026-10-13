@@ -1,0 +1,33 @@
+{
+  "type": "aspect",
+  "ratio": 0.8325,
+  "layout": {
+    "flex_item": {
+      "flex_shrink": 0
+    }
+  },
+  "style": {
+    "drop_shadow": "shadow.level2"
+  },
+  "child": {
+    "type": "carousel.log_symptoms_button",
+    "date": "{{LOG_YOUR_SYMPTOMS_BUTTON_DATE}}",
+    "style": {
+      "$style:corner_radius": "radius2x"
+    },
+    "layout": {
+      "margin_end": 4,
+      "margin_start": 4,
+      "margin_top": 4,
+      "margin_bottom": 4,
+      "layered_item": {
+        "width_mode": "match_parent",
+        "height_mode": "match_parent"
+      }
+    },
+    "action_click": {
+        "type": "open_url",
+        "url": "floperiodtracker://symptoms?date={{LOG_YOUR_SYMPTOMS_BUTTON_DATE}}"
+    }
+  }
+}

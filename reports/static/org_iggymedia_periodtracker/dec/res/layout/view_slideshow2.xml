@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/slideshowPager" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/size_6x" android:paddingEnd="@dimen/size_6x" />
+    <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundSecondary" android:gravity="center" android:id="@id/slideshowPageIndicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_3x" android:layout_marginBottom="@dimen/size_3x" />
+</LinearLayout>

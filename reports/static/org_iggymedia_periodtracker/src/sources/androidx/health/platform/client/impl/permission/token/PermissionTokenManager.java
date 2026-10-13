@@ -1,0 +1,26 @@
+package androidx.health.platform.client.impl.permission.token;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class PermissionTokenManager {
+    private static final String KEY_TOKEN = "token";
+    private static final String PREFERENCES_FILE_NAME = "PermissionTokenManager.healthdata";
+
+    private PermissionTokenManager() {
+    }
+
+    public static String getCurrentToken(Context context) {
+        return getSharedPreferences(context).getString(KEY_TOKEN, null);
+    }
+
+    private static SharedPreferences getSharedPreferences(Context context) {
+        return context.getSharedPreferences(PREFERENCES_FILE_NAME, 0);
+    }
+
+    public static void setCurrentToken(Context context, String str) {
+        getSharedPreferences(context).edit().putString(KEY_TOKEN, str).commit();
+    }
+}

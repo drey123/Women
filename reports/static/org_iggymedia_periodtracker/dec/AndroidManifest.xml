@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="37" android:compileSdkVersionCodename="17" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="org.iggymedia.periodtracker" platformBuildVersionCode="37" platformBuildVersionName="17">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="org.iggymedia.periodtracker.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="org.iggymedia.periodtracker.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.APP_EMAIL"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="mailto"/>
+        </intent>
+        <package android:name="com.google.android.apps.healthdata"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="healthapp.google.com" android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.samsung.android.mapsagent"/>
+    </queries>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.health.READ_HEALTH_DATA_IN_BACKGROUND"/>
+    <uses-permission android:name="android.permission.health.READ_ACTIVE_CALORIES_BURNED"/>
+    <uses-permission android:name="android.permission.health.READ_BASAL_BODY_TEMPERATURE"/>
+    <uses-permission android:name="android.permission.health.READ_BODY_TEMPERATURE"/>
+    <uses-permission android:name="android.permission.health.READ_CERVICAL_MUCUS"/>
+    <uses-permission android:name="android.permission.health.READ_DISTANCE"/>
+    <uses-permission android:name="android.permission.health.READ_EXERCISE"/>
+    <uses-permission android:name="android.permission.health.READ_HEART_RATE"/>
+    <uses-permission android:name="android.permission.health.READ_HEART_RATE_VARIABILITY"/>
+    <uses-permission android:name="android.permission.health.READ_HEIGHT"/>
+    <uses-permission android:name="android.permission.health.READ_INTERMENSTRUAL_BLEEDING"/>
+    <uses-permission android:name="android.permission.health.READ_MENSTRUATION"/>
+    <uses-permission android:name="android.permission.health.READ_OVULATION_TEST"/>
+    <uses-permission android:name="android.permission.health.READ_RESTING_HEART_RATE"/>
+    <uses-permission android:name="android.permission.health.READ_SEXUAL_ACTIVITY"/>
+    <uses-permission android:name="android.permission.health.READ_SLEEP"/>
+    <uses-permission android:name="android.permission.health.READ_STEPS"/>
+    <uses-permission android:name="android.permission.health.READ_TOTAL_CALORIES_BURNED"/>
+    <uses-permission android:name="android.permission.health.READ_WEIGHT"/>
+    <uses-permission android:name="android.permission.health.WRITE_BASAL_BODY_TEMPERATURE"/>
+    <uses-permission android:name="android.permission.health.WRITE_CERVICAL_MUCUS"/>
+    <uses-permission android:name="android.permission.health.WRITE_OVULATION_TEST"/>
+    <uses-permission android:name="android.permission.health.WRITE_SEXUAL_ACTIVITY"/>
+    <uses-permission android:name="android.permission.health.WRITE_SLEEP"/>
+    <uses-permission android:name="android.permission.health.WRITE_WEIGHT"/>
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.DETECT_SCREEN_CAPTURE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <permission android:name="org.iggymedia.periodtracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="org.iggymedia.periodtracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <application android:allowBackup="false" android:appComponentFactory="org.iggymedia.periodtracker.FloAppComponentsFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:enableOnBackInvokedCallback="true" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/flo_ic_launcher" android:label="@string/flo_app_name" android:largeHeap="true" android:name="org.iggymedia.periodtracker.PeriodTrackerApplication" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="true" android:supportsRtl="false" android:theme="@style/AppTheme">
+        <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel" android:value="default_channel_id"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <activity android:exported="true" android:name="org.iggymedia.periodtracker.core.weboauth.callback.WebOAuthCallbackActivity" android:theme="@style/Theme.Flo.Light.NoActionBar.Transparent">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="flo.health" android:path="/google-health-auth/android/callback" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="AF_STORE" android:value="google"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_analytics_storage" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_storage" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_user_data" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="true" android:name="org.iggymedia.periodtracker.feature.startup.ui.StartupDispatchingActivity" android:theme="@style/Theme.Flo.SplashScreen.StartupDispatching" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing">
+            <intent-filter>
+                <data android:scheme="flo"/>
+                <data android:host="start"/>
+                <data android:host="install"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/flo_ic_launcher_sale" android:name="org.iggymedia.periodtracker.activities.InitialActivitySale" android:targetActivity="org.iggymedia.periodtracker.feature.startup.ui.StartupDispatchingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/flo_ic_launcher_premium" android:name="org.iggymedia.periodtracker.activities.InitialActivityPremium" android:targetActivity="org.iggymedia.periodtracker.feature.startup.ui.StartupDispatchingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/flo_ic_launcher" android:name="org.iggymedia.periodtracker.activities.InitialActivity" android:targetActivity="org.iggymedia.periodtracker.feature.startup.ui.StartupDispatchingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.feature.main.ui.MainActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <meta-data android:name="preventMultipleInstances" android:value="true"/>
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="main"/>
+                <data android:host="community-home"/>
+                <data android:host="feed"/>
+                <data android:host="ask-flo-tab"/>
+                <data android:host="health-assistant-tab"/>
+                <data android:host="partner-mode-tab"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.calendar.StandaloneCalendarActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="cycle_calendar"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.ui.login.restorepassword.RestorePasswordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.password.PasswordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="app-lock"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.notifications.NotificationsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="notifications-settings"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.notifications.NotificationsDrugsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="pill-reminders"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.ui.notifications.NotificationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.notifications.IntervalNotificationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.notifications.NotificationDrugsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.lifestyle.LifestyleSettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.notifications.contraception.ContraceptionsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="contraception"/>
+                <data android:host="contraception-reminders"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.charts.GraphsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="symptoms-graph"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.charts.BbtChartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="symptoms-graph-temperature"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.charts.WeightChartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="symptoms-graph-weight"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.charts.ActivityChartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="symptoms-graph-activity"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.charts.WaterChartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="symptoms-graph-water"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.ui.cyclesettings.CycleSettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="org.iggymedia.periodtracker.feature.userprofile.ui.UserProfileActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.debug.main.DebugMainActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="org.iggymedia.periodtracker.feature.debug.user.ui.DebugMainUserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.debug.main.DebugMainUIActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.debug.main.DebugMainOtherActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.debug.main.DebugScheduledPillsRemindersActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.calendar.EditCalendarActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="edit_cycles" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.ui.password.CheckPasscodeActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.password.PasscodeActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.activities.userdata.RestoreUserDataActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.events.WaterOptionsSettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.newcharts.CycleLengthChartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.help.HelpInfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.pregnancy.settings.PregnancySettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.pregnancy.settings.dispatching.PregnancySettingsDispatchingActivity" android:noHistory="true" android:theme="@style/Theme.Flo.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="pregnancy-settings" android:scheme="floperiodtracker"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.ui.pregnancy.finish.PregnancyFinishCalendarActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.pregnancy.start.PregnancySwitchOnActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="pregnancy-activation"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.ui.pregnancy.start.PregnancyActivationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.pregnancy.start.PregnancyBanActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.pregnancy.start.PregnancyWeekSelectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.pregnancy.babyborn.BabyBornActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.pregnancy.finished.PregnancyEditFinishedActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.ui.authentication.AuthenticationActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <data android:host="signup" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.ui.authentication.login.ui.LoginToRestoreDataActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="org.iggymedia.periodtracker.ui.authentication.login.ui.LoginToCheckPasswordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <receiver android:enabled="true" android:exported="false" android:name="org.iggymedia.periodtracker.receivers.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.iggymedia.periodtracker.receivers.NotificationsReceiver"/>
+        <receiver android:name="org.iggymedia.periodtracker.receivers.EventNotificationsReceiver"/>
+        <receiver android:name="org.iggymedia.periodtracker.fcm.service.PushActionBroadcastReceiver"/>
+        <receiver android:name="org.iggymedia.periodtracker.fcm.service.PushActionDismissBroadcastReceiver"/>
+        <receiver android:name="org.iggymedia.periodtracker.receivers.NextDayReceiver"/>
+        <service android:exported="false" android:name="org.iggymedia.periodtracker.fcm.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="org.iggymedia.periodtracker.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="net.danlew.android.joda.JodaTimeInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:exported="true" android:name="org.iggymedia.periodtracker.wear.connector.server.WearableRpcConnectionService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.CHANNEL_EVENT"/>
+                <data android:host="*" android:pathPrefix="/message-channel-v0.0.1" android:scheme="wear"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="false" android:name="androidx.appcompat.app.AppLocalesMetadataHolderService">
+            <meta-data android:name="autoStoreLocales" android:value="true"/>
+        </service>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:foregroundServiceType="dataSync|shortService" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.additionalsettings.ui.AdditionalSettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="additional-settings" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.healthconnect.connect.ui.legacy.SetupHealthConnectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="connect-android-health-platform" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.healthconnect.connect.ui.datasources.DataSourcesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="connect-android-health-platform-v2" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.healthconnect.connect.ui.manage.HowToManageActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="data-sources-how-to-manage" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.healthconnect.connect.ui.deeplink.DeeplinkHealthConnectPermissionsActivity" android:theme="@style/Theme.Flo.Transparent">
+            <intent-filter>
+                <data android:host="health-connect-permissions" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="health-connect-settings" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.onboarding.ui.v2.OnboardingV2Activity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.onboarding.ui.FinishAffinityActivity" android:theme="@style/Theme.Flo.Transparent"/>
+        <activity android:name="org.iggymedia.periodtracker.feature.onboarding.dispatching.ui.OnboardingDispatchingActivity" android:theme="@style/Theme.Flo.Transparent"/>
+        <activity android:name="org.iggymedia.periodtracker.feature.onboarding.ui.OnboardingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.onboarding.ui.OnboardingDeeplinkActivity" android:theme="@style/Theme.Flo.Transparent">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="onboarding"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.onboarding.welcome.ui.WelcomeAnimationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar"/>
+        <activity android:exported="true" android:name="org.iggymedia.periodtracker.core.healthconnect.permissions.ui.HealthConnectRationaleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.SplashScreen">
+            <intent-filter>
+                <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:exported="true" android:name="org.iggymedia.periodtracker.core.healthconnect.AndroidURationaleActivity" android:permission="android.permission.START_VIEW_PERMISSION_USAGE" android:targetActivity="org.iggymedia.periodtracker.core.healthconnect.permissions.ui.HealthConnectRationaleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE"/>
+                <category android:name="android.intent.category.HEALTH_PERMISSIONS"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.feature.anonymous.mode.status.ui.AnonymousModeStatusActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="anonymous-mode" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="anonymous-mode-status" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.feature.anonymous.mode.wizard.ui.EnableAnonymousModeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.calendar.screen.CalendarScreenActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="monthly-calendar"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.calendar.uic.ui.UicCalendarActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="uic-calendar"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.temperature.insights.ui.TemperatureInsightsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="temperature-insights" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="org.iggymedia.periodtracker.feature.symptomspanel.ui.SymptomsPanelActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="symptoms" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="org.iggymedia.periodtracker.feature.symptomspanel.ui.SymptomsPanelBottomSheetActivity" android:theme="@style/Theme.Flo.Transparent" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="symptoms-compact" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.stories.ui.StoriesActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="stories" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.verticalfeed.ui.VerticalFeedActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="stories_video_feed" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:name="org.iggymedia.periodtracker.core.wear.notifications.NotificationsListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED"/>
+                <data android:host="*" android:pathPrefix="@string/wdl_rpc_notifications_path" android:scheme="wear"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.pregnancy.details.ui.PregnancyDetailsActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="pregnancy-details" android:scheme="floperiodtracker"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.feature.pregnancy.finish.ui.PregnancyFinishActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.wellbeing.ui.activity.WellBeingLevelActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="well-being-level"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.wellbeing.ui.activity.WellBeingLevelWithChatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="vawb"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.personalinsights.cyclehistory.ui.CycleHistoryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="cycle-history" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.personalinsights.cycledetails.ui.CycleDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="cycle-details" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.personalinsights.cycledetails.ui.CycleDetailsUicActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="cycle-details-uic" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.personalinsights.cyclehistory.ui.CycleHistoryUicActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="cycle-history-uic" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.symptomchecker.ui.activity.AllConditionsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="symptom-checks-conditions" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.feature.symptomchecker.ui.activity.ConditionIntentPageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="symptom-checks" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.messages.startnewchat.ui.StartNewChatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar.StartNewChat">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="start-new-chat"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.feature.virtualassistant.ui.VirtualAssistantActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="va"/>
+                <data android:host="va-history"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.virtualassistant.ui.VaImageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Dark.NoActionBar"/>
+        <receiver android:enabled="@bool/is_pregnancy_widget_enabled" android:exported="false" android:name="org.iggymedia.periodtracker.feature.pregnancy.widget.platform.PregnancyAppWidgetReceiver">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/pregnancy_widget_info"/>
+        </receiver>
+        <receiver android:enabled="@bool/is_pregnancy_widget_enabled" android:exported="false" android:name="org.iggymedia.periodtracker.feature.pregnancy.widget.platform.PregnancyWidgetTimeChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.pregnancy.widget.ui.configuration.PregnancyWidgetConfigurationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.social.ui.groups.SocialGroupDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="community-group-details" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.social.ui.groups.SocialGroupsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="community-groups-list" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.social.ui.comments.SocialCommentsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <data android:host="community-card" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.social.ui.replies.SocialRepliesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <data android:host="community-replies" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.social.ui.main.bookmarks.SocialBookmarksActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="community-bookmarks" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.feature.social.ui.imagepreview.SocialImagePreviewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="org.iggymedia.periodtracker.feature.social.ui.imagefullscreen.SocialImageFullscreenActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.social.ui.expertblog.SocialExpertBlogActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="community-expert-blog" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.ask.flo.content.ui.AskFloContentActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="ask-flo-content"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.ask.flo.content.ui.AskFloContentActivityV2" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="ask-flo-content-v2"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.feature.feed.ui.StandaloneFeedActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="standalonefeed"/>
+                <data android:host="standalonefeedtemp"/>
+                <data android:host="feed-cards"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.feature.feed.topics.ui.TopicActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="topic" android:scheme="floperiodtracker"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="org.iggymedia.periodtracker" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="org.iggymedia.periodtracker.feature.ouraconnector.ui.ConnectOuraRingSettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="oura-connect" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="flo.health" android:pathPrefix="/oura-auth/callback" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.content.preferences.ui.ContentPreferencesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="content-preferences" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.more.ui.MoreActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="more-menu" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="org.iggymedia.periodtracker.feature.inappreview.ui.activity.InAppReviewActivity" android:theme="@style/Theme.Flo.Transparent">
+            <intent-filter>
+                <data android:host="app-rating" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.feature.overview.ui.FeaturesOverviewActivity" android:theme="@style/Theme.Flo.Light.NoActionBar"/>
+        <activity android:name="org.iggymedia.periodtracker.feature.overview.ui.UicFeatureOverviewActivity" android:theme="@style/Theme.Flo.Light.NoActionBar.Transparent"/>
+        <activity android:name="org.iggymedia.periodtracker.feature.overview.ui.HtmlFeatureOverviewActivity" android:theme="@style/Theme.Flo.Light.NoActionBar.Transparent"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.avatarconstructor.ui.AvatarConstructorActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="community-avatar-constructor" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.social.profile.ui.SocialUserProfileActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="user-social-profile" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.social.profile.ui.EditSocialUserProfileActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="edit-social-profile" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.social.profile.ui.EditSocialUserTagsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="social-profile-tags-selection" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.social.profile.ui.nickname.EditSocialProfileNicknameActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="social-profile-nickname-selection" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.social.profile.ui.EditSocialUserBackgroundActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="social-profile-image-selection" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.age.change.ui.AgeChangeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="age-change" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.authentication.management.menu.ui.AccountManagementOptionsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="manage-account-menu" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.authentication.management.password.ui.ChangePasswordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="manage-account-password" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.authentication.management.email.ui.ChangeEmailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="manage-account-email" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.authentication.management.userid.ui.UserIdActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.authentication.simplewebauth.ui.SimpleWebAuthActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="simple-web-auth" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.authentication.deeplink.AuthDeeplinkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <data android:host="auth" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.feature.gdpr.ui.GdprActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.mfa.ui.MfaActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="multifactor-authentication" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.feature.signuppromo.popup.ui.SignUpPopupActivity" android:theme="@style/Theme.Flo.Transparent"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.signuppromo.splash.ui.SignUpPromoSplashActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="signup-promo" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.signuppromo.registration.ui.CreateAccountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="create-account" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.manageuserdata.ui.ManageUserDataActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar.ManageUserData" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="manage-user-data" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="false" android:name="org.iggymedia.periodtracker.core.sleeptracking.platform.SleepDataReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="org.iggymedia.periodtracker.core.sleeptracking.platform.BootReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.family.management.ui.FamilySubscriptionManagementActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="manage-family" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.family.member.ui.JoinFamilyActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="join-family" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="org.iggymedia.periodtracker.feature.partner.mode.ui.PartnerModeModalActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="share-partner-code" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.partner.mode.ui.stop.StopSharingDialogActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="partner-mode-sharing-stop" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.partner.mode.ui.cancel.CancelInviteDialogActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="org.iggymedia.periodtracker.feature.promo.ui.html.HtmlPromoActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="purchase" android:scheme="floperiodtracker"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.subscriptionhub.ui.SubscriptionHubActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="subscription-hub" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.relogin.ui.ReloginPropositionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="relogin-proposition" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.account.deletion.ui.AccountDeletionActivity" android:theme="@style/Theme.Flo.Transparent">
+            <intent-filter>
+                <data android:host="account-deletion" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.account.deletion.ui.AccountDeletionSurveyActivity" android:theme="@style/Theme.Flo.Transparent">
+            <intent-filter>
+                <data android:host="account-deletion-survey" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.consents.ui.ConsentsManagementActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="manage-consents-menu" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.feature.accessCode.promo.ui.AppLockPromoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="org.iggymedia.periodtracker.core.activitytracking.platform.ActivityTransitionReceiver"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.referralprogram.getcode.ui.GetReferralCodeActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="get-referral-code" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="share-referral-code" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.iggymedia.periodtracker.feature.paymentissue.ui.PaymentIssueActivity" android:theme="@style/Theme.Flo.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.survey.ui.SurveyActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <data android:host="survey" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.support.ui.HelpCenterProxyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="help-center" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@style/Theme.Translucent.NoTitleBar.Floating"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.notifications.permission.ui.NotificationsPermissionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Transparent" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="push-notification-permission"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.reminders.list.ui.RemindersActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="reminders"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.calendar.settings.ui.CalendarSettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="calendar-settings"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.goalswitcher.ui.GoalSwitcherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Transparent" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="change-user-mode"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="org.iggymedia.periodtracker.core.googlehealth.ui.DeeplinkGoogleHealthAppActivity" android:theme="@style/Theme.Flo.Transparent">
+            <intent-filter>
+                <data android:host="google-health-app" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.core.search.screen.ui.SearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="search"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.core.search.results.seeall.uic.ui.SeeAllActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="search-see-all-uic"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.core.ui.constructor.system.permissions.ui.RequestSystemPermissionsActivity" android:theme="@style/Theme.Flo.Light.NoActionBar.Transparent"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.image.viewer.ui.ImageViewerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <data android:host="image-viewer" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.timeline.ui.TimelineActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="timeline" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.edit.sleep.ui.EditSleepActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="edit-sleep"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="org.iggymedia.periodtracker.core.floauth.callback.FloAuthCallbackActivity" android:theme="@style/Theme.Flo.Transparent">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="auth.flo.health" android:path="/auth/org.iggymedia.periodtracker/callback" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize|layoutDirection" android:exported="false" android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.feature.video.ui.VideoActivity" android:screenOrientation="fullUser" android:theme="@style/Theme.Flo.Light.NoActionBar.FullScreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="video" android:scheme="floperiodtracker"/>
+            </intent-filter>
+        </activity>
+        <service android:foregroundServiceType="mediaPlayback" android:name="org.iggymedia.periodtracker.core.video.service.MediaService"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.externalbrowser.ui.OpenUrlActivity" android:noHistory="true" android:theme="@style/Theme.Flo.Transparent">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="open-url"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.flori.settings.ui.FloriSettingsActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:scheme="floperiodtracker"/>
+                <data android:host="flori"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.language.settings.ui.ChangeLanguageActivity" android:theme="@style/Theme.Flo.Light.NoActionBar">
+            <intent-filter>
+                <data android:host="language-settings" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="org.iggymedia.periodtracker.core.weboauth.web.WebOAuthHostActivity" android:theme="@style/Theme.Flo.Transparent"/>
+        <activity android:exported="false" android:name="org.iggymedia.periodtracker.feature.webpage.ui.WebViewActivity" android:theme="@style/Theme.Flo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <data android:host="webpage" android:scheme="floperiodtracker"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="org.iggymedia.periodtracker.feature.deferreddeeplink.ui.DeferredDeeplinkActivity" android:theme="@style/Theme.Flo.Transparent">
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="https"/>
+                <data android:host="@string/appsflyer_ddl_host"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.appsflyer.FacebookApplicationId" android:value="@string/facebook_application_id"/>
+        <receiver android:enabled="@bool/apps_flyer_install_referrer_enabled" android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="com.auth0.android.provider.RedirectActivity" android:theme="@style/Theme.Flo.Transparent">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="acul.owhealth.com" android:path="/android" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.auth0.android.provider.AuthenticationActivity" android:theme="@style/Theme.Flo.Transparent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|density|fontScale" android:name="org.iggymedia.periodtracker.core.proxyactivity.ProxyActivity" android:theme="@style/Theme.Flo.Transparent"/>
+        <activity android:name="org.iggymedia.periodtracker.core.proxyactivity.error.ProxyErrorActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Light.NoActionBar"/>
+        <activity android:name="org.iggymedia.periodtracker.core.proxyactivity.loading.ProxyLoadingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Flo.Transparent"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <meta-data android:name="io.sentry.traces.activity.enable" android:value="true"/>
+        <meta-data android:name="io.sentry.traces.activity.auto-finish.enable" android:value="false"/>
+        <meta-data android:name="io.sentry.traces.time-to-full-display.enable" android:value="true"/>
+        <activity android:exported="true" android:name="org.iggymedia.periodtracker.feature.applink.ui.AppLinkActivity" android:theme="@style/Theme.Flo.SplashScreen">
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="flo.health"/>
+                <data android:path="/app_feature.html"/>
+                <data android:path="/app_feature"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identityauth.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identitycredentials.IdentityCredentialApiHiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="9.1.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.gms.fitness.sdk.version" android:value="21.2.0"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="false" android:name="androidx.glance.appwidget.action.ActionTrampolineActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:enabled="true" android:exported="false" android:launchMode="singleInstance" android:name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity" android:noHistory="true" android:taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline" android:theme="@style/Widget.Glance.AppWidget.CallbackTrampoline"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.UnmanagedSessionReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.MyPackageReplacedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="androidx.glance.appwidget.GlanceRemoteViewsService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:enabled="true" android:exported="true" android:name="androidx.health.platform.client.impl.sdkservice.HealthDataSdkService">
+            <intent-filter>
+                <action android:name="androidx.health.platform.client.ACTION_BIND_SDK_SERVICE"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <provider android:authorities="org.iggymedia.periodtracker.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="org.iggymedia.periodtracker.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <service android:name="androidx.core.widget.RemoteViewsCompatService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="io.sentry.gradle-plugin-integrations" android:value="AppStartInstrumentation"/>
+        <meta-data android:name="io.sentry.proguard-uuid" android:value="327df23b-6d51-48a9-a37d-155c865c9a58"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

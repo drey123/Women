@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?backgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:title="@string/common_graph_screen_cycle_length" app:titleTextAppearance="@style/HeadlineSemibold" />
+    <RelativeLayout android:id="@id/measurementLayout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+        <TextView android:textAppearance="@style/BodyRegular" android:textColor="?foregroundPrimary" android:id="@id/daysCountMeasurementTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="32.0dp" android:layout_alignParentStart="true" />
+        <TextView android:textAppearance="@style/BodyBold" android:textColor="?foregroundPrimary" android:id="@id/daysTextMeasurementTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/daysCountMeasurementTextView" android:paddingStart="8.0dp" android:paddingEnd="16.0dp" android:layout_toEndOf="@id/daysCountMeasurementTextView" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvChartsCLC" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/toolbar" android:overScrollMode="never" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llNoCyclesLayoutPartCLC" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/placeholderImage" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@null" />
+        <TextView android:textAppearance="@style/BodyRegular" android:gravity="center_horizontal" android:id="@id/placeholderLogCycleTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/common_graph_screen_placeholder_log_cycle" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+        <TextView android:textColor="@color/turquoise" android:gravity="center_horizontal" android:id="@id/logCycle" android:layout_marginTop="16.0dp" android:text="@string/common_graph_screen_placeholder_log_cycle_action" android:maxLines="1" android:singleLine="true" style="@style/TextButtonStyle" />
+    </LinearLayout>
+    <View android:id="@id/vStickyTopSeparatorCLC" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/toolbar" />
+    <ProgressBar android:id="@id/pbChartsCLC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/bottomBar" android:background="?backgroundPrimary" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:alpha="@dimen/alpha_bottom_bar" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

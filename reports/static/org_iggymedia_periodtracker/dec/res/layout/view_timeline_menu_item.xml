@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" app:gravity="right"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="?foregroundPrimaryWhite" android:layout_gravity="center_vertical" android:id="@id/menuItemTextView" android:padding="@dimen/spacing_4x" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BodySemibold" />
+</FrameLayout>

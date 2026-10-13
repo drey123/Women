@@ -1,0 +1,432 @@
+.class public final Lle3/c$a;
+.super Ldh/k;
+.source "r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lle3/c;->g(Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;Lio/reactivex/functions/Consumer;Lkotlinx/coroutines/CoroutineScope;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public d:Ljava/lang/Object;
+
+.field public e:I
+
+.field public final synthetic i:Lle3/c;
+
+.field public final synthetic v:Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;
+
+
+# direct methods
+.method public constructor <init>(Lle3/c;Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lle3/c$a;->i:Lle3/c;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lle3/c$a;->v:Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;
+
+    .line 4
+    .line 5
+    const/4 p1, 0x2
+
+    .line 6
+    invoke-direct {p0, p1, p3}, Ldh/k;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 1
+
+    .line 1
+    new-instance p1, Lle3/c$a;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lle3/c$a;->i:Lle3/c;
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lle3/c$a;->v:Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;
+
+    .line 6
+    .line 7
+    invoke-direct {p1, v0, p0, p2}, Lle3/c$a;-><init>(Lle3/c;Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;Lkotlin/coroutines/Continuation;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 14
+    check-cast p1, Lkotlinx/coroutines/CoroutineScope;
+
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1, p2}, Lle3/c$a;->invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lle3/c$a;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    check-cast p0, Lle3/c$a;
+
+    .line 6
+    .line 7
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 8
+    .line 9
+    invoke-virtual {p0, p1}, Lle3/c$a;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
+
+    .line 1
+    invoke-static {}, Lch/c;->g()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget v1, p0, Lle3/c$a;->e:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    const/4 v3, 0x1
+
+    .line 9
+    if-eqz v1, :cond_1
+
+    .line 10
+    .line 11
+    if-ne v1, v3, :cond_0
+
+    .line 12
+    .line 13
+    iget-object v0, p0, Lle3/c$a;->d:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    check-cast v0, Lve3/d;
+
+    .line 16
+    .line 17
+    invoke-static {p1}, Lxg/r;->b(Ljava/lang/Object;)V
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_0
+    const-string p0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 22
+    .line 23
+    invoke-static {p0}, Lvl/j0;->a(Ljava/lang/String;)V
+
+    .line 24
+    .line 25
+    .line 26
+    return-object v2
+
+    .line 27
+    :cond_1
+    invoke-static {p1}, Lxg/r;->b(Ljava/lang/Object;)V
+
+    .line 28
+    .line 29
+    .line 30
+    iget-object p1, p0, Lle3/c$a;->i:Lle3/c;
+
+    .line 31
+    .line 32
+    invoke-static {p1}, Lle3/c;->d(Lle3/c;)Lve3/d;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    iget-object v1, p0, Lle3/c$a;->i:Lle3/c;
+
+    .line 37
+    .line 38
+    invoke-static {v1}, Lle3/c;->c(Lle3/c;)Lorg/iggymedia/periodtracker/core/preferences/domain/interactor/GetMeasurementSystemUseCase;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v1
+
+    .line 42
+    iput-object p1, p0, Lle3/c$a;->d:Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    iput v3, p0, Lle3/c$a;->e:I
+
+    .line 45
+    .line 46
+    invoke-interface {v1, p0}, Lorg/iggymedia/periodtracker/core/preferences/domain/interactor/GetMeasurementSystemUseCase;->c(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v1
+
+    .line 50
+    if-ne v1, v0, :cond_2
+
+    .line 51
+    .line 52
+    return-object v0
+
+    .line 53
+    :cond_2
+    move-object v0, p1
+
+    .line 54
+    move-object p1, v1
+
+    .line 55
+    :goto_0
+    check-cast p1, Luv/a;
+
+    .line 56
+    .line 57
+    invoke-virtual {v0, p1}, Lve3/d;->a(Luv/a;)Laf3/i;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v8
+
+    .line 61
+    iget-object p1, p0, Lle3/c$a;->i:Lle3/c;
+
+    .line 62
+    .line 63
+    invoke-static {p1}, Lle3/c;->a(Lle3/c;)Lne3/e;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object p1
+
+    .line 67
+    iget-object v0, p0, Lle3/c$a;->v:Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;
+
+    .line 68
+    .line 69
+    invoke-virtual {v0}, Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;->e()F
+
+    .line 70
+    .line 71
+    .line 72
+    move-result v0
+
+    .line 73
+    iget-object v1, p0, Lle3/c$a;->v:Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;
+
+    .line 74
+    .line 75
+    invoke-virtual {v1}, Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;->d()F
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v1
+
+    .line 79
+    invoke-virtual {p1, v8, v0, v1}, Lne3/e;->a(Laf3/i;FF)Laf3/g;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object p1
+
+    .line 83
+    iget-object v0, p0, Lle3/c$a;->i:Lle3/c;
+
+    .line 84
+    .line 85
+    invoke-static {v0}, Lle3/c;->b(Lle3/c;)Lne3/g;
+
+    .line 86
+    .line 87
+    .line 88
+    move-result-object v0
+
+    .line 89
+    iget-object v1, p0, Lle3/c$a;->v:Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;
+
+    .line 90
+    .line 91
+    invoke-virtual {v1}, Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;->a()Ljava/lang/Float;
+
+    .line 92
+    .line 93
+    .line 94
+    move-result-object v1
+
+    .line 95
+    invoke-virtual {v0, v8, v1}, Lne3/g;->a(Laf3/i;Ljava/lang/Float;)Laf3/h;
+
+    .line 96
+    .line 97
+    .line 98
+    move-result-object v6
+
+    .line 99
+    invoke-virtual {p1}, Laf3/g;->b()Lkotlin/ranges/IntRange;
+
+    .line 100
+    .line 101
+    .line 102
+    move-result-object v4
+
+    .line 103
+    invoke-virtual {p1}, Laf3/g;->a()Lkotlin/ranges/IntRange;
+
+    .line 104
+    .line 105
+    .line 106
+    move-result-object v5
+
+    .line 107
+    iget-object p1, p0, Lle3/c$a;->v:Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;
+
+    .line 108
+    .line 109
+    invoke-virtual {p1}, Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;->f()Ljava/lang/String;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object p1
+
+    .line 113
+    if-eqz p1, :cond_3
+
+    .line 114
+    .line 115
+    invoke-static {p1}, Lorg/iggymedia/periodtracker/core/resourceresolver/query/b;->l(Ljava/lang/String;)Lorg/iggymedia/periodtracker/core/resourceresolver/query/Text;
+
+    .line 116
+    .line 117
+    .line 118
+    move-result-object v2
+
+    .line 119
+    :cond_3
+    move-object v9, v2
+
+    .line 120
+    iget-object p1, p0, Lle3/c$a;->v:Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;
+
+    .line 121
+    .line 122
+    invoke-virtual {p1}, Lorg/iggymedia/periodtracker/feature/virtualassistant/presentation/model/VaDialogMessageInputDO$j;->g()Ljava/lang/String;
+
+    .line 123
+    .line 124
+    .line 125
+    move-result-object p1
+
+    .line 126
+    invoke-static {p1}, Lorg/iggymedia/periodtracker/core/resourceresolver/query/b;->l(Ljava/lang/String;)Lorg/iggymedia/periodtracker/core/resourceresolver/query/Text;
+
+    .line 127
+    .line 128
+    .line 129
+    move-result-object v10
+
+    .line 130
+    new-instance v3, Laf3/f;
+
+    .line 131
+    .line 132
+    const/4 v7, 0x0
+
+    .line 133
+    invoke-direct/range {v3 .. v10}, Laf3/f;-><init>(Lkotlin/ranges/IntRange;Lkotlin/ranges/IntRange;Laf3/h;ZLaf3/i;Lorg/iggymedia/periodtracker/core/resourceresolver/query/Text;Lorg/iggymedia/periodtracker/core/resourceresolver/query/Text;)V
+
+    .line 134
+    .line 135
+    .line 136
+    iget-object p0, p0, Lle3/c$a;->i:Lle3/c;
+
+    .line 137
+    .line 138
+    invoke-static {p0}, Lle3/c;->e(Lle3/c;)Lorg/iggymedia/periodtracker/utils/flow/StateFlowWithoutInitialValue;
+
+    .line 139
+    .line 140
+    .line 141
+    move-result-object p0
+
+    .line 142
+    invoke-interface {p0, v3}, Lorg/iggymedia/periodtracker/utils/flow/StateFlowWithoutInitialValue;->e(Ljava/lang/Object;)V
+
+    .line 143
+    .line 144
+    .line 145
+    sget-object p0, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 146
+    .line 147
+    return-object p0
+.end method

@@ -1,0 +1,41 @@
+package com.google.android.gms.internal.measurement;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes4.dex */
+public enum u8 implements zzmj {
+    IAB_TCF_PURPOSE_UNKNOWN(0),
+    IAB_TCF_PURPOSE_STORE_AND_ACCESS_INFORMATION_ON_A_DEVICE(1),
+    IAB_TCF_PURPOSE_SELECT_BASIC_ADS(2),
+    IAB_TCF_PURPOSE_CREATE_A_PERSONALISED_ADS_PROFILE(3),
+    IAB_TCF_PURPOSE_SELECT_PERSONALISED_ADS(4),
+    IAB_TCF_PURPOSE_CREATE_A_PERSONALISED_CONTENT_PROFILE(5),
+    IAB_TCF_PURPOSE_SELECT_PERSONALISED_CONTENT(6),
+    IAB_TCF_PURPOSE_MEASURE_AD_PERFORMANCE(7),
+    IAB_TCF_PURPOSE_MEASURE_CONTENT_PERFORMANCE(8),
+    IAB_TCF_PURPOSE_APPLY_MARKET_RESEARCH_TO_GENERATE_AUDIENCE_INSIGHTS(9),
+    IAB_TCF_PURPOSE_DEVELOP_AND_IMPROVE_PRODUCTS(10),
+    IAB_TCF_PURPOSE_USE_LIMITED_DATA_TO_SELECT_CONTENT(11),
+    UNRECOGNIZED(-1);
+
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    public final int f32427d;
+
+    u8(int i14) {
+        this.f32427d = i14;
+    }
+
+    @Override // java.lang.Enum
+    public final String toString() {
+        return Integer.toString(this.f32427d);
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzmj
+    public final int zza() {
+        if (this != UNRECOGNIZED) {
+            return this.f32427d;
+        }
+        vl.h.a("Can't get the number of an unknown enum value.");
+        return 0;
+    }
+}

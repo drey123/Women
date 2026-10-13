@@ -1,0 +1,9 @@
+package com.google.android.gms.internal.play_billing;
+
+/* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
+/* JADX INFO: loaded from: classes.dex */
+public final class l7 extends Exception {
+    public l7(int i14, int i15) {
+        super("Unpaired surrogate at index " + i14 + " of " + i15);
+    }
+}

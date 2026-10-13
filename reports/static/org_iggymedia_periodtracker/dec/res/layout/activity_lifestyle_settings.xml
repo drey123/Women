@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:titleTextAppearance="@style/HeadlineSemibold" />
+    <ScrollView android:id="@id/lifestyleScrollView" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/user_goals_screen_sleep_title" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/sleepDurationLayout" style="@style/DefaultSettingsTextStyle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/sleepDurationLayout" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@id/sleepDurationValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="96.0dp" android:drawablePadding="8.0dp" style="@style/DefaultSettingsSpinnerStyle" />
+                    <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="wrap_content" app:dividerColor="?borderMinor" app:dividerThickness="@dimen/border_100" />
+                </LinearLayout>
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:text="@string/user_goals_screen_sleep_footer" style="@style/SettingsDescriptionStyle" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/user_goals_screen_water_title" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/waterLayout" style="@style/DefaultSettingsTextStyle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/waterLayout" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@id/waterValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="96.0dp" android:drawablePadding="8.0dp" style="@style/DefaultSettingsSpinnerStyle" />
+                    <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="wrap_content" app:dividerColor="?borderMinor" app:dividerThickness="@dimen/border_100" />
+                </LinearLayout>
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/waterGoalDescription" android:text="@string/user_goals_screen_water_footer_format" style="@style/SettingsDescriptionStyle" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/user_goals_screen_steps_title" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/stepLayout" style="@style/DefaultSettingsTextStyle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/stepLayout" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@id/stepTargetValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="96.0dp" android:drawablePadding="8.0dp" style="@style/DefaultSettingsSpinnerStyle" />
+                    <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="wrap_content" app:dividerColor="?borderMinor" app:dividerThickness="@dimen/border_100" />
+                </LinearLayout>
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:text="@string/user_goals_screen_steps_footer" style="@style/SettingsDescriptionStyle" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/weight_goal_screen_title" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/weightLayout" style="@style/DefaultSettingsTextStyle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/weightLayout" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@id/weightTargetValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="96.0dp" android:drawablePadding="8.0dp" style="@style/DefaultSettingsSpinnerStyle" />
+                    <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="wrap_content" app:dividerColor="?borderMinor" app:dividerThickness="@dimen/border_100" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/user_goals_screen_height_title" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/heightLayout" style="@style/DefaultSettingsTextStyle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/heightLayout" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@id/heightValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="96.0dp" android:drawablePadding="8.0dp" style="@style/DefaultSettingsSpinnerStyle" />
+                    <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="wrap_content" app:dividerColor="?borderMinor" app:dividerThickness="@dimen/border_100" />
+                </LinearLayout>
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:text="@string/height_screen_description" style="@style/SettingsDescriptionStyle" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/user_goals_screen_calories_title" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/caloriesLayout" style="@style/DefaultSettingsTextStyle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/caloriesLayout" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@id/caloriesValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="96.0dp" android:drawablePadding="8.0dp" style="@style/DefaultSettingsSpinnerStyle" />
+                    <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="wrap_content" app:dividerColor="?borderMinor" app:dividerThickness="@dimen/border_100" />
+                </LinearLayout>
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:text="@string/user_goals_screen_calories_footer" style="@style/SettingsDescriptionStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/systemNavigationOverlay" android:background="?backgroundSecondary" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.iggymedia.periodtracker.ui.charts.views.GridBackgroundView android:id="@id/gridBackgroundView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16.0dp" android:layout_marginBottom="32.0dp" android:layout_marginStart="56.0dp" app:dashEffect="false" app:gridLineSize="1.0dp" />
+    <androidx.viewpager.widget.ViewPager android:layout_gravity="start" android:id="@id/viewPager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="56.0dp" />
+    <org.iggymedia.periodtracker.ui.charts.views.AxisYView android:id="@id/graphAxisY" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="16.0dp" app:axisLineSize="1.0dp" app:axisTextAppearance="@style/Caption1Regular" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/graphLegendLayout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="16.0dp" android:animateLayoutChanges="true">
+        <me.grantland.widget.AutofitTextView android:textAppearance="@style/Caption1Regular" android:ellipsize="end" android:gravity="center" android:id="@id/predictionText" android:layout_width="56.0dp" android:layout_height="match_parent" android:text="@string/common_aim" android:maxLines="1" android:singleLine="true" />
+        <org.iggymedia.periodtracker.ui.charts.views.DashLineView android:layout_gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

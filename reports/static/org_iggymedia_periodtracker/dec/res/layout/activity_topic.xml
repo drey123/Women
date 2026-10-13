@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.iggymedia.periodtracker.core.ui.widget.ShimmerLayout android:id="@id/progress" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/container" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$Behavior">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap" app:titleEnabled="false">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/headerContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/ivTopicImage" android:background="?placeholderDefault" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="center" android:importantForAccessibility="no" app:layout_collapseMode="parallax" app:layout_constraintDimensionRatio="18:13" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <TextView android:textAppearance="@style/Title3Bold" android:ellipsize="end" android:id="@id/tvTopicTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_4x" android:maxLines="2" android:includeFontPadding="false" android:layout_marginStart="@dimen/spacing_4x" android:layout_marginEnd="@dimen/spacing_4x" app:layout_constraintBottom_toBottomOf="@id/ivTopicImage" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <org.iggymedia.periodtracker.core.ui.widget.TintingToolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:navigationIcon="@drawable/medium_back_stroke" app:titleTextAppearance="@style/HeadlineSemibold">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/HeadlineSemibold" android:ellipsize="end" android:id="@id/tvTopicToolbarTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginEnd="@dimen/spacing_4x" />
+                        <Space android:id="@id/spacerForBookmark" android:layout_width="@dimen/spacing_6x" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </org.iggymedia.periodtracker.core.ui.widget.TintingToolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@id/feedContainer" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/bottomBar" android:background="?backgroundSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <CheckBox android:gravity="center" android:id="@id/bookmarkCheckbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_1_5x" android:button="@drawable/selector_bookmark" android:layout_marginEnd="@dimen/spacing_1_5x" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ViewStub android:id="@id/errorPlaceholderStub" android:layout="@layout/view_error_placeholder_stub" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="?actionBarSize" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

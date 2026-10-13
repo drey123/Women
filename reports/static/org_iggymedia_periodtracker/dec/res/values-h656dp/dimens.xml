@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="day_insights_in_home_height">180.0dp</dimen>
+    <dimen name="symptoms_card_overlap_size_for_universal">13.0dp</dimen>
+    <dimen name="symptoms_card_stack_margin">@dimen/spacing_2_5x</dimen>
+</resources>

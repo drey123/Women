@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/FootnoteSemibold" android:textColor="?foregroundMinor" android:paddingTop="@dimen/size_5x" android:paddingBottom="@dimen/size_1x" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/size_5x" android:paddingEnd="@dimen/size_5x"
+  xmlns:android="http://schemas.android.com/apk/res/android" />
