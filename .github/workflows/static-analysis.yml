@@ -192,17 +192,12 @@ jobs:
         run: |
           git config user.name "audit-bot"
           git config user.email "audit-bot@users.noreply.github.com"
-          # Remove legacy decompiled trees from the index; they are not report artifacts.
-          git rm -r --cached --sparse --ignore-unmatch ':(glob)reports/static/*/dec/**' ':(glob)reports/static/*/src/**'
-          # Remove stale per-app evidence when this run's artifact says the app was not analysed;
-          # evidence from a previous run must not sit next to a fresh failure status.
-          for d in reports/static/*/; do
-            [ -f "${d}STATUS.md" ] || continue
-            grep -qE "Result: (NOT ANALYSED|ANALYSIS FAILED)" "${d}STATUS.md" || continue
-            rm -rf "${d}evidence"
-            rm -f "${d}exodus_scan.tsv" "${d}report.md"
-          done
-          git add --sparse -A reports/
+          # Preserve existing decompiled trees and historical evidence. Stage only the
+          # report artifacts that this publisher intentionally manages; broad "git add -A
+          # reports/" is unsafe with sparse checkout because omitted paths can look absent.
+          git add --sparse -- reports/exodus/exodus_live.json reports/exodus/exodus_live.md
+          find reports/static -type f \\( -name report.md -o -name STATUS.md -o -name exodus_scan.tsv \\) -print0 | xargs -0 -r git add --sparse --
+          find reports/static -type f -path '*/evidence/*' -print0 | xargs -0 -r git add --sparse --
           if git diff --cached --quiet; then
             echo "No report changes to commit."
             exit 0
