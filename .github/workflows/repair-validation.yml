@@ -52,13 +52,11 @@ jobs:
           bash -n tooling/analyze_static.sh
       - name: Check app matrix
         run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
-          text = Path(".github/workflows/static-analysis.yml").read_text()
-          block = text.split("        pkg:", 1)[1].split("\n    steps:", 1)[0]
-          packages = re.findall(r"^          - ([A-Za-z0-9_.]+)$", block, re.M)
-          assert len(packages) == 14, f"Expected 14 app packages, found {len(packages)}"
-          assert len(packages) == len(set(packages)), "Duplicate app package IDs found"
-          print(f"Validated {len(packages)} unique app package IDs")
-          PY
+          ruby -ryaml -e '
+            workflow = YAML.load_file(".github/workflows/static-analysis.yml")
+            packages = workflow.fetch("jobs").fetch("static").fetch("strategy").fetch("matrix").fetch("pkg")
+            abort "Expected 14 app packages, found #{packages.length}" unless packages.length == 14
+            abort "Duplicate app package IDs found" unless packages.uniq.length == packages.length
+            abort "Invalid package ID in matrix" unless packages.all? { |pkg| pkg.match?(/\\A[A-Za-z0-9_.]+\\z/) }
+            puts "Validated #{packages.length} unique app package IDs"
+          '
