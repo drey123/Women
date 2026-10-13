@@ -43,35 +43,73 @@ apktool d -f -q "$APK" -o "$DEC" > "$EX/apktool.log" 2>&1 || echo "apktool parti
 timeout 900 jadx -d "$SRC" --no-res --deobf-min 3 -j 4 "$APK" > "$EX/jadx.log" 2>&1 || echo "jadx partial failure (continuing)"
 
 # ---- 3. Exodus signature scan over smali + sources ----
-git clone --depth 1 -q https://github.com/Exodus-Privacy/exodus-core /tmp/exodus-core 2>/dev/null || true
-if [ -d /tmp/exodus-core ]; then
-  DEC_DIR="$DEC" python3 - <<'PYEOF' > "$OUT/exodus_scan.tsv"
-import re, os, subprocess, glob
+# exodus-core no longer ships per-tracker signature files (repo restructured);
+# the official scanner loads signatures from the public /api/trackers registry.
+TRACKERS_JSON="$WORK/exodus_trackers.json"
+CURLARGS=(--silent --location --max-time 120 --user-agent "Women-Privacy-Audit/1.1")
+if [ -n "${EXODUS_API_TOKEN:-}" ]; then
+  CURLARGS+=(--header "Authorization: Token ${EXODUS_API_TOKEN}")
+fi
+curl "${CURLARGS[@]}" "https://reports.exodus-privacy.eu.org/api/trackers" -o "$TRACKERS_JSON" || true
+SCAN_OK=0
+if [ -s "$TRACKERS_JSON" ]; then
+  DEC_DIR="$DEC" TRACKERS_JSON="$TRACKERS_JSON" python3 - <<'PYEOF' > "$OUT/exodus_scan.tsv"
+import json, os, subprocess, sys, tempfile
+data = json.load(open(os.environ["TRACKERS_JSON"], encoding="utf-8"))
+trackers = data.get("trackers", data) if isinstance(data, dict) else {}
+if not isinstance(trackers, dict) or not trackers:
+    sys.exit(3)
 sigs = {}
+for tid, t in trackers.items():
+    if not isinstance(t, dict):
+        continue
+    code = (t.get("code_signature") or "").strip()
+    name = (t.get("name") or str(tid)).strip()
+    if len(code) >= 8 and code not in sigs:
+        sigs[code] = name
+if not sigs:
+    sys.exit(3)
 scan_root = os.environ["DEC_DIR"]
-for f in glob.glob('/tmp/exodus-core/signatures/*.py'):
-    src = open(f, encoding='utf-8', errors='ignore').read()
-    for m in re.finditer(r'class\s+(\w+)\((?:User)?Signature\):.*?name\s*=\s*"([^"]+)".*?code_signature\s*=\s*"([^"]*)"', src, re.S):
-        cls, name, code = m.group(1), m.group(2), m.group(3)
-        if code:
-            sigs[cls] = (name, code)
+with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as pf:
+    for code in sigs:
+        pf.write(code + "\n")
+    patterns = pf.name
 print("tracker\tmatch_files\tcode_signature")
-for cls, (name, code) in sorted(sigs.items()):
+try:
+    cand = subprocess.run(["grep", "-rlF", "-f", patterns, scan_root],
+                          capture_output=True, text=True, timeout=900)
+    files = [f for f in cand.stdout.splitlines() if f.strip()]
+except Exception:
+    files = []
+counts = {code: 0 for code in sigs}
+for fpath in files:
     try:
-        r = subprocess.run(['grep', '-rlF', code, scan_root], capture_output=True, text=True, timeout=240)
-        n = len([line for line in r.stdout.splitlines() if line.strip()])
-    except Exception:
-        n = 0
-    if n > 0:
-        print(f"{name}\t{n}\t{code}")
+        text = open(fpath, encoding="utf-8", errors="ignore").read()
+    except OSError:
+        continue
+    for code in sigs:
+        if code in text:
+            counts[code] += 1
+for code in sorted(counts, key=lambda c: (-counts[c], sigs[c])):
+    if counts[code] > 0:
+        print(f"{sigs[code]}\t{counts[code]}\t{code}")
 PYEOF
+  [ $? -eq 0 ] && SCAN_OK=1
+fi
+if [ "$SCAN_OK" -eq 1 ] && [ -s "$OUT/exodus_scan.tsv" ]; then
+  NSIGS=$(python3 -c "import json;d=json.load(open('$TRACKERS_JSON'));ts=d.get('trackers',d);print(sum(1 for t in ts.values() if isinstance(t,dict) and len((t.get('code_signature') or '').strip())>=8))")
   echo "## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)" >> "$OUT/report.md"
+  echo "- Signatures checked: $NSIGS (source: reports.exodus-privacy.eu.org/api/trackers)" >> "$OUT/report.md"
   echo "| Tracker | Matching files | Code signature |" >> "$OUT/report.md"
   echo "|---|---|---|" >> "$OUT/report.md"
   tail -n +2 "$OUT/exodus_scan.tsv" | while IFS=$'\t' read -r t n s; do echo "| $t | $n | \`$s\` |" >> "$OUT/report.md"; done
   echo >> "$OUT/report.md"
   NTRACK=$(($(wc -l < "$OUT/exodus_scan.tsv") - 1))
   echo "**Tracker classes embedded in code: $NTRACK**" >> "$OUT/report.md"
+  echo >> "$OUT/report.md"
+else
+  echo "## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)" >> "$OUT/report.md"
+  echo "**Scan unavailable: tracker signature registry could not be fetched; any zero-tracker reading in this report is void, not evidence of cleanliness.**" >> "$OUT/report.md"
   echo >> "$OUT/report.md"
 fi
 
