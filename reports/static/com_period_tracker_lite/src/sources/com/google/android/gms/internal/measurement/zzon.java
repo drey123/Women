@@ -23,10 +23,12 @@ final class zzon extends zzoo {
         return zzop.zzb ? zzop.zzu(obj, j) : zzop.zzv(obj, j);
     }
 
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.measurement.zzop.zzw(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r4v0 boolean)' in method call: com.google.android.gms.internal.measurement.zzop.zzw(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.measurement.zzoo
     public final void zzc(Object obj, long j, boolean z) {
         if (zzop.zzb) {
-            zzop.zzD(obj, j, z ? (byte) 1 : (byte) 0);
+            zzop.zzw(obj, j, z);
         } else {
             zzop.zzE(obj, j, z ? (byte) 1 : (byte) 0);
         }

@@ -19,9 +19,11 @@ import androidx.constraintlayout.core.widgets.Optimizer;
 import androidx.constraintlayout.core.widgets.analyzer.BasicMeasure;
 import androidx.core.internal.view.SupportMenu;
 import androidx.core.view.ViewCompat;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import org.xmlpull.v1.XmlPullParserException;
 
 /* JADX INFO: loaded from: classes.dex */
 public class ConstraintLayout extends ViewGroup {
@@ -106,7 +108,7 @@ public class ConstraintLayout extends ViewGroup {
         return this.mDesignIds.get(str);
     }
 
-    public ConstraintLayout(Context context) {
+    public ConstraintLayout(Context context) throws XmlPullParserException, IOException {
         super(context);
         this.mChildrenByIds = new SparseArray<>();
         this.mConstraintHelpers = new ArrayList<>(4);
@@ -134,7 +136,7 @@ public class ConstraintLayout extends ViewGroup {
         init(null, 0, 0);
     }
 
-    public ConstraintLayout(Context context, AttributeSet attributeSet) {
+    public ConstraintLayout(Context context, AttributeSet attributeSet) throws XmlPullParserException, IOException {
         super(context, attributeSet);
         this.mChildrenByIds = new SparseArray<>();
         this.mConstraintHelpers = new ArrayList<>(4);
@@ -162,7 +164,7 @@ public class ConstraintLayout extends ViewGroup {
         init(attributeSet, 0, 0);
     }
 
-    public ConstraintLayout(Context context, AttributeSet attributeSet, int i) {
+    public ConstraintLayout(Context context, AttributeSet attributeSet, int i) throws XmlPullParserException, IOException {
         super(context, attributeSet, i);
         this.mChildrenByIds = new SparseArray<>();
         this.mConstraintHelpers = new ArrayList<>(4);
@@ -190,7 +192,7 @@ public class ConstraintLayout extends ViewGroup {
         init(attributeSet, i, 0);
     }
 
-    public ConstraintLayout(Context context, AttributeSet attributeSet, int i, int i2) {
+    public ConstraintLayout(Context context, AttributeSet attributeSet, int i, int i2) throws XmlPullParserException, IOException {
         super(context, attributeSet, i, i2);
         this.mChildrenByIds = new SparseArray<>();
         this.mConstraintHelpers = new ArrayList<>(4);
@@ -467,7 +469,7 @@ public class ConstraintLayout extends ViewGroup {
         }
     }
 
-    private void init(AttributeSet attributeSet, int i, int i2) {
+    private void init(AttributeSet attributeSet, int i, int i2) throws XmlPullParserException, IOException {
         this.mLayoutWidget.setCompanionWidget(this);
         this.mLayoutWidget.setMeasurer(this.mMeasurer);
         this.mChildrenByIds.put(getId(), this);
@@ -596,7 +598,7 @@ public class ConstraintLayout extends ViewGroup {
         return this.mMaxHeight;
     }
 
-    private boolean updateHierarchy() {
+    private boolean updateHierarchy() throws IllegalAccessException, NoSuchFieldException {
         int childCount = getChildCount();
         boolean z = false;
         for (int i = 0; i < childCount; i++) {
@@ -611,7 +613,7 @@ public class ConstraintLayout extends ViewGroup {
         return z;
     }
 
-    private void setChildrenConstraints() {
+    private void setChildrenConstraints() throws IllegalAccessException, NoSuchFieldException {
         ConstraintLayout constraintLayout;
         boolean zIsInEditMode = isInEditMode();
         int childCount = getChildCount();

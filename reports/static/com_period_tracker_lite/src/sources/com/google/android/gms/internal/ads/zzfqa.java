@@ -74,18 +74,19 @@ public final class zzfqa {
                     throw new zzfpz(4001, sb.toString());
                 }
                 synchronized (this.zzh) {
-                    zzfpp zzfppVar2 = this.zzg;
-                    if (zzfppVar2 != null) {
-                        try {
-                            zzfppVar2.zzg();
-                        } catch (zzfpz e) {
-                            this.zzd.zzc(e.zza(), -1L, e);
+                    try {
+                        zzfpp zzfppVar2 = this.zzg;
+                        if (zzfppVar2 != null) {
+                            try {
+                                zzfppVar2.zzg();
+                            } catch (zzfpz e) {
+                                this.zzd.zzc(e.zza(), -1L, e);
+                            }
                         }
                         this.zzg = zzfppVar;
-                    } else {
-                        this.zzg = zzfppVar;
+                    } catch (Throwable th) {
+                        throw th;
                     }
-                    throw th;
                 }
                 this.zzd.zzb(PathInterpolatorCompat.MAX_NUM_POINTS, System.currentTimeMillis() - jCurrentTimeMillis);
                 return true;

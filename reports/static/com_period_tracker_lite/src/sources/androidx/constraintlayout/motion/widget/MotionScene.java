@@ -814,7 +814,7 @@ public class MotionScene {
             this.mLayoutDuringTransition = motionScene.mLayoutDuringTransition;
         }
 
-        Transition(MotionScene motionScene, Context context, XmlPullParser xmlPullParser) {
+        Transition(MotionScene motionScene, Context context, XmlPullParser xmlPullParser) throws XmlPullParserException, IOException {
             this.mId = -1;
             this.mIsAbstract = false;
             this.mConstraintSetEnd = -1;
@@ -844,13 +844,13 @@ public class MotionScene {
             this.mDefaultInterpolatorID = i2;
         }
 
-        private void fillFromAttributeList(MotionScene motionScene, Context context, AttributeSet attributeSet) {
+        private void fillFromAttributeList(MotionScene motionScene, Context context, AttributeSet attributeSet) throws XmlPullParserException, IOException {
             TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, R.styleable.Transition);
             fill(motionScene, context, typedArrayObtainStyledAttributes);
             typedArrayObtainStyledAttributes.recycle();
         }
 
-        private void fill(MotionScene motionScene, Context context, TypedArray typedArray) {
+        private void fill(MotionScene motionScene, Context context, TypedArray typedArray) throws XmlPullParserException, IOException {
             int indexCount = typedArray.getIndexCount();
             for (int i = 0; i < indexCount; i++) {
                 int index = typedArray.getIndex(i);

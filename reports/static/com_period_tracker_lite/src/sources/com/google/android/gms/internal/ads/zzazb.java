@@ -171,26 +171,22 @@ final class zzazb implements Application.ActivityLifecycleCallbacks {
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivityDestroyed(Activity activity) {
         synchronized (this.zzc) {
-            try {
-                Activity activity2 = this.zza;
-                if (activity2 == null) {
-                    return;
+            Activity activity2 = this.zza;
+            if (activity2 == null) {
+                return;
+            }
+            if (activity2.equals(activity)) {
+                this.zza = null;
+            }
+            Iterator it = this.zzg.iterator();
+            while (it.hasNext()) {
+                try {
+                    ((zzdpu) it.next()).zzg(activity);
+                } catch (Exception e) {
+                    com.google.android.gms.ads.internal.zzt.zzh().zzg(e, "AppActivityTracker.ActivityListener.onActivityDestroyed");
+                    int i = com.google.android.gms.ads.internal.util.zze.zza;
+                    com.google.android.gms.ads.internal.util.client.zzo.zzg("", e);
                 }
-                if (activity2.equals(activity)) {
-                    this.zza = null;
-                }
-                Iterator it = this.zzg.iterator();
-                while (it.hasNext()) {
-                    try {
-                        ((zzdpu) it.next()).zzg(activity);
-                    } catch (Exception e) {
-                        com.google.android.gms.ads.internal.zzt.zzh().zzg(e, "AppActivityTracker.ActivityListener.onActivityDestroyed");
-                        int i = com.google.android.gms.ads.internal.util.zze.zza;
-                        com.google.android.gms.ads.internal.util.client.zzo.zzg("", e);
-                    }
-                }
-            } catch (Throwable th) {
-                throw th;
             }
         }
     }
