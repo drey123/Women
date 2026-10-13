@@ -7,6 +7,11 @@ APP="$1"; PKG="$2"; APK="$3"; REPORTS="$4"
 OUT="$REPORTS/$APP"
 mkdir -p "$OUT"
 EX="$OUT/evidence"; mkdir -p "$EX"
+# Decompiled sources can be hundreds of MB; keep them outside publishable reports.
+WORK=$(mktemp -d "/tmp/women-analysis-${APP}.XXXXXX")
+DEC="$WORK/dec"
+SRC="$WORK/src"
+trap 'rm -rf "$WORK"' EXIT
 
 echo "== $APP ($PKG) ==" | tee "$OUT/report.md"
 {
@@ -34,32 +39,74 @@ if [ -n "$AAPT2" ]; then
 fi
 
 # ---- 2. decompile ----
-apktool d -f -q "$APK" -o "$OUT/dec" > "$EX/apktool.log" 2>&1 || echo "apktool partial failure (continuing)"
-timeout 900 jadx -d "$OUT/src" --no-res --deobf-min 3 -j 4 "$APK" > "$EX/jadx.log" 2>&1 || echo "jadx partial failure (continuing)"
+apktool d -f -q "$APK" -o "$DEC" > "$EX/apktool.log" 2>&1 || echo "apktool partial failure (continuing)"
+timeout 900 jadx -d "$SRC" --no-res --deobf-min 3 -j 4 "$APK" > "$EX/jadx.log" 2>&1 || echo "jadx partial failure (continuing)"
 
 # ---- 3. Exodus signature scan over smali + sources ----
-git clone --depth 1 -q https://github.com/Exodus-Privacy/exodus-core /tmp/exodus-core 2>/dev/null || true
-if [ -d /tmp/exodus-core ]; then
-  python3 - <<'PYEOF' > "$OUT/exodus_scan.tsv"
-import re, os, subprocess, glob
+# exodus-core no longer ships per-tracker signature files (repo restructured);
+# the official scanner loads signatures from the public /api/trackers registry.
+TRACKERS_JSON="$WORK/exodus_trackers.json"
+CURLARGS=(--silent --location --max-time 120 --user-agent "Women-Privacy-Audit/1.1")
+if [ -n "${EXODUS_API_TOKEN:-}" ]; then
+  CURLARGS+=(--header "Authorization: Token ${EXODUS_API_TOKEN}")
+fi
+curl "${CURLARGS[@]}" "https://reports.exodus-privacy.eu.org/api/trackers" -o "$TRACKERS_JSON" || true
+SCAN_OK=0
+if [ -s "$TRACKERS_JSON" ]; then
+  DEC_DIR="$DEC" TRACKERS_JSON="$TRACKERS_JSON" python3 - <<'PYEOF' > "$OUT/exodus_scan.tsv"
+import json, os, subprocess, sys, tempfile
+data = json.load(open(os.environ["TRACKERS_JSON"], encoding="utf-8"))
+trackers = data.get("trackers", data) if isinstance(data, dict) else {}
+if not isinstance(trackers, dict) or not trackers:
+    sys.exit(3)
 sigs = {}
-for f in glob.glob('/tmp/exodus-core/signatures/*.py'):
-    src = open(f, encoding='utf-8', errors='ignore').read()
-    for m in re.finditer(r'class\s+(\w+)\((?:User)?Signature\):.*?name\s*=\s*"([^"]+)".*?code_signature\s*=\s*"([^"]*)"', src, re.S):
-        cls, name, code = m.group(1), m.group(2), m.group(3)
-        if code: sigs[cls] = (name, code)
-print(f"tracker\tmatch_files\tcode_signature")
-for cls, (name, code) in sorted(sigs.items()):
+for tid, t in trackers.items():
+    if not isinstance(t, dict):
+        continue
+    code = (t.get("code_signature") or "").strip()
+    name = (t.get("name") or str(tid)).strip()
+    if len(code) >= 8 and code not in sigs:
+        sigs[code] = name
+if not sigs:
+    sys.exit(3)
+scan_root = os.environ["DEC_DIR"]
+with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as pf:
+    for code in sigs:
+        pf.write(code + "\n")
+    patterns = pf.name
+print("tracker\tmatch_files\tcode_signature")
+try:
+    cand = subprocess.run(["grep", "-rlF", "-f", patterns, scan_root],
+                          capture_output=True, text=True, timeout=900)
+    files = [f for f in cand.stdout.splitlines() if f.strip()]
+except Exception:
+    files = []
+counts = {code: 0 for code in sigs}
+for fpath in files:
     try:
-        r = subprocess.run(['grep','-rlF',code,'OUTDIR_TOKEN'], capture_output=True, text=True, timeout=240)
-        n = len([l for l in r.stdout.splitlines() if l.strip()])
-    except Exception:
-        n = 0
-    if n > 0:
-        print(f"{name}\t{n}\t{code}")
+        text = open(fpath, encoding="utf-8", errors="ignore").read()
+    except OSError:
+        continue
+    for code in sigs:
+        if code in text:
+            counts[code] += 1
+for code in sorted(counts, key=lambda c: (-counts[c], sigs[c])):
+    if counts[code] > 0:
+        print(f"{sigs[code]}\t{counts[code]}\t{code}")
 PYEOF
-  sed -i "s|OUTDIR_TOKEN|$OUT|g" "$OUT/exodus_scan.tsv"
+  if python3 - "$TRACKERS_JSON" <<'PYCHECK'
+import json, sys
+d = json.load(open(sys.argv[1], encoding="utf-8"))
+ts = d.get("trackers", d) if isinstance(d, dict) else {}
+sys.exit(0 if isinstance(ts, dict) and ts else 3)
+PYCHECK
+  then SCAN_OK=1
+  fi
+fi
+if [ "$SCAN_OK" -eq 1 ] && [ -s "$OUT/exodus_scan.tsv" ]; then
+  NSIGS=$(python3 -c "import json;d=json.load(open('$TRACKERS_JSON'));ts=d.get('trackers',d);print(sum(1 for t in ts.values() if isinstance(t,dict) and len((t.get('code_signature') or '').strip())>=8))")
   echo "## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)" >> "$OUT/report.md"
+  echo "- Signatures checked: $NSIGS (source: reports.exodus-privacy.eu.org/api/trackers)" >> "$OUT/report.md"
   echo "| Tracker | Matching files | Code signature |" >> "$OUT/report.md"
   echo "|---|---|---|" >> "$OUT/report.md"
   tail -n +2 "$OUT/exodus_scan.tsv" | while IFS=$'\t' read -r t n s; do echo "| $t | $n | \`$s\` |" >> "$OUT/report.md"; done
@@ -67,39 +114,43 @@ PYEOF
   NTRACK=$(($(wc -l < "$OUT/exodus_scan.tsv") - 1))
   echo "**Tracker classes embedded in code: $NTRACK**" >> "$OUT/report.md"
   echo >> "$OUT/report.md"
+else
+  echo "## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)" >> "$OUT/report.md"
+  echo "**Scan unavailable: tracker signature registry could not be fetched; any zero-tracker reading in this report is void, not evidence of cleanliness.**" >> "$OUT/report.md"
+  echo >> "$OUT/report.md"
 fi
 
 # ---- 4. endpoints / URLs ----
-{ grep -rhoE 'https?://[A-Za-z0-9._~:/?#@!$&()*+,;=%-]+' "$OUT/dec/res/values/strings.xml" 2>/dev/null; \
-  grep -rhoE 'https?://[A-Za-z0-9._~:/?#@!$&()*+,;=%-]+' "$OUT/src" 2>/dev/null; } | \
+{ grep -rhoE 'https?://[A-Za-z0-9._~:/?#@!$&()*+,;=%-]+' "$DEC/res/values/strings.xml" 2>/dev/null; \
+  grep -rhoE 'https?://[A-Za-z0-9._~:/?#@!$&()*+,;=%-]+' "$SRC" 2>/dev/null; } | \
   sed -E 's#(https?://[^/]+).*#\1#' | sort | uniq -c | sort -rn | grep -viE 'schemas.android|w3.org|apache.org|example.com|xmlpull|json-schema|github.com/|google.com/feeds|tools.android' > "$EX/hosts.txt"
 echo "## Network hosts referenced in code/resources (top 100)" >> "$OUT/report.md"
 echo '```' >> "$OUT/report.md"; head -100 "$EX/hosts.txt" >> "$OUT/report.md"; echo '```' >> "$OUT/report.md"; echo >> "$OUT/report.md"
 
 # ---- 5. local data model (Room/SQLite), protobuf, remote config ----
 echo "## Local data model signals" >> "$OUT/report.md"
-echo "- Room @Entity classes: $(grep -rl '@Entity' "$OUT/src" 2>/dev/null | wc -l) (files: $(grep -rl '@Entity' "$OUT/src" 2>/dev/null | head -5 | tr '\n' ' '))" >> "$OUT/report.md"
-echo "- @Database classes: $(grep -rl '@Database' "$OUT/src" 2>/dev/null | wc -l)" >> "$OUT/report.md"
-echo "- protobuf generated classes: $(grep -rl 'com.google.protobuf.GeneratedMessage' "$OUT/src" 2>/dev/null | wc -l) files" >> "$OUT/report.md"
-echo "- SQLiteOpenHelper subclasses: $(grep -rl 'extends SQLiteOpenHelper' "$OUT/src" 2>/dev/null | wc -l)" >> "$OUT/report.md"
-echo "- FirebaseRemoteConfig usages: $(grep -r 'FirebaseRemoteConfig' "$OUT/src" 2>/dev/null | wc -l) lines" >> "$OUT/report.md"
+echo "- Room @Entity classes: $(grep -rl '@Entity' "$SRC" 2>/dev/null | wc -l) (files: $(grep -rl '@Entity' "$SRC" 2>/dev/null | head -5 | tr '\n' ' '))" >> "$OUT/report.md"
+echo "- @Database classes: $(grep -rl '@Database' "$SRC" 2>/dev/null | wc -l)" >> "$OUT/report.md"
+echo "- protobuf generated classes: $(grep -rl 'com.google.protobuf.GeneratedMessage' "$SRC" 2>/dev/null | wc -l) files" >> "$OUT/report.md"
+echo "- SQLiteOpenHelper subclasses: $(grep -rl 'extends SQLiteOpenHelper' "$SRC" 2>/dev/null | wc -l)" >> "$OUT/report.md"
+echo "- FirebaseRemoteConfig usages: $(grep -r 'FirebaseRemoteConfig' "$SRC" 2>/dev/null | wc -l) lines" >> "$OUT/report.md"
 echo >> "$OUT/report.md"
-grep -rhE '(setDefaultsAsync|defaultsMap|R\.xml\.remote_config)' "$OUT/src" 2>/dev/null | head -20 > "$EX/remote_config_defaults.txt" || true
+grep -rhE '(setDefaultsAsync|defaultsMap|R\.xml\.remote_config)' "$SRC" 2>/dev/null | head -20 > "$EX/remote_config_defaults.txt" || true
 
 # ---- 6. bundled certs + pinning ----
 echo "## Crypto/pinning posture" >> "$OUT/report.md"
-echo "- Bundled cert/keystore files: $(find "$OUT/dec/res/raw" "$OUT/dec/assets" -type f \( -name '*.cer' -o -name '*.crt' -o -name '*.bks' -o -name '*.pem' -o -name '*.p12' \) 2>/dev/null | wc -l) → $(find "$OUT/dec/res/raw" "$OUT/dec/assets" -type f \( -name '*.cer' -o -name '*.crt' -o -name '*.bks' -o -name '*.pem' -o -name '*.p12' \) 2>/dev/null | head -5 | tr '\n' ' ')" >> "$OUT/report.md"
-echo "- network_security_config present: $(find "$OUT/dec/res/xml" -name 'network_security_config*' 2>/dev/null | head -2 | tr '\n' ' ')" >> "$OUT/report.md"
-echo "- certificatePinner usages: $(grep -r 'certificatePinner' "$OUT/src" 2>/dev/null | wc -l)" >> "$OUT/report.md"
+echo "- Bundled cert/keystore files: $(find "$DEC/res/raw" "$DEC/assets" -type f \( -name '*.cer' -o -name '*.crt' -o -name '*.bks' -o -name '*.pem' -o -name '*.p12' \) 2>/dev/null | wc -l) → $(find "$DEC/res/raw" "$DEC/assets" -type f \( -name '*.cer' -o -name '*.crt' -o -name '*.bks' -o -name '*.pem' -o -name '*.p12' \) 2>/dev/null | head -5 | tr '\n' ' ')" >> "$OUT/report.md"
+echo "- network_security_config present: $(find "$DEC/res/xml" -name 'network_security_config*' 2>/dev/null | head -2 | tr '\n' ' ')" >> "$OUT/report.md"
+echo "- certificatePinner usages: $(grep -r 'certificatePinner' "$SRC" 2>/dev/null | wc -l)" >> "$OUT/report.md"
 echo >> "$OUT/report.md"
 
 # ---- 7. manifest: package/version/deep links ----
-if [ -f "$OUT/dec/AndroidManifest.xml" ]; then
+if [ -f "$DEC/AndroidManifest.xml" ]; then
   echo "## Manifest package/version" >> "$OUT/report.md"
   echo '```' >> "$OUT/report.md"
-  head -5 "$OUT/dec/AndroidManifest.xml" | grep -oE 'package="[^"]+"|versionName="[^"]+"|versionCode="[^"]+"' >> "$OUT/report.md" || true
+  head -5 "$DEC/AndroidManifest.xml" | grep -oE 'package="[^"]+"|versionName="[^"]+"|versionCode="[^"]+"' >> "$OUT/report.md" || true
   echo '```' >> "$OUT/report.md"
-  grep -c 'android:scheme' "$OUT/dec/AndroidManifest.xml" 2>/dev/null | xargs echo "deep-link scheme declarations:" >> "$OUT/report.md" || true
+  grep -c 'android:scheme' "$DEC/AndroidManifest.xml" 2>/dev/null | xargs echo "deep-link scheme declarations:" >> "$OUT/report.md" || true
 fi
 
 echo "DONE $APP"
