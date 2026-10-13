@@ -470,9 +470,9 @@ public final class VideoAudioPlayerScreenKt {
 
     public static final void w(ExoPlayer exoPlayer, AdContentAnalyticsUtil adContentAnalyticsUtil, MediaCarouselItemContent mediaCarouselItemContent, String str, MediaProgressModel mediaProgressModel, AnalyticsAction analyticsAction, String str2) {
         if (mediaProgressModel != null) {
-            adContentAnalyticsUtil.j(mediaCarouselItemContent, s(exoPlayer.getDuration()), s(exoPlayer.getCurrentPosition()), String.valueOf(mediaProgressModel.getWatchCount()), analyticsAction, str, (128 & 64) != 0 ? "" : str2, (128 & 128) != 0 ? false : false);
+            adContentAnalyticsUtil.j(mediaCarouselItemContent, s(exoPlayer.getDuration()), s(exoPlayer.getCurrentPosition()), String.valueOf(mediaProgressModel.getWatchCount()), analyticsAction, str, (64 & 64) != 0 ? "" : str2, (64 & 128) != 0 ? false : false);
         } else {
-            adContentAnalyticsUtil.j(mediaCarouselItemContent, s(exoPlayer.getDuration()), s(exoPlayer.getCurrentPosition()), "0", analyticsAction, str, (128 & 64) != 0 ? "" : str2, (128 & 128) != 0 ? false : false);
+            adContentAnalyticsUtil.j(mediaCarouselItemContent, s(exoPlayer.getDuration()), s(exoPlayer.getCurrentPosition()), "0", analyticsAction, str, (64 & 64) != 0 ? "" : str2, (64 & 128) != 0 ? false : false);
         }
     }
 

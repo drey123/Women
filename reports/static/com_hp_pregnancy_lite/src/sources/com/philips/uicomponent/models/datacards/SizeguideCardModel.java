@@ -30,13 +30,13 @@ public final class SizeguideCardModel extends DataCardModel implements ISizeGuid
 
     @Override // com.philips.uicomponent.models.datacards.DataCardModel, com.philips.uicomponent.models.base.IndexedBaseCardModel
     /* JADX INFO: renamed from: Q, reason: from getter */
-    public int getT() {
+    public int getK() {
         return this.T;
     }
 
     @Override // com.philips.uicomponent.models.datacards.DataCardModel, com.philips.uicomponent.models.base.IndexedBaseCardModel
     /* JADX INFO: renamed from: R, reason: from getter */
-    public int getP() {
+    public int getI() {
         return this.P;
     }
 
@@ -68,7 +68,7 @@ public final class SizeguideCardModel extends DataCardModel implements ISizeGuid
 
     @Override // com.philips.uicomponent.models.datacards.DataCardModel, com.philips.uicomponent.models.base.IndexedBaseCardModel, com.philips.uicomponent.models.base.BaseCardModel
     /* JADX INFO: renamed from: j, reason: from getter */
-    public CardTextModel getO() {
+    public CardTextModel getH() {
         return this.O;
     }
 
@@ -80,7 +80,7 @@ public final class SizeguideCardModel extends DataCardModel implements ISizeGuid
 
     @Override // com.philips.uicomponent.models.datacards.DataCardModel, com.philips.uicomponent.models.base.BaseCardModel
     /* JADX INFO: renamed from: n, reason: from getter */
-    public ArrayList getQ() {
+    public ArrayList getJ() {
         return this.Q;
     }
 

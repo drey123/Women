@@ -665,13 +665,13 @@ public final class ModalBottomSheetKt {
                     modifierB = modifierD;
                 }
                 Modifier modifierG = G(modifierH.u1(modifierB), modalBottomSheetStateJ);
-                AnchoredDraggableState anchoredDraggableStateH = modalBottomSheetStateJ.getAnchoredDraggableState();
+                AnchoredDraggableState anchoredDraggableState = modalBottomSheetStateJ.getAnchoredDraggableState();
                 if (z5 || modalBottomSheetStateJ.getAnchoredDraggableState().t() == modalBottomSheetValue) {
                     z7 = false;
                 } else {
                     z7 = true;
                 }
-                Modifier modifierE3 = AnchoredDraggableKt.e(modifierG, anchoredDraggableStateH, orientation2, z7, false, null, false, 56, null);
+                Modifier modifierE3 = AnchoredDraggableKt.e(modifierG, anchoredDraggableState, orientation2, z7, false, null, false, 56, null);
                 if (z5) {
                     composerJ.Y(352377090);
                     zG2 = composerJ.G(modalBottomSheetStateJ) | composerJ.G(coroutineScope);
@@ -1042,13 +1042,13 @@ public final class ModalBottomSheetKt {
                 modifierB = modifierD;
             }
             Modifier modifierG2 = G(modifierH2.u1(modifierB), modalBottomSheetStateJ);
-            AnchoredDraggableState anchoredDraggableStateH2 = modalBottomSheetStateJ.getAnchoredDraggableState();
+            AnchoredDraggableState anchoredDraggableState2 = modalBottomSheetStateJ.getAnchoredDraggableState();
             if (z5) {
                 z7 = false;
             } else {
                 z7 = false;
             }
-            Modifier modifierE6 = AnchoredDraggableKt.e(modifierG2, anchoredDraggableStateH2, orientation2, z7, false, null, false, 56, null);
+            Modifier modifierE6 = AnchoredDraggableKt.e(modifierG2, anchoredDraggableState2, orientation2, z7, false, null, false, 56, null);
             if (z5) {
                 composerJ.Y(352377090);
                 zG2 = composerJ.G(modalBottomSheetStateJ) | composerJ.G(coroutineScope);

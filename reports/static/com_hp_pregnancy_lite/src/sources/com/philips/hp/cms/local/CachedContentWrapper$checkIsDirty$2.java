@@ -53,38 +53,34 @@ public final class CachedContentWrapper$checkIsDirty$2 extends SuspendLambda imp
         CachedContentWrapper cachedContentWrapper = this.this$0;
         String str2 = this.$cmsId;
         synchronized (str) {
-            try {
-                DbRetry dbRetry = DbRetry.f17941a;
-                cursorJ = null;
-                z = false;
-                SQLiteDatabaseLockedException e = null;
-                int i = 0;
-                while (true) {
-                    if (i >= 5) {
-                        if (e != null) {
-                            throw e;
-                        }
-                        throw new IllegalStateException("DB operation failed");
+            DbRetry dbRetry = DbRetry.f17941a;
+            cursorJ = null;
+            z = false;
+            SQLiteDatabaseLockedException e = null;
+            int i = 0;
+            while (true) {
+                if (i >= 5) {
+                    if (e != null) {
+                        throw e;
                     }
-                    try {
-                        CachedContentDBHelper cachedContentDBHelper = cachedContentWrapper.c;
-                        if (cachedContentDBHelper == null) {
-                            break;
-                        }
-                        cursorJ = cachedContentDBHelper.j(str2);
-                        break;
-                    } catch (SQLiteDatabaseLockedException e2) {
-                        e = e2;
-                        i++;
-                        try {
-                            Thread.sleep(((long) i) * 50);
-                        } catch (InterruptedException e3) {
-                            Logger.g("DbRetry", "Thread interrupted during database retry sleep: " + e3.getMessage());
-                        }
-                    }
-                    throw th;
+                    throw new IllegalStateException("DB operation failed");
                 }
-            } catch (Throwable th) {
+                try {
+                    CachedContentDBHelper cachedContentDBHelper = cachedContentWrapper.c;
+                    if (cachedContentDBHelper == null) {
+                        break;
+                    }
+                    cursorJ = cachedContentDBHelper.j(str2);
+                    break;
+                } catch (SQLiteDatabaseLockedException e2) {
+                    e = e2;
+                    i++;
+                    try {
+                        Thread.sleep(((long) i) * 50);
+                    } catch (InterruptedException e3) {
+                        Logger.g("DbRetry", "Thread interrupted during database retry sleep: " + e3.getMessage());
+                    }
+                }
                 throw th;
             }
         }
@@ -100,9 +96,9 @@ public final class CachedContentWrapper$checkIsDirty$2 extends SuspendLambda imp
                 } catch (IllegalArgumentException unused) {
                     this.this$0.d.c("CachedContentWrapper", "checkIsDirty");
                 }
-            } catch (Throwable th2) {
+            } catch (Throwable th) {
                 cursorJ.close();
-                throw th2;
+                throw th;
             }
         } else if (cursorJ != null) {
             cursorJ.close();

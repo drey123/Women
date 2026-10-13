@@ -492,67 +492,63 @@ public class OSDatabase extends SQLiteOpenHelper implements IDatabase {
             return 0;
         }
         synchronized (LOCK) {
+            SQLiteDatabase sQLiteDatabaseWithRetries = getSQLiteDatabaseWithRetries();
             try {
-                SQLiteDatabase sQLiteDatabaseWithRetries = getSQLiteDatabaseWithRetries();
                 try {
+                    sQLiteDatabaseWithRetries.beginTransaction();
+                    iUpdate = sQLiteDatabaseWithRetries.update(table, values, whereClause, whereArgs);
+                    sQLiteDatabaseWithRetries.setTransactionSuccessful();
                     try {
-                        sQLiteDatabaseWithRetries.beginTransaction();
-                        iUpdate = sQLiteDatabaseWithRetries.update(table, values, whereClause, whereArgs);
-                        sQLiteDatabaseWithRetries.setTransactionSuccessful();
+                        sQLiteDatabaseWithRetries.endTransaction();
+                    } catch (SQLiteException e) {
+                        e = e;
+                        str2 = "Error closing transaction! ";
+                        Logging.error(str2, e);
+                    } catch (IllegalStateException e2) {
+                        e = e2;
+                        str = "Error closing transaction! ";
+                        Logging.error(str, e);
+                    }
+                } catch (Throwable th) {
+                    try {
                         try {
                             sQLiteDatabaseWithRetries.endTransaction();
-                        } catch (SQLiteException e) {
-                            e = e;
-                            str2 = "Error closing transaction! ";
-                            Logging.error(str2, e);
-                        } catch (IllegalStateException e2) {
-                            e = e2;
-                            str = "Error closing transaction! ";
-                            Logging.error(str, e);
+                        } catch (IllegalStateException e3) {
+                            Logging.error("Error closing transaction! ", e3);
                         }
-                    } catch (Throwable th) {
-                        try {
-                            try {
-                                sQLiteDatabaseWithRetries.endTransaction();
-                            } catch (IllegalStateException e3) {
-                                Logging.error("Error closing transaction! ", e3);
-                            }
-                        } catch (SQLiteException e4) {
-                            Logging.error("Error closing transaction! ", e4);
-                        }
-                        throw th;
+                    } catch (SQLiteException e4) {
+                        Logging.error("Error closing transaction! ", e4);
                     }
-                } catch (SQLiteException e5) {
-                    Logging.error("Error updating on table: " + table + " with whereClause: " + whereClause + " and whereArgs: " + whereArgs, e5);
-                    try {
-                        sQLiteDatabaseWithRetries.endTransaction();
-                    } catch (SQLiteException e6) {
-                        e = e6;
-                        str2 = "Error closing transaction! ";
-                        Logging.error(str2, e);
-                    } catch (IllegalStateException e7) {
-                        e = e7;
-                        str = "Error closing transaction! ";
-                        Logging.error(str, e);
-                    }
-                } catch (IllegalStateException e8) {
-                    Logging.error("Error under update transaction under table: " + table + " with whereClause: " + whereClause + " and whereArgs: " + whereArgs, e8);
-                    try {
-                        sQLiteDatabaseWithRetries.endTransaction();
-                    } catch (SQLiteException e9) {
-                        e = e9;
-                        str2 = "Error closing transaction! ";
-                        Logging.error(str2, e);
-                    } catch (IllegalStateException e10) {
-                        e = e10;
-                        str = "Error closing transaction! ";
-                        Logging.error(str, e);
-                    }
+                    throw th;
                 }
-                Unit unit = Unit.f24295a;
-            } catch (Throwable th2) {
-                throw th2;
+            } catch (SQLiteException e5) {
+                Logging.error("Error updating on table: " + table + " with whereClause: " + whereClause + " and whereArgs: " + whereArgs, e5);
+                try {
+                    sQLiteDatabaseWithRetries.endTransaction();
+                } catch (SQLiteException e6) {
+                    e = e6;
+                    str2 = "Error closing transaction! ";
+                    Logging.error(str2, e);
+                } catch (IllegalStateException e7) {
+                    e = e7;
+                    str = "Error closing transaction! ";
+                    Logging.error(str, e);
+                }
+            } catch (IllegalStateException e8) {
+                Logging.error("Error under update transaction under table: " + table + " with whereClause: " + whereClause + " and whereArgs: " + whereArgs, e8);
+                try {
+                    sQLiteDatabaseWithRetries.endTransaction();
+                } catch (SQLiteException e9) {
+                    e = e9;
+                    str2 = "Error closing transaction! ";
+                    Logging.error(str2, e);
+                } catch (IllegalStateException e10) {
+                    e = e10;
+                    str = "Error closing transaction! ";
+                    Logging.error(str, e);
+                }
             }
+            Unit unit = Unit.f24295a;
         }
         return iUpdate;
     }

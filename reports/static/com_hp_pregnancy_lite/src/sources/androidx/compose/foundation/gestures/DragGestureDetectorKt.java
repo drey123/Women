@@ -114,10 +114,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:71:0x00c0 A[EDGE_INSN: B:71:0x00c0->B:30:0x00c0 BREAK  A[LOOP:0: B:24:0x00a1->B:28:0x00ba], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0015  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:22:0x008d -> B:23:0x0093). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object J(androidx.compose.ui.input.pointer.AwaitPointerEventScope r19, long r20, kotlin.jvm.functions.Function1 r22, androidx.compose.foundation.gestures.Orientation r23, kotlin.jvm.functions.Function1 r24, kotlin.coroutines.Continuation r25) {
         /*
@@ -133,10 +134,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:26:0x0060  */
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:16:0x0048 -> B:18:0x004b). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object K(androidx.compose.ui.input.pointer.AwaitPointerEventScope r4, long r5, kotlin.jvm.functions.Function1 r7, kotlin.coroutines.Continuation r8) {
         /*
@@ -207,10 +209,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:75:0x00b9 A[EDGE_INSN: B:75:0x00b9->B:30:0x00b9 BREAK  A[LOOP:0: B:24:0x0097->B:28:0x00af], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0015  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:22:0x0083 -> B:23:0x0089). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object L(androidx.compose.ui.input.pointer.AwaitPointerEventScope r18, long r19, kotlin.jvm.functions.Function1 r21, kotlin.coroutines.Continuation r22) {
         /*
@@ -253,10 +256,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:75:0x00b9 A[EDGE_INSN: B:75:0x00b9->B:30:0x00b9 BREAK  A[LOOP:0: B:24:0x0097->B:28:0x00af], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0015  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:22:0x0083 -> B:23:0x0089). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object O(androidx.compose.ui.input.pointer.AwaitPointerEventScope r18, long r19, kotlin.jvm.functions.Function1 r21, kotlin.coroutines.Continuation r22) {
         /*
@@ -271,10 +275,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:65:0x00c6 A[SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0015  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:22:0x009d -> B:23:0x00a0). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object k(androidx.compose.ui.input.pointer.AwaitPointerEventScope r18, androidx.compose.ui.input.pointer.PointerInputChange r19, androidx.compose.ui.input.pointer.PointerEventPass r20, kotlin.coroutines.Continuation r21) {
         /*
@@ -289,10 +294,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:54:0x0095 A[EDGE_INSN: B:54:0x0095->B:29:0x0095 BREAK  A[LOOP:0: B:23:0x007b->B:27:0x0091], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0017  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:21:0x0067 -> B:22:0x006c). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object l(androidx.compose.ui.input.pointer.AwaitPointerEventScope r17, long r18, kotlin.coroutines.Continuation r20) {
         /*
@@ -307,10 +313,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:56:0x0095 A[EDGE_INSN: B:56:0x0095->B:29:0x0095 BREAK  A[LOOP:0: B:23:0x007b->B:27:0x0091], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0017  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:21:0x0067 -> B:22:0x006c). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object m(androidx.compose.ui.input.pointer.AwaitPointerEventScope r17, long r18, kotlin.coroutines.Continuation r20) {
         /*
@@ -325,10 +332,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:67:0x00fd A[EDGE_INSN: B:67:0x00fd->B:31:0x00fd BREAK  A[LOOP:0: B:25:0x00d9->B:29:0x00f2], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0017  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:60:0x01a4 -> B:61:0x01aa). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object n(androidx.compose.ui.input.pointer.AwaitPointerEventScope r20, long r21, int r23, kotlin.jvm.functions.Function2 r24, kotlin.coroutines.Continuation r25) {
         /*
@@ -343,10 +351,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:68:0x00f7 A[EDGE_INSN: B:68:0x00f7->B:31:0x00f7 BREAK  A[LOOP:0: B:25:0x00d5->B:29:0x00ee], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0017  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:60:0x0199 -> B:61:0x019f). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object o(androidx.compose.ui.input.pointer.AwaitPointerEventScope r17, long r18, kotlin.jvm.functions.Function2 r20, kotlin.coroutines.Continuation r21) {
         /*
@@ -460,10 +469,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:71:0x00fc A[EDGE_INSN: B:71:0x00fc->B:32:0x00fc BREAK  A[LOOP:0: B:26:0x00d8->B:30:0x00f1], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0017  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:63:0x019b -> B:13:0x004e). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object q(androidx.compose.ui.input.pointer.AwaitPointerEventScope r19, long r20, int r22, androidx.compose.foundation.gestures.Orientation r23, long r24, kotlin.jvm.functions.Function2 r26, kotlin.coroutines.Continuation r27) {
         /*
@@ -478,10 +488,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:68:0x00f6 A[EDGE_INSN: B:68:0x00f6->B:31:0x00f6 BREAK  A[LOOP:0: B:25:0x00d4->B:29:0x00ed], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0017  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:60:0x0190 -> B:61:0x0196). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object r(androidx.compose.ui.input.pointer.AwaitPointerEventScope r17, long r18, kotlin.jvm.functions.Function2 r20, kotlin.coroutines.Continuation r21) {
         /*
@@ -496,10 +507,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:56:0x0095 A[EDGE_INSN: B:56:0x0095->B:29:0x0095 BREAK  A[LOOP:0: B:23:0x007b->B:27:0x0091], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0017  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:21:0x0067 -> B:22:0x006c). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object s(androidx.compose.ui.input.pointer.AwaitPointerEventScope r17, long r18, kotlin.coroutines.Continuation r20) {
         /*
@@ -514,10 +526,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:67:0x00fd A[EDGE_INSN: B:67:0x00fd->B:31:0x00fd BREAK  A[LOOP:0: B:25:0x00d9->B:29:0x00f2], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0017  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:60:0x01a7 -> B:61:0x01ad). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object t(androidx.compose.ui.input.pointer.AwaitPointerEventScope r20, long r21, int r23, kotlin.jvm.functions.Function2 r24, kotlin.coroutines.Continuation r25) {
         /*
@@ -532,10 +545,11 @@ public final class DragGestureDetectorKt {
     /* JADX WARN: Code duplicated, block: B:68:0x00f7 A[EDGE_INSN: B:68:0x00f7->B:31:0x00f7 BREAK  A[LOOP:0: B:25:0x00d5->B:29:0x00ee], SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0017  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:60:0x019c -> B:61:0x01a2). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object u(androidx.compose.ui.input.pointer.AwaitPointerEventScope r17, long r18, kotlin.jvm.functions.Function2 r20, kotlin.coroutines.Continuation r21) {
         /*

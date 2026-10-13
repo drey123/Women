@@ -21,7 +21,8 @@ public final class Generator implements GeneratedValue {
     }
 
     @Override // androidx.constraintlayout.compose.GeneratedValue
-    public float value() {
+    /* JADX INFO: renamed from: value */
+    public float getValue() {
         if (!this.stop) {
             this.current += this.incrementBy;
         }

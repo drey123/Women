@@ -132,8 +132,8 @@ public final class ByteChannelSequentialJVM extends ByteChannelSequentialBase {
         if (!((Boolean) objD).booleanValue()) {
             throw new EOFException("Channel closed while " + i + " bytes expected");
         }
-        ByteReadPacket readable = byteChannelSequentialJVM.getReadable();
-        ChunkBuffer chunkBufferP = readable.P(i);
+        ByteReadPacket byteReadPacketD0 = byteChannelSequentialJVM.getReadable();
+        ChunkBuffer chunkBufferP = byteReadPacketD0.P(i);
         if (chunkBufferP == null) {
             StringsKt.a(i);
             throw new KotlinNothingValueException();
@@ -154,9 +154,9 @@ public final class ByteChannelSequentialJVM extends ByteChannelSequentialBase {
                 throw new IllegalStateException("Buffer's position shouldn't be rewinded");
             }
             if (readPosition3 == chunkBufferP.getWritePosition()) {
-                readable.o(chunkBufferP);
+                byteReadPacketD0.o(chunkBufferP);
             } else {
-                readable.q0(readPosition3);
+                byteReadPacketD0.q0(readPosition3);
             }
             return Unit.f24295a;
         } catch (Throwable th) {
@@ -165,9 +165,9 @@ public final class ByteChannelSequentialJVM extends ByteChannelSequentialBase {
                 throw new IllegalStateException("Buffer's position shouldn't be rewinded");
             }
             if (readPosition4 == chunkBufferP.getWritePosition()) {
-                readable.o(chunkBufferP);
+                byteReadPacketD0.o(chunkBufferP);
             } else {
-                readable.q0(readPosition4);
+                byteReadPacketD0.q0(readPosition4);
             }
             throw th;
         }
@@ -276,8 +276,8 @@ public final class ByteChannelSequentialJVM extends ByteChannelSequentialBase {
             byteChannelSequentialJVM = (ByteChannelSequentialJVM) byteChannelSequentialJVM$write$1.L$0;
             ResultKt.b(obj);
         }
-        BytePacketBuilder writable = byteChannelSequentialJVM.getWritable();
-        ChunkBuffer chunkBufferX = writable.x(i);
+        BytePacketBuilder bytePacketBuilderE0 = byteChannelSequentialJVM.getWritable();
+        ChunkBuffer chunkBufferX = bytePacketBuilderE0.x(i);
         try {
             ByteBuffer memory = chunkBufferX.getMemory();
             int writePosition = chunkBufferX.getWritePosition();
@@ -292,11 +292,11 @@ public final class ByteChannelSequentialJVM extends ByteChannelSequentialBase {
             if (iPosition < 0) {
                 throw new IllegalStateException("The returned value shouldn't be negative");
             }
-            writable.d();
+            bytePacketBuilderE0.d();
             byteChannelSequentialJVM.i0(iPosition);
             return Unit.f24295a;
         } catch (Throwable th) {
-            writable.d();
+            bytePacketBuilderE0.d();
             throw th;
         }
     }

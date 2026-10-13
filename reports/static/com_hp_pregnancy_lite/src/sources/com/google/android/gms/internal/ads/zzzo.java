@@ -17,17 +17,21 @@ final class zzzo {
     public final zzzu a(Object... objArr) {
         Constructor constructorZza;
         synchronized (this.b) {
-            if (!this.b.get()) {
-                try {
-                    constructorZza = this.f13981a.zza();
-                } catch (ClassNotFoundException unused) {
-                    this.b.set(true);
-                    constructorZza = null;
-                } catch (Exception e) {
-                    throw new RuntimeException("Error instantiating extension", e);
+            try {
+                if (!this.b.get()) {
+                    try {
+                        constructorZza = this.f13981a.zza();
+                    } catch (ClassNotFoundException unused) {
+                        this.b.set(true);
+                        constructorZza = null;
+                    } catch (Exception e) {
+                        throw new RuntimeException("Error instantiating extension", e);
+                    }
                 }
+                constructorZza = null;
+            } catch (Throwable th) {
+                throw th;
             }
-            constructorZza = null;
         }
         if (constructorZza == null) {
             return null;

@@ -476,7 +476,7 @@ public final class DiskLruCache implements Closeable {
         return editor;
     }
 
-    public synchronized Value t(String str) {
+    public synchronized Value t(String str) throws IOException {
         k();
         Entry entry = (Entry) this.j.get(str);
         if (entry == null) {

@@ -174,7 +174,7 @@ public abstract class BaseCardModel implements ICard {
     }
 
     /* JADX INFO: renamed from: j, reason: from getter */
-    public CardTextModel getO() {
+    public CardTextModel getH() {
         return this.f20541a;
     }
 
@@ -194,7 +194,7 @@ public abstract class BaseCardModel implements ICard {
     }
 
     /* JADX INFO: renamed from: n, reason: from getter */
-    public ArrayList getQ() {
+    public ArrayList getJ() {
         return this.j;
     }
 

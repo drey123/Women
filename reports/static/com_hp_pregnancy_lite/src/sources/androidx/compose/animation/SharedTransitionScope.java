@@ -121,9 +121,9 @@ public interface SharedTransitionScope extends LookaheadScope {
         }
 
         public final SharedContentState f() {
-            SharedElementEntry sharedElementEntryK = e().getParentState();
-            if (sharedElementEntryK != null) {
-                return sharedElementEntryK.u();
+            SharedElementEntry parentState = e().getParentState();
+            if (parentState != null) {
+                return parentState.u();
             }
             return null;
         }

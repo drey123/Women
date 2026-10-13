@@ -113,14 +113,18 @@ public class BandwidthMetrics {
     @NotNull
     public BandwidthMetricData onLoad(long loadTaskId, long loadStartTimeMs, long mediaStartTimeMs, long mediaEndTimeMs, @Nullable String segmentUrl, int dataType, int trackType, @Nullable String host, @Nullable String segmentMimeType, int segmentWidth, int segmentHeight) {
         synchronized (this.currentTimelineWindow) {
-            ExoPlayer player = getPlayer();
-            if (player != null) {
-                try {
-                    Intrinsics.g(player.N().n(player.v(), this.currentTimelineWindow));
-                } catch (Exception e) {
-                    MuxLogger.exception(e, "BandwidthMetrics", "Failed to get current timeline");
-                    Unit unit = Unit.f24295a;
+            try {
+                ExoPlayer player = getPlayer();
+                if (player != null) {
+                    try {
+                        Intrinsics.g(player.N().n(player.v(), this.currentTimelineWindow));
+                    } catch (Exception e) {
+                        MuxLogger.exception(e, "BandwidthMetrics", "Failed to get current timeline");
+                        Unit unit = Unit.f24295a;
+                    }
                 }
+            } catch (Throwable th) {
+                throw th;
             }
         }
         BandwidthMetricData bandwidthMetricData = new BandwidthMetricData();

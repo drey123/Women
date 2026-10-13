@@ -35,13 +35,13 @@ public final class CarouselCardModel extends IndexedBaseCardModel {
 
     @Override // com.philips.uicomponent.models.base.IndexedBaseCardModel
     /* JADX INFO: renamed from: Q, reason: from getter */
-    public int getT() {
+    public int getK() {
         return this.I;
     }
 
     @Override // com.philips.uicomponent.models.base.IndexedBaseCardModel
     /* JADX INFO: renamed from: R, reason: from getter */
-    public int getP() {
+    public int getI() {
         return this.G;
     }
 

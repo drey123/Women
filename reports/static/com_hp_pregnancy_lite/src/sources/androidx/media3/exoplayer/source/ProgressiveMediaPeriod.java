@@ -13,6 +13,7 @@ import androidx.media3.common.util.Log;
 import androidx.media3.common.util.ParsableByteArray;
 import androidx.media3.common.util.Util;
 import androidx.media3.datasource.DataSource;
+import androidx.media3.datasource.DataSourceUtil;
 import androidx.media3.datasource.DataSpec;
 import androidx.media3.datasource.StatsDataSource;
 import androidx.media3.decoder.DecoderInputBuffer;
@@ -38,9 +39,11 @@ import androidx.media3.extractor.metadata.icy.IcyHeaders;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableMap;
 import java.io.IOException;
+import java.io.InterruptedIOException;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -185,18 +188,79 @@ final class ProgressiveMediaPeriod implements MediaPeriod, ExtractorOutput, Load
             this.f = conditionVariable;
         }
 
-        /* JADX WARN: Bottom block not found for handler: all -> 0x005e */
         @Override // androidx.media3.exoplayer.upstream.Loader.Loadable
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
         public void a() {
-            /*
-                Method dump skipped, instruction units count: 351
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: androidx.media3.exoplayer.source.ProgressiveMediaPeriod.ExtractingLoadable.a():void");
+            long j;
+            int iE = 0;
+            String str = null;
+            while (iE == 0 && !this.h) {
+                try {
+                    long j2 = this.g.f6647a;
+                    DataSpec dataSpecI = i(j2, str);
+                    this.k = dataSpecI;
+                    long jOpen = this.c.open(dataSpecI);
+                    if (this.h) {
+                        if (iE != 1 && this.d.d() != -1) {
+                            this.g.f6647a = this.d.d();
+                        }
+                        DataSourceUtil.a(this.c);
+                        return;
+                    }
+                    List list = (List) this.c.getResponseHeaders().get("ETag");
+                    str = (list == null || list.isEmpty()) ? null : (String) list.get(0);
+                    if (jOpen != -1) {
+                        jOpen += j2;
+                        ProgressiveMediaPeriod.this.c0();
+                    }
+                    long j3 = jOpen;
+                    ProgressiveMediaPeriod.this.v = IcyHeaders.d(this.c.getResponseHeaders());
+                    DataReader icyDataSource = this.c;
+                    if (ProgressiveMediaPeriod.this.v != null && ProgressiveMediaPeriod.this.v.f != -1) {
+                        icyDataSource = new IcyDataSource(this.c, ProgressiveMediaPeriod.this.v.f, this);
+                        TrackOutput trackOutputR = ProgressiveMediaPeriod.this.R();
+                        this.l = trackOutputR;
+                        trackOutputR.c(ProgressiveMediaPeriod.F0);
+                    }
+                    this.d.c(icyDataSource, this.b, this.c.getResponseHeaders(), j2, j3, this.e);
+                    if (ProgressiveMediaPeriod.this.v != null) {
+                        this.d.b();
+                    }
+                    if (this.i) {
+                        j = j2;
+                        this.d.a(j, this.j);
+                        this.i = false;
+                    } else {
+                        j = j2;
+                    }
+                    long j4 = j;
+                    while (iE == 0 && !this.h) {
+                        try {
+                            this.f.a();
+                            iE = this.d.e(this.g);
+                            long jD = this.d.d();
+                            if (jD > ProgressiveMediaPeriod.this.j + j4) {
+                                this.f.e();
+                                ProgressiveMediaPeriod.this.t.post(ProgressiveMediaPeriod.this.s);
+                                j4 = jD;
+                            }
+                        } catch (InterruptedException unused) {
+                            throw new InterruptedIOException();
+                        }
+                    }
+                    if (iE == 1) {
+                        iE = 0;
+                    } else if (this.d.d() != -1) {
+                        this.g.f6647a = this.d.d();
+                    }
+                    DataSourceUtil.a(this.c);
+                } catch (Throwable th) {
+                    if (iE != 1 && this.d.d() != -1) {
+                        this.g.f6647a = this.d.d();
+                    }
+                    DataSourceUtil.a(this.c);
+                    throw th;
+                }
+            }
         }
 
         @Override // androidx.media3.exoplayer.source.IcyDataSource.Listener

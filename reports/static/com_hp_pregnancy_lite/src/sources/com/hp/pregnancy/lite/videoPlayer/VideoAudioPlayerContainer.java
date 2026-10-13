@@ -256,7 +256,7 @@ public final class VideoAudioPlayerContainer extends AppCompatActivity {
             AnalyticsAction analyticsAction = AnalyticsAction.FINISHED;
             String strD = J0().d();
             Intrinsics.i(strD, "getSeriesId(...)");
-            adContentAnalyticsUtilI0.j(mediaCarouselItemContent, strS, strS2, strValueOf, analyticsAction, strD, (128 & 64) != 0 ? "" : null, (128 & 128) != 0 ? false : true);
+            adContentAnalyticsUtilI0.j(mediaCarouselItemContent, strS, strS2, strValueOf, analyticsAction, strD, (64 & 64) != 0 ? "" : null, (64 & 128) != 0 ? false : true);
         }
     }
 

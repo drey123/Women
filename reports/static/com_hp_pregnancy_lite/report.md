@@ -3,7 +3,7 @@ Static analysis report — com_hp_pregnancy_lite
 - Package: `com.hp.pregnancy.lite`
 - APK: `/tmp/apk/com.hp.pregnancy.lite.apk` (96296232 bytes, sha256 `64187b6a8dfec9210a4784cbf537d2bf5c6135627dfedfb8123a54106b127b18`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:12:51Z | Runner: x86_64
+- Date: 2026-10-13T09:44:54Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```

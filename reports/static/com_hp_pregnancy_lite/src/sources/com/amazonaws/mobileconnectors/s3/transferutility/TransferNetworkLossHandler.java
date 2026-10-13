@@ -64,42 +64,46 @@ public class TransferNetworkLossHandler extends BroadcastReceiver {
 
     public final synchronized void g() {
         TransferRecord transferRecordD;
-        TransferState[] transferStateArr = {TransferState.WAITING_FOR_NETWORK};
-        d.a("Loading transfers from database...");
-        ArrayList<Integer> arrayList = new ArrayList();
-        Cursor cursorQ = null;
         try {
-            cursorQ = this.b.q(TransferType.ANY, transferStateArr);
-            int i = 0;
-            while (cursorQ.moveToNext()) {
-                int i2 = cursorQ.getInt(cursorQ.getColumnIndexOrThrow("_id"));
-                if (this.c.d(i2) == null) {
-                    TransferRecord transferRecord = new TransferRecord(i2);
-                    transferRecord.j(cursorQ);
-                    this.c.b(transferRecord);
-                    i++;
-                }
-                arrayList.add(Integer.valueOf(i2));
-            }
-            d.a("Closing the cursor for resumeAllTransfers");
-            cursorQ.close();
+            TransferState[] transferStateArr = {TransferState.WAITING_FOR_NETWORK};
+            d.a("Loading transfers from database...");
+            ArrayList<Integer> arrayList = new ArrayList();
+            Cursor cursorQ = null;
             try {
-                for (Integer num : arrayList) {
-                    AmazonS3 amazonS3A = S3ClientReference.a(num);
-                    if (amazonS3A != null && (transferRecordD = this.c.d(num.intValue())) != null && !transferRecordD.f()) {
-                        transferRecordD.i(amazonS3A, this.b, this.c, this.f8383a);
+                cursorQ = this.b.q(TransferType.ANY, transferStateArr);
+                int i = 0;
+                while (cursorQ.moveToNext()) {
+                    int i2 = cursorQ.getInt(cursorQ.getColumnIndexOrThrow("_id"));
+                    if (this.c.d(i2) == null) {
+                        TransferRecord transferRecord = new TransferRecord(i2);
+                        transferRecord.j(cursorQ);
+                        this.c.b(transferRecord);
+                        i++;
                     }
+                    arrayList.add(Integer.valueOf(i2));
                 }
-            } catch (Exception e2) {
-                d.g("Error in resuming the transfers." + e2.getMessage());
-            }
-            d.a(i + " transfers are loaded from database.");
-        } catch (Throwable th) {
-            if (cursorQ != null) {
                 d.a("Closing the cursor for resumeAllTransfers");
                 cursorQ.close();
+                try {
+                    for (Integer num : arrayList) {
+                        AmazonS3 amazonS3A = S3ClientReference.a(num);
+                        if (amazonS3A != null && (transferRecordD = this.c.d(num.intValue())) != null && !transferRecordD.f()) {
+                            transferRecordD.i(amazonS3A, this.b, this.c, this.f8383a);
+                        }
+                    }
+                } catch (Exception e2) {
+                    d.g("Error in resuming the transfers." + e2.getMessage());
+                }
+                d.a(i + " transfers are loaded from database.");
+            } catch (Throwable th) {
+                if (cursorQ != null) {
+                    d.a("Closing the cursor for resumeAllTransfers");
+                    cursorQ.close();
+                }
+                throw th;
             }
-            throw th;
+        } catch (Throwable th2) {
+            throw th2;
         }
     }
 

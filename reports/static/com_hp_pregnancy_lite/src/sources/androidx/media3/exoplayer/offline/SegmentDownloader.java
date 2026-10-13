@@ -12,13 +12,16 @@ import androidx.media3.datasource.cache.Cache;
 import androidx.media3.datasource.cache.CacheDataSource;
 import androidx.media3.datasource.cache.CacheKeyFactory;
 import androidx.media3.datasource.cache.CacheWriter;
+import androidx.media3.datasource.cache.ContentMetadata;
 import androidx.media3.exoplayer.offline.FilterableManifest;
 import androidx.media3.exoplayer.upstream.ParsingLoadable;
 import com.google.common.base.Preconditions;
 import defpackage.vf3;
 import java.io.IOException;
 import java.io.InterruptedIOException;
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
@@ -224,18 +227,126 @@ public abstract class SegmentDownloader<M extends FilterableManifest<M>> impleme
         Util.j1(list, i, list.size());
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x0034 */
     @Override // androidx.media3.exoplayer.offline.Downloader
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final void a(androidx.media3.exoplayer.offline.Downloader.ProgressListener r28) {
-        /*
-            Method dump skipped, instruction units count: 461
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: androidx.media3.exoplayer.offline.SegmentDownloader.a(androidx.media3.exoplayer.offline.Downloader$ProgressListener):void");
+    public final void a(Downloader.ProgressListener progressListener) {
+        CacheDataSource cacheDataSourceB;
+        byte[] bArr;
+        int i;
+        ArrayDeque arrayDeque = new ArrayDeque();
+        ArrayDeque arrayDeque2 = new ArrayDeque();
+        PriorityTaskManager priorityTaskManager = this.i;
+        if (priorityTaskManager != null) {
+            priorityTaskManager.a(-4000);
+        }
+        try {
+            CacheDataSource cacheDataSourceB2 = this.f.b();
+            FilterableManifest filterableManifestG = g(cacheDataSourceB2, this.c, false);
+            if (!this.e.isEmpty()) {
+                filterableManifestG = (FilterableManifest) filterableManifestG.a(this.e);
+            }
+            List listH = h(cacheDataSourceB2, filterableManifestG, false);
+            Collections.sort(listH);
+            i(listH, this.h, this.k);
+            int size = listH.size();
+            int i2 = 0;
+            long j = 0;
+            long j2 = 0;
+            for (int size2 = listH.size() - 1; size2 >= 0; size2 = i - 1) {
+                DataSpec dataSpec = ((Segment) listH.get(size2)).b;
+                String strC = this.h.c(dataSpec);
+                long j3 = dataSpec.h;
+                if (j3 == -1) {
+                    long jB = ContentMetadata.b(this.g.b(strC));
+                    if (jB != -1) {
+                        j3 = jB - dataSpec.g;
+                    }
+                }
+                int i3 = size2;
+                long jC = this.g.c(strC, dataSpec.g, j3);
+                j2 += jC;
+                if (j3 != -1) {
+                    if (j3 == jC) {
+                        i2++;
+                        i = i3;
+                        listH.remove(i);
+                    } else {
+                        i = i3;
+                    }
+                    if (j != -1) {
+                        j += j3;
+                    }
+                } else {
+                    i = i3;
+                    j = -1;
+                }
+            }
+            ProgressNotifier progressNotifier = progressListener != null ? new ProgressNotifier(progressListener, j, size, j2, i2) : null;
+            arrayDeque.addAll(listH);
+            while (!this.m && !arrayDeque.isEmpty()) {
+                PriorityTaskManager priorityTaskManager2 = this.i;
+                if (priorityTaskManager2 != null) {
+                    priorityTaskManager2.b(-4000);
+                }
+                if (arrayDeque2.isEmpty()) {
+                    cacheDataSourceB = this.f.b();
+                    bArr = new byte[131072];
+                } else {
+                    SegmentDownloadRunnable segmentDownloadRunnable = (SegmentDownloadRunnable) arrayDeque2.removeFirst();
+                    cacheDataSourceB = segmentDownloadRunnable.i;
+                    bArr = segmentDownloadRunnable.k;
+                }
+                SegmentDownloadRunnable segmentDownloadRunnable2 = new SegmentDownloadRunnable((Segment) arrayDeque.removeFirst(), cacheDataSourceB, progressNotifier, bArr);
+                c(segmentDownloadRunnable2);
+                this.j.execute(segmentDownloadRunnable2);
+                for (int size3 = this.l.size() - 1; size3 >= 0; size3--) {
+                    SegmentDownloadRunnable segmentDownloadRunnable3 = (SegmentDownloadRunnable) this.l.get(size3);
+                    if (arrayDeque.isEmpty() || segmentDownloadRunnable3.isDone()) {
+                        try {
+                            segmentDownloadRunnable3.get();
+                            j(size3);
+                            arrayDeque2.addLast(segmentDownloadRunnable3);
+                        } catch (ExecutionException e) {
+                            Throwable th = (Throwable) Preconditions.u(e.getCause());
+                            if (th instanceof PriorityTaskManager.PriorityTooLowException) {
+                                arrayDeque.addFirst(segmentDownloadRunnable3.h);
+                                j(size3);
+                                arrayDeque2.addLast(segmentDownloadRunnable3);
+                            } else {
+                                if (th instanceof IOException) {
+                                    throw ((IOException) th);
+                                }
+                                Util.t1(th);
+                            }
+                        }
+                    }
+                }
+                segmentDownloadRunnable2.b();
+            }
+            for (int i4 = 0; i4 < this.l.size(); i4++) {
+                ((RunnableFutureTask) this.l.get(i4)).cancel(true);
+            }
+            for (int size4 = this.l.size() - 1; size4 >= 0; size4--) {
+                ((RunnableFutureTask) this.l.get(size4)).a();
+                j(size4);
+            }
+            PriorityTaskManager priorityTaskManager3 = this.i;
+            if (priorityTaskManager3 != null) {
+                priorityTaskManager3.d(-4000);
+            }
+        } catch (Throwable th2) {
+            for (int i5 = 0; i5 < this.l.size(); i5++) {
+                ((RunnableFutureTask) this.l.get(i5)).cancel(true);
+            }
+            for (int size5 = this.l.size() - 1; size5 >= 0; size5--) {
+                ((RunnableFutureTask) this.l.get(size5)).a();
+                j(size5);
+            }
+            PriorityTaskManager priorityTaskManager4 = this.i;
+            if (priorityTaskManager4 != null) {
+                priorityTaskManager4.d(-4000);
+            }
+            throw th2;
+        }
     }
 
     public final void c(RunnableFutureTask runnableFutureTask) {

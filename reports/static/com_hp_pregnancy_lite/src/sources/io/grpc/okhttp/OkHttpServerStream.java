@@ -2,7 +2,6 @@ package io.grpc.okhttp;
 
 import com.google.common.base.Preconditions;
 import io.grpc.Attributes;
-import io.grpc.Metadata;
 import io.grpc.Status;
 import io.grpc.internal.AbstractServerStream;
 import io.grpc.internal.StatsTraceContext;
@@ -69,58 +68,88 @@ class OkHttpServerStream extends AbstractServerStream {
             throw new UnsupportedOperationException("Method not decompiled: io.grpc.okhttp.OkHttpServerStream.Sink.a(io.grpc.Status):void");
         }
 
+        /* JADX WARN: Bottom block not found for handler: all -> 0x0028 */
         @Override // io.grpc.internal.AbstractServerStream.Sink
-        public void d(Metadata metadata, boolean z) {
-            TaskCloseable taskCloseableI = PerfMark.i("OkHttpServerStream$Sink.writeHeaders");
-            try {
-                List listD = Headers.d(metadata);
-                synchronized (OkHttpServerStream.this.f.u) {
-                    try {
-                        OkHttpServerStream.this.f.X(listD);
-                    } catch (Throwable th) {
-                        throw th;
-                    }
-                }
-                if (taskCloseableI != null) {
-                    taskCloseableI.close();
-                }
-            } catch (Throwable th2) {
-                if (taskCloseableI != null) {
-                    try {
-                        taskCloseableI.close();
-                    } catch (Throwable th3) {
-                        th2.addSuppressed(th3);
-                    }
-                }
-                throw th2;
-            }
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public void d(io.grpc.Metadata r3, boolean r4) {
+            /*
+                r2 = this;
+                java.lang.String r4 = "OkHttpServerStream$Sink.writeHeaders"
+                io.perfmark.TaskCloseable r4 = io.perfmark.PerfMark.i(r4)
+                java.util.List r3 = io.grpc.okhttp.Headers.d(r3)     // Catch: java.lang.Throwable -> L28
+                io.grpc.okhttp.OkHttpServerStream r0 = io.grpc.okhttp.OkHttpServerStream.this     // Catch: java.lang.Throwable -> L28
+                io.grpc.okhttp.OkHttpServerStream$TransportState r0 = io.grpc.okhttp.OkHttpServerStream.J(r0)     // Catch: java.lang.Throwable -> L28
+                java.lang.Object r0 = io.grpc.okhttp.OkHttpServerStream.TransportState.P(r0)     // Catch: java.lang.Throwable -> L28
+                monitor-enter(r0)     // Catch: java.lang.Throwable -> L28
+                io.grpc.okhttp.OkHttpServerStream r1 = io.grpc.okhttp.OkHttpServerStream.this     // Catch: java.lang.Throwable -> L25
+                io.grpc.okhttp.OkHttpServerStream$TransportState r1 = io.grpc.okhttp.OkHttpServerStream.J(r1)     // Catch: java.lang.Throwable -> L25
+                io.grpc.okhttp.OkHttpServerStream.TransportState.Q(r1, r3)     // Catch: java.lang.Throwable -> L25
+                monitor-exit(r0)     // Catch: java.lang.Throwable -> L25
+                if (r4 == 0) goto L24
+                r4.close()
+            L24:
+                return
+            L25:
+                r3 = move-exception
+                monitor-exit(r0)     // Catch: java.lang.Throwable -> L25
+                throw r3     // Catch: java.lang.Throwable -> L28
+            L28:
+                r3 = move-exception
+                if (r4 == 0) goto L33
+                r4.close()     // Catch: java.lang.Throwable -> L2f
+                goto L33
+            L2f:
+                r4 = move-exception
+                r3.addSuppressed(r4)
+            L33:
+                throw r3
+            */
+            throw new UnsupportedOperationException("Method not decompiled: io.grpc.okhttp.OkHttpServerStream.Sink.d(io.grpc.Metadata, boolean):void");
         }
 
+        /* JADX WARN: Bottom block not found for handler: all -> 0x0028 */
         @Override // io.grpc.internal.AbstractServerStream.Sink
-        public void e(Metadata metadata, boolean z, Status status) {
-            TaskCloseable taskCloseableI = PerfMark.i("OkHttpServerStream$Sink.writeTrailers");
-            try {
-                List listE = Headers.e(metadata, z);
-                synchronized (OkHttpServerStream.this.f.u) {
-                    try {
-                        OkHttpServerStream.this.f.Y(listE);
-                    } catch (Throwable th) {
-                        throw th;
-                    }
-                }
-                if (taskCloseableI != null) {
-                    taskCloseableI.close();
-                }
-            } catch (Throwable th2) {
-                if (taskCloseableI != null) {
-                    try {
-                        taskCloseableI.close();
-                    } catch (Throwable th3) {
-                        th2.addSuppressed(th3);
-                    }
-                }
-                throw th2;
-            }
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public void e(io.grpc.Metadata r2, boolean r3, io.grpc.Status r4) {
+            /*
+                r1 = this;
+                java.lang.String r4 = "OkHttpServerStream$Sink.writeTrailers"
+                io.perfmark.TaskCloseable r4 = io.perfmark.PerfMark.i(r4)
+                java.util.List r2 = io.grpc.okhttp.Headers.e(r2, r3)     // Catch: java.lang.Throwable -> L28
+                io.grpc.okhttp.OkHttpServerStream r3 = io.grpc.okhttp.OkHttpServerStream.this     // Catch: java.lang.Throwable -> L28
+                io.grpc.okhttp.OkHttpServerStream$TransportState r3 = io.grpc.okhttp.OkHttpServerStream.J(r3)     // Catch: java.lang.Throwable -> L28
+                java.lang.Object r3 = io.grpc.okhttp.OkHttpServerStream.TransportState.P(r3)     // Catch: java.lang.Throwable -> L28
+                monitor-enter(r3)     // Catch: java.lang.Throwable -> L28
+                io.grpc.okhttp.OkHttpServerStream r0 = io.grpc.okhttp.OkHttpServerStream.this     // Catch: java.lang.Throwable -> L25
+                io.grpc.okhttp.OkHttpServerStream$TransportState r0 = io.grpc.okhttp.OkHttpServerStream.J(r0)     // Catch: java.lang.Throwable -> L25
+                io.grpc.okhttp.OkHttpServerStream.TransportState.S(r0, r2)     // Catch: java.lang.Throwable -> L25
+                monitor-exit(r3)     // Catch: java.lang.Throwable -> L25
+                if (r4 == 0) goto L24
+                r4.close()
+            L24:
+                return
+            L25:
+                r2 = move-exception
+                monitor-exit(r3)     // Catch: java.lang.Throwable -> L25
+                throw r2     // Catch: java.lang.Throwable -> L28
+            L28:
+                r2 = move-exception
+                if (r4 == 0) goto L33
+                r4.close()     // Catch: java.lang.Throwable -> L2f
+                goto L33
+            L2f:
+                r3 = move-exception
+                r2.addSuppressed(r3)
+            L33:
+                throw r2
+            */
+            throw new UnsupportedOperationException("Method not decompiled: io.grpc.okhttp.OkHttpServerStream.Sink.e(io.grpc.Metadata, boolean, io.grpc.Status):void");
         }
 
         @Override // io.grpc.internal.AbstractServerStream.Sink

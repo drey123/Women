@@ -58,7 +58,7 @@ public abstract class KPropertyImpl<V> extends KCallableImpl<V> implements KProp
         @Override // kotlin.reflect.jvm.internal.KCallableImpl
         /* JADX INFO: renamed from: O */
         public KDeclarationContainerImpl getG() {
-            return h().getG();
+            return W().getG();
         }
 
         @Override // kotlin.reflect.jvm.internal.KCallableImpl
@@ -68,13 +68,12 @@ public abstract class KPropertyImpl<V> extends KCallableImpl<V> implements KProp
 
         @Override // kotlin.reflect.jvm.internal.KCallableImpl
         public boolean T() {
-            return h().T();
+            return W().T();
         }
 
         public abstract PropertyAccessorDescriptor V();
 
-        /* JADX INFO: renamed from: W */
-        public abstract KPropertyImpl h();
+        public abstract KPropertyImpl W();
 
         @Override // kotlin.reflect.KFunction
         public boolean isExternal() {

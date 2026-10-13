@@ -10,6 +10,10 @@ final class zzgta extends AbstractSet {
     /* JADX INFO: renamed from: a, reason: collision with root package name */
     public final /* synthetic */ zzgtc f13594a;
 
+    public /* synthetic */ zzgta(zzgtc zzgtcVar, zzgsz zzgszVar) {
+        this.f13594a = zzgtcVar;
+    }
+
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final /* bridge */ /* synthetic */ boolean add(Object obj) {
         Map.Entry entry = (Map.Entry) obj;

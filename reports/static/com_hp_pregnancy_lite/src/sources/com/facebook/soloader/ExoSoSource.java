@@ -1,13 +1,9 @@
 package com.facebook.soloader;
 
 import android.content.Context;
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
 
 /* JADX INFO: loaded from: classes3.dex */
 public final class ExoSoSource extends UnpackingSoSource {
@@ -17,93 +13,18 @@ public final class ExoSoSource extends UnpackingSoSource {
         /* JADX INFO: renamed from: a, reason: collision with root package name */
         public final FileDso[] f9837a;
 
+        /* JADX WARN: Bottom block not found for handler: all -> 0x0107 */
         /* JADX WARN: Code duplicated, block: B:6:0x004c  */
-        public ExoUnpacker(UnpackingSoSource unpackingSoSource) throws IOException {
-            File file;
-            File file2;
-            File file3 = new File("/data/local/tmp/exopackage/" + ExoSoSource.this.d.getPackageName() + "/native-libs/");
-            ArrayList arrayList = new ArrayList();
-            LinkedHashSet linkedHashSet = new LinkedHashSet();
-            String[] strArrJ = SysUtil.j();
-            int length = strArrJ.length;
-            int i = 0;
-            int i2 = 0;
-            while (i2 < length) {
-                String str = strArrJ[i2];
-                File file4 = new File(file3, str);
-                if (file4.isDirectory()) {
-                    linkedHashSet.add(str);
-                    File file5 = new File(file4, "metadata.txt");
-                    if (file5.isFile()) {
-                        FileReader fileReader = new FileReader(file5);
-                        try {
-                            BufferedReader bufferedReader = new BufferedReader(fileReader);
-                            while (true) {
-                                try {
-                                    String line = bufferedReader.readLine();
-                                    if (line == null) {
-                                        file = file3;
-                                        bufferedReader.close();
-                                        fileReader.close();
-                                        break;
-                                    }
-                                    if (line.length() != 0) {
-                                        int iIndexOf = line.indexOf(32);
-                                        if (iIndexOf == -1) {
-                                            throw new RuntimeException("illegal line in exopackage metadata: [" + line + "]");
-                                        }
-                                        String str2 = line.substring(i, iIndexOf) + ".so";
-                                        int size = arrayList.size();
-                                        while (true) {
-                                            if (i >= size) {
-                                                file2 = file3;
-                                                String strSubstring = line.substring(iIndexOf + 1);
-                                                arrayList.add(new FileDso(str2, strSubstring.substring(strSubstring.indexOf(45), strSubstring.indexOf(".so")), new File(file4, strSubstring)));
-                                                break;
-                                            } else {
-                                                file2 = file3;
-                                                if (((FileDso) arrayList.get(i)).f9846a.equals(str2)) {
-                                                    break;
-                                                }
-                                                i++;
-                                                file3 = file2;
-                                            }
-                                        }
-                                        file3 = file2;
-                                        i = 0;
-                                    }
-                                } catch (Throwable th) {
-                                    try {
-                                        bufferedReader.close();
-                                        throw th;
-                                    } catch (Throwable th2) {
-                                        th.addSuppressed(th2);
-                                        throw th;
-                                    }
-                                }
-                                try {
-                                    fileReader.close();
-                                    throw th;
-                                } catch (Throwable th3) {
-                                    th.addSuppressed(th3);
-                                    throw th;
-                                }
-                            }
-                        } catch (Throwable th4) {
-                            fileReader.close();
-                            throw th4;
-                        }
-                    }
-                    file = file3;
-                } else {
-                    file = file3;
-                }
-                i2++;
-                file3 = file;
-                i = 0;
-            }
-            unpackingSoSource.s((String[]) linkedHashSet.toArray(new String[linkedHashSet.size()]));
-            this.f9837a = (FileDso[]) arrayList.toArray(new FileDso[arrayList.size()]);
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public ExoUnpacker(com.facebook.soloader.UnpackingSoSource r20) throws java.io.IOException {
+            /*
+                Method dump skipped, instruction units count: 318
+                To view this dump add '--comments-level debug' option
+            */
+            throw new UnsupportedOperationException("Method not decompiled: com.facebook.soloader.ExoSoSource.ExoUnpacker.<init>(com.facebook.soloader.ExoSoSource, com.facebook.soloader.UnpackingSoSource):void");
         }
 
         @Override // com.facebook.soloader.UnpackingSoSource.Unpacker

@@ -5512,45 +5512,31 @@ public class zznv implements zzjc {
             Boolean boolW = this.l.I().W();
             if (boolW == null) {
                 h().K().a("Upload data called on the client side before use of service was decided");
-                this.v = false;
-                O();
                 return;
             }
             if (boolW.booleanValue()) {
                 h().F().a("Upload called in the client side when service should be used");
-                this.v = false;
-                O();
                 return;
             }
             if (this.o > 0) {
                 Q();
-                this.v = false;
-                O();
                 return;
             }
             if (!o0().B()) {
                 h().J().a("Network not connected, ignoring upload request");
                 Q();
-                this.v = false;
-                O();
                 return;
             }
             if (!k0().f1(str)) {
                 h().J().b("Upload queue has no batches for appId", str);
-                this.v = false;
-                O();
                 return;
             }
             zzoj zzojVarV0 = k0().V0(str);
             if (zzojVarV0 == null) {
-                this.v = false;
-                O();
                 return;
             }
             com.google.android.gms.internal.measurement.zzfy.zzj zzjVarC = zzojVarV0.c();
             if (zzjVarC == null) {
-                this.v = false;
-                O();
                 return;
             }
             String strL = w0().L(zzjVarC);
@@ -5567,12 +5553,9 @@ public class zznv implements zzjc {
                     h().F().c("Failed to parse URL. Not uploading MeasurementBatch. appId", zzgo.u(str), zzojVarV0.d());
                 }
             }
+        } finally {
             this.v = false;
             O();
-        } catch (Throwable th) {
-            this.v = false;
-            O();
-            throw th;
         }
     }
 

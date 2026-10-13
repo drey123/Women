@@ -47,10 +47,11 @@ public final class InMemoryStorageAbstraction implements LocalStorageInterface {
     /* JADX WARN: Code duplicated, block: B:35:0x00da A[Catch: Exception -> 0x0043, TryCatch #0 {Exception -> 0x0043, blocks: (B:13:0x003c, B:24:0x0075, B:26:0x007b, B:30:0x00ad, B:32:0x00b5, B:35:0x00da, B:37:0x00e8, B:39:0x00ee, B:40:0x00f7, B:20:0x0062, B:23:0x0071), top: B:44:0x0022 }] */
     /* JADX WARN: Code duplicated, block: B:36:0x00e5  */
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     @Override // com.hp.pregnancy.common.storage.LocalStorageInterface
     public java.lang.Object a(java.util.List r12, kotlin.coroutines.Continuation r13) {

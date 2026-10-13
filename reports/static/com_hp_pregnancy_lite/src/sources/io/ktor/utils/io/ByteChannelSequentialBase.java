@@ -12,6 +12,7 @@ import io.ktor.utils.io.core.BytePacketBuilder;
 import io.ktor.utils.io.core.ByteReadPacket;
 import io.ktor.utils.io.core.InputArraysKt;
 import io.ktor.utils.io.core.InputPrimitivesKt;
+import io.ktor.utils.io.core.InsufficientSpaceException;
 import io.ktor.utils.io.core.OutputKt;
 import io.ktor.utils.io.core.OutputPrimitivesKt;
 import io.ktor.utils.io.core.internal.ChunkBuffer;
@@ -253,7 +254,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public static /* synthetic */ Object C1(ByteChannelSequentialBase byteChannelSequentialBase, int i2, Continuation continuation) throws Throwable {
+    public static /* synthetic */ Object C1(ByteChannelSequentialBase byteChannelSequentialBase, int i2, Continuation continuation) {
         ByteChannelSequentialBase$writeInt$1 byteChannelSequentialBase$writeInt$1;
         if (continuation instanceof ByteChannelSequentialBase$writeInt$1) {
             byteChannelSequentialBase$writeInt$1 = (ByteChannelSequentialBase$writeInt$1) continuation;
@@ -291,7 +292,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public static /* synthetic */ Object D1(ByteChannelSequentialBase byteChannelSequentialBase, long j2, Continuation continuation) throws Throwable {
+    public static /* synthetic */ Object D1(ByteChannelSequentialBase byteChannelSequentialBase, long j2, Continuation continuation) {
         ByteChannelSequentialBase$writeLong$1 byteChannelSequentialBase$writeLong$1;
         if (continuation instanceof ByteChannelSequentialBase$writeLong$1) {
             byteChannelSequentialBase$writeLong$1 = (ByteChannelSequentialBase$writeLong$1) continuation;
@@ -329,7 +330,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public static /* synthetic */ Object E1(ByteChannelSequentialBase byteChannelSequentialBase, ByteReadPacket byteReadPacket, Continuation continuation) throws Throwable {
+    public static /* synthetic */ Object E1(ByteChannelSequentialBase byteChannelSequentialBase, ByteReadPacket byteReadPacket, Continuation continuation) {
         ByteChannelSequentialBase$writePacket$1 byteChannelSequentialBase$writePacket$1;
         if (continuation instanceof ByteChannelSequentialBase$writePacket$1) {
             byteChannelSequentialBase$writePacket$1 = (ByteChannelSequentialBase$writePacket$1) continuation;
@@ -368,7 +369,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public static /* synthetic */ Object F1(ByteChannelSequentialBase byteChannelSequentialBase, short s, Continuation continuation) throws Throwable {
+    public static /* synthetic */ Object F1(ByteChannelSequentialBase byteChannelSequentialBase, short s, Continuation continuation) {
         ByteChannelSequentialBase$writeShort$1 byteChannelSequentialBase$writeShort$1;
         if (continuation instanceof ByteChannelSequentialBase$writeShort$1) {
             byteChannelSequentialBase$writeShort$1 = (ByteChannelSequentialBase$writeShort$1) continuation;
@@ -754,7 +755,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public static /* synthetic */ Object m0(ByteChannelSequentialBase byteChannelSequentialBase, Continuation continuation) throws Throwable {
+    public static /* synthetic */ Object m0(ByteChannelSequentialBase byteChannelSequentialBase, Continuation continuation) {
         ByteChannelSequentialBase$awaitFreeSpace$1 byteChannelSequentialBase$awaitFreeSpace$1;
         if (continuation instanceof ByteChannelSequentialBase$awaitFreeSpace$1) {
             byteChannelSequentialBase$awaitFreeSpace$1 = (ByteChannelSequentialBase$awaitFreeSpace$1) continuation;
@@ -809,7 +810,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
         return Boxing.f(j3);
     }
 
-    public static /* synthetic */ Object s1(ByteChannelSequentialBase byteChannelSequentialBase, ChunkBuffer chunkBuffer, Continuation continuation) throws Throwable {
+    public static /* synthetic */ Object s1(ByteChannelSequentialBase byteChannelSequentialBase, ChunkBuffer chunkBuffer, Continuation continuation) {
         int writePosition = chunkBuffer.getWritePosition() - chunkBuffer.getReadPosition();
         if (writePosition == 0) {
             return Boxing.e(0);
@@ -823,7 +824,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
         return Boxing.e(iMin);
     }
 
-    public static /* synthetic */ Object t1(ByteChannelSequentialBase byteChannelSequentialBase, byte[] bArr, int i2, int i3, Continuation continuation) throws Throwable {
+    public static /* synthetic */ Object t1(ByteChannelSequentialBase byteChannelSequentialBase, byte[] bArr, int i2, int i3, Continuation continuation) {
         if (i3 == 0) {
             return Boxing.e(0);
         }
@@ -837,7 +838,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public static /* synthetic */ Object w1(ByteChannelSequentialBase byteChannelSequentialBase, byte b, Continuation continuation) throws Throwable {
+    public static /* synthetic */ Object w1(ByteChannelSequentialBase byteChannelSequentialBase, byte b, Continuation continuation) throws InsufficientSpaceException {
         ByteChannelSequentialBase$writeByte$1 byteChannelSequentialBase$writeByte$1;
         if (continuation instanceof ByteChannelSequentialBase$writeByte$1) {
             byteChannelSequentialBase$writeByte$1 = (ByteChannelSequentialBase$writeByte$1) continuation;
@@ -875,7 +876,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public static /* synthetic */ Object x1(ByteChannelSequentialBase byteChannelSequentialBase, double d, Continuation continuation) throws Throwable {
+    public static /* synthetic */ Object x1(ByteChannelSequentialBase byteChannelSequentialBase, double d, Continuation continuation) {
         ByteChannelSequentialBase$writeDouble$1 byteChannelSequentialBase$writeDouble$1;
         if (continuation instanceof ByteChannelSequentialBase$writeDouble$1) {
             byteChannelSequentialBase$writeDouble$1 = (ByteChannelSequentialBase$writeDouble$1) continuation;
@@ -913,7 +914,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public static /* synthetic */ Object y1(ByteChannelSequentialBase byteChannelSequentialBase, float f, Continuation continuation) throws Throwable {
+    public static /* synthetic */ Object y1(ByteChannelSequentialBase byteChannelSequentialBase, float f, Continuation continuation) {
         ByteChannelSequentialBase$writeFloat$1 byteChannelSequentialBase$writeFloat$1;
         if (continuation instanceof ByteChannelSequentialBase$writeFloat$1) {
             byteChannelSequentialBase$writeFloat$1 = (ByteChannelSequentialBase$writeFloat$1) continuation;
@@ -951,7 +952,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public static /* synthetic */ Object z1(ByteChannelSequentialBase byteChannelSequentialBase, Buffer buffer, Continuation continuation) throws Throwable {
+    public static /* synthetic */ Object z1(ByteChannelSequentialBase byteChannelSequentialBase, Buffer buffer, Continuation continuation) {
         ByteChannelSequentialBase$writeFully$1 byteChannelSequentialBase$writeFully$1;
         if (continuation instanceof ByteChannelSequentialBase$writeFully$1) {
             byteChannelSequentialBase$writeFully$1 = (ByteChannelSequentialBase$writeFully$1) continuation;
@@ -1023,7 +1024,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     @Override // io.ktor.utils.io.ReadSession
-    public int E(int n) throws Throwable {
+    public int E(int n) {
         Throwable thA = a();
         if (thA != null) {
             throw thA;
@@ -1775,7 +1776,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     public WriterSuspendSession f() {
         return new WriterSuspendSession() { // from class: io.ktor.utils.io.ByteChannelSequentialBase$beginWriteSession$1
             @Override // io.ktor.utils.io.WriterSession
-            public void a(int n) throws Throwable {
+            public void a(int n) {
                 this.f22514a.getWritable().d();
                 this.f22514a.i0(n);
             }
@@ -1819,7 +1820,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     @Override // io.ktor.utils.io.HasWriteSession
-    public void g(int written) throws Throwable {
+    public void g(int written) {
         this.writable.d();
         i0(written);
     }
@@ -1910,7 +1911,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
         return h(cause);
     }
 
-    public final void i0(int count) throws Throwable {
+    public final void i0(int count) {
         g0(count);
         if (A0()) {
             this.writable.y();
@@ -2083,7 +2084,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public final Object o0(int i2, Continuation continuation) throws Throwable {
+    public final Object o0(int i2, Continuation continuation) {
         ByteChannelSequentialBase$awaitSuspend$1 byteChannelSequentialBase$awaitSuspend$1;
         ByteChannelSequentialBase byteChannelSequentialBase;
         if (continuation instanceof ByteChannelSequentialBase$awaitSuspend$1) {
@@ -2155,7 +2156,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
         throw new EOFException(remaining + " bytes required but EOF reached");
     }
 
-    public final long p1(ByteChannelSequentialBase dst, long limit) throws Throwable {
+    public final long p1(ByteChannelSequentialBase dst, long limit) {
         Intrinsics.j(dst, "dst");
         long jE = this.readable.E();
         if (jE > limit) {
@@ -2290,7 +2291,7 @@ public abstract class ByteChannelSequentialBase implements ByteChannel, ByteRead
         return X0(this, continuation);
     }
 
-    public final void u0() throws Throwable {
+    public final void u0() {
         if (A0()) {
             Throwable thA = a();
             if (thA != null) {

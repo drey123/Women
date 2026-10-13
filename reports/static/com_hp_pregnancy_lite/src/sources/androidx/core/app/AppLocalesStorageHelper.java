@@ -64,50 +64,46 @@ public class AppLocalesStorageHelper {
         synchronized (f4827a) {
             attributeValue = "";
             try {
+                FileInputStream fileInputStreamOpenFileInput = context.openFileInput("androidx.appcompat.app.AppCompatDelegate.application_locales_record_file");
                 try {
-                    FileInputStream fileInputStreamOpenFileInput = context.openFileInput("androidx.appcompat.app.AppCompatDelegate.application_locales_record_file");
-                    try {
-                        XmlPullParser xmlPullParserNewPullParser = Xml.newPullParser();
-                        xmlPullParserNewPullParser.setInput(fileInputStreamOpenFileInput, "UTF-8");
-                        int depth = xmlPullParserNewPullParser.getDepth();
-                        while (true) {
-                            int next = xmlPullParserNewPullParser.next();
-                            if (next != 1 && (next != 3 || xmlPullParserNewPullParser.getDepth() > depth)) {
-                                if (next != 3 && next != 4 && xmlPullParserNewPullParser.getName().equals("locales")) {
-                                    attributeValue = xmlPullParserNewPullParser.getAttributeValue(null, "application_locales");
-                                    break;
-                                }
-                            } else {
+                    XmlPullParser xmlPullParserNewPullParser = Xml.newPullParser();
+                    xmlPullParserNewPullParser.setInput(fileInputStreamOpenFileInput, "UTF-8");
+                    int depth = xmlPullParserNewPullParser.getDepth();
+                    while (true) {
+                        int next = xmlPullParserNewPullParser.next();
+                        if (next != 1 && (next != 3 || xmlPullParserNewPullParser.getDepth() > depth)) {
+                            if (next != 3 && next != 4 && xmlPullParserNewPullParser.getName().equals("locales")) {
+                                attributeValue = xmlPullParserNewPullParser.getAttributeValue(null, "application_locales");
                                 break;
                             }
+                        } else {
+                            break;
                         }
-                        if (fileInputStreamOpenFileInput != null) {
-                            try {
-                                fileInputStreamOpenFileInput.close();
-                            } catch (IOException unused) {
-                            }
-                        }
-                    } catch (IOException | XmlPullParserException unused2) {
-                        if (fileInputStreamOpenFileInput != null) {
+                    }
+                    if (fileInputStreamOpenFileInput != null) {
+                        try {
                             fileInputStreamOpenFileInput.close();
+                        } catch (IOException unused) {
                         }
-                    } catch (Throwable th) {
-                        if (fileInputStreamOpenFileInput != null) {
-                            try {
-                                fileInputStreamOpenFileInput.close();
-                            } catch (IOException unused3) {
-                            }
+                    }
+                } catch (IOException | XmlPullParserException unused2) {
+                    if (fileInputStreamOpenFileInput != null) {
+                        fileInputStreamOpenFileInput.close();
+                    }
+                } catch (Throwable th) {
+                    if (fileInputStreamOpenFileInput != null) {
+                        try {
+                            fileInputStreamOpenFileInput.close();
+                        } catch (IOException unused3) {
                         }
-                        throw th;
                     }
-                    if (attributeValue.isEmpty()) {
-                        context.deleteFile("androidx.appcompat.app.AppCompatDelegate.application_locales_record_file");
-                    }
-                } catch (FileNotFoundException unused4) {
-                    return "";
+                    throw th;
                 }
-            } catch (Throwable th2) {
-                throw th2;
+                if (attributeValue.isEmpty()) {
+                    context.deleteFile("androidx.appcompat.app.AppCompatDelegate.application_locales_record_file");
+                }
+            } catch (FileNotFoundException unused4) {
+                return "";
             }
         }
         return attributeValue;
