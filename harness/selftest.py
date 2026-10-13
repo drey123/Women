@@ -137,6 +137,134 @@ def rebuild_happy_path(method: str, path: str, headers: dict, body) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Wire-tier round trip: HAR -> GoldenTrace -> replay ("diff, don't review"
+# applied to the capture pipeline itself, not just to rebuilds).
+# ---------------------------------------------------------------------------
+
+WIRE_HAR = os.path.join(HERE, "fixtures", "wire-capture-sample.har")
+
+WIRE_BEHAVIORS = [
+    "wire.logs-create",
+    "wire.nonce-window-reject",
+    "wire.retry-after",
+    "wire.tracker-beacon",
+]
+
+
+def rebuild_wire_faithful(method: str, path: str, headers: dict, body) -> dict:
+    """Reproduces the captured wire behavior INCLUDING the quirks."""
+    hdr = {k.lower(): v for k, v in (headers or {}).items()}
+    if method == "POST" and path.startswith("/install"):
+        return {"status": 200, "headers": {"Content-Type": "application/json"},
+                "body": {"status": "ok"}}
+    if method == "POST" and path == "/v1/logs":
+        if hdr.get("x-nonce", "") < "2038-01-01":  # quirk: nonce window
+            return {"status": 401,
+                    "headers": {"Content-Type": "application/json",
+                                "WWW-Authenticate": "Sync realm=\"logs\", nonce_ttl=\"30\""},
+                    "body": {"code": "E_NONCE_WINDOW", "retryable": False}}
+        if "idempotency-token" not in hdr:  # quirk: this capture's burst shape
+            return {"status": 429,
+                    "headers": {"Content-Type": "application/json",
+                                "Retry-After": "8"},
+                    "body": {"code": "E_RATE", "retryable": True}}
+        return {"status": 201,
+                "headers": {"Content-Type": "application/json",
+                            "Location": "/v1/logs/L-7f3a"},
+                "body": {"log_id": "L-7f3a", "dedup": False,
+                         "server_time": "2038-01-19T03:14:08Z"}}
+    return {"status": 404, "headers": {}, "body": {"code": "E_NO_ROUTE"}}
+
+
+def rebuild_wire_happy_path(method: str, path: str, headers: dict, body) -> dict:
+    """Wire-tier negative control: right statuses at a glance, invented
+    error shapes, dropped challenge/Retry-After headers."""
+    hdr = {k.lower(): v for k, v in (headers or {}).items()}
+    if method == "POST" and path.startswith("/install"):
+        return {"status": 200, "headers": {"Content-Type": "application/json"},
+                "body": {"status": "ok"}}
+    if method == "POST" and path == "/v1/logs":
+        if hdr.get("x-nonce", "") < "2038-01-01":
+            # INVENTED: generic 401, no WWW-Authenticate challenge, no code
+            return {"status": 401, "headers": {"Content-Type": "application/json"},
+                    "body": {"error": "unauthorized"}}
+        if "idempotency-token" not in hdr:
+            # INVENTED: no Retry-After, no stable code
+            return {"status": 429, "headers": {"Content-Type": "application/json"},
+                    "body": {"error": "rate limited"}}
+        return {"status": 201,
+                "headers": {"Content-Type": "application/json",
+                            "Location": "/v1/logs/L-7f3a"},
+                "body": {"log_id": "L-7f3a", "dedup": False,
+                         "server_time": "2038-01-19T03:14:08Z"}}
+    return {"status": 404, "headers": {}, "body": {"error": "not found"}}
+
+
+def check_har_adapter() -> bool:
+    import har_to_trace as h2t
+
+    print("\n== wire-tier adapter (HAR -> GoldenTrace)")
+    with open(WIRE_HAR, encoding="utf-8") as fh:
+        har = json.load(fh)
+    trace = h2t.har_to_trace(har, trace_id="wire-capture-sample")
+    print(f"   converted interactions={len(trace['interactions'])} "
+          f"(sha256 {rk.trace_sha256(trace)[:16]}...)")
+
+    # determinism: same input must convert to a byte-stable canonical trace
+    if rk.trace_sha256(h2t.har_to_trace(har, trace_id="wire-capture-sample")) != \
+       rk.trace_sha256(trace):
+        print("FAIL: conversion is not deterministic")
+        return False
+
+    # error-paths-first: quirk flags must be present on the right entries
+    ix = trace["interactions"]
+    flags2 = set(ix[1].get("meta", {}).get("quirk_flags", []))
+    flags3 = set(ix[2].get("meta", {}).get("quirk_flags", []))
+    need2 = {"non-2xx:401", "header:www-authenticate", "error-code:E_NONCE_WINDOW"}
+    need3 = {"non-2xx:429", "header:retry-after", "error-code:E_RATE"}
+    if not need2 <= flags2:
+        print(f"FAIL: quirk flags missing on nonce-window entry: {sorted(flags2)}")
+        return False
+    if not need3 <= flags3:
+        print(f"FAIL: quirk flags missing on rate-limit entry: {sorted(flags3)}")
+        return False
+    if ix[0].get("meta", {}).get("quirk_flags"):
+        print("FAIL: happy-path entry must not carry quirk flags")
+        return False
+    print("   quirk flags: nonce-window 401 + challenge + E_NONCE_WINDOW ok; "
+          "429 + Retry-After + E_RATE ok")
+
+    # identity: fixture sanity on the converted trace
+    sanity = rk.diff_trace(trace, rk.FixtureTarget())
+    if not sanity.ok:
+        print("FAIL: converted trace is not identity under fixture replay")
+        return False
+    print("   fixture sanity (identity):", sanity.summary().strip())
+
+    # positive control: faithful wire rebuild fully matches
+    verdict_faithful = rk.diff_trace(
+        trace, rk.FunctionTarget("wire-faithful", rebuild_wire_faithful))
+    if not verdict_faithful.ok:
+        print("FAIL: faithful wire rebuild diverges:")
+        for iv in verdict_faithful.interactions:
+            if not iv.ok:
+                for a in iv.assertion_results:
+                    if not a.get("ok"):
+                        print(f"      - {iv.interaction_id} [{a['kind']}] {a.get('why')}")
+        return False
+    print("   faithful wire rebuild:", verdict_faithful.summary().strip())
+
+    # negative control: happy-path wire rebuild must be caught
+    verdict_bad = rk.diff_trace(
+        trace, rk.FunctionTarget("wire-happy-path", rebuild_wire_happy_path))
+    caught = not verdict_bad.ok
+    print("   happy-path wire rebuild:",
+          f"CAUGHT ({verdict_bad.summary().strip()})" if caught
+          else "PASSED THE DIFF — capture pipeline is too weak")
+    return caught
+
+
+# ---------------------------------------------------------------------------
 # Harness
 # ---------------------------------------------------------------------------
 
@@ -195,7 +323,12 @@ def main() -> int:
           f"{unrecovered_b}")
     print("=> a decompile/rebuild review would have passed it; the diff did not.")
 
-    ok = sanity.ok and verdict_a.ok and caught
+    # 4. Wire-tier round trip: HAR -> GoldenTrace -> replay must hold.
+    har_ok = check_har_adapter()
+    if not har_ok:
+        print("FAIL: wire-tier HAR adapter round trip")
+
+    ok = sanity.ok and verdict_a.ok and caught and har_ok
     print("\nSELFTEST:", "PASS" if ok else "FAIL")
     return 0 if ok else 5
 

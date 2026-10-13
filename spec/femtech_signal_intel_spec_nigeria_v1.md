@@ -1,5 +1,5 @@
 # FemTech Signal Intelligence & Dataset Architecture Brief — Nigerian Market
-## Research & Specification Document v1.2.0 (evidence update: run 38396120033 post-merge — registry-grep scan fix live, Flo positive control PASSED, new tracker rows for Clue/Ovia/Glow/Premom/Flo; trace-replay validation protocol adopted; Exodus live columns permanently AUTH_REQUIRED per owner)
+## Research & Specification Document v1.3.0 (evidence update: wire-tier capture path live — HAR→GoldenTrace adapter CI-tested; exodus-standalone docker job opened as PR; Trust Receipts dataset generated from committed evidence; interactive research-phase prototype shipped; STATUS-evidence consistency defect discovered & fix queued — see §6.5)
 
 **Prepared:** 2026-10-13 · **Workspace:** `drey123/women` (private repo, CI-executed evidence pipeline) · **Methodology base:** OWASP MASTG, Exodus Privacy static SDK detection, HAR-based traffic analysis (TrackHAR/tweasel), public regulatory record
 
@@ -947,6 +947,9 @@ Format per brief: `{finding, evidence, confidence, category, impact 1–5}`. Ent
 | NF-11 | **Precise location in period trackers**: Maya and Eve request `ACCESS_FINE_LOCATION` (period/pregnancy context + precise location = a stalker-risk and state-risk surface no cycle app has a defensible need for) | §2.6 permission table, `STATIC`, aapt2 dumps committed | `STATIC` | permission hygiene | 5 |
 | NF-12 | **Consent-order migration, materialized**: Flo's 2026 tree carries TikTok Business SDK (161 files incl. commerce `iap` events) — an ad family absent from its 2021 consent-order findings — while AppsFlyer (named in 2021) remains at 473 files | §2.4 `STATIC` + FTC 2021 record `PRIOR-PUB` | `STATIC` + `PRIOR-PUB` | regulatory evasion dynamics | 5 |
 | NF-13 | **Health Connect asymmetry**: Flo reads the full reproductive Health Connect graph (17 `health.*` permissions incl. `READ_SEXUAL_ACTIVITY`, `READ_HEALTH_DATA_IN_BACKGROUND`) while the ad-funded tier reads none — two collection philosophies (health-graph ingestion vs. typed-data-plus-ads) converging on the same monetization | §2.4/§2.6 `STATIC` | `STATIC` | platform dynamics | 4 |
+| NF-14 | **Flo's second CDP**: the 2026 Flo tree carries mParticle alongside AppsFlyer (run 38396120033 `exodus_scan.tsv`: mParticle 1 file, `com.mparticle`) — a second data-orchestration layer the 2021 consent order predates; reconciliation against the full-tree 473-file AppsFlyer count pending | §6.4 positive-control row + committed scan TSV | `STATIC` | supply chain | 4 |
+| NF-15 | **Zero-signature scans are not clean bills**: Period Tracker Lite (`com.period.tracker.lite`, real 26,308,653-byte APK) matched 0 of 432 registry signatures while declaring `AD_ID` + all three `ACCESS_ADSERVICES_*` + `BILLING` + install-referrer permissions — a full monetization surface with no tracker-class match; "0 trackers" claims from code-signature scanning alone under-report monetization by construction | `reports/static/com_period_tracker_lite/{report.md,exodus_scan.tsv}` run 38400405690 | `STATIC` | methodology | 4 |
+| NF-16 | **Evidence-pipeline staleness defect**: success-path matrix runs emitted no `STATUS.md` (early `exit 0`) and the publisher never removed stale failure-era status files absent from new artifacts — the committed evidence was briefly self-contradictory (fresh `report.md` with real trackers beside a stale `NOT ANALYSED` status; 9 apps missing status, 4 stale, 0 saying `ANALYSED`). For a transparency project, evidence hygiene is a first-class finding | committed `reports/static/**/STATUS.md` vs `report.md` dates + artifact 11815306702 (no STATUS.md inside) + run 38400405690 job results | `VERIFIED` (direct observation) | methodology / evidence integrity | 4 |
 
 ## 6.1 Prediction scoring (Phase 0 P-01…P-10)
 
@@ -1035,6 +1038,64 @@ derive from the coverage ledger, not from review.
 
 **Product phase opened:** `blueprint/product-blueprint.md` (mining matrix,
 Nkwo web product plan, warm-luxury design tokens, Trust Receipts differentiator).
+
+## 6.5 Evidence update v1.3 (2026-10-13, build-research round 2)
+
+**1. Wire-tier capture path is live.** `harness/har_to_trace.py` converts
+HAR 1.2 captures (the same proxy sessions that feed TrackHAR tracker
+detection) into GoldenTrace v1 traces: faithful conversion (no scrubbing at
+convert — diff-time scrubbing is symmetric), error-paths-first quirk
+flagging (`non-2xx`, `retry-after`, `www-authenticate`, stable error codes,
+5xx), binary bodies fingerprinted rather than decoded. The selftest now runs
+a full wire-tier round trip: fixture HAR → convert → schema-validate →
+identity replay → faithful rebuild (4/4) → happy-path wire rebuild caught
+2/4 (invented 401 body, dropped `Retry-After`). Same file doubles as a CLI.
+This closes the methodology gap between "we can detect trackers in a HAR"
+and "we can replay protocol behavior from a HAR."
+
+**2. Independent second attribution engine opened as PR.**
+`.github/workflows/exodus-standalone.yml` (PR branch) runs the official
+`docker://exodusprivacy/exodus-standalone:latest` scanner (verified on Docker
+Hub, 22.5k pulls; entrypoint `/exodus_analyze.py`) over a 3-app matrix —
+Clue (expect Braze+Snowplow corroboration), Fertility Friend (clean
+control), Flo-package (positive control). Scanner exit code = tracker count,
+so the docker step neutralizes it and `tooling/validate_standalone.py`
+applies the honest contract: fail only on missing/malformed evidence; print
+a CORROBORATED/DIVERGENCE comparison against the registry-grep TSV;
+disagreement between engines is reported, never suppressed. Artifacts are
+clearly attributed (`standalone-<pkg>`); no report commits while the job is
+being validated (per the note.md agreement).
+
+**3. Trust Receipts dataset exists.** `blueprint/build_receipts.py` reads
+the committed evidence (`reports/static/**`) and emits
+`blueprint/trust-receipts-dataset.json` + the prototype's embedded
+`receipts-data.js`. Statuses are parsed, never upgraded; the staleness
+detector caught the NF-16 defect on its first run (9 apps NO STATUS FILE,
+4 stale, 0 ANALYSED — against 14 matrix jobs "success"). The script is
+re-runnable; after the status fix merges it should be re-run so receipts
+carry fresh `ANALYSED` chips.
+
+**4. Interactive research-phase prototype shipped.**
+`blueprint/prototype/index.html` (32 KB, zero third-party resources, no
+fetch/XHR — the product thesis applied to its own demo): warm-luxury design
+tokens (§4 blueprint), one-tap cycle dial (28-day tick ring, flow cycling,
+localStorage-only), self-explaining insight (Accra-cohort prior 27.9±0.9 d
+with basis card), Guardian maternal danger-sign card with escalation
+numbers, harm-tier H1–H5 explainer, NDPA 2023 facts, and the Trust Receipts
+tab rendering the real dataset with honest status chips, per-tracker
+categories, and links into the repo's evidence files. Headless-browser
+tested: dial logging, receipts sort/search/detail sheet, tier expansion, no
+page errors.
+
+**5. Evidence-consistency defect found and fix queued (NF-16).** Root
+causes: (a) the status-recording step exited 0 on success without writing
+`STATUS.md`; (b) the publisher stages only files present in the new
+artifacts, so stale failure-era statuses survived beside fresh reports. Fix
+(PR branch): the status step now writes `Result: ANALYSED` records on
+success too, so every artifact carries a fresh status and every publish
+overwrites stale ones. Lesson generalized into the protocol: *a green job
+and a claimable result are different objects; the status record is the
+claim, so it must exist in every terminal state.*
 
 ## 7. References (public record anchors used; all fetched/verified 2026-10-13 unless noted)
 
