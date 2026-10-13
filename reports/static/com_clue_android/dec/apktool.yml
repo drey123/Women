@@ -1,0 +1,8 @@
+version: 3.0.3
+apkFileName: com.clue.android.apk
+sdkInfo:
+  minSdkVersion: 32
+versionInfo:
+  versionCode: 3193
+doNotCompress:
+- so
