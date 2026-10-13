@@ -1,0 +1,64 @@
+name: exodus-standalone-test
+
+on:
+  push:
+    branches:
+      - glm/exodus-standalone-test
+    paths-ignore:
+      - "note.md"
+      - "spec/**"
+      - "reports/**"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  standalone-scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install exodus-core and standalone client
+        run: |
+          python3 -m pip install --quiet --user "exodus-core==1.3.14"
+          git clone --depth 1 https://github.com/Exodus-Privacy/exodus-standalone /tmp/standalone
+          git clone --depth 1 https://github.com/Exodus-Privacy/exodus-core /tmp/exodus-core-src
+      - name: Acquire test APKs
+        run: |
+          chmod +x tooling/download_apk.sh
+          mkdir -p /tmp/apks
+          bash tooling/download_apk.sh com.tamtris.fertilityfriend /tmp/apks || echo "FF acquisition failed (recorded honestly)"
+          bash tooling/download_apk.sh com.clue.android /tmp/apks || echo "Clue acquisition failed (recorded honestly)"
+          cp /tmp/exodus-core-src/apks/francetv.apk /tmp/apks/ 2>/dev/null || true
+          ls -la /tmp/apks/
+      - name: Run exodus-standalone with real registry
+        run: |
+          BTDIR=$(ls -d "${ANDROID_HOME:-/usr/local/lib/android/sdk}"/build-tools/* | tail -1)
+          export PATH="$BTDIR:$PATH"
+          mkdir -p reports/standalone
+          for apk in /tmp/apks/*.apk; do
+            name=$(basename "$apk" .apk)
+            echo "=== standalone: $name ==="
+            python3 /tmp/standalone/exodus_analyze.py -j -o "reports/standalone/${name}.json" "$apk" || echo "exit code $? (tracker count) for $name"
+            python3 /tmp/standalone/exodus_analyze.py "$apk" > "reports/standalone/${name}.txt" 2>/dev/null || true
+          done
+      - name: Summarize detected trackers
+        if: always()
+        run: |
+          python3 - <<'PYEOF'
+          import json, glob
+          for f in sorted(glob.glob("reports/standalone/*.json")):
+              try:
+                  r = json.load(open(f))
+                  print(f"{f}: handle={r['application']['handle']} trackers={[t['name'] for t in r['trackers']]}")
+              except Exception as e:
+                  print(f"{f}: unreadable ({e})")
+          PYEOF
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: standalone-test
+          path: reports/standalone/
+          if-no-files-found: warn
+          retention-days: 14
