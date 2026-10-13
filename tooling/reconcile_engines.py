@@ -46,7 +46,17 @@ import tempfile
 import zipfile
 from pathlib import Path
 
-ERE_SAFE = re.compile(r"^[A-Za-z0-9_.\\]+$")
+# ERE-safe = everything grep -E handles that python re also handles.
+# Registry sigs are literals + escaped dots + |-alternation (verified in
+# registry snapshot, run 38415446421). Only PCRE-only constructs are unsafe:
+# (?...) groups and backreferences.
+def _is_ere_safe(code: str) -> bool:
+    return not re.search(r"\(\?|\\\d", code)
+
+ERE_SAFE = re.compile(r"^[A-Za-z0-9_.\\|()\[\]\-\^$+*?]*$")
+
+def ere_safe(code: str) -> bool:
+    return _is_ere_safe(code) and ERE_SAFE.match(code) is not None
 DISPUTED_HINTS = ("adjust", "appboy", "braze", "snowplow", "measurement",
                   "firebase", "mparticle", "sentry")
 
@@ -123,7 +133,7 @@ def main(argv: list[str]) -> int:
     # Surface C: regex semantics over the tree, ONE multi-pattern ERE pass.
     # Only signatures safe for ERE (literals + escaped dots) participate;
     # exotic constructs are counted and skipped honestly.
-    ere = [code for code in sigs if ERE_SAFE.match(code)]
+    ere = [code for code in sigs if ere_safe(code)]
     skipped = len(sigs) - len(ere)
     with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as pf:
         for code in ere:
@@ -153,7 +163,8 @@ def main(argv: list[str]) -> int:
         c = c_counts[code] > 0 if code in ere_compiled else None
         in_st = name in st_names
         flag = ""
-        if a != b or (c is not None and c != b):
+        tested = a is not None
+        if tested and (a != b or (c is not None and c != b)):
             disputed.append((name, a, b, c))
             flag = "  <-- DISPUTED"
         interesting = in_st or flag or any(
@@ -164,7 +175,13 @@ def main(argv: list[str]) -> int:
                   f"{'Y' if c else ('n' if c is not None else '-'):>5}"
                   f"{'  standalone-saw' if in_st else ''}{flag}")
 
-    print(f"\ndisputed families (A vs B): {len(disputed)}")
+    print(f"\ndisputed families (A vs B, both-sides-tested only): {len(disputed)}")
+    untested = sum(1 for code, name in sigs.items()
+                   if not ere_safe(code))
+    if untested:
+        print(f"(A untested for {untested} non-ERE-safe signatures — "
+              f"standalone's own regex still covers them; listed only when "
+              f"it reported them)")
     for name, a, b, c in disputed:
         verdict = []
         if a and not b:

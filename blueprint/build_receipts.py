@@ -117,6 +117,10 @@ def parse_report(app_dir: str) -> dict:
 
 
 def parse_trackers(app_dir: str) -> list[dict]:
+    """Parses both TSV generations: 3-col (legacy: tracker/files/sig) and
+    4-col (NF-17: tracker/files/dex_class/sig). The dex_class column is the
+    strong evidence (regex over dexdump class list); match_files alone is
+    string-presence and may be manifest/resource residue."""
     path = os.path.join(app_dir, "exodus_scan.tsv")
     if not os.path.exists(path):
         return []
@@ -124,7 +128,12 @@ def parse_trackers(app_dir: str) -> list[dict]:
     lines = [ln.rstrip("\n") for ln in open(path, encoding="utf-8") if ln.strip()]
     for ln in lines[1:]:
         parts = ln.split("\t")
-        if len(parts) >= 3:
+        if len(parts) >= 4:
+            name, files, dex, sig = parts[0], parts[1], parts[2], parts[3]
+            rows.append({"name": name, "match_files": int(files),
+                         "dex_class": dex, "code_signature": sig,
+                         "category": CATEGORIES.get(name, "unclassified")})
+        elif len(parts) >= 3:
             name, files, sig = parts[0], parts[1], parts[2]
             rows.append({"name": name, "match_files": int(files),
                          "code_signature": sig,
