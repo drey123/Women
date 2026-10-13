@@ -13,12 +13,18 @@ on:
       - "reports/**"
       - "note.md"
       - "spec/**"
+      - "blueprint/**"
+      - "research/**"
+      - "harness/**"
   pull_request:
     branches: [main]
     paths-ignore:
       - "reports/**"
       - "note.md"
       - "spec/**"
+      - "blueprint/**"
+      - "research/**"
+      - "harness/**"
   workflow_dispatch: {}
 
 permissions:
