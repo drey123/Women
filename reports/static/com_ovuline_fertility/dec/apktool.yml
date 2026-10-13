@@ -1,0 +1,8 @@
+version: 3.0.3
+apkFileName: com.ovuline.fertility.apk
+sdkInfo:
+  minSdkVersion: 32
+versionInfo:
+  versionCode: 19484
+doNotCompress:
+- so
