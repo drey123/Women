@@ -2,7 +2,9 @@ name: static-analysis
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - "fix/**"
     paths-ignore:
       - "reports/**"
   pull_request:
@@ -105,7 +107,7 @@ jobs:
           retention-days: 14
 
   publish-reports:
-    if: always() && github.event_name != 'pull_request'
+    if: always() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: [exodus-api, static]
     runs-on: ubuntu-latest
     permissions:
