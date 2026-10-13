@@ -48,10 +48,29 @@ def main():
     print(f"tracker registry: {len(tmap)} trackers")
 
     results = {}
+    # debug: dump one raw response to diagnose API shape
+    try:
+        raw = get_json(f"{BASE}/analysis/{list(PACKAGES)[0]}")
+        with open(f"{OUTDIR}/debug_raw_response.json", "w") as f:
+            json.dump(raw, f, indent=1)
+        print(f"DEBUG keys of first response: {list(raw.keys()) if isinstance(raw, dict) else type(raw)}")
+    except Exception as e:
+        print(f"DEBUG fetch failed: {e}")
+
     for pkg, label in PACKAGES.items():
         try:
-            data = get_json(f"{BASE}/analysis/{pkg}")
-            reports = data.get(pkg, [])
+            data = None
+            for path in (f"{BASE}/analysis/{pkg}", f"{BASE}/analysis/{pkg}/"):
+                try:
+                    data = get_json(path)
+                    if isinstance(data, dict) and data.get(pkg):
+                        break
+                    if isinstance(data, list) and data:
+                        data = {pkg: data}
+                        break
+                except Exception:
+                    continue
+            reports = (data or {}).get(pkg, [])
             if reports:
                 latest = max(reports, key=lambda r: (r.get("version_code") or 0))
                 tids = [str(t) for t in latest.get("trackers", [])]
