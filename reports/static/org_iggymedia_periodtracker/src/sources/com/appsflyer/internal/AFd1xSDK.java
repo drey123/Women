@@ -52,38 +52,34 @@ public final class AFd1xSDK implements AFc1cSDK {
         th4.getClass();
         str.getClass();
         synchronized (this) {
-            try {
-                File monetizationNetwork = getMonetizationNetwork();
-                str2 = null;
-                if (monetizationNetwork != null) {
-                    file = new File(monetizationNetwork, "6.17.4");
-                    if (!file.exists()) {
-                        file.mkdirs();
-                    }
-                } else {
-                    file = null;
+            File monetizationNetwork = getMonetizationNetwork();
+            str2 = null;
+            if (monetizationNetwork != null) {
+                file = new File(monetizationNetwork, "6.17.4");
+                if (!file.exists()) {
+                    file.mkdirs();
                 }
-                if (file != null) {
-                    try {
-                        AFc1aSDK revenue = AFd1tSDK.getRevenue(th4, str);
-                        String str3 = revenue.getCurrencyIso4217Code;
-                        File file2 = new File(file, str3);
-                        if (file2.exists()) {
-                            AFc1aSDK.Companion companion = AFc1aSDK.INSTANCE;
-                            AFc1aSDK revenue2 = AFc1aSDK.Companion.getRevenue(ih.j.e(file2, null, 1, null));
-                            if (revenue2 != null) {
-                                revenue2.AFAdRevenueData++;
-                                revenue = revenue2;
-                            }
+            } else {
+                file = null;
+            }
+            if (file != null) {
+                try {
+                    AFc1aSDK revenue = AFd1tSDK.getRevenue(th4, str);
+                    String str3 = revenue.getCurrencyIso4217Code;
+                    File file2 = new File(file, str3);
+                    if (file2.exists()) {
+                        AFc1aSDK.Companion companion = AFc1aSDK.INSTANCE;
+                        AFc1aSDK revenue2 = AFc1aSDK.Companion.getRevenue(ih.j.e(file2, null, 1, null));
+                        if (revenue2 != null) {
+                            revenue2.AFAdRevenueData++;
+                            revenue = revenue2;
                         }
-                        ih.j.g(file2, revenue.getMediationNetwork(), null, 2, null);
-                        str2 = str3;
-                    } catch (Exception e14) {
-                        AFg1bSDK.v$default(AFLogger.INSTANCE, AFh1ySDK.EXCEPTION_MANAGER, "Could not cache exception\n " + e14.getMessage(), false, 4, null);
                     }
+                    ih.j.g(file2, revenue.getMediationNetwork(), null, 2, null);
+                    str2 = str3;
+                } catch (Exception e14) {
+                    AFg1bSDK.v$default(AFLogger.INSTANCE, AFh1ySDK.EXCEPTION_MANAGER, "Could not cache exception\n " + e14.getMessage(), false, 4, null);
                 }
-            } catch (Throwable th5) {
-                throw th5;
             }
         }
         return str2;

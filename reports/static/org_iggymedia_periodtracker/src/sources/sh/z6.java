@@ -23,12 +23,12 @@ public final class z6 extends z7 implements KMutableProperty0 {
 
         @Override // sh.t7.a
         /* JADX INFO: renamed from: V, reason: merged with bridge method [inline-methods] */
-        public z6 z() {
+        public z6 m0() {
             return this.f144221w;
         }
 
         public void W(Object obj) {
-            z().set(obj);
+            m0().set(obj);
         }
 
         @Override // kotlin.jvm.functions.Function1

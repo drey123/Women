@@ -46,6 +46,7 @@ public class p0 {
         public void done() {
             try {
                 if (isCancelled()) {
+                    this.f29780d = null;
                     return;
                 }
                 try {
@@ -53,8 +54,10 @@ public class p0 {
                 } catch (InterruptedException | ExecutionException e14) {
                     this.f29780d.l(new n0(e14));
                 }
-            } finally {
                 this.f29780d = null;
+            } catch (Throwable th4) {
+                this.f29780d = null;
+                throw th4;
             }
         }
     }

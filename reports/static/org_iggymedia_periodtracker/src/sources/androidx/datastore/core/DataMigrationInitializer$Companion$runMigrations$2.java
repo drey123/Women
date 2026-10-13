@@ -54,10 +54,11 @@ public final class DataMigrationInitializer$Companion$runMigrations$2<T> extends
     /* JADX WARN: Code duplicated, block: B:19:0x006d  */
     /* JADX WARN: Code duplicated, block: B:22:0x0086  */
     /* JADX WARN: Code duplicated, block: B:23:0x0088  */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     @Override // dh.a
     @org.jetbrains.annotations.Nullable

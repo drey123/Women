@@ -99,9 +99,9 @@ public abstract class l {
         if (!(reflectKCallable instanceof KProperty.Getter)) {
             return false;
         }
-        KProperty kPropertyZ = ((KProperty.Getter) reflectKCallable).z();
-        kPropertyZ.getClass();
-        return n((ReflectKProperty) kPropertyZ);
+        KProperty kPropertyM0 = ((KProperty.Getter) reflectKCallable).m0();
+        kPropertyM0.getClass();
+        return n((ReflectKProperty) kPropertyM0);
     }
 
     public static final boolean m(KType kType) {

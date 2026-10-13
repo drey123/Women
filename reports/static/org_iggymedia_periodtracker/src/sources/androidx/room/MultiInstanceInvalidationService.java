@@ -51,34 +51,38 @@ public final class MultiInstanceInvalidationService extends Service {
             RemoteCallbackList callbackList = MultiInstanceInvalidationService.this.getCallbackList();
             MultiInstanceInvalidationService multiInstanceInvalidationService = MultiInstanceInvalidationService.this;
             synchronized (callbackList) {
-                String str = (String) multiInstanceInvalidationService.getClientNames().get(Integer.valueOf(i14));
-                if (str == null) {
-                    Log.w("ROOM", "Remote invalidation client ID not registered");
-                    return;
-                }
-                int iBeginBroadcast = multiInstanceInvalidationService.getCallbackList().beginBroadcast();
-                for (int i15 = 0; i15 < iBeginBroadcast; i15++) {
-                    try {
-                        Object broadcastCookie = multiInstanceInvalidationService.getCallbackList().getBroadcastCookie(i15);
-                        broadcastCookie.getClass();
-                        Integer num = (Integer) broadcastCookie;
-                        int iIntValue = num.intValue();
-                        String str2 = (String) multiInstanceInvalidationService.getClientNames().get(num);
-                        if (i14 != iIntValue && Intrinsics.d(str, str2)) {
-                            try {
-                                ((IMultiInstanceInvalidationCallback) multiInstanceInvalidationService.getCallbackList().getBroadcastItem(i15)).z(strArr);
-                                Unit unit = Unit.f73266a;
-                            } catch (RemoteException e14) {
-                                Log.w("ROOM", "Error invoking a remote callback", e14);
-                            }
-                        }
-                    } catch (Throwable th4) {
-                        multiInstanceInvalidationService.getCallbackList().finishBroadcast();
-                        throw th4;
+                try {
+                    String str = (String) multiInstanceInvalidationService.getClientNames().get(Integer.valueOf(i14));
+                    if (str == null) {
+                        Log.w("ROOM", "Remote invalidation client ID not registered");
+                        return;
                     }
+                    int iBeginBroadcast = multiInstanceInvalidationService.getCallbackList().beginBroadcast();
+                    for (int i15 = 0; i15 < iBeginBroadcast; i15++) {
+                        try {
+                            Object broadcastCookie = multiInstanceInvalidationService.getCallbackList().getBroadcastCookie(i15);
+                            broadcastCookie.getClass();
+                            Integer num = (Integer) broadcastCookie;
+                            int iIntValue = num.intValue();
+                            String str2 = (String) multiInstanceInvalidationService.getClientNames().get(num);
+                            if (i14 != iIntValue && Intrinsics.d(str, str2)) {
+                                try {
+                                    ((IMultiInstanceInvalidationCallback) multiInstanceInvalidationService.getCallbackList().getBroadcastItem(i15)).z(strArr);
+                                    Unit unit = Unit.f73266a;
+                                } catch (RemoteException e14) {
+                                    Log.w("ROOM", "Error invoking a remote callback", e14);
+                                }
+                            }
+                        } catch (Throwable th4) {
+                            multiInstanceInvalidationService.getCallbackList().finishBroadcast();
+                            throw th4;
+                        }
+                    }
+                    multiInstanceInvalidationService.getCallbackList().finishBroadcast();
+                    Unit unit2 = Unit.f73266a;
+                } catch (Throwable th5) {
+                    throw th5;
                 }
-                multiInstanceInvalidationService.getCallbackList().finishBroadcast();
-                Unit unit2 = Unit.f73266a;
             }
         }
 

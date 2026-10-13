@@ -45,7 +45,7 @@ public abstract class a {
             return false;
         }
         if (kCallable instanceof KProperty.Getter) {
-            Field fieldB3 = d.b(((KProperty.Getter) kCallable).z());
+            Field fieldB3 = d.b(((KProperty.Getter) kCallable).m0());
             if (fieldB3 != null ? fieldB3.isAccessible() : true) {
                 Method methodD = d.d((KFunction) kCallable);
                 if (methodD != null ? methodD.isAccessible() : true) {
@@ -55,7 +55,7 @@ public abstract class a {
             return false;
         }
         if (kCallable instanceof KMutableProperty.Setter) {
-            Field fieldB4 = d.b(((KMutableProperty.Setter) kCallable).z());
+            Field fieldB4 = d.b(((KMutableProperty.Setter) kCallable).m0());
             if (fieldB4 != null ? fieldB4.isAccessible() : true) {
                 Method methodD2 = d.d((KFunction) kCallable);
                 if (methodD2 != null ? methodD2.isAccessible() : true) {

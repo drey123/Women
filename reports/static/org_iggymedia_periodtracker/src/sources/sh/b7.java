@@ -23,12 +23,12 @@ public final class b7 extends c8 implements KMutableProperty1 {
 
         @Override // sh.t7.a
         /* JADX INFO: renamed from: V, reason: merged with bridge method [inline-methods] */
-        public b7 z() {
+        public b7 m0() {
             return this.f143812w;
         }
 
         public void W(Object obj, Object obj2) {
-            z().H(obj, obj2);
+            m0().H(obj, obj2);
         }
 
         @Override // kotlin.jvm.functions.Function2

@@ -1,6 +1,7 @@
 package androidx.datastore.core;
 
 import ch.c;
+import dh.b;
 import dh.d;
 import hl.v;
 import java.io.File;
@@ -11,6 +12,7 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.sync.Mutex;
 import org.jetbrains.annotations.NotNull;
@@ -141,124 +143,117 @@ public final class FileStorageConnection<T> implements StorageConnection<T> {
         return this.coordinator;
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x008d */
     /* JADX WARN: Code duplicated, block: B:28:0x0074 A[DONT_INVERT] */
     /* JADX WARN: Code duplicated, block: B:29:0x0076  */
     /* JADX WARN: Code duplicated, block: B:55:0x007c A[EXC_TOP_SPLITTER, SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     @Override // androidx.datastore.core.StorageConnection
-    @org.jetbrains.annotations.Nullable
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public <R> java.lang.Object readScope(@org.jetbrains.annotations.NotNull kotlin.jvm.functions.Function3<? super androidx.datastore.core.ReadScope<T>, ? super java.lang.Boolean, ? super kotlin.coroutines.Continuation<? super R>, ? extends java.lang.Object> r9, @org.jetbrains.annotations.NotNull kotlin.coroutines.Continuation<? super R> r10) throws java.lang.Throwable {
-        /*
-            r8 = this;
-            boolean r0 = r10 instanceof androidx.datastore.core.FileStorageConnection.AnonymousClass1
-            if (r0 == 0) goto L13
-            r0 = r10
-            androidx.datastore.core.FileStorageConnection$readScope$1 r0 = (androidx.datastore.core.FileStorageConnection.AnonymousClass1) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r3 = r1 & r2
-            if (r3 == 0) goto L13
-            int r1 = r1 - r2
-            r0.label = r1
-            goto L18
-        L13:
-            androidx.datastore.core.FileStorageConnection$readScope$1 r0 = new androidx.datastore.core.FileStorageConnection$readScope$1
-            r0.<init>(r8, r10)
-        L18:
-            java.lang.Object r10 = r0.result
-            java.lang.Object r1 = ch.c.g()
-            int r2 = r0.label
-            r3 = 1
-            r4 = 0
-            if (r2 == 0) goto L40
-            if (r2 != r3) goto L3a
-            boolean r8 = r0.Z$0
-            java.lang.Object r9 = r0.L$1
-            androidx.datastore.core.Closeable r9 = (androidx.datastore.core.Closeable) r9
-            java.lang.Object r0 = r0.L$0
-            androidx.datastore.core.FileStorageConnection r0 = (androidx.datastore.core.FileStorageConnection) r0
-            xg.r.b(r10)     // Catch: java.lang.Throwable -> L34
-            goto L6c
-        L34:
-            r10 = move-exception
-            r7 = r10
-            r10 = r8
-            r8 = r0
-            r0 = r7
-            goto L84
-        L3a:
-            java.lang.String r8 = "call to 'resume' before 'invoke' with coroutine"
-            vl.j0.a(r8)
-            return r4
-        L40:
-            xg.r.b(r10)
-            r8.checkNotClosed()
-            kotlinx.coroutines.sync.Mutex r10 = r8.transactionMutex
-            boolean r10 = kotlinx.coroutines.sync.Mutex.a.b(r10, r4, r3, r4)
-            androidx.datastore.core.FileReadScope r2 = new androidx.datastore.core.FileReadScope     // Catch: java.lang.Throwable -> L8d
-            java.io.File r5 = r8.file     // Catch: java.lang.Throwable -> L8d
-            androidx.datastore.core.Serializer<T> r6 = r8.serializer     // Catch: java.lang.Throwable -> L8d
-            r2.<init>(r5, r6)     // Catch: java.lang.Throwable -> L8d
-            java.lang.Boolean r5 = dh.b.a(r10)     // Catch: java.lang.Throwable -> L81
-            r0.L$0 = r8     // Catch: java.lang.Throwable -> L81
-            r0.L$1 = r2     // Catch: java.lang.Throwable -> L81
-            r0.Z$0 = r10     // Catch: java.lang.Throwable -> L81
-            r0.label = r3     // Catch: java.lang.Throwable -> L81
-            java.lang.Object r9 = r9.invoke(r2, r5, r0)     // Catch: java.lang.Throwable -> L81
-            if (r9 != r1) goto L68
-            return r1
-        L68:
-            r0 = r8
-            r8 = r10
-            r10 = r9
-            r9 = r2
-        L6c:
-            r9.close()     // Catch: java.lang.Throwable -> L71
-            r9 = r4
-            goto L72
-        L71:
-            r9 = move-exception
-        L72:
-            if (r9 != 0) goto L7c
-            if (r8 == 0) goto L7b
-            kotlinx.coroutines.sync.Mutex r8 = r0.transactionMutex
-            kotlinx.coroutines.sync.Mutex.a.c(r8, r4, r3, r4)
-        L7b:
-            return r10
-        L7c:
-            throw r9     // Catch: java.lang.Throwable -> L7d
-        L7d:
-            r9 = move-exception
-            r10 = r8
-            r8 = r0
-            goto L8e
-        L81:
-            r9 = move-exception
-            r0 = r9
-            r9 = r2
-        L84:
-            r9.close()     // Catch: java.lang.Throwable -> L88
-            goto L8c
-        L88:
-            r9 = move-exception
-            xg.f.a(r0, r9)     // Catch: java.lang.Throwable -> L8d
-        L8c:
-            throw r0     // Catch: java.lang.Throwable -> L8d
-        L8d:
-            r9 = move-exception
-        L8e:
-            if (r10 == 0) goto L95
-            kotlinx.coroutines.sync.Mutex r8 = r8.transactionMutex
-            kotlinx.coroutines.sync.Mutex.a.c(r8, r4, r3, r4)
-        L95:
-            throw r9
-        */
-        throw new UnsupportedOperationException("Method not decompiled: androidx.datastore.core.FileStorageConnection.readScope(kotlin.jvm.functions.Function3, kotlin.coroutines.Continuation):java.lang.Object");
+    @Nullable
+    public <R> Object readScope(@NotNull Function3<? super ReadScope<T>, ? super Boolean, ? super Continuation<? super R>, ? extends Object> function3, @NotNull Continuation<? super R> continuation) throws Throwable {
+        AnonymousClass1 anonymousClass1;
+        boolean zE;
+        Throwable th4;
+        Closeable closeable;
+        FileStorageConnection<T> fileStorageConnection;
+        boolean z14;
+        if (continuation instanceof AnonymousClass1) {
+            anonymousClass1 = (AnonymousClass1) continuation;
+            int i14 = anonymousClass1.label;
+            if ((i14 & Integer.MIN_VALUE) != 0) {
+                anonymousClass1.label = i14 - Integer.MIN_VALUE;
+            } else {
+                anonymousClass1 = new AnonymousClass1(this, continuation);
+            }
+        } else {
+            anonymousClass1 = new AnonymousClass1(this, continuation);
+        }
+        Object obj = anonymousClass1.result;
+        Object objG = c.g();
+        int i15 = anonymousClass1.label;
+        if (i15 == 0) {
+            r.b(obj);
+            checkNotClosed();
+            zE = Mutex.e(this.transactionMutex, null, 1, null);
+            try {
+                FileReadScope fileReadScope = new FileReadScope(this.file, this.serializer);
+                try {
+                    Boolean boolA = b.a(zE);
+                    anonymousClass1.L$0 = this;
+                    anonymousClass1.L$1 = fileReadScope;
+                    anonymousClass1.Z$0 = zE;
+                    anonymousClass1.label = 1;
+                    Object objInvoke = function3.invoke(fileReadScope, boolA, anonymousClass1);
+                    if (objInvoke == objG) {
+                        return objG;
+                    }
+                    fileStorageConnection = this;
+                    z14 = zE;
+                    obj = objInvoke;
+                    closeable = fileReadScope;
+                    closeable.close();
+                    th = null;
+                    if (th != null) {
+                        throw th;
+                    }
+                    if (z14) {
+                        Mutex.g(fileStorageConnection.transactionMutex, null, 1, null);
+                    }
+                    return obj;
+                } catch (Throwable th5) {
+                    th4 = th5;
+                    closeable = fileReadScope;
+                    closeable.close();
+                    throw th4;
+                }
+            } catch (Throwable th6) {
+                th = th6;
+            }
+        } else {
+            if (i15 != 1) {
+                j0.a("call to 'resume' before 'invoke' with coroutine");
+                return null;
+            }
+            z14 = anonymousClass1.Z$0;
+            closeable = (Closeable) anonymousClass1.L$1;
+            fileStorageConnection = (FileStorageConnection) anonymousClass1.L$0;
+            try {
+                r.b(obj);
+                try {
+                    closeable.close();
+                    th = null;
+                } catch (Throwable th7) {
+                    th = th7;
+                }
+                if (th != null) {
+                    if (z14) {
+                        Mutex.g(fileStorageConnection.transactionMutex, null, 1, null);
+                    }
+                    return obj;
+                }
+                try {
+                    throw th;
+                } catch (Throwable th8) {
+                    th = th8;
+                    zE = z14;
+                    this = fileStorageConnection;
+                }
+            } catch (Throwable th9) {
+                zE = z14;
+                this = fileStorageConnection;
+                th4 = th9;
+                try {
+                    closeable.close();
+                    throw th4;
+                } catch (Throwable th10) {
+                    f.a(th4, th10);
+                    throw th4;
+                }
+            }
+        }
+        if (zE) {
+            Mutex.g(this.transactionMutex, null, 1, null);
+        }
+        throw th;
     }
 
     /* JADX WARN: Code duplicated, block: B:34:0x00b9 A[Catch: all -> 0x00e9, IOException -> 0x00ec, TRY_ENTER, TryCatch #6 {all -> 0x00e9, blocks: (B:34:0x00b9, B:36:0x00bf, B:39:0x00c8, B:40:0x00e8, B:45:0x00f0, B:48:0x00f8, B:55:0x0106, B:54:0x0103), top: B:77:0x0025 }] */

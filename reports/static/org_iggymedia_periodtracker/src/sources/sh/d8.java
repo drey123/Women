@@ -17,13 +17,13 @@ public abstract class d8 {
         Caller callerB;
         Method methodK;
         aVar.getClass();
-        t7 t7VarZ = aVar.z();
-        if (w8.b(t7VarZ)) {
+        t7 t7VarM0 = aVar.m0();
+        if (w8.b(t7VarM0)) {
             return th.j.f148341a;
         }
-        hi.u uVarC0 = t7VarZ.c0();
+        hi.u uVarC0 = t7VarM0.c0();
         li.g gVarC = z14 ? li.b.c(uVarC0) : li.b.g(uVarC0);
-        Method methodO0 = gVarC != null ? t7VarZ.getContainer().o0(gVarC.b(), gVarC.a()) : null;
+        Method methodO0 = gVarC != null ? t7VarM0.getContainer().o0(gVarC.b(), gVarC.a()) : null;
         if (methodO0 != null) {
             if (!Modifier.isStatic(methodO0.getModifiers())) {
                 cVar = r8.h(aVar) ? new th.g.h.a(methodO0, e(aVar)) : new th.g.h.d(methodO0);
@@ -33,19 +33,19 @@ public abstract class d8 {
                 cVar = r8.h(aVar) ? new th.g.h.c(methodO0, false, e(aVar)) : new th.g.h.f(methodO0);
             }
             callerB = cVar;
-        } else if (th.l.n(t7VarZ) && t7VarZ.getVisibility() == kotlin.reflect.d.INTERNAL) {
-            Class clsP = th.l.p(((KParameter) CollectionsKt.a1(t7VarZ.getParameters())).getType());
-            if (clsP == null || (methodK = th.l.k(clsP, t7VarZ)) == null) {
-                throw new g8("Underlying property of inline class " + t7VarZ + " should have a field");
+        } else if (th.l.n(t7VarM0) && t7VarM0.getVisibility() == kotlin.reflect.d.INTERNAL) {
+            Class clsP = th.l.p(((KParameter) CollectionsKt.a1(t7VarM0.getParameters())).getType());
+            if (clsP == null || (methodK = th.l.k(clsP, t7VarM0)) == null) {
+                throw new g8("Underlying property of inline class " + t7VarM0 + " should have a field");
             }
             callerB = r8.h(aVar) ? new th.i.a(methodK, e(aVar)) : new th.i.b(methodK);
         } else {
-            Field fieldO = t7VarZ.O();
+            Field fieldO = t7VarM0.O();
             if (fieldO == null) {
-                qh.e.a("No accessors or field is found for property ", t7VarZ);
+                qh.e.a("No accessors or field is found for property ", t7VarM0);
                 return null;
             }
-            callerB = b(t7VarZ, z14, aVar, fieldO);
+            callerB = b(t7VarM0, z14, aVar, fieldO);
         }
         return th.l.i(callerB, aVar, false, kotlin.collections.w.o());
     }
@@ -84,7 +84,7 @@ public abstract class d8 {
 
     public static final Object e(t7.a aVar) {
         aVar.getClass();
-        return r8.f(aVar.z());
+        return r8.f(aVar.m0());
     }
 
     public static final boolean f(t7 t7Var) {

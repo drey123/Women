@@ -1,11 +1,9 @@
 package androidx.compose.animation;
 
-import java.util.Map;
 import kotlin.collections.s0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import p.c0;
-import p.d0;
 import p.o;
 import p.p;
 import p.t;
@@ -19,22 +17,10 @@ public abstract class g {
     public static final a f4131a = new a(null);
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    public static final g f4132b;
+    public static final g f4132b = new o(new c0(null, null, null, null, null, false, null, 127, null));
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    public static final g f4133c;
-
-    static {
-        DefaultConstructorMarker defaultConstructorMarker = null;
-        p pVar = null;
-        y yVar = null;
-        p.g gVar = null;
-        t tVar = null;
-        d0 d0Var = null;
-        Map map = null;
-        f4132b = new o(new c0(pVar, yVar, gVar, tVar, d0Var, false, map, 127, defaultConstructorMarker));
-        f4133c = new o(new c0(pVar, yVar, gVar, tVar, d0Var, true, map, 95, defaultConstructorMarker));
-    }
+    public static final g f4133c = new o(new c0(null, null, null, null, null, true, null, 95, null));
 
     public /* synthetic */ g(DefaultConstructorMarker defaultConstructorMarker) {
         this();

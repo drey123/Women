@@ -237,10 +237,11 @@ public final class l {
     /* JADX WARN: Type inference failed for: r12v8 */
     /* JADX WARN: Type inference failed for: r20v0, types: [s53.l] */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:66:0x0206 -> B:67:0x0218). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public final java.lang.Object d(org.iggymedia.periodtracker.feature.stories.data.model.SlideJson r21, org.iggymedia.periodtracker.core.variables.domain.model.VariablesScope r22, kotlin.coroutines.Continuation r23) {
         /*

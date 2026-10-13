@@ -94,11 +94,9 @@ public abstract class x {
                 Log.e("GoogleCertificates", "Failed to get Google certificates from remote", e15);
                 h0VarD = h0.d("module init: ".concat(String.valueOf(e15.getMessage())), e15);
             }
-            StrictMode.setThreadPolicy(threadPolicyAllowThreadDiskReads);
             return h0VarD;
-        } catch (Throwable th4) {
+        } finally {
             StrictMode.setThreadPolicy(threadPolicyAllowThreadDiskReads);
-            throw th4;
         }
     }
 

@@ -43,7 +43,7 @@ public final class h3 extends q8 implements KProperty0, ReflectKProperty {
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
         public List B() {
-            return z().B();
+            return m0().B();
         }
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
@@ -53,7 +53,7 @@ public final class h3 extends q8 implements KProperty0, ReflectKProperty {
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
         public Caller N() {
-            return z().N();
+            return m0().N();
         }
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
@@ -62,51 +62,51 @@ public final class h3 extends q8 implements KProperty0, ReflectKProperty {
         }
 
         public boolean equals(Object obj) {
-            return (obj instanceof b) && Intrinsics.d(z(), ((b) obj).z());
+            return (obj instanceof b) && Intrinsics.d(m0(), ((b) obj).m0());
         }
 
         @Override // kotlin.reflect.KAnnotatedElement
         public List getAnnotations() {
-            return z().getAnnotations();
+            return m0().getAnnotations();
         }
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
         public a6 getContainer() {
-            return z().getContainer();
+            return m0().getContainer();
         }
 
         @Override // kotlin.reflect.KCallable
         public String getName() {
-            return "<get-" + z().getName() + '>';
+            return "<get-" + m0().getName() + '>';
         }
 
         @Override // kotlin.reflect.KCallable
         public List getParameters() {
-            return z().getParameters();
+            return m0().getParameters();
         }
 
         @Override // kotlin.reflect.KCallable
         public KType getReturnType() {
-            return z().getReturnType();
+            return m0().getReturnType();
         }
 
         @Override // kotlin.reflect.KCallable
         public List getTypeParameters() {
-            return z().getTypeParameters();
+            return m0().getTypeParameters();
         }
 
         @Override // kotlin.reflect.KCallable
         public kotlin.reflect.d getVisibility() {
-            return z().getVisibility();
+            return m0().getVisibility();
         }
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
         public hi.h0 h() {
-            return z().h();
+            return m0().h();
         }
 
         public int hashCode() {
-            return z().hashCode();
+            return m0().hashCode();
         }
 
         @Override // kotlin.reflect.KFunction
@@ -142,12 +142,12 @@ public final class h3 extends q8 implements KProperty0, ReflectKProperty {
         }
 
         public String toString() {
-            return "getter of " + z();
+            return "getter of " + m0();
         }
 
         @Override // kotlin.reflect.KProperty.Accessor
         /* JADX INFO: renamed from: w, reason: merged with bridge method [inline-methods] */
-        public ReflectKProperty z() {
+        public ReflectKProperty m0() {
             return h3.this;
         }
 

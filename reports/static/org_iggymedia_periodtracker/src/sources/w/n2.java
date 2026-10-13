@@ -1394,11 +1394,9 @@ public abstract class n2 {
         /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:32:0x00a0 -> B:34:0x00a3). Please report as a decompilation issue!!! */
         /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
             java.lang.StackOverflowError
-            	at jadx.core.dex.attributes.AttributeStorage.contains(AttributeStorage.java:90)
-            	at jadx.core.dex.attributes.AttrNode.contains(AttrNode.java:98)
-            	at jadx.core.utils.BlockUtils.isFollowBackEdge(BlockUtils.java:143)
-            	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.mergeNestedIfNodes(IfRegionMaker.java:404)
-            	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:68)
+            	at jadx.core.dex.regions.Region.<init>(Region.java:19)
+            	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeRegion(RegionMaker.java:54)
+            	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:111)
             	at jadx.core.dex.visitors.regions.maker.RegionMaker.traverse(RegionMaker.java:109)
             	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeRegion(RegionMaker.java:69)
             	at jadx.core.dex.visitors.regions.maker.LoopRegionMaker.makeEndlessLoop(LoopRegionMaker.java:590)
@@ -2417,6 +2415,8 @@ public abstract class n2 {
             	at jadx.core.dex.visitors.regions.maker.RegionMaker.traverse(RegionMaker.java:109)
             	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeRegion(RegionMaker.java:69)
             	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:117)
+            	at jadx.core.dex.visitors.regions.maker.RegionMaker.traverse(RegionMaker.java:109)
+            	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeRegion(RegionMaker.java:69)
             */
         @Override // dh.a
         public final java.lang.Object invokeSuspend(java.lang.Object r14) {
@@ -2548,10 +2548,11 @@ public abstract class n2 {
     /* JADX WARN: Code duplicated, block: B:31:0x0037 A[SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:16:0x003f -> B:18:0x0042). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-        java.lang.StackOverflowError
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-        	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+        jadx.core.utils.exceptions.JadxOverflowException: Regions count limit reached at block B:23:0x0066
+        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public static final java.lang.Object i(androidx.compose.ui.input.pointer.AwaitPointerEventScope r9, kotlin.coroutines.Continuation r10) {
         /*

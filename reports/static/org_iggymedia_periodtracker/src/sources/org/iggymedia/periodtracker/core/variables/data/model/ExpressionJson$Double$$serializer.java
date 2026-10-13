@@ -13,6 +13,7 @@ import kotlinx.serialization.internal.GeneratedSerializer;
 import org.jetbrains.annotations.NotNull;
 import zk.b0;
 import zk.e2;
+import zk.p2;
 
 /* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
 /* JADX INFO: loaded from: classes6.dex */
@@ -50,6 +51,7 @@ public final /* synthetic */ class ExpressionJson$Double$$serializer implements 
         decoder.getClass();
         SerialDescriptor serialDescriptor = descriptor;
         CompositeDecoder compositeDecoderB = decoder.b(serialDescriptor);
+        p2 p2Var = null;
         int i14 = 1;
         if (compositeDecoderB.l()) {
             dG = compositeDecoderB.G(serialDescriptor, 0);
@@ -74,7 +76,7 @@ public final /* synthetic */ class ExpressionJson$Double$$serializer implements 
             i14 = i15;
         }
         compositeDecoderB.c(serialDescriptor);
-        return new ExpressionJson.Double(i14, dG, null);
+        return new ExpressionJson.Double(i14, dG, p2Var);
     }
 
     @Override // kotlinx.serialization.KSerializer, kotlinx.serialization.SerializationStrategy, kotlinx.serialization.DeserializationStrategy

@@ -49,13 +49,13 @@ public abstract class t7 extends o6 implements ReflectKProperty {
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
         public Object S() {
-            return z().S();
+            return m0().S();
         }
 
         @Override // kotlin.reflect.KAnnotatedElement
         public List getAnnotations() {
             Annotation[] annotations;
-            if (w8.b(z())) {
+            if (w8.b(m0())) {
                 return kotlin.collections.w.o();
             }
             Member memberD = N().d();
@@ -72,12 +72,12 @@ public abstract class t7 extends o6 implements ReflectKProperty {
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
         public a6 getContainer() {
-            return z().getContainer();
+            return m0().getContainer();
         }
 
         @Override // kotlin.reflect.KCallable
         public List getTypeParameters() {
-            return z().getTypeParameters();
+            return m0().getTypeParameters();
         }
 
         @Override // kotlin.reflect.KCallable
@@ -85,14 +85,14 @@ public abstract class t7 extends o6 implements ReflectKProperty {
             hi.j0 j0VarJ;
             kotlin.reflect.d dVarE;
             hi.v vVarW = w();
-            return (vVarW == null || (j0VarJ = hi.a.j(vVarW)) == null || (dVarE = g0.E(j0VarJ)) == null) ? z().getVisibility() : dVarE;
+            return (vVarW == null || (j0VarJ = hi.a.j(vVarW)) == null || (dVarE = g0.E(j0VarJ)) == null) ? m0().getVisibility() : dVarE;
         }
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
         public hi.h0 h() {
             hi.h0 h0VarF;
             hi.v vVarW = w();
-            return (vVarW == null || (h0VarF = hi.a.f(vVarW)) == null) ? z().h() : h0VarF;
+            return (vVarW == null || (h0VarF = hi.a.f(vVarW)) == null) ? m0().h() : h0VarF;
         }
 
         @Override // kotlin.reflect.KFunction
@@ -136,7 +136,8 @@ public abstract class t7 extends o6 implements ReflectKProperty {
             return null;
         }
 
-        public abstract t7 z();
+        /* JADX INFO: renamed from: z */
+        public abstract t7 m0();
     }
 
     /* JADX INFO: compiled from: r8-map-id-5c8c3f0046a8b83868ff825764ab01928dc4791f0e54067bbc32fe006f7eee02 */
@@ -151,7 +152,7 @@ public abstract class t7 extends o6 implements ReflectKProperty {
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
         public List B() {
-            return z().B();
+            return m0().B();
         }
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
@@ -160,35 +161,35 @@ public abstract class t7 extends o6 implements ReflectKProperty {
         }
 
         public boolean equals(Object obj) {
-            return (obj instanceof b) && Intrinsics.d(z(), ((b) obj).z());
+            return (obj instanceof b) && Intrinsics.d(m0(), ((b) obj).m0());
         }
 
         @Override // kotlin.reflect.KCallable
         public String getName() {
-            return "<get-" + z().getName() + '>';
+            return "<get-" + m0().getName() + '>';
         }
 
         @Override // kotlin.reflect.KCallable
         public List getParameters() {
-            return z().getParameters();
+            return m0().getParameters();
         }
 
         @Override // kotlin.reflect.KCallable
         public KType getReturnType() {
-            return z().getReturnType();
+            return m0().getReturnType();
         }
 
         public int hashCode() {
-            return z().hashCode();
+            return m0().hashCode();
         }
 
         public String toString() {
-            return "getter of " + z();
+            return "getter of " + m0();
         }
 
         @Override // sh.t7.a
         public hi.v w() {
-            return z().c0().i();
+            return m0().c0().i();
         }
     }
 
@@ -212,13 +213,13 @@ public abstract class t7 extends o6 implements ReflectKProperty {
         }
 
         public static final u8 T(c cVar) {
-            hi.a0 a0VarN = cVar.z().c0().n();
-            return a0VarN != null ? new l7(cVar, a0VarN, cVar.z().B().size(), KParameter.a.VALUE, (w9) cVar.z().d0().getValue()) : new k0(cVar.z());
+            hi.a0 a0VarN = cVar.m0().c0().n();
+            return a0VarN != null ? new l7(cVar, a0VarN, cVar.m0().B().size(), KParameter.a.VALUE, (w9) cVar.m0().d0().getValue()) : new k0(cVar.m0());
         }
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
         public List B() {
-            return CollectionsKt.W0(z().B(), this.f144105i.getValue());
+            return CollectionsKt.W0(m0().B(), this.f144105i.getValue());
         }
 
         @Override // kotlin.reflect.jvm.internal.ReflectKCallable
@@ -227,17 +228,17 @@ public abstract class t7 extends o6 implements ReflectKProperty {
         }
 
         public boolean equals(Object obj) {
-            return (obj instanceof c) && Intrinsics.d(z(), ((c) obj).z());
+            return (obj instanceof c) && Intrinsics.d(m0(), ((c) obj).m0());
         }
 
         @Override // kotlin.reflect.KCallable
         public String getName() {
-            return "<set-" + z().getName() + '>';
+            return "<set-" + m0().getName() + '>';
         }
 
         @Override // kotlin.reflect.KCallable
         public List getParameters() {
-            return CollectionsKt.W0(z().getParameters(), this.f144105i.getValue());
+            return CollectionsKt.W0(m0().getParameters(), this.f144105i.getValue());
         }
 
         @Override // kotlin.reflect.KCallable
@@ -246,16 +247,16 @@ public abstract class t7 extends o6 implements ReflectKProperty {
         }
 
         public int hashCode() {
-            return z().hashCode();
+            return m0().hashCode();
         }
 
         public String toString() {
-            return "setter of " + z();
+            return "setter of " + m0();
         }
 
         @Override // sh.t7.a
         public hi.v w() {
-            return z().c0().m();
+            return m0().c0().m();
         }
     }
 

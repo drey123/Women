@@ -7,8 +7,9 @@ public final class e extends c {
     /* JADX INFO: renamed from: b, reason: collision with root package name */
     public static final e f59384b = new e();
 
+    /* JADX WARN: Multi-variable type inference failed */
     public e() {
-        super(null, 1, null);
+        super(null, 1, 0 == true ? 1 : 0);
     }
 
     public boolean equals(Object obj) {

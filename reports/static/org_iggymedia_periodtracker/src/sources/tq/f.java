@@ -119,10 +119,11 @@ public final class f implements Analytics {
         /* JADX WARN: Code duplicated, block: B:10:0x003a  */
         /* JADX WARN: Code duplicated, block: B:12:0x0058 A[RETURN] */
         /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:11:0x0056 -> B:13:0x0059). Please report as a decompilation issue!!! */
-        /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-            java.lang.StackOverflowError
-            	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-            	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+        /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+            jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+            	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+            	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+            	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
             */
         @Override // dh.a
         public final java.lang.Object invokeSuspend(java.lang.Object r8) {
