@@ -27,7 +27,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          filter: blob:none
           sparse-checkout: |
             .github/workflows
             tooling
@@ -56,7 +55,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          filter: blob:none
           sparse-checkout: |
             .github/workflows
             tooling
@@ -99,7 +97,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          filter: blob:none
           sparse-checkout: |
             .github/workflows
             tooling
@@ -156,7 +153,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          filter: blob:none
           sparse-checkout: |
             /reports/exodus/
             /reports/static/*/report.md
