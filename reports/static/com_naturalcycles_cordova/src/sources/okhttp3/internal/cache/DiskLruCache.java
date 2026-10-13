@@ -316,47 +316,51 @@ public final class DiskLruCache implements Closeable, Flushable {
     }
 
     public final synchronized void rebuildJournal$okhttp() throws IOException {
-        BufferedSink bufferedSink = this.journalWriter;
-        if (bufferedSink != null) {
-            bufferedSink.close();
-        }
-        BufferedSink bufferedSinkBuffer = Okio.buffer(this.fileSystem.sink(this.journalFileTmp));
         try {
-            BufferedSink bufferedSink2 = bufferedSinkBuffer;
-            bufferedSink2.writeUtf8(MAGIC).writeByte(10);
-            bufferedSink2.writeUtf8(VERSION_1).writeByte(10);
-            bufferedSink2.writeDecimalLong(this.appVersion).writeByte(10);
-            bufferedSink2.writeDecimalLong(this.valueCount).writeByte(10);
-            bufferedSink2.writeByte(10);
-            for (Entry entry : this.lruEntries.values()) {
-                if (entry.getCurrentEditor() != null) {
-                    bufferedSink2.writeUtf8(DIRTY).writeByte(32);
-                    bufferedSink2.writeUtf8(entry.getKey());
-                    bufferedSink2.writeByte(10);
-                } else {
-                    bufferedSink2.writeUtf8(CLEAN).writeByte(32);
-                    bufferedSink2.writeUtf8(entry.getKey());
-                    entry.writeLengths$okhttp(bufferedSink2);
-                    bufferedSink2.writeByte(10);
+            BufferedSink bufferedSink = this.journalWriter;
+            if (bufferedSink != null) {
+                bufferedSink.close();
+            }
+            BufferedSink bufferedSinkBuffer = Okio.buffer(this.fileSystem.sink(this.journalFileTmp));
+            try {
+                BufferedSink bufferedSink2 = bufferedSinkBuffer;
+                bufferedSink2.writeUtf8(MAGIC).writeByte(10);
+                bufferedSink2.writeUtf8(VERSION_1).writeByte(10);
+                bufferedSink2.writeDecimalLong(this.appVersion).writeByte(10);
+                bufferedSink2.writeDecimalLong(this.valueCount).writeByte(10);
+                bufferedSink2.writeByte(10);
+                for (Entry entry : this.lruEntries.values()) {
+                    if (entry.getCurrentEditor() != null) {
+                        bufferedSink2.writeUtf8(DIRTY).writeByte(32);
+                        bufferedSink2.writeUtf8(entry.getKey());
+                        bufferedSink2.writeByte(10);
+                    } else {
+                        bufferedSink2.writeUtf8(CLEAN).writeByte(32);
+                        bufferedSink2.writeUtf8(entry.getKey());
+                        entry.writeLengths$okhttp(bufferedSink2);
+                        bufferedSink2.writeByte(10);
+                    }
+                }
+                Unit unit = Unit.INSTANCE;
+                CloseableKt.closeFinally(bufferedSinkBuffer, null);
+                if (this.fileSystem.exists(this.journalFile)) {
+                    this.fileSystem.rename(this.journalFile, this.journalFileBackup);
+                }
+                this.fileSystem.rename(this.journalFileTmp, this.journalFile);
+                this.fileSystem.delete(this.journalFileBackup);
+                this.journalWriter = newJournalWriter();
+                this.hasJournalErrors = false;
+                this.mostRecentRebuildFailed = false;
+            } catch (Throwable th) {
+                try {
+                    throw th;
+                } catch (Throwable th2) {
+                    CloseableKt.closeFinally(bufferedSinkBuffer, th);
+                    throw th2;
                 }
             }
-            Unit unit = Unit.INSTANCE;
-            CloseableKt.closeFinally(bufferedSinkBuffer, null);
-            if (this.fileSystem.exists(this.journalFile)) {
-                this.fileSystem.rename(this.journalFile, this.journalFileBackup);
-            }
-            this.fileSystem.rename(this.journalFileTmp, this.journalFile);
-            this.fileSystem.delete(this.journalFileBackup);
-            this.journalWriter = newJournalWriter();
-            this.hasJournalErrors = false;
-            this.mostRecentRebuildFailed = false;
-        } catch (Throwable th) {
-            try {
-                throw th;
-            } catch (Throwable th2) {
-                CloseableKt.closeFinally(bufferedSinkBuffer, th);
-                throw th2;
-            }
+        } catch (Throwable th3) {
+            throw th3;
         }
     }
 

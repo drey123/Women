@@ -89,8 +89,9 @@ public final class SweepGradient extends ShaderBrush implements Interpolatable {
 
     @Override // androidx.compose.ui.graphics.Interpolatable
     public Object lerp(Object other, float t) {
+        DefaultConstructorMarker defaultConstructorMarker = null;
         if (other == null) {
-            other = new SolidColor(Color.INSTANCE.m3392getTransparent0d7_KjU(), null);
+            other = new SolidColor(Color.INSTANCE.m3392getTransparent0d7_KjU(), defaultConstructorMarker);
         }
         if (other instanceof SolidColor) {
             long j = this.center;

@@ -199,10 +199,11 @@ public final class PathTreeWalk implements Sequence<Path> {
         /* JADX WARN: Code duplicated, block: B:31:0x012d  */
         /* JADX WARN: Code duplicated, block: B:32:0x0130  */
         /* JADX WARN: Code duplicated, block: B:42:0x00ce A[SYNTHETIC] */
-        /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
-            java.lang.StackOverflowError
-            	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:731)
-            	at jadx.core.utils.BlockUtils.traverseSuccessorsUntil(BlockUtils.java:749)
+        /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
+            jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
+            	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+            	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+            	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r12) {

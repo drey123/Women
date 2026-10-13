@@ -205,38 +205,42 @@ public final class DiskLruCache implements Closeable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void rebuildJournal() throws IOException {
-        Writer writer = this.journalWriter;
-        if (writer != null) {
-            closeWriter(writer);
-        }
-        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.journalFileTmp), Util.US_ASCII));
         try {
-            bufferedWriter.write(MAGIC);
-            bufferedWriter.write("\n");
-            bufferedWriter.write(VERSION_1);
-            bufferedWriter.write("\n");
-            bufferedWriter.write(Integer.toString(this.appVersion));
-            bufferedWriter.write("\n");
-            bufferedWriter.write(Integer.toString(this.valueCount));
-            bufferedWriter.write("\n");
-            bufferedWriter.write("\n");
-            for (Entry entry : this.lruEntries.values()) {
-                if (entry.currentEditor != null) {
-                    bufferedWriter.write("DIRTY " + entry.key + '\n');
-                } else {
-                    bufferedWriter.write("CLEAN " + entry.key + entry.getLengths() + '\n');
+            Writer writer = this.journalWriter;
+            if (writer != null) {
+                closeWriter(writer);
+            }
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.journalFileTmp), Util.US_ASCII));
+            try {
+                bufferedWriter.write(MAGIC);
+                bufferedWriter.write("\n");
+                bufferedWriter.write(VERSION_1);
+                bufferedWriter.write("\n");
+                bufferedWriter.write(Integer.toString(this.appVersion));
+                bufferedWriter.write("\n");
+                bufferedWriter.write(Integer.toString(this.valueCount));
+                bufferedWriter.write("\n");
+                bufferedWriter.write("\n");
+                for (Entry entry : this.lruEntries.values()) {
+                    if (entry.currentEditor != null) {
+                        bufferedWriter.write("DIRTY " + entry.key + '\n');
+                    } else {
+                        bufferedWriter.write("CLEAN " + entry.key + entry.getLengths() + '\n');
+                    }
                 }
+                closeWriter(bufferedWriter);
+                if (this.journalFile.exists()) {
+                    renameTo(this.journalFile, this.journalFileBackup, true);
+                }
+                renameTo(this.journalFileTmp, this.journalFile, false);
+                this.journalFileBackup.delete();
+                this.journalWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.journalFile, true), Util.US_ASCII));
+            } catch (Throwable th) {
+                closeWriter(bufferedWriter);
+                throw th;
             }
-            closeWriter(bufferedWriter);
-            if (this.journalFile.exists()) {
-                renameTo(this.journalFile, this.journalFileBackup, true);
-            }
-            renameTo(this.journalFileTmp, this.journalFile, false);
-            this.journalFileBackup.delete();
-            this.journalWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.journalFile, true), Util.US_ASCII));
-        } catch (Throwable th) {
-            closeWriter(bufferedWriter);
-            throw th;
+        } catch (Throwable th2) {
+            throw th2;
         }
     }
 
