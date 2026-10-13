@@ -59,7 +59,7 @@ jobs:
               raise SystemExit(f"FAIL: schema accepted malformed trace: {label}")
 
           must_fail(lambda t: t.pop("capture"), "missing capture")
-          must_fail(lambda t: t["interactions"].pop(), "no interactions")
+          must_fail(lambda t: t["interactions"].clear(), "no interactions")
           must_fail(lambda t: t["interactions"][0].pop("response"), "missing response")
           must_fail(lambda t: t["interactions"][0]["response"].__setitem__("status", "200"), "status not int")
           must_fail(lambda t: t["interactions"][0].__setitem__("assertions", [{"kind": "nope"}]), "unknown assertion kind")
