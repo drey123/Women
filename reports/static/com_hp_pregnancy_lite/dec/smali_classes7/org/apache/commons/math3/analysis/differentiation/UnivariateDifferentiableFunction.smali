@@ -1,0 +1,11 @@
+.class public interface abstract Lorg/apache/commons/math3/analysis/differentiation/UnivariateDifferentiableFunction;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/commons/math3/analysis/UnivariateFunction;
+
+
+# virtual methods
+.method public abstract value(Lorg/apache/commons/math3/analysis/differentiation/DerivativeStructure;)Lorg/apache/commons/math3/analysis/differentiation/DerivativeStructure;
+.end method

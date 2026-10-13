@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/video_player_nav_graph" app:startDestination="@id/videoAudioPlayerContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <activity android:label="VideoAudioPlayerContainer" android:name="com.hp.pregnancy.lite.videoPlayer.VideoAudioPlayerContainer" android:id="@id/videoAudioPlayerContainer">
+        <argument android:name="mediaUri" android:defaultValue="" app:argType="string" />
+        <argument android:name="shouldSendMuxAnalytics" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="seriesId" android:defaultValue="" app:argType="string" />
+        <argument android:name="mediaData" android:defaultValue="@null" app:argType="com.philips.hp.cms.model.premiumcontent.MediaCarouselItemContent" app:nullable="true" />
+        <argument android:name="isFromPremiumScreen" app:argType="boolean" />
+    </activity>
+</navigation>

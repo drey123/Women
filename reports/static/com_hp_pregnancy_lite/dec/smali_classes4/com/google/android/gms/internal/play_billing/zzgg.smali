@@ -1,0 +1,78 @@
+.class public final Lcom/google/android/gms/internal/play_billing/zzgg;
+.super Lcom/google/android/gms/internal/play_billing/zzcn;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/play_billing/zzed;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/google/android/gms/internal/play_billing/zzgf;)V
+    .locals 0
+
+    invoke-static {}, Lcom/google/android/gms/internal/play_billing/zzgk;->I()Lcom/google/android/gms/internal/play_billing/zzgk;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/play_billing/zzcn;-><init>(Lcom/google/android/gms/internal/play_billing/zzcs;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final p(Ljava/lang/String;)Lcom/google/android/gms/internal/play_billing/zzgg;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/play_billing/zzcn;->m()V
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/play_billing/zzcn;->b:Lcom/google/android/gms/internal/play_billing/zzcs;
+
+    check-cast v0, Lcom/google/android/gms/internal/play_billing/zzgk;
+
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/play_billing/zzgk;->F(Lcom/google/android/gms/internal/play_billing/zzgk;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public final q(Ljava/lang/String;)Lcom/google/android/gms/internal/play_billing/zzgg;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/play_billing/zzcn;->m()V
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/play_billing/zzcn;->b:Lcom/google/android/gms/internal/play_billing/zzcs;
+
+    check-cast v0, Lcom/google/android/gms/internal/play_billing/zzgk;
+
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/play_billing/zzgk;->E(Lcom/google/android/gms/internal/play_billing/zzgk;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public final r(I)Lcom/google/android/gms/internal/play_billing/zzgg;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/play_billing/zzcn;->m()V
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/play_billing/zzcn;->b:Lcom/google/android/gms/internal/play_billing/zzcs;
+
+    check-cast v0, Lcom/google/android/gms/internal/play_billing/zzgk;
+
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/play_billing/zzgk;->D(Lcom/google/android/gms/internal/play_billing/zzgk;I)V
+
+    return-object p0
+.end method
+
+.method public final s(I)Lcom/google/android/gms/internal/play_billing/zzgg;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/play_billing/zzcn;->m()V
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/play_billing/zzcn;->b:Lcom/google/android/gms/internal/play_billing/zzcs;
+
+    check-cast v0, Lcom/google/android/gms/internal/play_billing/zzgk;
+
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/play_billing/zzgk;->G(Lcom/google/android/gms/internal/play_billing/zzgk;I)V
+
+    return-object p0
+.end method

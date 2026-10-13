@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DividerStyleForDrawer">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginLeft">60.0dp</item>
+    </style>
+    <style name="DividerStyleForDrawerDetails">
+        <item name="android:background">@color/new_gray_color</item>
+        <item name="android:layout_marginLeft">60.0dp</item>
+        <item name="android:layout_marginTop">10.0dp</item>
+        <item name="android:layout_marginBottom">10.0dp</item>
+        <item name="android:height">0.30000007dp</item>
+    </style>
+    <style name="EditTextStyleForDrawer">
+        <item name="android:textSize">@dimen/dpui_16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:lines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">32</item>
+    </style>
+    <style name="EditTextStyleForDrawerDetails">
+        <item name="android:textSize">@dimen/dpui_16dp</item>
+        <item name="android:textColor">@color/new_gray_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">5.0dp</item>
+        <item name="android:layout_marginRight">10.0dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">32</item>
+    </style>
+    <style name="MenuItemTableRow">
+        <item name="android:background">@drawable/ripple_effect_for_drawer</item>
+        <item name="android:paddingTop">2.0dp</item>
+        <item name="android:paddingBottom">2.0dp</item>
+    </style>
+    <style name="MenuItemTextStyle">
+        <item name="android:textSize">@dimen/dpui_16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/ripple_effect_for_drawer</item>
+        <item name="android:padding">@dimen/_1sdp</item>
+        <item name="android:layout_marginLeft">5.0dp</item>
+        <item name="android:layout_marginBottom">@dimen/dpui_5dp</item>
+        <item name="android:drawablePadding">@dimen/dpui_16dp</item>
+    </style>
+    <style name="MenuItemTextViewStyle">
+        <item name="android:textSize">@dimen/dpui_16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">1.0dp</item>
+        <item name="android:layout_marginLeft">5.0dp</item>
+        <item name="android:drawablePadding">@dimen/dpui_16dp</item>
+    </style>
+    <style name="TodayScreenCardStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2.0dp</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+        <item name="cardBackgroundColor">@color/transparent</item>
+        <item name="cardCornerRadius">2.0dp</item>
+        <item name="cardElevation">2.0dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="addFabButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">13.0dp</item>
+        <item name="android:layout_marginRight">@dimen/_5sdp</item>
+        <item name="android:src">@drawable/add_icon_blue</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:elevation">6.0dp</item>
+    </style>
+    <style name="backBtnImageViewStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/ripple_effect</item>
+        <item name="android:padding">10.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dp</item>
+        <item name="android:src">@drawable/ic_back_icon_white</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="dailyTxtDesc">
+        <item name="android:textSize">@dimen/small_text_size_tablet</item>
+        <item name="android:textColor">@color/new_gray_color</item>
+        <item name="android:paddingBottom">10.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">2.0dp</item>
+    </style>
+    <style name="dailyTxtHeading">
+        <item name="android:textSize">@dimen/heading_tablet</item>
+        <item name="android:textColor">@color/new_gray_color</item>
+        <item name="android:paddingRight">5.0dp</item>
+        <item name="android:paddingBottom">10.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="drawerImageStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/ripple_effect</item>
+        <item name="android:padding">10.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dp</item>
+        <item name="android:src">@drawable/ic_menu_white</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="myWeightTextEnter">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/header_save_cancel_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/header_save_cancel_size</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="myWeightTextStartToday">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">60.0sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/header_save_cancel_size</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="toolBarInfoBtn">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/ripple_effect</item>
+        <item name="android:padding">8.0dp</item>
+        <item name="android:layout_width">48.0dp</item>
+        <item name="android:layout_height">48.0dp</item>
+        <item name="android:layout_marginLeft">10.0dp</item>
+        <item name="android:src">@drawable/i_btn</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="toolBarLayoutStyle">
+        <item name="android:background">@color/top_bar_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tab_top_bar_height</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="toolBarRightImageViewStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/ripple_effect</item>
+        <item name="android:padding">3.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8.0dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="toolBarTextStyle">
+        <item name="android:textSize">@dimen/side_heading_tablet</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/ripple_effect</item>
+        <item name="android:paddingTop">12.0dp</item>
+        <item name="android:paddingBottom">12.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10.0dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="toolBarTitleStyle">
+        <item name="android:textSize">@dimen/heading_tablet</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16.0dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="userNameStyle">
+        <item name="android:textSize">@dimen/heading_tablet</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+</resources>

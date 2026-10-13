@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/dpui_layout_list_item_switch_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dpui_22dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/dpuiListItemIconText" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/dpuiListItemSwitchView" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/dpui_layout_list_item" />
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/dpuiListItemSwitchView" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/dpuiListItemIconText" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/dpuiListItemIconText" style="@style/MySwitchCompat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

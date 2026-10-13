@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/dpui_layout_list_item_title_subtitle_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center_horizontal" android:id="@id/dpuiListItemTitle" android:tag="binding_1" android:paddingTop="@dimen/dpui_32dp" android:paddingBottom="@dimen/dpui_2dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dpui_12dp" android:paddingEnd="@dimen/dpui_12dp" app:layout_constraintTop_toTopOf="parent" style="@style/DPUI_Caption_Regular" />
+    <TextView android:gravity="center_horizontal" android:id="@id/dpuiListItemSubTitle" android:tag="binding_2" android:paddingTop="@dimen/dpui_2dp" android:paddingBottom="@dimen/dpui_30dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dpui_12dp" android:paddingEnd="@dimen/dpui_12dp" app:layout_constraintTop_toBottomOf="@id/dpuiListItemTitle" style="@style/DPUI_Caption_Regular" />
+</androidx.constraintlayout.widget.ConstraintLayout>

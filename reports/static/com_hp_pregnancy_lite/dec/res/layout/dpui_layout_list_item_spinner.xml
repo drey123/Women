@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/dpui_layout_list_item_spinner_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dpui_24dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/dpuiListItemIconText" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/dpuiGuideline" app:layout_constraintStart_toStartOf="parent" layout="@layout/dpui_layout_list_item" />
+    <com.philips.uicomponent.customviews.CustomMaterialSpinner android:ellipsize="end" android:gravity="end" android:id="@id/dpuiListItemSpinnerView" android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" android:textAlignment="textEnd" app:layout_constraintBottom_toBottomOf="@id/dpuiListItemIconText" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/dpuiGuideline" app:layout_constraintTop_toTopOf="@id/dpuiListItemIconText" style="@style/DPUI_Excerpt_Regular_Gray" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/dpuiGuideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.56" />
+</androidx.constraintlayout.widget.ConstraintLayout>

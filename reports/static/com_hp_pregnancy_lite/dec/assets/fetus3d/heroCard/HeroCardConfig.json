@@ -1,0 +1,1012 @@
+{
+  "VariantA": {
+    "1": {
+      "Image": "CardImages_Common_Week1.jpg",
+      "Video": "CardVideos_Common_Week1.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week1.jpg"
+    },
+    "2": {
+      "Image": "CardImages_Common_Week2.jpg",
+      "Video": "CardVideos_Common_Week2.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week2.jpg"
+    },
+    "3": {
+      "Image": "CardImages_Common_Week3.jpg",
+      "Video": "CardVideos_Common_Week3.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week3.jpg"
+    },
+    "4": {
+      "Image": "CardImages_Common_Week4.jpg",
+      "Video": "CardVideos_Common_Week4.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week4.jpg"
+    },
+    "5": {
+      "Image": "CardImages_Common_Stage9.jpg",
+      "Video": "CardVideos_Common_Week5.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week5.jpg"
+    },
+    "6": {
+      "Image": "CardImages_Common_Stage12.jpg",
+      "Video": "CardVideos_Common_Week6.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week6.jpg"
+    },
+    "7": {
+      "Image": "CardImages_Common_Stage14.jpg",
+      "Video": "CardVideos_Common_Week7.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week7.jpg"
+    },
+    "8": {
+      "Image": "CardImages_Common_Stage16.jpg",
+      "Video": "CardVideos_Common_Week8.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week8.jpg"
+    },
+    "9": {
+      "Image": "CardImages_Common_Stage18.jpg",
+      "Video": "CardVideos_Common_Week9.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week9.jpg"
+    },
+    "10": {
+      "Image": "CardImages_Common_Stage20.jpg",
+      "Video": "CardVideos_Common_Week10.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week10.jpg"
+    },
+    "11": {
+      "Image": "CardImages_Common_Week11.jpg",
+      "Video": "CardVideos_Common_Week11.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week11.jpg"
+    },
+    "12": {
+      "Image": "CardImages_Common_Week12.jpg",
+      "Video": "CardVideos_Common_Week12.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week12.jpg"
+    },
+    "13": {
+      "Image": "CardImages_Common_Week13.jpg",
+      "Video": "CardVideos_Common_Week13.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week13.jpg"
+    },
+    "14": {
+      "Image": "CardImages_VariantA_Week14.jpg",
+      "Video": "CardVideos_VariantA_Week14.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week14.jpg"
+    },
+    "15": {
+      "Image": "CardImages_VariantA_Week15.jpg",
+      "Video": "CardVideos_VariantA_Week15.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week15.jpg"
+    },
+    "16": {
+      "Image": "CardImages_VariantA_Week16.jpg",
+      "Video": "CardVideos_VariantA_Week16.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week16.jpg"
+    },
+    "17": {
+      "Image": "CardImages_VariantA_Week17.jpg",
+      "Video": "CardVideos_VariantA_Week17.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week17.jpg"
+    },
+    "18": {
+      "Image": "CardImages_VariantA_Week18.jpg",
+      "Video": "CardVideos_VariantA_Week18.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week18.jpg"
+    },
+    "19": {
+      "Image": "CardImages_VariantA_Week19.jpg",
+      "Video": "CardVideos_VariantA_Week19.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week19.jpg"
+    },
+    "20": {
+      "Image": "CardImages_VariantA_Week20.jpg",
+      "Video": "CardVideos_VariantA_Week20.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week20.jpg"
+    },
+    "21": {
+      "Image": "CardImages_VariantA_Week21.jpg",
+      "Video": "CardVideos_VariantA_Week21.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week21.jpg"
+    },
+    "22": {
+      "Image": "CardImages_VariantA_Week22.jpg",
+      "Video": "CardVideos_VariantA_Week22.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week22.jpg"
+    },
+    "23": {
+      "Image": "CardImages_VariantA_Week23.jpg",
+      "Video": "CardVideos_VariantA_Week23.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week23.jpg"
+    },
+    "24": {
+      "Image": "CardImages_VariantA_Week24.jpg",
+      "Video": "CardVideos_VariantA_Week24.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week24.jpg"
+    },
+    "25": {
+      "Image": "CardImages_VariantA_Week25.jpg",
+      "Video": "CardVideos_VariantA_Week25.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week25.jpg"
+    },
+    "26": {
+      "Image": "CardImages_VariantA_Week26.jpg",
+      "Video": "CardVideos_VariantA_Week26.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week26.jpg"
+    },
+    "27": {
+      "Image": "CardImages_VariantA_Week27.jpg",
+      "Video": "CardVideos_VariantA_Week27.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week27.jpg"
+    },
+    "28": {
+      "Image": "CardImages_VariantA_Week28.jpg",
+      "Video": "CardVideos_VariantA_Week28.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week28.jpg"
+    },
+    "29": {
+      "Image": "CardImages_VariantA_Week29.jpg",
+      "Video": "CardVideos_VariantA_Week29.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week29.jpg"
+    },
+    "30": {
+      "Image": "CardImages_VariantA_Week30.jpg",
+      "Video": "CardVideos_VariantA_Week30.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week30.jpg"
+    },
+    "31": {
+      "Image": "CardImages_VariantA_Week31.jpg",
+      "Video": "CardVideos_VariantA_Week31.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week31.jpg"
+    },
+    "32": {
+      "Image": "CardImages_VariantA_Week32.jpg",
+      "Video": "CardVideos_VariantA_Week32.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week32.jpg"
+    },
+    "33": {
+      "Image": "CardImages_VariantA_Week33.jpg",
+      "Video": "CardVideos_VariantA_Week33.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week33.jpg"
+    },
+    "34": {
+      "Image": "CardImages_VariantA_Week34.jpg",
+      "Video": "CardVideos_VariantA_Week34.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week34.jpg"
+    },
+    "35": {
+      "Image": "CardImages_VariantA_Week35.jpg",
+      "Video": "CardVideos_VariantA_Week35.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week35.jpg"
+    },
+    "36": {
+      "Image": "CardImages_VariantA_Week36.jpg",
+      "Video": "CardVideos_VariantA_Week36.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week36.jpg"
+    },
+    "37": {
+      "Image": "CardImages_VariantA_Week37.jpg",
+      "Video": "CardVideos_VariantA_Week37.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week37.jpg"
+    },
+    "38": {
+      "Image": "CardImages_VariantA_Week38.jpg",
+      "Video": "CardVideos_VariantA_Week38.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week38.jpg"
+    },
+    "39": {
+      "Image": "CardImages_VariantA_Week39.jpg",
+      "Video": "CardVideos_VariantA_Week39.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week39.jpg"
+    },
+    "40": {
+      "Image": "CardImages_VariantA_Week40.jpg",
+      "Video": "CardVideos_VariantA_Week40.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantA_Week40.jpg"
+    }
+  },
+  "VariantB": {
+    "1": {
+      "Image": "CardImages_Common_Week1.jpg",
+      "Video": "CardVideos_Common_Week1.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week1.jpg"
+    },
+    "2": {
+      "Image": "CardImages_Common_Week2.jpg",
+      "Video": "CardVideos_Common_Week2.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week2.jpg"
+    },
+    "3": {
+      "Image": "CardImages_Common_Week3.jpg",
+      "Video": "CardVideos_Common_Week3.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week3.jpg"
+    },
+    "4": {
+      "Image": "CardImages_Common_Week4.jpg",
+      "Video": "CardVideos_Common_Week4.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week4.jpg"
+    },
+    "5": {
+      "Image": "CardImages_Common_Stage9.jpg",
+      "Video": "CardVideos_Common_Week5.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week5.jpg"
+    },
+    "6": {
+      "Image": "CardImages_Common_Stage12.jpg",
+      "Video": "CardVideos_Common_Week6.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week6.jpg"
+    },
+    "7": {
+      "Image": "CardImages_Common_Stage14.jpg",
+      "Video": "CardVideos_Common_Week7.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week7.jpg"
+    },
+    "8": {
+      "Image": "CardImages_Common_Stage16.jpg",
+      "Video": "CardVideos_Common_Week8.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week8.jpg"
+    },
+    "9": {
+      "Image": "CardImages_Common_Stage18.jpg",
+      "Video": "CardVideos_Common_Week9.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week9.jpg"
+    },
+    "10": {
+      "Image": "CardImages_Common_Stage20.jpg",
+      "Video": "CardVideos_Common_Week10.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week10.jpg"
+    },
+    "11": {
+      "Image": "CardImages_Common_Week11.jpg",
+      "Video": "CardVideos_Common_Week11.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week11.jpg"
+    },
+    "12": {
+      "Image": "CardImages_Common_Week12.jpg",
+      "Video": "CardVideos_Common_Week12.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week12.jpg"
+    },
+    "13": {
+      "Image": "CardImages_Common_Week13.jpg",
+      "Video": "CardVideos_Common_Week13.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week13.jpg"
+    },
+    "14": {
+      "Image": "CardImages_VariantB_Week14_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week14_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week14_Afro.jpg"
+    },
+    "15": {
+      "Image": "CardImages_VariantB_Week15_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week15_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week15_Afro.jpg"
+    },
+    "16": {
+      "Image": "CardImages_VariantB_Week16_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week16_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week16_Afro.jpg"
+    },
+    "17": {
+      "Image": "CardImages_VariantB_Week17_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week17_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week17_Afro.jpg"
+    },
+    "18": {
+      "Image": "CardImages_VariantB_Week18_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week18_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week18_Afro.jpg"
+    },
+    "19": {
+      "Image": "CardImages_VariantB_Week19_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week19_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week19_Afro.jpg"
+    },
+    "20": {
+      "Image": "CardImages_VariantB_Week20_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week20_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week20_Afro.jpg"
+    },
+    "21": {
+      "Image": "CardImages_VariantB_Week21_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week21_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week21_Afro.jpg"
+    },
+    "22": {
+      "Image": "CardImages_VariantB_Week22_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week22_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week22_Afro.jpg"
+    },
+    "23": {
+      "Image": "CardImages_VariantB_Week23_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week23_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week23_Afro.jpg"
+    },
+    "24": {
+      "Image": "CardImages_VariantB_Week24_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week24_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week24_Afro.jpg"
+    },
+    "25": {
+      "Image": "CardImages_VariantB_Week25_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week25_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week25_Afro.jpg"
+    },
+    "26": {
+      "Image": "CardImages_VariantB_Week26_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week26_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week26_Afro.jpg"
+    },
+    "27": {
+      "Image": "CardImages_VariantB_Week27_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week27_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week27_Afro.jpg"
+    },
+    "28": {
+      "Image": "CardImages_VariantB_Week28_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week28_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week28_Afro.jpg"
+    },
+    "29": {
+      "Image": "CardImages_VariantB_Week29_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week29_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week29_Afro.jpg"
+    },
+    "30": {
+      "Image": "CardImages_VariantB_Week30_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week30_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week30_Afro.jpg"
+    },
+    "31": {
+      "Image": "CardImages_VariantB_Week31_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week31_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week31_Afro.jpg"
+    },
+    "32": {
+      "Image": "CardImages_VariantB_Week32_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week32_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week32_Afro.jpg"
+    },
+    "33": {
+      "Image": "CardImages_VariantB_Week33_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week33_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week33_Afro.jpg"
+    },
+    "34": {
+      "Image": "CardImages_VariantB_Week34_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week34_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week34_Afro.jpg"
+    },
+    "35": {
+      "Image": "CardImages_VariantB_Week35_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week35_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week35_Afro.jpg"
+    },
+    "36": {
+      "Image": "CardImages_VariantB_Week36_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week36_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week36_Afro.jpg"
+    },
+    "37": {
+      "Image": "CardImages_VariantB_Week37_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week37_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week37_Afro.jpg"
+    },
+    "38": {
+      "Image": "CardImages_VariantB_Week38_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week38_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week38_Afro.jpg"
+    },
+    "39": {
+      "Image": "CardImages_VariantB_Week39_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week39_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week39_Afro.jpg"
+    },
+    "40": {
+      "Image": "CardImages_VariantB_Week40_VariantB.jpg",
+      "Video": "CardVideos_VariantB_Week40_Afro.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantB_Week40_Afro.jpg"
+    }
+  },
+  "VariantD": {
+    "1": {
+      "Image": "CardImages_Common_Week1.jpg",
+      "Video": "CardVideos_Common_Week1.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week1.jpg"
+    },
+    "2": {
+      "Image": "CardImages_Common_Week2.jpg",
+      "Video": "CardVideos_Common_Week2.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week2.jpg"
+    },
+    "3": {
+      "Image": "CardImages_Common_Week3.jpg",
+      "Video": "CardVideos_Common_Week3.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week3.jpg"
+    },
+    "4": {
+      "Image": "CardImages_Common_Week4.jpg",
+      "Video": "CardVideos_Common_Week4.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week4.jpg"
+    },
+    "5": {
+      "Image": "CardImages_Common_Stage9.jpg",
+      "Video": "CardVideos_Common_Week5.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week5.jpg"
+    },
+    "6": {
+      "Image": "CardImages_Common_Stage12.jpg",
+      "Video": "CardVideos_Common_Week6.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week6.jpg"
+    },
+    "7": {
+      "Image": "CardImages_Common_Stage14.jpg",
+      "Video": "CardVideos_Common_Week7.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week7.jpg"
+    },
+    "8": {
+      "Image": "CardImages_Common_Stage16.jpg",
+      "Video": "CardVideos_Common_Week8.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week8.jpg"
+    },
+    "9": {
+      "Image": "CardImages_Common_Stage18.jpg",
+      "Video": "CardVideos_Common_Week9.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week9.jpg"
+    },
+    "10": {
+      "Image": "CardImages_Common_Stage20.jpg",
+      "Video": "CardVideos_Common_Week10.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week10.jpg"
+    },
+    "11": {
+      "Image": "CardImages_Common_Week11.jpg",
+      "Video": "CardVideos_Common_Week11.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week11.jpg"
+    },
+    "12": {
+      "Image": "CardImages_Common_Week12.jpg",
+      "Video": "CardVideos_Common_Week12.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week12.jpg"
+    },
+    "13": {
+      "Image": "CardImages_Common_Week13.jpg",
+      "Video": "CardVideos_Common_Week13.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week13.jpg"
+    },
+    "14": {
+      "Image": "CardImages_VariantD_Week14_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week14_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week14_VariantD.jpg"
+    },
+    "15": {
+      "Image": "CardImages_VariantD_Week15_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week15_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week15_VariantD.jpg"
+    },
+    "16": {
+      "Image": "CardImages_VariantD_Week16_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week16_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week16_VariantD.jpg"
+    },
+    "17": {
+      "Image": "CardImages_VariantD_Week17_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week17_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week17_VariantD.jpg"
+    },
+    "18": {
+      "Image": "CardImages_VariantD_Week18_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week18_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week18_VariantD.jpg"
+    },
+    "19": {
+      "Image": "CardImages_VariantD_Week19_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week19_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week19_VariantD.jpg"
+    },
+    "20": {
+      "Image": "CardImages_VariantD_Week20_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week20_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week20_VariantD.jpg"
+    },
+    "21": {
+      "Image": "CardImages_VariantD_Week21_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week21_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week21_VariantD.jpg"
+    },
+    "22": {
+      "Image": "CardImages_VariantD_Week22_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week22_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week22_VariantD.jpg"
+    },
+    "23": {
+      "Image": "CardImages_VariantD_Week23_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week23_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week23_VariantD.jpg"
+    },
+    "24": {
+      "Image": "CardImages_VariantD_Week24_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week24_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week24_VariantD.jpg"
+    },
+    "25": {
+      "Image": "CardImages_VariantD_Week25_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week25_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week25_VariantD.jpg"
+    },
+    "26": {
+      "Image": "CardImages_VariantD_Week26_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week26_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week26_VariantD.jpg"
+    },
+    "27": {
+      "Image": "CardImages_VariantD_Week27_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week27_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week27_VariantD.jpg"
+    },
+    "28": {
+      "Image": "CardImages_VariantD_Week28_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week28_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week28_VariantD.jpg"
+    },
+    "29": {
+      "Image": "CardImages_VariantD_Week29_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week29_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week29_VariantD.jpg"
+    },
+    "30": {
+      "Image": "CardImages_VariantD_Week30_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week30_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week30_VariantD.jpg"
+    },
+    "31": {
+      "Image": "CardImages_VariantD_Week31_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week31_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week31_VariantD.jpg"
+    },
+    "32": {
+      "Image": "CardImages_VariantD_Week32_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week32_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week32_VariantD.jpg"
+    },
+    "33": {
+      "Image": "CardImages_VariantD_Week33_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week33_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week33_VariantD.jpg"
+    },
+    "34": {
+      "Image": "CardImages_VariantD_Week34_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week34_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week34_VariantD.jpg"
+    },
+    "35": {
+      "Image": "CardImages_VariantD_Week35_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week35_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week35_VariantD.jpg"
+    },
+    "36": {
+      "Image": "CardImages_VariantD_Week36_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week36_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week36_VariantD.jpg"
+    },
+    "37": {
+      "Image": "CardImages_VariantD_Week37_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week37_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week37_VariantD.jpg"
+    },
+    "38": {
+      "Image": "CardImages_VariantD_Week38_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week38_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week38_VariantD.jpg"
+    },
+    "39": {
+      "Image": "CardImages_VariantD_Week39_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week39_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week39_VariantD.jpg"
+    },
+    "40": {
+      "Image": "CardImages_VariantD_Week40_VariantD.jpg",
+      "Video": "CardVideos_VariantD_Week40_VariantD.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantD_Week40_VariantD.jpg"
+    }
+  },
+  "VariantE": {
+    "1": {
+      "Image": "CardImages_Common_Week1.jpg",
+      "Video": "CardVideos_Common_Week1.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week1.jpg"
+    },
+    "2": {
+      "Image": "CardImages_Common_Week2.jpg",
+      "Video": "CardVideos_Common_Week2.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week2.jpg"
+    },
+    "3": {
+      "Image": "CardImages_Common_Week3.jpg",
+      "Video": "CardVideos_Common_Week3.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week3.jpg"
+    },
+    "4": {
+      "Image": "CardImages_Common_Week4.jpg",
+      "Video": "CardVideos_Common_Week4.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week4.jpg"
+    },
+    "5": {
+      "Image": "CardImages_Common_Stage9.jpg",
+      "Video": "CardVideos_Common_Week5.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week5.jpg"
+    },
+    "6": {
+      "Image": "CardImages_Common_Stage12.jpg",
+      "Video": "CardVideos_Common_Week6.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week6.jpg"
+    },
+    "7": {
+      "Image": "CardImages_Common_Stage14.jpg",
+      "Video": "CardVideos_Common_Week7.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week7.jpg"
+    },
+    "8": {
+      "Image": "CardImages_Common_Stage16.jpg",
+      "Video": "CardVideos_Common_Week8.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week8.jpg"
+    },
+    "9": {
+      "Image": "CardImages_Common_Stage18.jpg",
+      "Video": "CardVideos_Common_Week9.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week9.jpg"
+    },
+    "10": {
+      "Image": "CardImages_Common_Stage20.jpg",
+      "Video": "CardVideos_Common_Week10.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week10.jpg"
+    },
+    "11": {
+      "Image": "CardImages_Common_Week11.jpg",
+      "Video": "CardVideos_Common_Week11.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week11.jpg"
+    },
+    "12": {
+      "Image": "CardImages_Common_Week12.jpg",
+      "Video": "CardVideos_Common_Week12.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week12.jpg"
+    },
+    "13": {
+      "Image": "CardImages_Common_Week13.jpg",
+      "Video": "CardVideos_Common_Week13.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week13.jpg"
+    },
+    "14": {
+      "Image": "CardImages_VariantE_Week14_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week14_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week14_VariantE.jpg"
+    },
+    "15": {
+      "Image": "CardImages_VariantE_Week15_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week15_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week15_VariantE.jpg"
+    },
+    "16": {
+      "Image": "CardImages_VariantE_Week16_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week16_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week16_VariantE.jpg"
+    },
+    "17": {
+      "Image": "CardImages_VariantE_Week17_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week17_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week17_VariantE.jpg"
+    },
+    "18": {
+      "Image": "CardImages_VariantE_Week18_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week18_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week18_VariantE.jpg"
+    },
+    "19": {
+      "Image": "CardImages_VariantE_Week19_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week19_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week19_VariantE.jpg"
+    },
+    "20": {
+      "Image": "CardImages_VariantE_Week20_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week20_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week20_VariantE.jpg"
+    },
+    "21": {
+      "Image": "CardImages_VariantE_Week21_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week21_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week21_VariantE.jpg"
+    },
+    "22": {
+      "Image": "CardImages_VariantE_Week22_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week22_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week22_VariantE.jpg"
+    },
+    "23": {
+      "Image": "CardImages_VariantE_Week23_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week23_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week23_VariantE.jpg"
+    },
+    "24": {
+      "Image": "CardImages_VariantE_Week24_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week24_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week24_VariantE.jpg"
+    },
+    "25": {
+      "Image": "CardImages_VariantE_Week25_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week25_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week25_VariantE.jpg"
+    },
+    "26": {
+      "Image": "CardImages_VariantE_Week26_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week26_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week26_VariantE.jpg"
+    },
+    "27": {
+      "Image": "CardImages_VariantE_Week27_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week27_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week27_VariantE.jpg"
+    },
+    "28": {
+      "Image": "CardImages_VariantE_Week28_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week28_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week28_VariantE.jpg"
+    },
+    "29": {
+      "Image": "CardImages_VariantE_Week29_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week29_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week29_VariantE.jpg"
+    },
+    "30": {
+      "Image": "CardImages_VariantE_Week30_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week30_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week30_VariantE.jpg"
+    },
+    "31": {
+      "Image": "CardImages_VariantE_Week31_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week31_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week31_VariantE.jpg"
+    },
+    "32": {
+      "Image": "CardImages_VariantE_Week32_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week32_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week32_VariantE.jpg"
+    },
+    "33": {
+      "Image": "CardImages_VariantE_Week33_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week33_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week33_VariantE.jpg"
+    },
+    "34": {
+      "Image": "CardImages_VariantE_Week34_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week34_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week34_VariantE.jpg"
+    },
+    "35": {
+      "Image": "CardImages_VariantE_Week35_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week35_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week35_VariantE.jpg"
+    },
+    "36": {
+      "Image": "CardImages_VariantE_Week36_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week36_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week36_VariantE.jpg"
+    },
+    "37": {
+      "Image": "CardImages_VariantE_Week37_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week37_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week37_VariantE.jpg"
+    },
+    "38": {
+      "Image": "CardImages_VariantE_Week38_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week38_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week38_VariantE.jpg"
+    },
+    "39": {
+      "Image": "CardImages_VariantE_Week39_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week39_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week39_VariantE.jpg"
+    },
+    "40": {
+      "Image": "CardImages_VariantE_Week40_VariantE.jpg",
+      "Video": "CardVideos_VariantE_Week40_VariantE.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantE_Week40_VariantE.jpg"
+    }
+  },
+  "VariantC": {
+    "1": {
+      "Image": "CardImages_Common_Week1.jpg",
+      "Video": "CardVideos_Common_Week1.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week1.jpg"
+    },
+    "2": {
+      "Image": "CardImages_Common_Week2.jpg",
+      "Video": "CardVideos_Common_Week2.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week2.jpg"
+    },
+    "3": {
+      "Image": "CardImages_Common_Week3.jpg",
+      "Video": "CardVideos_Common_Week3.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week3.jpg"
+    },
+    "4": {
+      "Image": "CardImages_Common_Week4.jpg",
+      "Video": "CardVideos_Common_Week4.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week4.jpg"
+    },
+    "5": {
+      "Image": "CardImages_Common_Stage9.jpg",
+      "Video": "CardVideos_Common_Week5.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week5.jpg"
+    },
+    "6": {
+      "Image": "CardImages_Common_Stage12.jpg",
+      "Video": "CardVideos_Common_Week6.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week6.jpg"
+    },
+    "7": {
+      "Image": "CardImages_Common_Stage14.jpg",
+      "Video": "CardVideos_Common_Week7.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week7.jpg"
+    },
+    "8": {
+      "Image": "CardImages_Common_Stage16.jpg",
+      "Video": "CardVideos_Common_Week8.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week8.jpg"
+    },
+    "9": {
+      "Image": "CardImages_Common_Stage18.jpg",
+      "Video": "CardVideos_Common_Week9.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week9.jpg"
+    },
+    "10": {
+      "Image": "CardImages_Common_Stage20.jpg",
+      "Video": "CardVideos_Common_Week10.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week10.jpg"
+    },
+    "11": {
+      "Image": "CardImages_Common_Week11.jpg",
+      "Video": "CardVideos_Common_Week11.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week11.jpg"
+    },
+    "12": {
+      "Image": "CardImages_Common_Week12.jpg",
+      "Video": "CardVideos_Common_Week12.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week12.jpg"
+    },
+    "13": {
+      "Image": "CardImages_Common_Week13.jpg",
+      "Video": "CardVideos_Common_Week13.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_Common_Week13.jpg"
+    },
+    "14": {
+      "Image": "CardImages_VariantC_Week14_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week14_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week14_VariantC.jpg"
+    },
+    "15": {
+      "Image": "CardImages_VariantC_Week15_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week15_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week15_VariantC.jpg"
+    },
+    "16": {
+      "Image": "CardImages_VariantC_Week16_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week16_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week16_VariantC.jpg"
+    },
+    "17": {
+      "Image": "CardImages_VariantC_Week17_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week17_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week17_VariantC.jpg"
+    },
+    "18": {
+      "Image": "CardImages_VariantC_Week18_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week18_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week18_VariantC.jpg"
+    },
+    "19": {
+      "Image": "CardImages_VariantC_Week19_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week19_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week19_VariantC.jpg"
+    },
+    "20": {
+      "Image": "CardImages_VariantC_Week20_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week20_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week20_VariantC.jpg"
+    },
+    "21": {
+      "Image": "CardImages_VariantC_Week21_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week21_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week21_VariantC.jpg"
+    },
+    "22": {
+      "Image": "CardImages_VariantC_Week22_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week22_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week22_VariantC.jpg"
+    },
+    "23": {
+      "Image": "CardImages_VariantC_Week23_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week23_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week23_VariantC.jpg"
+    },
+    "24": {
+      "Image": "CardImages_VariantC_Week24_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week24_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week24_VariantC.jpg"
+    },
+    "25": {
+      "Image": "CardImages_VariantC_Week25_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week25_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week25_VariantC.jpg"
+    },
+    "26": {
+      "Image": "CardImages_VariantC_Week26_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week26_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week26_VariantC.jpg"
+    },
+    "27": {
+      "Image": "CardImages_VariantC_Week27_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week27_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week27_VariantC.jpg"
+    },
+    "28": {
+      "Image": "CardImages_VariantC_Week28_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week28_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week28_VariantC.jpg"
+    },
+    "29": {
+      "Image": "CardImages_VariantC_Week29_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week29_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week29_VariantC.jpg"
+    },
+    "30": {
+      "Image": "CardImages_VariantC_Week30_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week30_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week30_VariantC.jpg"
+    },
+    "31": {
+      "Image": "CardImages_VariantC_Week31_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week31_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week31_VariantC.jpg"
+    },
+    "32": {
+      "Image": "CardImages_VariantC_Week32_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week32_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week32_VariantC.jpg"
+    },
+    "33": {
+      "Image": "CardImages_VariantC_Week33_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week33_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week33_VariantC.jpg"
+    },
+    "34": {
+      "Image": "CardImages_VariantC_Week34_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week34_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week34_VariantC.jpg"
+    },
+    "35": {
+      "Image": "CardImages_VariantC_Week35_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week35_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week35_VariantC.jpg"
+    },
+    "36": {
+      "Image": "CardImages_VariantC_Week36_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week36_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week36_VariantC.jpg"
+    },
+    "37": {
+      "Image": "CardImages_VariantC_Week37_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week37_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week37_VariantC.jpg"
+    },
+    "38": {
+      "Image": "CardImages_VariantC_Week38_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week38_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week38_VariantC.jpg"
+    },
+    "39": {
+      "Image": "CardImages_VariantC_Week39_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week39_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week39_VariantC.jpg"
+    },
+    "40": {
+      "Image": "CardImages_VariantC_Week40_VariantC.jpg",
+      "Video": "CardVideos_VariantC_Week40_VariantC.mp4",
+      "VideoFallbackImage": "CardVideoFallbackImages_VariantC_Week40_VariantC.jpg"
+    }
+  }
+}

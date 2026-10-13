@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:tag="layout/dpui_layout_card_data_0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DPUICardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/dpuiDataCardBaseLayout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/dpui_layout_card_base" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

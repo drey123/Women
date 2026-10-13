@@ -1,0 +1,45 @@
+package androidx.compose.ui.layout;
+
+import com.adapty.ui.internal.text.TimerTags;
+import java.util.Map;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(d1 = {"\u00002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\n\u0018\u00002\u00020\u0001J\u000f\u0010\u0003\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\u0003\u0010\u0004R\u0014\u0010\b\u001a\u00020\u00058\u0016X\u0096\u0005¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R\u0014\u0010\n\u001a\u00020\u00058\u0016X\u0096\u0005¢\u0006\u0006\u001a\u0004\b\t\u0010\u0007R \u0010\u000f\u001a\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\u00050\u000b8\u0016X\u0096\u0005¢\u0006\u0006\u001a\u0004\b\r\u0010\u000eR'\u0010\u0015\u001a\u0015\u0012\u0004\u0012\u00020\u0011\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u0010¢\u0006\u0002\b\u00128VX\u0096\u0005¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u0014¨\u0006\u0016"}, d2 = {"androidx/compose/ui/layout/LayoutNodeSubcompositionsState$createMeasureResult$1", "Landroidx/compose/ui/layout/MeasureResult;", "", TimerTags.secondsShort, "()V", "", "getWidth", "()I", "width", "getHeight", "height", "", "Landroidx/compose/ui/layout/AlignmentLine;", "r", "()Ljava/util/Map;", "alignmentLines", "Lkotlin/Function1;", "Landroidx/compose/ui/layout/RulerScope;", "Lkotlin/ExtensionFunctionType;", "t", "()Lkotlin/jvm/functions/Function1;", "rulers", "ui"}, k = 1, mv = {2, 0, 0}, xi = 48)
+@SourceDebugExtension
+public final class LayoutNodeSubcompositionsState$createMeasureResult$1 implements MeasureResult {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ MeasureResult f3988a;
+    public final /* synthetic */ Function0 b;
+
+    @Override // androidx.compose.ui.layout.MeasureResult
+    public int getHeight() {
+        return this.f3988a.getHeight();
+    }
+
+    @Override // androidx.compose.ui.layout.MeasureResult
+    public int getWidth() {
+        return this.f3988a.getWidth();
+    }
+
+    @Override // androidx.compose.ui.layout.MeasureResult
+    /* JADX INFO: renamed from: r */
+    public Map getAlignmentLines() {
+        return this.f3988a.getAlignmentLines();
+    }
+
+    @Override // androidx.compose.ui.layout.MeasureResult
+    public void s() {
+        this.b.invoke();
+    }
+
+    @Override // androidx.compose.ui.layout.MeasureResult
+    /* JADX INFO: renamed from: t */
+    public Function1 getRulers() {
+        return this.f3988a.getRulers();
+    }
+}

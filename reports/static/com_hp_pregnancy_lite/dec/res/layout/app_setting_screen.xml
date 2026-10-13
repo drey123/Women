@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/relativeLayout6" android:tag="layout/app_setting_screen_0" android:background="?android:windowBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/screenTitle" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/layout_title_settings" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/profileList" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/dpui_0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/screenTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

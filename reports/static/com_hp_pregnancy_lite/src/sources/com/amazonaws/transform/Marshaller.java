@@ -1,0 +1,5 @@
+package com.amazonaws.transform;
+
+/* JADX INFO: loaded from: classes3.dex */
+public interface Marshaller<T, R> {
+}

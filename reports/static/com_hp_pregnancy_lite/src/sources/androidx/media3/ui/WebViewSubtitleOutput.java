@@ -1,0 +1,402 @@
+package androidx.media3.ui;
+
+import android.content.Context;
+import android.text.Layout;
+import android.util.AttributeSet;
+import android.util.Base64;
+import android.view.MotionEvent;
+import android.webkit.WebView;
+import android.widget.FrameLayout;
+import androidx.annotation.Nullable;
+import androidx.media3.common.text.Cue;
+import androidx.media3.common.util.Util;
+import com.adapty.ui.internal.mapping.viewconfig.ViewConfigurationScreenMapper;
+import com.google.common.base.Preconditions;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes2.dex */
+final class WebViewSubtitleOutput extends FrameLayout implements SubtitleView.Output {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final CanvasSubtitleOutput f6917a;
+    public final WebView b;
+    public List c;
+    public CaptionStyleCompat d;
+    public float e;
+    public int f;
+    public float g;
+
+    /* JADX INFO: renamed from: androidx.media3.ui.WebViewSubtitleOutput$2, reason: invalid class name */
+    public static /* synthetic */ class AnonymousClass2 {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        public static final /* synthetic */ int[] f6919a;
+
+        static {
+            int[] iArr = new int[Layout.Alignment.values().length];
+            f6919a = iArr;
+            try {
+                iArr[Layout.Alignment.ALIGN_NORMAL.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f6919a[Layout.Alignment.ALIGN_OPPOSITE.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f6919a[Layout.Alignment.ALIGN_CENTER.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+        }
+    }
+
+    public WebViewSubtitleOutput(Context context) {
+        this(context, null);
+    }
+
+    public static int b(int i) {
+        if (i != 1) {
+            return i != 2 ? 0 : -100;
+        }
+        return -50;
+    }
+
+    public static String c(Layout.Alignment alignment) {
+        if (alignment == null) {
+            return "center";
+        }
+        int i = AnonymousClass2.f6919a[alignment.ordinal()];
+        if (i != 1) {
+            return i != 2 ? "center" : "end";
+        }
+        return "start";
+    }
+
+    public static String d(CaptionStyleCompat captionStyleCompat) {
+        int i = captionStyleCompat.d;
+        if (i == 1) {
+            return Util.G("1px 1px 0 %1$s, 1px -1px 0 %1$s, -1px 1px 0 %1$s, -1px -1px 0 %1$s", HtmlUtils.b(captionStyleCompat.e));
+        }
+        if (i == 2) {
+            return Util.G("0.1em 0.12em 0.15em %s", HtmlUtils.b(captionStyleCompat.e));
+        }
+        if (i != 3) {
+            return i != 4 ? "unset" : Util.G("-0.05em -0.05em 0.15em %s", HtmlUtils.b(captionStyleCompat.e));
+        }
+        return Util.G("0.06em 0.08em 0.15em %s", HtmlUtils.b(captionStyleCompat.e));
+    }
+
+    public static String f(int i) {
+        if (i != 1) {
+            return i != 2 ? "horizontal-tb" : "vertical-lr";
+        }
+        return "vertical-rl";
+    }
+
+    public static String h(Cue cue) {
+        float f = cue.q;
+        if (f == 0.0f) {
+            return "";
+        }
+        int i = cue.p;
+        return Util.G("%s(%.2fdeg)", (i == 2 || i == 1) ? "skewY" : "skewX", Float.valueOf(f));
+    }
+
+    @Override // androidx.media3.ui.SubtitleView.Output
+    public void a(List list, CaptionStyleCompat captionStyleCompat, float f, int i, float f2) {
+        this.d = captionStyleCompat;
+        this.e = f;
+        this.f = i;
+        this.g = f2;
+        ArrayList arrayList = new ArrayList();
+        ArrayList arrayList2 = new ArrayList();
+        for (int i2 = 0; i2 < list.size(); i2++) {
+            Cue cue = (Cue) list.get(i2);
+            if (cue.d != null) {
+                arrayList.add(cue);
+            } else {
+                arrayList2.add(cue);
+            }
+        }
+        if (!this.c.isEmpty() || !arrayList2.isEmpty()) {
+            this.c = arrayList2;
+            i();
+        }
+        this.f6917a.a(arrayList, captionStyleCompat, f, i, f2);
+        invalidate();
+    }
+
+    public final String e(int i, float f) {
+        float fH = SubtitleViewUtils.h(i, f, getHeight(), (getHeight() - getPaddingTop()) - getPaddingBottom());
+        return fH == -3.4028235E38f ? "unset" : Util.G("%.2fpx", Float.valueOf(fH / getContext().getResources().getDisplayMetrics().density));
+    }
+
+    public void g() {
+        this.b.destroy();
+    }
+
+    /* JADX WARN: Code duplicated, block: B:26:0x00ee  */
+    /* JADX WARN: Code duplicated, block: B:28:0x00fe  */
+    /* JADX WARN: Code duplicated, block: B:31:0x0119  */
+    /* JADX WARN: Code duplicated, block: B:32:0x011c  */
+    /* JADX WARN: Code duplicated, block: B:35:0x0130 A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:36:0x0132 A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:37:0x0134  */
+    /* JADX WARN: Code duplicated, block: B:39:0x013b A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:41:0x013e  */
+    /* JADX WARN: Code duplicated, block: B:43:0x0144 A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:50:0x0152  */
+    /* JADX WARN: Code duplicated, block: B:54:0x017d  */
+    /* JADX WARN: Code duplicated, block: B:60:0x019e  */
+    /* JADX WARN: Code duplicated, block: B:64:0x01d7  */
+    /* JADX WARN: Code duplicated, block: B:65:0x01f1  */
+    public final void i() {
+        String strG;
+        int iB;
+        String strG2;
+        boolean z;
+        float f;
+        String strG3;
+        int i;
+        int i2;
+        String str;
+        String str2;
+        String str3;
+        Object obj;
+        Object obj2;
+        SpannedToHtmlConverter.HtmlAndCss htmlAndCssA;
+        Layout.Alignment alignment;
+        String str4;
+        boolean z2;
+        StringBuilder sb = new StringBuilder();
+        float f2 = 1.2f;
+        sb.append(Util.G("<body><div style='-webkit-user-select:none;position:fixed;top:0;bottom:0;left:0;right:0;color:%s;font-size:%s;line-height:%.2f;text-shadow:%s;'>", HtmlUtils.b(this.d.f6880a), e(this.f, this.e), Float.valueOf(1.2f), d(this.d)));
+        HashMap map = new HashMap();
+        map.put(HtmlUtils.a("default_bg"), Util.G("background-color:%s;", HtmlUtils.b(this.d.b)));
+        int i3 = 0;
+        while (i3 < this.c.size()) {
+            Cue cue = (Cue) this.c.get(i3);
+            float f3 = cue.h;
+            float f4 = f3 != -3.4028235E38f ? f3 * 100.0f : 50.0f;
+            int iB2 = b(cue.i);
+            float f5 = cue.e;
+            if (f5 != -3.4028235E38f) {
+                if (cue.f != 1) {
+                    strG = Util.G("%.2f%%", Float.valueOf(f5 * 100.0f));
+                    iB = cue.p == 1 ? -b(cue.g) : b(cue.g);
+                } else {
+                    if (f5 >= 0.0f) {
+                        strG2 = Util.G("%.2fem", Float.valueOf(f5 * f2));
+                        z = false;
+                    } else {
+                        strG2 = Util.G("%.2fem", Float.valueOf(((-f5) - 1.0f) * f2));
+                        z = true;
+                    }
+                    iB = 0;
+                }
+                f = cue.j;
+                if (f != -3.4028235E38f) {
+                    strG3 = Util.G("%.2f%%", Float.valueOf(f * 100.0f));
+                } else {
+                    strG3 = "fit-content";
+                }
+                String str5 = strG3;
+                String strC = c(cue.b);
+                String strF = f(cue.p);
+                String strE = e(cue.n, cue.o);
+                if (cue.l) {
+                    i = cue.m;
+                } else {
+                    i = this.d.c;
+                }
+                String strB = HtmlUtils.b(i);
+                i2 = cue.p;
+                str = "right";
+                str2 = ViewConfigurationScreenMapper.DEFAULT_CONTENT_V_ALIGN;
+                if (i2 != 1) {
+                    if (z) {
+                        str = "left";
+                    }
+                    str3 = str;
+                    obj = ViewConfigurationScreenMapper.DEFAULT_CONTENT_V_ALIGN;
+                } else if (i2 != 2) {
+                    if (z) {
+                        str2 = "bottom";
+                    }
+                    str3 = str2;
+                    obj = "left";
+                } else {
+                    if (!z) {
+                        str = "left";
+                    }
+                    str3 = str;
+                    obj = ViewConfigurationScreenMapper.DEFAULT_CONTENT_V_ALIGN;
+                }
+                if (i2 != 2 || i2 == 1) {
+                    obj2 = "height";
+                    int i4 = iB;
+                    iB = iB2;
+                    iB2 = i4;
+                } else {
+                    obj2 = "width";
+                }
+                htmlAndCssA = SpannedToHtmlConverter.a(cue.f5815a, getContext().getResources().getDisplayMetrics().density);
+                for (String str6 : map.keySet()) {
+                    str4 = (String) map.put(str6, (String) map.get(str6));
+                    if (str4 != null || str4.equals(map.get(str6))) {
+                        z2 = true;
+                    } else {
+                        z2 = false;
+                    }
+                    Preconditions.A(z2);
+                }
+                sb.append(Util.G("<div style='position:absolute;z-index:%s;%s:%.2f%%;%s:%s;%s:%s;text-align:%s;writing-mode:%s;font-size:%s;background-color:%s;transform:translate(%s%%,%s%%)%s;'>", Integer.valueOf(i3), obj, Float.valueOf(f4), str3, strG2, obj2, str5, strC, strF, strE, strB, Integer.valueOf(iB2), Integer.valueOf(iB), h(cue)));
+                sb.append(Util.G("<span class='%s'>", "default_bg"));
+                alignment = cue.c;
+                if (alignment != null) {
+                    sb.append(Util.G("<span style='display:inline-block; text-align:%s;'>", c(alignment)));
+                    sb.append(htmlAndCssA.f6908a);
+                    sb.append("</span>");
+                } else {
+                    sb.append(htmlAndCssA.f6908a);
+                }
+                sb.append("</span>");
+                sb.append("</div>");
+                i3++;
+                f2 = 1.2f;
+            } else {
+                strG = Util.G("%.2f%%", Float.valueOf((1.0f - this.g) * 100.0f));
+                iB = -100;
+            }
+            strG2 = strG;
+            z = false;
+            f = cue.j;
+            if (f != -3.4028235E38f) {
+                strG3 = Util.G("%.2f%%", Float.valueOf(f * 100.0f));
+            } else {
+                strG3 = "fit-content";
+            }
+            String str7 = strG3;
+            String strC2 = c(cue.b);
+            String strF2 = f(cue.p);
+            String strE2 = e(cue.n, cue.o);
+            if (cue.l) {
+                i = cue.m;
+            } else {
+                i = this.d.c;
+            }
+            String strB2 = HtmlUtils.b(i);
+            i2 = cue.p;
+            str = "right";
+            str2 = ViewConfigurationScreenMapper.DEFAULT_CONTENT_V_ALIGN;
+            if (i2 != 1) {
+                if (z) {
+                    str = "left";
+                }
+                str3 = str;
+                obj = ViewConfigurationScreenMapper.DEFAULT_CONTENT_V_ALIGN;
+            } else if (i2 != 2) {
+                if (z) {
+                    str2 = "bottom";
+                }
+                str3 = str2;
+                obj = "left";
+            } else {
+                if (!z) {
+                    str = "left";
+                }
+                str3 = str;
+                obj = ViewConfigurationScreenMapper.DEFAULT_CONTENT_V_ALIGN;
+            }
+            if (i2 != 2) {
+                obj2 = "height";
+                int i5 = iB;
+                iB = iB2;
+                iB2 = i5;
+            } else {
+                obj2 = "height";
+                int i6 = iB;
+                iB = iB2;
+                iB2 = i6;
+            }
+            htmlAndCssA = SpannedToHtmlConverter.a(cue.f5815a, getContext().getResources().getDisplayMetrics().density);
+            while (r5.hasNext()) {
+                str4 = (String) map.put(str6, (String) map.get(str6));
+                if (str4 != null) {
+                    z2 = true;
+                } else {
+                    z2 = true;
+                }
+                Preconditions.A(z2);
+            }
+            sb.append(Util.G("<div style='position:absolute;z-index:%s;%s:%.2f%%;%s:%s;%s:%s;text-align:%s;writing-mode:%s;font-size:%s;background-color:%s;transform:translate(%s%%,%s%%)%s;'>", Integer.valueOf(i3), obj, Float.valueOf(f4), str3, strG2, obj2, str7, strC2, strF2, strE2, strB2, Integer.valueOf(iB2), Integer.valueOf(iB), h(cue)));
+            sb.append(Util.G("<span class='%s'>", "default_bg"));
+            alignment = cue.c;
+            if (alignment != null) {
+                sb.append(Util.G("<span style='display:inline-block; text-align:%s;'>", c(alignment)));
+                sb.append(htmlAndCssA.f6908a);
+                sb.append("</span>");
+            } else {
+                sb.append(htmlAndCssA.f6908a);
+            }
+            sb.append("</span>");
+            sb.append("</div>");
+            i3++;
+            f2 = 1.2f;
+        }
+        sb.append("</div></body></html>");
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("<html><head><style>");
+        for (String str8 : map.keySet()) {
+            sb2.append(str8);
+            sb2.append("{");
+            sb2.append((String) map.get(str8));
+            sb2.append("}");
+        }
+        sb2.append("</style></head>");
+        sb.insert(0, (CharSequence) sb2);
+        this.b.loadData(Base64.encodeToString(sb.toString().getBytes(StandardCharsets.UTF_8), 1), "text/html", "base64");
+    }
+
+    @Override // android.widget.FrameLayout, android.view.ViewGroup, android.view.View
+    public void onLayout(boolean z, int i, int i2, int i3, int i4) {
+        super.onLayout(z, i, i2, i3, i4);
+        if (!z || this.c.isEmpty()) {
+            return;
+        }
+        i();
+    }
+
+    public WebViewSubtitleOutput(Context context, @Nullable AttributeSet attributeSet) {
+        super(context, attributeSet);
+        this.c = Collections.emptyList();
+        this.d = CaptionStyleCompat.g;
+        this.e = 0.0533f;
+        this.f = 0;
+        this.g = 0.08f;
+        CanvasSubtitleOutput canvasSubtitleOutput = new CanvasSubtitleOutput(context, attributeSet);
+        this.f6917a = canvasSubtitleOutput;
+        WebView webView = new WebView(context, attributeSet) { // from class: androidx.media3.ui.WebViewSubtitleOutput.1
+            @Override // android.webkit.WebView, android.view.View
+            public boolean onTouchEvent(MotionEvent motionEvent) {
+                super.onTouchEvent(motionEvent);
+                return false;
+            }
+
+            @Override // android.view.View
+            public boolean performClick() {
+                super.performClick();
+                return false;
+            }
+        };
+        this.b = webView;
+        webView.setBackgroundColor(0);
+        webView.getSettings().setAllowContentAccess(false);
+        addView(canvasSubtitleOutput);
+        addView(webView);
+    }
+}

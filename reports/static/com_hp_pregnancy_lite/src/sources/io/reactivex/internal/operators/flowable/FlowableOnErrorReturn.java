@@ -1,0 +1,49 @@
+package io.reactivex.internal.operators.flowable;
+
+import io.reactivex.exceptions.CompositeException;
+import io.reactivex.exceptions.Exceptions;
+import io.reactivex.functions.Function;
+import io.reactivex.internal.functions.ObjectHelper;
+import io.reactivex.internal.subscribers.SinglePostCompleteSubscriber;
+import org.reactivestreams.Subscriber;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class FlowableOnErrorReturn<T> extends AbstractFlowableWithUpstream<T, T> {
+    public final Function c;
+
+    public static final class OnErrorReturnSubscriber<T> extends SinglePostCompleteSubscriber<T, T> {
+        private static final long serialVersionUID = -3740826063558713822L;
+        final Function<? super Throwable, ? extends T> valueSupplier;
+
+        public OnErrorReturnSubscriber(Subscriber<? super T> subscriber, Function<? super Throwable, ? extends T> function) {
+            super(subscriber);
+            this.valueSupplier = function;
+        }
+
+        @Override // io.reactivex.internal.subscribers.SinglePostCompleteSubscriber, org.reactivestreams.Subscriber
+        public void onComplete() {
+            this.actual.onComplete();
+        }
+
+        @Override // io.reactivex.internal.subscribers.SinglePostCompleteSubscriber, org.reactivestreams.Subscriber
+        public void onError(Throwable th) {
+            try {
+                complete(ObjectHelper.d(this.valueSupplier.apply(th), "The valueSupplier returned a null value"));
+            } catch (Throwable th2) {
+                Exceptions.a(th2);
+                this.actual.onError(new CompositeException(th, th2));
+            }
+        }
+
+        @Override // io.reactivex.internal.subscribers.SinglePostCompleteSubscriber, org.reactivestreams.Subscriber
+        public void onNext(T t) {
+            this.produced++;
+            this.actual.onNext(t);
+        }
+    }
+
+    @Override // io.reactivex.Flowable
+    public void n(Subscriber subscriber) {
+        this.b.m(new OnErrorReturnSubscriber(subscriber, this.c));
+    }
+}

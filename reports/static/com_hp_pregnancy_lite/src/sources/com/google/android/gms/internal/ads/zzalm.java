@@ -1,0 +1,42 @@
+package com.google.android.gms.internal.ads;
+
+import java.io.InputStream;
+import java.util.Collections;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class zzalm {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final int f10856a;
+    public final List b;
+    public final int c;
+    public final InputStream d;
+
+    public zzalm(int i, List list, int i2, InputStream inputStream) {
+        this.f10856a = i;
+        this.b = list;
+        this.c = i2;
+        this.d = inputStream;
+    }
+
+    public final int a() {
+        return this.c;
+    }
+
+    public final int b() {
+        return this.f10856a;
+    }
+
+    public final InputStream c() {
+        InputStream inputStream = this.d;
+        if (inputStream != null) {
+            return inputStream;
+        }
+        return null;
+    }
+
+    public final List d() {
+        return Collections.unmodifiableList(this.b);
+    }
+}

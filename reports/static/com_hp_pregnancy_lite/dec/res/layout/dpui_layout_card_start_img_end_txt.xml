@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:tag="layout/dpui_layout_card_start_img_end_txt_0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DPUICardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dpuiCardParentLayout" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/dpuiCardCoverImg" app:layout_constraintTop_toTopOf="parent" layout="@layout/dpui_layout_card_top_background" />
+        <ImageView android:id="@id/dpuiCardCoverImg" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="0.0dp" android:src="@drawable/dpui_circle_white" android:contentDescription="@string/app_name" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:id="@id/dpuiCardCoverText" android:tag="binding_3" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dpui_card_view_spacing" android:layout_marginEnd="@dimen/dpui_card_content_padding" app:layout_constraintEnd_toEndOf="@id/dpuiCardCoverImg" app:layout_constraintTop_toTopOf="@id/dpuiCardCoverImg" style="@style/DPUI_StartImgEndTextTitleStyle" />
+        <include android:id="@id/dpuiCardBumpIconLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/dpuiCardCoverImg" app:layout_constraintTop_toBottomOf="@id/dpuiCardCoverImg" layout="@layout/dpui_layout_card_bump" />
+        <include android:id="@id/dpuiCardBottomLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/dpuiCardBumpIconLayout" layout="@layout/dpui_layout_card_bottom" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

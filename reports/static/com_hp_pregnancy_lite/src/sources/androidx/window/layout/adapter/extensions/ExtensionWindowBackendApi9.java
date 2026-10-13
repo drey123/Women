@@ -1,0 +1,19 @@
+package androidx.window.layout.adapter.extensions;
+
+import androidx.window.RequiresWindowSdkExtension;
+import androidx.window.core.ConsumerAdapter;
+import androidx.window.extensions.layout.WindowLayoutComponent;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: loaded from: classes2.dex */
+@Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0011\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"Landroidx/window/layout/adapter/extensions/ExtensionWindowBackendApi9;", "Landroidx/window/layout/adapter/extensions/ExtensionWindowBackendApi6;", "Landroidx/window/extensions/layout/WindowLayoutComponent;", "component", "Landroidx/window/core/ConsumerAdapter;", "adapter", "<init>", "(Landroidx/window/extensions/layout/WindowLayoutComponent;Landroidx/window/core/ConsumerAdapter;)V", "window_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+@RequiresWindowSdkExtension
+public class ExtensionWindowBackendApi9 extends ExtensionWindowBackendApi6 {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ExtensionWindowBackendApi9(WindowLayoutComponent component, ConsumerAdapter adapter) {
+        super(component, adapter);
+        Intrinsics.j(component, "component");
+        Intrinsics.j(adapter, "adapter");
+    }
+}

@@ -1,0 +1,1379 @@
+{
+    "Weeks": [
+        {
+            "Items": [],
+            "Week": 0
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Monitorować owulację",
+                    "Id": "0QOGMgKKuM1.Tj5V_Coxe1oKVy0.ao4ZLG.YWag8wB8kmJVsmxF9v"
+                },
+                {
+                    "Detail": "Kupić produkty podnoszące męską płodność",
+                    "Id": "4.Vve.cfzMs98rvJYbC69ZMGQGJzEbpYwpRuHzU9s_BonXWU5EU"
+                },
+                {
+                    "Detail": "Zadbać o dobrą jakość snu",
+                    "Id": "7j2DpbdwwuhcWLVHpT.V_mU.rE2e8.rDPDYENcrjj3TFgqv6W"
+                },
+                {
+                    "Detail": "Praktykować techniki relaksacyjne",
+                    "Id": "3PNrZNAdMI2p6kIidpFNZ8ZaBs2gpZDoFd2ifVN-D_v5CEFEEs-JqLfXF"
+                },
+                {
+                    "Detail": "Znaleźć przepisy na koktajle bezalkoholowe",
+                    "Id": "4WmYvobC94XRcLlOTsZ2k-bjXYxe.WTo_7jB-ncy9itUfF1SQC6PVVPttJ"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem na temat przyjmowanych leków",
+                    "Id": "Jx8tDcvNBH8FK9f0ia4hz1q4gUREoFdkPjAh23MrxA33bW24MZ"
+                }
+            ],
+            "Week": 1
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Kupić zestaw witamin dla kobiet w ciąży",
+                    "Id": "tNaOKvX1CO42u4-rxEbmBO2O3lqYT5cbyQIgf0BZ5E"
+                },
+                {
+                    "Detail": "Kupować pełnoziarniste produkty zbożowe",
+                    "Id": "5Hn7g3RDD.MnaYVRF91H"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem o mojej wadze",
+                    "Id": "rAavR4ZpAWVSJ-muq2CX3X26bGePk0SgmxqcK"
+                },
+                {
+                    "Detail": "Odwołać seans w saunie",
+                    "Id": "X74wtC6iS9lpu_3bH3QdGGzvWNjb_QyCIGCCM1LaY4"
+                },
+                {
+                    "Detail": "Kupić pieczywo pełnoziarniste zamiast białego",
+                    "Id": "Agikvle3YSx2r41F-k5S7x0fMTJv"
+                },
+                {
+                    "Detail": "Kupić kwas foliowy",
+                    "Id": "xSOJ5J41XQhmt735HIbMQdGvPO"
+                },
+                {
+                    "Detail": "Monitorować owulację w specjalnej aplikacji",
+                    "Id": "LaRomnkWp4d3T_1p"
+                }
+            ],
+            "Week": 2
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Poznać objawy owulacji",
+                    "Id": "ewXFQZRFxm-JLPbe6ESnxEda_YN7tMY-_bXkdE1NE28LQX3h"
+                },
+                {
+                    "Detail": "Kupić krem z wysokim filtrem przeciwsłonecznym",
+                    "Id": "_YT3xnJPd.t9TV_qsFHwK01fP9b-ILU."
+                },
+                {
+                    "Detail": "Zainteresować się napojami niezawierającymi kofeiny",
+                    "Id": "0KT2XOoqCS1Z3iTYwq34ixzT-8L-RkooQ7YbE.XHZhVg"
+                },
+                {
+                    "Detail": "Znaleźć przepisy na potrawy bez miękkich serów",
+                    "Id": "86_1H86BhYmzGx9FbT.08g0hbqzQAlUY"
+                },
+                {
+                    "Detail": "Kupić zestaw witamin dla kobiet w ciąży",
+                    "Id": "ThEe8efpzO5POgdS.0-gJB59lkgfb9aZuQ6osnaMuzUHKpluD"
+                },
+                {
+                    "Detail": "Unikać potraw zawierających niedogotowane jaja",
+                    "Id": "SolpwGgNRvamCiICjuDq0ueED7D6hEdqiqd31.Wt3shx"
+                },
+                {
+                    "Detail": "Zapisywać wyniki ważenia w aplikacji",
+                    "Id": "Pka6T2YbogvAVQxw5W9SEiAxEvk5I78oxFT7ZzBMKzvtXAtxBnsUWn"
+                }
+            ],
+            "Week": 3
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Porozmawiać z lekarzem o rzuceniu palenia",
+                    "Id": "S4UjaS9rY0H.69y3hpBY..F"
+                },
+                {
+                    "Detail": "Kupić test ciążowy",
+                    "Id": "gmXQLPP0GJVBrG9CUMDkXChWBqv2OUWPhDwgVDYe"
+                },
+                {
+                    "Detail": "Omówić z lekarzem mój program treningowy",
+                    "Id": "DMPu_usyUBXUOpVH7.TnwWC2l"
+                },
+                {
+                    "Detail": "Kupić produkty zaliczane do ciążowej superżywności",
+                    "Id": "luQNkVuZYwqrMyQ9B2Jy"
+                },
+                {
+                    "Detail": "Znaleźć bezpieczną farbę do włosów",
+                    "Id": "sYBlTb4IPbII13zJQzHsi0SnHbeCn49s-YW7XuVm"
+                },
+                {
+                    "Detail": "Znaleźć lokalną grupę wsparcia dla samotnych matek",
+                    "Id": "Eo02xMn45_WUJIBS5fsoXCBI4"
+                },
+                {
+                    "Detail": "Wypijać dwie szklanki wody przed śniadaniem",
+                    "Id": "ek4yhxROLn8rbLBPJaG.c.xLcy"
+                }
+            ],
+            "Week": 4
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Kupić domowy test ciążowy",
+                    "Id": "BBWoY9.P67v2Cuh5EwYQeAL"
+                },
+                {
+                    "Detail": "Zaplanować, jak poinformować partnera o ciąży",
+                    "Id": "IJlE95DH9b3U0yQk3Wh.fsCtGK0Ddh_5XKK18uqBE.qnP_c6lFy"
+                },
+                {
+                    "Detail": "Zdecydować, kiedy poinformować innych o ciąży",
+                    "Id": "AxSv5VZBJTxqKA3gUJ9.kPy.fa0FyxRh.-NI_BVtrputdNpaV0"
+                },
+                {
+                    "Detail": "Umówić się na wizytę u lekarza w sprawie plamienia",
+                    "Id": "CZTz2IyJaHJ6GaPFG.Cs0Y96Dc7grtAO"
+                },
+                {
+                    "Detail": "Umówić się na profesjonalny masaż ciążowy",
+                    "Id": "O0L7brMw3RkLS3vAB64xd"
+                },
+                {
+                    "Detail": "Omówić z lekarzem metody łagodzenia porannych mdłości",
+                    "Id": "1aeELekXyuOO8jeW.G0tyu0IdwVmTJw1v7EgQAPeDt8ee3DHXSPvfqECE"
+                },
+                {
+                    "Detail": "Jeść warzywa zielonolistne dla zwiększenia zawartości żelaza w diecie",
+                    "Id": "0ivwvstrjKV6jyLO4aOj3meLRLP3VPI27tOCjNPGCrnx00sZt9SRBbqrEv0H"
+                }
+            ],
+            "Week": 5
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Kupić specjalny notatnik, w którym będę prowadzić dziennik ciąży",
+                    "Id": "_l3ZQVglxytwBJbu5ffe6g14YHV18ai"
+                },
+                {
+                    "Detail": "Omówić z szefem możliwość pracy z domu w okresie porannych mdłości",
+                    "Id": "TkXCZdYwxDONxRr6Kt43E5Cg2DuRYeF0MdyfOC4KPqqgjO2iVJ"
+                },
+                {
+                    "Detail": "Umówić się na dopasowanie biustonosza ciążowego",
+                    "Id": "2l6NSJA2gj9Yj.HKqAVzH8_McG6ybF2p_XrYeGFlPfxac-gANxKS"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem na temat prawdopodobieństwa ciąży bliźniaczej",
+                    "Id": "q5hLadEq8P_gm.PwZNu0MH0cNyE6NRopgBkm16eFPPhWT8jqZ9eD0vw-8YQS-lh5"
+                },
+                {
+                    "Detail": "Znaleźć kogoś do pomocy przy czyszczeniu kociej kuwety",
+                    "Id": "f6qO3Z8X1vwCnaGcgw8WychIyNQEYgwH4tI_Tby186Jl1z9CZN9_g-qzpK5bbw"
+                },
+                {
+                    "Detail": "Sprawdzić, czy w moim zestawie witamin dla kobiet w ciąży znajduje się witamina B6",
+                    "Id": "YpaFr4v7KWKvrDcILVBzTOKlqPtXaXhMGGvMUC"
+                }
+            ],
+            "Week": 6
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Kupić lakier do paznokci bez toluenu i formaldehydu",
+                    "Id": "M8W9WfBqysT0Dpk8bd43nwBHWffN8dR.73PMy9XarYhbQibHY-i5DLYal96Z"
+                },
+                {
+                    "Detail": "Zapisać swoje obawy i lęki w dzienniku ciąży",
+                    "Id": "peOu8YTyGkRDNlPgB-pDjrqrRLDmg03NQ9WqCbNSdA41DvCdkN"
+                },
+                {
+                    "Detail": "Porozmawiać z partnerem na temat zwiększonego zapotrzebowania na sen",
+                    "Id": "_PRB2ETJWkcUPIba2"
+                },
+                {
+                    "Detail": "Kupić płatki o dużej zawartości błonnika, żeby przeciwdziałać zaparciom",
+                    "Id": "AQdXRiYAqeu_m.4PzHqoWMb7rfpF3Pio0OsuEGSwF6z"
+                },
+                {
+                    "Detail": "Zapisywać wyniki ważenia w tej aplikacji ciążowej",
+                    "Id": "1ITp4PM8mV0wYKZvQnW-HMrltEYzT9FkKC-NYrQQ"
+                },
+                {
+                    "Detail": "Zwiększyć udział węglowodanów złożonych w diecie",
+                    "Id": "R2zUU3T4NiyJRyEapmAc_Gn_kVUgfY.yleP"
+                }
+            ],
+            "Week": 7
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zapytać lekarza o HG i porozmawiać na temat nadmiernych wymiotów",
+                    "Id": "O.4TuW5.7PFG.jnkvRIwzIs30kJ8a"
+                },
+                {
+                    "Detail": "Kupić dodatkową deskę do krojenia wyłącznie do surowego mięsa",
+                    "Id": "dKZchjo-PoSoB4i4-5_vZAJdqWyssK"
+                },
+                {
+                    "Detail": "Przyjrzeć się zawartości kwasów tłuszczowych omega-3 w diecie",
+                    "Id": "SnIn.zWtyUVjTyS7c"
+                },
+                {
+                    "Detail": "Sprawdzić, które produkty zawierają kofeinę, i ich unikać",
+                    "Id": "OaieSW4hP_g1kGpPXnNrTTM1l0PTN"
+                },
+                {
+                    "Detail": "Omówić z lekarzem lub dietetykiem kwestię diety wegetariańskiej",
+                    "Id": "3VdOsEXLyfAAH2NxHQ627WiaQRLbn"
+                },
+                {
+                    "Detail": "Umówić się na dopasowanie biustonosza ciążowego",
+                    "Id": "HYKGxnh3ImO8gW1r0vuLpde-lUSdj5BJqBqz-qTdop-Wugdxj"
+                },
+                {
+                    "Detail": "Sprawdzić zawartość szafek pod kątem niebezpiecznych herbatek ziołowych",
+                    "Id": "aj2NB08E59ak4svVSLjzd3ei5C_TuL1eAv7vPPiot_7oizwSx228wui-Tu9z.26"
+                }
+            ],
+            "Week": 8
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Kupić miętową gumę do żucia lub pastę do zębów, by złagodzić nudności",
+                    "Id": "BoUU_YXBYsZj4mlg.VSkGgK1VdvM3DEVZLIJj4ldMHY"
+                },
+                {
+                    "Detail": "Zainstalować system oczyszczania lub filtrowania wody",
+                    "Id": "3sR8zpLGC.__ToEXNOn2YK9VkAAYqywUOyGBYSEyFfRB"
+                },
+                {
+                    "Detail": "Umówić się na wizytę u lekarza w sprawie krwawień z nosa",
+                    "Id": "NkeblJllX.7abD4LxBAXH1tCZrvgHj"
+                },
+                {
+                    "Detail": "Zapytać przyjaciółki i znajome o godne polecenia położne lub doule",
+                    "Id": "NdooRY6vQuYR77Ks"
+                },
+                {
+                    "Detail": "Umówić się na wizytę u lekarza w sprawie zawrotów głowy",
+                    "Id": "kBq7AzqoTv1fSCS6accnVh011XeAUiqO8hprO3p1OSJ8e7IQOK"
+                },
+                {
+                    "Detail": "Notować zmiany zachodzące w organizmie w dzienniku ciąży",
+                    "Id": "VolV0LTSTKNXMdX-cq4wnZ0rJ6JlwdF1KVyNBtOIIVLPo4azxvCXK7"
+                },
+                {
+                    "Detail": "Włączyć do codziennej diety co najmniej 4 porcje produktów bogatych w wapń",
+                    "Id": "_jZjHu2l8IG7m0ip3EASM81OhuJ0zCG6o8w83IRRW5oIWZVn3"
+                }
+            ],
+            "Week": 9
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zastąpić preparaty do depilacji chemicznej maszynką do golenia lub woskiem",
+                    "Id": "K3T_LIbCAA5XvN0pC.KNs-bWfSWOThcQaCrf-9pCJf-jRFrwSgxudDoZ6Z-uwsab"
+                },
+                {
+                    "Detail": "Umówić się na wizytę do dentysty",
+                    "Id": "bb5xbhAAv1.o9LEm4TnN2Pi7frgUu8RgC8NxIpIfSU7NfpH0HgDKvHKtuB6"
+                },
+                {
+                    "Detail": "Umówić się na wizytę u lekarza w sprawie krwawienia",
+                    "Id": "AR_OjUZvzxoBZsBxWdpZ1642DQ8qo6F5g84_Z16tKxL_wA64O85"
+                },
+                {
+                    "Detail": "Sprawdzić, czy moje ulubione ryby nie zawierają rtęci",
+                    "Id": "XWNylFcLdwuYoIqB6MYgDe.YTmvn4JgA"
+                },
+                {
+                    "Detail": "Znaleźć w okolicy basen i regularnie pływać",
+                    "Id": "YDZj1e5xaUxSl1s1S8wzSpe3s3UjcRya3osxLAPaxitrWuuRP"
+                },
+                {
+                    "Detail": "Zapisywać wyniki badania moczu w sekcji „wizyty lekarskie” aplikacji",
+                    "Id": "_BjFtidd-Xmtdm2q82.mpPqRiiqpdmLHhEScier4z0qYIM_2fAr9XvDG"
+                },
+                {
+                    "Detail": "Przygotować listę pytań do zadania na pierwszej wizycie u ginekologa",
+                    "Id": "23xlzuhOzApneA987eg-d9WHpd8vvQUQ8jpDoEguD_6sD4yicdYma2hn4Y7lgO"
+                }
+            ],
+            "Week": 10
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zgłosić lekarzowi nietypowe zachcianki ciążowe",
+                    "Id": "oMYwA5oRY9WcCSvgHYRANcPX5lk80ELZANTI-HvlG0pN5B4aC3k.7qfE"
+                },
+                {
+                    "Detail": "Wybrać się do lekarza w związku z nasilonymi mdłościami",
+                    "Id": "NVsSNVjosXFFAkKjpiGOUvr0lGZzjiJxFi9.RI9GMJL"
+                },
+                {
+                    "Detail": "Zaprosić przyjaciółkę na wspólne zakupy ubranek i akcesoriów dla dziecka",
+                    "Id": "OABlvUqxIZL7sPD__lRnv3eM_q7PoU0NAZShUgxp"
+                },
+                {
+                    "Detail": "Kupić jogurt z żywymi kulturami bakterii, żeby przeciwdziałać kandydozie",
+                    "Id": ".W-wZFAuTIUVSWXyPEcb3Wv4KhgzIP3ww-svzdublpqw9s07Tsh6"
+                },
+                {
+                    "Detail": "Omówić moje potrzeby dietetyczne z wykwalifikowanym dietetykiem",
+                    "Id": "TxW9WP6qJGLGck2eHitynIv7qlNB0k-oaW2w_4JZDH4OiPtZl3EFGi"
+                },
+                {
+                    "Detail": "Sprawdzić, czy w mojej diecie nie ma „zakazanych” produktów",
+                    "Id": "zoY83X69M-AaWzwAAfw4cbYk"
+                },
+                {
+                    "Detail": "Porozmawiać z psychologiem, żeby nauczyć się radzić sobie z lękami",
+                    "Id": "m4ScSGRLl7KmLY5VCnWGphCskb1Qd8_QboLlSAIe.1Bn4Z6L8.E8cWXr"
+                }
+            ],
+            "Week": 11
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zastąpić napoje gazowane wodą, żeby uniknąć wzdęć",
+                    "Id": "vk4kkPgAFTPyar_q5AfQKeCj49Rc.f2VXpHIF61d_m9FIqe"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem o moich podejrzeniach dotyczących ciąży bliźniaczej",
+                    "Id": "xSkvCmtYGpUmp32q0tYwwTpoaXQBIzegk0Gta2C6NgLv6k02jWvxdJ4qOViLbnP9"
+                },
+                {
+                    "Detail": "Ustalić z lekarzem termin badania USG w pierwszym trymestrze",
+                    "Id": "q84Y_A8w.xeTL61k8CP70omCGlHsH3rDPeNYEUnnPoSpUJtNYVE"
+                },
+                {
+                    "Detail": "Zapytać lekarza, które leki mogę bezpiecznie zażywać",
+                    "Id": "_i2xS2BrZkZC8tWcWY1yXJodBmU.U"
+                },
+                {
+                    "Detail": "Zrobić zapas produktów bogatych w witaminę C",
+                    "Id": "NHSSsKmRuILCuqavSQXA66TtdNJhvBZl9UiQ44V94r"
+                },
+                {
+                    "Detail": "Spotkać się z przyjaciółkami i powiedzieć im o ciąży",
+                    "Id": "5tG1DAV-M_o4Jcsrx6HiLWKnyVUTfrm"
+                },
+                {
+                    "Detail": "Porozmawiać z partnerem na temat badań w kierunku zespołu Downa",
+                    "Id": "gj4gRztMq6925iacCh5QTixpLz"
+                }
+            ],
+            "Week": 12
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Poprosić bliską osobę, by ostrzegła mnie, gdy zauważy u mnie objawy depresji",
+                    "Id": "40vqAdvY..L7_WH_T7r.G7AabxAY9p6"
+                },
+                {
+                    "Detail": "Odwołać zabieg wybielania zębów",
+                    "Id": "R-vSFgeeLdKAt.UcVzadvD9w"
+                },
+                {
+                    "Detail": "Kupić poduszkę ciążową, która ułatwi mi spanie na lewym boku",
+                    "Id": "pcVvP7CI-VXvFd1PUmGF6nKeGdTRex1dWnRp32IHlhMXJj3qX16o"
+                },
+                {
+                    "Detail": "Umówić się na spotkanie z szefem w celu poinformowania o ciąży",
+                    "Id": "hLTFsvls7qRmXSheeq"
+                },
+                {
+                    "Detail": "Zapytać lekarza o badanie na obecność antygenów Rh",
+                    "Id": "Ni9qtghaMOqRfzucr5DHLBF5vxSbiH3YAgtD7AuGq2yK-1"
+                },
+                {
+                    "Detail": "Zapisać się do fryzjera",
+                    "Id": "-opr72HKgudWPsZZX9S"
+                },
+                {
+                    "Detail": "Zapisać się na jogę, żeby poćwiczyć prawidłowe oddychanie",
+                    "Id": "iQrqD2Tl2xAtL26.cfs93dJ9kNYjOBdiZ2y4_UYhs5Eh-EXEO7nlB2"
+                }
+            ],
+            "Week": 13
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Podczas kolejnej wizyty kontrolnej omówić z lekarzem kwestię stosowania leków",
+                    "Id": "yMRs5Lh5o6RNWkgeihMsO"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem na temat ilości mojego płynu owodniowego",
+                    "Id": "Y7Knpz5Hf76XgyTmuyAQL6Xj3."
+                },
+                {
+                    "Detail": "Umówić się z przyjaciółką na dzień piękności",
+                    "Id": "leblikx2Hc0WY0VywF2aLfWae5.X6amVT.U"
+                },
+                {
+                    "Detail": "Opracować wieczorne rytuały, które pomogą mi się odprężyć",
+                    "Id": "q-lhiDzjFlFcpxh-Zyl86XqMKKa95Qfpx20GsTQT3XFAmWzYRVewz_"
+                },
+                {
+                    "Detail": "Kupić specjalne rajstopy ciążowe",
+                    "Id": "gaaPUmB5urgdYCIy0Ku"
+                },
+                {
+                    "Detail": "Poszukać informacji na temat przechowywania krwi pępowinowej",
+                    "Id": "kwCzpPxwEy_5kl4uwPPoJ8SLjB_a"
+                }
+            ],
+            "Week": 14
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zapisać się na basen",
+                    "Id": "QX._rNU4KKp9Dd3ajXjUCZhZ.HbjutTiqCGmJ4_uS_a"
+                },
+                {
+                    "Detail": "Poszukać zajęć jogi w mojej okolicy",
+                    "Id": "ACIXGPTnxj1.WE8TcxdjmWK5lW.-CRka57"
+                },
+                {
+                    "Detail": "Zapytać przyjaciółek, kto robił im ciążowe zdjęcia",
+                    "Id": "mgr2xQG2pIw0P7oafsMOV8"
+                },
+                {
+                    "Detail": "Kupić pończochy uciskowe na żylaki",
+                    "Id": "azFjbcb9cF1JqPTxs-AH1W_QqJrrpBLIxMiCBVp"
+                },
+                {
+                    "Detail": "Zapisać się na masaż ciążowy, żeby zredukować cellulit",
+                    "Id": "pGjXsE9T9ib_eUV7NiMyRERfs9CiQPra57UJU9v5m_A23IhFXtmPsSZ4_9"
+                },
+                {
+                    "Detail": "Kupić ciążowe ubrania sportowe i stroje kąpielowe",
+                    "Id": "gpBqu4W2yfvaybPpVf66JZVU54LkkHZRgxPJgtisPL9KQr8QTR3"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem na temat witamin i leków",
+                    "Id": "CrDDz_l2P7Trd7glscnze5K1.AkVEDASI0WDccni1HIQPifgTr76oFDTarfWg"
+                }
+            ],
+            "Week": 15
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Kupić super żywność na śniadanie",
+                    "Id": "szTn-9eDSyZ0AzcOXI_61uTdmHkdelwalgkV_kvv8uuMonS-DyX_70yekKU"
+                },
+                {
+                    "Detail": "Poradzić się lekarza w sprawie świądu lub dolegliwości bólowych okolic intymnych",
+                    "Id": "BHu8cB0jJWuSUzHVWW8SCGWrbmiZ7ZssSLju9rUEx74zh.rMWtNnrjrI6PuZ"
+                },
+                {
+                    "Detail": "Opracować jadłospis ciążowy oparty na 6 posiłkach dziennie",
+                    "Id": "cSi0EFOAPy8Uxn2tqarXeOCMLL-LKRxzcAJtqRzCmh"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem na temat uciążliwych porannych mdłości",
+                    "Id": "te962CZYAyFCrAmHH67GUJ4LK2rExIxAlN8NtQR6NhiGTv0vOJ.98509pwh32"
+                },
+                {
+                    "Detail": "Kupić zdrowe przekąski, żeby poradzić sobie ze zwiększonym apetytem",
+                    "Id": "7rY1XAwMxWN-hm63WjINe4"
+                },
+                {
+                    "Detail": "Poszukać przepisów na niewzdymające potrawy i zmniejszyć wielkość porcji",
+                    "Id": "PyCkQWaEEFiX7IyoI03uSnfQDQLcn"
+                },
+                {
+                    "Detail": "Wygospodarować kilka godzin na analizę finansów i uzgodnienie budżetu",
+                    "Id": "0GyUWnBNg-yws9UV_jIQ7pxwrITkXrZF5hW8.ooEs6RQ3ZGOU"
+                }
+            ],
+            "Week": 16
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zapisać się na masaż ciążowy i postarać się odprężyć",
+                    "Id": "JQ.9fKN4Ms5_qfhjXv4eOxTXz361kpHTCXm4LWmAhpjJ.7aGJ2qzPXz"
+                },
+                {
+                    "Detail": "Porozmawiać z partnerem na temat zespołu kuwady",
+                    "Id": "rG6Eo.N8YO07SPPya6DM0KadY"
+                },
+                {
+                    "Detail": "Poprosić przyjaciółki o pożyczenie kilku ubrań ciążowych",
+                    "Id": "vJ-11V-Gb_zprHq.XH2v8Sm9lvEwR35C9DlUl5eaaUxnE"
+                },
+                {
+                    "Detail": "Odwołać wizytę w salonie tatuażu",
+                    "Id": "sQl0RE5bS-WOYCe8sMc01fpd"
+                },
+                {
+                    "Detail": "Ćwiczyć mięśnie dna miednicy",
+                    "Id": "0dJdVStoVXBNiEYpNzLYM26sppHxt4D75W9mB.rfeJNUNkx8eraG-FlgP3E8"
+                },
+                {
+                    "Detail": "Przygotować się do rozmowy z przyjaciółkami o ciąży",
+                    "Id": "_ZRWdFk73Mi96OJtR-u3B"
+                },
+                {
+                    "Detail": "Zaplanować wyprawę po nowe, wygodne buty",
+                    "Id": "Ny4AGN1-x._PzowFLRGG"
+                }
+            ],
+            "Week": 17
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zapoznać się z argumentami za i przeciw amniopunkcji",
+                    "Id": "8vSmPWF6YQiBFdQ5GAyYVZwz9v-sbaDevgHT3yl3QjWh"
+                },
+                {
+                    "Detail": "Zapisać się na odpłatne badanie USG, żeby (wcześniej) poznać płeć dziecka",
+                    "Id": "TqjDBL1IjAGUdzTTxQq6Lbp"
+                },
+                {
+                    "Detail": "Przygotować sobie poduszkę do podparcia pleców podczas siedzenia",
+                    "Id": "i5hDGnHhtKlq.mVQo.EltZtKXRFzqH17sF9o-_Ml2nih"
+                },
+                {
+                    "Detail": "Znaleźć zajęcia jogi dla ciężarnych w mojej okolicy",
+                    "Id": "kOHCQtU_1wczwDY0-0_CCarBJqr5pfaisLq3qTSNvubL"
+                },
+                {
+                    "Detail": "Otwarcie mówić, że jestem w ciąży, jeśli zależy mi, żeby inni o tym wiedzieli",
+                    "Id": "BSw9VIkgkSD_Nex1ok2aKoQtyd_cxvwN"
+                },
+                {
+                    "Detail": "Zapisać się na masaż ciążowy u masażysty posiadającego odpowiednie kwalifikacje",
+                    "Id": "veWzzdcBT_p_xva3yDg"
+                },
+                {
+                    "Detail": "Monitorować aktywność dziecka za pomocą licznika kopnięć w aplikacji",
+                    "Id": "_ny1me.DZKmwipuUQG.HnaXzsvxWG9dir566E65hM98471"
+                }
+            ],
+            "Week": 18
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Dla rozrywki umówić się na sesję ozdabiania brzucha",
+                    "Id": "aa-4RfSSdK0TksuSM8gK48WAlw-C10lZC5XQW7oUpzfYBIcKq1cvQzs"
+                },
+                {
+                    "Detail": "Zapisać się na badanie USG 3D lub 4D",
+                    "Id": "C9JphmgeKWWaYamLx5cI7"
+                },
+                {
+                    "Detail": "Monitorować przyrost wagi w tej aplikacji",
+                    "Id": "vb1em5pkjqHx-ETt0UNEoycaE2vfXB1DWy0B1EXxHt2B8tv"
+                },
+                {
+                    "Detail": "Zapytać lekarza o bezpieczne preparaty na trądzik",
+                    "Id": "fschSjB1-VO7GHL8Mavytv2-5E3TpJ1596eZk-0AaKPWDpdecz"
+                },
+                {
+                    "Detail": "Porozmawiać o moich obawach z przyjaciółkami, które mają już dzieci",
+                    "Id": "COcyna6jqTeIHu8r7ogpfCT3WvGOlAeuo_a7F1ZvoRU"
+                },
+                {
+                    "Detail": "Odwołać wizytę w gabinecie piercingu",
+                    "Id": "B7OK.l5CyhGwRK_tg8ecCgfsljmiIbFzn_fy9ZY_STE"
+                },
+                {
+                    "Detail": "Skutecznie wyznaczać granicę, żeby inni nie dotykali mojego brzucha",
+                    "Id": "YgKlnAIc0jIQtF-Z"
+                }
+            ],
+            "Week": 19
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Spytaj swojego lekarza o szczepienie przeciw krztuścowi w ciąży",
+                    "Id": "3shnSXbQn3z3OTTZTZ8jIQ"
+                },
+                {
+                    "Detail": "Poprosić w pracy o podnóżek",
+                    "Id": "ti-CTvwgBdMuoarkuQqdYxcoWc-p2JiDUR"
+                },
+                {
+                    "Detail": "Zapisać się na zajęcia pilatesu dla kobiet w ciąży",
+                    "Id": "ZmoSXOLp5MkAxDHaL0w3jWVu"
+                },
+                {
+                    "Detail": "Spędzać więcej czasu, budując więź z dzieckiem",
+                    "Id": "H7Uj-yvzwgl8acDtwWnrA3x.IAKkm3GwN7veyCQoqwiQ"
+                },
+                {
+                    "Detail": "Kupić adapter do pasów bezpieczeństwa",
+                    "Id": "mAV90PI3g88DMXSJU5x6jkguHUwDZVZNmn7XE.Siy2nurKCK.LtMiE"
+                },
+                {
+                    "Detail": "Sprawdzić dla zabawy chiński kalendarz płci!",
+                    "Id": "TWlgIdZXcLRnB9cpDb9.JZ2_0v-d3dM"
+                }
+            ],
+            "Week": 20
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zaplanować specjalne wyjście z partnerem dla uczczenia półmetka ciąży",
+                    "Id": "VUcoc8UTJWw0LXfSEw8"
+                },
+                {
+                    "Detail": "Przed snem brać ciepłą (nie gorącą) kąpiel i wypijać ciepłe mleko",
+                    "Id": "TUuWTRcw0FQ6VuWA9ZpPQMC0m0J5QrFiyA7y8SK6Fg"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem na temat moich obaw dotyczących ZUM",
+                    "Id": "ONp8yjB-.7OJKirmz.6"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem lub położną na temat możliwości urodzenia w domu",
+                    "Id": "YvA8.ydXXXvY0XYfFwVog5lPi6iycvrE"
+                },
+                {
+                    "Detail": "Omówić z lekarzem kwestię bólu więzadeł macicy",
+                    "Id": "ZNU_26fFM-WTsCJ_HufPCyxcVLKWTUVbe9o3b56kbCJE3mgGdijL5HrfiV77b0N"
+                },
+                {
+                    "Detail": "Kupić akcesoria do depilacji bez szkodliwych substancji chemicznych",
+                    "Id": "fa-IkxoEjFMRGtwsF5oc5gGXuaTK1pn1c-yd4.44yawv"
+                },
+                {
+                    "Detail": "Zarezerwować wyjazd na wakacje, żeby podnieść poziom witaminy D w organizmie",
+                    "Id": "OUdqbRXlFpi4MdPW_l59GT"
+                }
+            ],
+            "Week": 21
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zapytać lekarza, czy poleca akupunkturę",
+                    "Id": "QvYljnnwTDBYbFUzS5LyxMguMMCqWI14htvXRhSnj91YGMnxqaLlu"
+                },
+                {
+                    "Detail": "Poprosić położną, żeby nauczyła mnie wykonywać ćwiczenia mięśni Kegla",
+                    "Id": "vdQoToHNJKH_I_1IoGoG3TvTFYosIEHsymA8eeq5sZpHn8wHgZoaa_q_RxITBHL"
+                },
+                {
+                    "Detail": "Kupić dobrze dopasowany stanik ciążowy",
+                    "Id": "x9Cu0_Y5Rzm2XDQymUR9Pgm8NcDfEvC7pLzV_SR"
+                },
+                {
+                    "Detail": "Skonsultować się z lekarzem lub okulistą w przypadku istotnego pogorszenia wzroku",
+                    "Id": "JxBCFrWau3oxdqwnLe6VpDss9ms4onsCrWndT31c_Ye"
+                },
+                {
+                    "Detail": "Wypróbować inhalację parową, żeby udrożnić nos",
+                    "Id": "NgorlhKN8EFZJUV.BO0l1K"
+                },
+                {
+                    "Detail": "Codziennie poświęcić nieco czasu na interakcje z dzieckiem",
+                    "Id": "Dr52Ob7PKZmIlp_22eHqgonqG9t8RluyEMHKPqJD1VgCAJ6E8UucW3"
+                },
+                {
+                    "Detail": "Zapisać się na zajęcia poświęcone karmieniu piersią",
+                    "Id": "CbFEiOUQRBRXBbIbBmmRK1x2.qMnxqmR0bLEvCzNbYfUY"
+                }
+            ],
+            "Week": 22
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Wybrać się na basen",
+                    "Id": "jwNVdeROuY9jyVtgoUfNvUoSfwiatfOe1g1UElysYRygK8eFWDGx077.0l0qDmF"
+                },
+                {
+                    "Detail": "Zapisać się na zajęcia szkoły rodzenia dla kobiet w ciąży bliźniaczej lub mnogiej",
+                    "Id": "h9PH4jmMivdHuNURE2tgnYe-Hw2eZm0Jzm2Ke2ZtP8lKgaP0OdwTZOGu"
+                },
+                {
+                    "Detail": "Z pomocą lekarza lub położnej ułożyć dietę i plan ćwiczeń",
+                    "Id": "jQBoGgfit42kJ8pmWowqpv2q9r3AOmEUTRD-FnlGKs0n1jOHJNbog0v"
+                },
+                {
+                    "Detail": "Poinformować bliskich o przewidywanym terminie porodu",
+                    "Id": "MwCnC_FiwTXRo55tsqfhAvZ5NASzVpL3r4.OXviQMWDrA0xKDSnnBm7XG8EGDj"
+                },
+                {
+                    "Detail": "Zaplanować wyprawę po mebelki do pokoju dziecięcego",
+                    "Id": "hZb2VGONLj-8M05NBL.Qer-qXyQvbz-pagPR7-7a"
+                },
+                {
+                    "Detail": "Zapisać się na zabiegi spa odpowiednie dla kobiet w ciąży",
+                    "Id": "Mm4ROGsm2EubvWCBLl5W-6P7RkWbf02tuXikOGqOezaJ"
+                },
+                {
+                    "Detail": "Zaplanować romantyczną kolację z partnerem",
+                    "Id": "r62xm5dncOnSIYb4sHKAmdf6cewrD1IiLr5JrTtOUjq8pRNYB4vqvHVDbc7FhxV"
+                }
+            ],
+            "Week": 23
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zaplanować wycieczkę lub urlop",
+                    "Id": "xlVEVXkmI4RhWHlfiMOhBb2lg2lg_kiKebfqYbU482r3A"
+                },
+                {
+                    "Detail": "Jeść dużo zielonych warzyw liściastych, by utrzymać prawidłowy poziom żelaza",
+                    "Id": "iVt-tBvYcVBDEdwkqQQlkzdkEkc7vGGy5c7fdftbIFM"
+                },
+                {
+                    "Detail": "Zapisać się do szkoły rodzenia",
+                    "Id": "o9xJNe.RxBa8RamxhsiHKYYPd8UrlG8pUo32EpfPcHg"
+                },
+                {
+                    "Detail": "Zapytać lekarza, czy moje bliźnięta są jednojajowe",
+                    "Id": "3tdR.-nN3I5V_nwg2g"
+                },
+                {
+                    "Detail": "Stosować produkty do pielęgnacji skóry bezpieczne dla kobiet w ciąży",
+                    "Id": "OidPZn4SguVlCGzIiiBZbu6E"
+                },
+                {
+                    "Detail": "Namówić (ciężarne) przyjaciółki na codzienne wspólne spacery",
+                    "Id": "Mwno63TX5gVyp7WT0Pg1DMS0cG07ehJsaEqG-UAdW5CgcgjlC"
+                },
+                {
+                    "Detail": "Na wakacjach sprawdzać, czy woda pitna pochodzi z bezpiecznego źródła",
+                    "Id": ".e_swtB60cj2CqlbNLP4i6JM3-f"
+                }
+            ],
+            "Week": 24
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zachęcać partnera, żeby dotykał brzucha, starając się wyczuć ruchy dziecka",
+                    "Id": "VsRLT9dJmpcN5GcaU7xURFxfddyVyAcZbci-..xM-NCPvfF5z4knWUyPD"
+                },
+                {
+                    "Detail": "Wyszukać przepisy na pyszne bezalkoholowe koktajle",
+                    "Id": "a2DGZNQPl2BlevgZz"
+                },
+                {
+                    "Detail": "Wybrać dla siebie i dziecka relaksującą muzykę",
+                    "Id": "gTXjslhq7Fgd_5FOYF"
+                },
+                {
+                    "Detail": "Poszukać w Internecie przepisów na pyszne smoothie",
+                    "Id": "nJstRkBuGR8ij8ee6br5EeixVKusci09sLZRtFhEx7X1CHh6BrJ7hW"
+                },
+                {
+                    "Detail": "Zaplanować romantyczną kolację przy świecach z partnerem",
+                    "Id": "gMX.MnFDsdvFRCNF9m1fCG"
+                },
+                {
+                    "Detail": "Kupić wygodną poduszkę ciążową",
+                    "Id": "cXdyOgXilYbBeU_bUyLBCDZF411JNBaM-lPUp7"
+                },
+                {
+                    "Detail": "Monitorować aktywność dziecka za pomocą licznika kopnięć w aplikacji",
+                    "Id": "W9jmhZiRKbnZFYFcKC"
+                }
+            ],
+            "Week": 25
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zapisywać swoje sny w dzienniku ciąży",
+                    "Id": "O1fMt3g.x.qUtTv6Rp84aITY.AxVYU5F6DpL5vG5Qu1GhyXF5"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem i upewnić się, że przyjmuję wystarczająco dużo magnezu",
+                    "Id": "xhop55dIPY_dLNCvatO0A1XOL9NrF"
+                },
+                {
+                    "Detail": "Zapytać przyjaciółki, które były w ciąży, o krępujące sytuacje, jakie im się przydarzyły",
+                    "Id": "DUyNGo8mmHs6VbNaX_"
+                },
+                {
+                    "Detail": "Zapisać się na zajęcia fitness dla ciężarnych, żeby ograniczyć ryzyko rozstępów",
+                    "Id": "QWztpKTphXPp0H9DVKZI05EPebZC.67EGw"
+                },
+                {
+                    "Detail": "Poznać różnicę pomiędzy skurczami przepowiadającymi a porodowymi",
+                    "Id": "sh.mfWgWjn5TEoVLNEHMd-P-QgQ4V3Qk2DnZtbw0e6li_Im6FZ7O7h_s"
+                },
+                {
+                    "Detail": "Wykonać badanie w kierunku cukrzycy ciężarnych",
+                    "Id": "H2dq7XVMoiQVh8Z-0NUbUhxCMMj"
+                },
+                {
+                    "Detail": "Poprosić partnera, przyjaciół lub krewnych o pomoc przy podnoszeniu",
+                    "Id": "XRbkjxlzD8IOGeo-itL9vs7gONprPR-hLhhDOXMhCJo12zYZXM"
+                }
+            ],
+            "Week": 26
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Pomyśleć nad ciekawym imieniem dla dziecka",
+                    "Id": "KoeU4sybhhAlmiisHVmGLAIKymyRT3TSaY1NQAb7_5ZH"
+                },
+                {
+                    "Detail": "Znaleźć książeczki dla dzieci o stawaniu się starszym bratem lub siostrą",
+                    "Id": "9-iTM40j5Ktd5MKkV-8lpJ"
+                },
+                {
+                    "Detail": "Zaplanować urlop w regionie, gdzie nie są wymagane szczepienia dla podróżnych",
+                    "Id": ".hrHqVU6yGqbqo1mmWwGhkX3J1qoRlD2bqjveCMTLH3WOodr"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem lub położną na temat potencjalnych miejsc porodu",
+                    "Id": "ZOI7BWL2YsnSSyLRBX2uBriFbCu6aOQjc"
+                },
+                {
+                    "Detail": "Sporządzić listę rzeczy, które chciałabym zrobić, zanim urodzi się dziecko",
+                    "Id": "OK81y4V2NLBvMHXxMzXGJ8_jPRXt3J"
+                },
+                {
+                    "Detail": "Przygotować listę 5 najlepszych żłobków w okolicy i osobiście się tam wybrać",
+                    "Id": "eQDmXsLalcn0SpMqoDpz"
+                },
+                {
+                    "Detail": "Omówić z lekarzem dolegliwości bólowe stawów",
+                    "Id": "1yRtuNlSVg1F8R_BTaugNJR-V3S_Sy6k4Y5ZwCp"
+                }
+            ],
+            "Week": 27
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zapisywać w dzienniku ciąży, kiedy dziecko ma czkawkę",
+                    "Id": "ljsSwm6sJj5geLHP42o7EkHmyZKSMDNMT3i4GUYUaq95"
+                },
+                {
+                    "Detail": "Pić dużo wody, żeby zapobiec odwodnieniu",
+                    "Id": "_a-ZId1cLolFVKvhiZNXjWGDPHT0FE9nFHDVcBP7GjwWObXotXOZx"
+                },
+                {
+                    "Detail": "Kupić zdrowe przekąski do podjadania między posiłkami",
+                    "Id": "u9D5eLGO2MNkT6ZhQ3a6Ejjse2AVrrS8SMVNS_Q.2CjmHb9W_ANmXU99llI.UP"
+                },
+                {
+                    "Detail": "Kupić wkładki laktacyjne, żeby chronić ubrania przed zaplamieniem",
+                    "Id": "Wi2cVdTpABNNOFZ.ORTPIjr0.a-B5IvY7Zsv8zYU9YPgk8SC"
+                },
+                {
+                    "Detail": "Układać się do snu w pozycji półleżącej, która łagodzi zgagę",
+                    "Id": "5QAW2ScThSHQLvA_6lfVH"
+                },
+                {
+                    "Detail": "Kupić wygodne buty na stabilnej, płaskiej podeszwie",
+                    "Id": "OPC_XFLd3I3yiLUAWiiW2Lx5snEbGgNHirZ6Nak2Ui"
+                }
+            ],
+            "Week": 28
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zacząć monitorować ruchy dziecka za pomocą licznika kopnięć w aplikacji",
+                    "Id": "ITNmqw-NZf_H3i0i7F84cxWWl2LtbTRTkcf2"
+                },
+                {
+                    "Detail": "Wypijać dwie szklanki wody po przebudzeniu",
+                    "Id": "r.0KD-F73z-Cd7dk8DRrDR"
+                },
+                {
+                    "Detail": "Sprawdzić najnowsze dane dotyczące bezpieczeństwa fotelików samochodowych",
+                    "Id": "ByloCy.eOKoRPJdBVzkwAuhT4"
+                },
+                {
+                    "Detail": "Omówić z lekarzem możliwość zaszczepienia się przeciw grypie",
+                    "Id": "KjVFS7EiJf-10fWcwq3IfXJ5tYAen.WaNJJ"
+                },
+                {
+                    "Detail": "Upewnić się, że poduszki powietrzne w samochodzie są włączone i sprawne",
+                    "Id": "UufbfUpVYPj4RWK4u1B2Tl1s"
+                },
+                {
+                    "Detail": "Odwołać zabieg opalania natryskowego",
+                    "Id": "F.17KiLQOBkSuTdph_xt"
+                },
+                {
+                    "Detail": "Kupić notatnik i zapisywać w nim rzeczy, o których powinnam pamiętać",
+                    "Id": "Llzb9eN3hbbi_8arP6178SPVkW968_Ldf5U9Oau"
+                }
+            ],
+            "Week": 29
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Stworzyć listę prezentów online",
+                    "Id": "F85cOPDb7f5tWPIVLVf4M88xKF2qD.6NeH7gf.dylo9UP_l2FafxPV5r9.4F1J"
+                },
+                {
+                    "Detail": "Odwołać zabieg prostowania włosów",
+                    "Id": "o_NEAswVKvsmHOdrdtLJvHlI_Z_Y4IIpNQ"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem lub położną na temat masażu krocza",
+                    "Id": "IrVRjzjD4MtV1jw3pV1zmfkUV8Y67W31X3q.ZJZB_9lp99rRbeo7"
+                },
+                {
+                    "Detail": "Wypoczywać w ciągu dnia, żeby zminimalizować skutki stresu",
+                    "Id": "LohnTex7SJa7JyQEvuyYSiiP5caCBs21Qo9y4aE4r-iHJUYP"
+                },
+                {
+                    "Detail": "Pić wodę, żeby zminimalizować widoczność rozstępów",
+                    "Id": "v9j.a8waeCj7YkWxXSKs23MEF4wVEkyzs9W-VrKMBHUwO6cuC_lSc"
+                },
+                {
+                    "Detail": "Przygotować dodatkowe poduszki, które pomogą mi zasypiać na boku",
+                    "Id": "Go4oa05nhli_rrWX_xRot01ahcPKj2EXm"
+                },
+                {
+                    "Detail": "Umówić się z fotografem na ciążową sesję zdjęciową",
+                    "Id": "Fiqp2sOC4HxrQ_zxl8qdDoMHHkdP6g76XGyZTp15cbEa7Qq-BM"
+                }
+            ],
+            "Week": 30
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Kupić nierafinowane masło kakaowe do rozjaśnienia kresy czarnej",
+                    "Id": "ld-mqduiagtqgC3-V-zt2XzahvJQ20mkRdeHtjjtTbDYkblk89-LHOji.YyawnEp"
+                },
+                {
+                    "Detail": "Wybrać kolor farb do pokoju dziecięcego",
+                    "Id": "BjjtObRmVV34h8TcrLQTNLmwjd"
+                },
+                {
+                    "Detail": "Porozmawiać o swoim libido z partnerem, żeby nie czuł się odtrącony",
+                    "Id": "ybFF3Oe3sXyVjzc_6pxeHO3mHUcrsf8oGxoNFiWZv7kQfw3apr7wgqL9tcL8n"
+                },
+                {
+                    "Detail": "Zapamiętać objawy przedwczesnego porodu",
+                    "Id": "uXnH6b_SLTKWNCFFxVCmlZ"
+                },
+                {
+                    "Detail": "Czy chcesz nadać dziecku drugie imię?",
+                    "Id": "yhPPBx.r0smS-8ALUnjak"
+                },
+                {
+                    "Detail": "Skorzystać z funkcji, jaką oferuje aplikacja, i stworzyć listę zakupów dla dziecka",
+                    "Id": "E2ThOFm2VWjlCjoIj420MtthOTvuyDPl2OX8RVlJiP6vEcr"
+                },
+                {
+                    "Detail": "Zapytać przyjaciółki, czy mogą pożyczyć mi kosz Mojżesza",
+                    "Id": ".5igkWk19_w3PEtC92VP"
+                }
+            ],
+            "Week": 31
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Umówić się na wizytę u lekarza w sprawie trądziku ciążowego",
+                    "Id": "Yw.Wmzt_7RhtKa.zmZaVmbzM8esXYjESYHDho.N5Ir5wRq-vUGiL711J"
+                },
+                {
+                    "Detail": "Kupić wkładki laktacyjne",
+                    "Id": "bmuNX5P7DPkwjVhmwff8viAfj_NNKXlL1q"
+                },
+                {
+                    "Detail": "Umieścić w pokoju dziecięcym czujnik dymu i tlenku węgla",
+                    "Id": "xjm1a0WQL2iJDop.ujupcsJphkuiZg48VrfST_ZfbYjR0XYlg_STIpTYSHKX"
+                },
+                {
+                    "Detail": "Wyjąć kolczyk z pępka lub zastąpić go innym",
+                    "Id": "WSJ2APAJrtM6Q10BOWq4ooCtB7wkLmzRKYhlnqtJkv71bg0NvLqsAFYDCJDsu9dQ"
+                },
+                {
+                    "Detail": "Kupić piłkę ciążową, żeby ćwiczyć na niej w domu",
+                    "Id": "TqpmGs5xwWNIZ86JJPGFtxqkkW4EsDEDDQp"
+                },
+                {
+                    "Detail": "Zapamiętać objawy stanu przedrzucawkowego",
+                    "Id": "iLB19XtqVmPKMn0BK7xT-yoXUsw1.QFqx_UaTDW"
+                },
+                {
+                    "Detail": "Kupić krem z wysokim filtrem przeciwsłonecznym, by chronić skórę",
+                    "Id": "O5n6B2rhRSPjSLefapXtV8oEVNXtkiQCgNQYplt8C8UdtOYqr"
+                }
+            ],
+            "Week": 32
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zapisać się na masaż ciążowy i zabieg pielęgnacyjny",
+                    "Id": "ZcM8uTV1sTpacwa1cS62zwKFD0goGg2BVdl"
+                },
+                {
+                    "Detail": "Zapisać się na zajęcia jogi dla kobiet w ciąży, żeby zapobiec bólom pleców",
+                    "Id": "afpzcsJCeeb1B--ALvAvVLX6Bid6cw1xiOHrTCQ-.Z"
+                },
+                {
+                    "Detail": "Zapisać się do kosmetyczki na depilację woskiem",
+                    "Id": "HprUjnePnE8mqjics1NNCx7X9uwpxnp4XM1RrxoEtAf6"
+                },
+                {
+                    "Detail": "Sporządzić w aplikacji listę wszystkich rzeczy potrzebnych do pokoju dziecięcego",
+                    "Id": "fo95nq8a.WiOYmfjgN7gGN_Jg1jfBGBR4.M4ki4W_nx19VhLjT_E3XnF4ui"
+                },
+                {
+                    "Detail": "Zapisać się na zajęcia jogi dla ciężarnych",
+                    "Id": "C0LFDbGExWr6b-eDf3n-VtGl1a256-Wfbc"
+                },
+                {
+                    "Detail": "Wybrać kartki z zawiadomieniem o narodzinach dziecka",
+                    "Id": "OvKbunr3apt-aJ6YRPtDS"
+                },
+                {
+                    "Detail": "Poszukać w Internecie grupy dyskusyjnej, by porozmawiać o fotelikach",
+                    "Id": "Ziu1boBcGL5M0_OY.wTY5m5scCehaTmqwG7deI0bGd-vjEl3NUaKSEQqQYtEAhOT"
+                }
+            ],
+            "Week": 33
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Poprosić szefa o dodatkowe przerwy w pracy dla odzyskania energii",
+                    "Id": "HipcCmuJ7tX5ANaGQv-2OZoY4edoL8hHVoJmPentJs6X-lmP9uG9RX0BSGqhORlA"
+                },
+                {
+                    "Detail": "Uzyskać informacje o możliwości przechowywania i oddania krwi pępowinowej",
+                    "Id": "5ib4QHbujbdfqldJR3ch0W-8zoZdL"
+                },
+                {
+                    "Detail": "Znaleźć przepisy na bezalkoholowe koktajle",
+                    "Id": "y0g1uJQ4rFqMIhm31HTFgDY4EUBy07CZEMiKZ3zKPl"
+                },
+                {
+                    "Detail": "Skorzystać z akupresury, żeby złagodzić ból pleców",
+                    "Id": "3v81u.gOt-6PIHILuvlS9a.fyA_yvn-ZswvTVWRMxrr4Fv9ZCsO7aB"
+                },
+                {
+                    "Detail": "Znaleźć inne samotne matki, do których mogłabym zwrócić się o wsparcie",
+                    "Id": "qvQuXOa4bA7uZeIE7Ja.zwVMtXtZbsl-mPxHAxYdPaYcU2gJkhS8AiNxyi2v2eTJ"
+                },
+                {
+                    "Detail": "Codziennie chodzić na spacery, żeby przeciwdziałać zaparciom",
+                    "Id": "64tX13XXI2qOr9haH1Qt4CsEtu1B"
+                },
+                {
+                    "Detail": "Spakować torbę do szpitala, korzystając z tej aplikacji",
+                    "Id": "WJIliE.s4kLEql5qYS48QJvC4spBVS1C_c4.GGNgaXrcc"
+                }
+            ],
+            "Week": 34
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Znaleźć fizjoterapeutę, który pomoże mi pozbyć się bólu karku",
+                    "Id": "A6y37S2QFAhzNEYGQ-1ca_kzxBHlKA2pQIOBO81bBIw7Lu"
+                },
+                {
+                    "Detail": "Popytać przyjaciółki i znajome o polecane żłobki lub opiekunki",
+                    "Id": "9eO8OQmWzQL9zg2JsK04g1a5v3Zb"
+                },
+                {
+                    "Detail": "Dopilnować, żeby mój partner spakował własną torbę do szpitala",
+                    "Id": "lg3ZU2nXQClIFbv29UsEtMyK_TCFovoIaJ5PD.NdRr"
+                },
+                {
+                    "Detail": "Porozmawiać z partnerem na temat wsparcia w okresie karmienia piersią",
+                    "Id": "iUOvAXRE3KJqqLq.PjU"
+                },
+                {
+                    "Detail": "Wieczorami jeść mniejsze posiłki, żeby poprawić komfort snu",
+                    "Id": "5jQuSe5uhD29gxFcwM-DerUqnQzMzY0t3mM"
+                },
+                {
+                    "Detail": "Poszukać w Internecie grup wsparcia, gdzie będę mogła podzielić się swoimi obawami",
+                    "Id": "O.-xq9HjS_PnY2vy43qEei9n79z1GScYQnDHOQHsE7j71X5x"
+                },
+                {
+                    "Detail": "Poznać wady i zalety obrotu zewnętrznego do położenia główkowego",
+                    "Id": "g1_n1IG6XCIK7D_SSTeYRr4F5W-3Hnw"
+                }
+            ],
+            "Week": 35
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Przygotować dodatkowe poduszki, żeby spać w lekko uniesionej pozycji",
+                    "Id": "rXAQ4IIjcdE0mYnTG76qbIUhhzWaHe.E0IR6JEg-2_DBrc6wLrq"
+                },
+                {
+                    "Detail": "Ćwiczyć z piłką ciążową, żeby ułatwić dziecku wstawienie się",
+                    "Id": "gFGPBZgsvGBP3rdicDucJutisbB"
+                },
+                {
+                    "Detail": "Często rozciągać mięśnie łydek, żeby uniknąć skurczów",
+                    "Id": "qz3fsZcLcBeILcKmwBDfVx0.wFHf2fkt"
+                },
+                {
+                    "Detail": "Stworzyć własny plan porodu z pomocą tej aplikacji",
+                    "Id": "b4imYzzOi5U8CZPcMXIKU1_Zxqjb0Yub66ARiJt299MVTZxUD_pR9s6eoZbDw"
+                },
+                {
+                    "Detail": "Zapytać położną, jak wygląda czop śluzowy",
+                    "Id": "2VY695J5E3itReCG1W1GFRUj.Mh5Oo3OGj7Hem11EFSM6cFd6EdyMUFyCE7"
+                },
+                {
+                    "Detail": "Umówić się na rozmowy z kilkoma doulami, by sprawdzić, czy taka pomoc mi odpowiada",
+                    "Id": "UQobc2mR1FxJEnuXQjsCCe10-SKxEPdemwIRhYxQ5UB3eB2rl-2J1wZGE0cws"
+                },
+                {
+                    "Detail": "Zapytać położną, jak rozpoznać skurcze Braxtona Hicksa",
+                    "Id": "j_Z5VwiOjYpV5MU3OtAQbeoSxKD"
+                }
+            ],
+            "Week": 36
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zadbać o regularne masaże stóp, by zapobiec obrzękom",
+                    "Id": "BI-peR4YBtCyTVAqPw3a"
+                },
+                {
+                    "Detail": "Delegować sprzątanie na partnera i bliskich",
+                    "Id": "v5nRwv1WvWheReHTFvRU870_BsN3q9P2.qZjLFBhz_.s6aqt43fQsxbCRPw"
+                },
+                {
+                    "Detail": "Zaprosić do siebie przyjaciółki",
+                    "Id": "2bBO5RARuoJwkcastOQvsslud91DvykrINZ"
+                },
+                {
+                    "Detail": "Namówić (ciężarne) przyjaciółki na codzienne wspólne spacery",
+                    "Id": "1WU5ieF4fqNYsqO2cNsT5zFQMX9j7ygETupxIOeO"
+                },
+                {
+                    "Detail": "Zastanowić się nad imieniem dla dziecka",
+                    "Id": "9knBe8CFiZWoup0MQ8bmAhkIHxbe6G2LIegn"
+                },
+                {
+                    "Detail": "Zabezpieczyć dom i znaleźć sposób na usunięcie potencjalnych zagrożeń",
+                    "Id": "nVU3zKFreZaXWd5ju2OJ6Gt8.RiKoUlK"
+                },
+                {
+                    "Detail": "Porozmawiać z partnerem o porodzie i wspólnie spisać plan porodu",
+                    "Id": "z8jWlMGTpBAiKKwMraSa"
+                }
+            ],
+            "Week": 37
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Zaplanować miejsce na przewijak w pokoju dziecięcym",
+                    "Id": "SWzzmz4UGsN7DOr3NLV.oPRdgDi8J8ATLtG9L"
+                },
+                {
+                    "Detail": "Kupić skuteczny krem nawilżający, żeby poprawić stan skóry",
+                    "Id": "OTfvtqX56g.t962E_"
+                },
+                {
+                    "Detail": "Zapisać w planie porodu życzenia dotyczące indukcji porodu",
+                    "Id": "WLVRVBIq-Vqw4JWXo4Ml4"
+                },
+                {
+                    "Detail": "Zorganizować pomoc w domu po porodzie w przypadku cesarskiego cięcia",
+                    "Id": "ZsIDrlp3SiO-OOc51H6KFjOhJt8Nw"
+                },
+                {
+                    "Detail": "Dowiedzieć się, czy w moim szpitalu możliwe są porody w wodzie",
+                    "Id": "yyUv_GVLY.wSs8b29yeO4kxWd_"
+                },
+                {
+                    "Detail": "Stworzyć własny plan porodu z pomocą tej aplikacji",
+                    "Id": "mEqCtVj5OXWvycBlAnbLOJs.esSLaBkQoLSxyqnS1B7WG"
+                },
+                {
+                    "Detail": "Poćwiczyć odmierzanie czasu trwania skurczów za pomocą tej aplikacji",
+                    "Id": "CD6FeLTyRnR9r2nsKcXJ5_vfmu24Q8"
+                }
+            ],
+            "Week": 38
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Kupić zestaw do wykonania odlewu brzucha i zawiesić gotowy odlew na ścianie",
+                    "Id": ".kd5yWmJcqE4He4e-pLYe8Od17TIRWTJUeqW"
+                },
+                {
+                    "Detail": "Zrobić zapas pieluch",
+                    "Id": "1RRn9F_.VWW7ETvrYoDjsr.3x0bk7l_gJKYepbfBW.JbVjYe_tFq1U"
+                },
+                {
+                    "Detail": "Korzystać z piłki ciążowej, żeby złagodzić ból dolnej części pleców",
+                    "Id": "M7zuXNmZwA8uxry8ofdqP2knwrxi5Un5"
+                },
+                {
+                    "Detail": "Zaktualizować wyniki ważenia w aplikacji do wglądu w przyszłości",
+                    "Id": "WCqXyyzKYuVUEATqGWDUVEl4p"
+                },
+                {
+                    "Detail": "Dowiedzieć się więcej o alternatywnych metodach łagodzenia bólu",
+                    "Id": "buYX1.NL_8pe-hS1MBWTbbjFR_iZb8lz-Q10hWPdNkhKnUZmQQSsm"
+                },
+                {
+                    "Detail": "Ugotować pikantną potrawę",
+                    "Id": "-GYgaNSzABzA0SR9o8KDj6SHnt8vai4"
+                },
+                {
+                    "Detail": "Zapisać się na wizytę do wykwalifikowanego akupunkturzysty",
+                    "Id": "k.qzJmLsyR_4KMwSbH5TcPhKYNcTPsR.ALffMEXnUSIhlHOvc2RS8MbH"
+                }
+            ],
+            "Week": 39
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Powiedzieć partnerowi o fazie przejścia",
+                    "Id": "KAWesc_c987juA5Q4CQS4Fiau5jI9BMBxvtI"
+                },
+                {
+                    "Detail": "Założyć folię ochronną na materac",
+                    "Id": "wcHwRQpXrFPITE2h5WP5IJo.Ozi8Gzx.yqqc2SGciaxeH_41NtFuM_Cb"
+                },
+                {
+                    "Detail": "Porozmawiać z lekarzem na temat ziół i akupresury",
+                    "Id": "2ku7GrBx2AFMEJWIpt2E2oEXkFGg8Yd0_CqyLk1IwattzCG8.DJnDd6"
+                },
+                {
+                    "Detail": "Poćwiczyć odmierzanie czasu trwania skurczów za pomocą aplikacji",
+                    "Id": "gycdA3PUU_-PUdvZVnV7BEErL"
+                },
+                {
+                    "Detail": "Poznać różne pozycje porodowe",
+                    "Id": "ptUXMM6buBppwHFRUScvGM9Fvn"
+                },
+                {
+                    "Detail": "Omówić z lekarzem lub położną zalety i wady znieczulenia zewnątrzoponowego",
+                    "Id": "OU08zVJT2OlxB_v3MutCeGfT.RYL9gPie"
+                },
+                {
+                    "Detail": "Sprawdzić dostępność znieczulenia mieszaniną gazu i tlenu w moim szpitalu",
+                    "Id": "jG9rEbBlS8zgW0GFxB7OQ3Ci1.1"
+                }
+            ],
+            "Week": 40
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Uwzględnić w planie porodu życzenia dotyczące środków przeciwbólowych",
+                    "Id": "YglNs7PsawL5qnS6NhZ_maP4Ix6Lc"
+                },
+                {
+                    "Detail": "Skompletować akcesoria przydatne do karmienia",
+                    "Id": "iD45f-IjAj4Jp.aQEO34FJnGC4ZeOIytKTxmsKFePVNgcCwViLA"
+                },
+                {
+                    "Detail": "Kupić laktator",
+                    "Id": "6ELQ_LJRC3X2-Ydm9udY2wl1gZU2rOWm9fWV"
+                },
+                {
+                    "Detail": "Zjeść pikantny posiłek, żeby sprowokować poród",
+                    "Id": "KQP9fjWlGS7rU4aUEgCDSJ8wxYcKoc2VMeo3T741fz9Gg1MBYpOTPgjd"
+                },
+                {
+                    "Detail": "Codziennie chodzić na spacery, żeby pozostać w formie i sprowokować poród",
+                    "Id": "YPFm9lqIJi5bMW-FrNd1QtOWGuje1s_lJBgm-ldyQ1Wb_n7cjOslRKZXmM4B8s."
+                },
+                {
+                    "Detail": "Zrobić ostatnie zdjęcia ciążowego brzucha",
+                    "Id": "3AtqN0HQ9nbTXfmw9m8p93.An"
+                },
+                {
+                    "Detail": "Zapamiętać znaczenie skrótu APGAR: aktywność, puls, mimika, wygląd i oddychanie",
+                    "Id": "G7izwCxJQpn0shj_ndlL04qTHohLyg9lIzorv2Os"
+                }
+            ],
+            "Week": 41
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Ugotować i zamrozić posiłki na pierwsze dni po porodzie",
+                    "Id": "zkYrxdDU96cXLhc5JN_mejNXvh5grNJ8KXb-qhMBXNDvpSj0_cZlF"
+                },
+                {
+                    "Detail": "Spędzić trochę czasu z rodziną i przyjaciółmi zanim dziecko się urodzi",
+                    "Id": "v6HDWnqPPeiQmgcSJvZ0ZXQaG323AyYRwcjSCsaGAUdGkuWvyBc.S1c8vUVOfy"
+                },
+                {
+                    "Detail": "Monitorować aktywność ruchową dziecka za pomocą licznika kopnięć w aplikacji",
+                    "Id": "m-5LMQnMn9NuUvJSdXScvldMO39kGoRlMQwJz0bR3b"
+                },
+                {
+                    "Detail": "Zapoznać się z różnymi pozycjami porodowymi",
+                    "Id": "jUuQoyEktbWmTfxWY.uM.TW1L5wi-ZtiN9HXk1etsUxG11e5"
+                },
+                {
+                    "Detail": "Starać się czerpać radość z ostatnich dni ciąży",
+                    "Id": "Z28a61vGIrUIGmX9YoHI"
+                },
+                {
+                    "Detail": "Zapisać w planie porodu życzenia dotyczące indukcji porodu",
+                    "Id": "Xagc_NXI_-TGNgutn7h1BtlHvmi8nJMIZt"
+                },
+                {
+                    "Detail": "Spakować do torby szpitalnej kilka starych t-shirtów do porodu",
+                    "Id": "G-DMJtRiJ.zOdEqa1Rbx_Hprv"
+                }
+            ],
+            "Week": 42
+        },
+        {
+            "Items": [
+                {
+                    "Detail": "Przyznać aplikacji Ciąża+ 5 gwiazdek, żeby inni rodzice mogli ją łatwiej znaleźć",
+                    "Id": "pMck2H.AH2vMnP.hyrH38oT.Zv82J8gixvEUH3GR8TjnWaxFfGJIa"
+                }
+            ],
+            "Week": 43
+        }
+    ]
+}

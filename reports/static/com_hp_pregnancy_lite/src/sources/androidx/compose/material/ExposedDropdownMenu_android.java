@@ -1,0 +1,12 @@
+package androidx.compose.material;
+
+import kotlin.Metadata;
+import kotlin.jvm.JvmName;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(d1 = {"\u0000\u0002\n\u0000¨\u0006\u0000"}, d2 = {"material"}, k = 2, mv = {2, 0, 0}, xi = 48)
+@JvmName
+@SourceDebugExtension
+public final class ExposedDropdownMenu_android {
+}

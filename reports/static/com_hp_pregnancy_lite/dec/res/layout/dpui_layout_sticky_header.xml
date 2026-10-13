@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/dpui_sticky_background" android:padding="@dimen/dpui_card_view_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:id="@id/dpuiStickyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dpui_5dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/DPUI_BaseText.Black" />
+        <TextView android:textSize="@dimen/dpui_16dp" android:id="@id/dpuiStickySubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/dpui_5dp" app:layout_constraintBaseline_toBaselineOf="@id/dpuiStickyTitle" app:layout_constraintEnd_toEndOf="parent" style="@style/DPUI_BaseText.Black" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

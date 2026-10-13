@@ -1,0 +1,11 @@
+package com.google.crypto.tink.signature;
+
+import com.google.crypto.tink.Key;
+import com.google.crypto.tink.annotations.Alpha;
+import com.google.errorprone.annotations.Immutable;
+
+/* JADX INFO: loaded from: classes3.dex */
+@Immutable
+@Alpha
+public abstract class SignaturePublicKey extends Key {
+}

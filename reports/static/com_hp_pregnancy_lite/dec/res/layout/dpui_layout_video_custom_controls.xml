@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dpuiVideoControlsLayout" android:tag="layout/dpui_layout_video_custom_controls_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/dpuiPlayPauseButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/app_name" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/dpui_layout_cover_button" />
+    <ImageView android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginBottom="@dimen/dpui_screen_padding" android:contentDescription="@string/app_name" android:layout_marginEnd="@dimen/dpui_screen_padding" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1.5" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintWidth_percent="0.125" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+package androidx.compose.material3;
+
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.State;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function2;
+
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
+final class NavigationItemKt$AnimatedNavigationItem$2$styledLabel$1 implements Function2<Composer, Integer, Unit> {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ boolean f2655a;
+    public final /* synthetic */ NavigationItemColors b;
+    public final /* synthetic */ boolean c;
+    public final /* synthetic */ Function2 d;
+    public final /* synthetic */ State e;
+
+    public final void a(Composer composer, int i) {
+        if (!composer.r((i & 3) != 2, i & 1)) {
+            composer.O();
+            return;
+        }
+        if (ComposerKt.m()) {
+            ComposerKt.q(22475789, i, -1, "androidx.compose.material3.AnimatedNavigationItem.<anonymous>.<anonymous> (NavigationItem.kt:387)");
+        }
+        NavigationItemKt.h(this.f2655a, NavigationItemKt.g(this.e), this.b, this.c, this.d, composer, 0);
+        if (ComposerKt.m()) {
+            ComposerKt.p();
+        }
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+        a((Composer) obj, ((Number) obj2).intValue());
+        return Unit.f24295a;
+    }
+}

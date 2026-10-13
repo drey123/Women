@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/data_centre_status_nav_graph" app:startDestination="@id/dataCenterStatusFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="DataCenterStatusFragment" android:name="com.hp.pregnancy.datacenter.DataCenterStatusFragment" android:id="@id/dataCenterStatusFragment">
+        <argument android:name="isFromLogin" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="isDeleteAccount" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="isFromSplash" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="isCancelFlow" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+</navigation>

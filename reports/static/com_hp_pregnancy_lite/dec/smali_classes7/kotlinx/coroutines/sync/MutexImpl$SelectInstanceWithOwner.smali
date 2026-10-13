@@ -1,0 +1,184 @@
+.class final Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlinx/coroutines/selects/SelectInstanceInternal;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkotlinx/coroutines/sync/MutexImpl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x11
+    name = "SelectInstanceWithOwner"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<Q:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lkotlinx/coroutines/selects/SelectInstanceInternal<",
+        "TQ;>;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000B\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0082\u0004\u0018\u0000*\u0004\u0008\u0000\u0010\u00012\u0008\u0012\u0004\u0012\u00028\u00000\u0002B\u001f\u0012\u000c\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0002\u0012\u0008\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J!\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0008\u001a\u00020\u00042\u0008\u0010\t\u001a\u0004\u0018\u00010\u0004H\u0016\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ\u0019\u0010\u000f\u001a\u00020\u000e2\u0008\u0010\r\u001a\u0004\u0018\u00010\u0004H\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010J\u0018\u0010\u0013\u001a\u00020\u000e2\u0006\u0010\u0012\u001a\u00020\u0011H\u0096\u0001\u00a2\u0006\u0004\u0008\u0013\u0010\u0014J$\u0010\u0019\u001a\u00020\u000e2\n\u0010\u0016\u001a\u0006\u0012\u0002\u0008\u00030\u00152\u0006\u0010\u0018\u001a\u00020\u0017H\u0096\u0001\u00a2\u0006\u0004\u0008\u0019\u0010\u001aR\u001a\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u00028\u0006X\u0087\u0004\u00a2\u0006\u0006\n\u0004\u0008\u001b\u0010\u001cR\u0016\u0010\u0005\u001a\u0004\u0018\u00010\u00048\u0006X\u0087\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0019\u0010\u001dR\u0014\u0010!\u001a\u00020\u001e8\u0016X\u0096\u0005\u00a2\u0006\u0006\u001a\u0004\u0008\u001f\u0010 \u00a8\u0006\""
+    }
+    d2 = {
+        "Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;",
+        "Q",
+        "Lkotlinx/coroutines/selects/SelectInstanceInternal;",
+        "select",
+        "",
+        "owner",
+        "<init>",
+        "(Lkotlinx/coroutines/sync/MutexImpl;Lkotlinx/coroutines/selects/SelectInstanceInternal;Ljava/lang/Object;)V",
+        "clauseObject",
+        "result",
+        "",
+        "f",
+        "(Ljava/lang/Object;Ljava/lang/Object;)Z",
+        "internalResult",
+        "",
+        "d",
+        "(Ljava/lang/Object;)V",
+        "Lkotlinx/coroutines/DisposableHandle;",
+        "disposableHandle",
+        "e",
+        "(Lkotlinx/coroutines/DisposableHandle;)V",
+        "Lkotlinx/coroutines/internal/Segment;",
+        "segment",
+        "",
+        "index",
+        "b",
+        "(Lkotlinx/coroutines/internal/Segment;I)V",
+        "a",
+        "Lkotlinx/coroutines/selects/SelectInstanceInternal;",
+        "Ljava/lang/Object;",
+        "Lkotlin/coroutines/CoroutineContext;",
+        "getContext",
+        "()Lkotlin/coroutines/CoroutineContext;",
+        "context",
+        "kotlinx-coroutines-core"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+.end annotation
+
+
+# instance fields
+.field public final a:Lkotlinx/coroutines/selects/SelectInstanceInternal;
+
+.field public final b:Ljava/lang/Object;
+
+.field public final synthetic c:Lkotlinx/coroutines/sync/MutexImpl;
+
+
+# direct methods
+.method public constructor <init>(Lkotlinx/coroutines/sync/MutexImpl;Lkotlinx/coroutines/selects/SelectInstanceInternal;Ljava/lang/Object;)V
+    .locals 0
+
+    iput-object p1, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->c:Lkotlinx/coroutines/sync/MutexImpl;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p2, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->a:Lkotlinx/coroutines/selects/SelectInstanceInternal;
+
+    iput-object p3, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->b:Ljava/lang/Object;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public b(Lkotlinx/coroutines/internal/Segment;I)V
+    .locals 1
+
+    iget-object v0, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->a:Lkotlinx/coroutines/selects/SelectInstanceInternal;
+
+    invoke-interface {v0, p1, p2}, Lkotlinx/coroutines/Waiter;->b(Lkotlinx/coroutines/internal/Segment;I)V
+
+    return-void
+.end method
+
+.method public d(Ljava/lang/Object;)V
+    .locals 3
+
+    invoke-static {}, Lkotlinx/coroutines/sync/MutexImpl;->A()Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->c:Lkotlinx/coroutines/sync/MutexImpl;
+
+    iget-object v2, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->b:Ljava/lang/Object;
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    iget-object v0, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->a:Lkotlinx/coroutines/selects/SelectInstanceInternal;
+
+    invoke-interface {v0, p1}, Lkotlinx/coroutines/selects/SelectInstance;->d(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public e(Lkotlinx/coroutines/DisposableHandle;)V
+    .locals 1
+
+    iget-object v0, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->a:Lkotlinx/coroutines/selects/SelectInstanceInternal;
+
+    invoke-interface {v0, p1}, Lkotlinx/coroutines/selects/SelectInstance;->e(Lkotlinx/coroutines/DisposableHandle;)V
+
+    return-void
+.end method
+
+.method public f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 2
+
+    iget-object v0, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->a:Lkotlinx/coroutines/selects/SelectInstanceInternal;
+
+    invoke-interface {v0, p1, p2}, Lkotlinx/coroutines/selects/SelectInstance;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    iget-object p2, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->c:Lkotlinx/coroutines/sync/MutexImpl;
+
+    if-eqz p1, :cond_0
+
+    invoke-static {}, Lkotlinx/coroutines/sync/MutexImpl;->A()Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->b:Ljava/lang/Object;
+
+    invoke-virtual {v0, p2, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    :cond_0
+    return p1
+.end method
+
+.method public getContext()Lkotlin/coroutines/CoroutineContext;
+    .locals 1
+
+    iget-object v0, p0, Lkotlinx/coroutines/sync/MutexImpl$SelectInstanceWithOwner;->a:Lkotlinx/coroutines/selects/SelectInstanceInternal;
+
+    invoke-interface {v0}, Lkotlinx/coroutines/selects/SelectInstance;->getContext()Lkotlin/coroutines/CoroutineContext;
+
+    move-result-object v0
+
+    return-object v0
+.end method

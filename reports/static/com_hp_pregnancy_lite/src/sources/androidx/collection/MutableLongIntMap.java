@@ -1,0 +1,235 @@
+package androidx.collection;
+
+import androidx.collection.internal.RuntimeHelpersKt;
+import com.adapty.ui.internal.text.TimerTags;
+import com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor;
+import com.onesignal.notifications.internal.bundle.impl.NotificationBundleProcessor;
+import kotlin.Metadata;
+import kotlin.ULong;
+import kotlin.collections.ArraysKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0013\u0018\u00002\u00020\u0001B\u0011\u0012\b\b\u0002\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J \u0010\n\u001a\u00020\t2\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\b\u001a\u00020\u0002H\u0086\u0002¢\u0006\u0004\b\n\u0010\u000bJ\u000f\u0010\f\u001a\u00020\tH\u0000¢\u0006\u0004\b\f\u0010\rJ\u000f\u0010\u000e\u001a\u00020\tH\u0000¢\u0006\u0004\b\u000e\u0010\rJ\u0017\u0010\u0010\u001a\u00020\t2\u0006\u0010\u000f\u001a\u00020\u0002H\u0000¢\u0006\u0004\b\u0010\u0010\u0005J\u0017\u0010\u0011\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\u0002H\u0002¢\u0006\u0004\b\u0011\u0010\u0005J\u0017\u0010\u0013\u001a\u00020\t2\u0006\u0010\u0012\u001a\u00020\u0002H\u0002¢\u0006\u0004\b\u0013\u0010\u0005J\u000f\u0010\u0014\u001a\u00020\tH\u0002¢\u0006\u0004\b\u0014\u0010\rJ\u0017\u0010\u0015\u001a\u00020\u00022\u0006\u0010\u0007\u001a\u00020\u0006H\u0002¢\u0006\u0004\b\u0015\u0010\u0016J\u0017\u0010\u0018\u001a\u00020\u00022\u0006\u0010\u0017\u001a\u00020\u0002H\u0002¢\u0006\u0004\b\u0018\u0010\u0019R\u0016\u0010\u001b\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\f\u0010\u001a¨\u0006\u001c"}, d2 = {"Landroidx/collection/MutableLongIntMap;", "Landroidx/collection/LongIntMap;", "", "initialCapacity", "<init>", "(I)V", "", "key", "value", "", NotificationBundleProcessor.PUSH_MINIFIED_BUTTON_TEXT, "(JI)V", "f", "()V", "g", "newCapacity", TimerTags.minutesShort, "l", "capacity", "k", "j", "i", "(J)I", "hash1", TimerTags.hoursShort, "(I)I", "I", "growthLimit", "collection"}, k = 1, mv = {1, 9, 0}, xi = 48)
+@SourceDebugExtension
+public final class MutableLongIntMap extends LongIntMap {
+
+    /* JADX INFO: renamed from: f, reason: from kotlin metadata */
+    public int growthLimit;
+
+    public MutableLongIntMap(int i) {
+        super(null);
+        if (!(i >= 0)) {
+            RuntimeHelpersKt.a("Capacity must be a positive value.");
+        }
+        l(ScatterMapKt.f(i));
+    }
+
+    public final void f() {
+        if (this._capacity <= 8 || Long.compareUnsigned(ULong.h(ULong.h(this._size) * 32), ULong.h(ULong.h(this._capacity) * 25)) > 0) {
+            m(ScatterMapKt.d(this._capacity));
+        } else {
+            g();
+        }
+    }
+
+    public final void g() {
+        long[] jArr = this.metadata;
+        int i = this._capacity;
+        long[] jArr2 = this.keys;
+        int[] iArr = this.values;
+        int i2 = (i + 7) >> 3;
+        char c = 0;
+        for (int i3 = 0; i3 < i2; i3++) {
+            long j = jArr[i3] & (-9187201950435737472L);
+            jArr[i3] = (-72340172838076674L) & ((~j) + (j >>> 7));
+        }
+        int iG0 = ArraysKt.g0(jArr);
+        int i4 = iG0 - 1;
+        long j2 = 72057594037927935L;
+        jArr[i4] = (jArr[i4] & 72057594037927935L) | (-72057594037927936L);
+        jArr[iG0] = jArr[0];
+        int i5 = 0;
+        while (i5 != i) {
+            int i6 = i5 >> 3;
+            int i7 = (i5 & 7) << 3;
+            long j3 = (jArr[i6] >> i7) & 255;
+            if (j3 != 128 && j3 == 254) {
+                int iHashCode = Long.hashCode(jArr2[i5]) * (-862048943);
+                int i8 = iHashCode ^ (iHashCode << 16);
+                int i9 = i8 >>> 7;
+                int iH = h(i9);
+                int i10 = i9 & i;
+                if (((iH - i10) & i) / 8 == ((i5 - i10) & i) / 8) {
+                    jArr[i6] = ((i8 & ModuleDescriptor.MODULE_VERSION) << i7) | ((~(255 << i7)) & jArr[i6]);
+                    jArr[ArraysKt.g0(jArr)] = (jArr[c] & j2) | Long.MIN_VALUE;
+                } else {
+                    int i11 = iH >> 3;
+                    long j4 = jArr[i11];
+                    int i12 = (iH & 7) << 3;
+                    if (((j4 >> i12) & 255) == 128) {
+                        jArr[i11] = ((~(255 << i12)) & j4) | (((long) (i8 & ModuleDescriptor.MODULE_VERSION)) << i12);
+                        jArr[i6] = (jArr[i6] & (~(255 << i7))) | (128 << i7);
+                        jArr2[iH] = jArr2[i5];
+                        jArr2[i5] = 0;
+                        iArr[iH] = iArr[i5];
+                        iArr[i5] = 0;
+                    } else {
+                        jArr[i11] = (((long) (i8 & ModuleDescriptor.MODULE_VERSION)) << i12) | ((~(255 << i12)) & j4);
+                        long j5 = jArr2[iH];
+                        jArr2[iH] = jArr2[i5];
+                        jArr2[i5] = j5;
+                        int i13 = iArr[iH];
+                        iArr[iH] = iArr[i5];
+                        iArr[i5] = i13;
+                        i5--;
+                    }
+                    j2 = 72057594037927935L;
+                    jArr[ArraysKt.g0(jArr)] = (jArr[0] & 72057594037927935L) | Long.MIN_VALUE;
+                    i5++;
+                    c = 0;
+                }
+            }
+            i5++;
+        }
+        j();
+    }
+
+    public final int h(int hash1) {
+        int i = this._capacity;
+        int i2 = hash1 & i;
+        int i3 = 0;
+        while (true) {
+            long[] jArr = this.metadata;
+            int i4 = i2 >> 3;
+            int i5 = (i2 & 7) << 3;
+            long j = ((jArr[i4 + 1] << (64 - i5)) & ((-i5) >> 63)) | (jArr[i4] >>> i5);
+            long j2 = j & ((~j) << 7) & (-9187201950435737472L);
+            if (j2 != 0) {
+                return (i2 + (Long.numberOfTrailingZeros(j2) >> 3)) & i;
+            }
+            i3 += 8;
+            i2 = (i2 + i3) & i;
+        }
+    }
+
+    public final int i(long key) {
+        int iHashCode = Long.hashCode(key) * (-862048943);
+        int i = iHashCode ^ (iHashCode << 16);
+        int i2 = i >>> 7;
+        int i3 = i & ModuleDescriptor.MODULE_VERSION;
+        int i4 = this._capacity;
+        int i5 = i2 & i4;
+        int i6 = 0;
+        while (true) {
+            long[] jArr = this.metadata;
+            int i7 = i5 >> 3;
+            int i8 = (i5 & 7) << 3;
+            long j = ((jArr[i7 + 1] << (64 - i8)) & ((-i8) >> 63)) | (jArr[i7] >>> i8);
+            long j2 = i3;
+            int i9 = i6;
+            long j3 = j ^ (j2 * 72340172838076673L);
+            for (long j4 = (~j3) & (j3 - 72340172838076673L) & (-9187201950435737472L); j4 != 0; j4 &= j4 - 1) {
+                int iNumberOfTrailingZeros = ((Long.numberOfTrailingZeros(j4) >> 3) + i5) & i4;
+                if (this.keys[iNumberOfTrailingZeros] == key) {
+                    return iNumberOfTrailingZeros;
+                }
+            }
+            if ((((~j) << 6) & j & (-9187201950435737472L)) != 0) {
+                int iH = h(i2);
+                if (this.growthLimit == 0 && ((this.metadata[iH >> 3] >> ((iH & 7) << 3)) & 255) != 254) {
+                    f();
+                    iH = h(i2);
+                }
+                this._size++;
+                int i10 = this.growthLimit;
+                long[] jArr2 = this.metadata;
+                int i11 = iH >> 3;
+                long j5 = jArr2[i11];
+                int i12 = (iH & 7) << 3;
+                this.growthLimit = i10 - (((j5 >> i12) & 255) == 128 ? 1 : 0);
+                int i13 = this._capacity;
+                long j6 = ((~(255 << i12)) & j5) | (j2 << i12);
+                jArr2[i11] = j6;
+                jArr2[(((iH - 7) & i13) + (i13 & 7)) >> 3] = j6;
+                return ~iH;
+            }
+            i6 = i9 + 8;
+            i5 = (i5 + i6) & i4;
+        }
+    }
+
+    public final void j() {
+        this.growthLimit = ScatterMapKt.b(get_capacity()) - this._size;
+    }
+
+    public final void k(int capacity) {
+        long[] jArr;
+        if (capacity == 0) {
+            jArr = ScatterMapKt.f715a;
+        } else {
+            jArr = new long[((capacity + 15) & (-8)) >> 3];
+            ArraysKt.y(jArr, -9187201950435737472L, 0, 0, 6, null);
+        }
+        this.metadata = jArr;
+        int i = capacity >> 3;
+        long j = 255 << ((capacity & 7) << 3);
+        jArr[i] = (jArr[i] & (~j)) | j;
+        j();
+    }
+
+    public final void l(int initialCapacity) {
+        int iMax = initialCapacity > 0 ? Math.max(7, ScatterMapKt.e(initialCapacity)) : 0;
+        this._capacity = iMax;
+        k(iMax);
+        this.keys = new long[iMax];
+        this.values = new int[iMax];
+    }
+
+    public final void m(int newCapacity) {
+        MutableLongIntMap mutableLongIntMap = this;
+        long[] jArr = mutableLongIntMap.metadata;
+        long[] jArr2 = mutableLongIntMap.keys;
+        int[] iArr = mutableLongIntMap.values;
+        int i = mutableLongIntMap._capacity;
+        l(newCapacity);
+        long[] jArr3 = mutableLongIntMap.metadata;
+        long[] jArr4 = mutableLongIntMap.keys;
+        int[] iArr2 = mutableLongIntMap.values;
+        int i2 = mutableLongIntMap._capacity;
+        int i3 = 0;
+        while (i3 < i) {
+            if (((jArr[i3 >> 3] >> ((i3 & 7) << 3)) & 255) < 128) {
+                long j = jArr2[i3];
+                int iHashCode = Long.hashCode(j) * (-862048943);
+                int i4 = iHashCode ^ (iHashCode << 16);
+                int iH = mutableLongIntMap.h(i4 >>> 7);
+                long j2 = i4 & ModuleDescriptor.MODULE_VERSION;
+                int i5 = iH >> 3;
+                int i6 = (iH & 7) << 3;
+                long j3 = (jArr3[i5] & (~(255 << i6))) | (j2 << i6);
+                jArr3[i5] = j3;
+                jArr3[(((iH - 7) & i2) + (i2 & 7)) >> 3] = j3;
+                jArr4[iH] = j;
+                iArr2[iH] = iArr[i3];
+            }
+            i3++;
+            mutableLongIntMap = this;
+            jArr = jArr;
+        }
+    }
+
+    public final void n(long key, int value) {
+        int i = i(key);
+        if (i < 0) {
+            i = ~i;
+        }
+        this.keys[i] = key;
+        this.values[i] = value;
+    }
+
+    public /* synthetic */ MutableLongIntMap(int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i2 & 1) != 0 ? 6 : i);
+    }
+}

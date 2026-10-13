@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/pregnancy_care_expanded_nav_graph" app:startDestination="@id/pregnancyCareExpandedFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="fragment_michigan_expanded" android:name="com.hp.pregnancy.lite.pregnancycare.PregnancyCareExpandedFragment" android:id="@id/pregnancyCareExpandedFragment">
+        <argument android:name="cmsId" android:defaultValue="" app:argType="string" />
+    </fragment>
+</navigation>

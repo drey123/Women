@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_today" app:startDestination="@id/cardsFeedFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/select_3d_model_nav_graph" />
+    <include app:graph="@navigation/three_d_model_nav_graph" />
+    <include app:graph="@navigation/size_guide_nav_graph" />
+    <include app:graph="@navigation/appointments_nav_graph" />
+    <include app:graph="@navigation/weight_nav_graph" />
+    <include app:graph="@navigation/add_weight_nav_graph" />
+    <include app:graph="@navigation/profile_sub_nav_graph" />
+    <include app:graph="@navigation/gam_carousel_nav_graph" />
+    <include app:graph="@navigation/todo_nav_graph" />
+    <include app:graph="@navigation/my_belly_nav_graph" />
+    <include app:graph="@navigation/baby_names_nav_graph" />
+    <include app:graph="@navigation/weekly_images_nav_graph" />
+    <include app:graph="@navigation/webscreen_nav_graph" />
+    <include app:graph="@navigation/crm_popup_nav_graph" />
+    <include app:graph="@navigation/add_appointment_nav_graph" />
+    <include app:graph="@navigation/error_screen_nav_graph" />
+    <include app:graph="@navigation/saved_coupon_list_nav_graph" />
+    <include app:graph="@navigation/coupon_expanded_nav_graph" />
+    <include app:graph="@navigation/pregnancy_care_expanded_nav_graph" />
+    <include app:graph="@navigation/crm_popup_nav_graph" />
+    <include app:graph="@navigation/expanded_series_nav_graph" />
+    <include app:graph="@navigation/expanded_article_nav_graph" />
+    <include app:graph="@navigation/product_purchase_nav_graph" />
+    <include app:graph="@navigation/premium_section_nav_graph" />
+    <include app:graph="@navigation/video_player_nav_graph" />
+    <include app:graph="@navigation/expanded_ad_nav_graph" />
+    <include app:graph="@navigation/single_consent_screen_nav_graph" />
+    <include app:graph="@navigation/gam_detail_sub_nav_graph" />
+    <fragment android:label="@string/cardsfeed_fragment_label" android:name="com.hp.pregnancy.lite.today.CardsFeedFragment" android:id="@id/cardsFeedFragment">
+        <action android:id="@id/action_cardsFeedFragment_to_communityFragment" app:destination="@id/navigation_community">
+            <argument android:name="load_url" android:defaultValue="" app:argType="string" />
+        </action>
+        <action android:id="@id/action_navigation_today_to_quick_tips" app:destination="@id/quickTipsFragment">
+            <argument android:name="QuickTipsArg" app:argType="com.hp.pregnancy.util.navigation.arguments.QuickTipsArguments" />
+        </action>
+        <action android:id="@id/action_navigation_today_to_select_3d_model_nav_graph" app:destination="@id/select_3d_model_nav_graph">
+            <argument android:name="startedFrom" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_today_to_three_d_model_nav_graph" app:destination="@id/three_d_model_nav_graph">
+            <argument android:name="startedFrom" android:defaultValue="-1" app:argType="integer" />
+            <argument android:name="pregnancy_week" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_today_to_weekly_overview_screen" app:destination="@id/weekly_overview_screen_container">
+            <argument android:name="cmsId" android:defaultValue="" app:argType="string" />
+            <argument android:name="publishedVersion" android:defaultValue="" app:argType="string" />
+        </action>
+        <action android:id="@id/action_navigation_today_to_size_guide_nav_graph" app:destination="@id/size_guide_nav_graph">
+            <argument android:name="size_by" android:defaultValue="" app:argType="string" />
+            <argument android:name="pregnancy_week" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_today_to_profile_nav_graph" app:destination="@id/profile_sub_nav_graph" />
+        <action android:id="@id/action_navigation_today_to_pregnancy_care_expanded" app:destination="@id/pregnancy_care_expanded_nav_graph">
+            <argument android:name="cmsId" android:defaultValue="" app:argType="string" />
+        </action>
+        <action android:id="@id/action_navigation_today_base_screen_to_appointment" app:destination="@id/appointments_nav_graph" />
+        <action android:id="@id/action_navigation_today_base_screen_to_babyBorn_fragment" app:destination="@id/babyBornFragment" />
+        <action android:id="@id/action_navigation_today_base_to_myweight" app:destination="@id/weight_nav_graph">
+            <argument android:name="weightScreenArguments" app:argType="com.hp.pregnancy.util.navigation.arguments.MyWeightScreenArguments" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_navigation_today_to_toDOBaseScreen" app:destination="@id/todo_nav_graph" />
+        <action android:id="@id/action_navigation_today_base_to_add_weight_fragment" app:destination="@id/add_weight_nav_graph" />
+        <action android:id="@id/action_navigation_today_to_expandedCouponFragment" app:destination="@id/coupon_expanded_nav_graph">
+            <argument android:name="startedFrom" app:argType="string" />
+            <argument android:name="couponModel" app:argType="com.philips.hp.components.dpads.coupon.CouponModel" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_navigation_today_to_gam_carousel_nav_graph" app:destination="@id/gam_carousel_nav_graph">
+            <argument android:name="ScreenTitle" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_navigation_today_to_gamDarylFragment" app:destination="@id/gamDarylFragment">
+            <argument android:name="ScreenTitle" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_navigation_today_to_gamDetailFragment" app:destination="@id/gam_detail_sub_nav_graph">
+            <argument android:name="ScreenTitle" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_navigation_today_to_coRegExpandedFragmentBaseLayout" app:destination="@id/coRegExpandedFragmentBaseLayout" />
+        <action android:id="@id/action_navigation_today_to_two_d_three_d_images_nav_graph" app:destination="@id/weekly_images_nav_graph">
+            <argument android:name="subsection" android:defaultValue="" app:argType="string" />
+            <argument android:name="pregnancy_week" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_today_base_to_baby_names_screen" app:destination="@id/baby_names_nav_graph">
+            <argument android:name="tabIndex" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_today_base_to_my_belly" app:destination="@id/my_belly_nav_graph">
+            <argument android:name="pregnancy_month" app:argType="integer" />
+            <argument android:name="toolbarTitle" app:argType="string" />
+        </action>
+        <action android:id="@id/action_cardsFeedFragment_to_survey_navigation_graph" app:destination="@id/survey_navigation_graph" />
+        <action android:id="@id/action_cardsFeedFragment_to_add_appointment_navigation_graph" app:destination="@id/add_appointment_nav_graph">
+            <argument android:name="appointmentViewType" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_navigation_today_base_screen_to_invalid_due_date" app:destination="@id/error_screen_nav_graph">
+            <argument android:name="errorType" android:defaultValue="1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_today_base_screen_to_coupons_list" app:destination="@id/saved_coupon_list_nav_graph" />
+        <deepLink android:id="@id/today_deep_link" app:uri="@string/today_deeplink_uri" />
+        <deepLink android:id="@id/in_app_review_deeplink" app:uri="@string/in_app_review_deeplink_uri" />
+        <deepLink android:id="@id/notification_permission_deeplink" app:uri="@string/notification_permission_deeplink_uri" />
+        <action android:id="@id/action_cardsFeedFragment_to_couponSavedList" app:destination="@id/savedCouponListFragment" />
+        <action android:id="@id/action_cardsFeedFragment_to_expandedSeriesContainer" app:destination="@id/expanded_series_nav_graph">
+            <argument android:name="seriesCMSId" app:argType="string" />
+            <argument android:name="isFromPremiumScreen" app:argType="boolean" />
+            <argument android:name="carouselTitle" app:argType="string" />
+            <argument android:name="isPremium" app:argType="boolean" />
+        </action>
+        <action android:id="@id/action_cardsFeedFragment_to_expandedArticleContainer" app:destination="@id/expanded_article_nav_graph">
+            <argument android:name="articleScreenArg" app:argType="com.philips.hp.cms.model.premiumcontent.ArticleScreenArg" app:nullable="false" />
+        </action>
+        <action android:id="@id/action_cardsFeedFragment_to_product_purchase_nav_graph" app:destination="@id/product_purchase_nav_graph" />
+        <action android:id="@id/action_cardsFeedFragment_to_video_player_nav_graph" app:destination="@id/video_player_nav_graph">
+            <argument android:name="mediaUri" app:argType="string" />
+            <argument android:name="shouldSendMuxAnalytics" app:argType="boolean" />
+            <argument android:name="seriesId" app:argType="string" />
+            <argument android:name="mediaData" app:argType="com.philips.hp.cms.model.premiumcontent.MediaCarouselItemContent" app:nullable="true" />
+            <argument android:name="isFromPremiumScreen" app:argType="boolean" />
+        </action>
+        <action android:id="@id/action_cardsFeedFragment_to_expanded_ad_nav_graph" app:destination="@id/expanded_ad_nav_graph">
+            <argument android:name="expandedCarouselModel" app:argType="com.philips.hp.components.dpads.models.carousel.ExpandedCarouselAdModel" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_cardsFeedFragment_to_timeline_v2_nav_graph" app:destination="@id/timeline_v2_nav_graph" />
+        <action android:id="@id/action_cardsFeedFragment_to_single_consent_screen_nav_graph" app:destination="@id/single_consent_screen_nav_graph">
+            <argument android:name="IsFromOnboarding" android:defaultValue="true" app:argType="boolean" />
+        </action>
+    </fragment>
+    <fragment android:label="SelectBaby3DModel" android:name="com.hp.pregnancy.fetus3d.modelSelection.SelectBabyFragment" android:id="@id/selectBaby3DModelFragment" />
+    <fragment android:label="GamDarylFragment" android:name="com.hp.pregnancy.util.daryl.GamDarylFragment" android:id="@id/gamDarylFragment">
+        <argument android:name="ScreenTitle" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="CoRegExpandedFragmentBaseLayout" android:name="com.hp.pregnancy.lite.coregistration.CoRegExpandedFragmentBaseLayout" android:id="@id/coRegExpandedFragmentBaseLayout">
+        <argument android:name="adType" app:argType="string" />
+    </fragment>
+    <fragment android:label="QuickTips" android:name="com.hp.pregnancy.lite.today.QuickTipsFragment" android:id="@id/quickTipsFragment">
+        <argument android:name="QuickTipsArg" app:argType="com.hp.pregnancy.util.navigation.arguments.QuickTipsArguments" />
+    </fragment>
+    <fragment android:label="BabyBornFragment" android:name="com.hp.pregnancy.lite.baby.BabyBornFragment" android:id="@id/babyBornFragment" />
+    <activity android:label="TellAFriendActivity" android:name="com.hp.pregnancy.compose.custom.bottomSheet.BottomSheetContainer" android:id="@id/tellAFriendActivity">
+        <argument android:name="AppPopupType" android:defaultValue="TellAFriend" app:argType="string" />
+        <deepLink android:id="@id/tellAFriendDeeplink" app:uri="@string/tell_a_friend_deeplink_uri" />
+    </activity>
+    <include app:graph="@navigation/timeline_v2_nav_graph" />
+    <include app:graph="@navigation/weekly_overview_screen_container_nav_graph" />
+</navigation>

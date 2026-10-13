@@ -1,0 +1,13 @@
+package kotlinx.coroutines.internal;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+/* JADX INFO: loaded from: classes7.dex */
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\bÀ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lkotlinx/coroutines/internal/FastServiceLoader;", "", "<init>", "()V", "kotlinx-coroutines-core"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@SourceDebugExtension
+public final class FastServiceLoader {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static final FastServiceLoader f25822a = new FastServiceLoader();
+}

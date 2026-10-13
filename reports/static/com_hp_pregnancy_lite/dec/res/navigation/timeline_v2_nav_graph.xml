@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/timeline_v2_nav_graph" app:startDestination="@id/timelineScreenV2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="TimelineScreenV2Container" android:name="com.hp.pregnancy.lite.timeline.TimelineV2Container" android:id="@id/timelineScreenV2">
+        <argument android:name="pregnancy_week" android:defaultValue="-1" app:argType="integer" />
+        <deepLink android:id="@id/time_line_deep_link" app:uri="@string/timelinev2_deeplink_uri" />
+    </fragment>
+</navigation>

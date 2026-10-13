@@ -1,0 +1,15 @@
+package com.google.android.play.core.assetpacks;
+
+/* JADX INFO: loaded from: classes4.dex */
+final class dt extends dg {
+    public final int c;
+    public final long d;
+    public final String e;
+
+    public dt(int i, String str, int i2, long j, String str2) {
+        super(i, str);
+        this.c = i2;
+        this.d = j;
+        this.e = str2;
+    }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/expanded_article_nav_graph" app:startDestination="@id/expandedArticleContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/video_player_nav_graph" />
+    <include app:graph="@navigation/gam_detail_sub_nav_graph" />
+    <include app:graph="@navigation/gam_carousel_nav_graph" />
+    <include app:graph="@navigation/expanded_ad_nav_graph" />
+    <include app:graph="@navigation/product_purchase_nav_graph" />
+    <fragment android:name="com.hp.pregnancy.lite.premium.expandedArticle.ExpandedArticleContainer" android:id="@id/expandedArticleContainer">
+        <argument android:name="articleScreenArg" app:argType="com.philips.hp.cms.model.premiumcontent.ArticleScreenArg" app:nullable="false" />
+        <action android:id="@id/action_expandedArticleContainer_to_self" app:destination="@id/expandedArticleContainer" />
+        <deepLink android:id="@id/article_new_model_deep_link" app:uri="@string/new_content_model_articles_deeplink" />
+        <deepLink android:id="@id/album_new_model_deep_link" app:uri="@string/album_new_model_deep_link" />
+        <action android:id="@id/action_article_to_purchase_screen" app:destination="@id/product_purchase_nav_graph" />
+        <action android:id="@id/action_expandedArticleContainer_to_videoAudioPlayerContainer" app:destination="@id/video_player_nav_graph">
+            <argument android:name="mediaUri" app:argType="string" />
+            <argument android:name="shouldSendMuxAnalytics" app:argType="boolean" />
+            <argument android:name="seriesId" app:argType="string" />
+            <argument android:name="mediaData" app:argType="com.philips.hp.cms.model.premiumcontent.MediaCarouselItemContent" app:nullable="true" />
+            <argument android:name="isFromPremiumScreen" app:argType="boolean" />
+        </action>
+        <action android:id="@id/action_expandedArticleContainer_to_gam_detail_sub_nav_graph" app:destination="@id/gam_detail_sub_nav_graph">
+            <argument android:name="gamType" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_expandedArticleContainer_to_gam_carousel_nav_graph" app:destination="@id/gam_carousel_nav_graph" app:enterAnim="@android:anim/fade_in" app:exitAnim="@android:anim/fade_out">
+            <argument android:name="ScreenTitle" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_expandedArticleContainer_to_expanded_ad_nav_graph" app:destination="@id/expanded_ad_nav_graph">
+            <argument android:name="expandedCarouselModel" app:argType="com.philips.hp.components.dpads.models.carousel.ExpandedCarouselAdModel" app:nullable="true" />
+        </action>
+    </fragment>
+</navigation>

@@ -1,0 +1,30 @@
+.class public final synthetic Lhe2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/common/base/Predicate;
+
+
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Z
+    .locals 0
+
+    check-cast p1, Landroidx/media3/extractor/metadata/id3/TextInformationFrame;
+
+    invoke-static {p1}, Landroidx/media3/extractor/mp3/Mp3Extractor;->g(Landroidx/media3/extractor/metadata/id3/TextInformationFrame;)Z
+
+    move-result p1
+
+    return p1
+.end method

@@ -1,0 +1,13 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class zzdex implements zzgwy {
+    public static zzdex b() {
+        return zzdew.f11974a;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgxl
+    public final /* synthetic */ Object a() {
+        return "native";
+    }
+}

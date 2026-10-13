@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/kick_counter_nav_graph" app:startDestination="@id/kickCounterScreen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/product_purchase_nav_graph" />
+    <include app:graph="@navigation/upgrade_screen_nav_graph" />
+    <fragment android:label="KickCounterScreen" android:name="com.hp.pregnancy.lite.more.kickcounter.KickCounterScreen" android:id="@id/kickCounterScreen">
+        <argument android:name="subsection" android:defaultValue="" app:argType="string" />
+        <deepLink android:id="@id/kick_counter_deep_link" app:uri="@string/kickCounter_deeplink_uri" />
+        <action android:id="@id/action_kickCounterScreen_to_kickTodayScreen" app:destination="@id/kickTodayScreen" />
+        <action android:id="@id/action_kickCounterScreen_to_upgradeScreen" app:destination="@id/upgrade_screen_nav_graph">
+            <argument android:name="CallingActivity" android:defaultValue="" app:argType="string" />
+            <argument android:name="IapSource" android:defaultValue="" app:argType="string" />
+        </action>
+        <action android:id="@id/action_kickCounterScreen_to_product_purchase_screen_nav_graph" app:destination="@id/product_purchase_nav_graph" />
+    </fragment>
+    <fragment android:label="KickTodayScreen" android:name="com.hp.pregnancy.lite.more.kickcounter.KickTodayScreen" android:id="@id/kickTodayScreen">
+        <argument android:name="sessionId" app:argType="integer" />
+        <argument android:name="dateText" app:argType="string" />
+        <argument android:name="sessionDuration" app:argType="integer" />
+        <action android:id="@id/action_kickTodayScreen_to_kickHistoryScreen" app:destination="@id/kickHistoryScreen" />
+    </fragment>
+    <fragment android:label="KickHistoryScreen" android:name="com.hp.pregnancy.lite.more.kickcounter.KickHistoryScreen" android:id="@id/kickHistoryScreen" />
+</navigation>

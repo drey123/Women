@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/cards_feed_layout_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/cardsFeedList" android:paddingBottom="@dimen/_200sdp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" />
+    <include android:id="@id/include_coupon_quick_tip" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_30sdp" android:layout_marginStart="@dimen/_7dp" android:layout_marginEnd="@dimen/_7dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/cardsFeedList" app:layout_constraintStart_toStartOf="@id/cardsFeedList" layout="@layout/layout_coupon_quick_tip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

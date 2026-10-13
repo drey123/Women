@@ -1,0 +1,144 @@
+.class public final Landroidx/compose/runtime/changelist/Operation$UpdateValue;
+.super Landroidx/compose/runtime/changelist/Operation;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroidx/compose/runtime/internal/StabilityInferred;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/runtime/changelist/Operation;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "UpdateValue"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J9\u0010\u000e\u001a\u00020\r*\u00020\u00042\n\u0010\u0006\u001a\u0006\u0012\u0002\u0008\u00030\u00052\u0006\u0010\u0008\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\t2\u0008\u0010\u000c\u001a\u0004\u0018\u00010\u000bH\u0014\u00a2\u0006\u0004\u0008\u000e\u0010\u000f\u00a8\u0006\u0010"
+    }
+    d2 = {
+        "Landroidx/compose/runtime/changelist/Operation$UpdateValue;",
+        "Landroidx/compose/runtime/changelist/Operation;",
+        "<init>",
+        "()V",
+        "Landroidx/compose/runtime/changelist/OperationArgContainer;",
+        "Landroidx/compose/runtime/Applier;",
+        "applier",
+        "Landroidx/compose/runtime/SlotWriter;",
+        "slots",
+        "Landroidx/compose/runtime/RememberManager;",
+        "rememberManager",
+        "Landroidx/compose/runtime/changelist/OperationErrorContext;",
+        "errorContext",
+        "",
+        "a",
+        "(Landroidx/compose/runtime/changelist/OperationArgContainer;Landroidx/compose/runtime/Applier;Landroidx/compose/runtime/SlotWriter;Landroidx/compose/runtime/RememberManager;Landroidx/compose/runtime/changelist/OperationErrorContext;)V",
+        "runtime"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+.end annotation
+
+
+# static fields
+.field public static final c:Landroidx/compose/runtime/changelist/Operation$UpdateValue;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Landroidx/compose/runtime/changelist/Operation$UpdateValue;
+
+    invoke-direct {v0}, Landroidx/compose/runtime/changelist/Operation$UpdateValue;-><init>()V
+
+    sput-object v0, Landroidx/compose/runtime/changelist/Operation$UpdateValue;->c:Landroidx/compose/runtime/changelist/Operation$UpdateValue;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    invoke-direct {p0, v0, v0, v1}, Landroidx/compose/runtime/changelist/Operation;-><init>(IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroidx/compose/runtime/changelist/OperationArgContainer;Landroidx/compose/runtime/Applier;Landroidx/compose/runtime/SlotWriter;Landroidx/compose/runtime/RememberManager;Landroidx/compose/runtime/changelist/OperationErrorContext;)V
+    .locals 0
+
+    const/4 p2, 0x0
+
+    invoke-static {p2}, Landroidx/compose/runtime/changelist/Operation$ObjectParameter;->a(I)I
+
+    move-result p5
+
+    invoke-interface {p1, p5}, Landroidx/compose/runtime/changelist/OperationArgContainer;->a(I)Ljava/lang/Object;
+
+    move-result-object p5
+
+    invoke-interface {p1, p2}, Landroidx/compose/runtime/changelist/OperationArgContainer;->getInt(I)I
+
+    move-result p1
+
+    instance-of p2, p5, Landroidx/compose/runtime/RememberObserverHolder;
+
+    if-eqz p2, :cond_0
+
+    move-object p2, p5
+
+    check-cast p2, Landroidx/compose/runtime/RememberObserverHolder;
+
+    invoke-interface {p4, p2}, Landroidx/compose/runtime/RememberManager;->h(Landroidx/compose/runtime/RememberObserverHolder;)V
+
+    :cond_0
+    invoke-virtual {p3}, Landroidx/compose/runtime/SlotWriter;->c0()I
+
+    move-result p2
+
+    invoke-virtual {p3, p2, p1, p5}, Landroidx/compose/runtime/SlotWriter;->Z0(IILjava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    instance-of p2, p1, Landroidx/compose/runtime/RememberObserverHolder;
+
+    if-eqz p2, :cond_1
+
+    check-cast p1, Landroidx/compose/runtime/RememberObserverHolder;
+
+    invoke-interface {p4, p1}, Landroidx/compose/runtime/RememberManager;->g(Landroidx/compose/runtime/RememberObserverHolder;)V
+
+    goto :goto_0
+
+    :cond_1
+    instance-of p2, p1, Landroidx/compose/runtime/RecomposeScopeImpl;
+
+    if-eqz p2, :cond_2
+
+    check-cast p1, Landroidx/compose/runtime/RecomposeScopeImpl;
+
+    invoke-virtual {p1}, Landroidx/compose/runtime/RecomposeScopeImpl;->A()V
+
+    :cond_2
+    :goto_0
+    return-void
+.end method

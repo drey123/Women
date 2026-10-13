@@ -1,0 +1,29 @@
+package androidx.compose.material3;
+
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
+@DebugMetadata(c = "androidx.compose.material3.ExitAlwaysScrollBehavior$nestedScrollConnection$1", f = "AppBar.kt", l = {2394, 2396}, m = "onPostFling-RZ2iAVY")
+public final class ExitAlwaysScrollBehavior$nestedScrollConnection$1$onPostFling$1 extends ContinuationImpl {
+    long J$0;
+    int label;
+    /* synthetic */ Object result;
+    final /* synthetic */ ExitAlwaysScrollBehavior$nestedScrollConnection$1 this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ExitAlwaysScrollBehavior$nestedScrollConnection$1$onPostFling$1(ExitAlwaysScrollBehavior$nestedScrollConnection$1 exitAlwaysScrollBehavior$nestedScrollConnection$1, Continuation<? super ExitAlwaysScrollBehavior$nestedScrollConnection$1$onPostFling$1> continuation) {
+        super(continuation);
+        this.this$0 = exitAlwaysScrollBehavior$nestedScrollConnection$1;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        return this.this$0.h0(0L, 0L, this);
+    }
+}

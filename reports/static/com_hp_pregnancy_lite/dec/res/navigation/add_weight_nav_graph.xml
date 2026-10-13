@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/add_weight_nav_graph" app:startDestination="@id/addMyWeightScreenFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/weight_nav_graph" />
+    <fragment android:label="AddMyWeightScreenFragment" android:name="com.hp.pregnancy.lite.me.myweight.AddMyWeightScreenFragment" android:id="@id/addMyWeightScreenFragment">
+        <action android:id="@id/action_addMyWeightFragment_to_weight_nav_graph" app:destination="@id/weight_nav_graph" app:popUpTo="@id/addMyWeightScreenFragment" app:popUpToInclusive="true">
+            <argument android:name="weightScreenArguments" app:argType="com.hp.pregnancy.util.navigation.arguments.MyWeightScreenArguments" app:nullable="true" />
+        </action>
+        <deepLink android:id="@id/add_weight_deeplink" app:uri="@string/add_weight_onboarding_deeplink" />
+    </fragment>
+</navigation>

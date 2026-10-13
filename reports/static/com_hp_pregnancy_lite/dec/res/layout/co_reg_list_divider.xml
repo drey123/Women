@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dividerLayout" android:tag="layout/co_reg_list_divider_0" android:paddingTop="@dimen/common_4dp" android:paddingBottom="@dimen/common_4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dividerView" android:background="@color/co_reg_divider_color" android:paddingTop="1.0dp" android:paddingBottom="1.0dp" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_centerInParent="true" />
+</RelativeLayout>

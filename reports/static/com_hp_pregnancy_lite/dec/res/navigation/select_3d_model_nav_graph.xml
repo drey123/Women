@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/select_3d_model_nav_graph" app:startDestination="@id/selectBabyFragmentDownloadPending"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/three_d_model_nav_graph" />
+    <fragment android:label="SelectBabyFragmentDownloadPending" android:name="com.hp.pregnancy.fetus3d.modelSelection.SelectBabyFragment" android:id="@id/selectBabyFragmentDownloadPending">
+        <action android:id="@id/action_selectBabyFragmentDownloadPending_to_three_d_model_nav_graph" app:destination="@id/three_d_model_nav_graph" app:popUpTo="@id/selectBabyFragmentDownloadPending" app:popUpToInclusive="true">
+            <argument android:name="started_from" android:defaultValue="-1" app:argType="integer" />
+        </action>
+    </fragment>
+</navigation>

@@ -1,0 +1,34 @@
+package androidx.compose.ui.node;
+
+import kotlin.Metadata;
+import kotlin.enums.EnumEntries;
+import kotlin.enums.EnumEntriesKt;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\bf\u0018\u00002\u00020\u0001:\u0001\u0006R\u0014\u0010\u0005\u001a\u00020\u00028&X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0003\u0010\u0004ø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001¨\u0006\u0007À\u0006\u0001"}, d2 = {"Landroidx/compose/ui/node/TraversableNode;", "Landroidx/compose/ui/node/DelegatableNode;", "", "d0", "()Ljava/lang/Object;", "traverseKey", "Companion", "ui"}, k = 1, mv = {2, 0, 0}, xi = 48)
+public interface TraversableNode extends DelegatableNode {
+
+    @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u00020\u0001:\u0001\u0004B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0005"}, d2 = {"Landroidx/compose/ui/node/TraversableNode$Companion;", "", "<init>", "()V", "TraverseDescendantsAction", "ui"}, k = 1, mv = {2, 0, 0}, xi = 48)
+    public static final class Companion {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        public static final /* synthetic */ Companion f4090a = new Companion();
+
+        @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0006\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006¨\u0006\u0007"}, d2 = {"Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;", "", "<init>", "(Ljava/lang/String;I)V", "ContinueTraversal", "SkipSubtreeAndContinueTraversal", "CancelTraversal", "ui"}, k = 1, mv = {2, 0, 0}, xi = 48)
+        public enum TraverseDescendantsAction {
+            ContinueTraversal,
+            SkipSubtreeAndContinueTraversal,
+            CancelTraversal;
+
+            private static final /* synthetic */ EnumEntries $ENTRIES = EnumEntriesKt.a(values());
+
+            @NotNull
+            public static EnumEntries<TraverseDescendantsAction> getEntries() {
+                return $ENTRIES;
+            }
+        }
+    }
+
+    Object d0();
+}

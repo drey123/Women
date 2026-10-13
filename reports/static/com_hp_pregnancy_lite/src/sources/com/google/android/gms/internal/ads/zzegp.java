@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.Collections;
+import java.util.Set;
+
+/* JADX INFO: loaded from: classes4.dex */
+final class zzegp extends zzdcz {
+    public zzegp(zzegr zzegrVar, zzdee zzdeeVar) {
+        super(zzdeeVar, null);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdcz
+    public final Set f(zzctm zzctmVar) {
+        return Collections.emptySet();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdcz
+    public final Set g(zzctm zzctmVar) {
+        return Collections.emptySet();
+    }
+}

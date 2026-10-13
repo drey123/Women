@@ -1,0 +1,85 @@
+package io.reactivex.internal.operators.observable;
+
+import io.reactivex.Observer;
+import io.reactivex.Scheduler;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.internal.disposables.DisposableHelper;
+import io.reactivex.plugins.RxJavaPlugins;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class ObservableUnsubscribeOn<T> extends AbstractObservableWithUpstream<T, T> {
+    public final Scheduler b;
+
+    public static final class UnsubscribeObserver<T> extends AtomicBoolean implements Observer<T>, Disposable {
+        private static final long serialVersionUID = 1015244841293359600L;
+        final Observer<? super T> actual;
+        Disposable s;
+        final Scheduler scheduler;
+
+        public final class DisposeTask implements Runnable {
+            public DisposeTask() {
+            }
+
+            @Override // java.lang.Runnable
+            public void run() {
+                UnsubscribeObserver.this.s.dispose();
+            }
+        }
+
+        public UnsubscribeObserver(Observer<? super T> observer, Scheduler scheduler) {
+            this.actual = observer;
+            this.scheduler = scheduler;
+        }
+
+        @Override // io.reactivex.disposables.Disposable
+        public void dispose() {
+            if (compareAndSet(false, true)) {
+                this.scheduler.c(new DisposeTask());
+            }
+        }
+
+        @Override // io.reactivex.disposables.Disposable
+        public boolean isDisposed() {
+            return get();
+        }
+
+        @Override // io.reactivex.Observer
+        public void onComplete() {
+            if (get()) {
+                return;
+            }
+            this.actual.onComplete();
+        }
+
+        @Override // io.reactivex.Observer
+        public void onError(Throwable th) {
+            if (get()) {
+                RxJavaPlugins.p(th);
+            } else {
+                this.actual.onError(th);
+            }
+        }
+
+        @Override // io.reactivex.Observer
+        public void onNext(T t) {
+            if (get()) {
+                return;
+            }
+            this.actual.onNext(t);
+        }
+
+        @Override // io.reactivex.Observer
+        public void onSubscribe(Disposable disposable) {
+            if (DisposableHelper.validate(this.s, disposable)) {
+                this.s = disposable;
+                this.actual.onSubscribe(this);
+            }
+        }
+    }
+
+    @Override // io.reactivex.Observable
+    public void l(Observer observer) {
+        this.f22989a.subscribe(new UnsubscribeObserver(observer, this.b));
+    }
+}

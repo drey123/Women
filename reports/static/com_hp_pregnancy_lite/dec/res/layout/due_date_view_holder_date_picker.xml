@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/due_date_view_holder_date_picker_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/new_title_text_color" android:id="@id/textInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_40dp" android:hint="@string/enter_date" android:fontFamily="@font/robotoregular" android:layout_marginStart="@dimen/common_16dp" android:layout_marginEnd="@dimen/common_16dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextLabel">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/textInputEdittext" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/robotoregular" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,224 @@
+package com.amazonaws.services.s3.model;
+
+import com.amazonaws.regions.Regions;
+import com.amazonaws.services.s3.internal.crypto.CryptoRuntime;
+import java.io.Serializable;
+import java.security.Provider;
+
+/* JADX INFO: loaded from: classes3.dex */
+@Deprecated
+public class CryptoConfiguration implements Cloneable, Serializable {
+    private static final long serialVersionUID = -8646831898339939580L;
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public transient com.amazonaws.regions.Region f8634a;
+    private CryptoMode cryptoMode;
+    private Provider cryptoProvider;
+    private boolean ignoreMissingInstructionFile;
+    private CryptoStorageMode storageMode;
+
+    public static final class ReadOnly extends CryptoConfiguration {
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        /* JADX INFO: renamed from: clone */
+        public /* bridge */ /* synthetic */ Object mo261clone() {
+            return super.mo261clone();
+        }
+
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        public boolean isReadOnly() {
+            return true;
+        }
+
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        public void setCryptoMode(CryptoMode cryptoMode) {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        public void setCryptoProvider(Provider provider) {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        public void setIgnoreMissingInstructionFile(boolean z) {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        public void setKmsRegion(Regions regions) {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        public void setStorageMode(CryptoStorageMode cryptoStorageMode) {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        public CryptoConfiguration withCryptoMode(CryptoMode cryptoMode) {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        public CryptoConfiguration withCryptoProvider(Provider provider) {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        public CryptoConfiguration withIgnoreMissingInstructionFile(boolean z) {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        public CryptoConfiguration withKmsRegion(Regions regions) {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override // com.amazonaws.services.s3.model.CryptoConfiguration
+        public CryptoConfiguration withStorageMode(CryptoStorageMode cryptoStorageMode) {
+            throw new UnsupportedOperationException();
+        }
+
+        private ReadOnly() {
+        }
+    }
+
+    public CryptoConfiguration() {
+        this(CryptoMode.EncryptionOnly);
+    }
+
+    public final void a(CryptoMode cryptoMode) {
+        if (cryptoMode == CryptoMode.AuthenticatedEncryption || cryptoMode == CryptoMode.StrictAuthenticatedEncryption) {
+            if (this.cryptoProvider == null && !CryptoRuntime.c()) {
+                CryptoRuntime.a();
+                if (!CryptoRuntime.c()) {
+                    throw new UnsupportedOperationException("The Bouncy castle library jar is required on the classpath to enable authenticated encryption");
+                }
+            }
+            if (!CryptoRuntime.b(this.cryptoProvider)) {
+                throw new UnsupportedOperationException("More recent version of the Bouncy castle library is required to enable authenticated encryption");
+            }
+        }
+    }
+
+    public final CryptoConfiguration b(CryptoConfiguration cryptoConfiguration) {
+        cryptoConfiguration.cryptoMode = this.cryptoMode;
+        cryptoConfiguration.storageMode = this.storageMode;
+        cryptoConfiguration.cryptoProvider = this.cryptoProvider;
+        cryptoConfiguration.ignoreMissingInstructionFile = this.ignoreMissingInstructionFile;
+        cryptoConfiguration.f8634a = this.f8634a;
+        return cryptoConfiguration;
+    }
+
+    public com.amazonaws.regions.Region getAwsKmsRegion() {
+        return this.f8634a;
+    }
+
+    public CryptoMode getCryptoMode() {
+        return this.cryptoMode;
+    }
+
+    public Provider getCryptoProvider() {
+        return this.cryptoProvider;
+    }
+
+    @Deprecated
+    public Regions getKmsRegion() {
+        com.amazonaws.regions.Region region = this.f8634a;
+        if (region == null) {
+            return null;
+        }
+        return Regions.fromName(region.d());
+    }
+
+    public CryptoStorageMode getStorageMode() {
+        return this.storageMode;
+    }
+
+    public boolean isIgnoreMissingInstructionFile() {
+        return this.ignoreMissingInstructionFile;
+    }
+
+    public boolean isReadOnly() {
+        return false;
+    }
+
+    public CryptoConfiguration readOnly() {
+        return isReadOnly() ? this : b(new ReadOnly());
+    }
+
+    public void setAwsKmsRegion(com.amazonaws.regions.Region region) {
+        this.f8634a = region;
+    }
+
+    public void setCryptoMode(CryptoMode cryptoMode) {
+        this.cryptoMode = cryptoMode;
+    }
+
+    public void setCryptoProvider(Provider provider) {
+        this.cryptoProvider = provider;
+        a(this.cryptoMode);
+    }
+
+    public void setIgnoreMissingInstructionFile(boolean z) {
+        this.ignoreMissingInstructionFile = z;
+    }
+
+    @Deprecated
+    public void setKmsRegion(Regions regions) {
+        if (regions != null) {
+            setAwsKmsRegion(com.amazonaws.regions.Region.e(regions));
+        } else {
+            setAwsKmsRegion(null);
+        }
+    }
+
+    public void setStorageMode(CryptoStorageMode cryptoStorageMode) {
+        this.storageMode = cryptoStorageMode;
+    }
+
+    public CryptoConfiguration withAwsKmsRegion(com.amazonaws.regions.Region region) {
+        this.f8634a = region;
+        return this;
+    }
+
+    public CryptoConfiguration withCryptoMode(CryptoMode cryptoMode) {
+        this.cryptoMode = cryptoMode;
+        return this;
+    }
+
+    public CryptoConfiguration withCryptoProvider(Provider provider) {
+        this.cryptoProvider = provider;
+        a(this.cryptoMode);
+        return this;
+    }
+
+    public CryptoConfiguration withIgnoreMissingInstructionFile(boolean z) {
+        this.ignoreMissingInstructionFile = z;
+        return this;
+    }
+
+    @Deprecated
+    public CryptoConfiguration withKmsRegion(Regions regions) {
+        setKmsRegion(regions);
+        return this;
+    }
+
+    public CryptoConfiguration withStorageMode(CryptoStorageMode cryptoStorageMode) {
+        this.storageMode = cryptoStorageMode;
+        return this;
+    }
+
+    public CryptoConfiguration(CryptoMode cryptoMode) {
+        this.ignoreMissingInstructionFile = true;
+        this.storageMode = CryptoStorageMode.ObjectMetadata;
+        this.cryptoProvider = null;
+        this.cryptoMode = cryptoMode;
+    }
+
+    @Override // 
+    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    public CryptoConfiguration mo261clone() {
+        return b(new CryptoConfiguration());
+    }
+}

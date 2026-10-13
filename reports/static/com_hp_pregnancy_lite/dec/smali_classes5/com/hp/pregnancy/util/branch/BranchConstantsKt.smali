@@ -1,0 +1,40 @@
+.class public final Lcom/hp/pregnancy/util/branch/BranchConstantsKt;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\n\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0012\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0008\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000c\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000e\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000f\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0010\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0011\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0012\u001a\u00020\u0001X\u0086T\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0013"
+    }
+    d2 = {
+        "TAG",
+        "",
+        "EVENT_CO_REGISTRATION",
+        "PARAM_PLAN_TYPE",
+        "PARAM_CURRENCY",
+        "PARAM_TRIAL_DURATION",
+        "PARAM_SUBSCRIPTION_SOURCE",
+        "PARAM_SUBSCRIPTION_PRICE",
+        "PARAM_SUBSCRIPTION_CURRENCY",
+        "PARAM_SUBSCRIPTION_DURATION",
+        "PARAM_IS_TRIAL_CONVERSION",
+        "PARAM_COREG_PARTNERS",
+        "PARAM_COREG_COUNT",
+        "PARAM_AD_TYPE",
+        "PARAM_REGISTRATION_METHOD",
+        "PARAM_USER_EMAIL",
+        "PARAM_HASHED_EMAIL",
+        "PARAM_UNKNOWN",
+        "PARAM_PAYWALL_UNKNOWN",
+        "PregnancyLite_release"
+    }
+    k = 0x2
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation

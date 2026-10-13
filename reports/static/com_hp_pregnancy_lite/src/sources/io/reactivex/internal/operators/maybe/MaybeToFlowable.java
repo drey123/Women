@@ -1,0 +1,62 @@
+package io.reactivex.internal.operators.maybe;
+
+import io.reactivex.Flowable;
+import io.reactivex.MaybeObserver;
+import io.reactivex.MaybeSource;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.internal.disposables.DisposableHelper;
+import io.reactivex.internal.fuseable.HasUpstreamMaybeSource;
+import io.reactivex.internal.subscriptions.DeferredScalarSubscription;
+import org.reactivestreams.Subscriber;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class MaybeToFlowable<T> extends Flowable<T> implements HasUpstreamMaybeSource<T> {
+    public final MaybeSource b;
+
+    public static final class MaybeToFlowableSubscriber<T> extends DeferredScalarSubscription<T> implements MaybeObserver<T> {
+        private static final long serialVersionUID = 7603343402964826922L;
+        Disposable d;
+
+        public MaybeToFlowableSubscriber(Subscriber<? super T> subscriber) {
+            super(subscriber);
+        }
+
+        @Override // io.reactivex.internal.subscriptions.DeferredScalarSubscription, io.reactivex.internal.subscriptions.BasicIntQueueSubscription, org.reactivestreams.Subscription
+        public void cancel() {
+            super.cancel();
+            this.d.dispose();
+        }
+
+        @Override // io.reactivex.MaybeObserver
+        public void onComplete() {
+            this.actual.onComplete();
+        }
+
+        @Override // io.reactivex.MaybeObserver
+        public void onError(Throwable th) {
+            this.actual.onError(th);
+        }
+
+        @Override // io.reactivex.MaybeObserver
+        public void onSubscribe(Disposable disposable) {
+            if (DisposableHelper.validate(this.d, disposable)) {
+                this.d = disposable;
+                this.actual.onSubscribe(this);
+            }
+        }
+
+        @Override // io.reactivex.MaybeObserver
+        public void onSuccess(T t) {
+            complete(t);
+        }
+    }
+
+    public MaybeToFlowable(MaybeSource maybeSource) {
+        this.b = maybeSource;
+    }
+
+    @Override // io.reactivex.Flowable
+    public void n(Subscriber subscriber) {
+        this.b.a(new MaybeToFlowableSubscriber(subscriber));
+    }
+}

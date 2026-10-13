@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/nestedScrollView" android:tag="layout/tools_tabbed_screen_0" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.compose.ui.platform.ComposeView android:id="@id/compose_toolbar_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/postsRecyclerView" android:paddingBottom="10.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

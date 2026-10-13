@@ -1,0 +1,7 @@
+package defpackage;
+
+/* JADX INFO: loaded from: classes6.dex */
+public abstract /* synthetic */ class e {
+    public static /* synthetic */ void a() {
+    }
+}

@@ -1,0 +1,13 @@
+package io.grpc.internal;
+
+import io.grpc.InternalChannelz;
+import io.grpc.InternalInstrumented;
+import io.grpc.Status;
+import java.util.concurrent.ScheduledExecutorService;
+
+/* JADX INFO: loaded from: classes6.dex */
+public interface ServerTransport extends InternalInstrumented<InternalChannelz.SocketStats> {
+    ScheduledExecutorService N();
+
+    void a(Status status);
+}

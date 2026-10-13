@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/shopping_nav_graph" app:startDestination="@id/shoppingCategoryScreen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="ShoppingCategoryScreen" android:name="com.hp.pregnancy.lite.more.shopping.ShoppingCategoryScreen" android:id="@id/shoppingCategoryScreen">
+        <action android:id="@id/action_shoppingCategoryScreen_to_shoppingBaseScreen" app:destination="@id/shoppingBaseScreen">
+            <argument android:name="Heading" app:argType="string" app:nullable="true" />
+            <argument android:name="Category" app:argType="string" app:nullable="true" />
+        </action>
+        <deepLink android:id="@id/shopping_deep_link" app:uri="@string/shopping_deeplink_uri" />
+    </fragment>
+    <fragment android:label="ShoppingBaseScreen" android:name="com.hp.pregnancy.lite.more.shopping.ShoppingBaseScreen" android:id="@id/shoppingBaseScreen">
+        <argument android:name="Heading" app:argType="string" app:nullable="true" />
+        <argument android:name="Category" app:argType="string" app:nullable="true" />
+    </fragment>
+</navigation>

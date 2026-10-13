@@ -1,0 +1,37 @@
+package com.google.android.gms.common.server.response;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelReader;
+import java.util.ArrayList;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class zap implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int iK = SafeParcelReader.K(parcel);
+        String strP = null;
+        int iE = 0;
+        ArrayList arrayListT = null;
+        while (parcel.dataPosition() < iK) {
+            int iC = SafeParcelReader.C(parcel);
+            int iV = SafeParcelReader.v(iC);
+            if (iV == 1) {
+                iE = SafeParcelReader.E(parcel, iC);
+            } else if (iV == 2) {
+                strP = SafeParcelReader.p(parcel, iC);
+            } else if (iV != 3) {
+                SafeParcelReader.J(parcel, iC);
+            } else {
+                arrayListT = SafeParcelReader.t(parcel, iC, zam.CREATOR);
+            }
+        }
+        SafeParcelReader.u(parcel, iK);
+        return new zal(iE, strP, arrayListT);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i) {
+        return new zal[i];
+    }
+}

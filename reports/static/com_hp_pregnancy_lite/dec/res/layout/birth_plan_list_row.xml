@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/ll_row_parent" android:tag="layout/birth_plan_list_row_0" android:background="#b3ffffff" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textColor="@color/dark_gray_color" android:ellipsize="end" android:gravity="left|center" android:layout_gravity="center" android:id="@id/tv_row_text" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="3" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/RobotoRegularStyle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/firstSeparator" android:background="@color/light_gray_color" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

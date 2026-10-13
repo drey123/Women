@@ -1,0 +1,90 @@
+package io.reactivex.rxjava3.internal.operators.observable;
+
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.Observer;
+import io.reactivex.rxjava3.core.Scheduler;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.internal.disposables.DisposableHelper;
+import io.reactivex.rxjava3.internal.schedulers.TrampolineScheduler;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicReference;
+
+/* JADX INFO: loaded from: classes6.dex */
+public final class ObservableIntervalRange extends Observable<Long> {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final Scheduler f23715a;
+    public final long b;
+    public final long c;
+    public final long d;
+    public final long e;
+    public final TimeUnit f;
+
+    public static final class IntervalRangeObserver extends AtomicReference<Disposable> implements Disposable, Runnable {
+        private static final long serialVersionUID = 1891866368734007884L;
+        long count;
+        final Observer<? super Long> downstream;
+        final long end;
+
+        public IntervalRangeObserver(Observer<? super Long> observer, long j, long j2) {
+            this.downstream = observer;
+            this.count = j;
+            this.end = j2;
+        }
+
+        @Override // io.reactivex.rxjava3.disposables.Disposable
+        public void dispose() {
+            DisposableHelper.dispose(this);
+        }
+
+        @Override // io.reactivex.rxjava3.disposables.Disposable
+        public boolean isDisposed() {
+            return get() == DisposableHelper.DISPOSED;
+        }
+
+        @Override // java.lang.Runnable
+        public void run() {
+            if (isDisposed()) {
+                return;
+            }
+            long j = this.count;
+            this.downstream.onNext(Long.valueOf(j));
+            if (j != this.end) {
+                this.count = j + 1;
+                return;
+            }
+            if (!isDisposed()) {
+                this.downstream.onComplete();
+            }
+            DisposableHelper.dispose(this);
+        }
+
+        public void setResource(Disposable disposable) {
+            DisposableHelper.setOnce(this, disposable);
+        }
+    }
+
+    /* JADX WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
+    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+     */
+    @Override // io.reactivex.rxjava3.core.Observable
+    public void m(Observer observer) {
+        IntervalRangeObserver intervalRangeObserver = new IntervalRangeObserver(observer, this.b, this.c);
+        observer.onSubscribe(intervalRangeObserver);
+        Scheduler scheduler = this.f23715a;
+        if (!(scheduler instanceof TrampolineScheduler)) {
+            intervalRangeObserver.setResource(scheduler.h(intervalRangeObserver, this.d, this.e, this.f));
+            return;
+        }
+        Scheduler.Worker workerD = scheduler.d();
+        intervalRangeObserver.setResource(workerD);
+        workerD.d(intervalRangeObserver, this.d, this.e, this.f);
+    }
+}

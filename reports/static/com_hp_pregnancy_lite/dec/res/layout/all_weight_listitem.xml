@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_weight_list_item_parent" android:tag="layout/all_weight_listitem_0" android:background="@color/white_with_80transparency" android:layout_width="match_parent" android:layout_height="50.0dp" android:textDirection="ltr" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableLayout android:id="@id/mainTable" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="1,2,3,4" android:layout_below="@id/unitWrapper" android:textDirection="ltr" android:layoutDirection="ltr">
+        <TableRow android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:layoutDirection="ltr">
+            <com.hp.pregnancy.customviews.new_50.RobotoMediumTextView android:textColor="@color/gray" android:gravity="left" android:id="@id/date" android:tag="binding_1" android:layout_width="50.0dp" android:layout_height="wrap_content" android:text="@string/date" android:singleLine="true" android:layout_weight="0.18" android:textDirection="ltr" />
+            <TextView android:textColor="@color/gray" android:gravity="left" android:id="@id/week" android:tag="binding_2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/weekText" android:singleLine="true" android:layout_weight="0.25" android:textDirection="ltr" style="@style/RobotoRegularStyle" />
+            <TextView android:textColor="@color/gray" android:gravity="left" android:id="@id/weight" android:tag="binding_3" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/weight" android:singleLine="true" android:layout_weight="0.3" android:textDirection="ltr" style="@style/RobotoRegularStyle" />
+            <TextView android:textColor="@color/gray" android:gravity="left" android:id="@id/change" android:tag="binding_4" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/changeInWeight" android:singleLine="true" android:layout_weight="0.28" android:textDirection="ltr" style="@style/RobotoRegularStyle" />
+        </TableRow>
+    </TableLayout>
+    <View android:id="@id/firstSeparator" android:tag="binding_5" android:background="@color/new_separator_color" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/mainTable" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/coupon_expanded_nav_graph" app:startDestination="@id/expandedCouponFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="ExpandedCouponFragment" android:name="com.hp.pregnancy.lite.coupon.ExpandedCouponFragment" android:id="@id/expandedCouponFragment">
+        <argument android:name="startedFrom" app:argType="string" app:nullable="true" />
+        <argument android:name="couponModel" android:defaultValue="@null" app:argType="com.philips.hp.components.dpads.coupon.CouponModel" app:nullable="true" />
+        <argument android:name="couponId" android:defaultValue="0L" app:argType="long" />
+    </fragment>
+</navigation>

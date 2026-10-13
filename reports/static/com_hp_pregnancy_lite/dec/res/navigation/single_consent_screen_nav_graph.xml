@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/single_consent_screen_nav_graph" app:startDestination="@id/singleConsentScreenContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="SingleConsentScreenContainer" android:name="com.hp.pregnancy.lite.onboarding.singleconsent.SingleConsentScreenContainer" android:id="@id/singleConsentScreenContainer">
+        <argument android:name="IsFromOnboarding" android:defaultValue="true" app:argType="boolean" />
+    </fragment>
+</navigation>

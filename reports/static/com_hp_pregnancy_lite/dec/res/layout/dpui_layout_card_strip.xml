@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:tag="layout/dpui_layout_card_strip_0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DPUICardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dpui_16dp" android:layout_marginEnd="@dimen/dpui_16dp" layout="@layout/dpui_layout_card_list_item" />
+</com.google.android.material.card.MaterialCardView>

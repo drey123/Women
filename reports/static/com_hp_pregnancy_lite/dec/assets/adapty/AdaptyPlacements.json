@@ -1,0 +1,166 @@
+{
+  "Default": {
+    "PlacementId": "defaultPlacementId",
+    "Description": "Default placement for unspecified content"
+  },
+  "Features": {
+    "ToolsTriggers": [
+      {
+        "Data": {
+          "PlacementId": "tool_contractiontimer",
+          "Description": "Unlock the contraction timer"
+        },
+        "MatchingEvents": [
+          {
+            "Action": "Clicked",
+            "Category": "Navigation",
+            "Param1Value": "Contractions"
+          }
+        ],
+        "TriggerID": "TriggerContractions",
+        "CallbackID": "CallbackContractions"
+      },
+      {
+        "Data": {
+          "PlacementId": "tool_kickcounter",
+          "Description": "Unlock the kick counter"
+        },
+        "MatchingEvents": [
+          {
+            "Action": "Clicked",
+            "Category": "Navigation",
+            "Param1Value": "Kick Counter"
+          }
+        ],
+        "TriggerID": "TriggerKickCounter",
+        "CallbackID": "CallbackKickCounter"
+      },
+      {
+        "Data": {
+          "PlacementId": "tool_hospitalbag",
+          "Description": "Unlock the hospital bag"
+        },
+        "MatchingEvents": [
+          {
+            "Action": "Clicked",
+            "Category": "Navigation",
+            "Param1Value": "Hospital Bag"
+          }
+        ],
+        "TriggerID": "TriggerHospitalBag",
+        "CallbackID": "CallbackHospitalBag"
+      },
+      {
+        "Data": {
+          "PlacementId": "tool_birthplan",
+          "Description": "Unlock the birth plan"
+        },
+        "MatchingEvents": [
+          {
+            "Action": "Clicked",
+            "Category": "Navigation",
+            "Param1Value": "Birth Plan"
+          }
+        ],
+        "TriggerID": "TriggerBirthPlan",
+        "CallbackID": "CallbackBirthPlan"
+      }
+    ],
+    "ContentTriggers": [
+      {
+        "Data": {
+          "Placements": [
+            {
+              "PlacementId": "content_series_trimester1",
+              "Description": "First trimester series",
+              "TargetedContents": [
+                "1mW89Gvvj537oAQnvXQtjt",
+                "25ZQlhtuViIhnaATfiIZY1",
+                "5MPXICr0JsYLdK7P7fd5Oi",
+                "7g2RmP2k4rn3YEMECExnih",
+                "8c9fbKdpHvdGe0pMujsPA",
+                "1mW89Gvvj537oAQnvXQtjt",
+                "12jtErSlodKXddpJYY5frG",
+                "1g8BFyd7cqegassjLU0rmR",
+                "2F7e6vNzK1jdI5NGsIhy8A"
+              ]
+            },
+            {
+              "PlacementId": "content_series_trimester2",
+              "Description": "Second trimester series",
+              "TargetedContents": [
+                "6bDY0Kp6xXTc9wgNFN9mke",
+                "4aRtugrtTBiXwXi0lAmOMO",
+                "727Yl3QI5TSw1hstR7i22m",
+                "1aqtFh2eVGvly6iHPY59Rk",
+                "1zMwMwSITj0BGjJZZ4K2Jc"
+              ]
+            },
+            {
+              "PlacementId": "content_series_trimester3",
+              "Description": "Third trimester series",
+              "TargetedContents": [
+                "7g2RmP2k4rn3YEMECExnih",
+                "1ndV7BVORUjzSBC9z3CF8F",
+                "4Vi8Vq5NZDCH0Bih9rmK53",
+                "2dBRlMrwCoRtYdVisRsg0t",
+                "3lfIjLGrKOxbMv2XfRKkAZ",
+                "3QB3KuYWfhe0jFejuoeUya"
+              ]
+            }
+          ]
+        },
+        "MatchingEvents": [
+          {
+            "Action": "Clicked",
+            "Category": "Navigation",
+            "Param9Value": "True"
+          },
+          {
+            "Action": "Clicked",
+            "Category": "Premium",
+            "Param9Value": "True"
+          }
+        ],
+        "TriggerID": "TriggerPremiumArticleClicked",
+        "CallbackID": "CallbackPremiumArticleClicked"
+      }
+    ],
+    "Others": [
+      {
+        "Data": {
+          "PlacementId": "onboarding",
+          "Description": "Special offer for new users"
+        },
+        "MatchingEvents": [
+          {
+            "Action": "Onboarded",
+            "Param1Value": "Join Later"
+          },
+          {
+            "Action": "Onboarded",
+            "Param1Value": "Register"
+          }
+        ],
+        "TriggerID": "TriggerOnboardedCompleted",
+        "CallbackID": "TriggerOnboardedCompleted"
+      },
+      {
+        "Data": {
+          "PlacementId": "wallet_card",
+          "Description": "Premium card on the top of the feed"
+        },
+        "MatchingEvents": [
+          {
+            "Action": "Clicked",
+            "Category": "Premium",
+            "Param1Value": "Subscription",
+            "Param2Value": "Subscription"
+          }
+        ],
+        "TriggerID": "TriggerSubscription",
+        "CallbackID": "CallbackSubscription"
+      }
+    ]
+  }
+}

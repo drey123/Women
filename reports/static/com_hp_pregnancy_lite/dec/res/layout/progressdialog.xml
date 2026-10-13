@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="#ffffff" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/prg_loader" android:layout_width="70.0dp" android:layout_height="70.0dp" android:src="@drawable/progress_bar" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#3a3a3a" android:ellipsize="end" android:gravity="center" android:id="@id/prg_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="Please " android:maxLines="2" android:layout_below="@id/prg_loader" android:layout_centerHorizontal="true" style="@style/RobotoRegularStyle" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/dpui_layout_list_item_button_0" android:paddingLeft="@dimen/dpui_24dp" android:paddingTop="@dimen/dpui_28dp" android:paddingRight="@dimen/dpui_24dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/dpuiCardButton" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" style="@style/DPUI_Button.Primary" />
+    <TextView android:textColor="@color/dpui_blue" android:id="@id/listItemButtonFooterText" android:tag="binding_2" android:background="@color/dpui_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dpui_4dp" android:layout_marginBottom="@dimen/dpui_16dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/dpuiCardButton" style="@style/DPUI_Button.Secondary" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+.class public final Lcom/google/android/gms/ads/internal/client/zzfe;
+.super Lcom/google/android/gms/ads/internal/client/zzdf;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:Lcom/google/android/gms/ads/OnPaidEventListener;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/ads/OnPaidEventListener;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/google/android/gms/ads/internal/client/zzdf;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/ads/internal/client/zzfe;->a:Lcom/google/android/gms/ads/OnPaidEventListener;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final I7(Lcom/google/android/gms/ads/internal/client/zzs;)V
+    .locals 5
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/internal/client/zzfe;->a:Lcom/google/android/gms/ads/OnPaidEventListener;
+
+    if-eqz v0, :cond_0
+
+    iget v1, p1, Lcom/google/android/gms/ads/internal/client/zzs;->b:I
+
+    iget-object v2, p1, Lcom/google/android/gms/ads/internal/client/zzs;->c:Ljava/lang/String;
+
+    iget-wide v3, p1, Lcom/google/android/gms/ads/internal/client/zzs;->d:J
+
+    invoke-static {v1, v2, v3, v4}, Lcom/google/android/gms/ads/AdValue;->a(ILjava/lang/String;J)Lcom/google/android/gms/ads/AdValue;
+
+    move-result-object p1
+
+    invoke-interface {v0, p1}, Lcom/google/android/gms/ads/OnPaidEventListener;->a(Lcom/google/android/gms/ads/AdValue;)V
+
+    :cond_0
+    return-void
+.end method

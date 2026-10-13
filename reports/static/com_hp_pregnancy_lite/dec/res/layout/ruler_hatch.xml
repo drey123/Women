@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cv" android:tag="layout/ruler_hatch_0" android:layout_width="26.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/timelineimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tvNumbers" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/timelineimg" android:layout_centerHorizontal="true" />
+</RelativeLayout>

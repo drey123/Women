@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.hp.pregnancy.lite" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.sec.android.iap.permission.BILLING"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="com.hp.pregnancyplus.testconfig.READ_DATABASE"/>
+    <uses-permission android:name="com.hp.pregnancyplus.testconfig.WRITE_DATABASE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <queries>
+        <package android:name="com.hp.babyapp"/>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+        <package android:name="hp.pregnancyplusconfig"/>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <category android:name="android.intent.category.OPENABLE"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+    </queries>
+    <permission android:name="com.hp.pregnancy.lite.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.hp.pregnancy.lite.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <permission android:name="com.hp.pregnancy.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.hp.pregnancy.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/adapty_data_extraction_rules" android:exported="false" android:extractNativeLibs="false" android:fullBackupContent="false" android:fullBackupOnly="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.hp.pregnancy.base.PregnancyAppDelegate" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="false" android:taskAffinity=".unusedaffinityPP" android:theme="@style/MaterialAppBaseTheme">
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.hp.pregnancy.lite.videoPlayer.VideoAudioPlayerContainer" android:theme="@style/MaterialAppBaseTheme"/>
+        <activity android:exported="false" android:label="" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.onboarding.newonboarding.OnBoardingScreensContainer" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="false"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_api_key"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@null"/>
+        <meta-data android:name="com.onesignal.suppressLaunchURLs" android:value="true"/>
+        <meta-data android:name="com.onesignal.inAppMessageHideGrayOverlay" android:value="true"/>
+        <meta-data android:name="com.onesignal.inAppMessageHideDropShadow" android:value="true"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="@string/branch_key_live"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-1547962909058906~6405130556"/>
+        <receiver android:exported="false" android:name="com.hp.pregnancy.util.ShareChooserReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.hp.pregnancy.receivers.TimeAlarm">
+            <intent-filter>
+                <action android:name="com.hp.pregnancy.APPOINTMENT_NOTIFICATION"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <service android:enabled="true" android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"/>
+        <service android:exported="false" android:name="com.hp.pregnancy.push_services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.hp.pregnancy.lite.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.hp.pregnancy.lite.perfinitcontentprovider" android:exported="false" android:name="com.hp.pregnancy.push_services.PerfInitContentProvider"/>
+        <provider android:authorities="@string/fb_provider" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="b2c6bf2691d6fe45d840392325189b41080872d9"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="false"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.onboarding.SplashScreenActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="amp86cdf082b49b06a53be2c58-de7253d6-eb5b-11e5-1512-00cef1388a40"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="open" android:scheme="pregplus"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="pregnancy" android:pathPrefix="/show" android:scheme="action"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:colorMode="wideColorGamut" android:configChanges="locale|keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.LandingScreenPhoneActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="locale|keyboardHidden|screenSize" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.onboarding.LoginActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.onboarding.SignupActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.onboarding.UDILoginSignUpActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|screenSize" android:exported="false" android:name="com.hp.pregnancy.lite.profile.options.ProfileActivityDeprecated" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.onboarding.RecoverPasswordActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.WebScreenActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.me.myweight.WeightCalculateNewActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="locale|keyboardHidden|smallestScreenSize" android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.inapppurchase.UpgradeScreen" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme"/>
+        <activity android:colorMode="wideColorGamut" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.me.appointment.AddAppointmentScreen" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.me.appointment.BabysHeartNewActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:colorMode="wideColorGamut" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.me.appointment.BloodPressureNewActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.onboarding.GooglePlusSignIn" android:theme="@style/navigationDrawerTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.inapppurchase.PurchaseComplete" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="locale|keyboard" android:launchMode="singleTask" android:name="com.hp.pregnancy.util.ImageCropActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="locale|keyboardHidden|smallestScreenSize" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.onboarding.ReLoginActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.webview.WebViewScreen" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:colorMode="wideColorGamut" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.baby.images.BabyImageFullScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.AboutUsWebScreenActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:colorMode="wideColorGamut" android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTask" android:name="com.hp.pregnancy.lite.onboarding.WhatItMeansCRMActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.hp.pregnancy.lite.onboarding.udi.UDIMigrateUserActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAppBaseTheme"/>
+        <activity android:exported="false" android:label="" android:launchMode="singleTask" android:name="com.hp.pregnancy.compose.custom.bottomSheet.BottomSheetContainer" android:theme="@style/BottomSheetTheme"/>
+        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:hardwareAccelerated="true" android:name="com.hp.pregnancy.fetus3d.MainActivity2" android:resizeableActivity="false" android:screenOrientation="fullUser" android:theme="@style/Theme.SampleApp.MainActivity2">
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+            <meta-data android:name="notch_support" android:value="true"/>
+            <layout android:minHeight="300.0px" android:minWidth="400.0px"/>
+        </activity>
+        <activity android:exported="true" android:name="net.openid.appauth.RedirectUriReceiverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.hp.pregnancy.lite"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="&quot;com.hp.pregnancy.lite://oidc.android/callback&quot;"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.hp.pregnancy.lite" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.hp.pregnancy.lite.cropper.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.canhub.cropper.CropFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/library_file_paths"/>
+        </provider>
+        <activity android:exported="true" android:name="com.canhub.cropper.CropImageActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.onesignal.notifications.receivers.FCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.hp.pregnancy.lite"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.onesignal.notifications.services.HmsMessageServiceOneSignal">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.onesignal.NotificationOpenedActivityHMS" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.onesignal.notifications.receivers.NotificationDismissReceiver"/>
+        <receiver android:exported="true" android:name="com.onesignal.notifications.receivers.BootUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.onesignal.notifications.receivers.UpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.onesignal.notifications.activities.NotificationOpenedActivity" android:noHistory="true" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.onesignal.notifications.activities.NotificationOpenedActivityAndroid22AndOlder" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.onesignal.core.services.SyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.onesignal.core.activities.PermissionsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="20202"/>
+        </service>
+        <service android:enabled="false" android:exported="false" android:foregroundServiceType="dataSync" android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.hp.pregnancy.lite.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="7.0.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="net.openid.appauth.AuthorizationManagementActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.hp.pregnancy.lite.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.hp.pregnancy.lite.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@style/WhiteBackgroundDialogTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

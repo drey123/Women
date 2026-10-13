@@ -1,0 +1,27 @@
+.class public Lcom/mux/stats/sdk/core/events/playback/AdRequestEvent;
+.super Lcom/mux/stats/sdk/core/events/playback/AdEvent;
+.source "SourceFile"
+
+
+# static fields
+.field public static final TYPE:Ljava/lang/String; = "adrequest"
+
+
+# direct methods
+.method public constructor <init>(Lcom/mux/stats/sdk/core/model/PlayerData;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/mux/stats/sdk/core/events/playback/AdEvent;-><init>(Lcom/mux/stats/sdk/core/model/PlayerData;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getType()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "adrequest"
+
+    return-object v0
+.end method

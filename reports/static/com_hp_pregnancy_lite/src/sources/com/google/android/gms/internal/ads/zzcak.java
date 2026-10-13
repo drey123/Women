@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: loaded from: classes4.dex */
+final class zzcak implements Runnable {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ zzcan f11361a;
+
+    public zzcak(zzcan zzcanVar) {
+        this.f11361a = zzcanVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        zzcan zzcanVar = this.f11361a;
+        if (zzcanVar.q != null) {
+            zzcanVar.q.e();
+            this.f11361a.q.g();
+        }
+    }
+}

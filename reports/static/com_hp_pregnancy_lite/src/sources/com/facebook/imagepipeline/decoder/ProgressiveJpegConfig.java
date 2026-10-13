@@ -1,0 +1,12 @@
+package com.facebook.imagepipeline.decoder;
+
+import com.facebook.imagepipeline.image.QualityInfo;
+
+/* JADX INFO: loaded from: classes3.dex */
+public interface ProgressiveJpegConfig {
+    int a(int i);
+
+    QualityInfo b(int i);
+
+    boolean c();
+}

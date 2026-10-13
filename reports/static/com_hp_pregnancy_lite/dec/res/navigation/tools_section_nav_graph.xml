@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_tools" app:startDestination="@id/toolsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/select_3d_model_nav_graph" />
+    <include app:graph="@navigation/three_d_model_nav_graph" />
+    <include app:graph="@navigation/baby_names_nav_graph" />
+    <include app:graph="@navigation/my_belly_nav_graph" />
+    <include app:graph="@navigation/shopping_nav_graph" />
+    <include app:graph="@navigation/appointments_nav_graph" />
+    <include app:graph="@navigation/size_guide_nav_graph" />
+    <include app:graph="@navigation/todo_nav_graph" />
+    <include app:graph="@navigation/weekly_images_nav_graph" />
+    <include app:graph="@navigation/hospital_bag_nav_graph" />
+    <include app:graph="@navigation/kick_counter_nav_graph" />
+    <include app:graph="@navigation/birthplan_nav_graph" />
+    <include app:graph="@navigation/weight_nav_graph" />
+    <include app:graph="@navigation/add_weight_nav_graph" />
+    <include app:graph="@navigation/upgrade_screen_nav_graph" />
+    <include app:graph="@navigation/contraction_nav_graph" />
+    <include app:graph="@navigation/error_screen_nav_graph" />
+    <include app:graph="@navigation/questions_nav_graph" />
+    <include app:graph="@navigation/product_purchase_nav_graph" />
+    <include app:graph="@navigation/timeline_v2_nav_graph" />
+    <fragment android:label="ToolsFragment" android:name="com.hp.pregnancy.lite.tools.ToolScreen" android:id="@id/toolsFragment">
+        <action android:id="@id/action_navigation_tools_section_to_baby_names" app:destination="@id/baby_names_nav_graph">
+            <argument android:name="tabIndex" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_tools_to_select_3d_model_nav_graph" app:destination="@id/select_3d_model_nav_graph">
+            <argument android:name="startedFrom" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_tools_to_three_d_model_nav_graph" app:destination="@id/three_d_model_nav_graph">
+            <argument android:name="pregnancy_week" android:defaultValue="-1" app:argType="integer" />
+            <argument android:name="started_from" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_tools_to_my_belly" app:destination="@id/my_belly_nav_graph">
+            <argument android:name="toolbarTitle" app:argType="string" />
+        </action>
+        <action android:id="@id/action_navigation_tools_base_to_shopping" app:destination="@id/shopping_nav_graph" />
+        <action android:id="@id/action_navigation_tools_screen_to_appointment" app:destination="@id/appointments_nav_graph" />
+        <action android:id="@id/action_navigation_tools_screen_to_questions" app:destination="@id/questions_nav_graph" />
+        <action android:id="@id/action_navigation_tools_screen_to_error_screen_fragment" app:destination="@id/error_screen_nav_graph">
+            <argument android:name="errorType" android:defaultValue="1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_tools_screen_to_size_guide_screen" app:destination="@id/size_guide_nav_graph">
+            <argument android:name="pregnancy_week" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_tools_screen_to_todo_screen" app:destination="@id/todo_nav_graph" />
+        <action android:id="@id/action_navigation_tools_screen_to_two_d_three_d_images_nav_graph" app:destination="@id/weekly_images_nav_graph">
+            <argument android:name="pregnancy_week" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_navigation_tools_screen_to_hospital_bag_nav_graph" app:destination="@id/hospital_bag_nav_graph" />
+        <action android:id="@id/action_navigation_tools_screen_to_kick_counter_nav_graph" app:destination="@id/kick_counter_nav_graph" />
+        <action android:id="@id/action_navigation_tools_screen_to_contractionsScreen" app:destination="@id/contraction_nav_graph" />
+        <action android:id="@id/action_navigation_tools_screen_to_birthplan_nav_graph" app:destination="@id/birthplan_nav_graph" />
+        <action android:id="@id/action_navigation_tools_screen_to_add_weight_fragment" app:destination="@id/add_weight_nav_graph" />
+        <action android:id="@id/action_navigation_tools_screen_to_myweight" app:destination="@id/weight_nav_graph">
+            <argument android:name="weightScreenArguments" app:argType="com.hp.pregnancy.util.navigation.arguments.MyWeightScreenArguments" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_navigation_tools_screen_to_upgrade_screen" app:destination="@id/upgrade_screen_nav_graph">
+            <argument android:name="CallingActivity" android:defaultValue="" app:argType="string" />
+            <argument android:name="IapSource" android:defaultValue="" app:argType="string" />
+            <argument android:name="PlacementId" android:defaultValue="" app:argType="string" />
+        </action>
+        <action android:id="@id/action_navigation_tools_screen_to_product_purchase_screen" app:destination="@id/product_purchase_nav_graph" />
+        <action android:id="@id/action_toolsFragment_to_timelineScreenV2Container" app:destination="@id/timeline_v2_nav_graph" />
+    </fragment>
+    <deepLink android:id="@id/toolsDeepLink" app:uri="@string/tools_deeplink" />
+</navigation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout-sw600dp/activity_web_screen_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_15ssp" android:layout_marginStart="@dimen/_30ssp" android:layout_marginEnd="@dimen/_30ssp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar" android:id="@id/app_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.MaterialToolbar android:theme="@style/ThemeOverlay.Material3.Light" android:id="@id/toolbar" android:tag="binding_1" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/common_4dp" app:contentInsetEnd="0.0dp" app:layout_scrollFlags="scroll|enterAlways" app:navigationIcon="?homeAsUpIndicator" app:popupTheme="@style/ThemeOverlay.Material3.Light">
+            <include android:id="@id/include_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar_layout" />
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.hp.pregnancy.util.CustomWebView android:id="@id/webview" android:tag="binding_2" android:background="@color/white" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="10.0dp" android:windowSoftInputMode="adjustResize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/app_bar_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

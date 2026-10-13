@@ -1,0 +1,129 @@
+{
+    "CardsFeed": [
+        {
+            "Sequence": [
+                [
+                    {
+                        "CardData": {
+                            "ID": "QEzn_AIZ4M8zB14vOO7"
+                        },
+                        "CardName": "Guide",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "Index": 0
+                        },
+                        "CardName": "DailyArticle",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "ID": "3O148Dv5HKZaVH03aE9QiT"
+                        },
+                        "CardName": "Guide",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "Index": 1
+                        },
+                        "CardName": "DailyArticle",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "ID": "U3gorPPqkTq.qoFk-pbyUmyl5I9Ee"
+                        },
+                        "CardName": "Guide",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "Index": 2
+                        },
+                        "CardName": "DailyArticle",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "ID": "VWNzIRjVRvBFzjZDHkE2utneQg4KpQajy_9LZ32vw"
+                        },
+                        "CardName": "Guide",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "Index": 3
+                        },
+                        "CardName": "DailyArticle",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "ID": "1Pj3luJ9xK7487Tsc_pWgAjfXVyaf22bqfwi3KRI6"
+                        },
+                        "CardName": "Guide",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "Index": 4
+                        },
+                        "CardName": "DailyArticle",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "ID": "P.kkHKU1is8qvtSKKnyWyJrKTJyXqg1I-LmH8V243XXHSy-JgK89eOwp"
+                        },
+                        "CardName": "Guide",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "Index": 5
+                        },
+                        "CardName": "DailyArticle",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "ID": "5kjOBnMtTHTvmydRE58ibS"
+                        },
+                        "CardName": "Guide",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "Index": 6
+                        },
+                        "CardName": "DailyArticle",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "ID": "iPqBZp_MB77-Lw3XSwYUEZwiHjrlLKoB0"
+                        },
+                        "CardName": "Guide",
+                        "Occurrence": "Latest"
+                    },
+                    {
+                        "CardData": {
+                            "Index": 7
+                        },
+                        "CardName": "DailyArticle",
+                        "Occurrence": "Latest"
+                    }
+                ]
+            ],
+            "SequenceNumberRange": {
+                "End": 700,
+                "Start": 1
+            }
+        }
+    ],
+    "FeedFile": "Today_PregnancyLoss",
+    "FeedID": "0233P",
+    "FormatVersion": "1"
+}

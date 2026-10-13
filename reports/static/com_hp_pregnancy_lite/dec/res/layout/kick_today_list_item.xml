@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/kick_today_list_item_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="1,2,3" android:layout_below="@id/unit" android:layoutDirection="ltr">
+        <TableRow android:background="@color/white_with_80transparency" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+            <com.hp.pregnancy.customviews.new_50.RobotoRegularTextView android:textColor="@color/light_gray_text_color" android:id="@id/kicks" android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="1" android:singleLine="true" android:layout_weight="0.4" android:paddingStart="15.0dp" android:layout_marginStart="16.0dp" />
+            <com.hp.pregnancy.customviews.new_50.RobotoRegularTextView android:textColor="@color/light_gray_text_color" android:gravity="left" android:id="@id/timedText" android:tag="binding_2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="2:00:00" android:singleLine="true" android:layout_weight="0.3" android:textDirection="ltr" android:paddingStart="6.0dp" />
+            <com.hp.pregnancy.customviews.new_50.RobotoRegularTextView android:textColor="@color/light_gray_text_color" android:gravity="right" android:id="@id/etimeText" android:tag="binding_3" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="1" android:singleLine="true" android:layout_weight="0.35" android:paddingEnd="15.0dp" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="@color/light_gray_color" android:paddingTop="0.5dp" android:paddingBottom="0.5dp" android:layout_width="match_parent" android:layout_height="2.0dp" />
+    </TableLayout>
+</RelativeLayout>
