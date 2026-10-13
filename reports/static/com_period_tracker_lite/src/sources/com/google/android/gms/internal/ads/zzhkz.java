@@ -24,12 +24,16 @@ final class zzhkz extends zzhlb {
         return zzhlc.zzb ? zzhlc.zzx(obj, j) : zzhlc.zzy(obj, j);
     }
 
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.ads.zzhlc.zzA(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.ads.zzhlc.zzz(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r4v0 boolean)' in method call: com.google.android.gms.internal.ads.zzhlc.zzA(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r4v0 boolean)' in method call: com.google.android.gms.internal.ads.zzhlc.zzz(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.ads.zzhlb
     public final void zzc(Object obj, long j, boolean z) {
         if (zzhlc.zzb) {
-            zzhlc.zzG(obj, j, z ? (byte) 1 : (byte) 0);
+            zzhlc.zzz(obj, j, z);
         } else {
-            zzhlc.zzH(obj, j, z ? (byte) 1 : (byte) 0);
+            zzhlc.zzA(obj, j, z);
         }
     }
 

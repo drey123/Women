@@ -2603,11 +2603,14 @@ public abstract class CodedInputStream {
                         } else {
                             i5 += (int) jSkip;
                         }
-                    } finally {
+                    } catch (Throwable th) {
                         this.totalBytesRetired += i5;
                         recomputeBufferSizeAfterLimit();
+                        throw th;
                     }
                 }
+                this.totalBytesRetired += i5;
+                recomputeBufferSizeAfterLimit();
             }
             if (i5 >= size) {
                 return;

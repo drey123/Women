@@ -429,7 +429,7 @@ public final class zzcbb extends Thread implements SurfaceTexture.OnFrameAvailab
         }
     }
 
-    public final SurfaceTexture zze() {
+    public final SurfaceTexture zze() throws InterruptedException {
         if (this.zzp == null) {
             return null;
         }

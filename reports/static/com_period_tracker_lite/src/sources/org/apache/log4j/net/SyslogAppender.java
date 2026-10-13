@@ -80,20 +80,24 @@ public class SyslogAppender extends AppenderSkeleton {
 
     @Override // org.apache.log4j.Appender
     public synchronized void close() {
-        this.closed = true;
-        if (this.sqw != null) {
-            try {
-                if (this.layoutHeaderChecked && this.layout != null && this.layout.getFooter() != null) {
-                    sendLayoutMessage(this.layout.getFooter());
+        try {
+            this.closed = true;
+            if (this.sqw != null) {
+                try {
+                    if (this.layoutHeaderChecked && this.layout != null && this.layout.getFooter() != null) {
+                        sendLayoutMessage(this.layout.getFooter());
+                    }
+                    this.sqw.close();
+                    this.sqw = null;
+                } catch (InterruptedIOException unused) {
+                    Thread.currentThread().interrupt();
+                    this.sqw = null;
+                } catch (IOException unused2) {
+                    this.sqw = null;
                 }
-                this.sqw.close();
-                this.sqw = null;
-            } catch (InterruptedIOException unused) {
-                Thread.currentThread().interrupt();
-                this.sqw = null;
-            } catch (IOException unused2) {
-                this.sqw = null;
             }
+        } catch (Throwable th) {
+            throw th;
         }
     }
 

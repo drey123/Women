@@ -249,7 +249,7 @@ public final class zzcbv extends zzcaj implements TextureView.SurfaceTextureList
     }
 
     @Override // android.view.TextureView.SurfaceTextureListener
-    public final void onSurfaceTextureAvailable(SurfaceTexture surfaceTexture, int i, int i2) {
+    public final void onSurfaceTextureAvailable(SurfaceTexture surfaceTexture, int i, int i2) throws InterruptedException {
         zzdsm zzdsmVar;
         if (this.zzo) {
             if (((Boolean) com.google.android.gms.ads.internal.client.zzbd.zzc().zzd(zzbci.zzoc)).booleanValue() && (zzdsmVar = this.zzf) != null) {
