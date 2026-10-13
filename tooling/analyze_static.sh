@@ -53,8 +53,9 @@ fi
 curl "${CURLARGS[@]}" "https://reports.exodus-privacy.eu.org/api/trackers" -o "$TRACKERS_JSON" || true
 SCAN_OK=0
 if [ -s "$TRACKERS_JSON" ]; then
-  DEC_DIR="$DEC" TRACKERS_JSON="$TRACKERS_JSON" python3 - <<'PYEOF' > "$OUT/exodus_scan.tsv"
-import json, os, subprocess, sys, tempfile
+  DEC_DIR="$DEC" APK_PATH="$APK" TRACKERS_JSON="$TRACKERS_JSON" python3 - <<'PYEOF' > "$OUT/exodus_scan.tsv"
+import json, os, re, subprocess, sys, tempfile, zipfile
+from pathlib import Path
 data = json.load(open(os.environ["TRACKERS_JSON"], encoding="utf-8"))
 trackers = data.get("trackers", data) if isinstance(data, dict) else {}
 if not isinstance(trackers, dict) or not trackers:
@@ -69,12 +70,43 @@ for tid, t in trackers.items():
         sigs[code] = name
 if not sigs:
     sys.exit(3)
+
+# ---- Surface 1: dex class list (exodus-core semantics; NF-17 fix) --------
+# Reconciliation run 38415446421 proved the tree-fixed surface both over-
+# reports (Braze/Snowplow dotted strings in Clue's manifest/resources with
+# ZERO classes in the dex) and under-reports (slashed smali descriptors are
+# invisible to dotted fixed strings). The dex-class-regex surface is the
+# honest primary; the tree-fixed surface is kept as a second column.
+dex_col = "n/a"
+try:
+    dexdump = sorted(Path(os.environ.get("ANDROID_HOME", "")).glob(
+        "build-tools/*/dexdump"))
+    dexdump = str(dexdump[-1]) if dexdump else "dexdump"
+    classes = set()
+    with zipfile.ZipFile(os.environ["APK_PATH"]) as zf:
+        for info in zf.infolist():
+            if re.fullmatch(r"classes\d*\.dex", info.filename):
+                zf.extract(info, "/tmp")
+                out = subprocess.check_output(
+                    [dexdump, f"/tmp/{info.filename}"])
+                classes |= set(re.findall(
+                    r"[A-Z]+((?:\w+\/)+\w+)", out.decode(errors="ignore")))
+    class_blob = "\n".join(classes)
+    dex_compiled = {code: re.compile(code) for code in sigs}
+    dex_hits = {code: bool(dex_compiled[code].search(class_blob))
+                for code in sigs}
+    dex_col = str(len(classes))
+except Exception as exc:  # dex surface failed -> keep tree-only, say so
+    dex_hits = {}
+    sys.stderr.write(f"dex surface unavailable: {exc!r}\n")
+
+# ---- Surface 2: fixed strings over the apktool tree (legacy column) ------
 scan_root = os.environ["DEC_DIR"]
 with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as pf:
     for code in sigs:
         pf.write(code + "\n")
     patterns = pf.name
-print("tracker\tmatch_files\tcode_signature")
+print("tracker\tmatch_files\tdex_class\tcode_signature")
 try:
     cand = subprocess.run(["grep", "-rlF", "-f", patterns, scan_root],
                           capture_output=True, text=True, timeout=900)
@@ -90,9 +122,12 @@ for fpath in files:
     for code in sigs:
         if code in text:
             counts[code] += 1
-for code in sorted(counts, key=lambda c: (-counts[c], sigs[c])):
-    if counts[code] > 0:
-        print(f"{sigs[code]}\t{counts[code]}\t{code}")
+for code in sorted(counts, key=lambda c: (-(counts[c] > 0),
+                                          -counts[c], sigs[c])):
+    if counts[code] > 0 or dex_hits.get(code):
+        dflag = ("Y" if dex_hits.get(code)
+                 else ("n" if dex_hits else "n/a"))
+        print(f"{sigs[code]}\t{counts[code]}\t{dflag}\t{code}")
 PYEOF
   if python3 - "$TRACKERS_JSON" <<'PYCHECK'
 import json, sys
@@ -105,14 +140,23 @@ PYCHECK
 fi
 if [ "$SCAN_OK" -eq 1 ] && [ -s "$OUT/exodus_scan.tsv" ]; then
   NSIGS=$(python3 -c "import json;d=json.load(open('$TRACKERS_JSON'));ts=d.get('trackers',d);print(sum(1 for t in ts.values() if isinstance(t,dict) and len((t.get('code_signature') or '').strip())>=8))")
-  echo "## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)" >> "$OUT/report.md"
-  echo "- Signatures checked: $NSIGS (source: reports.exodus-privacy.eu.org/api/trackers)" >> "$OUT/report.md"
-  echo "| Tracker | Matching files | Code signature |" >> "$OUT/report.md"
-  echo "|---|---|---|" >> "$OUT/report.md"
-  tail -n +2 "$OUT/exodus_scan.tsv" | while IFS=$'\t' read -r t n s; do echo "| $t | $n | \`$s\` |" >> "$OUT/report.md"; done
+  RDIGEST=$(python3 -c "
+import json,hashlib
+d=json.load(open('$TRACKERS_JSON'))
+ts=d.get('trackers',d)
+blob=json.dumps(sorted((t.get('code_signature') or '').strip() for t in ts.values() if isinstance(t,dict)),separators=(',',':')).encode()
+print('sha256 '+hashlib.sha256(blob).hexdigest()[:16])")
+  echo "## Tracker detection (Exodus-Privacy registry; dual surface per NF-17)" >> "$OUT/report.md"
+  echo "- Signatures checked: $NSIGS (registry digest $RDIGEST; source: reports.exodus-privacy.eu.org/api/trackers)" >> "$OUT/report.md"
+  echo "- Surfaces: \`dex_class\` = regex signature over the dexdump class list of every classes*.dex (exodus-core semantics, primary); \`Files (tree)\` = fixed-string hits over the apktool tree incl. manifest/resources (string-presence, NOT class-presence; reconciliation run 38415446421 showed the tree surface alone both over- and under-reports)." >> "$OUT/report.md"
+  echo "- Reading rule: \`dex_class=Y\` = tracker classes present (strong claim). \`dex_class=n\` with files>0 = string residue only (weak claim: removed/renamed SDK or manifest residue). R8-obfuscated SDKs can hide from both surfaces; unknown != absence." >> "$OUT/report.md"
+  echo "| Tracker | Files (tree) | dex_class | Code signature |" >> "$OUT/report.md"
+  echo "|---|---|---|---|" >> "$OUT/report.md"
+  tail -n +2 "$OUT/exodus_scan.tsv" | while IFS=$'\t' read -r t n d s; do echo "| $t | $n | $d | \`$s\` |" >> "$OUT/report.md"; done
   echo >> "$OUT/report.md"
   NTRACK=$(($(wc -l < "$OUT/exodus_scan.tsv") - 1))
-  echo "**Tracker classes embedded in code: $NTRACK**" >> "$OUT/report.md"
+  NDEX=$(tail -n +2 "$OUT/exodus_scan.tsv" | awk -F'\t' '$3=="Y"' | wc -l)
+  echo "**Families with tree evidence: $NTRACK; of which class-present in dex: $NDEX**" >> "$OUT/report.md"
   echo >> "$OUT/report.md"
 else
   echo "## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)" >> "$OUT/report.md"

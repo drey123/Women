@@ -1,0 +1,156 @@
+name: exodus-standalone
+
+# Independent second tracker-attribution source (no API token needed).
+# Official scanner as a docker step, per Exodus-Privacy's own README CI
+# pattern (docker://exodusprivacy/exodus-standalone:latest). Output goes to
+# clearly-attributed artifacts; nothing on reports/ is committed by this
+# workflow while it is being validated (note.md agreement with ChatGPT).
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/exodus-standalone.yml"
+      - "tooling/validate_standalone.py"
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/exodus-standalone.yml"
+      - "tooling/validate_standalone.py"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        include:
+          - pkg: com.clue.android
+            note: "target app; registry-grep says Braze + Snowplow (2 families)"
+          - pkg: com.tamtris.fertilityfriend
+            note: "clean subscription-only control; registry-grep says 0 families"
+          - pkg: org.iggymedia.periodtracker
+            note: "positive control; registry-grep says AppsFlyer + mParticle"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            tooling
+            reports/static
+          sparse-checkout-cone-mode: true
+
+      - name: Acquire APK
+        run: bash tooling/download_apk.sh "${{ matrix.pkg }}" /tmp/apk
+
+      - name: Scan (exodus-standalone official image)
+        env:
+          PKG: ${{ matrix.pkg }}
+        run: |
+          LABEL=$(echo "$PKG" | tr '.' '_')
+          mkdir -p reports/standalone
+          set +e
+          docker run --rm \
+            -v /tmp/apk:/apk:ro \
+            -v "$PWD/reports/standalone:/out" \
+            exodusprivacy/exodus-standalone:latest \
+            -j -o "/out/${LABEL}.json" "/apk/${PKG}.apk"
+          ec=$?
+          set -e
+          # The scanner exits with the number of trackers detected — that is
+          # a finding count, not an error code. Only a broken run (JSON
+          # missing) fails validation in the next step.
+          echo "standalone exit=${ec} (tracker count, not an error)"
+
+      - name: Validate evidence + compare with registry-grep
+        env:
+          PKG: ${{ matrix.pkg }}
+        run: |
+          LABEL=$(echo "$PKG" | tr '.' '_')
+          TSV="reports/static/${LABEL}/exodus_scan.tsv"
+          [ -f "$TSV" ] || TSV=""
+          python3 tooling/validate_standalone.py \
+            "reports/standalone/${LABEL}.json" "$PKG" $TSV
+
+      - name: Upload standalone evidence (clearly attributed)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: standalone-${{ matrix.pkg }}
+          path: reports/standalone/
+          if-no-files-found: warn
+          retention-days: 14
+
+  reconcile:
+    # NF-17 falsification run: the two engines disagreed on IDENTICAL APK
+    # bytes (Clue 3b3984a7…, Flo 8415480a…). This job holds the registry,
+    # the APK, and both matching surfaces in one place and prints the
+    # per-family evidence. Clue only — bounded scope, one app.
+    needs: [scan]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            tooling
+          sparse-checkout-cone-mode: true
+
+      - name: Install toolchain (apktool; dexdump via build-tools)
+        run: bash tooling/setup_tools.sh
+
+      - name: Acquire the same APK build (checksum-verified)
+        run: |
+          bash tooling/download_apk.sh "com.clue.android" /tmp/apk
+          FOUND=$(sha256sum /tmp/apk/com.clue.android.apk | cut -d' ' -f1)
+          echo "apk sha256: $FOUND"
+          if [ "$FOUND" != "3b3984a7562e19a1784c86e42e4bd470b4c472bbf1606fd23d9d4cd718e9b1c7" ]; then
+            echo "WARNING: mirror served a different build than runs 38400405690/38412987706; reconciliation still valid within itself."
+          fi
+
+      - name: Decompile (apktool tree = surface B/C)
+        run: |
+          mkdir -p /tmp/dec
+          apktool d -f -q /tmp/apk/com.clue.android.apk -o /tmp/dec 2>&1 | tail -2 || true
+
+      - name: Fetch registry (one fetch, digested)
+        run: |
+          curl -sL --max-time 120 \
+            -A "Women-Privacy-Audit/1.1" \
+            "https://reports.exodus-privacy.eu.org/api/trackers" \
+            -o /tmp/exodus_trackers.json
+          test -s /tmp/exodus_trackers.json
+
+      - name: Pull standalone result into scope
+        uses: actions/download-artifact@v4
+        with:
+          name: standalone-com.clue.android
+          path: /tmp/st_pull
+
+      - name: Triangulate both engines' matching surfaces
+        run: |
+          mkdir -p /tmp/stage
+          python3 tooling/reconcile_engines.py \
+            /tmp/apk/com.clue.android.apk /tmp/dec \
+            /tmp/exodus_trackers.json \
+            /tmp/st_pull/com_clue_android.json | tee /tmp/stage/reconciliation.md
+          cp /tmp/exodus_trackers.json /tmp/stage/registry_snapshot.json
+
+      - name: Upload reconciliation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reconciliation-com.clue.android
+          path: /tmp/stage/
+          if-no-files-found: warn
+          retention-days: 14
