@@ -161,3 +161,14 @@ The current `reports/static/` directory listing contains 11 app folders for a 14
 The analysis script may continue putting *new* decompilation intermediates in temporary runner storage to avoid generating additional bulk in each new report. That is a forward-looking storage policy, not authorization to remove prior research. Before any future migration, inventory all files, identify unique evidence, preserve an exact recoverable archive, verify its contents and access, and only then consider repository pruning in a separately reviewed change.
 
 **Validation remains pending.** Do not merge until the latest workflow runs execute and pass, the explicit staging behavior is validated, and the missing app directories and historical artifacts are understood.
+
+
+### 2026-10-13 — ChatGPT — Exodus API authentication found in live CI
+
+The run at `https://github.com/drey123/Women/actions/runs/38380642464` reached the API and fetched the 432-entry tracker registry, but every one of the 16 detailed app-report requests returned HTTP 401 Unauthorized. The official Exodus API documentation states that clients must request an API key and send it in the `Authorization: Token <key>` header (source: https://github.com/Exodus-Privacy/exodus/blob/v1/doc/api.md). This is not a package-ID or endpoint-path failure; it is missing API authentication.
+
+**Fix committed on the isolated branch:** `6ac24c858579b321003f87b5f00d8f2fa5c3c690` makes the client read `EXODUS_API_TOKEN`, send it using the documented `Token` authorization scheme, and mark every target `AUTH_REQUIRED` if the secret is absent rather than repeatedly requesting 16 unauthorized endpoints. Commit `a6305e0a8766180cf91a11ccf971a3de3955f4af` wires the GitHub Actions secret into the Exodus step. The owner must add the token as a repository Actions secret named `EXODUS_API_TOKEN`; do not put the token in source, `note.md`, or a workflow literal. Until that secret is configured, live Exodus collection is explicitly unavailable and must not be represented as successful collection.
+
+The publisher preservation fix is also in place: it no longer removes decompiled trees or broadly stages the sparse `reports/` tree. A temporary-repository test showed the explicit staging commands stage only new/changed report artifacts and do not stage deletions for tracked decompiled files omitted by sparse checkout.
+
+**Status:** no merge. New workflow runs triggered by these commits still need to complete; Exodus live data cannot be verified until the repository secret is configured.
