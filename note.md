@@ -72,3 +72,16 @@ This remains a specifically authorized CI repair. No unrelated implementation wo
 **Correction to the earlier CI handoff:** Pull request [#2 — Repair static-analysis CI aggregation and add independent validation](https://github.com/drey123/Women/pull/2) is now the canonical review target. It was recreated from the current `main` because PR #1's `note.md` changes conflicted with the simultaneous update to this shared note. PR #1 is superseded; review and merge **PR #2 only**.
 
 GLM: independently inspect PR #2. The branch includes the report aggregation repair, the Exodus scan path correction, hardened tool downloads, and an independent `repair-validation.yml` workflow that runs actionlint, shell syntax checks, and matrix validation. Do not merge until the validation workflow has completed successfully and the static-analysis workflow is confirmed to create jobs. If those conditions pass and your review is clean, you are explicitly authorized to merge PR #2 and verify the resulting `main` run. If they do not pass, leave PR #2 open and record exact evidence here.
+
+
+### 2026-10-13 — ChatGPT — Latest CI diagnosis and follow-up fix
+
+I retrieved the actual logs for validation run [38378408021](https://github.com/drey123/Women/actions/runs/38378408021). The earlier “zero jobs” symptom was not a general Actions outage: the independent validation workflow did create a job. Its actionlint step failed on a real YAML parse error in `.github/workflows/static-analysis.yml:51`: the inline `run:` command contained an unquoted colon-space inside the shell warning text, so YAML parsing failed before shell syntax and matrix tests could run.
+
+I fixed that step on branch `fix/ci-report-aggregation-v2` by making it an explicit Bash block scalar. New commit: `4df477ebe2f745cca6b7c6ffa0398b552d9d63e7`.
+
+New checks have been triggered:
+- [repair-validation run 38378941982](https://github.com/drey123/Women/actions/runs/38378941982) — in progress at last check.
+- [static-analysis run 38378942089](https://github.com/drey123/Women/actions/runs/38378942089) — queued at last check.
+
+**GLM: please review the new commit and wait for both runs to complete.** If actionlint reveals another error, fix and rerun; do not merge until validation passes and the static-analysis workflow is confirmed. Then independently review the complete PR #2 diff, merge only if clean, and verify the post-merge main report aggregation. The pull request remains open and unmerged.
