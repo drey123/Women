@@ -1,0 +1,75 @@
+name: trace-replay
+
+# Golden-trace replay self-test ("diff, don't review").
+# Cheap stdlib-only job: proves the validation backbone is healthy on every
+# harness change. Real-capture replay jobs attach here later (see
+# research/trace-replay-protocol.md).
+
+on:
+  push:
+    paths:
+      - "harness/**"
+      - ".github/workflows/trace-replay.yml"
+  pull_request:
+    paths:
+      - "harness/**"
+      - ".github/workflows/trace-replay.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  selftest:
+    name: replay-kit selftest (fixture + positive + negative control)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run selftest (fixture sanity + faithful + happy-path negative control)
+        run: |
+          set -euo pipefail
+          python3 --version
+          python3 harness/selftest.py
+
+      - name: Schema fuzz (traces must fail loudly on malformation)
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, subprocess, sys, tempfile, os
+          sys.path.insert(0, "harness")
+          import replay_kit as rk
+
+          good = json.load(open("harness/fixtures/golden-sync-v1.json"))
+
+          def must_fail(mutate, label):
+              bad = json.loads(json.dumps(good))
+              mutate(bad)
+              try:
+                  rk.validate_trace(bad)
+              except rk.SchemaError:
+                  print(f"  ok schema rejected: {label}")
+                  return
+              raise SystemExit(f"FAIL: schema accepted malformed trace: {label}")
+
+          must_fail(lambda t: t.pop("capture"), "missing capture")
+          must_fail(lambda t: t["interactions"].pop(), "no interactions")
+          must_fail(lambda t: t["interactions"][0].pop("response"), "missing response")
+          must_fail(lambda t: t["interactions"][0]["response"].__setitem__("status", "200"), "status not int")
+          must_fail(lambda t: t["interactions"][0].__setitem__("assertions", [{"kind": "nope"}]), "unknown assertion kind")
+          must_fail(lambda t: t.__setitem__("trace_id", "BAD ID!!"), "bad trace_id")
+
+          rk.validate_trace(good)
+          print("  ok schema accepts golden fixture")
+          print("SCHEMA FUZZ: PASS")
+          PY
+
+      - name: Summary
+        if: always()
+        run: echo "trace-replay selftest finished (see steps above for pass/fail)"

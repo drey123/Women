@@ -1,0 +1,549 @@
+{
+ "com_babycenter_pregnancytracker": {
+  "app": "com_babycenter_pregnancytracker",
+  "report_chars": 5898,
+  "host_count": 186,
+  "hosts_top": [
+   "94 https://assets.babycenter.com",
+   "82 https://www.babycenter.com",
+   "36 https://googleads.g.doubleclick.net",
+   "28 https://mobile-data.onetrust.io",
+   "23 https://www.google.com",
+   "22 https://community.babycenter.com",
+   "21 https://github.com",
+   "15 http://www.babycenter.com",
+   "13 https://www.googleapis.com",
+   "12 https://www.babycentre.co.uk",
+   "12 https://www.babycenter.de",
+   "12 https://www.babycenter.com.au",
+   "12 https://www.babycenter.ca",
+   "12 https://espanol.babycenter.com",
+   "12 https://email-us.babycenter.com",
+   "12 https://email-int.babycenter.com",
+   "12 https://brasil.babycenter.com",
+   "12 http://www.babycentre.co.uk",
+   "12 http://www.babycenter.de",
+   "12 http://www.babycenter.com.au",
+   "12 http://www.babycenter.ca",
+   "12 http://espanol.babycenter.com",
+   "12 http://email-us.babycenter.com",
+   "12 http://email-int.babycenter.com",
+   "12 http://brasil.babycenter.com"
+  ],
+  "host_families": {
+   "health_specific": 64,
+   "ads": 9,
+   "analytics": 4,
+   "cloud": 3,
+   "social": 1
+  },
+  "perm_count": 24,
+  "health_perms": [],
+  "danger_perms": [
+   "uses-permission: name='android.permission.READ_EXTERNAL_STORAGE'"
+  ],
+  "remote_config_chars": 0,
+  "remote_config_keys_sample": [],
+  "sha256_prefix": "3816927114ee",
+  "sdk_top": [
+   "com(11)"
+  ],
+  "exodus_scan_present": true,
+  "exodus_scan_head": [
+   "tracker\tmatch_files\tcode_signature"
+  ]
+ },
+ "com_clue_android": {
+  "app": "com_clue_android",
+  "report_chars": 1114,
+  "host_count": 0,
+  "hosts_top": [],
+  "host_families": {},
+  "perm_count": 1,
+  "health_perms": [],
+  "danger_perms": [],
+  "remote_config_chars": 0,
+  "remote_config_keys_sample": [],
+  "sha256_prefix": "d6c260a59b42",
+  "sdk_top": [
+   "com(4)"
+  ],
+  "exodus_scan_present": true,
+  "exodus_scan_head": [
+   "tracker\tmatch_files\tcode_signature"
+  ]
+ },
+ "com_glow_android_eve": {
+  "app": "com_glow_android_eve",
+  "report_chars": 7028,
+  "host_count": 117,
+  "hosts_top": [
+   "210 https://www.googleapis.com",
+   "75 https://asset-cf-cdn.glowing.com",
+   "61 https://glowing.com",
+   "24 https://googleads.g.doubleclick.net",
+   "16 https://www.womenshealth.gov",
+   "13 https://www.google.com",
+   "13 https://play.google.com",
+   "12 https://www.nhs.uk",
+   "12 https://account.glowing.com",
+   "10 https://nurture.glowing.com",
+   "10 https://firebase.google.com",
+   "9 https://goo.gle",
+   "8 https://issuetracker.google.com",
+   "7 https://www.recaptcha.net",
+   "7 https://developers.facebook.com",
+   "7 http://dashif.org",
+   "6 https://pic.glowing.com",
+   "6 https://glow.glowing.com",
+   "6 https://forum.glowing.com",
+   "5 https://pagead2.googlesyndication.com",
+   "5 https://imasdk.googleapis.com",
+   "5 https://developers.google.com",
+   "5 https://developer.android.com",
+   "5 http://ns.adobe.com",
+   "5 http://glowing.com"
+  ],
+  "host_families": {
+   "health_specific": 13,
+   "ads": 4,
+   "social": 6,
+   "analytics": 3,
+   "cloud": 1,
+   "attribution": 1
+  },
+  "perm_count": 50,
+  "health_perms": [],
+  "danger_perms": [
+   "uses-permission: name='android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='32'",
+   "uses-permission: name='android.permission.CAMERA'",
+   "uses-permission: name='android.permission.RECORD_AUDIO'",
+   "uses-permission: name='android.permission.ACCESS_FINE_LOCATION' maxSdkVersion='30'",
+   "uses-permission: name='android.permission.ACCESS_COARSE_LOCATION' maxSdkVersion='30'"
+  ],
+  "remote_config_chars": 96,
+  "remote_config_keys_sample": [],
+  "sha256_prefix": "d3be475550ef",
+  "sdk_top": [
+   "com(14)"
+  ],
+  "exodus_scan_present": true,
+  "exodus_scan_head": [
+   "tracker\tmatch_files\tcode_signature"
+  ]
+ },
+ "com_hp_pregnancy_lite": {
+  "app": "com_hp_pregnancy_lite",
+  "report_chars": 6986,
+  "host_count": 168,
+  "hosts_top": [
+   "12 http://www.slf4j.org",
+   "10 https://info.philips-digital.com",
+   "10 https://googleads.g.doubleclick.net",
+   "9 https://github.com",
+   "8 https://help.branch.io",
+   "8 https://firebase.google.com",
+   "7 https://googlemobileadssdk.page.link",
+   "6 https://play.google.com",
+   "5 https://www.google.com",
+   "5 http://dashif.org",
+   "4 https://developers.facebook.com",
+   "4 https://developer.android.com",
+   "4 https://app-measurement.com",
+   "4 http://ns.adobe.com",
+   "3 https://www.health-and-parenting.com",
+   "3 https://www.centralamerica.philips.com",
+   "3 https://stg.accounts.philips.com",
+   "3 https://pregnancy.app.link",
+   "3 https://issuetracker.google.com",
+   "3 https://graph.%s",
+   "3 https://google.com",
+   "3 https://baby.app.link",
+   "3 https://accounts.google.com",
+   "3 http://acs.amazonaws.com",
+   "2 https://x"
+  ],
+  "host_families": {
+   "ads": 4,
+   "attribution": 4,
+   "social": 5,
+   "analytics": 3,
+   "cloud": 2,
+   "push": 1
+  },
+  "perm_count": 49,
+  "health_perms": [],
+  "danger_perms": [
+   "uses-permission: name='android.permission.CAMERA'",
+   "uses-permission: name='android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='32'"
+  ],
+  "remote_config_chars": 0,
+  "remote_config_keys_sample": [],
+  "sha256_prefix": "64187b6a8dfe",
+  "sdk_top": [
+   "com(27)"
+  ],
+  "exodus_scan_present": true,
+  "exodus_scan_head": [
+   "tracker\tmatch_files\tcode_signature"
+  ]
+ },
+ "com_naturalcycles_cordova": {
+  "app": "com_naturalcycles_cordova",
+  "report_chars": 4953,
+  "host_count": 80,
+  "hosts_top": [
+   "13 https://www.googleapis.com",
+   "13 https://stripe.com",
+   "7 https://link.com",
+   "7 https://b.stripecdn.com",
+   "6 https://docs.stripe.com",
+   "4 https://www.paypal.com",
+   "4 https://js.hcaptcha.com",
+   "4 https://issuetracker.google.com",
+   "4 https://hooks.stripe.com",
+   "4 https://developer.paypal.com",
+   "3 https://youtrack.jetbrains.com",
+   "3 https://github.com",
+   "3 https://firebase.google.com",
+   "3 https://developer.android.com",
+   "3 https://c.sandbox.paypal.com",
+   "3 https://c.paypal.com",
+   "3 http://10.0.2.2:3000",
+   "2 https://www.paypalobjects.com",
+   "2 https://r.android.com",
+   "2 https://ppm.stripe.com",
+   "2 https://google.github.io",
+   "2 https://goo.gle",
+   "2 https://errors.stripe.com",
+   "2 https://docs.sentry.io",
+   "2 https://cmsdk.cardinalcommerce.com"
+  ],
+  "host_families": {
+   "analytics": 3,
+   "social": 2,
+   "attribution": 8
+  },
+  "perm_count": 23,
+  "health_perms": [],
+  "danger_perms": [
+   "uses-permission: name='android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='32'",
+   "uses-permission: name='android.permission.ACCESS_COARSE_LOCATION' maxSdkVersion='30'",
+   "uses-permission: name='android.permission.ACCESS_FINE_LOCATION' maxSdkVersion='30'",
+   "uses-permission: name='android.permission.CAMERA'"
+  ],
+  "remote_config_chars": 0,
+  "remote_config_keys_sample": [],
+  "sha256_prefix": "93bd7fde9998",
+  "sdk_top": [
+   "com(8)"
+  ],
+  "exodus_scan_present": true,
+  "exodus_scan_head": [
+   "tracker\tmatch_files\tcode_signature"
+  ]
+ },
+ "com_ovuline_fertility": {
+  "app": "com_ovuline_fertility",
+  "report_chars": 1143,
+  "host_count": 0,
+  "hosts_top": [],
+  "host_families": {},
+  "perm_count": 1,
+  "health_perms": [],
+  "danger_perms": [],
+  "remote_config_chars": 0,
+  "remote_config_keys_sample": [],
+  "sha256_prefix": "7963af82e0f8",
+  "sdk_top": [
+   "com(4)"
+  ],
+  "exodus_scan_present": true,
+  "exodus_scan_head": [
+   "tracker\tmatch_files\tcode_signature"
+  ]
+ },
+ "com_period_tracker_lite": {
+  "app": "com_period_tracker_lite",
+  "report_chars": 4470,
+  "host_count": 67,
+  "hosts_top": [
+   "25 http://unbouncepages.com",
+   "22 http://www.slf4j.org",
+   "18 https://googleads.g.doubleclick.net",
+   "14 https://ptsocial.herokuapp.com",
+   "13 https://www.googleapis.com",
+   "13 http://xml.org",
+   "10 https://www.google.com",
+   "10 http://java.sun.com",
+   "7 https://goo.gle",
+   "6 https://app-measurement.com",
+   "5 https://pagead2.googlesyndication.com",
+   "5 https://gpapps.com",
+   "5 https://firebase.google.com",
+   "5 https://api.fitbit.com",
+   "4 https://s3.amazonaws.com",
+   "4 https://issuetracker.google.com",
+   "4 https://developers.google.com",
+   "3 https://developer.android.com",
+   "3 http://www.amazon.com",
+   "3 http://acs.amazonaws.com",
+   "2 https://youtrack.jetbrains.com",
+   "2 https://ptsocial-test.herokuapp.com",
+   "2 https://play.google.com",
+   "2 https://imasdk.googleapis.com",
+   "2 https://goo.gl"
+  ],
+  "host_families": {
+   "ads": 4,
+   "cloud": 9,
+   "analytics": 2
+  },
+  "perm_count": 19,
+  "health_perms": [],
+  "danger_perms": [
+   "uses-permission: name='android.permission.READ_EXTERNAL_STORAGE'"
+  ],
+  "remote_config_chars": 0,
+  "remote_config_keys_sample": [],
+  "sha256_prefix": "375e6e2284a0",
+  "sdk_top": [
+   "com(10)"
+  ],
+  "exodus_scan_present": true,
+  "exodus_scan_head": [
+   "tracker\tmatch_files\tcode_signature"
+  ]
+ },
+ "com_stardust_app": {
+  "app": "com_stardust_app",
+  "report_chars": 5567,
+  "host_count": 75,
+  "hosts_top": [
+   "17 https://www.slf4j.org",
+   "15 https://rev.cat",
+   "13 https://www.googleapis.com",
+   "13 https://firebase.google.com",
+   "9 https://stardust.app",
+   "9 https://stardust-app.onelink.me",
+   "5 https://play.google.com",
+   "5 https://errors.rev.cat",
+   "4 https://rownd-hub.supertokens.com",
+   "4 https://issuetracker.google.com",
+   "4 https://api.rownd.io",
+   "3 https://stardustazzort.dataplane.rudderstack.com",
+   "3 https://st-auth.stardust.app",
+   "3 https://google.com",
+   "3 https://github.com",
+   "3 https://app-measurement.com",
+   "3 https://api.stardust.app",
+   "3 https://api.rudderlabs.com",
+   "3 http://www.slf4j.org",
+   "2 https://goo.gle",
+   "2 https://goo.gl",
+   "2 https://firebase-settings.crashlytics.com",
+   "2 https://developer.android.com",
+   "2 https://api.revenuecat.com",
+   "2 https://%sviap.%s"
+  ],
+  "host_families": {
+   "analytics": 4,
+   "social": 1,
+   "ads": 1,
+   "attribution": 1,
+   "push": 1
+  },
+  "perm_count": 44,
+  "health_perms": [
+   "uses-permission: name='android.permission.health.READ_MENSTRUATION'",
+   "uses-permission: name='android.permission.health.READ_SLEEP'",
+   "uses-permission: name='android.permission.health.READ_BASAL_BODY_TEMPERATURE'"
+  ],
+  "danger_perms": [
+   "uses-permission: name='android.permission.CAMERA'",
+   "uses-permission: name='android.permission.READ_EXTERNAL_STORAGE'"
+  ],
+  "remote_config_chars": 0,
+  "remote_config_keys_sample": [],
+  "sha256_prefix": "b85380d4bba8",
+  "sdk_top": [
+   "com(25)"
+  ],
+  "exodus_scan_present": true,
+  "exodus_scan_head": [
+   "tracker\tmatch_files\tcode_signature"
+  ]
+ },
+ "com_tamtris_fertilityfriend": {
+  "app": "com_tamtris_fertilityfriend",
+  "report_chars": 2110,
+  "host_count": 14,
+  "hosts_top": [
+   "13 https://www.googleapis.com",
+   "4 https://issuetracker.google.com",
+   "3 http://play.google.com",
+   "2 https://youtrack.jetbrains.com",
+   "2 https://www.fertilityfriend.com",
+   "2 https://developer.android.com",
+   "2 https://capacitorjs.com",
+   "2 https://*",
+   "2 http://*",
+   "1 https://support.google.com",
+   "1 https://ssl.gstatic.com",
+   "1 https://cloud.google.com",
+   "1 https://accounts.google.com",
+   "1 http://ns.adobe.com"
+  ],
+  "host_families": {},
+  "perm_count": 15,
+  "health_perms": [],
+  "danger_perms": [
+   "uses-permission: name='android.permission.CAMERA'"
+  ],
+  "remote_config_chars": 0,
+  "remote_config_keys_sample": [],
+  "sha256_prefix": "dde3256e30b7",
+  "sdk_top": [
+   "com(6)"
+  ],
+  "exodus_scan_present": true,
+  "exodus_scan_head": [
+   "tracker\tmatch_files\tcode_signature"
+  ]
+ },
+ "in_plackal_lovecyclesfree": {
+  "app": "in_plackal_lovecyclesfree",
+  "report_chars": 4104,
+  "host_count": 56,
+  "hosts_top": [
+   "18 https://googleads.g.doubleclick.net",
+   "17 https://api.maya.live",
+   "16 http://schema.org",
+   "13 https://www.googleapis.com",
+   "10 https://firebase.google.com",
+   "9 https://www.google.com",
+   "9 https://github.com",
+   "9 http://goo.gl",
+   "7 https://goo.gle",
+   "7 https://developers.facebook.com",
+   "5 https://www.maya.live",
+   "5 https://pagead2.googlesyndication.com",
+   "4 https://developers.google.com",
+   "4 https://developer.android.com",
+   "4 https://app.maya.live",
+   "4 http://localhost",
+   "3 https://issuetracker.google.com",
+   "3 https://graph.%s",
+   "3 https://goo.gl",
+   "3 https://app-measurement.com",
+   "3 http://ns.adobe.com",
+   "3 http://acs.amazonaws.com",
+   "2 https://ssl.google-analytics.com",
+   "2 https://imasdk.googleapis.com",
+   "2 https://googleads.g.doubleclick.net,https:"
+  ],
+  "host_families": {
+   "ads": 4,
+   "social": 4,
+   "analytics": 5,
+   "cloud": 3
+  },
+  "perm_count": 27,
+  "health_perms": [],
+  "danger_perms": [
+   "uses-permission: name='android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='28'",
+   "uses-permission: name='android.permission.CAMERA'",
+   "uses-permission: name='android.permission.ACCESS_COARSE_LOCATION'",
+   "uses-permission: name='android.permission.ACCESS_FINE_LOCATION'"
+  ],
+  "remote_config_chars": 0,
+  "remote_config_keys_sample": [],
+  "sha256_prefix": "2288d273bf0e",
+  "sdk_top": [
+   "com(4)"
+  ],
+  "exodus_scan_present": true,
+  "exodus_scan_head": [
+   "tracker\tmatch_files\tcode_signature"
+  ]
+ },
+ "org_iggymedia_periodtracker": {
+  "app": "org_iggymedia_periodtracker",
+  "report_chars": 6031,
+  "host_count": 73,
+  "hosts_top": [
+   "208 https://www.googleapis.com",
+   "9 https://github.com",
+   "8 https://flo.health)",
+   "7 https://issuetracker.google.com",
+   "7 https://flo.health",
+   "7 https://firebase.google.com",
+   "7 https://developer.android.com",
+   "6 https://play.google.com",
+   "6 https://app-measurement.com",
+   "5 https://auth.flo.health",
+   "5 https://api.owhealth.com",
+   "5 http://dashif.org",
+   "4 https://content.owhealth.com",
+   "3 https://%s",
+   "3 http://ns.adobe.com",
+   "2 https://youtrack.jetbrains.com",
+   "2 https://x",
+   "2 https://health-pages.owhealth.com",
+   "2 https://goo.gle",
+   "2 https://goo.gl",
+   "2 https://flo-ddl.onelink.me",
+   "2 https://docs.sentry.io",
+   "2 https://app.flo.health",
+   "2 https://analytics.us.tiktok.com",
+   "2 https://%sviap.%s"
+  ],
+  "host_families": {
+   "health_specific": 7,
+   "analytics": 2,
+   "social": 1,
+   "ads": 1,
+   "attribution": 1
+  },
+  "perm_count": 56,
+  "health_perms": [
+   "uses-permission: name='android.permission.health.READ_HEALTH_DATA_IN_BACKGROUND'",
+   "uses-permission: name='android.permission.health.READ_ACTIVE_CALORIES_BURNED'",
+   "uses-permission: name='android.permission.health.READ_BASAL_BODY_TEMPERATURE'",
+   "uses-permission: name='android.permission.health.READ_BODY_TEMPERATURE'",
+   "uses-permission: name='android.permission.health.READ_CERVICAL_MUCUS'",
+   "uses-permission: name='android.permission.health.READ_DISTANCE'",
+   "uses-permission: name='android.permission.health.READ_EXERCISE'",
+   "uses-permission: name='android.permission.health.READ_HEART_RATE'",
+   "uses-permission: name='android.permission.health.READ_HEART_RATE_VARIABILITY'",
+   "uses-permission: name='android.permission.health.READ_HEIGHT'",
+   "uses-permission: name='android.permission.health.READ_INTERMENSTRUAL_BLEEDING'",
+   "uses-permission: name='android.permission.health.READ_MENSTRUATION'",
+   "uses-permission: name='android.permission.health.READ_OVULATION_TEST'",
+   "uses-permission: name='android.permission.health.READ_RESTING_HEART_RATE'",
+   "uses-permission: name='android.permission.health.READ_SEXUAL_ACTIVITY'",
+   "uses-permission: name='android.permission.health.READ_SLEEP'",
+   "uses-permission: name='android.permission.health.READ_STEPS'",
+   "uses-permission: name='android.permission.health.READ_TOTAL_CALORIES_BURNED'",
+   "uses-permission: name='android.permission.health.READ_WEIGHT'",
+   "uses-permission: name='android.permission.health.WRITE_BASAL_BODY_TEMPERATURE'",
+   "uses-permission: name='android.permission.health.WRITE_CERVICAL_MUCUS'",
+   "uses-permission: name='android.permission.health.WRITE_OVULATION_TEST'",
+   "uses-permission: name='android.permission.health.WRITE_SEXUAL_ACTIVITY'",
+   "uses-permission: name='android.permission.health.WRITE_SLEEP'",
+   "uses-permission: name='android.permission.health.WRITE_WEIGHT'"
+  ],
+  "danger_perms": [],
+  "remote_config_chars": 0,
+  "remote_config_keys_sample": [],
+  "sha256_prefix": "8415480aeea1",
+  "sdk_top": [
+   "com(8)",
+   "org(6)"
+  ],
+  "exodus_scan_present": true,
+  "exodus_scan_head": [
+   "tracker\tmatch_files\tcode_signature"
+  ]
+ }
+}

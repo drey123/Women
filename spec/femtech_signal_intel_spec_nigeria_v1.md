@@ -1,5 +1,5 @@
 # FemTech Signal Intelligence & Dataset Architecture Brief — Nigerian Market
-## Research & Specification Document v1.1.0 (evidence update: run 38384771314 artifacts — Clue/Ovia/Glow/Premom real decompiles integrated; tracker-scan readings voided pending signature-registry fix; Period Calendar honestly NOT ANALYSED)
+## Research & Specification Document v1.2.0 (evidence update: run 38396120033 post-merge — registry-grep scan fix live, Flo positive control PASSED, new tracker rows for Clue/Ovia/Glow/Premom/Flo; trace-replay validation protocol adopted; Exodus live columns permanently AUTH_REQUIRED per owner)
 
 **Prepared:** 2026-10-13 · **Workspace:** `drey123/women` (private repo, CI-executed evidence pipeline) · **Methodology base:** OWASP MASTG, Exodus Privacy static SDK detection, HAR-based traffic analysis (TrackHAR/tweasel), public regulatory record
 
@@ -984,6 +984,57 @@ Things the brief expected that the executed evidence did not support (as of docu
 6. **Health Connect as the new collection front** (NF-13): Flo's 17-permission reproductive read-graph, including background reads, makes the OS health broker a bulk-ingestion surface — the architecture answer (§5.A.5) is that Nkwo requests zero `health.*` reads it does not expose locally.
 7. **Regulator-arbitrage geography**: the same SDK stack that drew FTC action in the US operates with no equivalent scrutiny in Nigerian jurisdiction — no Nigerian enforcement action against a femtech data flow has been published as of this writing (`INFERRED`, falsifiable by NDPC enforcement-registry review). The enforcement vacuum is itself the market entry wedge for a privacy-first product.
 8. **Exodus API drift** (§6.2.5 sibling): a public-research API changing shape silently breaks longitudinal transparency pipelines; governance recommendation: archive artifacts (this repo does) rather than cite live endpoints.
+
+
+## 6.4 Evidence update v1.2 (run 38396120033, post-merge of PR #2, 2026-10-13)
+
+**Context.** The repository became public (Actions quota unblocked); PR #2's
+functional run executed fully on commit `1a0175bd`. The registry-grep tracker
+scan fix (commits `1fe9acbb`/`53e1fe95`) is now live. Every reading below is
+`STATIC(code-signature)` evidence from `exodus_scan.tsv` artifacts (registry:
+432 signatures; match surface: jadx/apktool trees; independent second engine
+pending as the standalone job).
+
+**Positive control — PASSED.** Flo (`org.iggymedia.periodtracker`) now reads
+**nonzero**: AppsFlyer (12 files, `com.appsflyer.`) + **mParticle (1,
+`com.mparticle`)**. mParticle on Flo is **new** relative to the v1.0
+package-path analysis (NF-14 candidate: Flo embeds a second CDP alongside
+AppsFlyer; reconciliation against the 473-file AppsFlyer count pending the
+full-tree rescan).
+
+**New tracker rows (replacing voided stub readings):**
+
+| app | trackers detected (files) | note |
+|-----|---------------------------|------|
+| Clue (`com.clue.android`) | Braze 18, Snowplow 17 | engagement-messaging + behavioral event pipeline; real 42,021,951-byte APK, sha256 `3b3984a7…8e9b1c7` |
+| Ovia (`com.ovuline.fertility`) | Apptentive 13, AppsFlyer 11, HelpShift 6, UrbanAirship 2, Amazon Analytics 1, mParticle 1 | Labcorp-owned; feedback + attribution + push stack |
+| Glow (`com.glow.android`) | AppsFlyer 12, Amazon Ads 5, Facebook Login 5, Facebook Share 5, AppLovin 1, Smaato 1, Bolts 1, Facebook Places 1, mParticle 1 | heaviest ad-SDK spread observed in matrix |
+| Premom (`premom.eh.com.ehpremomapp`) | Braze 18, Facebook Login 5, Singular 2, Bolts 1, Facebook Places 1, Facebook Share 1 | FTC-consent-order app (Easy Healthcare); **Singular attribution + Braze** = post-order engagement/attribution stack — strengthens the consent-order-migration hypothesis (NF-05) |
+| Flo | AppsFlyer 12, mParticle 1 | positive control row |
+| Period Calendar (`com.popularapp.periodcalendar`) | — | honest `NOT ANALYSED` (APK acquisition failure; machinery verified end-to-end) |
+
+**Clue permission surface (aapt2):** 9× `android.permission.health.READ_*`
+incl. `READ_HEALTH_DATA_IN_BACKGROUND` (also held by Flo) — a background
+Health Connect read right; flagged for the harm-tier map (H2) and the
+never-collect list.
+
+**Exodus live columns: permanently `AUTH_REQUIRED`.** The owner confirmed an
+API key is unobtainable for this project. The live-report job stays as an
+honest failure until retired in the standalone follow-up PR
+(`docker://exodusprivacy/exodus-standalone:latest`, officially documented CI
+pattern, no token). Verified no-key sourcing matrix:
+`research/tracker-intel-beyond-exodus.md` (TrackHAR/ClassyShark3xodus/APKiD/
+ETIP/Pithus/PrivacyGrade + independence analysis).
+
+**Validation law adopted (owner directive):** the project's reimplementation
+work is now bound by the trace-replay protocol
+(`research/trace-replay-protocol.md`; harness: `harness/`, CI:
+`.github/workflows/trace-replay.yml`, negative control = happy-path rebuild
+must be caught by the diff). Evidence labels for protocol behaviors now
+derive from the coverage ledger, not from review.
+
+**Product phase opened:** `blueprint/product-blueprint.md` (mining matrix,
+Nkwo web product plan, warm-luxury design tokens, Trust Receipts differentiator).
 
 ## 7. References (public record anchors used; all fetched/verified 2026-10-13 unless noted)
 

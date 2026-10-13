@@ -1,0 +1,108 @@
+{
+ "trace_id": "golden-sync-v1",
+ "protocol": "demo-sync/v1",
+ "capture": {
+   "source": "reference-capture (stands in for mitmproxy session off the original app; see research/trace-replay-protocol.md)",
+   "tool": "mitmproxy -> HAR -> normalize (capture adapter pending)",
+   "captured_at": "2026-10-13T00:00:00Z",
+   "session_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+ },
+ "interactions": [
+  {
+   "id": "logs-create-happy",
+   "behavior": "logs.create",
+   "request": {
+     "method": "POST",
+     "path": "/v1/logs",
+     "headers": {"Content-Type": "application/json", "X-Client": "demo/1", "Idempotency-Token": "tok-001", "X-Nonce": "2038-01-19T03:14:07Z"},
+     "body": {"kind": "cycle_day", "cycle_day": 14, "flow": "medium", "ts": "2038-01-19T03:14:07Z"},
+     "content_type": "application/json"
+   },
+   "response": {
+     "status": 201,
+     "headers": {"Content-Type": "application/json", "Location": "/v1/logs/L-7f3a"},
+     "body": {"log_id": "L-7f3a", "dedup": false, "server_time": "2038-01-19T03:14:08Z"},
+     "content_type": "application/json"
+   },
+   "assertions": [{"kind": "exact"}]
+  },
+  {
+   "id": "logs-create-idempotent-replay",
+   "behavior": "logs.idempotent-replay",
+   "request": {
+     "method": "POST",
+     "path": "/v1/logs",
+     "headers": {"Content-Type": "application/json", "X-Client": "demo/1", "Idempotency-Token": "tok-001", "X-Nonce": "2038-01-19T03:14:09Z"},
+     "body": {"kind": "cycle_day", "cycle_day": 14, "flow": "medium", "ts": "2038-01-19T03:14:07Z"},
+     "content_type": "application/json"
+   },
+   "response": {
+     "status": 201,
+     "headers": {"Content-Type": "application/json", "Location": "/v1/logs/L-7f3a"},
+     "body": {"log_id": "L-7f3a", "dedup": true, "server_time": "2038-01-19T03:14:10Z"},
+     "content_type": "application/json"
+   },
+   "assertions": [{"kind": "exact"}]
+  },
+  {
+   "id": "auth-nonce-window-reject",
+   "behavior": "auth.nonce-window-reject",
+   "request": {
+     "method": "POST",
+     "path": "/v1/logs",
+     "headers": {"Content-Type": "application/json", "X-Client": "demo/1", "Idempotency-Token": "tok-002", "X-Nonce": "2000-01-01T00:00:00Z"},
+     "body": {"kind": "symptom", "tag": "cramps", "severity": 2, "ts": "2038-01-19T04:00:00Z"},
+     "content_type": "application/json"
+   },
+   "response": {
+     "status": 401,
+     "headers": {"Content-Type": "application/json", "WWW-Authenticate": "Sync realm=\"logs\", nonce_ttl=\"30\""},
+     "body": {"code": "E_NONCE_WINDOW", "retryable": false},
+     "content_type": "application/json"
+   },
+   "assertions": [
+     {"kind": "quirk_error_code"},
+     {"kind": "quirk_header", "param": "WWW-Authenticate=Sync realm=\"logs\", nonce_ttl=\"30\""}
+   ]
+  },
+  {
+   "id": "ratelimit-retry-after",
+   "behavior": "ratelimit.retry-after",
+   "request": {
+     "method": "GET",
+     "path": "/v1/ping",
+     "headers": {"X-Client": "demo/1", "X-Burst": "4"},
+     "body": null,
+     "content_type": null
+   },
+   "response": {
+     "status": 429,
+     "headers": {"Content-Type": "application/json", "Retry-After": "2"},
+     "body": {"code": "E_RATE", "retryable": true},
+     "content_type": "application/json"
+   },
+   "assertions": [
+     {"kind": "quirk_error_code"},
+     {"kind": "quirk_header", "param": "Retry-After=2"}
+   ]
+  },
+  {
+   "id": "logs-malformed-body",
+   "behavior": "logs.malformed-body",
+   "request": {
+     "method": "POST",
+     "path": "/v1/logs",
+     "headers": {"Content-Type": "application/json", "X-Client": "demo/1", "Idempotency-Token": "tok-003", "X-Nonce": "2038-01-19T05:00:00Z"},
+     "body": "{\"kind\": \"cycle_day\", \"cycle_day\": ",
+     "content_type": "application/json"
+   },
+   "response": {
+     "status": 400,
+     "headers": {"Content-Type": "application/json"},
+     "body": {"code": "E_MALFORMED", "retryable": false},
+     "content_type": "application/json"
+   },
+   "assertions": [{"kind": "quirk_error_code"}]
+  }
+ ]
+}

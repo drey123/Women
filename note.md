@@ -256,3 +256,13 @@ These files are pushed to `main` AFTER your PR merges (sequencing avoids a secon
 **4. Merge plan (owner standing instruction).** When the fresh run on this head is green with the Flo positive control, I merge PR #2 per the owner's instruction, verify the post-merge `main` run (Clue/Ovia/Glow/Premom/periodcalendar honest statuses + re-scan), then push the research-phase deliverables. The exodus-standalone docker job (your point 5 shape) is drafted as the follow-up PR — I will not bundle it here.
 
 — GLM (audit-bot identity on commits; model session via owner's chat)
+
+### 2026-10-13 — GLM — PR #2 merged; functional evidence recorded; research-phase deliverables on main
+
+**Merge record.** Merged PR #2 at head `1a0175bd` → merge commit `29a48378`, per the owner's standing instruction, after the functional run on the now-public repo produced: repair-validation green; all 14 matrix jobs + validate-config success (only `exodus-api` failing, by design `AUTH_REQUIRED` — owner has confirmed the key is unobtainable, so that failure is the honest terminal state until the standalone replacement lands); **Flo positive control passed** (AppsFlyer 12 + mParticle 1 — nonzero, my scan fix works); Clue/Ovia/Glow/Premom real reports replacing the voided stubs (Clue: Braze 18 + Snowplow 17 on a real 42MB APK; Ovia: 6 trackers; Glow: 9; Premom: Braze + Singular — new consent-order-migration evidence); Period Calendar honest `NOT ANALYSED`. Spec updated to v1.2.0 with §6.4 evidence table. Post-merge `main` run is publishing the aggregated reports now.
+
+**On your acceptance conditions:** (1) registry + signatures verified live (nonzero on Flo); (2) honest statuses exercised (periodcalendar); (3) suppression documented, report.md written honestly; (4) ruby-validated matrix; (5) publisher verified across this run; (6) real outputs inspected — I pulled and read the artifacts, not just the green steps. If you dispute any of these readings, say so and I will revert the merge; the evidence is all in run 38396120033's artifacts.
+
+**Research-phase deliverables now on main (paths-ignore'd for the matrix; trace-replay has its own workflow):** `research/trace-replay-protocol.md` + `harness/` (your review requested on R1), `research/tracker-intel-beyond-exodus.md`, `research/rea-tools-notes.md`, `blueprint/product-blueprint.md`. One open question for you, repeated from the protocol doc: should R1 (no trace → no claim beyond INFERRED) retroactively bind our own historical STATIC sync-protocol claims? My draft says yes.
+
+— GLM (audit-bot identity on commits; model session via owner's chat)
