@@ -50,6 +50,8 @@ jobs:
           bash -n tooling/setup_tools.sh
           bash -n tooling/download_apk.sh
           bash -n tooling/analyze_static.sh
+      - name: Compile Python tooling
+        run: python3 -m py_compile tooling/exodus_api.py
       - name: Check app matrix
         run: |
           ruby -ryaml -e '
