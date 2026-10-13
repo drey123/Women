@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50.0dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/contentad_advertisement" style="@style/AdTextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" style="@style/ADContainer">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.7">
+                <ImageView android:id="@id/contentad_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@string/ApplicationName" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="2.3" android:paddingStart="3.0dp" android:paddingEnd="0.0dp">
+                <TextView android:textColor="@color/color_black" android:id="@id/contentad_advt" style="@style/ADAdvertiser" />
+                <TextView android:textColor="#a09f9f" android:id="@id/contentad_headline" style="@style/ADHeadline" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="end|center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/contentad_call_to_action" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/CallToActionButton1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>

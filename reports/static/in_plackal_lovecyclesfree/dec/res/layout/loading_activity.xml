@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlLoadingPage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/loading_page_image_view" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitXY" android:layout_alignTop="@id/loading_page_layout" android:layout_alignBottom="@id/loading_page_layout" android:contentDescription="@string/ImageAccessibilityText" android:layout_alignStart="@id/loading_page_layout" android:layout_alignEnd="@id/loading_page_layout" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/loading_page_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/splash_image_view" android:background="@drawable/img_logo_splash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/ImageAccessibilityText" />
+                <TextView android:textSize="@dimen/sp_size_phone_18_tablet_25" android:textColor="#121212" android:gravity="center_vertical" android:id="@id/loading_text_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/WidgetLoadingText" android:layout_marginStart="10.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/doodle_bottom" android:background="@drawable/doodle_splash" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_alignParentBottom="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+    </RelativeLayout>
+</RelativeLayout>

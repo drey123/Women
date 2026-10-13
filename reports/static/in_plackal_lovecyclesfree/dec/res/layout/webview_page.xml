@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rlWebViewPage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/web_view_image_view" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitXY" android:layout_alignTop="@id/web_view_layout" android:layout_alignBottom="@id/web_view_layout" android:contentDescription="@string/ImageAccessibilityText" android:layout_alignStart="@id/web_view_layout" android:layout_alignEnd="@id/web_view_layout" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/web_view_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/activity_title_layout_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/activity_title_layout" />
+        <WebView android:id="@id/webView1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/activity_title_layout_view" />
+        <ProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/custom_progress_background" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

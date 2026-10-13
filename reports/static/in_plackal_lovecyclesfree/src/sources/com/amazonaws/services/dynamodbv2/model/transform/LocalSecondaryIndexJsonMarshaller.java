@@ -1,0 +1,49 @@
+package com.amazonaws.services.dynamodbv2.model.transform;
+
+import com.amazonaws.services.dynamodbv2.model.KeySchemaElement;
+import com.amazonaws.services.dynamodbv2.model.LocalSecondaryIndex;
+import com.amazonaws.services.dynamodbv2.model.Projection;
+import com.amazonaws.util.json.AwsJsonWriter;
+import java.util.List;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes.dex */
+class LocalSecondaryIndexJsonMarshaller {
+    private static LocalSecondaryIndexJsonMarshaller instance;
+
+    LocalSecondaryIndexJsonMarshaller() {
+    }
+
+    public static LocalSecondaryIndexJsonMarshaller getInstance() {
+        if (instance == null) {
+            instance = new LocalSecondaryIndexJsonMarshaller();
+        }
+        return instance;
+    }
+
+    public void marshall(LocalSecondaryIndex localSecondaryIndex, AwsJsonWriter awsJsonWriter) {
+        awsJsonWriter.beginObject();
+        if (localSecondaryIndex.getIndexName() != null) {
+            String indexName = localSecondaryIndex.getIndexName();
+            awsJsonWriter.name("IndexName");
+            awsJsonWriter.value(indexName);
+        }
+        if (localSecondaryIndex.getKeySchema() != null) {
+            List<KeySchemaElement> keySchema = localSecondaryIndex.getKeySchema();
+            awsJsonWriter.name("KeySchema");
+            awsJsonWriter.beginArray();
+            for (KeySchemaElement keySchemaElement : keySchema) {
+                if (keySchemaElement != null) {
+                    KeySchemaElementJsonMarshaller.getInstance().marshall(keySchemaElement, awsJsonWriter);
+                }
+            }
+            awsJsonWriter.endArray();
+        }
+        if (localSecondaryIndex.getProjection() != null) {
+            Projection projection = localSecondaryIndex.getProjection();
+            awsJsonWriter.name("Projection");
+            ProjectionJsonMarshaller.getInstance().marshall(projection, awsJsonWriter);
+        }
+        awsJsonWriter.endObject();
+    }
+}

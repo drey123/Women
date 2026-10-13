@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/error_view_image_view" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitXY" android:layout_alignTop="@id/error_view_layout" android:layout_alignBottom="@id/error_view_layout" android:contentDescription="@string/ImageAccessibilityText" android:layout_alignStart="@id/error_view_layout" android:layout_alignEnd="@id/error_view_layout" />
+    <RelativeLayout android:id="@id/error_view_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dp_size_phone_20_tablet_25" android:layout_marginEnd="@dimen/dp_size_phone_20_tablet_25">
+            <ImageView android:id="@id/ErrorImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_server_error_msg" android:layout_centerHorizontal="true" android:contentDescription="@string/ImageAccessibilityText" />
+            <TextView android:gravity="center" android:id="@id/ErrorHeaderTextView" android:layout_marginTop="10.0dp" android:text="@string/ErrorViewHeader" android:layout_below="@id/ErrorImageView" android:layout_centerHorizontal="true" style="@style/DefaultTextStyle" />
+            <TextView android:textSize="@dimen/dp_size_phone_15_tablet_22" android:gravity="center" android:id="@id/ErrorDescTextView" android:layout_marginTop="5.0dp" android:text="@string/ServerErrorText1" android:layout_below="@id/ErrorHeaderTextView" android:layout_centerHorizontal="true" style="@style/DefaultTextStyle" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

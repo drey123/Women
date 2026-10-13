@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlCustomReminderListPage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/custom_reminder_list_image_view" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitXY" android:layout_alignTop="@id/custom_reminder_list_layout" android:layout_alignBottom="@id/custom_reminder_list_layout" android:contentDescription="@string/ImageAccessibilityText" android:layout_alignStart="@id/custom_reminder_list_layout" android:layout_alignEnd="@id/custom_reminder_list_layout" />
+    <RelativeLayout android:id="@id/custom_reminder_list_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/activity_title_layout_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/activity_title_layout" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/custom_reminder_recycler_view" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="3.0dp" android:layout_marginBottom="10.0dp" android:layout_above="@id/add_button_layout_view" android:layout_below="@id/activity_title_layout_view" />
+        <in.plackal.lovecyclesfree.ui.components.misc.views.CustomTextView android:gravity="center" android:id="@id/custom_reminder_list_empty_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CustomReminderDescText" android:layout_centerInParent="true" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" style="@style/DefaultTextStyle" />
+        <include android:id="@id/add_button_layout_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/add_button_layout" />
+    </RelativeLayout>
+</RelativeLayout>

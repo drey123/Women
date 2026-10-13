@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlHomePage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/home_page_image_view" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitXY" android:layout_alignTop="@id/home_page_parent_layout" android:layout_alignBottom="@id/home_page_parent_layout" android:contentDescription="@string/ImageAccessibilityText" android:layout_alignStart="@id/home_page_parent_layout" android:layout_alignEnd="@id/home_page_parent_layout" />
+    <RelativeLayout android:id="@id/home_page_parent_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/activity_title_layout_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/activity_home_title_layout" />
+        <FrameLayout android:orientation="horizontal" android:id="@id/home_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/view" android:layout_below="@id/activity_title_layout_view" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:tabGravity="fill" app:tabIndicatorHeight="0.0dp" app:tabMode="fixed" style="@style/CustomTabLayoutStyle" />
+        <View android:id="@id/view" android:background="@color/pink_color_highlight" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_alignTop="@id/tab_layout" />
+    </RelativeLayout>
+    <in.plackal.lovecyclesfree.ui.components.misc.views.CommonPassiveDialogView android:id="@id/common_passive_dialog_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <in.plackal.lovecyclesfree.ui.components.commonview.PermissionCommonView android:id="@id/permissionCommonDialog" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <in.plackal.lovecyclesfree.ui.components.commonview.OverlayFullScreenView android:id="@id/homeOverlayFullScreen" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="30.0dp" />
+</RelativeLayout>

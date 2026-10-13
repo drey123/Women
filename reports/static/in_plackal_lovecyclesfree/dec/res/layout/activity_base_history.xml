@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlBaseHistoryPage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/base_history_image_view" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitXY" android:layout_alignTop="@id/base_history_page_layout" android:layout_alignBottom="@id/base_history_page_layout" android:contentDescription="@string/ImageAccessibilityText" android:layout_alignStart="@id/base_history_page_layout" android:layout_alignEnd="@id/base_history_page_layout" />
+    <RelativeLayout android:id="@id/base_history_page_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/activity_title_layout_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/activity_title_layout" />
+        <RelativeLayout android:id="@id/search_input_layout" android:background="@color/color_tab_background" android:padding="10.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/activity_title_layout_view">
+            <EditText android:textSize="20.0sp" android:id="@id/search_id_input" android:background="@drawable/bitmap_but_default" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="text" android:imeOptions="actionDone" android:textCursorDrawable="@null" android:paddingStart="40.0dp" android:paddingEnd="50.0dp" />
+            <ImageView android:id="@id/search_image_view" android:background="@drawable/icn_searchgrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginStart="10.0dp" android:layout_alignStart="@id/search_id_input" />
+            <ImageView android:id="@id/search_close_image" android:background="@drawable/img_delete_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginEnd="10.0dp" android:layout_alignEnd="@id/search_id_input" />
+        </RelativeLayout>
+        <ImageView android:id="@id/base_history_image_divider" android:background="@drawable/img_pink_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/search_input_layout" android:contentDescription="@string/ImageAccessibilityText" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/base_history_bottom_layout" android:layout_below="@id/base_history_image_divider">
+            <ListView android:id="@id/base_history_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="15.0dp" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dp" />
+            <TextView android:textColor="@color/page_text_color" android:gravity="center" android:id="@id/base_history_empty_list_view_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CycleStageInvalid" android:layout_centerInParent="true" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" style="@style/DefaultTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/base_history_bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include android:id="@id/add_button_layout_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/add_button_layout" />
+            <ImageView android:id="@id/base_history_doodle" android:background="@drawable/doodle_cal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginStart="@dimen/dp_size_phone_20_tablet_30" android:layout_marginEnd="@dimen/dp_size_phone_20_tablet_30" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/insightProgressBar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:indeterminateTint="@color/color_black" />
+    </RelativeLayout>
+</RelativeLayout>

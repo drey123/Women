@@ -1,0 +1,22 @@
+package com.google.android.gms.ads.nonagon.signalgeneration;
+
+import com.google.android.gms.internal.ads.zzifh;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes.dex */
+public final class zzbb implements zzifh {
+    private final zzay zza;
+
+    private zzbb(zzay zzayVar) {
+        this.zza = zzayVar;
+    }
+
+    public static zzbb zza(zzay zzayVar) {
+        return new zzbb(zzayVar);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzifw, com.google.android.gms.internal.ads.zzifv
+    public final /* synthetic */ Object zzb() {
+        return this.zza.zza();
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlForumZoomImagePage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/highlighted_grey_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <in.plackal.lovecyclesfree.ui.components.commonview.TouchImageView android:id="@id/zoom_image" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_size_phone_10_tablet_10" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/back_button" android:layout_width="wrap_content" android:layout_height="60.0dp" android:src="@drawable/but_previous_month_shadow" android:contentDescription="@string/ImageAccessibilityText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rotate_button_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_size_phone_10_tablet_10" android:layout_alignParentBottom="true">
+            <TextView android:id="@id/rotate_left" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_weight="1.0" android:drawableEnd="@drawable/rotate_left_selector" android:layout_marginEnd="@dimen/dp_size_phone_20_tablet_25" />
+            <TextView android:id="@id/rotate_right" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_weight="1.0" android:drawableStart="@drawable/rotate_right_selector" android:layout_marginStart="@dimen/dp_size_phone_20_tablet_25" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

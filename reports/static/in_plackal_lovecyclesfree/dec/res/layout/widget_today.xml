@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/widget_today_layout" android:background="@drawable/widget_button_shape" android:layout_width="match_parent" android:layout_height="50.0dp" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/widget_today_month_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/ImageAccessibilityText" />
+        <ImageView android:id="@id/image_divider" android:background="@drawable/widget_pink_divider" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/ImageAccessibilityText" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/widget_today_progress_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/ImageAccessibilityText" />
+    </RelativeLayout>
+</LinearLayout>

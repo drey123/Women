@@ -1,0 +1,20 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes2.dex */
+public final class zzcth implements zzifh {
+    private final zzctg zza;
+
+    private zzcth(zzctg zzctgVar) {
+        this.zza = zzctgVar;
+    }
+
+    public static zzcth zza(zzctg zzctgVar) {
+        return new zzcth(zzctgVar);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzifw, com.google.android.gms.internal.ads.zzifv
+    public final /* synthetic */ Object zzb() {
+        return this.zza.zzb();
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/activity_title_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_size_phone_60_tablet_65">
+        <ImageView android:id="@id/activity_title_right_button" android:background="@drawable/but_date_picker_yes_selector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+        <RelativeLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_size_phone_10_tablet_20" android:layout_marginEnd="@dimen/dp_size_phone_10_tablet_20" android:layout_toStartOf="@id/activity_title_right_button" android:layout_toEndOf="@id/activity_title_left_button">
+            <in.plackal.lovecyclesfree.ui.components.misc.views.CustomTextView android:textColor="@color/page_header_color" android:ellipsize="end" android:gravity="center" android:id="@id/activity_header_text" android:layout_width="match_parent" android:text="@string/AboutText" android:maxLines="1" android:layout_centerInParent="true" app:fontText="Peasnow.otf" style="@style/DefaultTextStyle" />
+        </RelativeLayout>
+        <ImageView android:id="@id/activity_title_left_button" android:background="@drawable/but_prev_selector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginStart="@dimen/dp_size_phone_10_tablet_20" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/activity_image_divider" android:background="@drawable/img_header_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/activity_title_layout" android:contentDescription="@string/ImageAccessibilityText" />
+</RelativeLayout>

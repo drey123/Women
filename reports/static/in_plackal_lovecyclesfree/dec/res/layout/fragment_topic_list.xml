@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/TopicListRecyclerView" android:paddingBottom="@dimen/dp_size_phone_10_tablet_20" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <in.plackal.lovecyclesfree.ui.components.misc.views.ErrorView android:id="@id/errorView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@id/forum_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_size_phone_20_tablet_25" android:src="@drawable/icn_add" android:contentDescription="@string/ApplicationName" app:backgroundTint="@color/fab_color" app:borderWidth="0.0dp" app:fabSize="normal" app:tint="@color/white_color" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

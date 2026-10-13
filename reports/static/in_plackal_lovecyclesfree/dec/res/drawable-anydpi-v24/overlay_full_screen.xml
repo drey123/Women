@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="800.0dp" android:width="360.0dp" android:viewportWidth="360.0" android:viewportHeight="800.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$overlay_full_screen__0" android:pathData="M0,25H360V804H0V25Z" />
+    <path android:fillColor="@drawable/$overlay_full_screen__1" android:pathData="M360,800L0,800L0,-0L360,0L360,800Z" />
+</vector>

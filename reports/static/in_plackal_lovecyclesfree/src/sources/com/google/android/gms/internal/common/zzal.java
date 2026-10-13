@@ -1,0 +1,22 @@
+package com.google.android.gms.internal.common;
+
+import java.util.ListIterator;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes2.dex */
+public abstract class zzal extends zzak implements ListIterator {
+    protected zzal() {
+    }
+
+    @Override // java.util.ListIterator
+    @Deprecated
+    public final void add(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.ListIterator
+    @Deprecated
+    public final void set(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+}

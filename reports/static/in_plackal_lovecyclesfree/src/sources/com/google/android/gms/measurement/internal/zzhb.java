@@ -1,0 +1,45 @@
+package com.google.android.gms.measurement.internal;
+
+import android.content.Context;
+import android.os.Bundle;
+import com.google.android.gms.common.internal.Preconditions;
+import com.google.android.gms.common.util.VisibleForTesting;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes2.dex */
+@VisibleForTesting
+public final class zzhb {
+    final Context zza;
+    String zzb;
+    String zzc;
+    String zzd;
+    Boolean zze;
+    long zzf;
+    com.google.android.gms.internal.measurement.zzcl zzg;
+    boolean zzh;
+    final Long zzi;
+    String zzj;
+
+    @VisibleForTesting
+    public zzhb(Context context, com.google.android.gms.internal.measurement.zzcl zzclVar, Long l10) {
+        this.zzh = true;
+        Preconditions.checkNotNull(context);
+        Context applicationContext = context.getApplicationContext();
+        Preconditions.checkNotNull(applicationContext);
+        this.zza = applicationContext;
+        this.zzi = l10;
+        if (zzclVar != null) {
+            this.zzg = zzclVar;
+            this.zzb = zzclVar.zzf;
+            this.zzc = zzclVar.zze;
+            this.zzd = zzclVar.zzd;
+            this.zzh = zzclVar.zzc;
+            this.zzf = zzclVar.zzb;
+            this.zzj = zzclVar.zzh;
+            Bundle bundle = zzclVar.zzg;
+            if (bundle != null) {
+                this.zze = Boolean.valueOf(bundle.getBoolean("dataCollectionDefaultEnabled", true));
+            }
+        }
+    }
+}

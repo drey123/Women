@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/footer_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_divider" android:background="@drawable/img_settings_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:contentDescription="@string/ImageAccessibilityText" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_below="@id/image_divider">
+        <RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/sp_size_phone_20_tablet_25" android:textColor="@color/white_pink_selector" android:gravity="center_vertical" android:id="@id/add_account_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/AddAccountText" android:layout_marginStart="15.0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

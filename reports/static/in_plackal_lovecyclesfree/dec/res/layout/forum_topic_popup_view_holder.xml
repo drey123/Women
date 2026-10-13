@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ForumTopicPopupLayout" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_size_phone_15_tablet_20">
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ForumTopicPopupImageViewLayout" android:layout_width="30.0dp" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ForumTopicPopupImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icn_bookmark" android:layout_centerHorizontal="true" android:contentDescription="@string/ImageAccessibilityText" />
+        </RelativeLayout>
+        <in.plackal.lovecyclesfree.ui.components.misc.views.CustomTextView android:textSize="12.0dp" android:textColor="@color/pink_black_selector" android:layout_gravity="center" android:id="@id/ForumTopicPopupTextView" android:layout_width="match_parent" android:text="@string/MyActivity" android:layout_marginEnd="@dimen/dp_size_phone_10_tablet_20" style="@style/DefaultTextStyle" />
+    </LinearLayout>
+    <ImageView android:id="@id/ForumPopupDivider" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="10.0dp" android:layout_below="@id/ForumTopicPopupLayout" android:contentDescription="@string/ImageAccessibilityText" />
+</RelativeLayout>

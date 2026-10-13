@@ -1,0 +1,43 @@
+package com.amazonaws.services.kms.model.transform;
+
+import com.amazonaws.services.kms.model.GenerateDataKeyResult;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.SimpleTypeJsonUnmarshallers;
+import com.amazonaws.transform.Unmarshaller;
+import com.amazonaws.util.json.AwsJsonReader;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes.dex */
+public class GenerateDataKeyResultJsonUnmarshaller implements Unmarshaller<GenerateDataKeyResult, JsonUnmarshallerContext> {
+    private static GenerateDataKeyResultJsonUnmarshaller instance;
+
+    public static GenerateDataKeyResultJsonUnmarshaller getInstance() {
+        if (instance == null) {
+            instance = new GenerateDataKeyResultJsonUnmarshaller();
+        }
+        return instance;
+    }
+
+    @Override // com.amazonaws.transform.Unmarshaller
+    public GenerateDataKeyResult unmarshall(JsonUnmarshallerContext jsonUnmarshallerContext) {
+        GenerateDataKeyResult generateDataKeyResult = new GenerateDataKeyResult();
+        AwsJsonReader reader = jsonUnmarshallerContext.getReader();
+        reader.beginObject();
+        while (reader.hasNext()) {
+            String strNextName = reader.nextName();
+            if (strNextName.equals("CiphertextBlob")) {
+                generateDataKeyResult.setCiphertextBlob(SimpleTypeJsonUnmarshallers.ByteBufferJsonUnmarshaller.getInstance().unmarshall(jsonUnmarshallerContext));
+            } else if (strNextName.equals("Plaintext")) {
+                generateDataKeyResult.setPlaintext(SimpleTypeJsonUnmarshallers.ByteBufferJsonUnmarshaller.getInstance().unmarshall(jsonUnmarshallerContext));
+            } else if (strNextName.equals("KeyId")) {
+                generateDataKeyResult.setKeyId(SimpleTypeJsonUnmarshallers.StringJsonUnmarshaller.getInstance().unmarshall(jsonUnmarshallerContext));
+            } else if (strNextName.equals("CiphertextForRecipient")) {
+                generateDataKeyResult.setCiphertextForRecipient(SimpleTypeJsonUnmarshallers.ByteBufferJsonUnmarshaller.getInstance().unmarshall(jsonUnmarshallerContext));
+            } else {
+                reader.skipValue();
+            }
+        }
+        reader.endObject();
+        return generateDataKeyResult;
+    }
+}

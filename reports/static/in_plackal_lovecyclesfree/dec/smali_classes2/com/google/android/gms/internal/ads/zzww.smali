@@ -1,0 +1,146 @@
+.class public final Lcom/google/android/gms/internal/ads/zzww;
+.super Lcom/google/android/gms/internal/ads/zzat;
+.source "r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb"
+
+
+# instance fields
+.field public final zzc:Lcom/google/android/gms/internal/ads/zzgpe;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Landroid/net/Uri;Ljava/util/List;)V
+    .locals 2
+
+    .line 1
+    const/4 p2, 0x0
+
+    .line 2
+    const/4 v0, 0x1
+
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {p0, p1, v1, p2, v0}, Lcom/google/android/gms/internal/ads/zzat;-><init>(Ljava/lang/String;Ljava/lang/Throwable;ZI)V
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-static {p3}, Lcom/google/android/gms/internal/ads/zzgpe;->zzq(Ljava/util/Collection;)Lcom/google/android/gms/internal/ads/zzgpe;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzww;->zzc:Lcom/google/android/gms/internal/ads/zzgpe;
+
+    .line 12
+    .line 13
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getMessage()Ljava/lang/String;
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzww;->zzc:Lcom/google/android/gms/internal/ads/zzgpe;
+
+    .line 2
+    .line 3
+    invoke-super {p0}, Lcom/google/android/gms/internal/ads/zzat;->getMessage()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->isEmpty()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v2
+
+    .line 11
+    if-eqz v2, :cond_0
+
+    .line 12
+    .line 13
+    return-object v1
+
+    .line 14
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v2
+
+    .line 18
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    add-int/lit8 v2, v2, 0x11
+
+    .line 23
+    .line 24
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v3
+
+    .line 28
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    add-int/2addr v2, v3
+
+    .line 31
+    invoke-direct {v4, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 32
+    .line 33
+    .line 34
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 35
+    .line 36
+    .line 37
+    const-string v1, "\nsniff failures: "
+
+    .line 38
+    .line 39
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v0
+
+    .line 49
+    return-object v0
+.end method

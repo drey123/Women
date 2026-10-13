@@ -1,0 +1,52 @@
+.class public Lcom/google/android/gms/internal/ads/zzgpk;
+.super Ljava/lang/Object;
+.source "r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb"
+
+
+# instance fields
+.field zza:Ljava/util/Map;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method final zza()Ljava/util/Map;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzgpk;->zza:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzgon;
+
+    .line 6
+    .line 7
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzgon;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzgpk;->zza:Ljava/util/Map;
+
+    .line 11
+    .line 12
+    :cond_0
+    return-object v0
+.end method

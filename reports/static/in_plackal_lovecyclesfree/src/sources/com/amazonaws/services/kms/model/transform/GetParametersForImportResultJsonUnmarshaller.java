@@ -1,0 +1,43 @@
+package com.amazonaws.services.kms.model.transform;
+
+import com.amazonaws.services.kms.model.GetParametersForImportResult;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.SimpleTypeJsonUnmarshallers;
+import com.amazonaws.transform.Unmarshaller;
+import com.amazonaws.util.json.AwsJsonReader;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes.dex */
+public class GetParametersForImportResultJsonUnmarshaller implements Unmarshaller<GetParametersForImportResult, JsonUnmarshallerContext> {
+    private static GetParametersForImportResultJsonUnmarshaller instance;
+
+    public static GetParametersForImportResultJsonUnmarshaller getInstance() {
+        if (instance == null) {
+            instance = new GetParametersForImportResultJsonUnmarshaller();
+        }
+        return instance;
+    }
+
+    @Override // com.amazonaws.transform.Unmarshaller
+    public GetParametersForImportResult unmarshall(JsonUnmarshallerContext jsonUnmarshallerContext) {
+        GetParametersForImportResult getParametersForImportResult = new GetParametersForImportResult();
+        AwsJsonReader reader = jsonUnmarshallerContext.getReader();
+        reader.beginObject();
+        while (reader.hasNext()) {
+            String strNextName = reader.nextName();
+            if (strNextName.equals("KeyId")) {
+                getParametersForImportResult.setKeyId(SimpleTypeJsonUnmarshallers.StringJsonUnmarshaller.getInstance().unmarshall(jsonUnmarshallerContext));
+            } else if (strNextName.equals("ImportToken")) {
+                getParametersForImportResult.setImportToken(SimpleTypeJsonUnmarshallers.ByteBufferJsonUnmarshaller.getInstance().unmarshall(jsonUnmarshallerContext));
+            } else if (strNextName.equals("PublicKey")) {
+                getParametersForImportResult.setPublicKey(SimpleTypeJsonUnmarshallers.ByteBufferJsonUnmarshaller.getInstance().unmarshall(jsonUnmarshallerContext));
+            } else if (strNextName.equals("ParametersValidTo")) {
+                getParametersForImportResult.setParametersValidTo(SimpleTypeJsonUnmarshallers.DateJsonUnmarshaller.getInstance().unmarshall(jsonUnmarshallerContext));
+            } else {
+                reader.skipValue();
+            }
+        }
+        reader.endObject();
+        return getParametersForImportResult;
+    }
+}

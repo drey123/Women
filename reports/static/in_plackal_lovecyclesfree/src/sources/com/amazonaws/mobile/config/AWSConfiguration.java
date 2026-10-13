@@ -1,0 +1,102 @@
+package com.amazonaws.mobile.config;
+
+import android.content.Context;
+import java.util.Scanner;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes.dex */
+public class AWSConfiguration {
+    private static final String DEFAULT = "Default";
+    private static final String DEFAULT_IDENTIFIER = "awsconfiguration";
+    private String configName;
+    private JSONObject mJSONObject;
+
+    public AWSConfiguration(JSONObject jSONObject) {
+        this(jSONObject, DEFAULT);
+    }
+
+    private static int getConfigResourceId(Context context) {
+        try {
+            return context.getResources().getIdentifier(DEFAULT_IDENTIFIER, "raw", context.getPackageName());
+        } catch (Exception e10) {
+            throw new RuntimeException("Failed to read awsconfiguration.json please check that it is correctly formed.", e10);
+        }
+    }
+
+    private void readInputJson(Context context, int i10) {
+        try {
+            Scanner scanner = new Scanner(context.getResources().openRawResource(i10));
+            StringBuilder sb2 = new StringBuilder();
+            while (scanner.hasNextLine()) {
+                sb2.append(scanner.nextLine());
+            }
+            scanner.close();
+            this.mJSONObject = new JSONObject(sb2.toString());
+        } catch (Exception e10) {
+            throw new RuntimeException("Failed to read awsconfiguration.json please check that it is correctly formed.", e10);
+        }
+    }
+
+    public String getConfiguration() {
+        return this.configName;
+    }
+
+    public String getUserAgent() {
+        try {
+            return this.mJSONObject.getString("UserAgent");
+        } catch (JSONException unused) {
+            return "";
+        }
+    }
+
+    public String getUserAgentOverride() {
+        try {
+            return this.mJSONObject.getString("UserAgentOverride");
+        } catch (JSONException unused) {
+            return null;
+        }
+    }
+
+    public JSONObject optJsonObject(String str) {
+        try {
+            JSONObject jSONObject = this.mJSONObject.getJSONObject(str);
+            if (jSONObject.has(this.configName)) {
+                jSONObject = jSONObject.getJSONObject(this.configName);
+            }
+            return new JSONObject(jSONObject.toString());
+        } catch (JSONException unused) {
+            return null;
+        }
+    }
+
+    public void setConfiguration(String str) {
+        this.configName = str;
+    }
+
+    public String toString() {
+        return this.mJSONObject.toString();
+    }
+
+    public AWSConfiguration(JSONObject jSONObject, String str) {
+        if (jSONObject == null) {
+            throw new IllegalArgumentException("JSONObject cannot be null.");
+        }
+        this.configName = str;
+        this.mJSONObject = jSONObject;
+    }
+
+    public AWSConfiguration(Context context) {
+        this(context, getConfigResourceId(context));
+    }
+
+    public AWSConfiguration(Context context, int i10) {
+        this(context, i10, DEFAULT);
+    }
+
+    public AWSConfiguration(Context context, int i10, String str) {
+        this.configName = str;
+        readInputJson(context, i10);
+    }
+}

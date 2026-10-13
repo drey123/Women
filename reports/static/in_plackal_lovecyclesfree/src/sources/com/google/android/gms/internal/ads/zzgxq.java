@@ -1,0 +1,61 @@
+package com.google.android.gms.internal.ads;
+
+import java.security.GeneralSecurityException;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes2.dex */
+public final class zzgxq {
+    private zzgxx zza = null;
+    private zzhtb zzb = null;
+    private Integer zzc = null;
+
+    private zzgxq() {
+    }
+
+    public final zzgxq zza(zzgxx zzgxxVar) {
+        this.zza = zzgxxVar;
+        return this;
+    }
+
+    public final zzgxq zzb(zzhtb zzhtbVar) {
+        this.zzb = zzhtbVar;
+        return this;
+    }
+
+    public final zzgxq zzc(Integer num) {
+        this.zzc = num;
+        return this;
+    }
+
+    public final zzgxr zzd() throws GeneralSecurityException {
+        zzhtb zzhtbVar;
+        zzhsz zzhszVarZzb;
+        zzgxx zzgxxVar = this.zza;
+        if (zzgxxVar == null || (zzhtbVar = this.zzb) == null) {
+            throw new GeneralSecurityException("Cannot build without parameters and/or key material");
+        }
+        if (zzgxxVar.zzc() != zzhtbVar.zzd()) {
+            throw new GeneralSecurityException("Key size mismatch");
+        }
+        if (zzgxxVar.zza() && this.zzc == null) {
+            throw new GeneralSecurityException("Cannot create key without ID requirement with parameters with ID requirement");
+        }
+        if (!this.zza.zza() && this.zzc != null) {
+            throw new GeneralSecurityException("Cannot create key with ID requirement with parameters without ID requirement");
+        }
+        if (this.zza.zze() == zzgxw.zzc) {
+            zzhszVarZzb = zzhfc.zza;
+        } else if (this.zza.zze() == zzgxw.zzb) {
+            zzhszVarZzb = zzhfc.zza(this.zzc.intValue());
+        } else {
+            if (this.zza.zze() != zzgxw.zza) {
+                throw new IllegalStateException("Unknown AesEaxParameters.Variant: ".concat(String.valueOf(this.zza.zze())));
+            }
+            zzhszVarZzb = zzhfc.zzb(this.zzc.intValue());
+        }
+        return new zzgxr(this.zza, this.zzb, zzhszVarZzb, this.zzc, null);
+    }
+
+    /* synthetic */ zzgxq(byte[] bArr) {
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/shareView" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="60.0dp" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/image_share" android:background="@drawable/forum_share_big_clicked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/ImageAccessibilityText" />
+        <ImageView android:id="@id/image_more" android:layout_width="wrap_content" android:layout_height="@dimen/dp_size_phone_25_tablet_30" android:src="@drawable/img_dots_big" android:contentDescription="@string/ImageAccessibilityText" android:paddingStart="10.0dp" android:paddingEnd="@dimen/dp_size_phone_20_tablet_25" />
+    </LinearLayout>
+</RelativeLayout>

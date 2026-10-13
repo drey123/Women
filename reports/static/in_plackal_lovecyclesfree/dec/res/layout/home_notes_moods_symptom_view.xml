@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/home_baby_detail_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/home_baby_detail_layout" />
+    <include android:id="@id/home_notes_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/home_notes_layout" />
+    <include android:id="@id/home_symptoms_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/home_symptoms_layout" />
+    <include android:id="@id/home_moods_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/home_moods_layout" />
+</LinearLayout>

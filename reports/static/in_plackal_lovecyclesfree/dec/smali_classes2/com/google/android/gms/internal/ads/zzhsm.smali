@@ -1,0 +1,62 @@
+.class public final Lcom/google/android/gms/internal/ads/zzhsm;
+.super Ljava/lang/Object;
+.source "r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/zzhik;
+
+
+# direct methods
+.method public static zzb(Lcom/google/android/gms/internal/ads/zzhii;)Lcom/google/android/gms/internal/ads/zzhik;
+    .locals 3
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/internal/ads/zzhio;->zzb(Lcom/google/android/gms/internal/ads/zzhii;)Lcom/google/android/gms/internal/ads/zzhik;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    :try_start_0
+    invoke-static {p0}, Lcom/google/android/gms/internal/ads/zzhip;->zzb(Lcom/google/android/gms/internal/ads/zzhii;)Lcom/google/android/gms/internal/ads/zzhik;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzhsl;
+
+    .line 10
+    .line 11
+    const/4 v2, 0x0
+
+    .line 12
+    invoke-direct {v1, v0, p0, v2}, Lcom/google/android/gms/internal/ads/zzhsl;-><init>(Lcom/google/android/gms/internal/ads/zzhik;Lcom/google/android/gms/internal/ads/zzhik;[B)V
+    :try_end_0
+    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 13
+    .line 14
+    .line 15
+    return-object v1
+
+    .line 16
+    :catch_0
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final zza([BI)[B
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    throw p1
+.end method

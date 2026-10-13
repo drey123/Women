@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlPremiumBanner" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/white_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvPremiumBanner" android:background="@drawable/but_premium_banner" android:paddingLeft="15.0dp" android:paddingTop="10.0dp" android:paddingRight="15.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:text="@string/GoPremiumText2" android:maxLines="2" android:drawablePadding="8.0dp" android:layout_centerHorizontal="true" android:textAllCaps="false" android:drawableStart="@drawable/premium_banner_star_logo" android:drawableEnd="@drawable/premium_banner_next_icon" android:layout_marginHorizontal="20.0dp" android:paddingHorizontal="15.0dp" android:paddingVertical="10.0dp" />
+</RelativeLayout>

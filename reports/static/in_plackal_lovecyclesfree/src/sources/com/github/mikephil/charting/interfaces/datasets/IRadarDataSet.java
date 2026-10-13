@@ -1,0 +1,23 @@
+package com.github.mikephil.charting.interfaces.datasets;
+
+import com.github.mikephil.charting.data.RadarEntry;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes.dex */
+public interface IRadarDataSet extends ILineRadarDataSet<RadarEntry> {
+    int getHighlightCircleFillColor();
+
+    float getHighlightCircleInnerRadius();
+
+    float getHighlightCircleOuterRadius();
+
+    int getHighlightCircleStrokeAlpha();
+
+    int getHighlightCircleStrokeColor();
+
+    float getHighlightCircleStrokeWidth();
+
+    boolean isDrawHighlightCircleEnabled();
+
+    void setDrawHighlightCircleEnabled(boolean z10);
+}

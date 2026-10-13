@@ -1,0 +1,16 @@
+.class public abstract synthetic Landroidx/appcompat/app/q;
+.super Ljava/lang/Object;
+.source "r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/content/res/Configuration;I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Landroid/content/res/Configuration;->colorMode:I
+
+    .line 2
+    .line 3
+    return-void
+.end method

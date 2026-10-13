@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlAddNoteInfoPage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/black_background_image" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/activity_title_layout_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/activity_title_layout" />
+        <ScrollView android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@id/doodle_image_view" android:layout_below="@id/activity_title_layout_view">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+                    <ImageView android:background="@drawable/icon_love" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/ImageAccessibilityText" />
+                    <TextView android:textSize="@dimen/sp_size_phone_22_tablet_30" android:textColor="#ffffff" android:gravity="start" android:id="@id/add_note_info_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AddNoteHelpLove" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+                </LinearLayout>
+                <ImageView android:id="@id/image_divider2" android:background="@drawable/img_pink_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:contentDescription="@string/ImageAccessibilityText" />
+                <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+                    <ImageView android:background="@drawable/icon_mucus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/ImageAccessibilityText" />
+                    <TextView android:textSize="@dimen/sp_size_phone_22_tablet_30" android:textColor="#ffffff" android:gravity="start" android:id="@id/add_mucus_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MucusHelpText" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+                </LinearLayout>
+                <ImageView android:id="@id/image_divider" android:background="@drawable/img_pink_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:contentDescription="@string/ImageAccessibilityText" />
+                <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+                    <ImageView android:background="@drawable/icon_pill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/ImageAccessibilityText" />
+                    <TextView android:textSize="@dimen/sp_size_phone_22_tablet_30" android:textColor="#ffffff" android:gravity="start" android:id="@id/add_note_info_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AddNoteHelpPill" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+                </LinearLayout>
+                <ImageView android:id="@id/image_divider3" android:background="@drawable/img_pink_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:contentDescription="@string/ImageAccessibilityText" />
+                <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+                    <ImageView android:background="@drawable/icon_weight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/ImageAccessibilityText" />
+                    <TextView android:textSize="@dimen/sp_size_phone_22_tablet_30" android:textColor="#ffffff" android:gravity="start" android:id="@id/add_note_info_text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AddNoteHelpWeight" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+                </LinearLayout>
+                <ImageView android:id="@id/image_divider4" android:background="@drawable/img_pink_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:contentDescription="@string/ImageAccessibilityText" />
+                <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+                    <ImageView android:background="@drawable/icon_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/ImageAccessibilityText" />
+                    <TextView android:textSize="@dimen/sp_size_phone_22_tablet_30" android:textColor="#ffffff" android:gravity="start" android:id="@id/add_note_info_text4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AddNoteHelpTemperature" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+                </LinearLayout>
+                <ImageView android:id="@id/image_divider5" android:background="@drawable/img_pink_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="15.0dp" android:contentDescription="@string/ImageAccessibilityText" />
+            </LinearLayout>
+        </ScrollView>
+        <ImageView android:orientation="vertical" android:id="@id/doodle_image_view" android:background="@drawable/doodle_help_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" />
+    </RelativeLayout>
+</RelativeLayout>

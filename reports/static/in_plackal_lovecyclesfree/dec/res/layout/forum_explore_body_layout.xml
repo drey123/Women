@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ForumExploreParentLayout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/ForumExploreLayout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_size_phone_10_tablet_20">
+            <ImageView android:id="@id/ForumExploreImageView" android:background="@drawable/overlay_profile_img" android:padding="3.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_centerVertical="true" android:contentDescription="@string/ImageAccessibilityText" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ForumExploreTextViewLayout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_size_phone_10_tablet_20" android:layout_marginEnd="@dimen/dp_size_phone_10_tablet_20" android:layout_toStartOf="@id/ForumExploreFollowButton" android:layout_toEndOf="@id/ForumExploreImageView">
+                <TextView android:textColor="@color/page_header_color" android:id="@id/ForumExploreTextView" android:layout_width="match_parent" android:text="@string/MyActivity" style="@style/DefaultTextStyle" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/disable_grey_color" android:id="@id/ForumExploreCountTextView" android:layout_width="match_parent" android:text="1k members" style="@style/DefaultTextStyle" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton android:id="@id/ForumExploreFollowButton" android:background="@drawable/green_oval_outline" android:layout_centerVertical="true" style="@style/FollowButtonStyle" />
+        </RelativeLayout>
+        <ImageView android:id="@id/ListSectionDivider" android:visibility="visible" android:layout_below="@id/ForumExploreLayout" android:contentDescription="@string/ImageAccessibilityText" style="@style/GreyDashDividerStyle" />
+    </RelativeLayout>
+</RelativeLayout>

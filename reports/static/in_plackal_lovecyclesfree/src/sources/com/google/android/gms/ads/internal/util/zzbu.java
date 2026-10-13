@@ -1,0 +1,34 @@
+package com.google.android.gms.ads.internal.util;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes.dex */
+public final class zzbu {
+    private long zza;
+    private long zzb = Long.MIN_VALUE;
+    private final Object zzc = new Object();
+
+    public zzbu(long j10) {
+        this.zza = j10;
+    }
+
+    public final boolean zza() {
+        synchronized (this.zzc) {
+            try {
+                long jElapsedRealtime = com.google.android.gms.ads.internal.zzt.zzk().elapsedRealtime();
+                if (this.zzb + this.zza > jElapsedRealtime) {
+                    return false;
+                }
+                this.zzb = jElapsedRealtime;
+                return true;
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public final void zzb(long j10) {
+        synchronized (this.zzc) {
+            this.zza = j10;
+        }
+    }
+}

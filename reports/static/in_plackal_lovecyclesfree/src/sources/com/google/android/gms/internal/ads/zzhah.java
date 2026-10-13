@@ -1,0 +1,15 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes2.dex */
+final /* synthetic */ class zzhah implements zzheq {
+    static final /* synthetic */ zzhah zza = new zzhah();
+
+    private /* synthetic */ zzhah() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzheq
+    public final /* synthetic */ zzgvt zza(zzgwj zzgwjVar, Integer num) {
+        return zzhaf.zzd((zzhak) zzgwjVar, zzhtb.zzb(32), num);
+    }
+}

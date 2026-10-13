@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="44.0dp" android:width="200.0dp" android:viewportWidth="205.0" android:viewportHeight="44.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$but_small_upgrade_blue_clicked__0" android:pathData="M20,1L185,1A19,19 0,0 1,204 20L204,24A19,19 0,0 1,185 43L20,43A19,19 0,0 1,1 24L1,20A19,19 0,0 1,20 1z" />
+    <path android:fillColor="#00000000" android:pathData="M20,1L185,1A19,19 0,0 1,204 20L204,24A19,19 0,0 1,185 43L20,43A19,19 0,0 1,1 24L1,20A19,19 0,0 1,20 1z" android:strokeColor="#7bc9ec" android:strokeWidth="2.0" />
+</vector>

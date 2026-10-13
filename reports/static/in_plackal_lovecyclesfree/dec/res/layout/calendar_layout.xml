@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/calendar_header_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/but_prev_selector" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginStart="15.0dp" android:layout_alignParentStart="true" />
+        <RelativeLayout android:gravity="center" android:id="@id/nav_months_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/ivSetting" android:layout_toEndOf="@id/btn_back">
+            <ImageView android:id="@id/btn_prev_month" android:background="@drawable/btn_prvs_month_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="@string/ImageAccessibilityText" />
+            <TextView android:textSize="@dimen/dp_size_phone_18_tablet_25" android:textColor="@color/page_text_color" android:id="@id/txt_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dp_size_phone_10_tablet_20" android:layout_toEndOf="@id/btn_prev_month" />
+            <TextView android:textSize="@dimen/dp_size_phone_18_tablet_25" android:textColor="@color/page_text_color" android:id="@id/txt_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:layout_toEndOf="@id/txt_month" />
+            <ImageView android:id="@id/btn_next_month" android:background="@drawable/btn_next_month_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_toEndOf="@id/txt_year" />
+        </RelativeLayout>
+        <ImageView android:id="@id/ivSetting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icn_setting" android:layout_centerVertical="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginEnd="15.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/calendar_image_divider" android:background="@drawable/img_header_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_size_phone_5_tablet_10" android:layout_marginBottom="@dimen/dp_size_phone_20_tablet_25" android:contentDescription="@string/ImageAccessibilityText" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/week_days_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <in.plackal.lovecyclesfree.util.custom.MyViewFlipper android:id="@id/flipview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/calendar_button_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </in.plackal.lovecyclesfree.util.custom.MyViewFlipper>
+</LinearLayout>

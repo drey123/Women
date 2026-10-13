@@ -1,0 +1,53 @@
+package com.google.android.datatransport.cct.internal;
+
+import java.util.List;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class r {
+
+    /* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+    public static abstract class a {
+        public abstract r a();
+
+        public abstract a b(ClientInfo clientInfo);
+
+        public abstract a c(List list);
+
+        abstract a d(Integer num);
+
+        abstract a e(String str);
+
+        public abstract a f(QosTier qosTier);
+
+        public abstract a g(long j10);
+
+        public abstract a h(long j10);
+
+        public a i(int i10) {
+            return d(Integer.valueOf(i10));
+        }
+
+        public a j(String str) {
+            return e(str);
+        }
+    }
+
+    public static a a() {
+        return new k.b();
+    }
+
+    public abstract ClientInfo b();
+
+    public abstract List c();
+
+    public abstract Integer d();
+
+    public abstract String e();
+
+    public abstract QosTier f();
+
+    public abstract long g();
+
+    public abstract long h();
+}

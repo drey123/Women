@@ -1,0 +1,27 @@
+package com.amazonaws.services.securitytoken.model.transform;
+
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.DefaultRequest;
+import com.amazonaws.Request;
+import com.amazonaws.auth.policy.internal.JsonDocumentFields;
+import com.amazonaws.services.securitytoken.model.GetAccessKeyInfoRequest;
+import com.amazonaws.transform.Marshaller;
+import com.amazonaws.util.StringUtils;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes.dex */
+public class GetAccessKeyInfoRequestMarshaller implements Marshaller<Request<GetAccessKeyInfoRequest>, GetAccessKeyInfoRequest> {
+    @Override // com.amazonaws.transform.Marshaller
+    public Request<GetAccessKeyInfoRequest> marshall(GetAccessKeyInfoRequest getAccessKeyInfoRequest) {
+        if (getAccessKeyInfoRequest == null) {
+            throw new AmazonClientException("Invalid argument passed to marshall(GetAccessKeyInfoRequest)");
+        }
+        DefaultRequest defaultRequest = new DefaultRequest(getAccessKeyInfoRequest, "AWSSecurityTokenService");
+        defaultRequest.addParameter(JsonDocumentFields.ACTION, "GetAccessKeyInfo");
+        defaultRequest.addParameter(JsonDocumentFields.VERSION, "2011-06-15");
+        if (getAccessKeyInfoRequest.getAccessKeyId() != null) {
+            defaultRequest.addParameter("AccessKeyId", StringUtils.fromString(getAccessKeyInfoRequest.getAccessKeyId()));
+        }
+        return defaultRequest;
+    }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlForumSearchPage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/forum_search_page_image_view" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitXY" android:layout_alignTop="@id/forum_search_parent_layout" android:layout_alignBottom="@id/forum_search_parent_layout" android:contentDescription="@string/ImageAccessibilityText" android:layout_alignStart="@id/forum_search_parent_layout" android:layout_alignEnd="@id/forum_search_parent_layout" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/forum_search_parent_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/forum_search_title_layout" android:background="@color/forum_tab_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_size_phone_60_tablet_65">
+            <ImageView android:id="@id/forum_search_back_button" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginStart="10.0dp" android:layout_alignParentStart="true" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:layout_centerInParent="true" android:layout_toEndOf="@id/forum_search_back_button">
+                <EditText android:textSize="@dimen/dp_size_phone_15_tablet_20" android:textColor="@color/highlighted_grey_color" android:textColorHint="@color/disable_grey_color" android:gravity="center_vertical" android:id="@id/forum_search_edit_button" android:background="@drawable/oval_shape_edit_box" android:layout_width="match_parent" android:layout_height="35.0dp" android:hint="@string/SearchText" android:inputType="text" android:imeOptions="actionSearch" android:paddingStart="@dimen/dp_size_phone_20_tablet_25" android:paddingEnd="@dimen/dp_size_phone_20_tablet_25" android:importantForAutofill="no" />
+                <ImageView android:id="@id/forum_search_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icn_searchgrey" android:layout_centerVertical="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginEnd="10.0dp" android:layout_alignEnd="@id/forum_search_edit_button" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/forum_search_title_layout">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dp_size_phone_15_tablet_20">
+                <LinearLayout android:orientation="vertical" android:id="@id/search_tag_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_size_phone_15_tablet_20">
+                    <TextView android:textColor="@color/highlighted_grey_color" android:layout_width="match_parent" android:text="@string/MatchedTags" style="@style/DefaultTextStyle" />
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/oval_shape_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_size_phone_10_tablet_20">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/search_tags_recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <ImageView android:id="@id/search_tags_see_more_divider" android:contentDescription="@string/ImageAccessibilityText" style="@style/GreyDashDividerStyle" />
+                        <TextView android:textSize="12.0dp" android:textColor="@color/black_pink_selector" android:id="@id/search_tags_see_more" android:layout_width="match_parent" android:layout_margin="@dimen/dp_size_phone_15_tablet_20" android:text="@string/SeeMoreForum" style="@style/DefaultTextStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/search_user_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_size_phone_15_tablet_20">
+                    <TextView android:textColor="@color/highlighted_grey_color" android:layout_width="match_parent" android:text="@string/MatchedUsers" style="@style/DefaultTextStyle" />
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/oval_shape_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_size_phone_10_tablet_20">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/search_user_recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <ImageView android:id="@id/search_user_see_more_divider" android:contentDescription="@string/ImageAccessibilityText" style="@style/GreyDashDividerStyle" />
+                        <TextView android:textSize="12.0dp" android:textColor="@color/black_pink_selector" android:id="@id/search_user_see_more" android:layout_width="match_parent" android:layout_margin="@dimen/dp_size_phone_15_tablet_20" android:text="@string/SeeMoreForum" style="@style/DefaultTextStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/search_topic_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_size_phone_25_tablet_30">
+                    <TextView android:textColor="@color/highlighted_grey_color" android:layout_width="match_parent" android:text="@string/MatchedPosts" style="@style/DefaultTextStyle" />
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/oval_shape_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_size_phone_10_tablet_20">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/search_post_recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                        <ImageView android:id="@id/search_post_see_more_divider" android:contentDescription="@string/ImageAccessibilityText" style="@style/GreyDashDividerStyle" />
+                        <TextView android:textSize="12.0dp" android:textColor="@color/black_pink_selector" android:id="@id/search_post_see_more" android:layout_width="match_parent" android:layout_margin="@dimen/dp_size_phone_15_tablet_20" android:text="@string/SeeMoreForum" style="@style/DefaultTextStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <in.plackal.lovecyclesfree.ui.components.misc.views.ErrorView android:id="@id/ErrorView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/forum_search_title_layout" />
+    </RelativeLayout>
+</RelativeLayout>

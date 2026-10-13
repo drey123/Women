@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/add_moods_list_item_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/add_moods_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" android:layout_centerHorizontal="true" android:layout_alignParentStart="true">
+        <ImageView android:layout_gravity="center" android:id="@id/img_add_mood_symptom" android:background="@drawable/mood_angry" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginStart="15.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:id="@id/next_cycle_linear_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <TextView android:textSize="@dimen/sp_size_phone_18_tablet_25" android:textColor="#121212" android:ellipsize="end" android:gravity="start" android:id="@id/text_view_add_mood_symptom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/PredictionText" android:maxLines="1" android:layout_marginStart="15.0dp" />
+            <TextView android:ellipsize="end" android:id="@id/predicted_textview" android:text="@string/PredictionText" android:maxLines="1" style="@style/HintTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/img_divider" android:background="@drawable/img_pink_divider" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/add_moods_layout" android:contentDescription="@string/ImageAccessibilityText" />
+</RelativeLayout>

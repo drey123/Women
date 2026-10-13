@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlSplashPage" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/splash_page_image_view" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitXY" android:layout_alignTop="@id/layout" android:layout_alignBottom="@id/doodle_bottom" android:contentDescription="@string/ImageAccessibilityText" android:layout_alignStart="@id/layout" android:layout_alignEnd="@id/layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2.0" android:layout_above="@id/doodle_bottom">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/sp_size_phone_18_tablet_25" android:textColor="@color/page_text_color" android:layout_gravity="center" android:id="@id/website_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/img_logo_splash" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/parnership" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_size_phone_50_tablet_100" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/sp_size_phone_16_tablet_25" android:textColor="@color/page_text_color" android:layout_gravity="center" android:id="@id/parnership_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center" android:id="@id/parnership_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_size_phone_5_tablet_10" android:layout_marginBottom="@dimen/dp_size_phone_20_tablet_30" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginStart="@dimen/dp_size_phone_50_tablet_100" android:layout_marginEnd="@dimen/dp_size_phone_50_tablet_100" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/doodle_bottom" android:background="@drawable/doodle_splash" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_alignParentBottom="true" android:contentDescription="@string/ImageAccessibilityText" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+</RelativeLayout>

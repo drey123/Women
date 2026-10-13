@@ -1,0 +1,28 @@
+package com.google.android.gms.ads.internal.client;
+
+import android.os.Parcel;
+import com.google.android.gms.dynamic.IObjectWrapper;
+import com.google.android.gms.internal.ads.zzbam;
+import com.google.android.gms.internal.ads.zzban;
+
+/* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class zzdv extends zzbam implements zzdw {
+    public zzdv() {
+        super("com.google.android.gms.ads.internal.client.IOutOfContextTester");
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbam
+    protected final boolean zzdi(int i10, Parcel parcel, Parcel parcel2, int i11) {
+        if (i10 != 1) {
+            return false;
+        }
+        String string = parcel.readString();
+        IObjectWrapper iObjectWrapperAsInterface = IObjectWrapper.Stub.asInterface(parcel.readStrongBinder());
+        IObjectWrapper iObjectWrapperAsInterface2 = IObjectWrapper.Stub.asInterface(parcel.readStrongBinder());
+        zzban.zzh(parcel);
+        zze(string, iObjectWrapperAsInterface, iObjectWrapperAsInterface2);
+        parcel2.writeNoException();
+        return true;
+    }
+}
