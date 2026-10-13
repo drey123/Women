@@ -70,7 +70,6 @@ import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.CollectionsKt__MutableCollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -308,7 +307,7 @@ public final class NewPregnancyActivity extends BaseRNActivity {
                 if (onboardingStepInfo.f9781j) {
                     arrayList.subList(arrayList.indexOf(onboardingStepInfo) + 1, arrayList.size()).clear();
                 }
-                Timber.a.b(androidx.browser.trusted.c.a("now all steps: ", CollectionsKt___CollectionsKt.joinToString$default(arrayList, null, null, null, 0, null, new A0.b(14), 31, null)), new Object[0]);
+                Timber.a.b(androidx.browser.trusted.c.a("now all steps: ", CollectionsKt.q(arrayList, null, null, null, new A0.b(14), 31)), new Object[0]);
             }
         }
 

@@ -8,7 +8,6 @@ import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -133,14 +132,14 @@ public final class MutablePreferences extends Preferences {
 
     @NotNull
     public String toString() {
-        return CollectionsKt___CollectionsKt.joinToString$default(this.preferencesMap.entrySet(), ",\n", "{\n", "\n}", 0, null, new Function1<Map.Entry<Preferences.Key<?>, Object>, CharSequence>() { // from class: androidx.datastore.preferences.core.MutablePreferences.toString.1
+        return CollectionsKt.q(this.preferencesMap.entrySet(), ",\n", "{\n", "\n}", new Function1<Map.Entry<Preferences.Key<?>, Object>, CharSequence>() { // from class: androidx.datastore.preferences.core.MutablePreferences.toString.1
             @Override // kotlin.jvm.functions.Function1
             @NotNull
             public final CharSequence invoke(@NotNull Map.Entry<Preferences.Key<?>, Object> entry) {
                 Intrinsics.checkNotNullParameter(entry, "entry");
                 return "  " + entry.getKey().getName() + " = " + entry.getValue();
             }
-        }, 24, null);
+        }, 24);
     }
 
     public /* synthetic */ MutablePreferences(Map map, boolean z2, int i, DefaultConstructorMarker defaultConstructorMarker) {

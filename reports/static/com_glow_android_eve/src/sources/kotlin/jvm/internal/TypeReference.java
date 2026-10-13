@@ -2,7 +2,7 @@ package kotlin.jvm.internal;
 
 import java.lang.annotation.Annotation;
 import java.util.List;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.JvmClassMappingKt;
 import kotlin.reflect.KClass;
 import kotlin.reflect.KClassifier;
@@ -119,7 +119,7 @@ public final class TypeReference implements KType {
             name = clsB.getName();
         }
         List<KTypeProjection> list = this.c;
-        String strD = android.support.v4.media.a.D(name, list.isEmpty() ? "" : CollectionsKt___CollectionsKt.joinToString$default(list, ", ", "<", ">", 0, null, new a(this, 0), 24, null), e() ? "?" : "");
+        String strD = android.support.v4.media.a.D(name, list.isEmpty() ? "" : CollectionsKt.q(list, ", ", "<", ">", new a(this, 0), 24), e() ? "?" : "");
         KType kType = this.d;
         if (!(kType instanceof TypeReference)) {
             return strD;

@@ -20,7 +20,7 @@ import java.util.Iterator;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.io.CloseableKt;
 import kotlin.io.TextStreamsKt;
 import kotlin.jvm.internal.Intrinsics;
@@ -197,9 +197,9 @@ public abstract class AFc1eSDK {
             }
             Unit unit = Unit.a;
             CloseableKt.a(bufferedReader, null);
-            String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList, null, null, null, 0, null, null, 63, null);
+            String strQ = CollectionsKt.q(arrayList, null, null, null, null, 63);
             bufferedReader.close();
-            return strJoinToString$default == null ? "" : strJoinToString$default;
+            return strQ == null ? "" : strQ;
         } catch (Throwable th2) {
             try {
                 throw th2;

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.EmptyCoroutineContext;
@@ -190,6 +190,6 @@ public abstract class ChannelFlow<T> implements FusibleFlow<T> {
         StringBuilder sb = new StringBuilder();
         sb.append(getClass().getSimpleName());
         sb.append('[');
-        return a.o(']', CollectionsKt___CollectionsKt.joinToString$default(arrayList, ", ", null, null, 0, null, null, 62, null), sb);
+        return a.o(']', CollectionsKt.q(arrayList, ", ", null, null, null, 62), sb);
     }
 }

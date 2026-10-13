@@ -98,7 +98,6 @@ import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
@@ -732,7 +731,7 @@ public final class TemperatureInputContent extends AbstractComposeView implement
     public final void onEvent(@NotNull BottomSheetShortcutSaveEvent evt) {
         String strF;
         UserFlogData userFlogDataCreateEmpty;
-        String strJoinToString$default;
+        String strQ;
         UserFlogData userFlogData;
         Intrinsics.checkNotNullParameter(evt, "evt");
         TemperatureInput.Companion companion = TemperatureInput.f11708j;
@@ -764,11 +763,11 @@ public final class TemperatureInputContent extends AbstractComposeView implement
                         arrayList.add(obj);
                     }
                 }
-                strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList, ",", null, null, 0, null, null, 62, null);
+                strQ = CollectionsKt.q(arrayList, ",", null, null, null, 62);
             } else {
-                strJoinToString$default = "";
+                strQ = "";
             }
-            userFlogDataCreateEmpty.setValText(strJoinToString$default);
+            userFlogDataCreateEmpty.setValText(strQ);
             if (getValue() <= 0.0f) {
                 userFlogDataCreateEmpty.setTimeRemoved(System.currentTimeMillis() / ((long) 1000));
             }

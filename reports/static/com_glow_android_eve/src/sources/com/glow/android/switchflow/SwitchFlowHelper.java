@@ -32,7 +32,6 @@ import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.ArraysKt___ArraysKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.jvm.internal.Intrinsics;
@@ -325,7 +324,7 @@ public final class SwitchFlowHelper {
                 list = list9;
                 switchFlowHelper = switchFlowHelper3;
                 list2 = (List) objF;
-                Timber.a.b(androidx.browser.trusted.c.a("[merge] all nurture records: ", CollectionsKt___CollectionsKt.joinToString$default(list2, null, null, null, 0, null, new A0.b(12), 31, null)), new Object[0]);
+                Timber.a.b(androidx.browser.trusted.c.a("[merge] all nurture records: ", CollectionsKt.q(list2, null, null, null, new A0.b(12), 31)), new Object[0]);
                 list3 = list;
                 arrayList = new ArrayList();
                 arrayList2 = new ArrayList();
@@ -461,7 +460,7 @@ public final class SwitchFlowHelper {
         }
         switchFlowHelper = this;
         List list12 = (List) objF;
-        Timber.a.b(androidx.browser.trusted.c.a("[merge] all glow records: ", CollectionsKt___CollectionsKt.joinToString$default(list12, null, null, null, 0, null, new A0.b(11), 31, null)), new Object[0]);
+        Timber.a.b(androidx.browser.trusted.c.a("[merge] all glow records: ", CollectionsKt.q(list12, null, null, null, new A0.b(11), 31)), new Object[0]);
         DefaultIoScheduler defaultIoScheduler2 = Dispatchers.c;
         SwitchFlowHelper$tryMergePregnancyRecords$nurtureRecords$1 switchFlowHelper$tryMergePregnancyRecords$nurtureRecords$1 = new SwitchFlowHelper$tryMergePregnancyRecords$nurtureRecords$1(switchFlowHelper, null);
         switchFlowHelper$tryMergePregnancyRecords$1.f10309b = switchFlowHelper;
@@ -474,7 +473,7 @@ public final class SwitchFlowHelper {
         list = list12;
         objF = objF2;
         list2 = (List) objF;
-        Timber.a.b(androidx.browser.trusted.c.a("[merge] all nurture records: ", CollectionsKt___CollectionsKt.joinToString$default(list2, null, null, null, 0, null, new A0.b(12), 31, null)), new Object[0]);
+        Timber.a.b(androidx.browser.trusted.c.a("[merge] all nurture records: ", CollectionsKt.q(list2, null, null, null, new A0.b(12), 31)), new Object[0]);
         list3 = list;
         arrayList = new ArrayList();
         arrayList2 = new ArrayList();

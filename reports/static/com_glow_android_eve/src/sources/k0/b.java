@@ -17,7 +17,6 @@ import java.util.UUID;
 import kotlin.UByte;
 import kotlin.collections.ArraysKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.ranges.IntProgressionIterator;
@@ -121,7 +120,7 @@ public final /* synthetic */ class b implements Function2 {
                 while (it4.hasNext()) {
                     arrayList4.add(GlowBBTCmdKt.g(((TempData) it4.next()).a));
                 }
-                forest.b(c.a("Reader<HistoryRecord> : ", CollectionsKt___CollectionsKt.joinToString$default(arrayList4, ",", null, null, 0, null, null, 62, null)), new Object[0]);
+                forest.b(c.a("Reader<HistoryRecord> : ", CollectionsKt.q(arrayList4, ",", null, null, null, 62)), new Object[0]);
                 return new HistoryRecord(arrayList, iD4, iD3);
             case 3:
                 byte[] bytes4 = (byte[]) obj;

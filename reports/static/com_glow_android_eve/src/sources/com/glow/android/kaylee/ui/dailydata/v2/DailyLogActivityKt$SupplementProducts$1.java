@@ -12,7 +12,6 @@ import kotlin.ResultKt;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -90,7 +89,7 @@ public final class DailyLogActivityKt$SupplementProducts$1 extends SuspendLambda
                     while (it2.hasNext()) {
                         arrayList.add(((LogsProductInfo) it2.next()).c);
                     }
-                    mapMutableMapOf = MapsKt.mutableMapOf(TuplesKt.to("page_source", "log_page_prenatal_vitamin_" + this.f6463f), TuplesKt.to("product_id", CollectionsKt___CollectionsKt.joinToString$default(arrayList, ",", null, null, 0, null, null, 62, null)));
+                    mapMutableMapOf = MapsKt.mutableMapOf(TuplesKt.to("page_source", "log_page_prenatal_vitamin_" + this.f6463f), TuplesKt.to("product_id", CollectionsKt.q(arrayList, ",", null, null, null, 62)));
                     str = list.get(0).f5168e;
                     if (str != null ? StringsKt.k(str, "oura", false) : false) {
                         mapMutableMapOf.put("note", "oura:0");
@@ -113,7 +112,7 @@ public final class DailyLogActivityKt$SupplementProducts$1 extends SuspendLambda
                 while (it2.hasNext()) {
                     arrayList.add(((LogsProductInfo) it2.next()).c);
                 }
-                mapMutableMapOf = MapsKt.mutableMapOf(TuplesKt.to("page_source", "log_page_prenatal_vitamin_" + this.f6463f), TuplesKt.to("product_id", CollectionsKt___CollectionsKt.joinToString$default(arrayList, ",", null, null, 0, null, null, 62, null)));
+                mapMutableMapOf = MapsKt.mutableMapOf(TuplesKt.to("page_source", "log_page_prenatal_vitamin_" + this.f6463f), TuplesKt.to("product_id", CollectionsKt.q(arrayList, ",", null, null, null, 62)));
                 str = list.get(0).f5168e;
                 if (str != null ? StringsKt.k(str, "oura", false) : false) {
                     mapMutableMapOf.put("note", "oura:0");

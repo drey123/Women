@@ -18,7 +18,6 @@ import java.util.Iterator;
 import java.util.List;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.math.MathKt;
 import rx.SingleSubscriber;
@@ -52,7 +51,7 @@ public final /* synthetic */ class j implements OnGetOwnedListListener, OnGetPro
             strA = "errorVo null";
         }
         forest.b("queryPurchasesResp: ".concat(strA), new Object[0]);
-        forest.b(c.a("queryPurchasesResp: ", arrayList != null ? CollectionsKt___CollectionsKt.joinToString$default(arrayList, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new a(27), 30, null) : null), new Object[0]);
+        forest.b(c.a("queryPurchasesResp: ", arrayList != null ? CollectionsKt.q(arrayList, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new a(27), 30) : null), new Object[0]);
         if (errorVo == null || errorVo.a != 0) {
             task.d.b(new Exception());
             Unit unit = Unit.a;
@@ -131,7 +130,7 @@ public final /* synthetic */ class j implements OnGetOwnedListListener, OnGetPro
             strA = "errorVo null";
         }
         forest.b("queryProductsResp: ".concat(strA), new Object[0]);
-        forest.b(c.a("queryProductsResp: ", arrayList != null ? CollectionsKt___CollectionsKt.joinToString$default(arrayList, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new a(28), 30, null) : null), new Object[0]);
+        forest.b(c.a("queryProductsResp: ", arrayList != null ? CollectionsKt.q(arrayList, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new a(28), 30) : null), new Object[0]);
         if (errorVo == null || errorVo.a != 0) {
             samsungIapClient = this$0;
             task.d.b(new Exception());

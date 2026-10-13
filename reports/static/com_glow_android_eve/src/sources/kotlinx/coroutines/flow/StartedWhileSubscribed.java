@@ -5,7 +5,6 @@ import androidx.compose.material3.internal.b;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement;
 import org.jetbrains.annotations.NotNull;
@@ -64,6 +63,6 @@ final class StartedWhileSubscribed implements SharingStarted {
         if (j6 < Long.MAX_VALUE) {
             listCreateListBuilder.add("replayExpiration=" + j6 + "ms");
         }
-        return a.o(')', CollectionsKt___CollectionsKt.joinToString$default(CollectionsKt.build(listCreateListBuilder), null, null, null, 0, null, null, 63, null), new StringBuilder("SharingStarted.WhileSubscribed("));
+        return a.o(')', CollectionsKt.q(CollectionsKt.build(listCreateListBuilder), null, null, null, null, 63), new StringBuilder("SharingStarted.WhileSubscribed("));
     }
 }

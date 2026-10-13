@@ -32,7 +32,6 @@ import java.util.Map;
 import kotlin.Pair;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.comparisons.ComparisonsKt;
 import kotlin.jvm.functions.Function1;
@@ -145,7 +144,7 @@ public final /* synthetic */ class g implements Function1 {
                 Timber.Forest forest = Timber.a;
                 Intrinsics.checkNotNull(list2);
                 List list3 = list2;
-                forest.b(androidx.browser.trusted.c.a("queryProducts ", CollectionsKt___CollectionsKt.joinToString$default(list3, null, null, null, 0, null, new w5.a(i), 31, null)), new Object[0]);
+                forest.b(androidx.browser.trusted.c.a("queryProducts ", CollectionsKt.q(list3, null, null, null, new w5.a(i), 31)), new Object[0]);
                 int iMapCapacity = MapsKt.mapCapacity(CollectionsKt.m(list3));
                 LinkedHashMap linkedHashMap = new LinkedHashMap(iMapCapacity >= 16 ? iMapCapacity : 16);
                 for (Object obj3 : list3) {

@@ -24,7 +24,6 @@ import java.util.Map;
 import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.internal.Intrinsics;
 
@@ -74,7 +73,7 @@ public final /* synthetic */ class i implements View.OnFocusChangeListener {
                         PasswordUtil.a.getClass();
                         arrayList.add(Integer.valueOf(PasswordUtil.f9902b.indexOf(str) + 1));
                     }
-                    Map mapMapOf = MapsKt.mapOf(pair, TuplesKt.to("reason", CollectionsKt___CollectionsKt.joinToString$default(arrayList, ",", null, null, 0, null, null, 62, null)));
+                    Map mapMapOf = MapsKt.mapOf(pair, TuplesKt.to("reason", CollectionsKt.q(arrayList, ",", null, null, null, 62)));
                     signUpLoggingHelper2.getClass();
                     SignUpLoggingHelper.a(contextRequireContext2, "onboarding_signup_password_enter", mapMapOf);
                 }

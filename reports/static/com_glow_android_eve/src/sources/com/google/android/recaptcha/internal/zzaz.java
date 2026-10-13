@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -49,7 +48,7 @@ public final class zzaz extends SQLiteOpenHelper {
         if (list.isEmpty()) {
             return 0;
         }
-        return getWritableDatabase().delete("ce", "id IN ".concat(String.valueOf(CollectionsKt___CollectionsKt.joinToString$default(list, ", ", "(", ")", 0, null, zzay.zza, 24, null))), null);
+        return getWritableDatabase().delete("ce", "id IN ".concat(String.valueOf(CollectionsKt.q(list, ", ", "(", ")", zzay.zza, 24))), null);
     }
 
     public final int zzb() {

@@ -32,7 +32,7 @@ public enum ReminderType {
         this.f6058b = i;
     }
 
-    public static LocalDateTime a(Context context, Reminder reminder, boolean z2) throws IllegalAccessException {
+    public static LocalDateTime a(Context context, Reminder reminder, boolean z2) {
         LocalDateTime upcomingAlarm = reminder.getUpcomingAlarm();
         if (upcomingAlarm == null) {
             return null;

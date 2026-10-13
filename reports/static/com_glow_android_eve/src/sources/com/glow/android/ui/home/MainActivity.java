@@ -255,7 +255,6 @@ import kotlin.ResultKt;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -1272,11 +1271,11 @@ public final class MainActivity extends BaseRNActivity {
         OutputVM.f13054P.getClass();
         Timber.Forest forest = Timber.a;
         ArrayList arrayList = OutputVM.Q;
-        forest.b("check need show output popup, " + CollectionsKt___CollectionsKt.joinToString$default(arrayList, null, null, null, 0, null, new com.facebook.react.defaults.a(29), 31, null) + ", add period " + OutputVM.R + ", add opk " + OutputVM.f13055S, new Object[0]);
+        forest.b("check need show output popup, " + CollectionsKt.q(arrayList, null, null, null, new com.facebook.react.defaults.a(29), 31) + ", add period " + OutputVM.R + ", add opk " + OutputVM.f13055S, new Object[0]);
         if ((!arrayList.isEmpty()) || OutputVM.R || OutputVM.f13055S) {
             K().l();
             if (!K().f13066O.getValue().isEmpty()) {
-                Blaster.c("page_impression_log_card_popup", "card_type", CollectionsKt___CollectionsKt.joinToString$default(K().f13066O.getValue(), null, null, null, 0, null, new k(19), 31, null), "page_source", TutorialManager.h.c() ? "tutorial" : "");
+                Blaster.c("page_impression_log_card_popup", "card_type", CollectionsKt.q(K().f13066O.getValue(), null, null, null, new k(19), 31), "page_source", TutorialManager.h.c() ? "tutorial" : "");
                 I().n.setVisibility(0);
                 ((HomeOutputPopupViewModel) this.f12248q.getValue()).a.setValue(Boolean.TRUE);
             }

@@ -28,7 +28,6 @@ import kotlin.collections.ArraysKt;
 import kotlin.collections.ArraysKt___ArraysJvmKt;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.CollectionsKt__MutableCollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.IndexedValue;
 import kotlin.collections.IndexingIterable;
 import kotlin.collections.MapsKt;
@@ -562,29 +561,29 @@ public class UArraysKt___UArraysKt extends UArraysKt___UArraysJvmKt {
     @NotNull
     /* JADX INFO: renamed from: contentToString-2csIQuQ, reason: not valid java name */
     public static String m7238contentToString2csIQuQ(@Nullable byte[] bArr) {
-        String strJoinToString$default;
-        return (bArr == null || (strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(new UByteArray(bArr), ", ", "[", "]", 0, null, null, 56, null)) == null) ? "null" : strJoinToString$default;
+        String strQ;
+        return (bArr == null || (strQ = CollectionsKt.q(new UByteArray(bArr), ", ", "[", "]", null, 56)) == null) ? "null" : strQ;
     }
 
     @NotNull
     /* JADX INFO: renamed from: contentToString-XUkPCBk, reason: not valid java name */
     public static String m7239contentToStringXUkPCBk(@Nullable int[] iArr) {
-        String strJoinToString$default;
-        return (iArr == null || (strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(new UIntArray(iArr), ", ", "[", "]", 0, null, null, 56, null)) == null) ? "null" : strJoinToString$default;
+        String strQ;
+        return (iArr == null || (strQ = CollectionsKt.q(new UIntArray(iArr), ", ", "[", "]", null, 56)) == null) ? "null" : strQ;
     }
 
     @NotNull
     /* JADX INFO: renamed from: contentToString-d-6D3K8, reason: not valid java name */
     public static String m7240contentToStringd6D3K8(@Nullable short[] sArr) {
-        String strJoinToString$default;
-        return (sArr == null || (strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(new UShortArray(sArr), ", ", "[", "]", 0, null, null, 56, null)) == null) ? "null" : strJoinToString$default;
+        String strQ;
+        return (sArr == null || (strQ = CollectionsKt.q(new UShortArray(sArr), ", ", "[", "]", null, 56)) == null) ? "null" : strQ;
     }
 
     @NotNull
     /* JADX INFO: renamed from: contentToString-uLth9ew, reason: not valid java name */
     public static String m7241contentToStringuLth9ew(@Nullable long[] jArr) {
-        String strJoinToString$default;
-        return (jArr == null || (strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(new ULongArray(jArr), ", ", "[", "]", 0, null, null, 56, null)) == null) ? "null" : strJoinToString$default;
+        String strQ;
+        return (jArr == null || (strQ = CollectionsKt.q(new ULongArray(jArr), ", ", "[", "]", null, 56)) == null) ? "null" : strQ;
     }
 
     /* JADX INFO: renamed from: copyInto--B0-L2c, reason: not valid java name */

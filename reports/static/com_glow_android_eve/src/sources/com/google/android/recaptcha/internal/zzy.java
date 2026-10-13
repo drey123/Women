@@ -10,7 +10,6 @@ import java.util.Iterator;
 import kotlin.collections.CharIterator;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.CollectionsKt__CollectionsJVMKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.ranges.CharProgressionIterator;
 import kotlin.ranges.CharRange;
@@ -74,8 +73,8 @@ public final class zzy implements zzh {
         while (((CharProgressionIterator) it2).d) {
             arrayList.add(Character.valueOf(((CharIterator) it2).nextChar()));
         }
-        String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(CollectionsKt__CollectionsJVMKt.shuffled(arrayList).subList(0, 8), "", null, null, 0, null, null, 62, null);
-        File file = new File(this.zza.getCacheDir(), this.zzb.concat(String.valueOf(strJoinToString$default)));
+        String strQ = CollectionsKt.q(CollectionsKt__CollectionsJVMKt.shuffled(arrayList).subList(0, 8), "", null, null, null, 62);
+        File file = new File(this.zza.getCacheDir(), this.zzb.concat(String.valueOf(strQ)));
         zzad.zzb(file, String.valueOf(str2).getBytes(StandardCharsets.UTF_8));
         file.renameTo(new File(this.zza.getCacheDir(), this.zzb.concat(String.valueOf(str))));
     }

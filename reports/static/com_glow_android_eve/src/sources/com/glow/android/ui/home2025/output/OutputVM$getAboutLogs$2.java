@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
@@ -120,13 +120,13 @@ final class OutputVM$getAboutLogs$2 extends SuspendLambda implements Function2<C
         for (Object obj2 : arrayListE) {
             if (Intrinsics.areEqual(((DailyLog) obj2).getDate(), SimpleDate.M())) {
                 DailyLog dailyLog = (DailyLog) obj2;
-                Timber.a.b(c.a("logs date: ", CollectionsKt___CollectionsKt.joinToString$default(arrayListE, null, null, null, 0, null, new i(0), 31, null)), new Object[0]);
+                Timber.a.b(c.a("logs date: ", CollectionsKt.q(arrayListE, null, null, null, new i(0), 31)), new Object[0]);
                 return new AboutLogs(dailyLog, arrayListE, start, end, startCdIdx, endCdIdx, todayCdIdx);
             }
         }
         obj2 = null;
         DailyLog dailyLog2 = (DailyLog) obj2;
-        Timber.a.b(c.a("logs date: ", CollectionsKt___CollectionsKt.joinToString$default(arrayListE, null, null, null, 0, null, new i(0), 31, null)), new Object[0]);
+        Timber.a.b(c.a("logs date: ", CollectionsKt.q(arrayListE, null, null, null, new i(0), 31)), new Object[0]);
         return new AboutLogs(dailyLog2, arrayListE, start, end, startCdIdx, endCdIdx, todayCdIdx);
     }
 }

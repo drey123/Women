@@ -261,30 +261,34 @@ public final class zzaqq implements zzape {
 
     @Override // com.google.android.gms.internal.ads.zzape
     public final synchronized void zzc() {
-        File fileZza = this.zzc.zza();
-        if (fileZza.exists()) {
-            File[] fileArrListFiles = fileZza.listFiles();
-            if (fileArrListFiles != null) {
-                for (File file : fileArrListFiles) {
-                    try {
-                        long length = file.length();
-                        zzaqo zzaqoVar = new zzaqo(new BufferedInputStream(new FileInputStream(file)), length);
+        try {
+            File fileZza = this.zzc.zza();
+            if (fileZza.exists()) {
+                File[] fileArrListFiles = fileZza.listFiles();
+                if (fileArrListFiles != null) {
+                    for (File file : fileArrListFiles) {
                         try {
-                            zzaqn zzaqnVarZza = zzaqn.zza(zzaqoVar);
-                            zzaqnVarZza.zza = length;
-                            zzn(zzaqnVarZza.zzb, zzaqnVarZza);
-                            zzaqoVar.close();
-                        } catch (Throwable th) {
-                            zzaqoVar.close();
-                            throw th;
+                            long length = file.length();
+                            zzaqo zzaqoVar = new zzaqo(new BufferedInputStream(new FileInputStream(file)), length);
+                            try {
+                                zzaqn zzaqnVarZza = zzaqn.zza(zzaqoVar);
+                                zzaqnVarZza.zza = length;
+                                zzn(zzaqnVarZza.zzb, zzaqnVarZza);
+                                zzaqoVar.close();
+                            } catch (Throwable th) {
+                                zzaqoVar.close();
+                                throw th;
+                            }
+                        } catch (IOException unused) {
+                            file.delete();
                         }
-                    } catch (IOException unused) {
-                        file.delete();
                     }
                 }
+            } else if (!fileZza.mkdirs()) {
+                zzaqg.zzc("Unable to create cache dir %s", fileZza.getAbsolutePath());
             }
-        } else if (!fileZza.mkdirs()) {
-            zzaqg.zzc("Unable to create cache dir %s", fileZza.getAbsolutePath());
+        } catch (Throwable th2) {
+            throw th2;
         }
     }
 

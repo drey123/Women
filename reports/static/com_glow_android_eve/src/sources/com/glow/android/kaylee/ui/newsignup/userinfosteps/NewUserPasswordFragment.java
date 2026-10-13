@@ -39,7 +39,6 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
@@ -194,7 +193,7 @@ public final class NewUserPasswordFragment extends BaseFragment {
                 PasswordUtil.a.getClass();
                 arrayList.add(Integer.valueOf(PasswordUtil.f9902b.indexOf(str) + 1));
             }
-            map.put("reason", CollectionsKt___CollectionsKt.joinToString$default(arrayList, ",", null, null, 0, null, null, 62, null));
+            map.put("reason", CollectionsKt.q(arrayList, ",", null, null, null, 62));
         }
         SignUpLoggingHelper signUpLoggingHelper = SignUpLoggingHelper.a;
         Context contextRequireContext = requireContext();

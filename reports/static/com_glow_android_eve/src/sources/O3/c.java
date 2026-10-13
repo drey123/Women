@@ -17,7 +17,6 @@ import java.util.Iterator;
 import java.util.List;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.math.MathKt;
@@ -38,7 +37,7 @@ public final /* synthetic */ class c implements Function3 {
     public final Object invoke(Object obj, Object obj2, Object obj3) {
         NoteListConverter.NoteList notes;
         List<String> list;
-        String strJoinToString$default;
+        String strQ;
         NoteListConverter.NoteList notes2;
         List<String> list2;
         NoteListConverter.NoteList notes3;
@@ -184,7 +183,7 @@ public final /* synthetic */ class c implements Function3 {
                 Intrinsics.checkNotNullParameter(f18, "f");
                 Intrinsics.checkNotNullParameter((Context) obj3, "<unused var>");
                 if (((dailyLog7 == null || (notes4 = dailyLog7.getNotes()) == null || (list4 = notes4.a) == null) ? 0 : list4.size()) <= 1) {
-                    return (dailyLog7 == null || (notes = dailyLog7.getNotes()) == null || (list = notes.a) == null || (strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(list, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, null, 62, null)) == null) ? "" : strJoinToString$default;
+                    return (dailyLog7 == null || (notes = dailyLog7.getNotes()) == null || (list = notes.a) == null || (strQ = CollectionsKt.q(list, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, null, 62)) == null) ? "" : strQ;
                 }
                 String str2 = (dailyLog7 == null || (notes3 = dailyLog7.getNotes()) == null || (list3 = notes3.a) == null) ? null : (String) CollectionsKt.first((List) list3);
                 if (dailyLog7 != null && (notes2 = dailyLog7.getNotes()) != null && (list2 = notes2.a) != null) {

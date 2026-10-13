@@ -150,7 +150,6 @@ import kotlin.ResultKt;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
@@ -1329,16 +1328,16 @@ public final class CalendarBottomSheetNew extends AbstractComposeView {
                         }
                         arrayList2.add(string);
                     }
-                    arrayList.add(CollectionsKt___CollectionsKt.joinToString$default(arrayList2, " ", null, null, 0, null, null, 62, null));
+                    arrayList.add(CollectionsKt.q(arrayList2, " ", null, null, null, 62));
                     i8 = 6;
                 }
-                String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList, ", ", null, null, 0, null, null, 62, null);
+                String strQ = CollectionsKt.q(arrayList, ", ", null, null, null, 62);
                 ArrayList arrayList3 = new ArrayList(CollectionsKt.m(arrayListB));
                 Iterator<Symptom> it3 = arrayListB.iterator();
                 while (it3.hasNext()) {
                     arrayList3.add(Integer.valueOf(it3.next().getSymptomIconRes()));
                 }
-                pair2 = TuplesKt.to(strJoinToString$default, arrayList3);
+                pair2 = TuplesKt.to(strQ, arrayList3);
             } else if (iOrdinal2 == 3) {
                 SexInput.Intercourse.Companion companion = SexInput.Intercourse.INSTANCE;
                 int intercourse = dailyLog.getIntercourse();
@@ -1355,13 +1354,13 @@ public final class CalendarBottomSheetNew extends AbstractComposeView {
                         arrayList4.add(emotion);
                     }
                 }
-                String strJoinToString$default2 = CollectionsKt___CollectionsKt.joinToString$default(arrayList4, ", ", null, null, 0, null, new k(9), 30, null);
+                String strQ2 = CollectionsKt.q(arrayList4, ", ", null, null, new k(9), 30);
                 ArrayList arrayList5 = new ArrayList(CollectionsKt.m(arrayList4));
                 Iterator it4 = arrayList4.iterator();
                 while (it4.hasNext()) {
                     arrayList5.add(Integer.valueOf(((Emotion) it4.next()).getEmotionIconRes()));
                 }
-                pair2 = TuplesKt.to(strJoinToString$default2, arrayList5);
+                pair2 = TuplesKt.to(strQ2, arrayList5);
             } else if (iOrdinal2 == 5) {
                 Resources resources = getContext().getResources();
                 int cervicalMucus = dailyLog.getCervicalMucus();

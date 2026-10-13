@@ -87,7 +87,7 @@ public class ChildrenNode implements Node {
     }
 
     @Override // java.lang.Comparable
-    /* JADX INFO: renamed from: a */
+    /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
     public int compareTo(Node node) {
         if (isEmpty()) {
             return node.isEmpty() ? 0 : -1;

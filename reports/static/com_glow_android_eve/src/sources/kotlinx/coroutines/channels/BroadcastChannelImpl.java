@@ -12,7 +12,6 @@ import java.util.concurrent.locks.ReentrantLock;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.internal.Symbol;
 import org.jetbrains.annotations.NotNull;
@@ -320,7 +319,7 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
         sb.append("BROADCAST=<");
         sb.append(super.toString());
         sb.append(">; SUBSCRIBERS=");
-        sb.append(CollectionsKt___CollectionsKt.joinToString$default(this.o, ";", "<", ">", 0, null, null, 56, null));
+        sb.append(CollectionsKt.q(this.o, ";", "<", ">", null, 56));
         return sb.toString();
     }
 

@@ -9,7 +9,6 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.TypeCastException;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -298,6 +297,6 @@ public final class PagePresenter<T> implements NullPaddedList<T> {
         for (int i = 0; i < storageCount; i++) {
             arrayList.add(getFromStorage(i));
         }
-        return "[(" + getPlaceholdersBefore() + " placeholders), " + CollectionsKt___CollectionsKt.joinToString$default(arrayList, null, null, null, 0, null, null, 63, null) + ", (" + getPlaceholdersAfter() + " placeholders)]";
+        return "[(" + getPlaceholdersBefore() + " placeholders), " + CollectionsKt.q(arrayList, null, null, null, null, 63) + ", (" + getPlaceholdersAfter() + " placeholders)]";
     }
 }

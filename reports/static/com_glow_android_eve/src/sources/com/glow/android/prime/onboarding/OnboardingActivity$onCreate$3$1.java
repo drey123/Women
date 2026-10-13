@@ -49,7 +49,7 @@ public final class OnboardingActivity$onCreate$3$1 extends SuspendLambda impleme
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Object invokeSuspend(Object obj) {
+    public final Object invokeSuspend(Object obj) throws Throwable {
         CoroutineSingletons coroutineSingletons = CoroutineSingletons.f25414b;
         int i = this.f9517b;
         OnboardingActivity onboardingActivity = this.c;

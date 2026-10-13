@@ -196,6 +196,6 @@ public final class SerialDescriptorImpl implements SerialDescriptor, CachedNames
 
     @NotNull
     public final String toString() {
-        return CollectionsKt___CollectionsKt.joinToString$default(RangesKt.s(0, this.c), ", ", a.o('(', this.a, new StringBuilder()), ")", 0, null, new kotlin.jvm.internal.a(this, 22), 24, null);
+        return CollectionsKt.q(RangesKt.s(0, this.c), ", ", a.o('(', this.a, new StringBuilder()), ")", new kotlin.jvm.internal.a(this, 22), 24);
     }
 }

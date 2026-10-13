@@ -32,7 +32,6 @@ import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.comparisons.ComparisonsKt;
 import kotlin.coroutines.Continuation;
@@ -131,7 +130,7 @@ public final class NewPeriodEditorViewModel extends AndroidViewModel {
                         }
                     }
                     forest.b(androidx.compose.animation.a.p(size, arrayList.size(), "period data updated after added period, predicted size: ", ", future size: "), new Object[0]);
-                    Timber.a.b(androidx.browser.trusted.c.a("period data predicted cycles: ", CollectionsKt___CollectionsKt.joinToString$default(list, null, null, null, 0, null, new i(28), 31, null)), new Object[0]);
+                    Timber.a.b(androidx.browser.trusted.c.a("period data predicted cycles: ", CollectionsKt.q(list, null, null, null, new i(28), 31)), new Object[0]);
                     ArrayList arrayList2 = new ArrayList();
                     for (Object obj3 : list) {
                         if (((JSPeriodCycle) obj3).getPB().S()) {

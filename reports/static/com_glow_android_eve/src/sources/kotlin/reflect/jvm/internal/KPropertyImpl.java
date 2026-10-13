@@ -20,7 +20,6 @@ import kotlin.Metadata;
 import kotlin.NoWhenBranchMatchedException;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt__MapsJVMKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
@@ -541,11 +540,11 @@ public abstract class KPropertyImpl<V> extends KCallableImpl<V> implements KProp
                 }
                 Name nameK2 = Name.k(name);
                 Intrinsics.checkNotNullExpressionValue(nameK2, "identifier(name)");
-                String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(kDeclarationContainerImpl2.w(nameK2), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, KDeclarationContainerImpl$findPropertyDescriptor$allMembers$1.f25569b, 30, null);
+                String strQ = CollectionsKt.q(kDeclarationContainerImpl2.w(nameK2), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, KDeclarationContainerImpl$findPropertyDescriptor$allMembers$1.f25569b, 30);
                 StringBuilder sbL2 = C0316y.l("Property '", name, "' (JVM signature: ", signature, ") not resolved in ");
                 sbL2.append(kDeclarationContainerImpl2);
                 sbL2.append(':');
-                sbL2.append(strJoinToString$default.length() == 0 ? " no members found" : ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE.concat(strJoinToString$default));
+                sbL2.append(strQ.length() == 0 ? " no members found" : ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE.concat(strQ));
                 throw new KotlinReflectionInternalError(sbL2.toString());
             }
         });

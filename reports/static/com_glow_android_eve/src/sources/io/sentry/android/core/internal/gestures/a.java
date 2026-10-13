@@ -97,7 +97,6 @@ import java.util.concurrent.CopyOnWriteArraySet;
 import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
@@ -490,7 +489,7 @@ public final /* synthetic */ class a implements ScopeCallback, Scope.IWithTransa
 
     public void h(ErrorVo errorVo, ArrayList arrayList) {
         String strA;
-        String strJoinToString$default;
+        String strQ;
         String str;
         IapClientResponseListener listener = (IapClientResponseListener) this.c;
         Intrinsics.checkNotNullParameter(listener, "$listener");
@@ -501,10 +500,10 @@ public final /* synthetic */ class a implements ScopeCallback, Scope.IWithTransa
             strA = "errorVo null";
         }
         forest.b("consumeProductsResp: ".concat(strA), new Object[0]);
-        if (arrayList == null || (strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new i(2), 30, null)) == null) {
-            strJoinToString$default = "consumeList null";
+        if (arrayList == null || (strQ = CollectionsKt.q(arrayList, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new i(2), 30)) == null) {
+            strQ = "consumeList null";
         }
-        forest.b("consumeProductsResp: ".concat(strJoinToString$default), new Object[0]);
+        forest.b("consumeProductsResp: ".concat(strQ), new Object[0]);
         if (errorVo == null || errorVo.a != 0) {
             if (errorVo == null || (str = errorVo.f23348b) == null) {
                 IapClient.f4859k0.getClass();
@@ -571,11 +570,11 @@ public final /* synthetic */ class a implements ScopeCallback, Scope.IWithTransa
         int iHashCode2 = productIds.hashCode();
         int size = arrayList != null ? arrayList.size() : 0;
         int size2 = productIds.size();
-        String strJoinToString$default = arrayList != null ? CollectionsKt___CollectionsKt.joinToString$default(arrayList, "\n==========================\n", null, null, 0, null, new w5.a(9), 30, null) : null;
+        String strQ = arrayList != null ? CollectionsKt.q(arrayList, "\n==========================\n", null, null, new w5.a(9), 30) : null;
         StringBuilder sbK2 = C0316y.k("queryDetailsAsync skusList@", iHashCode2, " success ", size, DomExceptionUtils.SEPARATOR);
         sbK2.append(size2);
         sbK2.append(":\n");
-        sbK2.append(strJoinToString$default);
+        sbK2.append(strQ);
         forest2.h(sbK2.toString(), new Object[0]);
         if (arrayList != null) {
             int iMapCapacity = MapsKt.mapCapacity(CollectionsKt.m(arrayList));
@@ -655,11 +654,11 @@ public final /* synthetic */ class a implements ScopeCallback, Scope.IWithTransa
             int iHashCode = productIds.hashCode();
             int size = ((ArrayList) productDetailsList).size();
             int size2 = productIds.size();
-            String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(productDetailsList, "\n==========================\n", null, null, 0, null, new w5.a(8), 30, null);
+            String strQ = CollectionsKt.q(productDetailsList, "\n==========================\n", null, null, new w5.a(8), 30);
             StringBuilder sbK = C0316y.k("queryDetailsAsync productIds@", iHashCode, " success ", size, DomExceptionUtils.SEPARATOR);
             sbK.append(size2);
             sbK.append(":\n");
-            sbK.append(strJoinToString$default);
+            sbK.append(strQ);
             forest.h(sbK.toString(), new Object[0]);
         } else {
             Timber.Forest forest2 = Timber.a;
@@ -686,9 +685,9 @@ public final /* synthetic */ class a implements ScopeCallback, Scope.IWithTransa
         if (i == 0) {
             Timber.Forest forest = Timber.a;
             int size = purchaseList.size();
-            String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(purchaseList, "\n==========================\n", null, null, 0, null, new w5.a(7), 30, null);
+            String strQ = CollectionsKt.q(purchaseList, "\n==========================\n", null, null, new w5.a(7), 30);
             StringBuilder sbT = android.support.v4.media.a.t(size, "queryPurchasesAsync productType:", productType, " find:", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
-            sbT.append(strJoinToString$default);
+            sbT.append(strQ);
             forest.h(sbT.toString(), new Object[0]);
         } else {
             Timber.a.h(b.h(i, "queryPurchasesAsync error code:", " message:", billingResult.f2879b), new Object[0]);

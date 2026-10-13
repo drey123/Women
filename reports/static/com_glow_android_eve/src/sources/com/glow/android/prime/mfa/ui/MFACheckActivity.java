@@ -33,7 +33,7 @@ import com.google.gson.JsonObject;
 import dagger.android.AndroidInjection;
 import java.util.ArrayList;
 import kotlin.Metadata;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
@@ -282,7 +282,7 @@ public final class MFACheckActivity extends BaseActivity implements VerifyCodeVi
                                             Character ch = chArr[i8];
                                             arrayList.add('*');
                                         }
-                                        strM = android.support.v4.media.a.m(CollectionsKt___CollectionsKt.joinToString$default(arrayList, "", null, null, 0, null, null, 62, null), strSubstring);
+                                        strM = android.support.v4.media.a.m(CollectionsKt.q(arrayList, "", null, null, null, 62), strSubstring);
                                     }
                                     textView6.setText(strM);
                                     PrimaActivityMfaCheckBinding primaActivityMfaCheckBinding4 = this.o;

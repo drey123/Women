@@ -23,7 +23,7 @@ public final /* synthetic */ class J implements CallbackToFutureAdapter.Resolver
             case 0:
                 return ((FocusMeteringControl) this.d).lambda$enableExternalFlashAeMode$5(this.c, completer);
             default:
-                return TorchControl.a((TorchControl) this.d, completer, this.c);
+                return ((TorchControl) this.d).lambda$enableTorch$2(this.c, completer);
         }
     }
 }

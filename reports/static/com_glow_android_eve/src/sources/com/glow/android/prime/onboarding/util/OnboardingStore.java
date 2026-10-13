@@ -79,7 +79,7 @@ public final class OnboardingStore {
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     @Nullable
-    public final Object c(@NotNull Continuation<? super Integer> continuation) {
+    public final Object c(@NotNull Continuation<? super Integer> continuation) throws Throwable {
         OnboardingStore$getAppPurpose$1 onboardingStore$getAppPurpose$1;
         if (continuation instanceof OnboardingStore$getAppPurpose$1) {
             onboardingStore$getAppPurpose$1 = (OnboardingStore$getAppPurpose$1) continuation;
@@ -114,7 +114,7 @@ public final class OnboardingStore {
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     @Nullable
-    public final Object d(@NotNull Continuation<? super Integer> continuation) {
+    public final Object d(@NotNull Continuation<? super Integer> continuation) throws Throwable {
         OnboardingStore$getBirthControl$1 onboardingStore$getBirthControl$1;
         if (continuation instanceof OnboardingStore$getBirthControl$1) {
             onboardingStore$getBirthControl$1 = (OnboardingStore$getBirthControl$1) continuation;
@@ -149,7 +149,7 @@ public final class OnboardingStore {
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     @Nullable
-    public final Object e(@NotNull Continuation<? super Integer> continuation) {
+    public final Object e(@NotNull Continuation<? super Integer> continuation) throws Throwable {
         OnboardingStore$getCycleRegular$1 onboardingStore$getCycleRegular$1;
         if (continuation instanceof OnboardingStore$getCycleRegular$1) {
             onboardingStore$getCycleRegular$1 = (OnboardingStore$getCycleRegular$1) continuation;
@@ -189,7 +189,7 @@ public final class OnboardingStore {
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     @Nullable
-    public final Object g(@NotNull Continuation<? super Integer> continuation) {
+    public final Object g(@NotNull Continuation<? super Integer> continuation) throws Throwable {
         OnboardingStore$getFertilityGoal$1 onboardingStore$getFertilityGoal$1;
         if (continuation instanceof OnboardingStore$getFertilityGoal$1) {
             onboardingStore$getFertilityGoal$1 = (OnboardingStore$getFertilityGoal$1) continuation;
@@ -224,7 +224,7 @@ public final class OnboardingStore {
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     @Nullable
-    public final Object h(@NotNull Continuation<? super Integer> continuation) {
+    public final Object h(@NotNull Continuation<? super Integer> continuation) throws Throwable {
         OnboardingStore$getGenderInt$1 onboardingStore$getGenderInt$1;
         if (continuation instanceof OnboardingStore$getGenderInt$1) {
             onboardingStore$getGenderInt$1 = (OnboardingStore$getGenderInt$1) continuation;
@@ -301,13 +301,13 @@ public final class OnboardingStore {
     }
 
     @Nullable
-    public final Object k(@NotNull String str, @NotNull Continuation<? super Integer> continuation) {
+    public final Object k(@NotNull String str, @NotNull Continuation<? super Integer> continuation) throws Throwable {
         return BuildersKt.f(this.f9862b.plus(Dispatchers.c), new OnboardingStore$getOnboardingInt$2(this, str, null), continuation);
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     @Nullable
-    public final Object l(@NotNull Continuation<? super Integer> continuation) {
+    public final Object l(@NotNull Continuation<? super Integer> continuation) throws Throwable {
         OnboardingStore$getTTCStartCount$1 onboardingStore$getTTCStartCount$1;
         if (continuation instanceof OnboardingStore$getTTCStartCount$1) {
             onboardingStore$getTTCStartCount$1 = (OnboardingStore$getTTCStartCount$1) continuation;
@@ -342,7 +342,7 @@ public final class OnboardingStore {
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     @Nullable
-    public final Object m(@NotNull Continuation<? super Integer> continuation) {
+    public final Object m(@NotNull Continuation<? super Integer> continuation) throws Throwable {
         OnboardingStore$getTTCStartUnit$1 onboardingStore$getTTCStartUnit$1;
         if (continuation instanceof OnboardingStore$getTTCStartUnit$1) {
             onboardingStore$getTTCStartUnit$1 = (OnboardingStore$getTTCStartUnit$1) continuation;

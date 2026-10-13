@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InterruptedIOException;
 import java.io.OutputStream;
+import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Collections;
@@ -276,101 +277,83 @@ public final class ajt extends ajb implements ajh {
         return httpURLConnection == null ? Collections.emptyMap() : httpURLConnection.getHeaderFields();
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x0032 */
-    /* JADX WARN: Code duplicated, block: B:31:0x0053 A[Catch: all -> 0x0032, Exception -> 0x006b, TRY_LEAVE, TryCatch #0 {, blocks: (B:3:0x0002, B:5:0x0006, B:9:0x0013, B:11:0x0017, B:17:0x0022, B:19:0x002a, B:27:0x003b, B:29:0x004b, B:31:0x0053, B:32:0x006b, B:35:0x0070, B:36:0x0077, B:8:0x0010), top: B:46:0x0002, inners: #2 }] */
+    /* JADX WARN: Code duplicated, block: B:31:0x0053 A[Catch: all -> 0x0032, Exception -> 0x006b, TRY_LEAVE, TryCatch #0 {all -> 0x0032, blocks: (B:3:0x0002, B:5:0x0006, B:9:0x0013, B:11:0x0017, B:17:0x0022, B:19:0x002a, B:27:0x003b, B:29:0x004b, B:31:0x0053, B:32:0x006b, B:35:0x0070, B:36:0x0077, B:8:0x0010), top: B:46:0x0002, inners: #2 }] */
+    /* JADX WARN: Code duplicated, block: B:43:0x0090  */
     @Override // com.google.ads.interactivemedia.v3.internal.ajh
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final void f() throws com.google.ads.interactivemedia.v3.internal.ajx {
-        /*
-            r10 = this;
-            r0 = 0
-            r1 = 0
-            java.io.InputStream r2 = r10.h     // Catch: java.lang.Throwable -> L32
-            if (r2 == 0) goto L78
-            long r3 = r10.k     // Catch: java.lang.Throwable -> L32
-            r5 = -1
-            int r7 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
-            if (r7 != 0) goto L10
-            r3 = r5
-            goto L13
-        L10:
-            long r7 = r10.l     // Catch: java.lang.Throwable -> L32
-            long r3 = r3 - r7
-        L13:
-            java.net.HttpURLConnection r7 = r10.g     // Catch: java.lang.Throwable -> L32
-            if (r7 == 0) goto L6b
-            int r8 = com.google.ads.interactivemedia.v3.internal.amn.a     // Catch: java.lang.Throwable -> L32
-            r9 = 19
-            if (r8 < r9) goto L6b
-            r9 = 20
-            if (r8 <= r9) goto L22
-            goto L6b
-        L22:
-            java.io.InputStream r7 = r7.getInputStream()     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-            int r5 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
-            if (r5 != 0) goto L34
-            int r3 = r7.read()     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-            r4 = -1
-            if (r3 == r4) goto L6b
-            goto L3b
-        L32:
-            r2 = move-exception
-            goto L87
-        L34:
-            r5 = 2048(0x800, double:1.0118E-320)
-            int r3 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
-            if (r3 > 0) goto L3b
-            goto L6b
-        L3b:
-            java.lang.Class r3 = r7.getClass()     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-            java.lang.String r3 = r3.getName()     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-            java.lang.String r4 = "com.android.okhttp.internal.http.HttpTransport$ChunkedInputStream"
-            boolean r4 = r4.equals(r3)     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-            if (r4 != 0) goto L53
-            java.lang.String r4 = "com.android.okhttp.internal.http.HttpTransport$FixedLengthInputStream"
-            boolean r3 = r4.equals(r3)     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-            if (r3 == 0) goto L6b
-        L53:
-            java.lang.Class r3 = r7.getClass()     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-            java.lang.Class r3 = r3.getSuperclass()     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-            com.google.ads.interactivemedia.v3.internal.ajr.b(r3)     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-            java.lang.String r4 = "unexpectedEndOfInput"
-            java.lang.reflect.Method r3 = r3.getDeclaredMethod(r4, r1)     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-            r4 = 1
-            r3.setAccessible(r4)     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-            r3.invoke(r7, r1)     // Catch: java.lang.Throwable -> L32 java.lang.Exception -> L6b
-        L6b:
-            r2.close()     // Catch: java.lang.Throwable -> L32 java.io.IOException -> L6f
-            goto L78
-        L6f:
-            r2 = move-exception
-            com.google.ads.interactivemedia.v3.internal.ajx r3 = new com.google.ads.interactivemedia.v3.internal.ajx     // Catch: java.lang.Throwable -> L32
-            int r4 = com.google.ads.interactivemedia.v3.internal.amn.a     // Catch: java.lang.Throwable -> L32
-            r3.<init>(r2)     // Catch: java.lang.Throwable -> L32
-            throw r3     // Catch: java.lang.Throwable -> L32
-        L78:
-            r10.h = r1
-            r10.k()
-            boolean r1 = r10.i
-            if (r1 == 0) goto L86
-            r10.i = r0
-            r10.h()
-        L86:
-            return
-        L87:
-            r10.h = r1
-            r10.k()
-            boolean r1 = r10.i
-            if (r1 == 0) goto L95
-            r10.i = r0
-            r10.h()
-        L95:
-            throw r2
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ads.interactivemedia.v3.internal.ajt.f():void");
+    public final void f() throws ajx {
+        String name;
+        try {
+            InputStream inputStream = this.h;
+            if (inputStream != null) {
+                long j4 = this.k;
+                long j6 = j4 == -1 ? -1L : j4 - this.l;
+                HttpURLConnection httpURLConnection = this.g;
+                if (httpURLConnection != null) {
+                    int i = amn.a;
+                    if (i >= 19 && i <= 20) {
+                        try {
+                            InputStream inputStream2 = httpURLConnection.getInputStream();
+                            if (j6 == -1) {
+                                if (inputStream2.read() != -1) {
+                                    name = inputStream2.getClass().getName();
+                                    if ("com.android.okhttp.internal.http.HttpTransport$ChunkedInputStream".equals(name) || "com.android.okhttp.internal.http.HttpTransport$FixedLengthInputStream".equals(name)) {
+                                        Class<? super Object> superclass = inputStream2.getClass().getSuperclass();
+                                        ajr.b(superclass);
+                                        Method declaredMethod = superclass.getDeclaredMethod("unexpectedEndOfInput", null);
+                                        declaredMethod.setAccessible(true);
+                                        declaredMethod.invoke(inputStream2, null);
+                                    }
+                                }
+                                this.h = null;
+                                k();
+                                if (this.i) {
+                                    this.i = false;
+                                    h();
+                                }
+                                throw th;
+                            }
+                            if (j6 > 2048) {
+                                name = inputStream2.getClass().getName();
+                                if ("com.android.okhttp.internal.http.HttpTransport$ChunkedInputStream".equals(name)) {
+                                    Class<? super Object> superclass2 = inputStream2.getClass().getSuperclass();
+                                    ajr.b(superclass2);
+                                    Method declaredMethod2 = superclass2.getDeclaredMethod("unexpectedEndOfInput", null);
+                                    declaredMethod2.setAccessible(true);
+                                    declaredMethod2.invoke(inputStream2, null);
+                                } else {
+                                    Class<? super Object> superclass3 = inputStream2.getClass().getSuperclass();
+                                    ajr.b(superclass3);
+                                    Method declaredMethod3 = superclass3.getDeclaredMethod("unexpectedEndOfInput", null);
+                                    declaredMethod3.setAccessible(true);
+                                    declaredMethod3.invoke(inputStream2, null);
+                                }
+                            }
+                        } catch (Exception unused) {
+                        }
+                    }
+                }
+                try {
+                    inputStream.close();
+                } catch (IOException e6) {
+                    int i6 = amn.a;
+                    throw new ajx(e6);
+                }
+            }
+            this.h = null;
+            k();
+            if (this.i) {
+                this.i = false;
+                h();
+            }
+        } catch (Throwable th) {
+            this.h = null;
+            k();
+            if (this.i) {
+                this.i = false;
+                h();
+            }
+            throw th;
+        }
     }
 
     private ajt(@Nullable String str, int i, int i6, @Nullable ajz ajzVar) {

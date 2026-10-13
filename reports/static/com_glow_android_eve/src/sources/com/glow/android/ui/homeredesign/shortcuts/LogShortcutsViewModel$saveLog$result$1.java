@@ -29,7 +29,7 @@ import kotlin.Pair;
 import kotlin.ResultKt;
 import kotlin.TuplesKt;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -181,7 +181,7 @@ public final class LogShortcutsViewModel$saveLog$result$1 extends SuspendLambda 
             ref$BooleanRef.f25455b = true;
         }
         if (ref$BooleanRef.f25455b) {
-            Blaster.e("client_daily_data_updated", MapsKt.mapOf(TuplesKt.to("date", logShortcutsViewModel.m().toString()), TuplesKt.to("page_source", "bottomsheet_" + logShortcutsViewModel.k), TuplesKt.to("data", jSONObject.toString()), TuplesKt.to("data_key", CollectionsKt___CollectionsKt.joinToString$default(snapshotStateListMutableStateListOf, null, null, null, 0, null, new i(7), 31, null))));
+            Blaster.e("client_daily_data_updated", MapsKt.mapOf(TuplesKt.to("date", logShortcutsViewModel.m().toString()), TuplesKt.to("page_source", "bottomsheet_" + logShortcutsViewModel.k), TuplesKt.to("data", jSONObject.toString()), TuplesKt.to("data_key", CollectionsKt.q(snapshotStateListMutableStateListOf, null, null, null, new i(7), 31))));
         }
         if (((Boolean) ((Pair) ref$ObjectRef.f25459b).getFirst()).booleanValue()) {
             Pusher pusher2 = logShortcutsViewModel.h;

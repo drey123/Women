@@ -4,7 +4,7 @@ import androidx.credentials.exceptions.publickeycredential.DomExceptionUtils;
 import java.util.LinkedList;
 import java.util.List;
 import kotlin.Triple;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$QualifiedNameTable;
 import kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$StringTable;
@@ -38,11 +38,11 @@ public final class NameResolverImpl implements NameResolver {
     public final String b(int i) {
         Triple<List<String>, List<String>, Boolean> tripleC = c(i);
         List<String> list = tripleC.f25384b;
-        String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(tripleC.c, ".", null, null, 0, null, null, 62, null);
+        String strQ = CollectionsKt.q(tripleC.c, ".", null, null, null, 62);
         if (list.isEmpty()) {
-            return strJoinToString$default;
+            return strQ;
         }
-        return CollectionsKt___CollectionsKt.joinToString$default(list, DomExceptionUtils.SEPARATOR, null, null, 0, null, null, 62, null) + '/' + strJoinToString$default;
+        return CollectionsKt.q(list, DomExceptionUtils.SEPARATOR, null, null, null, 62) + '/' + strQ;
     }
 
     public final Triple<List<String>, List<String>, Boolean> c(int i) {

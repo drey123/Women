@@ -147,7 +147,7 @@ public abstract class zzfw extends zzft implements List, RandomAccess {
     }
 
     @Override // java.util.List
-    /* JADX INFO: renamed from: zzf, reason: merged with bridge method [inline-methods] */
+    /* JADX INFO: renamed from: zzf */
     public zzfw subList(int i, int i6) {
         zzfo.zzc(i, i6, size());
         int i7 = i6 - i;

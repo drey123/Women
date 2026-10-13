@@ -80,7 +80,7 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
@@ -612,7 +612,7 @@ public final class ForecastCardsKt {
                     ForecastCardContainerKt.e(modifierFillMaxWidth$default, z8, false, ComposableLambdaKt.rememberComposableLambda(-1192367559, true, new Function2<Composer, Integer, Unit>() { // from class: com.glow.android.ui.forecast.ForecastCardsKt$YourFertilityTrendCard$1.1
                         @Override // kotlin.jvm.functions.Function2
                         public final Unit invoke(Composer composer4, Integer num2) {
-                            String strJoinToString$default;
+                            String strQ;
                             Composer composer5 = composer4;
                             if ((num2.intValue() & 11) == 2 && composer5.getSkipping()) {
                                 composer5.skipToGroupEnd();
@@ -669,7 +669,7 @@ public final class ForecastCardsKt {
                                 composer5.startReplaceGroup(703513293);
                                 List<Pair<SimpleDate, SimpleDate>> list3 = list;
                                 if (list3.isEmpty()) {
-                                    strJoinToString$default = "--";
+                                    strQ = "--";
                                 } else {
                                     List<Pair<SimpleDate, SimpleDate>> list4 = list3;
                                     composer5.startReplaceGroup(703515556);
@@ -679,9 +679,9 @@ public final class ForecastCardsKt {
                                         composer5.updateRememberedValue(objRememberedValue);
                                     }
                                     composer5.endReplaceGroup();
-                                    strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(list4, ",", null, null, 0, null, (Function1) objRememberedValue, 30, null);
+                                    strQ = CollectionsKt.q(list4, ",", null, null, (Function1) objRememberedValue, 30);
                                 }
-                                String str = strJoinToString$default;
+                                String str = strQ;
                                 composer5.endReplaceGroup();
                                 TextKt.m1722Text4IGK_g(str, (Modifier) null, 0L, 0L, (FontStyle) null, (FontWeight) null, (FontFamily) null, 0L, (TextDecoration) null, (TextAlign) null, 0L, 0, false, 0, 0, (Function1<? super TextLayoutResult, Unit>) null, textStyle, composer5, 0, 1572864, 65534);
                                 p051n4.a.l(24, companion, composer5, 6);

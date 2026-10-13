@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
@@ -28,7 +27,7 @@ public final class GoogleBillingClientExtensionKt {
         Intrinsics.checkNotNullParameter(productDetails, "<this>");
         String str4 = productDetails.c;
         ProductDetails.OneTimePurchaseOfferDetails oneTimePurchaseOfferDetailsA = productDetails.a();
-        String strJoinToString$default = null;
+        String strQ = null;
         if (oneTimePurchaseOfferDetailsA != null) {
             Intrinsics.checkNotNullParameter(oneTimePurchaseOfferDetailsA, "<this>");
             String strA0 = StringsKt.a0("\n  formattedPrice    :" + oneTimePurchaseOfferDetailsA.a + "\n  priceAmountMicros :" + oneTimePurchaseOfferDetailsA.f2885b + "\n  priceCurrencyCode :" + oneTimePurchaseOfferDetailsA.c + "\n  ");
@@ -94,7 +93,7 @@ public final class GoogleBillingClientExtensionKt {
                 }
                 String str7 = str3;
                 String str8 = str4;
-                String strJoinToString$default2 = CollectionsKt___CollectionsKt.joinToString$default(arrayList5, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, null, 62, null);
+                String strQ2 = CollectionsKt.q(arrayList5, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, null, 62);
                 StringBuilder sbY = a.y("\n  basePlanId                    : ", str5, "\n  offerId                       : ");
                 sbY.append(subscriptionOfferDetails.f2889b);
                 sbY.append("\n  offerToken                    : ");
@@ -102,7 +101,7 @@ public final class GoogleBillingClientExtensionKt {
                 sbY.append("\n  offerTags                     : ");
                 sbY.append(arrayList3);
                 sbY.append("\n  pricingPhases.pricingPhaseList:\n  ");
-                sbY.append(strJoinToString$default2);
+                sbY.append(strQ2);
                 sbY.append("\n  ");
                 arrayList2.add("subscriptionOfferDetails@" + i + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + StringsKt.H(StringsKt.a0(sbY.toString()), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, " \n"));
                 it2 = it3;
@@ -113,7 +112,7 @@ public final class GoogleBillingClientExtensionKt {
             }
             str = str4;
             str2 = strH;
-            strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList2, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, null, 62, null);
+            strQ = CollectionsKt.q(arrayList2, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, null, 62);
         } else {
             str = str4;
             str2 = strH;
@@ -126,7 +125,7 @@ public final class GoogleBillingClientExtensionKt {
         sbY2.append(productDetails.g);
         sbY2.append("\n  name                          :");
         androidx.core.content.a.x(sbY2, productDetails.f2883f, "\n  \n  oneTimePurchaseOfferDetails   :\n  ", str2, "\n  subscriptionOfferDetails      :\n  ");
-        sbY2.append(strJoinToString$default);
+        sbY2.append(strQ);
         sbY2.append("\n  ");
         return StringsKt.a0(sbY2.toString());
     }

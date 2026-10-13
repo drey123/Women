@@ -2,7 +2,7 @@ package kotlin.reflect.jvm.internal.impl.types;
 
 import java.util.ArrayDeque;
 import java.util.Iterator;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.reflect.jvm.internal.impl.types.model.KotlinTypeMarker;
@@ -32,7 +32,7 @@ public final class AbstractNullabilityChecker {
         arrayDeque.push(type);
         while (!arrayDeque.isEmpty()) {
             if (smartSet.c > 1000) {
-                throw new IllegalStateException(("Too many supertypes for type: " + type + ". Supertypes = " + CollectionsKt___CollectionsKt.joinToString$default(smartSet, null, null, null, 0, null, null, 63, null)).toString());
+                throw new IllegalStateException(("Too many supertypes for type: " + type + ". Supertypes = " + CollectionsKt.q(smartSet, null, null, null, null, 63)).toString());
             }
             SimpleTypeMarker current = arrayDeque.pop();
             Intrinsics.checkNotNullExpressionValue(current, "current");

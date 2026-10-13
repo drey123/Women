@@ -35,7 +35,7 @@ public final class BooleanArraySerializer extends PrimitiveArraySerializer<Boole
         Intrinsics.checkNotNullParameter(builder, "builder");
         boolean zY = decoder.y(this.f27479b, i);
         builder.getClass();
-        builder.b(builder.getF27454b() + 1);
+        builder.b(builder.getF27450b() + 1);
         boolean[] zArr = builder.a;
         int i6 = builder.f27450b;
         builder.f27450b = i6 + 1;

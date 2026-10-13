@@ -67,7 +67,7 @@ final class ShopPromotionActivity$initData$1 extends SuspendLambda implements Fu
     /* JADX WARN: Code duplicated, block: B:66:0x0131  */
     /* JADX WARN: Multi-variable type inference failed */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Object invokeSuspend(Object obj) {
+    public final Object invokeSuspend(Object obj) throws Throwable {
         Object objC;
         Object onboardingProductPromotion;
         OnboardingProductPromotion onboardingProductPromotion2;

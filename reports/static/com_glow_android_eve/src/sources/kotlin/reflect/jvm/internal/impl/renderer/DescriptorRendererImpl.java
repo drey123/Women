@@ -417,7 +417,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
                 if (!arrayList.isEmpty()) {
                     builder.append(" : ");
                     builder.append(descriptorRendererImpl.M("this"));
-                    builder.append(CollectionsKt___CollectionsKt.joinToString$default(arrayList, ", ", "(", ")", 0, null, DescriptorRendererImpl$renderConstructor$1.f26602b, 24, null));
+                    builder.append(CollectionsKt.q(arrayList, ", ", "(", ")", DescriptorRendererImpl$renderConstructor$1.f26602b, 24));
                 }
             }
             if (((Boolean) descriptorRendererOptionsImpl.f26635z.getValue(descriptorRendererOptionsImpl, DescriptorRendererOptionsImpl.f26610W[24])).booleanValue()) {
@@ -869,7 +869,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
     /* JADX WARN: Multi-variable type inference failed */
     public final String G(ConstantValue<?> constantValue) {
         if (constantValue instanceof ArrayValue) {
-            return CollectionsKt___CollectionsKt.joinToString$default((Iterable) ((ArrayValue) constantValue).a, ", ", "{", "}", 0, null, new Function1<ConstantValue<?>, CharSequence>() { // from class: kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererImpl$renderConstant$1
+            return CollectionsKt.q((Iterable) ((ArrayValue) constantValue).a, ", ", "{", "}", new Function1<ConstantValue<?>, CharSequence>() { // from class: kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererImpl$renderConstant$1
                 {
                     super(1);
                 }
@@ -881,7 +881,7 @@ public final class DescriptorRendererImpl extends DescriptorRenderer implements 
                     int i = DescriptorRendererImpl.f26596f;
                     return this.f26601b.G(it2);
                 }
-            }, 24, null);
+            }, 24);
         }
         if (constantValue instanceof AnnotationValue) {
             return StringsKt.C("@", p((AnnotationDescriptor) ((AnnotationValue) constantValue).a, null));

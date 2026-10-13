@@ -274,36 +274,35 @@ public abstract class LookaheadCapablePlaceable extends Placeable implements Mea
         MutableScatterMap<Ruler, MutableScatterSet<WeakReference<LayoutNode>>> mutableScatterMap = this.rulerReaders;
         char c = 7;
         long j4 = -9187201950435737472L;
-        int i = 0;
         if (rulers == null) {
             if (mutableScatterMap != null) {
                 Object[] objArr = mutableScatterMap.values;
                 long[] jArr = mutableScatterMap.metadata;
                 int length = jArr.length - 2;
                 if (length >= 0) {
-                    int i6 = 0;
+                    int i = 0;
                     while (true) {
-                        long j6 = jArr[i6];
+                        long j6 = jArr[i];
                         if ((((~j6) << 7) & j6 & (-9187201950435737472L)) == -9187201950435737472L) {
-                            if (i6 != length) {
+                            if (i != length) {
                                 break;
                                 break;
                             }
-                            i6++;
+                            i++;
                         } else {
-                            int i7 = 8 - ((~(i6 - length)) >>> 31);
-                            for (int i8 = 0; i8 < i7; i8++) {
+                            int i6 = 8 - ((~(i - length)) >>> 31);
+                            for (int i7 = 0; i7 < i6; i7++) {
                                 if ((j6 & 255) < 128) {
-                                    notifyRulerValueChange((MutableScatterSet) objArr[(i6 << 3) + i8]);
+                                    notifyRulerValueChange((MutableScatterSet) objArr[(i << 3) + i7]);
                                 }
                                 j6 >>= 8;
                             }
-                            if (i7 != 8) {
+                            if (i6 != 8) {
                                 break;
-                            } else if (i6 != length) {
+                            } else if (i != length) {
                                 break;
                             } else {
-                                i6++;
+                                i++;
                             }
                         }
                     }
@@ -314,15 +313,13 @@ public abstract class LookaheadCapablePlaceable extends Placeable implements Mea
             return;
         }
         MutableObjectFloatMap<Ruler> mutableObjectFloatMap = this.rulerValuesCache;
-        DefaultConstructorMarker defaultConstructorMarker = null;
-        int i9 = 1;
         if (mutableObjectFloatMap == null) {
-            mutableObjectFloatMap = new MutableObjectFloatMap<>(i, i9, defaultConstructorMarker);
+            mutableObjectFloatMap = new MutableObjectFloatMap<>(0, 1, null);
             this.rulerValuesCache = mutableObjectFloatMap;
         }
         MutableObjectFloatMap<Ruler> mutableObjectFloatMap2 = this.rulerValues;
         if (mutableObjectFloatMap2 == null) {
-            mutableObjectFloatMap2 = new MutableObjectFloatMap<>(i, i9, defaultConstructorMarker);
+            mutableObjectFloatMap2 = new MutableObjectFloatMap<>(0, 1, null);
             this.rulerValues = mutableObjectFloatMap2;
         }
         mutableObjectFloatMap.putAll(mutableObjectFloatMap2);
@@ -356,35 +353,35 @@ public abstract class LookaheadCapablePlaceable extends Placeable implements Mea
             long[] jArr2 = mutableObjectFloatMap.metadata;
             int length2 = jArr2.length - 2;
             if (length2 >= 0) {
-                int i10 = 0;
+                int i8 = 0;
                 while (true) {
-                    long j7 = jArr2[i10];
+                    long j7 = jArr2[i8];
                     if ((((~j7) << 7) & j7 & j4) != j4) {
-                        int i11 = 8 - ((~(i10 - length2)) >>> 31);
+                        int i9 = 8 - ((~(i8 - length2)) >>> 31);
                         long j8 = j7;
-                        for (int i12 = 0; i12 < i11; i12++) {
+                        for (int i10 = 0; i10 < i9; i10++) {
                             if ((j8 & 255) < 128) {
-                                int i13 = (i10 << 3) + i12;
-                                Ruler ruler = (Ruler) objArr2[i13];
-                                if (mutableObjectFloatMap2.getOrDefault(ruler, Float.NaN) != fArr[i13] && (mutableScatterSetRemove = mutableScatterMap.remove(ruler)) != null) {
+                                int i11 = (i8 << 3) + i10;
+                                Ruler ruler = (Ruler) objArr2[i11];
+                                if (mutableObjectFloatMap2.getOrDefault(ruler, Float.NaN) != fArr[i11] && (mutableScatterSetRemove = mutableScatterMap.remove(ruler)) != null) {
                                     notifyRulerValueChange(mutableScatterSetRemove);
                                 }
                             }
                             j8 >>= 8;
                         }
-                        if (i11 != 8) {
+                        if (i9 != 8) {
                             break;
                         }
-                        if (i10 != length2) {
+                        if (i8 != length2) {
                             break;
                         }
-                        i10++;
+                        i8++;
                         j4 = -9187201950435737472L;
-                    } else if (i10 != length2) {
+                    } else if (i8 != length2) {
                         break;
                         break;
                     } else {
-                        i10++;
+                        i8++;
                         j4 = -9187201950435737472L;
                     }
                 }
@@ -394,28 +391,28 @@ public abstract class LookaheadCapablePlaceable extends Placeable implements Mea
         long[] jArr3 = mutableObjectFloatMap2.metadata;
         int length3 = jArr3.length - 2;
         if (length3 >= 0) {
-            int i14 = 0;
+            int i12 = 0;
             while (true) {
-                long j9 = jArr3[i14];
+                long j9 = jArr3[i12];
                 if ((((~j9) << c) & j9 & (-9187201950435737472L)) != -9187201950435737472L) {
-                    int i15 = 8 - ((~(i14 - length3)) >>> 31);
-                    for (int i16 = 0; i16 < i15; i16++) {
+                    int i13 = 8 - ((~(i12 - length3)) >>> 31);
+                    for (int i14 = 0; i14 < i13; i14++) {
                         if ((j9 & 255) < 128) {
-                            Ruler ruler2 = (Ruler) objArr3[(i14 << 3) + i16];
+                            Ruler ruler2 = (Ruler) objArr3[(i12 << 3) + i14];
                             if (!mutableObjectFloatMap.contains(ruler2) && (parent = getParent()) != null) {
                                 parent.invalidateChildrenOfDefiningRuler(ruler2);
                             }
                         }
                         j9 >>= 8;
                     }
-                    if (i15 != 8) {
+                    if (i13 != 8) {
                         break;
                     }
                 }
-                if (i14 == length3) {
+                if (i12 == length3) {
                     break;
                 }
-                i14++;
+                i12++;
                 c = 7;
             }
         }

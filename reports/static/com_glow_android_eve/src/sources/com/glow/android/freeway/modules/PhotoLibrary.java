@@ -32,7 +32,6 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.io.CloseableKt;
 import kotlin.jvm.internal.Intrinsics;
@@ -175,7 +174,7 @@ public final class PhotoLibrary extends BaseReactContextBaseJavaModule {
         ReactApplicationContext reactApplicationContext = this.reactContext;
         ArrayList arrayList = new ArrayList();
         List<String> list = mediaIds;
-        Cursor cursorQuery = reactApplicationContext.getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new String[]{"_id", "bucket_id", "_data", "date_added", "datetaken", "height", "mime_type", "orientation", "width"}, android.support.v4.media.a.n("_id in (", CollectionsKt___CollectionsKt.joinToString$default(list, ",", null, null, 0, null, null, 62, null), ")"), null, null);
+        Cursor cursorQuery = reactApplicationContext.getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new String[]{"_id", "bucket_id", "_data", "date_added", "datetaken", "height", "mime_type", "orientation", "width"}, android.support.v4.media.a.n("_id in (", CollectionsKt.q(list, ",", null, null, null, 62), ")"), null, null);
         if (cursorQuery != null) {
             try {
                 int columnIndex = cursorQuery.getColumnIndex("_id");

@@ -654,7 +654,7 @@ public final class ReminderEditorBottomSheet extends BaseDialogFragment implemen
     }
 
     @Override // android.app.TimePickerDialog.OnTimeSetListener
-    public final void onTimeSet(@Nullable TimePicker timePicker, int i, int i6) throws IllegalAccessException {
+    public final void onTimeSet(@Nullable TimePicker timePicker, int i, int i6) {
         int i7 = this.i;
         if (i7 >= 0) {
             Reminder reminder = this.f6134f;

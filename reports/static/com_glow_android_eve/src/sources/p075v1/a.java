@@ -11,7 +11,7 @@ import java.util.List;
 import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
@@ -64,7 +64,7 @@ public final /* synthetic */ class a implements Function1 {
                 SnapshotStateList<String> snapshotStateList2 = newSignUpV2ViewModel2.f7269A;
                 snapshotStateList2.clear();
                 snapshotStateList2.addAll(list2);
-                newSignUpV2ViewModel2.u("onboarding_signup_password_enter", MapsKt.mapOf(TuplesKt.to(GraphResponse.SUCCESS_KEY, list.isEmpty() ? AppEventsConstants.EVENT_PARAM_VALUE_YES : AppEventsConstants.EVENT_PARAM_VALUE_NO), TuplesKt.to("reason", CollectionsKt___CollectionsKt.joinToString$default(list, null, null, null, 0, null, new i(21), 31, null))));
+                newSignUpV2ViewModel2.u("onboarding_signup_password_enter", MapsKt.mapOf(TuplesKt.to(GraphResponse.SUCCESS_KEY, list.isEmpty() ? AppEventsConstants.EVENT_PARAM_VALUE_YES : AppEventsConstants.EVENT_PARAM_VALUE_NO), TuplesKt.to("reason", CollectionsKt.q(list, null, null, null, new i(21), 31))));
                 Intrinsics.checkNotNullParameter(it2, "<set-?>");
                 newSignUpV2ViewModel2.f7277x.setValue(it2);
                 newSignUpV2ViewModel2.H();

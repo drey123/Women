@@ -52,7 +52,7 @@ import kotlin.Result;
 import kotlin.ResultKt;
 import kotlin.TuplesKt;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.SafeContinuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -316,16 +316,16 @@ public final class PlayerControllerV2$loadVideo$2 extends SuspendLambda implemen
         for (Map.Entry entry : linkedHashMap.entrySet()) {
             arrayList.add(entry.getKey() + "=" + entry.getValue());
         }
-        String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList, "&", null, null, 0, null, null, 62, null);
+        String strQ = CollectionsKt.q(arrayList, "&", null, null, null, 62);
         Uri uri3 = Uri.parse(videoTopic.getAdTag());
         Uri.Builder builderBuildUpon = uri3.buildUpon();
         List<String> queryParameters = uri3.getQueryParameters("cust_params");
         if (queryParameters.isEmpty()) {
             Timber.a.b("no old param", new Object[0]);
-            builderBuildUpon.appendQueryParameter("cust_params", strJoinToString$default);
+            builderBuildUpon.appendQueryParameter("cust_params", strQ);
         } else {
             Timber.a.b("has old param", new Object[0]);
-            builderBuildUpon.appendQueryParameter("cust_params", strJoinToString$default + "&" + queryParameters);
+            builderBuildUpon.appendQueryParameter("cust_params", strQ + "&" + queryParameters);
         }
         string = builderBuildUpon.build().toString();
         strC = str;

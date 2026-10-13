@@ -20,7 +20,6 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
@@ -75,13 +74,13 @@ public final class SMTLSymptomUiState extends SMT.SMTUiState<SMTCardData.SMTClie
                         int i8 = logCdIndex;
                         String strI = i8 == i7 ? "Logged symptoms today" : android.support.v4.media.a.i(i8 + 1, " Logged symptoms on CD ");
                         List<Symptom> list = listComponent4;
-                        String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(list, null, null, null, 0, null, new j(context, 4), 31, null);
+                        String strQ = CollectionsKt.q(list, null, null, null, new j(context, 4), 31);
                         ArrayList arrayList = new ArrayList(CollectionsKt.m(list));
                         Iterator<T> it2 = list.iterator();
                         while (it2.hasNext()) {
                             arrayList.add(Integer.valueOf(((Symptom) it2.next()).getSymptomIconRes()));
                         }
-                        CommonWidgetsKt.e(null, strI, strJoinToString$default, arrayList, loggedItemsDataComponent5, i8 - startCdIndex, showLock, composer3, 36864);
+                        CommonWidgetsKt.e(null, strI, strQ, arrayList, loggedItemsDataComponent5, i8 - startCdIndex, showLock, composer3, 36864);
                     }
                     return Unit.a;
                 }

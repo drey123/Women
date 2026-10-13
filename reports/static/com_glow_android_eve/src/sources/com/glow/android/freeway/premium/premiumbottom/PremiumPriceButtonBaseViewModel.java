@@ -31,7 +31,6 @@ import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -554,7 +553,7 @@ public class PremiumPriceButtonBaseViewModel extends AndroidViewModel {
             while (it2.hasNext()) {
                 arrayList2.add(((IapPurchase) it2.next()).f4875b);
             }
-            Timber.a.b(androidx.browser.trusted.c.a("create premium plans, purchased ids: ", CollectionsKt___CollectionsKt.joinToString$default(arrayList2, null, null, null, 0, null, null, 63, null)), new Object[0]);
+            Timber.a.b(androidx.browser.trusted.c.a("create premium plans, purchased ids: ", CollectionsKt.q(arrayList2, null, null, null, null, 63)), new Object[0]);
             list3 = list;
             arrayList3 = new ArrayList(CollectionsKt.m(list3));
             it3 = list3.iterator();
@@ -784,7 +783,7 @@ public class PremiumPriceButtonBaseViewModel extends AndroidViewModel {
             int i19 = i7;
             int i20 = i6;
             Timber.Forest forest2 = Timber.a;
-            forest2.b(androidx.browser.trusted.c.a("premium plans: ", CollectionsKt___CollectionsKt.joinToString$default(arrayList5, ";", null, null, 0, null, null, 62, null)), new Object[0]);
+            forest2.b(androidx.browser.trusted.c.a("premium plans: ", CollectionsKt.q(arrayList5, ";", null, null, null, 62)), new Object[0]);
             forest2.b("ui color: " + uIColor5, new Object[0]);
             forest2.b("discountInfo: " + discountInfo, new Object[0]);
             premiumPriceButtonBaseViewModel3.g.setValue(Boolean.FALSE);
@@ -935,7 +934,7 @@ public class PremiumPriceButtonBaseViewModel extends AndroidViewModel {
         while (it2.hasNext()) {
             arrayList2.add(((IapPurchase) it2.next()).f4875b);
         }
-        Timber.a.b(androidx.browser.trusted.c.a("create premium plans, purchased ids: ", CollectionsKt___CollectionsKt.joinToString$default(arrayList2, null, null, null, 0, null, null, 63, null)), new Object[0]);
+        Timber.a.b(androidx.browser.trusted.c.a("create premium plans, purchased ids: ", CollectionsKt.q(arrayList2, null, null, null, null, 63)), new Object[0]);
         list3 = list;
         arrayList3 = new ArrayList(CollectionsKt.m(list3));
         it3 = list3.iterator();
@@ -1169,7 +1168,7 @@ public class PremiumPriceButtonBaseViewModel extends AndroidViewModel {
         int i112 = i7;
         int i21 = i6;
         Timber.Forest forest6 = Timber.a;
-        forest6.b(androidx.browser.trusted.c.a("premium plans: ", CollectionsKt___CollectionsKt.joinToString$default(arrayList5, ";", null, null, 0, null, null, 62, null)), new Object[0]);
+        forest6.b(androidx.browser.trusted.c.a("premium plans: ", CollectionsKt.q(arrayList5, ";", null, null, null, 62)), new Object[0]);
         forest6.b("ui color: " + uIColor6, new Object[0]);
         forest6.b("discountInfo: " + discountInfo, new Object[0]);
         premiumPriceButtonBaseViewModel3.g.setValue(Boolean.FALSE);

@@ -40,7 +40,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import javax.inject.Provider;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import timber.log.Timber;
 
@@ -104,7 +104,7 @@ public final class FreewayModule_ProvideIAppInfoFactory implements Provider {
                         String key = entry.getKey();
                         arrayList.add("[" + ((Object) key) + CertificateUtil.DELIMITER + entry.getValue() + "]");
                     }
-                    forest.b(c.a("log appsflyer revenue from shop, event data: ", CollectionsKt___CollectionsKt.joinToString$default(arrayList, null, null, null, 0, null, null, 63, null)), new Object[0]);
+                    forest.b(c.a("log appsflyer revenue from shop, event data: ", CollectionsKt.q(arrayList, null, null, null, null, 63)), new Object[0]);
                     AppsFlyerLib.getInstance().logEvent(context, AFInAppEventType.PURCHASE, map);
                 }
             }

@@ -19,16 +19,12 @@ final class zzls extends zzlu {
         return Float.intBitsToFloat(this.zza.getInt(obj, j4));
     }
 
-    /* JADX WARN: Failed to inline method: com.google.android.recaptcha.internal.zzlv.zzi(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Failed to inline method: com.google.android.recaptcha.internal.zzlv.zzj(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Unknown register number '(r5v0 'z2' boolean)' in method call: com.google.android.recaptcha.internal.zzlv.zzi(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Unknown register number '(r5v0 'z2' boolean)' in method call: com.google.android.recaptcha.internal.zzlv.zzj(java.lang.Object, long, boolean):void */
     @Override // com.google.android.recaptcha.internal.zzlu
     public final void zzc(Object obj, long j4, boolean z2) {
         if (zzlv.zzb) {
-            zzlv.zzi(obj, j4, z2);
+            zzlv.zzD(obj, j4, z2 ? (byte) 1 : (byte) 0);
         } else {
-            zzlv.zzj(obj, j4, z2);
+            zzlv.zzE(obj, j4, z2 ? (byte) 1 : (byte) 0);
         }
     }
 

@@ -56,7 +56,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import rx.Observable;
@@ -111,7 +111,7 @@ public final /* synthetic */ class a implements Action1, NestedScrollView.OnScro
         Intrinsics.checkNotNullParameter(billingResult, "billingResult");
         int i = billingResult.a;
         if (i == 0) {
-            Timber.a.h("queryPurchaseHistoryAsync find:" + (arrayList != null ? Integer.valueOf(arrayList.size()) : null) + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + (arrayList != null ? CollectionsKt___CollectionsKt.joinToString$default(arrayList, "\n==========================\n", null, null, 0, null, new w5.a(6), 30, null) : null), new Object[0]);
+            Timber.a.h("queryPurchaseHistoryAsync find:" + (arrayList != null ? Integer.valueOf(arrayList.size()) : null) + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + (arrayList != null ? CollectionsKt.q(arrayList, "\n==========================\n", null, null, new w5.a(6), 30) : null), new Object[0]);
         } else {
             Timber.a.h(b.h(i, "queryPurchaseHistoryAsync error code:", " message:", billingResult.f2879b), new Object[0]);
         }

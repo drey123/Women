@@ -8,7 +8,6 @@ import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
@@ -91,7 +90,7 @@ public final class PickerKt$Picker$4 extends SuspendLambda implements Function2<
             if (iIndexOf <= 0) {
                 iIndexOf = 0;
             }
-            StringBuilder sbL = C0316y.l("[", str, "] get start index, total items: ", CollectionsKt___CollectionsKt.joinToString$default(mutableState.getValue(), ",", null, null, 0, null, null, 62, null), ", find item: ");
+            StringBuilder sbL = C0316y.l("[", str, "] get start index, total items: ", CollectionsKt.q(mutableState.getValue(), ",", null, null, null, 62), ", find item: ");
             sbL.append(str2);
             sbL.append(", index ");
             sbL.append(iIndexOf);

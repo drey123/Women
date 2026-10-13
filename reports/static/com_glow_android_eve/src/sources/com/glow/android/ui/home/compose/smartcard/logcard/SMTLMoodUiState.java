@@ -20,7 +20,6 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
@@ -75,13 +74,13 @@ public final class SMTLMoodUiState extends SMT.SMTUiState<SMTCardData.SMTClient.
                         int i8 = logCdIndex;
                         String strI = i8 == i7 ? "Logged moods today" : android.support.v4.media.a.i(i8 + 1, "Logged moods on CD ");
                         List<Emotion> list = listComponent4;
-                        String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(list, null, null, null, 0, null, new j(context, 3), 31, null);
+                        String strQ = CollectionsKt.q(list, null, null, null, new j(context, 3), 31);
                         ArrayList arrayList = new ArrayList(CollectionsKt.m(list));
                         Iterator<T> it2 = list.iterator();
                         while (it2.hasNext()) {
                             arrayList.add(Integer.valueOf(((Emotion) it2.next()).getEmotionIconRes()));
                         }
-                        CommonWidgetsKt.e(null, strI, strJoinToString$default, arrayList, loggedItemsDataComponent5, i8 - startCdIndex, showLock, composer3, 36864);
+                        CommonWidgetsKt.e(null, strI, strQ, arrayList, loggedItemsDataComponent5, i8 - startCdIndex, showLock, composer3, 36864);
                     }
                     return Unit.a;
                 }

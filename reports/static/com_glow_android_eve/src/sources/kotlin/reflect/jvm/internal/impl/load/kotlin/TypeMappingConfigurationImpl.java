@@ -1,7 +1,7 @@
 package kotlin.reflect.jvm.internal.impl.load.kotlin;
 
 import java.util.LinkedHashSet;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
 import kotlin.reflect.jvm.internal.impl.types.KotlinType;
@@ -30,7 +30,7 @@ public final class TypeMappingConfigurationImpl implements TypeMappingConfigurat
     @NotNull
     public final KotlinType c(@NotNull LinkedHashSet types) {
         Intrinsics.checkNotNullParameter(types, "types");
-        throw new AssertionError("There should be no intersection type in existing descriptors, but found: " + CollectionsKt___CollectionsKt.joinToString$default(types, null, null, null, 0, null, null, 63, null));
+        throw new AssertionError("There should be no intersection type in existing descriptors, but found: " + CollectionsKt.q(types, null, null, null, null, 63));
     }
 
     public final void d(ClassDescriptor classDescriptor) {

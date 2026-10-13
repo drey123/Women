@@ -72,7 +72,6 @@ import kotlin.Metadata;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.enums.EnumEntries;
 import kotlin.enums.EnumEntriesKt;
@@ -1004,7 +1003,7 @@ public final class DailyLogViewModel extends AndroidViewModel {
             while (it2.hasNext()) {
                 arrayList.add(((LogsProductInfo) it2.next()).c);
             }
-            Map mapMutableMapOf = MapsKt.mutableMapOf(TuplesKt.to("page_source", "log_page_vitamin"), TuplesKt.to("product_id", CollectionsKt___CollectionsKt.joinToString$default(arrayList, ",", null, null, 0, null, null, 62, null)));
+            Map mapMutableMapOf = MapsKt.mutableMapOf(TuplesKt.to("page_source", "log_page_vitamin"), TuplesKt.to("product_id", CollectionsKt.q(arrayList, ",", null, null, null, 62)));
             String str = ((LogsProductInfo) ((List) this.f11572D.getValue()).get(0)).f10098e;
             if (str != null ? StringsKt.k(str, "oura", false) : false) {
                 mapMutableMapOf.put("note", "oura:0");

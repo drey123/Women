@@ -10,9 +10,9 @@ import org.jetbrains.annotations.NotNull;
 public final class ExecutorsKt {
     @NotNull
     public static final Executor a(@NotNull CoroutineDispatcher coroutineDispatcher) {
-        Executor executorS;
+        Executor f27112b;
         ExecutorCoroutineDispatcher executorCoroutineDispatcher = coroutineDispatcher instanceof ExecutorCoroutineDispatcher ? (ExecutorCoroutineDispatcher) coroutineDispatcher : null;
-        return (executorCoroutineDispatcher == null || (executorS = executorCoroutineDispatcher.getF27112b()) == null) ? new DispatcherExecutor(coroutineDispatcher) : executorS;
+        return (executorCoroutineDispatcher == null || (f27112b = executorCoroutineDispatcher.getF27112b()) == null) ? new DispatcherExecutor(coroutineDispatcher) : f27112b;
     }
 
     @NotNull

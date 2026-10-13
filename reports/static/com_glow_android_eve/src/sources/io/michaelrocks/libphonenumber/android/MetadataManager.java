@@ -307,28 +307,7 @@ final class MetadataManager {
         this.a = assetsMetadataLoader;
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x008e */
     /* JADX WARN: Bottom block not found for handler: all -> 0x0098 */
-    /* JADX WARN: Code restructure failed: missing block: B:39:0x00a1, code lost:
-    
-        if (r4 == null) goto L43;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:40:0x00a3, code lost:
-    
-        r4.close();
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:41:0x00a7, code lost:
-    
-        r10 = move-exception;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:43:0x00a9, code lost:
-    
-        r1.close();
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:45:0x00ad, code lost:
-    
-        r0.log(java.util.logging.Level.WARNING, "error closing input stream (ignored)", (java.lang.Throwable) r10);
-     */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument

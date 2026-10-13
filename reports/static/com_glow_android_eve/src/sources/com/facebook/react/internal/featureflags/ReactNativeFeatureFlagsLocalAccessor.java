@@ -5,7 +5,7 @@ import androidx.browser.trusted.c;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import kotlin.Metadata;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -524,7 +524,7 @@ public final class ReactNativeFeatureFlagsLocalAccessor implements ReactNativeFe
         if (this.accessedFeatureFlags.isEmpty()) {
             return null;
         }
-        return CollectionsKt___CollectionsKt.joinToString$default(this.accessedFeatureFlags, ", ", null, null, 0, null, new j(22), 30, null);
+        return CollectionsKt.q(this.accessedFeatureFlags, ", ", null, null, new j(22), 30);
     }
 
     @Override // com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsProvider
@@ -542,7 +542,7 @@ public final class ReactNativeFeatureFlagsLocalAccessor implements ReactNativeFe
     public void override(@NotNull ReactNativeFeatureFlagsProvider provider) {
         Intrinsics.checkNotNullParameter(provider, "provider");
         if (!this.accessedFeatureFlags.isEmpty()) {
-            throw new IllegalStateException(c.a("Feature flags were accessed before being overridden: ", CollectionsKt___CollectionsKt.joinToString$default(this.accessedFeatureFlags, ", ", null, null, 0, null, new j(21), 30, null)));
+            throw new IllegalStateException(c.a("Feature flags were accessed before being overridden: ", CollectionsKt.q(this.accessedFeatureFlags, ", ", null, null, new j(21), 30)));
         }
         this.currentProvider = provider;
     }

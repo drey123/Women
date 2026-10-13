@@ -41,7 +41,6 @@ import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
@@ -309,9 +308,9 @@ public final class BottomSheetShortcutsActivity extends BaseActivity {
                                                 }
                                                 arrayList2.add(strH);
                                             }
-                                            String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList2, ",", null, null, 0, null, null, 62, null);
+                                            String strQ = CollectionsKt.q(arrayList2, ",", null, null, null, 62);
                                             Pair pair = TuplesKt.to("page_source", logShortcutsViewModelE.c);
-                                            Pair pair2 = TuplesKt.to("target_type", strJoinToString$default);
+                                            Pair pair2 = TuplesKt.to("target_type", strQ);
                                             List<? extends DdConfMgr.DataKey> list2 = logShortcutsViewModelE.f6976e;
                                             ArrayList arrayList3 = new ArrayList();
                                             for (DdConfMgr.DataKey dataKey3 : list2) {
@@ -339,7 +338,7 @@ public final class BottomSheetShortcutsActivity extends BaseActivity {
                                             while (it3.hasNext()) {
                                                 arrayList4.add(((ShortcutsType) it3.next()).f6996b);
                                             }
-                                            Blaster.e("button_click_home_bottom_sheet_log", MapsKt.mapOf(pair, pair2, TuplesKt.to(UserFlog.FIELD_LOG_TYPE, CollectionsKt___CollectionsKt.joinToString$default(arrayList4, ",", null, null, 0, null, null, 62, null))));
+                                            Blaster.e("button_click_home_bottom_sheet_log", MapsKt.mapOf(pair, pair2, TuplesKt.to(UserFlog.FIELD_LOG_TYPE, CollectionsKt.q(arrayList4, ",", null, null, null, 62))));
                                             ReviewCardTriggerPref.Companion companion2 = ReviewCardTriggerPref.d;
                                             Application application = logShortcutsViewModelE.a;
                                             companion2.getClass();
@@ -404,6 +403,6 @@ public final class BottomSheetShortcutsActivity extends BaseActivity {
         while (it2.hasNext()) {
             arrayList2.add(((ShortcutsType) it2.next()).f6996b);
         }
-        Blaster.e("page_impression_home_bottom_sheet_log", MapsKt.mutableMapOf(pair, TuplesKt.to(UserFlog.FIELD_LOG_TYPE, CollectionsKt___CollectionsKt.joinToString$default(arrayList2, ",", null, null, 0, null, null, 62, null))));
+        Blaster.e("page_impression_home_bottom_sheet_log", MapsKt.mutableMapOf(pair, TuplesKt.to(UserFlog.FIELD_LOG_TYPE, CollectionsKt.q(arrayList2, ",", null, null, null, 62))));
     }
 }

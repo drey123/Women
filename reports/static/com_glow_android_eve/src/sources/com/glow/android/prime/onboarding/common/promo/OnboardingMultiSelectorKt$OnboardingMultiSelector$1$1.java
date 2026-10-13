@@ -10,7 +10,6 @@ import kotlin.Pair;
 import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
@@ -90,7 +89,7 @@ public final class OnboardingMultiSelectorKt$OnboardingMultiSelector$1$1 extends
         while (it3.hasNext()) {
             arrayList3.add((String) ((Pair) it3.next()).getFirst());
         }
-        this.c.invoke(String.valueOf(i), CollectionsKt___CollectionsKt.joinToString$default(arrayList3, ",", null, null, 0, null, null, 62, null));
+        this.c.invoke(String.valueOf(i), CollectionsKt.q(arrayList3, ",", null, null, null, 62));
         return Unit.a;
     }
 }

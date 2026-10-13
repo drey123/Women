@@ -3,6 +3,7 @@ package com.google.ads.interactivemedia.v3.internal;
 import android.net.Uri;
 import com.google.ads.interactivemedia.v3.api.CompanionAdSlot;
 import com.google.ads.interactivemedia.v3.api.UiElement;
+import java.io.IOException;
 import java.io.StringReader;
 import java.net.MalformedURLException;
 import java.util.Arrays;
@@ -97,7 +98,7 @@ public final class dw {
         return this.f16064b == dwVar.f16064b && auv.w(this.c, dwVar.c) && auv.w(this.d, dwVar.d) && this.f16065e == dwVar.f16065e;
     }
 
-    public final String f() {
+    public final String f() throws IOException {
         aub aubVar = new aub();
         aubVar.b("type", this.f16065e);
         aubVar.b("sid", this.d);

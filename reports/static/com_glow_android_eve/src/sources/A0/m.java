@@ -77,7 +77,6 @@ import java.util.Map;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
@@ -117,7 +116,7 @@ public final /* synthetic */ class m implements Function1 {
     @Override // kotlin.jvm.functions.Function1
     public final Object invoke(Object obj) {
         List<PremiumPlan> list;
-        String strJoinToString$default = null;
+        String strQ = null;
         Object obj2 = this.f127f;
         Object obj3 = this.d;
         Object obj4 = this.c;
@@ -137,9 +136,9 @@ public final /* synthetic */ class m implements Function1 {
                 loggingParams.put("discount", uiState != null ? Integer.valueOf(uiState.c).toString() : null);
                 PremiumPriceButtonBaseViewModel.UiState uiState2 = (PremiumPriceButtonBaseViewModel.UiState) premiumPriceButtonBaseViewModel.k.get(str);
                 if (uiState2 != null && (list = uiState2.a) != null) {
-                    strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(list, null, null, null, 0, null, new b(4), 31, null);
+                    strQ = CollectionsKt.q(list, null, null, null, new b(4), 31);
                 }
-                loggingParams.put("note", strJoinToString$default);
+                loggingParams.put("note", strQ);
                 Blaster.e("button_click_iap_popup_trial_toggle", loggingParams);
                 ((MutableState) obj5).setValue(bool);
                 premiumPriceButtonBaseViewModel.p(str);
@@ -468,7 +467,7 @@ public final /* synthetic */ class m implements Function1 {
                                                             homeFeedOrderScreenKt$rememberReorderHapticFeedback$reorderHapticFeedback$1$5.a(ReorderHapticFeedbackType.d);
                                                             List<OutputType> value = mutableState4.getValue();
                                                             final Context context5 = context4;
-                                                            Blaster.c("button_click_home_card_customize", "button_text", CollectionsKt___CollectionsKt.joinToString$default(value, ",", null, null, 0, null, new Function1<OutputType, CharSequence>() { // from class: com.glow.android.ui.home2025.HomeFeedOrderScreenKt$HomeFeedReOrderScreen$2$2$1$3$1$3.1
+                                                            Blaster.c("button_click_home_card_customize", "button_text", CollectionsKt.q(value, ",", null, null, new Function1<OutputType, CharSequence>() { // from class: com.glow.android.ui.home2025.HomeFeedOrderScreenKt$HomeFeedReOrderScreen$2$2$1$3$1$3.1
                                                                 @Override // kotlin.jvm.functions.Function1
                                                                 public final CharSequence invoke(OutputType outputType4) {
                                                                     OutputType it5 = outputType4;
@@ -477,7 +476,7 @@ public final /* synthetic */ class m implements Function1 {
                                                                     Intrinsics.checkNotNullExpressionValue(string2, "getString(...)");
                                                                     return string2;
                                                                 }
-                                                            }, 30, null), "button_type", "reorder");
+                                                            }, 30), "button_type", "reorder");
                                                             return Unit.a;
                                                         }
                                                     };

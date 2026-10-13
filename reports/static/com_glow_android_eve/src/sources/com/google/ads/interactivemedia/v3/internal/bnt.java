@@ -1,6 +1,10 @@
 package com.google.ads.interactivemedia.v3.internal;
 
+import java.lang.reflect.AccessibleObject;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -75,90 +79,37 @@ public final class bnt {
         return bntVar.f15999b;
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x0034 */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    private final void h(java.lang.Object r5, java.lang.Object r6, java.lang.Class<?> r7) {
-        /*
-            r4 = this;
-            java.util.Set r0 = a()
-            com.google.ads.interactivemedia.v3.internal.bnz r1 = b(r5, r6)
-            r2 = r1
-            com.google.ads.interactivemedia.v3.internal.bny r2 = (com.google.ads.interactivemedia.v3.internal.bny) r2
-            R r3 = r2.f16002b
-            L r2 = r2.a
-            com.google.ads.interactivemedia.v3.internal.bnz r2 = com.google.ads.interactivemedia.v3.internal.bnz.c(r3, r2)
-            if (r0 == 0) goto L23
-            boolean r1 = r0.contains(r1)
-            if (r1 != 0) goto L22
-            boolean r0 = r0.contains(r2)
-            if (r0 != 0) goto L22
-            goto L23
-        L22:
-            return
-        L23:
-            java.util.Set r0 = a()     // Catch: java.lang.Throwable -> L34
-            if (r0 != 0) goto L36
-            java.util.HashSet r0 = new java.util.HashSet     // Catch: java.lang.Throwable -> L34
-            r0.<init>()     // Catch: java.lang.Throwable -> L34
-            java.lang.ThreadLocal<java.util.Set<com.google.ads.interactivemedia.v3.internal.bnz<com.google.ads.interactivemedia.v3.internal.bnx, com.google.ads.interactivemedia.v3.internal.bnx>>> r1 = com.google.ads.interactivemedia.v3.internal.bnt.a     // Catch: java.lang.Throwable -> L34
-            r1.set(r0)     // Catch: java.lang.Throwable -> L34
-            goto L36
-        L34:
-            r7 = move-exception
-            goto L9e
-        L36:
-            com.google.ads.interactivemedia.v3.internal.bnz r1 = b(r5, r6)     // Catch: java.lang.Throwable -> L34
-            r0.add(r1)     // Catch: java.lang.Throwable -> L34
-            java.lang.reflect.Field[] r7 = r7.getDeclaredFields()     // Catch: java.lang.Throwable -> L34
-            r0 = 1
-            java.lang.reflect.AccessibleObject.setAccessible(r7, r0)     // Catch: java.lang.Throwable -> L34
-            r0 = 0
-        L46:
-            int r1 = r7.length     // Catch: java.lang.Throwable -> L34
-            if (r0 >= r1) goto L9a
-            boolean r1 = r4.f15999b     // Catch: java.lang.Throwable -> L34
-            if (r1 == 0) goto L9a
-            r1 = r7[r0]     // Catch: java.lang.Throwable -> L34
-            java.lang.String[] r2 = r4.d     // Catch: java.lang.Throwable -> L34
-            java.lang.String r3 = r1.getName()     // Catch: java.lang.Throwable -> L34
-            boolean r2 = com.google.ads.interactivemedia.v3.internal.ars.i(r2, r3)     // Catch: java.lang.Throwable -> L34
-            if (r2 != 0) goto L97
-            java.lang.String r2 = r1.getName()     // Catch: java.lang.Throwable -> L34
-            java.lang.String r3 = "$"
-            boolean r2 = r2.contains(r3)     // Catch: java.lang.Throwable -> L34
-            if (r2 != 0) goto L97
-            int r2 = r1.getModifiers()     // Catch: java.lang.Throwable -> L34
-            boolean r2 = java.lang.reflect.Modifier.isTransient(r2)     // Catch: java.lang.Throwable -> L34
-            if (r2 != 0) goto L97
-            int r2 = r1.getModifiers()     // Catch: java.lang.Throwable -> L34
-            boolean r2 = java.lang.reflect.Modifier.isStatic(r2)     // Catch: java.lang.Throwable -> L34
-            if (r2 != 0) goto L97
-            java.lang.Class<com.google.ads.interactivemedia.v3.internal.bnu> r2 = com.google.ads.interactivemedia.v3.internal.bnu.class
-            boolean r2 = r1.isAnnotationPresent(r2)     // Catch: java.lang.Throwable -> L34
-            if (r2 != 0) goto L97
-            java.lang.Object r2 = r1.get(r5)     // Catch: java.lang.Throwable -> L34 java.lang.IllegalAccessException -> L8f
-            java.lang.Object r1 = r1.get(r6)     // Catch: java.lang.Throwable -> L34 java.lang.IllegalAccessException -> L8f
-            r4.f(r2, r1)     // Catch: java.lang.Throwable -> L34 java.lang.IllegalAccessException -> L8f
-            goto L97
-        L8f:
-            java.lang.InternalError r7 = new java.lang.InternalError     // Catch: java.lang.Throwable -> L34
-            java.lang.String r0 = "Unexpected IllegalAccessException"
-            r7.<init>(r0)     // Catch: java.lang.Throwable -> L34
-            throw r7     // Catch: java.lang.Throwable -> L34
-        L97:
-            int r0 = r0 + 1
-            goto L46
-        L9a:
-            i(r5, r6)
-            return
-        L9e:
-            i(r5, r6)
-            throw r7
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ads.interactivemedia.v3.internal.bnt.h(java.lang.Object, java.lang.Object, java.lang.Class):void");
+    private final void h(Object obj, Object obj2, Class<?> cls) {
+        Set<bnz<bnx, bnx>> setA = a();
+        bnz<bnx, bnx> bnzVarB = b(obj, obj2);
+        bny bnyVar = (bny) bnzVarB;
+        bnz bnzVarC = bnz.c(bnyVar.f16002b, bnyVar.a);
+        if (setA == null || !(setA.contains(bnzVarB) || setA.contains(bnzVarC))) {
+            try {
+                Set<bnz<bnx, bnx>> setA2 = a();
+                if (setA2 == null) {
+                    setA2 = new HashSet<>();
+                    a.set(setA2);
+                }
+                setA2.add(b(obj, obj2));
+                Field[] declaredFields = cls.getDeclaredFields();
+                AccessibleObject.setAccessible(declaredFields, true);
+                for (int i = 0; i < declaredFields.length && this.f15999b; i++) {
+                    Field field = declaredFields[i];
+                    if (!ars.i(this.d, field.getName()) && !field.getName().contains("$") && !Modifier.isTransient(field.getModifiers()) && !Modifier.isStatic(field.getModifiers()) && !field.isAnnotationPresent(bnu.class)) {
+                        try {
+                            f(field.get(obj), field.get(obj2));
+                        } catch (IllegalAccessException unused) {
+                            throw new InternalError("Unexpected IllegalAccessException");
+                        }
+                    }
+                }
+                i(obj, obj2);
+            } catch (Throwable th) {
+                i(obj, obj2);
+                throw th;
+            }
+        }
     }
 
     private static void i(Object obj, Object obj2) {

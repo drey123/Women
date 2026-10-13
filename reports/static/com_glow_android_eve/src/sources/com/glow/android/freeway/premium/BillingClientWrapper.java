@@ -23,7 +23,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -132,7 +131,7 @@ public final class BillingClientWrapper implements PurchasesUpdatedListener {
         skuDetailsParams.a = str;
         skuDetailsParams.f2900b = arrayList;
         Intrinsics.checkNotNullExpressionValue(skuDetailsParams, "build(...)");
-        forest.h(b.h(productIds.hashCode(), "queryDetailsAsync skusList@", ":\n", CollectionsKt___CollectionsKt.joinToString$default(productIds, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, null, 62, null)), new Object[0]);
+        forest.h(b.h(productIds.hashCode(), "queryDetailsAsync skusList@", ":\n", CollectionsKt.q(productIds, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, null, 62)), new Object[0]);
         billingClient.k(skuDetailsParams, new io.sentry.android.core.internal.gestures.a(12, productIds, listener));
     }
 
@@ -165,7 +164,7 @@ public final class BillingClientWrapper implements PurchasesUpdatedListener {
         builder2.a(arrayList);
         QueryProductDetailsParams queryProductDetailsParams = new QueryProductDetailsParams(builder2);
         Intrinsics.checkNotNullExpressionValue(queryProductDetailsParams, "build(...)");
-        Timber.a.h(b.h(productIds.hashCode(), "queryDetailsAsync productIds@", ":\n", CollectionsKt___CollectionsKt.joinToString$default(productIds, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, null, 62, null)), new Object[0]);
+        Timber.a.h(b.h(productIds.hashCode(), "queryDetailsAsync productIds@", ":\n", CollectionsKt.q(productIds, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, null, 62)), new Object[0]);
         this.f4810b.f(queryProductDetailsParams, new io.sentry.android.core.internal.gestures.a(11, productIds, listener));
     }
 

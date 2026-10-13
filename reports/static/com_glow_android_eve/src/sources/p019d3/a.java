@@ -82,7 +82,6 @@ import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
@@ -156,7 +155,7 @@ public final /* synthetic */ class a implements Function0 {
                 Pair pair = TuplesKt.to("card_type", banner.getId());
                 Pair pair2 = TuplesKt.to("title", banner.getTitle());
                 List<String> pids = banner.getPids();
-                Blaster.e("button_click_dynamic_ad_placement", MapsKt.mapOf(pair, pair2, TuplesKt.to("product_id", pids != null ? CollectionsKt___CollectionsKt.joinToString$default(pids, ",", null, null, 0, null, null, 62, null) : null), TuplesKt.to("topic_id_list", banner.getCtaLinkParsedParams())));
+                Blaster.e("button_click_dynamic_ad_placement", MapsKt.mapOf(pair, pair2, TuplesKt.to("product_id", pids != null ? CollectionsKt.q(pids, ",", null, null, null, 62) : null), TuplesKt.to("topic_id_list", banner.getCtaLinkParsedParams())));
                 Blaster.c("button_click_data_feed_card", "card_type", banner.getServerType(), "button_type", "go_feature");
                 String ctaLink = banner.getCtaLink();
                 if (ctaLink == null || ctaLink.length() == 0) {

@@ -168,7 +168,6 @@ import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
@@ -504,7 +503,7 @@ public final /* synthetic */ class g implements Function1 {
         MergeHelper mergeHelper;
         float fH;
         float fC;
-        String strJoinToString$default;
+        String strQ;
         int i = 11;
         ActivityPostVideoBinding activityPostVideoBinding = null;
         Object obj2 = this.d;
@@ -1275,14 +1274,14 @@ public final /* synthetic */ class g implements Function1 {
                     while (it7.hasNext()) {
                         arrayList7.add(((ShortcutsType) it7.next()).f6996b);
                     }
-                    strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList7, ",", null, null, 0, null, null, 62, null);
-                    if (strJoinToString$default == null) {
-                        strJoinToString$default = "supplement";
+                    strQ = CollectionsKt.q(arrayList7, ",", null, null, null, 62);
+                    if (strQ == null) {
+                        strQ = "supplement";
                     }
                 } else {
-                    strJoinToString$default = "supplement";
+                    strQ = "supplement";
                 }
-                Blaster.e("page_impression_shop_log", MapsKt.mapOf(pair2, pair3, TuplesKt.to(UserFlog.FIELD_LOG_TYPE, strJoinToString$default), TuplesKt.to("product", flog.getDisplayName())));
+                Blaster.e("page_impression_shop_log", MapsKt.mapOf(pair2, pair3, TuplesKt.to(UserFlog.FIELD_LOG_TYPE, strQ), TuplesKt.to("product", flog.getDisplayName())));
                 return new DisposableEffectResult() { // from class: com.glow.android.kaylee.ui.dailydata.picker.NatalistSupplements$NatalistItem$lambda$27$$inlined$onDispose$1
                     @Override // androidx.compose.runtime.DisposableEffectResult
                     public final void dispose() {

@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Set;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.SetsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -65,7 +64,7 @@ public final class JvmProtoBufUtil {
 
     @Nullable
     public static JvmMemberSignature.Method a(@NotNull ProtoBuf$Constructor proto, @NotNull NameResolver nameResolver, @NotNull TypeTable typeTable) {
-        String strJoinToString$default;
+        String strQ;
         Intrinsics.checkNotNullParameter(proto, "proto");
         Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
         Intrinsics.checkNotNullParameter(typeTable, "typeTable");
@@ -86,11 +85,11 @@ public final class JvmProtoBufUtil {
                 }
                 arrayList.add(strE);
             }
-            strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList, "", "(", ")V", 0, null, null, 56, null);
+            strQ = CollectionsKt.q(arrayList, "", "(", ")V", null, 56);
         } else {
-            strJoinToString$default = nameResolver.getString(jvmMethodSignature.f26489e);
+            strQ = nameResolver.getString(jvmMethodSignature.f26489e);
         }
-        return new JvmMemberSignature.Method(string, strJoinToString$default);
+        return new JvmMemberSignature.Method(string, strQ);
     }
 
     @Nullable
@@ -155,7 +154,7 @@ public final class JvmProtoBufUtil {
             if (strE2 == null) {
                 return null;
             }
-            strH = C0316y.h(new StringBuilder(), CollectionsKt___CollectionsKt.joinToString$default(arrayList2, "", "(", ")", 0, null, null, 56, null), strE2);
+            strH = C0316y.h(new StringBuilder(), CollectionsKt.q(arrayList2, "", "(", ")", null, 56), strE2);
         } else {
             strH = nameResolver.getString(jvmMethodSignature.f26489e);
         }

@@ -35,7 +35,7 @@ public final class CharArraySerializer extends PrimitiveArraySerializer<Characte
         Intrinsics.checkNotNullParameter(builder, "builder");
         char cW = decoder.w(this.f27479b, i);
         builder.getClass();
-        builder.b(builder.getF27456b() + 1);
+        builder.b(builder.getF27454b() + 1);
         char[] cArr = builder.a;
         int i6 = builder.f27454b;
         builder.f27454b = i6 + 1;

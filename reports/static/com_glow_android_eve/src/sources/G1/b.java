@@ -40,7 +40,7 @@ import java.util.HashMap;
 import java.util.List;
 import kotlin.Pair;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import rx.internal.util.ScalarSynchronousObservable;
@@ -69,7 +69,7 @@ public final /* synthetic */ class b implements Function1 {
             case 1:
                 List col = (List) obj;
                 Intrinsics.checkNotNullParameter(col, "col");
-                return CollectionsKt___CollectionsKt.joinToString$default(col, null, null, null, 0, null, new b(2), 31, null);
+                return CollectionsKt.q(col, null, null, null, new b(2), 31);
             case 2:
                 MenuCardType it3 = (MenuCardType) obj;
                 Intrinsics.checkNotNullParameter(it3, "it");

@@ -3,7 +3,6 @@ package kotlinx.serialization.internal;
 import java.util.ArrayList;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import org.jetbrains.annotations.NotNull;
@@ -39,6 +38,6 @@ public abstract class NamedValueDecoder extends TaggedDecoder<String> {
     @NotNull
     public final String T() {
         ArrayList<Tag> arrayList = this.a;
-        return arrayList.isEmpty() ? "$" : CollectionsKt___CollectionsKt.joinToString$default(arrayList, ".", "$.", null, 0, null, null, 60, null);
+        return arrayList.isEmpty() ? "$" : CollectionsKt.q(arrayList, ".", "$.", null, null, 60);
     }
 }

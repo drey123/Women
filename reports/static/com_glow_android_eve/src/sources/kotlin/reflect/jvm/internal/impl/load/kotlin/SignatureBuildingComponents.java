@@ -4,7 +4,7 @@ import androidx.compose.material3.internal.b;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
@@ -78,7 +78,7 @@ public final class SignatureBuildingComponents {
         StringBuilder sb = new StringBuilder();
         sb.append(name);
         sb.append('(');
-        sb.append(CollectionsKt___CollectionsKt.joinToString$default(parameters, "", null, null, 0, null, SignatureBuildingComponents$jvmDescriptor$1.f26226b, 30, null));
+        sb.append(CollectionsKt.q(parameters, "", null, null, SignatureBuildingComponents$jvmDescriptor$1.f26226b, 30));
         sb.append(')');
         if (ret.length() > 1) {
             ret = b.g(';', "L", ret);

@@ -53,7 +53,6 @@ import kotlin.Triple;
 import kotlin.Unit;
 import kotlin.collections.ArraysKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.enums.EnumEntries;
 import kotlin.enums.EnumEntriesKt;
 import kotlin.jvm.functions.Function0;
@@ -934,7 +933,7 @@ public final class FlowCard extends BaseCard {
                 if (z9) {
                     i9 = 0;
                     textView.setVisibility(0);
-                    textView.setText(getResources().getString(R.string.flow_no_pattern_hint, CollectionsKt___CollectionsKt.joinToString$default(list5, ", ", null, null, 0, null, new i(14), 30, null)));
+                    textView.setText(getResources().getString(R.string.flow_no_pattern_hint, CollectionsKt.q(list5, ", ", null, null, new i(14), 30)));
                     i10 = 8;
                 } else {
                     i9 = 0;

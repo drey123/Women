@@ -49,7 +49,7 @@ final class OnboardingNonTTCKt$OnboardingNonTTC$1$1 extends SuspendLambda implem
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Object invokeSuspend(Object obj) {
+    public final Object invokeSuspend(Object obj) throws Throwable {
         String str;
         CoroutineSingletons coroutineSingletons = CoroutineSingletons.f25414b;
         int i = this.f9827b;

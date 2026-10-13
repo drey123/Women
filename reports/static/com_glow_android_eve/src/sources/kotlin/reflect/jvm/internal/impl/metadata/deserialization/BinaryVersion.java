@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import kotlin.collections.ArraysKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
@@ -94,6 +93,6 @@ public abstract class BinaryVersion {
             }
             iC = a.c(i, arrayList, iC, 1);
         }
-        return arrayList.isEmpty() ? "unknown" : CollectionsKt___CollectionsKt.joinToString$default(arrayList, ".", null, null, 0, null, null, 62, null);
+        return arrayList.isEmpty() ? "unknown" : CollectionsKt.q(arrayList, ".", null, null, null, 62);
     }
 }

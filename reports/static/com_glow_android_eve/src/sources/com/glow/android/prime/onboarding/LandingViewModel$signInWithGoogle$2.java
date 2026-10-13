@@ -103,7 +103,7 @@ final class LandingViewModel$signInWithGoogle$2 extends SuspendLambda implements
     /* JADX WARN: Type inference failed for: r3v7 */
     /* JADX WARN: Type inference failed for: r3v8 */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Object invokeSuspend(Object obj) {
+    public final Object invokeSuspend(Object obj) throws Throwable {
         ?? r4;
         int statusCode;
         LandingViewModel$signInWithGoogle$2 landingViewModel$signInWithGoogle$2;

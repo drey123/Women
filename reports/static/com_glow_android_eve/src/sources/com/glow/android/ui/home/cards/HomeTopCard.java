@@ -99,7 +99,6 @@ import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
@@ -355,7 +354,7 @@ public final class HomeTopCard extends BaseHomeFeedCard<String> {
                                                     composer2.updateRememberedValue(objRememberedValue);
                                                 }
                                                 composer2.endReplaceGroup();
-                                                forest2.b(c.a("week days list: ", CollectionsKt___CollectionsKt.joinToString$default(list2, null, null, null, 0, null, (Function1) objRememberedValue, 31, null)), new Object[0]);
+                                                forest2.b(c.a("week days list: ", CollectionsKt.q(list2, null, null, null, (Function1) objRememberedValue, 31)), new Object[0]);
                                                 mutableList.set(iC, "Today");
                                                 Modifier modifierFillMaxWidth$default = SizeKt.fillMaxWidth$default(Modifier.INSTANCE, 0.0f, 1, null);
                                                 MeasurePolicy measurePolicyRowMeasurePolicy = RowKt.rowMeasurePolicy(Arrangement.INSTANCE.getStart(), Alignment.INSTANCE.getTop(), composer2, 0);

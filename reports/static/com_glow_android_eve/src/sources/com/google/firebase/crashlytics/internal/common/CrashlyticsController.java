@@ -99,73 +99,69 @@ class CrashlyticsController {
         public final void a(@NonNull final SettingsController settingsController, @NonNull final Thread thread, @NonNull final Throwable th) {
             final CrashlyticsController crashlyticsController = CrashlyticsController.this;
             synchronized (crashlyticsController) {
+                Logger logger = Logger.a;
+                Objects.toString(th);
+                thread.getName();
+                logger.a(3);
+                final long jCurrentTimeMillis = System.currentTimeMillis();
                 try {
-                    Logger logger = Logger.a;
-                    Objects.toString(th);
-                    thread.getName();
-                    logger.a(3);
-                    final long jCurrentTimeMillis = System.currentTimeMillis();
-                    try {
-                        Utils.a(crashlyticsController.f21499e.b(new Callable<Task<Void>>() { // from class: com.google.firebase.crashlytics.internal.common.CrashlyticsController.2
+                    Utils.a(crashlyticsController.f21499e.b(new Callable<Task<Void>>() { // from class: com.google.firebase.crashlytics.internal.common.CrashlyticsController.2
 
-                            /* JADX INFO: renamed from: f, reason: collision with root package name */
-                            public final /* synthetic */ boolean f21505f = false;
+                        /* JADX INFO: renamed from: f, reason: collision with root package name */
+                        public final /* synthetic */ boolean f21505f = false;
 
-                            @Override // java.util.concurrent.Callable
-                            public final Task<Void> call() throws Exception {
-                                long j4 = jCurrentTimeMillis;
-                                long j6 = j4 / 1000;
-                                CrashlyticsController crashlyticsController2 = CrashlyticsController.this;
-                                final String strE = crashlyticsController2.e();
-                                Logger logger2 = Logger.a;
-                                if (strE == null) {
-                                    logger2.b("Tried to write a fatal exception while no session was open.", null);
-                                    return Tasks.forResult(null);
-                                }
-                                crashlyticsController2.c.a();
-                                SessionReportingCoordinator sessionReportingCoordinator = crashlyticsController2.m;
-                                sessionReportingCoordinator.getClass();
-                                logger2.a(2);
-                                sessionReportingCoordinator.d(th, thread, strE, "crash", j6, true);
-                                try {
-                                    FileStore fileStore = crashlyticsController2.g;
-                                    String str = ".ae" + j4;
-                                    fileStore.getClass();
-                                    if (!new File(fileStore.f21727b, str).createNewFile()) {
-                                        throw new IOException("Create new file failed.");
-                                    }
-                                } catch (IOException e6) {
-                                    logger2.c("Could not create app exception marker file.", e6);
-                                }
-                                SettingsProvider settingsProvider = settingsController;
-                                crashlyticsController2.c(false, settingsProvider);
-                                new CLSUUID(crashlyticsController2.f21500f);
-                                CrashlyticsController.a(crashlyticsController2, CLSUUID.f21489b, Boolean.valueOf(this.f21505f));
-                                if (!crashlyticsController2.f21498b.a()) {
-                                    return Tasks.forResult(null);
-                                }
-                                final Executor executor = crashlyticsController2.f21499e.a;
-                                return ((SettingsController) settingsProvider).i.get().getTask().onSuccessTask(executor, new SuccessContinuation<Settings, Void>() { // from class: com.google.firebase.crashlytics.internal.common.CrashlyticsController.2.1
-                                    @Override // com.google.android.gms.tasks.SuccessContinuation
-                                    @NonNull
-                                    public final Task<Void> then(@Nullable Settings settings) throws Exception {
-                                        if (settings == null) {
-                                            Logger.a.c("Received null app settings, cannot send reports at crash time.", null);
-                                            return Tasks.forResult(null);
-                                        }
-                                        AnonymousClass2 anonymousClass2 = AnonymousClass2.this;
-                                        return Tasks.whenAll((Task<?>[]) new Task[]{CrashlyticsController.b(CrashlyticsController.this), CrashlyticsController.this.m.e(anonymousClass2.f21505f ? strE : null, executor)});
-                                    }
-                                });
+                        @Override // java.util.concurrent.Callable
+                        public final Task<Void> call() throws Exception {
+                            long j4 = jCurrentTimeMillis;
+                            long j6 = j4 / 1000;
+                            CrashlyticsController crashlyticsController2 = CrashlyticsController.this;
+                            final String strE = crashlyticsController2.e();
+                            Logger logger2 = Logger.a;
+                            if (strE == null) {
+                                logger2.b("Tried to write a fatal exception while no session was open.", null);
+                                return Tasks.forResult(null);
                             }
-                        }));
-                    } catch (TimeoutException unused) {
-                        Logger.a.b("Cannot send reports. Timed out while fetching settings.", null);
-                    } catch (Exception e6) {
-                        Logger.a.b("Error handling uncaught exception", e6);
-                    }
-                } catch (Throwable th2) {
-                    throw th2;
+                            crashlyticsController2.c.a();
+                            SessionReportingCoordinator sessionReportingCoordinator = crashlyticsController2.m;
+                            sessionReportingCoordinator.getClass();
+                            logger2.a(2);
+                            sessionReportingCoordinator.d(th, thread, strE, "crash", j6, true);
+                            try {
+                                FileStore fileStore = crashlyticsController2.g;
+                                String str = ".ae" + j4;
+                                fileStore.getClass();
+                                if (!new File(fileStore.f21727b, str).createNewFile()) {
+                                    throw new IOException("Create new file failed.");
+                                }
+                            } catch (IOException e6) {
+                                logger2.c("Could not create app exception marker file.", e6);
+                            }
+                            SettingsProvider settingsProvider = settingsController;
+                            crashlyticsController2.c(false, settingsProvider);
+                            new CLSUUID(crashlyticsController2.f21500f);
+                            CrashlyticsController.a(crashlyticsController2, CLSUUID.f21489b, Boolean.valueOf(this.f21505f));
+                            if (!crashlyticsController2.f21498b.a()) {
+                                return Tasks.forResult(null);
+                            }
+                            final Executor executor = crashlyticsController2.f21499e.a;
+                            return ((SettingsController) settingsProvider).i.get().getTask().onSuccessTask(executor, new SuccessContinuation<Settings, Void>() { // from class: com.google.firebase.crashlytics.internal.common.CrashlyticsController.2.1
+                                @Override // com.google.android.gms.tasks.SuccessContinuation
+                                @NonNull
+                                public final Task<Void> then(@Nullable Settings settings) throws Exception {
+                                    if (settings == null) {
+                                        Logger.a.c("Received null app settings, cannot send reports at crash time.", null);
+                                        return Tasks.forResult(null);
+                                    }
+                                    AnonymousClass2 anonymousClass2 = AnonymousClass2.this;
+                                    return Tasks.whenAll((Task<?>[]) new Task[]{CrashlyticsController.b(CrashlyticsController.this), CrashlyticsController.this.m.e(anonymousClass2.f21505f ? strE : null, executor)});
+                                }
+                            });
+                        }
+                    }));
+                } catch (TimeoutException unused) {
+                    Logger.a.b("Cannot send reports. Timed out while fetching settings.", null);
+                } catch (Exception e6) {
+                    Logger.a.b("Error handling uncaught exception", e6);
                 }
             }
         }

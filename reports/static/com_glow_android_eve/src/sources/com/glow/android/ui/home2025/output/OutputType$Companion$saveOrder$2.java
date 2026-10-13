@@ -9,7 +9,7 @@ import kotlin.Metadata;
 import kotlin.Result;
 import kotlin.ResultKt;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
@@ -58,10 +58,10 @@ public final class OutputType$Companion$saveOrder$2 extends SuspendLambda implem
                 List<OutputType> list = this.c;
                 Context context = this.d;
                 Result.Companion companion = Result.Companion;
-                String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(list, ",", null, null, 0, null, new com.facebook.react.defaults.a(28), 30, null);
+                String strQ = CollectionsKt.q(list, ",", null, null, new com.facebook.react.defaults.a(28), 30);
                 OutputType.f13029e.getClass();
                 DataStore dataStoreE = OutputType.Companion.e(context);
-                OutputType$Companion$saveOrder$2$1$1 outputType$Companion$saveOrder$2$1$1 = new OutputType$Companion$saveOrder$2$1$1(strJoinToString$default, null);
+                OutputType$Companion$saveOrder$2$1$1 outputType$Companion$saveOrder$2$1$1 = new OutputType$Companion$saveOrder$2$1$1(strQ, null);
                 this.f13050b = 1;
                 if (PreferencesKt.edit(dataStoreE, outputType$Companion$saveOrder$2$1$1, this) == coroutineSingletons) {
                     return coroutineSingletons;

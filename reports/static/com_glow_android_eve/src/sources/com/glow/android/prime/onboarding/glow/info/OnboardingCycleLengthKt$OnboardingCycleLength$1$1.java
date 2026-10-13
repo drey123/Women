@@ -52,7 +52,7 @@ final class OnboardingCycleLengthKt$OnboardingCycleLength$1$1 extends SuspendLam
     /* JADX WARN: Code duplicated, block: B:24:0x0059  */
     /* JADX WARN: Code duplicated, block: B:25:0x005e  */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Object invokeSuspend(Object obj) {
+    public final Object invokeSuspend(Object obj) throws Throwable {
         String str;
         String str2;
         Integer num;

@@ -67,7 +67,6 @@ import kotlin.Triple;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.comparisons.ComparisonsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -225,7 +224,7 @@ public final class HomeMenuCardViewModel extends AndroidViewModel {
         w();
     }
 
-    public static final Object k(HomeMenuCardViewModel homeMenuCardViewModel, MenuCardType menuCardType, Continuation continuation) throws Throwable {
+    public static final Object k(HomeMenuCardViewModel homeMenuCardViewModel, MenuCardType menuCardType, Continuation continuation) {
         homeMenuCardViewModel.getClass();
         int iOrdinal = menuCardType.ordinal();
         SimpleDate simpleDate = homeMenuCardViewModel.i;
@@ -1064,7 +1063,7 @@ public final class HomeMenuCardViewModel extends AndroidViewModel {
         boolean zA = LocaleUtil.a();
         menuCardController.getClass();
         snapshotStateList.addAll(MenuCardController.a(this.a, statusH, iIntValue, z2, zA));
-        Timber.a.b(c.a("home menu cards: ", CollectionsKt___CollectionsKt.joinToString$default(this.o, ";", null, null, 0, null, new G1.b(1), 30, null)), new Object[0]);
+        Timber.a.b(c.a("home menu cards: ", CollectionsKt.q(this.o, ";", null, null, new G1.b(1), 30)), new Object[0]);
         BuildersKt.c(ViewModelKt.getViewModelScope(this), null, null, new HomeMenuCardViewModel$loadCardData$1(this, null), 3);
         o();
     }

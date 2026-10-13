@@ -17,7 +17,6 @@ import java.util.concurrent.Executors;
 import kotlin.TuplesKt;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.CollectionsKt__MutableCollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.functions.Function0;
 import kotlinx.serialization.json.JsonArraySerializer;
@@ -71,7 +70,7 @@ public final /* synthetic */ class a implements Function0 {
                     }
                     i++;
                 }
-                return CollectionsKt___CollectionsKt.joinToString$default(arrayList3, ",", null, null, 0, null, new w5.a(4), 30, null);
+                return CollectionsKt.q(arrayList3, ",", null, null, new w5.a(4), 30);
             case 2:
                 int i6 = OpkDebugActivity.f13896q;
                 return new OPKDetector(0);

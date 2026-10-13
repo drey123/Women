@@ -162,7 +162,7 @@ public final class OnboardingManager {
 
     /* JADX WARN: Code duplicated, block: B:29:0x006b  */
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public final Object a(Continuation<? super Integer> continuation) {
+    public final Object a(Continuation<? super Integer> continuation) throws Throwable {
         OnboardingManager$getJourney$1 onboardingManager$getJourney$1;
         OnboardingManager onboardingManager;
         if (continuation instanceof OnboardingManager$getJourney$1) {
@@ -229,7 +229,7 @@ public final class OnboardingManager {
     /* JADX WARN: Code duplicated, block: B:34:0x0097  */
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     @Nullable
-    public final Object b(int i, @NotNull Continuation<? super Map<String, String>> continuation) {
+    public final Object b(int i, @NotNull Continuation<? super Map<String, String>> continuation) throws Throwable {
         OnboardingManager$getLoggingData$1 onboardingManager$getLoggingData$1;
         LinkedHashMap linkedHashMap;
         OnboardingManager onboardingManager;
@@ -329,7 +329,7 @@ public final class OnboardingManager {
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
     @Nullable
-    public final Object c(@NotNull String str, int i, @NotNull Map<String, String> map, @NotNull Continuation<? super Unit> continuation) {
+    public final Object c(@NotNull String str, int i, @NotNull Map<String, String> map, @NotNull Continuation<? super Unit> continuation) throws Throwable {
         OnboardingManager$log$1 onboardingManager$log$1;
         if (continuation instanceof OnboardingManager$log$1) {
             onboardingManager$log$1 = (OnboardingManager$log$1) continuation;

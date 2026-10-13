@@ -20,7 +20,6 @@ import java.util.Map;
 import java.util.Set;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
@@ -158,7 +157,7 @@ public final /* synthetic */ class l implements Function1 {
                     }
                 }
                 if (!arrayList6.isEmpty()) {
-                    Timber.a.b(C0316y.d(arrayList6.size(), "verify(", "):\n%s"), CollectionsKt___CollectionsKt.joinToString$default(arrayList6, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new w5.a(11), 30, null));
+                    Timber.a.b(C0316y.d(arrayList6.size(), "verify(", "):\n%s"), CollectionsKt.q(arrayList6, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new w5.a(11), 30));
                     ArrayList arrayList7 = new ArrayList(CollectionsKt.m(arrayList6));
                     for (IapPurchase iapPurchase7 : arrayList6) {
                         Timber.a.b(androidx.browser.trusted.c.a("verify ", iapPurchase7.a()), new Object[i]);
@@ -179,7 +178,7 @@ public final /* synthetic */ class l implements Function1 {
                     function2.invoke(Boolean.FALSE, "No purchase to verify");
                 }
                 if (!arrayList5.isEmpty()) {
-                    Timber.a.b(C0316y.d(arrayList5.size(), "verified(", "):\n%s"), CollectionsKt___CollectionsKt.joinToString$default(arrayList5, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new w5.a(12), 30, null));
+                    Timber.a.b(C0316y.d(arrayList5.size(), "verified(", "):\n%s"), CollectionsKt.q(arrayList5, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new w5.a(12), 30));
                     SilentClientResponseListener silentClientResponseListener2 = new SilentClientResponseListener();
                     ArrayList arrayList9 = new ArrayList();
                     for (Object obj6 : arrayList5) {

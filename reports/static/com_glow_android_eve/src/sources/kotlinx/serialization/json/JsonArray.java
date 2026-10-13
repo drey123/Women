@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.function.UnaryOperator;
 import kotlin.Metadata;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.CollectionToArray;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.markers.KMappedMarker;
@@ -174,7 +174,7 @@ public final class JsonArray extends JsonElement implements List<JsonElement>, K
 
     @NotNull
     public final String toString() {
-        return CollectionsKt___CollectionsKt.joinToString$default(this.f27500b, ",", "[", "]", 0, null, null, 56, null);
+        return CollectionsKt.q(this.f27500b, ",", "[", "]", null, 56);
     }
 
     @Override // java.util.List, java.util.Collection

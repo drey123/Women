@@ -84,7 +84,6 @@ import kotlin.Pair;
 import kotlin.Triple;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.comparisons.ComparisonsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
@@ -170,7 +169,7 @@ public final class SummaryItemView extends ConstraintLayout implements SummaryDa
         String string3;
         UserFlogCompleteData userFlogCompleteData;
         UserFlogData userFlogData;
-        String strJoinToString$default;
+        String strQ;
         List<String> listSplit$default;
         SummaryItemBinding summaryItemBinding = this.f13290b;
         summaryItemBinding.k.setVisibility(0);
@@ -190,7 +189,7 @@ public final class SummaryItemView extends ConstraintLayout implements SummaryDa
                 imageView.setVisibility(8);
                 String valText = userFlogData.getValText();
                 if (valText == null || (listSplit$default = StringsKt__StringsKt.split$default(valText, new String[]{","}, false, 0, 6, null)) == null) {
-                    strJoinToString$default = "";
+                    strQ = "";
                 } else {
                     ArrayList arrayList = new ArrayList();
                     for (String str2 : listSplit$default) {
@@ -200,12 +199,12 @@ public final class SummaryItemView extends ConstraintLayout implements SummaryDa
                             arrayList.add(str3);
                         }
                     }
-                    strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList, " ", null, null, 0, null, null, 62, null);
-                    if (strJoinToString$default == null) {
-                        strJoinToString$default = "";
+                    strQ = CollectionsKt.q(arrayList, " ", null, null, null, 62);
+                    if (strQ == null) {
+                        strQ = "";
                     }
                 }
-                mutableList.add(strJoinToString$default);
+                mutableList.add(strQ);
             } else {
                 imageView2.setVisibility(8);
                 imageView.setVisibility(8);

@@ -7,7 +7,6 @@ import java.util.Iterator;
 import java.util.List;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
@@ -91,13 +90,13 @@ public final class RawTypeImpl extends FlexibleType implements RawType {
         }
         ArrayList arrayListR0 = R0(renderer, simpleType);
         ArrayList arrayListR1 = R0(renderer, simpleType2);
-        String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayListR0, ", ", null, null, 0, null, RawTypeImpl$render$newArgs$1.f26142b, 30, null);
+        String strQ = CollectionsKt.q(arrayListR0, ", ", null, null, RawTypeImpl$render$newArgs$1.f26142b, 30);
         List listZip = CollectionsKt.zip(arrayListR0, arrayListR1);
         if (!(listZip instanceof Collection) || !listZip.isEmpty()) {
             Iterator it2 = listZip.iterator();
             while (true) {
                 if (!it2.hasNext()) {
-                    strT2 = S0(strT2, strJoinToString$default);
+                    strT2 = S0(strT2, strQ);
                     break;
                 }
                 Pair pair = (Pair) it2.next();
@@ -108,10 +107,10 @@ public final class RawTypeImpl extends FlexibleType implements RawType {
                 }
             }
         } else {
-            strT2 = S0(strT2, strJoinToString$default);
+            strT2 = S0(strT2, strQ);
             break;
         }
-        String strS0 = S0(strT, strJoinToString$default);
+        String strS0 = S0(strT, strQ);
         return Intrinsics.areEqual(strS0, strT2) ? strS0 : renderer.q(strS0, strT2, TypeUtilsKt.g(this));
     }
 

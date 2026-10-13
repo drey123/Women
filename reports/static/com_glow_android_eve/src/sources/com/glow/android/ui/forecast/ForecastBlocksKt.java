@@ -108,7 +108,6 @@ import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.IntIterator;
 import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function0;
@@ -1030,16 +1029,16 @@ public final class ForecastBlocksKt {
             composerStartRestartGroup.updateRememberedValue(objRememberedValue);
         }
         composerStartRestartGroup.endReplaceGroup();
-        String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(list, ";", null, null, 0, null, (Function1) objRememberedValue, 30, null);
+        String strQ = CollectionsKt.q(list, ";", null, null, (Function1) objRememberedValue, 30);
         AnnotatedString.Builder builder = new AnnotatedString.Builder(0, 1, null);
-        builder.append(strJoinToString$default);
+        builder.append(strQ);
         TextLayoutResult textLayoutResultM6070measurexDpz5zY$default = TextMeasurer.m6070measurexDpz5zY$default(textMeasurerRememberTextMeasurer, builder.toAnnotatedString(), null, TextOverflow.INSTANCE.m6544getClipgIe3tQ8(), true, 4, null, Constraints.INSTANCE.m6593fixedWidthOenEA2s(iMo364toPx0680j_4), null, null, null, false, 1954, null);
         AnnotatedString.Builder builder2 = new AnnotatedString.Builder(0, 1, null);
         int lineCount = textLayoutResultM6070measurexDpz5zY$default.getLineCount();
         if (lineCount > 4) {
             lineCount = 4;
         }
-        String strSubstring = strJoinToString$default.substring(0, TextLayoutResult.getLineEnd$default(textLayoutResultM6070measurexDpz5zY$default, lineCount - 1, false, 2, null) - 12);
+        String strSubstring = strQ.substring(0, TextLayoutResult.getLineEnd$default(textLayoutResultM6070measurexDpz5zY$default, lineCount - 1, false, 2, null) - 12);
         Intrinsics.checkNotNullExpressionValue(strSubstring, "substring(...)");
         builder2.append(strSubstring);
         if (textLayoutResultM6070measurexDpz5zY$default.getHasVisualOverflow()) {
@@ -1111,7 +1110,7 @@ public final class ForecastBlocksKt {
             composerStartRestartGroup.updateRememberedValue(objRememberedValue);
         }
         composerStartRestartGroup.endReplaceGroup();
-        TextKt.m1722Text4IGK_g(CollectionsKt___CollectionsKt.joinToString$default(list, ", ", null, null, 0, null, (Function1) objRememberedValue, 30, null), (Modifier) null, 0L, 0L, (FontStyle) null, (FontWeight) null, (FontFamily) null, 0L, (TextDecoration) null, (TextAlign) null, 0L, 0, false, 0, 0, (Function1<? super TextLayoutResult, Unit>) null, textStyle, composerStartRestartGroup, 0, 1572864, 65534);
+        TextKt.m1722Text4IGK_g(CollectionsKt.q(list, ", ", null, null, (Function1) objRememberedValue, 30), (Modifier) null, 0L, 0L, (FontStyle) null, (FontWeight) null, (FontFamily) null, 0L, (TextDecoration) null, (TextAlign) null, 0L, 0, false, 0, 0, (Function1<? super TextLayoutResult, Unit>) null, textStyle, composerStartRestartGroup, 0, 1572864, 65534);
         Modifier.Companion companion3 = Modifier.INSTANCE;
         p051n4.a.l(6, companion3, composerStartRestartGroup, 6);
         MeasurePolicy measurePolicyRowMeasurePolicy = RowKt.rowMeasurePolicy(arrangement.m552spacedBy0680j_4(Dp.m6628constructorimpl(-22)), companion.getTop(), composerStartRestartGroup, 6);

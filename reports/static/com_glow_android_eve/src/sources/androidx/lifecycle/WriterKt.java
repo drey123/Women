@@ -35,7 +35,6 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.ArraysKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.io.CloseableKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
@@ -136,7 +135,7 @@ public final class WriterKt {
     }
 
     private static final String generateParamString(int i) {
-        return CollectionsKt___CollectionsKt.joinToString$default(RangesKt.s(0, i), ",", null, null, 0, null, new Function1<Integer, CharSequence>() { // from class: androidx.lifecycle.WriterKt.generateParamString.1
+        return CollectionsKt.q(RangesKt.s(0, i), ",", null, null, new Function1<Integer, CharSequence>() { // from class: androidx.lifecycle.WriterKt.generateParamString.1
             @NotNull
             public final CharSequence invoke(int i6) {
                 return WriterKt.N;
@@ -146,7 +145,7 @@ public final class WriterKt {
             public /* bridge */ /* synthetic */ CharSequence invoke(Integer num) {
                 return invoke(num.intValue());
             }
-        }, 30, null);
+        }, 30);
     }
 
     private static final Object[] takeParams(int i, Object... objArr) {

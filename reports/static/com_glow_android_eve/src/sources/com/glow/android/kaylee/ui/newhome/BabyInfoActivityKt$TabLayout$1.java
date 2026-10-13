@@ -4,7 +4,7 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
@@ -46,7 +46,7 @@ public final class BabyInfoActivityKt$TabLayout$1 extends SuspendLambda implemen
         ResultKt.a(obj);
         Timber.Forest forest = Timber.a;
         forest.b("BabyInfo TabLayout selectedDay: " + this.f7663b, new Object[0]);
-        forest.b(androidx.browser.trusted.c.a("BabyInfo TabLayout daysIdx: ", CollectionsKt___CollectionsKt.joinToString$default(this.c, ",", null, null, 0, null, null, 62, null)), new Object[0]);
+        forest.b(androidx.browser.trusted.c.a("BabyInfo TabLayout daysIdx: ", CollectionsKt.q(this.c, ",", null, null, null, 62)), new Object[0]);
         return Unit.a;
     }
 }

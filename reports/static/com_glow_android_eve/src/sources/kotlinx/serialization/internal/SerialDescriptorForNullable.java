@@ -28,7 +28,7 @@ public final class SerialDescriptorForNullable implements SerialDescriptor, Cach
     public SerialDescriptorForNullable(@NotNull SerialDescriptor original) {
         Intrinsics.checkNotNullParameter(original, "original");
         this.a = original;
-        this.f27482b = original.getF27482b() + '?';
+        this.f27482b = original.getA() + '?';
         this.c = Platform_commonKt.a(original);
     }
 
@@ -91,14 +91,15 @@ public final class SerialDescriptorForNullable implements SerialDescriptor, Cach
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     @NotNull
-    public final SerialKind getKind() {
-        return this.a.getKind();
+    /* JADX INFO: renamed from: getKind */
+    public final SerialKind getF27443b() {
+        return this.a.getF27443b();
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     @NotNull
     /* JADX INFO: renamed from: h, reason: from getter */
-    public final String getF27482b() {
+    public final String getA() {
         return this.f27482b;
     }
 

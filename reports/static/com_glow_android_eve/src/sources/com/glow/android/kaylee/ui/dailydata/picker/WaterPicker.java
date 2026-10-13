@@ -27,7 +27,7 @@ import java.util.Iterator;
 import kotlin.Metadata;
 import kotlin.collections.ArraysKt;
 import kotlin.collections.ArraysKt___ArraysKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.collections.IntIterator;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
@@ -324,7 +324,7 @@ public final class WaterPicker extends View {
             Intrinsics.checkNotNullExpressionValue(str, "format(...)");
             char[] charArray = str.toCharArray();
             Intrinsics.checkNotNullExpressionValue(charArray, "toCharArray(...)");
-            this.o = android.support.v4.media.a.m(ArraysKt.last(charArray) == '0' ? CollectionsKt___CollectionsKt.joinToString$default(ArraysKt.take(charArray, charArray.length - 1), "", null, null, 0, null, null, 62, null) : ArraysKt___ArraysKt.joinToString$default(charArray, (CharSequence) "", (CharSequence) null, (CharSequence) null, 0, (CharSequence) null, (Function1) null, 62, (Object) null), " L");
+            this.o = android.support.v4.media.a.m(ArraysKt.last(charArray) == '0' ? CollectionsKt.q(ArraysKt.take(charArray, charArray.length - 1), "", null, null, null, 62) : ArraysKt___ArraysKt.joinToString$default(charArray, (CharSequence) "", (CharSequence) null, (CharSequence) null, 0, (CharSequence) null, (Function1) null, 62, (Object) null), " L");
         }
         invalidate();
     }

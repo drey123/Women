@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
@@ -218,8 +217,8 @@ public final class DescriptorKindFilter {
             next = it2.next();
         } while (((Companion.MaskToName) next).a != this.f26694b);
         Companion.MaskToName maskToName = (Companion.MaskToName) next;
-        String strJoinToString$default = maskToName != null ? maskToName.f26695b : null;
-        if (strJoinToString$default == null) {
+        String strQ = maskToName != null ? maskToName.f26695b : null;
+        if (strQ == null) {
             ArrayList<Companion.MaskToName> arrayList = s;
             ArrayList arrayList2 = new ArrayList();
             for (Companion.MaskToName maskToName2 : arrayList) {
@@ -228,9 +227,9 @@ public final class DescriptorKindFilter {
                     arrayList2.add(str);
                 }
             }
-            strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList2, " | ", null, null, 0, null, null, 62, null);
+            strQ = CollectionsKt.q(arrayList2, " | ", null, null, null, 62);
         }
-        return b.k(a.y("DescriptorKindFilter(", strJoinToString$default, ", "), this.a, ')');
+        return b.k(a.y("DescriptorKindFilter(", strQ, ", "), this.a, ')');
     }
 
     public /* synthetic */ DescriptorKindFilter(int i6) {

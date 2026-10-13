@@ -4,7 +4,7 @@ import androidx.core.content.a;
 import java.util.ArrayList;
 import kotlin.ResultKt;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
@@ -49,7 +49,7 @@ final class zzcc extends SuspendLambda implements Function2 {
         for (String str : strArr) {
             arrayList.add("\"" + str + "\"");
         }
-        this.zzb.zza.evaluateJavascript(a.r(this.zzc, "(", CollectionsKt___CollectionsKt.joinToString$default(arrayList, ",", null, null, 0, null, null, 62, null), ")"), null);
+        this.zzb.zza.evaluateJavascript(a.r(this.zzc, "(", CollectionsKt.q(arrayList, ",", null, null, null, 62), ")"), null);
         return Unit.a;
     }
 }

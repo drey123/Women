@@ -7,7 +7,7 @@ import kotlin.Metadata;
 import kotlin.Result;
 import kotlin.ResultKt;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
@@ -52,7 +52,7 @@ public final class PremiumFlow$fetchProducts$productList$1 extends SuspendLambda
         List<String> list = this.c;
         try {
             Result.Companion companion = Result.Companion;
-            objM7015constructorimpl = Result.m7015constructorimpl((List) new BlockingSingle(premiumFlow.i.f(CollectionsKt___CollectionsKt.joinToString$default(list, ",", null, null, 0, null, null, 62, null), "all")).a());
+            objM7015constructorimpl = Result.m7015constructorimpl((List) new BlockingSingle(premiumFlow.i.f(CollectionsKt.q(list, ",", null, null, null, 62), "all")).a());
         } catch (Throwable th) {
             Result.Companion companion2 = Result.Companion;
             objM7015constructorimpl = Result.m7015constructorimpl(ResultKt.createFailure(th));

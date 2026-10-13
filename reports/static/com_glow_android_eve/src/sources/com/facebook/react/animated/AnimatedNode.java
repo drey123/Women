@@ -4,7 +4,7 @@ import android.support.v4.media.a;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
@@ -50,8 +50,8 @@ public abstract class AnimatedNode {
     @NotNull
     public final String prettyPrintWithChildren() {
         List<AnimatedNode> list = this.children;
-        String strJoinToString$default = list != null ? CollectionsKt___CollectionsKt.joinToString$default(list, " ", null, null, 0, null, null, 62, null) : null;
-        return a.m(prettyPrint(), (strJoinToString$default == null || StringsKt.w(strJoinToString$default)) ? "" : " children: ".concat(strJoinToString$default));
+        String strQ = list != null ? CollectionsKt.q(list, " ", null, null, null, 62) : null;
+        return a.m(prettyPrint(), (strQ == null || StringsKt.w(strQ)) ? "" : " children: ".concat(strQ));
     }
 
     public final void removeChild(@NotNull AnimatedNode child) {

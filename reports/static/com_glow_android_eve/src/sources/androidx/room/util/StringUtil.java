@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 import org.jetbrains.annotations.NotNull;
@@ -36,7 +36,7 @@ public final class StringUtil {
     @Nullable
     public static final String joinIntoString(@Nullable List<Integer> list) {
         if (list != null) {
-            return CollectionsKt___CollectionsKt.joinToString$default(list, ",", null, null, 0, null, null, 62, null);
+            return CollectionsKt.q(list, ",", null, null, null, 62);
         }
         return null;
     }

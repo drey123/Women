@@ -31,7 +31,6 @@ import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -142,7 +141,7 @@ public final class AFPurchaseConnectorA1t implements ProductDetailsResponseListe
         Intrinsics.checkNotNullParameter(p4, "");
         try {
             if (p2.a == 0 && !p4.isEmpty()) {
-                AFLogger.afDebugLog("[PurchaseConnector]: Received the following Product details:\n\ttype: " + this.getPackageName + "\n\tProduct Ids: " + CollectionsKt___CollectionsKt.joinToString$default(p4, ", ", null, null, 0, null, new Function1<ProductDetails, CharSequence>() { // from class: com.appsflyer.internal.connector.purcahse.AFPurchaseConnectorA1t.1
+                AFLogger.afDebugLog("[PurchaseConnector]: Received the following Product details:\n\ttype: " + this.getPackageName + "\n\tProduct Ids: " + CollectionsKt.q(p4, ", ", null, null, new Function1<ProductDetails, CharSequence>() { // from class: com.appsflyer.internal.connector.purcahse.AFPurchaseConnectorA1t.1
                     @Override // kotlin.jvm.functions.Function1
                     @NotNull
                     /* JADX INFO: renamed from: getOneTimePurchaseOfferDetails, reason: merged with bridge method [inline-methods] */
@@ -152,7 +151,7 @@ public final class AFPurchaseConnectorA1t implements ProductDetailsResponseListe
                         Intrinsics.checkNotNullExpressionValue(str, "");
                         return str;
                     }
-                }, 30, null));
+                }, 30));
                 Map<Purchase, Map<String, ProductDetails>> mapInAppPurchaseEvent = InAppPurchaseEvent(p4);
                 if (mapInAppPurchaseEvent.isEmpty()) {
                     return;

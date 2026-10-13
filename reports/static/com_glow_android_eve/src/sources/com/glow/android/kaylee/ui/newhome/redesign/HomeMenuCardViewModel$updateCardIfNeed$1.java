@@ -54,7 +54,7 @@ final class HomeMenuCardViewModel$updateCardIfNeed$1 extends SuspendLambda imple
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Object invokeSuspend(Object obj) throws Throwable {
+    public final Object invokeSuspend(Object obj) {
         SnapshotStateMap<MenuCardType, Object> snapshotStateMap;
         MenuCardType menuCardType;
         CoroutineSingletons coroutineSingletons = CoroutineSingletons.f25414b;

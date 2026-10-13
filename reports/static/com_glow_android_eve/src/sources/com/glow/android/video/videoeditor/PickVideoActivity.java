@@ -49,7 +49,6 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.BuildersKt;
 import org.jetbrains.annotations.NotNull;
@@ -326,7 +325,7 @@ public class PickVideoActivity extends BaseActivity {
                                                             Timber.Forest forest2 = Timber.a;
                                                             List<PermissionDeniedResponse> deniedPermissionResponses = report.getDeniedPermissionResponses();
                                                             Intrinsics.checkNotNullExpressionValue(deniedPermissionResponses, "getDeniedPermissionResponses(...)");
-                                                            forest2.b(androidx.browser.trusted.c.a("permission not granted: ", CollectionsKt___CollectionsKt.joinToString$default(deniedPermissionResponses, null, null, null, 0, null, new j(20), 31, null)), new Object[0]);
+                                                            forest2.b(androidx.browser.trusted.c.a("permission not granted: ", CollectionsKt.q(deniedPermissionResponses, null, null, null, new j(20), 31)), new Object[0]);
                                                             Intrinsics.checkNotNullParameter(activity, "activity");
                                                             AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                                                             builder.setTitle(activity.getString(R.string.message_need_permission));
@@ -422,7 +421,7 @@ public class PickVideoActivity extends BaseActivity {
                                                             Timber.Forest forest2 = Timber.a;
                                                             List<PermissionDeniedResponse> deniedPermissionResponses = report.getDeniedPermissionResponses();
                                                             Intrinsics.checkNotNullExpressionValue(deniedPermissionResponses, "getDeniedPermissionResponses(...)");
-                                                            forest2.b(androidx.browser.trusted.c.a("permission not granted: ", CollectionsKt___CollectionsKt.joinToString$default(deniedPermissionResponses, null, null, null, 0, null, new j(20), 31, null)), new Object[0]);
+                                                            forest2.b(androidx.browser.trusted.c.a("permission not granted: ", CollectionsKt.q(deniedPermissionResponses, null, null, null, new j(20), 31)), new Object[0]);
                                                             Intrinsics.checkNotNullParameter(activity, "activity");
                                                             AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                                                             builder.setTitle(activity.getString(R.string.message_need_permission));
@@ -518,7 +517,7 @@ public class PickVideoActivity extends BaseActivity {
                                                             Timber.Forest forest2 = Timber.a;
                                                             List<PermissionDeniedResponse> deniedPermissionResponses = report.getDeniedPermissionResponses();
                                                             Intrinsics.checkNotNullExpressionValue(deniedPermissionResponses, "getDeniedPermissionResponses(...)");
-                                                            forest2.b(androidx.browser.trusted.c.a("permission not granted: ", CollectionsKt___CollectionsKt.joinToString$default(deniedPermissionResponses, null, null, null, 0, null, new j(20), 31, null)), new Object[0]);
+                                                            forest2.b(androidx.browser.trusted.c.a("permission not granted: ", CollectionsKt.q(deniedPermissionResponses, null, null, null, new j(20), 31)), new Object[0]);
                                                             Intrinsics.checkNotNullParameter(activity, "activity");
                                                             AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                                                             builder.setTitle(activity.getString(R.string.message_need_permission));

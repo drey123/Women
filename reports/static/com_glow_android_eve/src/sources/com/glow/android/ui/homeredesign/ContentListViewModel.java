@@ -65,7 +65,6 @@ import kotlin.Result;
 import kotlin.ResultKt;
 import kotlin.collections.ArraysKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -1353,7 +1352,7 @@ public final class ContentListViewModel extends AndroidViewModel implements Outp
                     Timber.a.b(i12 + " " + cardType.name() + " " + obj, new Object[0]);
                     i12 = i23;
                 }
-                Timber.a.b(CollectionsKt___CollectionsKt.joinToString$default(arrayList2, null, null, null, 0, null, new i(1), 31, null), new Object[0]);
+                Timber.a.b(CollectionsKt.q(arrayList2, null, null, null, new i(1), 31), new Object[0]);
                 SimpleDate simpleDateA2 = currentDate.a(1);
                 simpleDateA = currentDate.a(-1);
                 if (simpleDateA.R(simpleDateM.a(-14))) {
@@ -2363,7 +2362,7 @@ public final class ContentListViewModel extends AndroidViewModel implements Outp
                 Timber.a.b(i12 + " " + cardType.name() + " " + obj, new Object[0]);
                 i12 = i210;
             }
-            Timber.a.b(CollectionsKt___CollectionsKt.joinToString$default(arrayList2, null, null, null, 0, null, new i(1), 31, null), new Object[0]);
+            Timber.a.b(CollectionsKt.q(arrayList2, null, null, null, new i(1), 31), new Object[0]);
             SimpleDate simpleDateA3 = currentDate.a(1);
             simpleDateA = currentDate.a(-1);
             if (simpleDateA.R(simpleDateM.a(-14))) {

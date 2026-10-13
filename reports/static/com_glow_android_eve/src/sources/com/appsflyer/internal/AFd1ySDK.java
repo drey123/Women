@@ -3,7 +3,7 @@ package com.appsflyer.internal;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
 import java.util.ArrayList;
 import kotlin.ExceptionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -41,7 +41,7 @@ public final class AFd1ySDK {
                 arrayList.add(stackTraceElement);
             }
         }
-        String str = th + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + CollectionsKt___CollectionsKt.joinToString$default(arrayList, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new Function1<StackTraceElement, CharSequence>() { // from class: com.appsflyer.internal.AFd1ySDK.2
+        String str = th + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + CollectionsKt.q(arrayList, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new Function1<StackTraceElement, CharSequence>() { // from class: com.appsflyer.internal.AFd1ySDK.2
             @Override // kotlin.jvm.functions.Function1
             @NotNull
             /* JADX INFO: renamed from: getCurrencyIso4217Code, reason: merged with bridge method [inline-methods] */
@@ -49,7 +49,7 @@ public final class AFd1ySDK {
                 Intrinsics.checkNotNullParameter(stackTraceElement2, "");
                 return "at " + stackTraceElement2;
             }
-        }, 30, null);
+        }, 30);
         Intrinsics.checkNotNullParameter(str, "");
         return AFd1pSDK.getCurrencyIso4217Code(str, "SHA-256");
     }

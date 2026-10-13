@@ -97,7 +97,6 @@ import java.util.Map;
 import kotlin.Pair;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.comparisons.ComparisonsKt;
 import kotlin.jvm.functions.Function1;
@@ -339,7 +338,7 @@ public final /* synthetic */ class a implements Function1 {
                 Timber.Forest forest = Timber.a;
                 Intrinsics.checkNotNull(list5);
                 List list6 = list5;
-                forest.b(c.a("queryProducts ", CollectionsKt___CollectionsKt.joinToString$default(list6, null, null, null, 0, null, new b(7), 31, null)), new Object[0]);
+                forest.b(c.a("queryProducts ", CollectionsKt.q(list6, null, null, null, new b(7), 31)), new Object[0]);
                 int iMapCapacity = MapsKt.mapCapacity(CollectionsKt.m(list6));
                 if (iMapCapacity < 16) {
                     iMapCapacity = 16;

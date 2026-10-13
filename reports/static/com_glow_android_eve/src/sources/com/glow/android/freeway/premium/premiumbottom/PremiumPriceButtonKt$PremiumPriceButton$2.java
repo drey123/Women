@@ -8,7 +8,7 @@ import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.TuplesKt;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -48,7 +48,7 @@ public final class PremiumPriceButtonKt$PremiumPriceButton$2 extends SuspendLamb
     public final Object invokeSuspend(Object obj) {
         CoroutineSingletons coroutineSingletons = CoroutineSingletons.f25414b;
         ResultKt.a(obj);
-        Blaster.e("page_impression_iap_popup", MapsKt.plus(this.f4937b, MapsKt.mapOf(TuplesKt.to("note", CollectionsKt___CollectionsKt.joinToString$default(this.c, null, null, null, 0, null, new A0.b(2), 31, null)))));
+        Blaster.e("page_impression_iap_popup", MapsKt.plus(this.f4937b, MapsKt.mapOf(TuplesKt.to("note", CollectionsKt.q(this.c, null, null, null, new A0.b(2), 31)))));
         return Unit.a;
     }
 }

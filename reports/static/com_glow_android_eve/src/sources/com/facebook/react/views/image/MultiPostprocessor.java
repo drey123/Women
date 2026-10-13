@@ -12,7 +12,6 @@ import java.util.LinkedList;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -66,7 +65,7 @@ public final class MultiPostprocessor implements Postprocessor {
     @Override // com.facebook.imagepipeline.request.Postprocessor
     @NotNull
     public String getName() {
-        return android.support.v4.media.a.n("MultiPostProcessor (", CollectionsKt___CollectionsKt.joinToString$default(this.postprocessors, ",", null, null, 0, null, null, 62, null), ")");
+        return android.support.v4.media.a.n("MultiPostProcessor (", CollectionsKt.q(this.postprocessors, ",", null, null, null, 62), ")");
     }
 
     @Override // com.facebook.imagepipeline.request.Postprocessor

@@ -52,7 +52,6 @@ import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.comparisons.ComparisonsKt;
 import kotlin.enums.EnumEntries;
@@ -715,10 +714,10 @@ public final class ExerciseCard extends BaseInsightCard {
                 Intrinsics.checkNotNullExpressionValue(resources2, "getResources(...)");
                 marginLayoutParams.setMargins((int) (f6 - PixelUtils.a(6, resources2)), marginLayoutParams.topMargin, marginLayoutParams.rightMargin, marginLayoutParams.bottomMargin);
                 imageView.setLayoutParams(marginLayoutParams);
-                String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default((Iterable) pair.getSecond(), ",", null, null, 0, null, new kotlin.jvm.internal.a(this, 9), 30, null);
+                String strQ = CollectionsKt.q((Iterable) pair.getSecond(), ",", null, null, new kotlin.jvm.internal.a(this, 9), 30);
                 TextView textView2 = cardInsightExerciseDailySummaryBinding.g;
-                textView2.setText(strJoinToString$default);
-                float fMeasureText = textView2.getPaint().measureText(strJoinToString$default) / 2;
+                textView2.setText(strQ);
+                float fMeasureText = textView2.getPaint().measureText(strQ) / 2;
                 if (2.0f * fMeasureText >= fA) {
                     textView2.setGravity(GravityCompat.START);
                     textView2.setPadding(0, 0, 0, 0);

@@ -181,7 +181,7 @@ public final class bfg {
         return t4;
     }
 
-    public final String f(Object obj) {
+    public final String f(Object obj) throws IOException {
         Class<?> cls = obj.getClass();
         StringWriter stringWriter = new StringWriter();
         try {
@@ -194,7 +194,7 @@ public final class bfg {
         }
     }
 
-    public final void h(Object obj, Type type, bjl bjlVar) throws bfm {
+    public final void h(Object obj, Type type, bjl bjlVar) throws IOException, bfm {
         bfv bfvVarA = a(bjh.b(type));
         boolean zR = bjlVar.r();
         bjlVar.n(true);

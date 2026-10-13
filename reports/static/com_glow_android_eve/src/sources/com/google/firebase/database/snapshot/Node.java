@@ -74,7 +74,7 @@ public interface Node extends Comparable<Node>, Iterable<NamedNode> {
     /* JADX INFO: renamed from: com.google.firebase.database.snapshot.Node$1, reason: invalid class name */
     public class AnonymousClass1 extends ChildrenNode {
         @Override // com.google.firebase.database.snapshot.ChildrenNode, java.lang.Comparable
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        /* JADX INFO: renamed from: a */
         public final int compareTo(Node node) {
             return node == this ? 0 : 1;
         }

@@ -3,7 +3,7 @@ package okio;
 import java.util.ArrayList;
 import java.util.Map;
 import kotlin.Metadata;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.KClass;
@@ -80,7 +80,7 @@ public final class FileMetadata {
         if (!map.isEmpty()) {
             arrayList.add(Intrinsics.stringPlus("extras=", map));
         }
-        return CollectionsKt___CollectionsKt.joinToString$default(arrayList, ", ", "FileMetadata(", ")", 0, null, null, 56, null);
+        return CollectionsKt.q(arrayList, ", ", "FileMetadata(", ")", null, 56);
     }
 
     public /* synthetic */ FileMetadata(boolean z2, boolean z5, Path path, Long l, Long l4, Long l6, Long l7) {

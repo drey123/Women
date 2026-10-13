@@ -12,7 +12,6 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.TypeCastException;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.ranges.RangesKt;
@@ -280,7 +279,7 @@ public final class PagedStorage<T> extends AbstractList<T> implements LegacyPage
     @Override // java.util.AbstractCollection
     @NotNull
     public String toString() {
-        return "leading " + getPlaceholdersBefore() + ", storage " + getStorageCount() + ", trailing " + getPlaceholdersAfter() + ' ' + CollectionsKt___CollectionsKt.joinToString$default(this.pages, " ", null, null, 0, null, null, 62, null);
+        return "leading " + getPlaceholdersBefore() + ", storage " + getStorageCount() + ", trailing " + getPlaceholdersAfter() + ' ' + CollectionsKt.q(this.pages, " ", null, null, null, 62);
     }
 
     public final boolean trimFromEnd$paging_common(boolean insertNulls, int maxSize, int requiredRemaining, @NotNull Callback callback) {

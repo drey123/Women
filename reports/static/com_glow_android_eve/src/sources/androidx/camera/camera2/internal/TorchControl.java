@@ -43,11 +43,8 @@ final class TorchControl {
         });
     }
 
-    public static /* synthetic */ Object a(TorchControl torchControl, CallbackToFutureAdapter.Completer completer, boolean z2) {
-        return torchControl.lambda$enableTorch$2(z2, completer);
-    }
-
-    private /* synthetic */ Object lambda$enableTorch$2(boolean z2, CallbackToFutureAdapter.Completer completer) throws Exception {
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ Object lambda$enableTorch$2(boolean z2, CallbackToFutureAdapter.Completer completer) throws Exception {
         this.mExecutor.execute(new L(this, completer, z2));
         return "enableTorch: " + z2;
     }

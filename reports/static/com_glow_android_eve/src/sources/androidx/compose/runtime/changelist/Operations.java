@@ -17,7 +17,7 @@ import kotlin.Deprecated;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.ArraysKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.JvmInline;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
@@ -212,7 +212,7 @@ public final class Operations extends OperationsDebugStringFormattable {
     }
 
     private final <T> String toCollectionString(Iterable<? extends T> iterable, final String str) {
-        return CollectionsKt___CollectionsKt.joinToString$default(iterable, ", ", "[", "]", 0, null, new Function1<T, CharSequence>() { // from class: androidx.compose.runtime.changelist.Operations.toCollectionString.1
+        return CollectionsKt.q(iterable, ", ", "[", "]", new Function1<T, CharSequence>() { // from class: androidx.compose.runtime.changelist.Operations.toCollectionString.1
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             {
                 super(1);
@@ -224,7 +224,7 @@ public final class Operations extends OperationsDebugStringFormattable {
             public final CharSequence invoke(T t4) {
                 return Operations.this.formatOpArgumentToString(t4, str);
             }
-        }, 24, null);
+        }, 24);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

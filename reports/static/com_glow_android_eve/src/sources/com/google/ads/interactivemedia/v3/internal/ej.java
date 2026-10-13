@@ -6,6 +6,7 @@ import android.webkit.CookieManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import androidx.annotation.UiThread;
+import java.io.IOException;
 
 /* JADX INFO: compiled from: IMASDK */
 /* JADX INFO: loaded from: classes4.dex */
@@ -52,7 +53,7 @@ final class ej {
         this.f16075b.destroy();
     }
 
-    public final /* synthetic */ void d(dw dwVar) {
+    public final /* synthetic */ void d(dw dwVar) throws IOException {
         String strF = dwVar.f();
         if (this.d) {
             String strValueOf = String.valueOf(dwVar);
@@ -106,7 +107,7 @@ final class ej {
     public final void g(final dw dwVar) {
         this.c.post(new Runnable() { // from class: com.google.ads.interactivemedia.v3.internal.ef
             @Override // java.lang.Runnable
-            public final void run() {
+            public final void run() throws IOException {
                 this.a.d(dwVar);
             }
         });

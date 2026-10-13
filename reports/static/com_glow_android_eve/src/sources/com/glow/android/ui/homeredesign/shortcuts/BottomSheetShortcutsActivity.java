@@ -40,7 +40,6 @@ import kotlin.ResultKt;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -137,7 +136,7 @@ public final class BottomSheetShortcutsActivity extends BaseActivity {
             Intrinsics.checkNotNullParameter(pageSource, "pageSource");
             Intrinsics.checkNotNullParameter(date, "date");
             Intent intent = new Intent(context, (Class<?>) BottomSheetShortcutsActivity.class);
-            intent.putExtra("bottom.sheet.log.shortcuts.key.log.types", CollectionsKt___CollectionsKt.joinToString$default(types, ",", null, null, 0, null, new i(6), 30, null));
+            intent.putExtra("bottom.sheet.log.shortcuts.key.log.types", CollectionsKt.q(types, ",", null, null, new i(6), 30));
             intent.putExtra("bottom.sheet.log.shortcuts.key.page.source", pageSource);
             intent.putExtra("bottom.sheet.log.shortcuts.key.date", date.toString());
             return intent;
@@ -353,8 +352,8 @@ public final class BottomSheetShortcutsActivity extends BaseActivity {
             while (it3.hasNext()) {
                 arrayList2.add(((LogsProductInfo) it3.next()).c);
             }
-            String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList2, ",", null, null, 0, null, null, 62, null);
-            Map mapMutableMapOf = MapsKt.mutableMapOf(TuplesKt.to("page_source", "log_page_" + log2.k()), TuplesKt.to("product_id", strJoinToString$default));
+            String strQ = CollectionsKt.q(arrayList2, ",", null, null, null, 62);
+            Map mapMutableMapOf = MapsKt.mutableMapOf(TuplesKt.to("page_source", "log_page_" + log2.k()), TuplesKt.to("product_id", strQ));
             String str3 = ((LogsProductInfo) ((List) mutableState.getValue()).get(0)).f10098e;
             if (str3 != null ? StringsKt.k(str3, "oura", false) : false) {
                 mapMutableMapOf.put("note", "oura:0");

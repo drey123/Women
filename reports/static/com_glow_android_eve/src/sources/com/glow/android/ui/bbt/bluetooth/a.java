@@ -26,7 +26,7 @@ import com.glow.android.ble.glowbbt.HistoryRecord;
 import com.glow.android.ble.glowbbt.TempData;
 import java.util.List;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function4;
@@ -143,7 +143,7 @@ public final /* synthetic */ class a implements Function1 {
                                             composer4.updateRememberedValue(objRememberedValue);
                                         }
                                         composer4.endReplaceGroup();
-                                        TextKt.m2698Text4IGK_g(CollectionsKt___CollectionsKt.joinToString$default(list2, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, (Function1) objRememberedValue, 30, null), (Modifier) null, 0L, 0L, (FontStyle) null, (FontWeight) null, (FontFamily) null, 0L, (TextDecoration) null, (TextAlign) null, 0L, 0, false, 0, 0, (Function1<? super TextLayoutResult, Unit>) null, (TextStyle) null, composer4, 0, 0, 131070);
+                                        TextKt.m2698Text4IGK_g(CollectionsKt.q(list2, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, (Function1) objRememberedValue, 30), (Modifier) null, 0L, 0L, (FontStyle) null, (FontWeight) null, (FontFamily) null, 0L, (TextDecoration) null, (TextAlign) null, 0L, 0, false, 0, 0, (Function1<? super TextLayoutResult, Unit>) null, (TextStyle) null, composer4, 0, 0, 131070);
                                     }
                                     return Unit.a;
                                 }

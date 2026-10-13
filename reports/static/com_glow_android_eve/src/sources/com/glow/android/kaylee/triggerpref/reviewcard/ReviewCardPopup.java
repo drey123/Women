@@ -43,7 +43,6 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.NoWhenBranchMatchedException;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.enums.EnumEntries;
 import kotlin.enums.EnumEntriesKt;
 import kotlin.jvm.internal.Intrinsics;
@@ -463,7 +462,7 @@ public final class ReviewCardPopup extends BaseDialogFragment {
             Intrinsics.checkNotNullParameter(date, "date");
             List mutableList = CollectionsKt.toMutableList((Collection) reviewCardTriggerPrefA.q(keyName));
             mutableList.add(date);
-            reviewCardTriggerPrefA.n(keyName.concat("cooldown"), CollectionsKt___CollectionsKt.joinToString$default(mutableList, ",", null, null, 0, null, new j(11), 30, null));
+            reviewCardTriggerPrefA.n(keyName.concat("cooldown"), CollectionsKt.q(mutableList, ",", null, null, new j(11), 30));
             List<SimpleDate> listQ = reviewCardTriggerPrefA.q(keyName);
             int iA2 = ReviewCardControlCache.a(30, "negative_feedback_time_window");
             if (listQ.size() < 3 || ((SimpleDate) CollectionsKt.last((List) listQ)).B((SimpleDate) android.support.v4.media.a.f(3, listQ)) > iA2) {

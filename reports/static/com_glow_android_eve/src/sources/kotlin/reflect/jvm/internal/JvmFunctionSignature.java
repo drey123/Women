@@ -6,7 +6,7 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.ArraysKt;
 import kotlin.collections.ArraysKt___ArraysKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.reflect.jvm.internal.impl.metadata.jvm.deserialization.JvmMemberSignature;
@@ -36,7 +36,7 @@ public abstract class JvmFunctionSignature {
         @NotNull
         /* JADX INFO: renamed from: a */
         public final String getF25519b() {
-            return CollectionsKt___CollectionsKt.joinToString$default(this.a, "", "<init>(", ")V", 0, null, JvmFunctionSignature$FakeJavaAnnotationConstructor$asString$1.f25516b, 24, null);
+            return CollectionsKt.q(this.a, "", "<init>(", ")V", JvmFunctionSignature$FakeJavaAnnotationConstructor$asString$1.f25516b, 24);
         }
     }
 

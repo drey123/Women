@@ -8,7 +8,7 @@ import com.glow.android.freeway.premium.DebugPremiumPurchase;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import java.util.List;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import timber.log.Timber;
 import w5.a;
@@ -37,6 +37,6 @@ public final /* synthetic */ class n implements OnCompleteListener, ProductDetai
         Intrinsics.checkNotNullParameter(productDetailsStr$delegate, "$productDetailsStr$delegate");
         Intrinsics.checkNotNullParameter(billingResult, "<unused var>");
         Intrinsics.checkNotNullParameter(list, "list");
-        productDetailsStr$delegate.setValue(CollectionsKt___CollectionsKt.joinToString$default(list, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new a(10), 30, null));
+        productDetailsStr$delegate.setValue(CollectionsKt.q(list, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new a(10), 30));
     }
 }

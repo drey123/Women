@@ -17,7 +17,6 @@ import kotlin.Pair;
 import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
@@ -68,7 +67,7 @@ public final class BabyInfoViewModel$refreshState$2 extends SuspendLambda implem
     public final Object invokeSuspend(Object obj) {
         List listListOf;
         String strH;
-        String strJoinToString$default;
+        String strQ;
         int identifier;
         Object objK;
         CoroutineSingletons coroutineSingletons = CoroutineSingletons.f25414b;
@@ -100,12 +99,12 @@ public final class BabyInfoViewModel$refreshState$2 extends SuspendLambda implem
                 listListOf = CollectionsKt.listOf((Object[]) new String[]{str, (str2 == null || (strH = StringsKt.H(str2, "inches", "in")) == null) ? null : StringsKt.H(strH, "inche", "in")});
             }
             if (i6 < 4) {
-                strJoinToString$default = babySizeInfoA.f7666f;
-                Intrinsics.checkNotNullExpressionValue(strJoinToString$default, "getSizeTemplate(...)");
+                strQ = babySizeInfoA.f7666f;
+                Intrinsics.checkNotNullExpressionValue(strQ, "getSizeTemplate(...)");
             } else {
-                strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(CollectionsKt.filterNotNull(listListOf), " & ", null, null, 0, null, new A0.b(13), 30, null);
+                strQ = CollectionsKt.q(CollectionsKt.filterNotNull(listListOf), " & ", null, null, new A0.b(13), 30);
             }
-            String str3 = strJoinToString$default;
+            String str3 = strQ;
             int i8 = babyInfoViewModel.i;
             int i9 = i8 - i6;
             String strF = i9 > 0 ? androidx.core.content.a.f(i9, " weeks") : "Any time now";

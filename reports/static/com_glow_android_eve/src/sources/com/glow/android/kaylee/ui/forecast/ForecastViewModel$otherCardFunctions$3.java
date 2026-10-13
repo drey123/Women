@@ -10,7 +10,6 @@ import com.glow.android.trion.data.SimpleDate;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
@@ -40,7 +39,7 @@ public /* synthetic */ class ForecastViewModel$otherCardFunctions$3 extends Func
         }
         babyInfoManager2.getClass();
         BabyInfoManager.BabySizeInfo babySizeInfoA = BabyInfoManager.a(i);
-        String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(CollectionsKt.filterNotNull(CollectionsKt.listOf((Object[]) new String[]{zU ? babySizeInfoA.f7664b : babySizeInfoA.c, zU ? babySizeInfoA.d : babySizeInfoA.f7665e})), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new com.facebook.react.defaults.a(9), 30, null);
+        String strQ = CollectionsKt.q(CollectionsKt.filterNotNull(CollectionsKt.listOf((Object[]) new String[]{zU ? babySizeInfoA.f7664b : babySizeInfoA.c, zU ? babySizeInfoA.d : babySizeInfoA.f7665e})), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new com.facebook.react.defaults.a(9), 30);
         String str = babySizeInfoA.a;
         Intrinsics.checkNotNullExpressionValue(str, "getComparisonTemplate(...)");
         Pair pairL = ForecastViewModel.l(str);
@@ -60,7 +59,7 @@ public /* synthetic */ class ForecastViewModel$otherCardFunctions$3 extends Func
         }
         String firstNonEmptyBabyName = HealthProfile.getInstance(forecastViewModel.a).getFirstNonEmptyBabyName("your baby");
         Intrinsics.checkNotNullExpressionValue(firstNonEmptyBabyName, "getFirstNonEmptyBabyName(...)");
-        BabyGrowthCard.BabyGrowthData data = new BabyGrowthCard.BabyGrowthData(i, firstNonEmptyBabyName, strJoinToString$default, (String) pairL.getSecond(), (String) pairL.getFirst(), (String) pair.getSecond(), (String) pair.getFirst());
+        BabyGrowthCard.BabyGrowthData data = new BabyGrowthCard.BabyGrowthData(i, firstNonEmptyBabyName, strQ, (String) pairL.getSecond(), (String) pairL.getFirst(), (String) pair.getSecond(), (String) pair.getFirst());
         Intrinsics.checkNotNullParameter(data, "data");
         return new BabyGrowthCard(CardType.BABY_GROWTH, data, R.layout.card_baby_growth);
     }

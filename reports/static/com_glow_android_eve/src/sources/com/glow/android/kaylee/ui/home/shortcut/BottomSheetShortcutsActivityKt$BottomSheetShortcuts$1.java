@@ -13,7 +13,6 @@ import kotlin.ResultKt;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -67,10 +66,10 @@ final class BottomSheetShortcutsActivityKt$BottomSheetShortcuts$1 extends Suspen
                 while (it2.hasNext()) {
                     arrayList.add(((LogsProductInfo) it2.next()).c);
                 }
-                String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(arrayList, ",", null, null, 0, null, null, 62, null);
+                String strQ = CollectionsKt.q(arrayList, ",", null, null, null, 62);
                 StringBuilder sbY = android.support.v4.media.a.y("log_page_", DdConfMgr.DataKey.k.h(), "_");
                 sbY.append(this.d);
-                Map mapMutableMapOf = MapsKt.mutableMapOf(TuplesKt.to("page_source", sbY.toString()), TuplesKt.to("product_id", strJoinToString$default));
+                Map mapMutableMapOf = MapsKt.mutableMapOf(TuplesKt.to("page_source", sbY.toString()), TuplesKt.to("product_id", strQ));
                 String str = list.get(0).f5168e;
                 if (str != null ? StringsKt.k(str, "oura", false) : false) {
                     mapMutableMapOf.put("note", "oura:0");

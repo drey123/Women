@@ -73,18 +73,14 @@ public class zzajt {
     private final zzakp zzb(zzakp zzakpVar) {
         if (this.zzc == null) {
             synchronized (this) {
-                try {
-                    if (this.zzc == null) {
-                        try {
-                            this.zzc = zzakpVar;
-                            this.zzd = zzaho.zza;
-                        } catch (zzajk unused) {
-                            this.zzc = zzakpVar;
-                            this.zzd = zzaho.zza;
-                        }
+                if (this.zzc == null) {
+                    try {
+                        this.zzc = zzakpVar;
+                        this.zzd = zzaho.zza;
+                    } catch (zzajk unused) {
+                        this.zzc = zzakpVar;
+                        this.zzd = zzaho.zza;
                     }
-                } catch (Throwable th) {
-                    throw th;
                 }
             }
         }

@@ -57,7 +57,6 @@ import kotlin.Metadata;
 import kotlin.collections.ArraysKt;
 import kotlin.collections.ArraysKt___ArraysJvmKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.internal.ArrayIteratorKt;
 import kotlin.jvm.internal.Intrinsics;
@@ -1051,13 +1050,13 @@ public final class DbModel {
     public final DailyData p(@NotNull Set dataKeys) {
         Intrinsics.checkNotNullParameter(dataKeys, "dataKeys");
         Set set = dataKeys;
-        String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(set, ",", null, null, 0, null, new G1.b(15), 30, null);
+        String strQ = CollectionsKt.q(set, ",", null, null, new G1.b(15), 30);
         ArrayList arrayList = new ArrayList(CollectionsKt.m(set));
         Iterator it2 = set.iterator();
         while (it2.hasNext()) {
             arrayList.add(((DdConfMgr.DataKey) it2.next()).k());
         }
-        Cursor cursorQuery = y().query(DailyData.TABLE_NAME, null, android.support.v4.media.a.n("time_modified>? AND data_key in (", strJoinToString$default, ")"), (String[]) ArraysKt___ArraysJvmKt.plus((Object[]) new String[]{String.valueOf(0L)}, (Collection) arrayList), null, null, "time_modified DESC", AppEventsConstants.EVENT_PARAM_VALUE_YES);
+        Cursor cursorQuery = y().query(DailyData.TABLE_NAME, null, android.support.v4.media.a.n("time_modified>? AND data_key in (", strQ, ")"), (String[]) ArraysKt___ArraysJvmKt.plus((Object[]) new String[]{String.valueOf(0L)}, (Collection) arrayList), null, null, "time_modified DESC", AppEventsConstants.EVENT_PARAM_VALUE_YES);
         Intrinsics.checkNotNullExpressionValue(cursorQuery, "query(...)");
         ArrayList arrayListB = Processor.b(cursorQuery, DailyData.class);
         if (arrayListB.isEmpty()) {

@@ -13,7 +13,6 @@ import java.util.Iterator;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
@@ -96,7 +95,7 @@ public /* synthetic */ class ForecastV2ViewModel$forecastCardFunction$2 extends 
             arrayList2.add(new ChartData(arrayList3, arrayList4, symptomName2));
             str = str2;
         }
-        Timber.a.b(c.a("chart info: ", CollectionsKt___CollectionsKt.joinToString$default(arrayList2, ";", null, null, 0, null, new com.facebook.react.defaults.a(8), 30, null)), new Object[0]);
+        Timber.a.b(c.a("chart info: ", CollectionsKt.q(arrayList2, ";", null, null, new com.facebook.react.defaults.a(8), 30)), new Object[0]);
         return new UpcomingCard(new UpcomingCard.UpcomingData(forecastV2ViewModel.k(R.string.what_you_may_experience), arrayList, forecastV2ViewModel.k(R.string.when_you_may_experience), arrayList2, forecastResult2.f6669f || forecastResult2.h, zBooleanValue));
     }
 }

@@ -8,7 +8,7 @@ import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.TuplesKt;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -59,7 +59,7 @@ final class BottomSheetLogActivity$onCreate$1$6$1 extends SuspendLambda implemen
             ResultKt.a(obj);
             CoroutineScope coroutineScope = (CoroutineScope) this.c;
             BottomSheetLogActivity.Companion companion = BottomSheetLogActivity.m;
-            Blaster.e("button_click_home_bottom_sheet_log", MapsKt.plus(bottomSheetLogActivity.D(), MapsKt.mapOf(TuplesKt.to("button_text", "save"), TuplesKt.to(UserFlog.FIELD_LOG_TYPE, CollectionsKt___CollectionsKt.joinToString$default(bottomSheetLogActivity.E().f12405D, ",", null, null, 0, null, new k(20), 30, null)))));
+            Blaster.e("button_click_home_bottom_sheet_log", MapsKt.plus(bottomSheetLogActivity.D(), MapsKt.mapOf(TuplesKt.to("button_text", "save"), TuplesKt.to(UserFlog.FIELD_LOG_TYPE, CollectionsKt.q(bottomSheetLogActivity.E().f12405D, ",", null, null, new k(20), 30)))));
             Deferred deferredA = BuildersKt.a(coroutineScope, null, new BottomSheetLogActivity$onCreate$1$6$1$saveResult$1(bottomSheetLogActivity, null), 3);
             this.f12347b = 1;
             obj = deferredA.l(this);

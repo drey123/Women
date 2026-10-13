@@ -8,7 +8,6 @@ import com.glow.android.kaylee.model.User;
 import java.util.LinkedHashMap;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.internal.ProgressionUtilKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
@@ -19,7 +18,7 @@ import org.jetbrains.annotations.NotNull;
 public final class ClassMapperLite {
 
     @NotNull
-    public static final String a = CollectionsKt___CollectionsKt.joinToString$default(CollectionsKt.listOf((Object[]) new Character[]{'k', 'o', 't', 'l', 'i', 'n'}), "", null, null, 0, null, null, 62, null);
+    public static final String a = CollectionsKt.q(CollectionsKt.listOf((Object[]) new Character[]{'k', 'o', 't', 'l', 'i', 'n'}), "", null, null, null, 62);
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
     @NotNull

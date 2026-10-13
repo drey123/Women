@@ -35,7 +35,7 @@ public final class IntArraySerializer extends PrimitiveArraySerializer<Integer, 
         Intrinsics.checkNotNullParameter(builder, "builder");
         int iG = decoder.g(this.f27479b, i);
         builder.getClass();
-        builder.b(builder.getF27467b() + 1);
+        builder.b(builder.getF27463b() + 1);
         int[] iArr = builder.a;
         int i6 = builder.f27463b;
         builder.f27463b = i6 + 1;

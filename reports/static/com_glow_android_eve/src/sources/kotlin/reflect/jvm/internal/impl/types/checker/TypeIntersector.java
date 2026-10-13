@@ -6,7 +6,6 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
@@ -330,7 +329,7 @@ public final class TypeIntersector {
 
                 @Override // kotlin.jvm.functions.Function0
                 public final String invoke() {
-                    return "This collections cannot be empty! input types: " + CollectionsKt___CollectionsKt.joinToString$default(linkedHashSet, null, null, null, 0, null, null, 63, null);
+                    return "This collections cannot be empty! input types: " + CollectionsKt.q(linkedHashSet, null, null, null, null, 63);
                 }
             };
             ArrayList types2 = a(linkedHashSet, new TypeIntersector$intersectTypesWithoutIntersectionType$filteredEqualTypes$1(2, this));

@@ -47,7 +47,7 @@ final class OnboardingTTCKt$OnboardingTTC$1$1 extends SuspendLambda implements F
     /* JADX WARN: Code duplicated, block: B:22:0x0061  */
     /* JADX WARN: Code duplicated, block: B:27:0x0070  */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
-    public final Object invokeSuspend(Object obj) {
+    public final Object invokeSuspend(Object obj) throws Throwable {
         int i;
         int iIntValue;
         SimpleDate simpleDateM;

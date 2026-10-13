@@ -5,30 +5,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
-import android.content.res.XmlResourceParser;
 import android.os.Build;
-import android.os.Handler;
-import android.os.HandlerThread;
 import android.text.TextUtils;
-import android.util.Log;
 import androidx.compose.runtime.ComposerKt;
 import androidx.compose.runtime.internal.StabilityInferred;
 import androidx.room.Room;
 import androidx.work.Configuration;
 import com.adsbynimbus.Nimbus;
-import com.adsbynimbus.internal.Components;
 import com.adsbynimbus.internal.PlatformKt;
-import com.appsflyer.AppsFlyerLib;
-import com.appsflyer.api.PurchaseClient;
-import com.appsflyer.api.Store;
-import com.appsflyer.deeplink.DeepLink;
-import com.appsflyer.deeplink.DeepLinkListener;
 import com.appsflyer.deeplink.DeepLinkResult;
-import com.appsflyer.internal.models.InAppPurchaseValidationResult;
-import com.appsflyer.internal.models.SubscriptionValidationResult;
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.imagepipeline.backends.okhttp3.OkHttpImagePipelineConfigFactory;
 import com.facebook.react.modules.network.OkHttpClientFactory;
@@ -48,7 +33,6 @@ import com.glow.android.data.LogConstants;
 import com.glow.android.di.ApplicationComponent$Builder;
 import com.glow.android.di.DaggerApplicationComponent;
 import com.glow.android.di.GlowWorkerFactory;
-import com.glow.android.eve.R;
 import com.glow.android.evemigration.GuestSignUpActivity;
 import com.glow.android.evemigration.MigrationFlowActivity;
 import com.glow.android.evemigration.MigrationTurnOnDCActivity;
@@ -172,7 +156,6 @@ import com.glow.android.kaylee.ui.tool.KickCounterViewModel;
 import com.glow.android.link.LinkDispatcher;
 import com.glow.android.log.LoggerManager;
 import com.glow.android.log.RemoteLoggerManager;
-import com.glow.android.log.SafeLoggingForDataProtectionKt;
 import com.glow.android.meditation.MTPackageListActivity;
 import com.glow.android.meditation.MTSessionCompleteActivity;
 import com.glow.android.meditation.MeditationIntroActivity;
@@ -231,7 +214,6 @@ import com.glow.android.prime.ui.widget.PersonalizationConfigFragment;
 import com.glow.android.prime.ui.widget.RatingFlow;
 import com.glow.android.prime.ui.widget.TopicShareSheet;
 import com.glow.android.prime.ui.widget.VerifyCodeView;
-import com.glow.android.remoteconfig.RemoteConfig;
 import com.glow.android.roomdb.GlowDataBase;
 import com.glow.android.roomdb.dao.DailyLogDao;
 import com.glow.android.swerve.AlcPricingActivity;
@@ -393,7 +375,6 @@ import com.glow.android.ui.widget.ClickableTextView;
 import com.glow.android.ui.widget.ExportPdfDataReportDialogFragment;
 import com.glow.android.ui.widget.LogClickableImageView;
 import com.glow.android.ui.widget.appwidget.HotTopicListRemoteViewsFactory;
-import com.glow.android.utils.DeviceUtil;
 import com.glow.android.video.ChooseGroupActivity;
 import com.glow.android.video.ChooseTopicActivity;
 import com.glow.android.video.PostVideoActivity;
@@ -410,24 +391,8 @@ import com.glow.android.video.videoeditor.trimmer.TrimVideoViewModel;
 import com.glow.android.video.videolist.VideoFeedItemHolder;
 import com.glow.android.video.videolist.VideoListActivity2;
 import com.glow.android.video.videolist.VideoListFragment;
-import com.glow.log.Blaster;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.tasks.TaskCompletionSource;
-import com.google.android.gms.tasks.Tasks;
 import com.google.common.collect.ImmutableMap;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.concurrent.FirebaseExecutors;
 import com.google.firebase.crashlytics.FirebaseCrashlytics;
-import com.google.firebase.crashlytics.internal.common.CrashlyticsCore;
-import com.google.firebase.crashlytics.internal.common.DataCollectionArbiter;
-import com.google.firebase.messaging.FirebaseMessaging;
-import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
-import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
-import com.google.firebase.remoteconfig.RemoteConfigComponent;
-import com.google.firebase.remoteconfig.internal.ConfigContainer;
-import com.google.firebase.remoteconfig.internal.ConfigFetchHandler;
-import com.google.gson.Gson;
 import dagger.Lazy;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasAndroidInjector;
@@ -436,10 +401,8 @@ import de.greenrobot.event.SubscriberExceptionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import javax.inject.Provider;
 import kotlin.Metadata;
@@ -448,7 +411,6 @@ import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.SetsKt;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.EmptyCoroutineContext;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
@@ -467,10 +429,6 @@ import okhttp3.CertificatePinner;
 import okhttp3.OkHttpClient;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.xmlpull.v1.XmlPullParserException;
-import p078w0.c;
 import timber.log.Timber;
 
 /* JADX INFO: compiled from: GlowApplication.kt */
@@ -623,336 +581,18 @@ public final class GlowApplication extends BaseApplication implements HasAndroid
         return null;
     }
 
+    /* JADX WARN: Bottom block not found for handler: all -> 0x030e */
     /* JADX WARN: Code duplicated, block: B:67:0x0153  */
-    public final void b(boolean z2) {
-        String strA;
-        byte b2;
-        int i = 0;
-        Timber.a.b(androidx.core.content.a.s("Application initializeSDK enable: ", z2), new Object[0]);
-        int i6 = 1;
-        if (z2) {
-            if (this.r) {
-                return;
-            }
-            GDPRActivity.k.getClass();
-            if (!GDPRActivity.Companion.c(this)) {
-                DFPAdsManager dFPAdsManager = this.p;
-                if (dFPAdsManager == null) {
-                    Intrinsics.throwUninitializedPropertyAccessException("dfpAdsManager");
-                    dFPAdsManager = null;
-                }
-                if (!dFPAdsManager.f3430e) {
-                    dFPAdsManager.f3430e = true;
-                    MobileAds.initialize(dFPAdsManager.f3429b, new p020e0.b());
-                }
-                com.glow.android.kaylee.ui.ads.DFPAdsManager dFPAdsManager2 = this.f3506q;
-                if (dFPAdsManager2 == null) {
-                    Intrinsics.throwUninitializedPropertyAccessException("nurtureDFPAdsManager");
-                    dFPAdsManager2 = null;
-                }
-                if (!dFPAdsManager2.f3430e) {
-                    dFPAdsManager2.f3430e = true;
-                    MobileAds.initialize(dFPAdsManager2.f3429b, new p020e0.b());
-                }
-                FacebookSdk.fullyInitialize();
-                FacebookSdk.sdkInitialize(this, new i0.a(i));
-                FacebookSdk.setAutoInitEnabled(true);
-                AppEventsLogger.INSTANCE.activateApp(this);
-                new Thread(new C0.b(this, 13)).start();
-                FirebaseCrashlytics.a().a.f("glow_device_id", DeviceUtil.a(this));
-                UserPrefs userPrefs = this.o;
-                if (userPrefs == null || (strA = userPrefs.A()) == null) {
-                    strA = "";
-                }
-                FirebaseCrashlytics.a().a.g(strA);
-                FirebaseRemoteConfig firebaseRemoteConfigB = ((RemoteConfigComponent) FirebaseApp.e().c(RemoteConfigComponent.class)).b();
-                FirebaseRemoteConfigSettings.Builder builder = new FirebaseRemoteConfigSettings.Builder();
-                builder.a = ConfigFetchHandler.i;
-                long j4 = 3600;
-                if (j4 < 0) {
-                    throw new IllegalArgumentException("Minimum interval between fetches has to be a non-negative number. 3600 is an invalid argument");
-                }
-                builder.a = j4;
-                FirebaseRemoteConfigSettings firebaseRemoteConfigSettings = new FirebaseRemoteConfigSettings(builder);
-                firebaseRemoteConfigB.getClass();
-                Tasks.call(firebaseRemoteConfigB.c, new c5.a(i, firebaseRemoteConfigB, firebaseRemoteConfigSettings));
-                Context context = firebaseRemoteConfigB.a;
-                HashMap map = new HashMap();
-                try {
-                    Resources resources = context.getResources();
-                    if (resources == null) {
-                        Log.e("FirebaseRemoteConfig", "Could not find the resources of the current context while trying to set defaults from an XML.");
-                    } else {
-                        XmlResourceParser xml = resources.getXml(R.xml.remote_config_defaults);
-                        String name = null;
-                        String text = null;
-                        String text2 = null;
-                        for (int eventType = xml.getEventType(); eventType != 1; eventType = xml.next()) {
-                            if (eventType == 2) {
-                                name = xml.getName();
-                            } else if (eventType == 3) {
-                                if (xml.getName().equals("entry")) {
-                                    if (text == null || text2 == null) {
-                                        Log.w("FirebaseRemoteConfig", "An entry in the defaults XML has an invalid key and/or value tag.");
-                                    } else {
-                                        map.put(text, text2);
-                                    }
-                                    text = null;
-                                    text2 = null;
-                                }
-                                name = null;
-                            } else if (eventType == 4 && name != null) {
-                                int iHashCode = name.hashCode();
-                                if (iHashCode != 106079) {
-                                    if (iHashCode == 111972721 && name.equals("value")) {
-                                        b2 = 1;
-                                    } else {
-                                        b2 = -1;
-                                    }
-                                } else if (name.equals("key")) {
-                                    b2 = 0;
-                                } else {
-                                    b2 = -1;
-                                }
-                                if (b2 == 0) {
-                                    text = xml.getText();
-                                } else if (b2 != 1) {
-                                    Log.w("FirebaseRemoteConfig", "Encountered an unexpected tag while parsing the defaults XML.");
-                                } else {
-                                    text2 = xml.getText();
-                                }
-                            }
-                        }
-                    }
-                } catch (IOException e6) {
-                    e = e6;
-                    Log.e("FirebaseRemoteConfig", "Encountered an error while parsing the defaults XML file.", e);
-                } catch (XmlPullParserException e7) {
-                    e = e7;
-                    Log.e("FirebaseRemoteConfig", "Encountered an error while parsing the defaults XML file.", e);
-                }
-                try {
-                    ConfigContainer.Builder builderC = ConfigContainer.c();
-                    builderC.a = new JSONObject(map);
-                    firebaseRemoteConfigB.f22185f.c(builderC.a()).onSuccessTask(FirebaseExecutors.a(), new p016c4.a(25));
-                } catch (JSONException e8) {
-                    Log.e("FirebaseRemoteConfig", "The provided defaults map could not be processed.", e8);
-                    Tasks.forResult(null);
-                }
-                synchronized (RemoteConfig.class) {
-                    ((RemoteConfigComponent) FirebaseApp.e().c(RemoteConfigComponent.class)).b().a().addOnCompleteListener(new c(i6));
-                }
-            }
-            AppsFlyerLib.getInstance().init("s5wN9UNju6jPo2WQ6dXZDJ", null, this);
-            AppsFlyerLib.getInstance().start(this);
-            Context applicationContext = getApplicationContext();
-            Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-            new PurchaseClient.Builder(applicationContext, Store.GOOGLE).logSubscriptions(true).autoLogInApps(true).setSandbox(false).setSubscriptionValidationResultListener(new PurchaseClient.SubscriptionPurchaseValidationResultListener() { // from class: com.glow.android.base.GlowApplication$registerAppsflyerRevenue$afPurchaseClient$1
-                @Override // com.appsflyer.api.PurchaseClient.ValidationResultListener
-                public final void onFailure(String p2, Throwable th) {
-                    Intrinsics.checkNotNullParameter(p2, "p0");
-                    if (th != null) {
-                        th.printStackTrace();
-                    }
-                }
-
-                @Override // com.appsflyer.api.PurchaseClient.ValidationResultListener
-                public final void onResponse(Map<String, ? extends SubscriptionValidationResult> map2) {
-                    Map<String, ? extends SubscriptionValidationResult> map3 = map2;
-                    if (map3 != null) {
-                        for (Map.Entry<String, ? extends SubscriptionValidationResult> entry : map3.entrySet()) {
-                            entry.getKey();
-                            SubscriptionValidationResult value = entry.getValue();
-                            if (value.getSuccess()) {
-                                String.valueOf(value.getSubscriptionPurchase());
-                            } else {
-                                String.valueOf(value.getFailureData());
-                            }
-                        }
-                    }
-                }
-            }).setInAppValidationResultListener(new PurchaseClient.InAppPurchaseValidationResultListener() { // from class: com.glow.android.base.GlowApplication$registerAppsflyerRevenue$afPurchaseClient$2
-                @Override // com.appsflyer.api.PurchaseClient.ValidationResultListener
-                public final void onFailure(String result, Throwable th) {
-                    Intrinsics.checkNotNullParameter(result, "result");
-                    if (th != null) {
-                        th.printStackTrace();
-                    }
-                }
-
-                @Override // com.appsflyer.api.PurchaseClient.ValidationResultListener
-                public final void onResponse(Map<String, ? extends InAppPurchaseValidationResult> map2) {
-                    Map<String, ? extends InAppPurchaseValidationResult> map3 = map2;
-                    if (map3 != null) {
-                        for (Map.Entry<String, ? extends InAppPurchaseValidationResult> entry : map3.entrySet()) {
-                            entry.getKey();
-                            InAppPurchaseValidationResult value = entry.getValue();
-                            if (value.getSuccess()) {
-                                Timber.a.b(String.valueOf(value.getProductPurchase()), new Object[0]);
-                            } else {
-                                Timber.a.b(String.valueOf(value.getFailureData()), new Object[0]);
-                            }
-                        }
-                    }
-                }
-            }).build().startObservingTransactions();
-            this.r = true;
-            Timber.Forest forest = Timber.a;
-            forest.b("Application initializeSDK success", new Object[0]);
-            forest.b(androidx.browser.trusted.c.a("Device Id: ", DeviceUtil.a(this)), new Object[0]);
-        }
-        HandlerThread handlerThread = new HandlerThread("log");
-        handlerThread.start();
-        final Handler handler = new Handler(handlerThread.getLooper());
-        final Gson gson = new Gson();
-        Blaster.c.add(new Blaster.Receiver() { // from class: com.glow.android.base.GlowApplication$initLog$1
-            public final Set<String> a = SafeLoggingForDataProtectionKt.a;
-
-            @Override // com.glow.log.Blaster.Receiver
-            public final void a(Throwable throwable) {
-                Intrinsics.checkNotNullParameter(throwable, "throwable");
-                if (this.f3507b.r) {
-                    FirebaseCrashlytics.a().b(throwable);
-                }
-            }
-
-            /* JADX WARN: Code duplicated, block: B:11:? A[RETURN, SYNTHETIC] */
-            /* JADX WARN: Code duplicated, block: B:7:0x002d  */
-            @Override // com.glow.log.Blaster.Receiver
-            public final void b(String eventName, Map<String, String> eventData) {
-                Intrinsics.checkNotNullParameter(eventName, "eventName");
-                Intrinsics.checkNotNullParameter(eventData, "eventData");
-                GlowApplication glowApplication = this.f3507b;
-                boolean zBooleanValue = ((Boolean) BuildersKt.d(EmptyCoroutineContext.f25412b, new GlowApplication$initLog$1$log$isAgreedAndOpen$1(glowApplication, null))).booleanValue();
-                UserPrefs userPrefs2 = glowApplication.o;
-                if (userPrefs2 != null) {
-                    if (zBooleanValue) {
-                        Intrinsics.checkNotNull(userPrefs2);
-                        if (userPrefs2.O()) {
-                            if (!this.a.contains(eventName)) {
-                                return;
-                            }
-                        }
-                    } else if (!this.a.contains(eventName)) {
-                        return;
-                    }
-                }
-                handler.post(new C.a(glowApplication, eventName, eventData, gson, 12));
-            }
-        });
-        Timber.Forest forest2 = Timber.a;
-        forest2.getClass();
-        ArrayList<Timber.Tree> arrayList = Timber.f29317b;
-        synchronized (arrayList) {
-            arrayList.clear();
-            Timber.c = new Timber.Tree[0];
-            Unit unit = Unit.a;
-        }
-        forest2.r("Glow");
-        Timber.Tree tree = new Timber.Tree() { // from class: com.glow.android.base.GlowApplication$initLog$2
-            @Override // timber.log.Timber.Tree
-            public final boolean i(int i7) {
-                return i7 >= 5;
-            }
-
-            @Override // timber.log.Timber.Tree
-            public final void j(String message, Throwable th) {
-                Intrinsics.checkNotNullParameter(message, "message");
-                if (this.f3509b.r) {
-                    FirebaseCrashlytics.a().a.c(message);
-                    if (th != null) {
-                        FirebaseCrashlytics.a().b(th);
-                    }
-                }
-            }
-        };
-        Intrinsics.checkNotNullParameter(tree, "tree");
-        if (tree == forest2) {
-            throw new IllegalArgumentException("Cannot plant Timber into itself.".toString());
-        }
-        synchronized (arrayList) {
-            arrayList.add(tree);
-            Object[] array = arrayList.toArray(new Timber.Tree[0]);
-            if (array == null) {
-                throw new NullPointerException("null cannot be cast to non-null type kotlin.Array<T>");
-            }
-            Timber.c = (Timber.Tree[]) array;
-        }
-        AppsFlyerLib.getInstance().subscribeForDeepLink(new DeepLinkListener() { // from class: com.glow.android.base.b
-            @Override // com.appsflyer.deeplink.DeepLinkListener
-            public final void onDeepLinking(DeepLinkResult it2) {
-                GlowApplication.Companion companion = GlowApplication.s;
-                GlowApplication this$0 = this.a;
-                Intrinsics.checkNotNullParameter(this$0, "this$0");
-                Intrinsics.checkNotNullParameter(it2, "it");
-                int i7 = GlowApplication.WhenMappings.a[it2.getStatus().ordinal()];
-                if (i7 == 1) {
-                    Timber.a.b("AppsFlyerLib subscribeForDeepLink: Deep link not found", new Object[0]);
-                    return;
-                }
-                if (i7 == 2) {
-                    DeepLinkResult.Error error = it2.getError();
-                    Timber.a.b("AppsFlyerLib subscribeForDeepLink: There was an error getting Deep Link data: " + error, new Object[0]);
-                    return;
-                }
-                Timber.Forest forest3 = Timber.a;
-                forest3.b("AppsFlyerLib subscribeForDeepLink: Deep link found", new Object[0]);
-                DeepLink deepLink = it2.getDeepLink();
-                Intrinsics.checkNotNullExpressionValue(deepLink, "getDeepLink(...)");
-                try {
-                    String deepLinkValue = deepLink.getDeepLinkValue();
-                    String stringValue = deepLink.getStringValue("deep_link_sub1");
-                    if (stringValue == null) {
-                        stringValue = "";
-                    }
-                    if (Intrinsics.areEqual(deepLink.isDeferred(), Boolean.FALSE)) {
-                        forest3.b("AppsFlyerLib subscribeForDeepLink afSub1 : ".concat(stringValue), new Object[0]);
-                        forest3.b("AppsFlyerLib subscribeForDeepLink path : " + deepLinkValue, new Object[0]);
-                        BuildersKt.c(Components.a(this$0), null, null, new GlowApplication$registerAppsflyerDeeplink$1$1(deepLinkValue, this$0, stringValue, null), 3);
-                    }
-                } catch (Exception unused) {
-                    Timber.a.b("AppsFlyerLib subscribeForDeepLink: DeepLink data came back null", new Object[0]);
-                }
-            }
-        });
-        forest2.b("Application initializeSDK changeSDKConfig enable: " + z2, new Object[0]);
-        GDPRActivity.k.getClass();
-        if (GDPRActivity.Companion.c(this)) {
-            return;
-        }
-        FirebaseMessaging.c().g(z2);
-        FirebaseAnalytics.getInstance(this).a.zza(Boolean.valueOf(z2));
-        CrashlyticsCore crashlyticsCore = FirebaseCrashlytics.a().a;
-        Boolean boolValueOf = Boolean.valueOf(z2);
-        DataCollectionArbiter dataCollectionArbiter = crashlyticsCore.f21515b;
-        synchronized (dataCollectionArbiter) {
-            try {
-                dataCollectionArbiter.f21532f = false;
-                dataCollectionArbiter.g = boolValueOf;
-                SharedPreferences.Editor editorEdit = dataCollectionArbiter.a.edit();
-                editorEdit.putBoolean("firebase_crashlytics_collection_enabled", z2);
-                editorEdit.apply();
-                synchronized (dataCollectionArbiter.c) {
-                    try {
-                        if (dataCollectionArbiter.a()) {
-                            if (!dataCollectionArbiter.f21531e) {
-                                dataCollectionArbiter.d.trySetResult(null);
-                                dataCollectionArbiter.f21531e = true;
-                            }
-                        } else if (dataCollectionArbiter.f21531e) {
-                            dataCollectionArbiter.d = new TaskCompletionSource<>();
-                            dataCollectionArbiter.f21531e = false;
-                        }
-                    } catch (Throwable th) {
-                        throw th;
-                    }
-                }
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
-        FacebookSdk.setAutoLogAppEventsEnabled(z2);
-        FacebookSdk.setAutoInitEnabled(z2);
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final void b(boolean r13) {
+        /*
+            Method dump skipped, instruction units count: 813
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.glow.android.base.GlowApplication.b(boolean):void");
     }
 
     public final void c() {

@@ -26,7 +26,6 @@ import java.util.Map;
 import java.util.Set;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
@@ -155,7 +154,7 @@ public final class IapAgent implements IapClientResponseListener {
 
     public final void b(List<IapPurchase> list) {
         List<IapPurchase> list2 = list;
-        Timber.a.b(c.a("onConsumedOrAcknowledged:\n ", CollectionsKt___CollectionsKt.joinToString$default(list2, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new w5.a(14), 30, null)), new Object[0]);
+        Timber.a.b(c.a("onConsumedOrAcknowledged:\n ", CollectionsKt.q(list2, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new w5.a(14), 30)), new Object[0]);
         for (IapPurchase iapPurchase : list2) {
             String token = iapPurchase.a;
             PurchasePrefs purchasePrefs = this.h;

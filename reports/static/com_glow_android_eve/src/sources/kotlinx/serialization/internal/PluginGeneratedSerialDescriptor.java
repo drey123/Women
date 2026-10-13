@@ -13,7 +13,6 @@ import kotlin.LazyKt;
 import kotlin.LazyThreadSafetyMode;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
@@ -312,6 +311,6 @@ public class PluginGeneratedSerialDescriptor implements SerialDescriptor, Cached
 
     @NotNull
     public final String toString() {
-        return CollectionsKt___CollectionsKt.joinToString$default(RangesKt.s(0, this.c), ", ", a.o('(', this.a, new StringBuilder()), ")", 0, null, new kotlin.jvm.internal.a(this, 28), 24, null);
+        return CollectionsKt.q(RangesKt.s(0, this.c), ", ", a.o('(', this.a, new StringBuilder()), ")", new kotlin.jvm.internal.a(this, 28), 24);
     }
 }

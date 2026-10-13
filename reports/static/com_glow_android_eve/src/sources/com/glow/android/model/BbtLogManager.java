@@ -23,7 +23,6 @@ import java.util.Set;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.collections.SetsKt;
 import kotlin.coroutines.Continuation;
@@ -467,7 +466,7 @@ public final class BbtLogManager {
             userFlogDataCreateEmpty.setValFloat(Float.valueOf(f4));
             boolean z2 = bbtLog.f8704b;
             userFlogDataCreateEmpty.setValInt(z2 ? 1 : 0);
-            userFlogDataCreateEmpty.setValText(CollectionsKt___CollectionsKt.joinToString$default(bbtLog.g, ",", null, null, 0, null, null, 62, null));
+            userFlogDataCreateEmpty.setValText(CollectionsKt.q(bbtLog.g, ",", null, null, null, 62));
             userFlogDataCreateEmpty.setValStr(bbtLog.f8705e ? "Glow-BBT" : "");
             userFLogRepository.i(userFlogDataCreateEmpty);
             if (!z2) {

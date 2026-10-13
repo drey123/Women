@@ -383,31 +383,27 @@ public class SampleQueue implements TrackOutput {
                 return;
             }
             synchronized (this) {
-                try {
-                    if (this.f18324q == 0) {
-                        z6 = j6 > this.f18327v;
-                    } else {
-                        synchronized (this) {
-                            long jMax = Math.max(this.f18327v, o(this.f18325t));
-                            if (jMax >= j6) {
-                                z6 = false;
-                            } else {
-                                int i12 = this.f18324q;
-                                int iQ = q(i12 - 1);
-                                while (i12 > this.f18325t && this.o[iQ] >= j6) {
-                                    i12--;
-                                    iQ--;
-                                    if (iQ == -1) {
-                                        iQ = this.f18323j - 1;
-                                    }
+                if (this.f18324q == 0) {
+                    z6 = j6 > this.f18327v;
+                } else {
+                    synchronized (this) {
+                        long jMax = Math.max(this.f18327v, o(this.f18325t));
+                        if (jMax >= j6) {
+                            z6 = false;
+                        } else {
+                            int i12 = this.f18324q;
+                            int iQ = q(i12 - 1);
+                            while (i12 > this.f18325t && this.o[iQ] >= j6) {
+                                i12--;
+                                iQ--;
+                                if (iQ == -1) {
+                                    iQ = this.f18323j - 1;
                                 }
-                                k(this.r + i12);
-                                z6 = true;
                             }
+                            k(this.r + i12);
+                            z6 = true;
                         }
                     }
-                } catch (Throwable th) {
-                    throw th;
                 }
             }
             if (!z6) {
@@ -548,8 +544,8 @@ public class SampleQueue implements TrackOutput {
                     this.s = 0;
                     this.f18323j = i16;
                 }
-            } catch (Throwable th2) {
-                throw th2;
+            } catch (Throwable th) {
+                throw th;
             }
         }
     }

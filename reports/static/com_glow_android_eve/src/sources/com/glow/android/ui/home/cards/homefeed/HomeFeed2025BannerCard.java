@@ -51,7 +51,6 @@ import kotlin.ResultKt;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
@@ -117,7 +116,7 @@ public final class HomeFeed2025BannerCard extends ComposeViewContainer {
                         Pair pair = TuplesKt.to("card_type", homeFeed2025Banner.getId());
                         Pair pair2 = TuplesKt.to("title", homeFeed2025Banner.getTitle());
                         List<String> pids = homeFeed2025Banner.getPids();
-                        Blaster.e("page_impression_dynamic_ad_placement", MapsKt.mapOf(pair, pair2, TuplesKt.to("product_id", pids != null ? CollectionsKt___CollectionsKt.joinToString$default(pids, ",", null, null, 0, null, null, 62, null) : null), TuplesKt.to("topic_id_list", homeFeed2025Banner.getCtaLinkParsedParams())));
+                        Blaster.e("page_impression_dynamic_ad_placement", MapsKt.mapOf(pair, pair2, TuplesKt.to("product_id", pids != null ? CollectionsKt.q(pids, ",", null, null, null, 62) : null), TuplesKt.to("topic_id_list", homeFeed2025Banner.getCtaLinkParsedParams())));
                     }
                     return Unit.a;
                 }

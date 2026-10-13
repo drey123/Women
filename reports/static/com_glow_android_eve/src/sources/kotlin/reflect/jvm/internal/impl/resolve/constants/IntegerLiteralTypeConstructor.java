@@ -7,7 +7,6 @@ import java.util.Set;
 import kotlin.Lazy;
 import kotlin.LazyKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -154,7 +153,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     @NotNull
     public final String toString() {
         StringBuilder sb = new StringBuilder("IntegerLiteralType");
-        sb.append("[" + CollectionsKt___CollectionsKt.joinToString$default(this.f26673b, ",", null, null, 0, null, IntegerLiteralTypeConstructor$valueToString$1.f26675b, 30, null) + ']');
+        sb.append("[" + CollectionsKt.q(this.f26673b, ",", null, null, IntegerLiteralTypeConstructor$valueToString$1.f26675b, 30) + ']');
         return sb.toString();
     }
 }

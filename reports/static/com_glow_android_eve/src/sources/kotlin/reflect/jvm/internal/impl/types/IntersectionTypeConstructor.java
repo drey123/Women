@@ -7,7 +7,6 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.comparisons.ComparisonsKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
@@ -93,7 +92,7 @@ public final class IntersectionTypeConstructor implements TypeConstructor, Inter
     @NotNull
     public final String g(@NotNull final Function1<? super KotlinType, ? extends Object> getProperTypeRelatedToStringify) {
         Intrinsics.checkNotNullParameter(getProperTypeRelatedToStringify, "getProperTypeRelatedToStringify");
-        return CollectionsKt___CollectionsKt.joinToString$default(CollectionsKt.sortedWith(this.f26867b, new Comparator() { // from class: kotlin.reflect.jvm.internal.impl.types.IntersectionTypeConstructor$makeDebugNameForIntersectionType$$inlined$sortedBy$1
+        return CollectionsKt.q(CollectionsKt.sortedWith(this.f26867b, new Comparator() { // from class: kotlin.reflect.jvm.internal.impl.types.IntersectionTypeConstructor$makeDebugNameForIntersectionType$$inlined$sortedBy$1
             /* JADX WARN: Multi-variable type inference failed */
             @Override // java.util.Comparator
             public final int compare(T t4, T t6) {
@@ -105,7 +104,7 @@ public final class IntersectionTypeConstructor implements TypeConstructor, Inter
                 Intrinsics.checkNotNullExpressionValue(it3, "it");
                 return ComparisonsKt.a(string, function1.invoke(it3).toString());
             }
-        }), " & ", "{", "}", 0, null, new Function1<KotlinType, CharSequence>() { // from class: kotlin.reflect.jvm.internal.impl.types.IntersectionTypeConstructor$makeDebugNameForIntersectionType$3
+        }), " & ", "{", "}", new Function1<KotlinType, CharSequence>() { // from class: kotlin.reflect.jvm.internal.impl.types.IntersectionTypeConstructor$makeDebugNameForIntersectionType$3
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             /* JADX WARN: Multi-variable type inference failed */
             {
@@ -118,7 +117,7 @@ public final class IntersectionTypeConstructor implements TypeConstructor, Inter
                 Intrinsics.checkNotNullExpressionValue(it2, "it");
                 return getProperTypeRelatedToStringify.invoke(it2).toString();
             }
-        }, 24, null);
+        }, 24);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor

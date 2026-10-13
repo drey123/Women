@@ -81,7 +81,6 @@ import java.util.Iterator;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
@@ -300,7 +299,7 @@ public final class FakePollCard extends BaseFeedCard {
         if (SimpleDate.Y(appPrefs.f("first_see_fake_poll", "")) == null) {
             appPrefs.n("first_see_fake_poll", SimpleDate.M().toString());
         }
-        Blaster.c("page_impression_dynamic_ad_poll", "target_type", CollectionsKt___CollectionsKt.joinToString$default(poll.f5841e, null, null, null, 0, null, new b(17), 31, null), "order_id", String.valueOf(SimpleDate.M().B(SimpleDate.Y(appPrefs.f("first_see_fake_poll", ""))) + 1));
+        Blaster.c("page_impression_dynamic_ad_poll", "target_type", CollectionsKt.q(poll.f5841e, null, null, null, new b(17), 31), "order_id", String.valueOf(SimpleDate.M().B(SimpleDate.Y(appPrefs.f("first_see_fake_poll", ""))) + 1));
         this.c.c.setContent(ComposableLambdaKt.composableLambdaInstance(786310283, true, new Function2<Composer, Integer, Unit>() { // from class: com.glow.android.kaylee.ui.newhome.cards.FakePollCard.setPollData.2
             /* JADX WARN: Multi-variable type inference failed */
             @Override // kotlin.jvm.functions.Function2

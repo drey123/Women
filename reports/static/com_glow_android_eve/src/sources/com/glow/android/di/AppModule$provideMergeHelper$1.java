@@ -29,7 +29,6 @@ import kotlin.Pair;
 import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.jvm.internal.Intrinsics;
@@ -77,7 +76,7 @@ public final class AppModule$provideMergeHelper$1 implements MergeHelper {
             Intrinsics.checkNotNull(simpleDateY2);
             arrayList.add(new MergePregnancyRecordsActivity.RecordItem(simpleDateY, simpleDateY2, 0, statusHistory.getId()));
         }
-        intent.putExtra("key.glow.record.ids", CollectionsKt___CollectionsKt.joinToString$default(arrayList, ";", null, null, 0, null, new b(6), 30, null));
+        intent.putExtra("key.glow.record.ids", CollectionsKt.q(arrayList, ";", null, null, new b(6), 30));
         ArrayList arrayList2 = new ArrayList();
         for (Pregnancy pregnancy : nurtureRecords) {
             SimpleDate simpleDateD = SwitchFlowHelperKt.d(pregnancy);
@@ -90,7 +89,7 @@ public final class AppModule$provideMergeHelper$1 implements MergeHelper {
                 arrayList2.add(recordItem);
             }
         }
-        intent.putExtra("key.nurture.record.ids", CollectionsKt___CollectionsKt.joinToString$default(arrayList2, ";", null, null, 0, null, new b(7), 30, null));
+        intent.putExtra("key.nurture.record.ids", CollectionsKt.q(arrayList2, ";", null, null, new b(7), 30));
         context.startActivity(intent);
     }
 

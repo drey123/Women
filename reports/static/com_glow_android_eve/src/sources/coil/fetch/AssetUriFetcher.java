@@ -12,7 +12,6 @@ import coil.util.Utils;
 import java.io.File;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.jvm.internal.Intrinsics;
 import okio.Okio;
@@ -54,15 +53,15 @@ public final class AssetUriFetcher implements Fetcher {
     @Nullable
     public final Object a(@NotNull Continuation<? super FetchResult> continuation) {
         Uri uri = this.a;
-        String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(CollectionsKt.drop(uri.getPathSegments(), 1), DomExceptionUtils.SEPARATOR, null, null, 0, null, null, 62, null);
+        String strQ = CollectionsKt.q(CollectionsKt.drop(uri.getPathSegments(), 1), DomExceptionUtils.SEPARATOR, null, null, null, 62);
         Options options = this.f1997b;
-        RealBufferedSource realBufferedSourceD = Okio.d(Okio.k(options.a.getAssets().open(strJoinToString$default)));
+        RealBufferedSource realBufferedSourceD = Okio.d(Okio.k(options.a.getAssets().open(strQ)));
         String lastPathSegment = uri.getLastPathSegment();
         Intrinsics.checkNotNull(lastPathSegment);
         AssetMetadata assetMetadata = new AssetMetadata(lastPathSegment);
         Bitmap.Config[] configArr = Utils.a;
         File cacheDir = options.a.getCacheDir();
         cacheDir.mkdirs();
-        return new SourceResult(new SourceImageSource(realBufferedSourceD, cacheDir, assetMetadata), Utils.b(MimeTypeMap.getSingleton(), strJoinToString$default), DataSource.d);
+        return new SourceResult(new SourceImageSource(realBufferedSourceD, cacheDir, assetMetadata), Utils.b(MimeTypeMap.getSingleton(), strQ), DataSource.d);
     }
 }

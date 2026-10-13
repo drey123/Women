@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 import kotlin.Metadata;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.enums.EnumEntries;
 import kotlin.enums.EnumEntriesKt;
 import kotlin.jvm.internal.Intrinsics;
@@ -207,21 +207,21 @@ public final class SamsungIapClient extends IapClientWithProductCache {
         IapHelper iapHelper = this.f4862e;
         forest.b("consumeProducts: isAvailable:" + this.d + " iapHelper:" + (iapHelper != null), new Object[0]);
         List<IapPurchase> list = purchases;
-        forest.b(androidx.browser.trusted.c.a("consumeProducts: \n", CollectionsKt___CollectionsKt.joinToString$default(list, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new a(29), 30, null)), new Object[0]);
+        forest.b(androidx.browser.trusted.c.a("consumeProducts: \n", CollectionsKt.q(list, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new a(29), 30)), new Object[0]);
         if (iapHelper != null) {
-            String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(list, ",", null, null, 0, null, new i(0), 30, null);
+            String strQ = CollectionsKt.q(list, ",", null, null, new i(0), 30);
             io.sentry.android.core.internal.gestures.a aVar = new io.sentry.android.core.internal.gestures.a(18, listener, purchases);
             try {
-                if (strJoinToString$default == null) {
+                if (strQ == null) {
                     throw new Exception("_purchaseIds is null");
                 }
-                if (strJoinToString$default.length() == 0) {
+                if (strQ.length() == 0) {
                     throw new Exception("_purchaseIds is empty");
                 }
                 ConsumePurchasedItems consumePurchasedItems = new ConsumePurchasedItems(IapHelper.m, iapHelper.f23329b);
                 consumePurchasedItems.d = null;
                 ConsumePurchasedItems.f23338e = aVar;
-                ConsumePurchasedItems.f23339f = strJoinToString$default;
+                ConsumePurchasedItems.f23339f = strQ;
                 iapHelper.h.add(consumePurchasedItems);
                 IapHelper.a();
                 int iA = HelperUtil.a(iapHelper.f23329b);
@@ -250,7 +250,7 @@ public final class SamsungIapClient extends IapClientWithProductCache {
         }
         Timber.Forest forest = Timber.a;
         forest.b("acknowledgeProducts: isAvailable:" + this.d + " iapHelper:" + (this.f4862e != null), new Object[0]);
-        forest.b(androidx.browser.trusted.c.a("acknowledgeProducts: \n", CollectionsKt___CollectionsKt.joinToString$default(purchases, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new i(1), 30, null)), new Object[0]);
+        forest.b(androidx.browser.trusted.c.a("acknowledgeProducts: \n", CollectionsKt.q(purchases, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new i(1), 30)), new Object[0]);
         listener.onAcknowledged(true, "samsumg pay no need to acknowledge", purchases, purchases);
     }
 

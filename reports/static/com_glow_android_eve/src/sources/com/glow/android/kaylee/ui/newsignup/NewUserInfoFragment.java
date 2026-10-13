@@ -74,7 +74,6 @@ import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -1007,13 +1006,13 @@ public final class NewUserInfoFragment extends BaseSignUpFragment {
     public final void x(List<String> list, List<String> list2) {
         TextView textView;
         PasswordUtil.a.getClass();
-        String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(PasswordUtil.f9902b, ", ", null, null, 0, null, null, 62, null);
-        SpannableString spannableString = new SpannableString(strJoinToString$default);
+        String strQ = CollectionsKt.q(PasswordUtil.f9902b, ", ", null, null, null, 62);
+        SpannableString spannableString = new SpannableString(strQ);
         for (String str : list) {
-            spannableString.setSpan(new ForegroundColorSpan(Color.parseColor("#fd4343")), StringsKt.v(strJoinToString$default, str, 0, false, 6), str.length() + StringsKt.v(strJoinToString$default, str, 0, false, 6), 33);
+            spannableString.setSpan(new ForegroundColorSpan(Color.parseColor("#fd4343")), StringsKt.v(strQ, str, 0, false, 6), str.length() + StringsKt.v(strQ, str, 0, false, 6), 33);
         }
         for (String str2 : list2) {
-            spannableString.setSpan(new ForegroundColorSpan(Color.parseColor("#47C426")), StringsKt.v(strJoinToString$default, str2, 0, false, 6), str2.length() + StringsKt.v(strJoinToString$default, str2, 0, false, 6), 33);
+            spannableString.setSpan(new ForegroundColorSpan(Color.parseColor("#47C426")), StringsKt.v(strQ, str2, 0, false, 6), str2.length() + StringsKt.v(strQ, str2, 0, false, 6), 33);
         }
         NewUserInfoFragmentBinding newUserInfoFragmentBinding = this.m;
         if (newUserInfoFragmentBinding == null || (textView = newUserInfoFragmentBinding.f5621q) == null) {

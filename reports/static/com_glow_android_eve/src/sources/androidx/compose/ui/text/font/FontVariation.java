@@ -13,8 +13,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import kotlin.Metadata;
+import kotlin.collections.CollectionsKt;
 import kotlin.collections.CollectionsKt__MutableCollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -256,7 +256,7 @@ public final class FontVariation {
                 String str = (String) entry.getKey();
                 List list = (List) entry.getValue();
                 if (list.size() != 1) {
-                    throw new IllegalArgumentException(androidx.compose.animation.a.o(']', CollectionsKt___CollectionsKt.joinToString$default(list, null, null, null, 0, null, null, 63, null), a.y("'", str, "' must be unique. Actual [ [")).toString());
+                    throw new IllegalArgumentException(androidx.compose.animation.a.o(']', CollectionsKt.q(list, null, null, null, null, 63), a.y("'", str, "' must be unique. Actual [ [")).toString());
                 }
                 CollectionsKt__MutableCollectionsKt.addAll(arrayList2, list);
             }

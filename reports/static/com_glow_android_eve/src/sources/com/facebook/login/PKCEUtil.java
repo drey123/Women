@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.random.Random;
@@ -92,7 +91,7 @@ public final class PKCEUtil {
                 ch.getClass();
                 arrayList.add(ch);
             }
-            return CollectionsKt___CollectionsKt.joinToString$default(arrayList, "", null, null, 0, null, null, 62, null);
+            return CollectionsKt.q(arrayList, "", null, null, null, 62);
         } catch (IllegalArgumentException e6) {
             throw new NoSuchElementException(e6.getMessage());
         }

@@ -994,26 +994,31 @@ public final class ImagePipeline {
             if (!this.isPrefetchEnabledSupplier.get().booleanValue()) {
                 DataSource<Void> dataSourceImmediateFailedDataSource4 = DataSources.immediateFailedDataSource(PREFETCH_EXCEPTION);
                 Intrinsics.checkNotNullExpressionValue(dataSourceImmediateFailedDataSource4, "immediateFailedDataSource(...)");
+                FrescoSystrace.endSection();
                 return dataSourceImmediateFailedDataSource4;
             }
             if (imageRequest == null) {
                 DataSource<Void> dataSourceImmediateFailedDataSource5 = DataSources.immediateFailedDataSource(NULL_IMAGEREQUEST_EXCEPTION);
                 Intrinsics.checkNotNullExpressionValue(dataSourceImmediateFailedDataSource5, "immediateFailedDataSource(...)");
+                FrescoSystrace.endSection();
                 return dataSourceImmediateFailedDataSource5;
             }
             try {
                 if (this.config.getExperiments().getPrefetchShortcutEnabled() && isInEncodedMemoryCache(imageRequest)) {
                     DataSource<Void> dataSourceImmediateSuccessfulDataSource2 = DataSources.immediateSuccessfulDataSource();
                     Intrinsics.checkNotNullExpressionValue(dataSourceImmediateSuccessfulDataSource2, "immediateSuccessfulDataSource(...)");
+                    FrescoSystrace.endSection();
                     return dataSourceImmediateSuccessfulDataSource2;
                 }
                 dataSourceImmediateFailedDataSource = submitPrefetchRequest(this.producerSequenceFactory.getEncodedImagePrefetchProducerSequence(imageRequest), imageRequest, ImageRequest.RequestLevel.FULL_FETCH, callerContext, priority, requestListener);
+                FrescoSystrace.endSection();
                 return dataSourceImmediateFailedDataSource;
             } catch (Exception e7) {
                 dataSourceImmediateFailedDataSource = DataSources.immediateFailedDataSource(e7);
             }
-        } finally {
+        } catch (Throwable th) {
             FrescoSystrace.endSection();
+            throw th;
         }
     }
 

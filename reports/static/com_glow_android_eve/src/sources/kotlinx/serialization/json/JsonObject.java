@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 import kotlin.Metadata;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.markers.KMappedMarker;
 import kotlinx.serialization.KSerializer;
@@ -158,7 +158,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
 
     @NotNull
     public final String toString() {
-        return CollectionsKt___CollectionsKt.joinToString$default(this.f27517b.entrySet(), ",", "{", "}", 0, null, new w5.a(23), 24, null);
+        return CollectionsKt.q(this.f27517b.entrySet(), ",", "{", "}", new w5.a(23), 24);
     }
 
     @Override // java.util.Map

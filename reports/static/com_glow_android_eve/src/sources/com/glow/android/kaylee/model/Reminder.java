@@ -391,7 +391,7 @@ public final class Reminder extends UnStripable implements AlarmContainerInterfa
         return reminderA;
     }
 
-    private final LocalDateTime upcomingAlarmAroundDate(int idx, LocalDateTime oneDate) throws IllegalAccessException {
+    private final LocalDateTime upcomingAlarmAroundDate(int idx, LocalDateTime oneDate) {
         ReminderRepeat reminderRepeatA = ReminderRepeat.a(this.repeat);
         LocalDateTime alarm = getAlarm(idx);
         if (alarm == null) {
@@ -437,7 +437,7 @@ public final class Reminder extends UnStripable implements AlarmContainerInterfa
     }
 
     @Nullable
-    public final LocalDateTime getAlarm(int idx) throws IllegalAccessException {
+    public final LocalDateTime getAlarm(int idx) {
         String strI = a.i(idx, "alarm");
         Iterator itA = ArrayIteratorKt.a(Reminder.class.getDeclaredFields());
         while (itA.hasNext()) {
@@ -502,7 +502,7 @@ public final class Reminder extends UnStripable implements AlarmContainerInterfa
     }
 
     @NotNull
-    public final LocalDateTime getAlarmWithDefault(int idx, @NotNull LocalDateTime defaultAlarm) throws IllegalAccessException {
+    public final LocalDateTime getAlarmWithDefault(int idx, @NotNull LocalDateTime defaultAlarm) {
         Intrinsics.checkNotNullParameter(defaultAlarm, "defaultAlarm");
         LocalDateTime alarm = getAlarm(idx);
         return alarm == null ? defaultAlarm : alarm;
@@ -667,7 +667,7 @@ public final class Reminder extends UnStripable implements AlarmContainerInterfa
 
     /* JADX WARN: Code duplicated, block: B:10:0x0022  */
     @Nullable
-    public final LocalDateTime getUpcomingAlarm() throws IllegalAccessException {
+    public final LocalDateTime getUpcomingAlarm() {
         LocalDateTime localDateTime = new LocalDateTime();
         int i = this.frequency;
         LocalDateTime localDateTime2 = null;

@@ -19,12 +19,16 @@ final class bnf extends bng {
         return Float.intBitsToFloat(j(obj, j4));
     }
 
+    /* JADX WARN: Failed to inline method: com.google.ads.interactivemedia.v3.internal.bnh.l(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Failed to inline method: com.google.ads.interactivemedia.v3.internal.bnh.m(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 'z2' boolean)' in method call: com.google.ads.interactivemedia.v3.internal.bnh.l(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 'z2' boolean)' in method call: com.google.ads.interactivemedia.v3.internal.bnh.m(java.lang.Object, long, boolean):void */
     @Override // com.google.ads.interactivemedia.v3.internal.bng
     public final void c(Object obj, long j4, boolean z2) {
         if (bnh.f15984b) {
-            bnh.F(obj, j4, z2 ? (byte) 1 : (byte) 0);
+            bnh.l(obj, j4, z2);
         } else {
-            bnh.G(obj, j4, z2 ? (byte) 1 : (byte) 0);
+            bnh.m(obj, j4, z2);
         }
     }
 

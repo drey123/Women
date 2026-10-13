@@ -25,8 +25,8 @@ import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.Unit;
+import kotlin.collections.CollectionsKt;
 import kotlin.collections.CollectionsKt__MutableCollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.io.CloseableKt;
 import kotlin.io.FilesKt;
 import kotlin.io.TextStreamsKt;
@@ -216,7 +216,7 @@ public final class ReplayCache implements Closeable {
             if (file4 != null) {
                 Set<Map.Entry<String, String>> setEntrySet = this.i.entrySet();
                 Intrinsics.checkNotNullExpressionValue(setEntrySet, "ongoingSegment.entries");
-                FilesKt.f(file4, CollectionsKt___CollectionsKt.joinToString$default(setEntrySet, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, ReplayCache$persistSegmentValues$2.f24930b, 30, null));
+                FilesKt.f(file4, CollectionsKt.q(setEntrySet, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, ReplayCache$persistSegmentValues$2.f24930b, 30));
             }
         } catch (Throwable th3) {
             throw th3;

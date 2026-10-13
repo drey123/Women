@@ -22,7 +22,6 @@ import kotlin.NoWhenBranchMatchedException;
 import kotlin.Unit;
 import kotlin.collections.ArraysKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function10;
@@ -146,11 +145,11 @@ public final class KFunctionImpl extends KCallableImpl<Object> implements Functi
                 if (arrayList.size() == 1) {
                     return (FunctionDescriptor) CollectionsKt.single((List) arrayList);
                 }
-                String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(collection, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, KDeclarationContainerImpl$findFunctionDescriptor$allMembers$1.f25568b, 30, null);
+                String strQ = CollectionsKt.q(collection, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, KDeclarationContainerImpl$findFunctionDescriptor$allMembers$1.f25568b, 30);
                 StringBuilder sbL = C0316y.l("Function '", name, "' (JVM signature: ", signature, ") not resolved in ");
                 sbL.append(kDeclarationContainerImpl2);
                 sbL.append(':');
-                sbL.append(strJoinToString$default.length() == 0 ? " no members found" : ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE.concat(strJoinToString$default));
+                sbL.append(strQ.length() == 0 ? " no members found" : ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE.concat(strQ));
                 throw new KotlinReflectionInternalError(sbL.toString());
             }
         });

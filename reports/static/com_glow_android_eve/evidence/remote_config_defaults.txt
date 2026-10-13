@@ -1,1 +1,0 @@
-                        XmlResourceParser xml = resources.getXml(R.xml.remote_config_defaults);

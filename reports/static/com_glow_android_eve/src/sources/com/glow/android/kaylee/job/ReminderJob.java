@@ -130,7 +130,7 @@ public final class ReminderJob extends Worker {
     /* JADX WARN: Code duplicated, block: B:94:0x02e2 A[SYNTHETIC] */
     @Override // androidx.work.Worker
     @NotNull
-    public final ListenableWorker.Result doWork() throws IllegalAccessException {
+    public final ListenableWorker.Result doWork() {
         Object next;
         Object next2;
         int i;

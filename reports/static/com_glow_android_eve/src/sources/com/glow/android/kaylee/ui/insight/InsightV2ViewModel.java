@@ -52,7 +52,6 @@ import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
@@ -544,14 +543,14 @@ public final class InsightV2ViewModel extends AndroidViewModel {
         }
         babyInfoManager.getClass();
         BabyInfoManager.BabySizeInfo babySizeInfoA = BabyInfoManager.a(i);
-        String strJoinToString$default = i < 4 ? babySizeInfoA.f7666f : CollectionsKt___CollectionsKt.joinToString$default(CollectionsKt.filterNotNull(zU ? CollectionsKt.listOf((Object[]) new String[]{babySizeInfoA.f7664b, babySizeInfoA.d}) : CollectionsKt.listOf((Object[]) new String[]{babySizeInfoA.c, babySizeInfoA.f7665e})), " & ", null, null, 0, null, new i(11), 30, null);
+        String strQ = i < 4 ? babySizeInfoA.f7666f : CollectionsKt.q(CollectionsKt.filterNotNull(zU ? CollectionsKt.listOf((Object[]) new String[]{babySizeInfoA.f7664b, babySizeInfoA.d}) : CollectionsKt.listOf((Object[]) new String[]{babySizeInfoA.c, babySizeInfoA.f7665e})), " & ", null, null, new i(11), 30);
         BabyWeeklyCard.Companion companion = BabyWeeklyCard.d;
         String str = babySizeInfoA.a;
         companion.getClass();
         Pair pairA = BabyWeeklyCard.Companion.a(str);
         Intrinsics.checkNotNull(firstNonEmptyBabyName);
-        Intrinsics.checkNotNull(strJoinToString$default);
-        this.f7040u.postValue(new BabyWeeklyCard.BabyWeeklyCardData(i, firstNonEmptyBabyName, strJoinToString$default, (String) pairA.getSecond(), (String) pairA.getFirst()));
+        Intrinsics.checkNotNull(strQ);
+        this.f7040u.postValue(new BabyWeeklyCard.BabyWeeklyCardData(i, firstNonEmptyBabyName, strQ, (String) pairA.getSecond(), (String) pairA.getFirst()));
     }
 
     public final void u(int i) {

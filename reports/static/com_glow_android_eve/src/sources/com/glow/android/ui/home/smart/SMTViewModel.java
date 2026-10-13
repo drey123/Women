@@ -64,7 +64,6 @@ import kotlin.ResultKt;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.collections.SetsKt;
 import kotlin.coroutines.Continuation;
@@ -3567,7 +3566,7 @@ public final class SMTViewModel extends AndroidViewModel {
         if (data instanceof SMTCardData.SMTClient.SMTCycle.SMTCFertilityHealth) {
             strM = android.support.v4.media.a.m(strM, LocalUserPrefs.u(context).c("showForecastCalculating", true) ? "_unread" : "_read");
         }
-        Blaster.e("button_click_smart_card", MapsKt.mutableMapOf(pair, TuplesKt.to("card_type", strM), TuplesKt.to("order_id", String.valueOf(iIndexOf)), TuplesKt.to("is_first", data.isRead() ? AppEventsConstants.EVENT_PARAM_VALUE_NO : "-1"), TuplesKt.to("note", CollectionsKt___CollectionsKt.joinToString$default(list2, ",", null, null, 0, null, new com.facebook.react.defaults.a(27), 30, null)), TuplesKt.to(TimerRecord.FIELD_COUNT, String.valueOf(list2.size()))));
+        Blaster.e("button_click_smart_card", MapsKt.mutableMapOf(pair, TuplesKt.to("card_type", strM), TuplesKt.to("order_id", String.valueOf(iIndexOf)), TuplesKt.to("is_first", data.isRead() ? AppEventsConstants.EVENT_PARAM_VALUE_NO : "-1"), TuplesKt.to("note", CollectionsKt.q(list2, ",", null, null, new com.facebook.react.defaults.a(27), 30)), TuplesKt.to(TimerRecord.FIELD_COUNT, String.valueOf(list2.size()))));
     }
 
     public final void y(boolean z2) {

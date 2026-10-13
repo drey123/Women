@@ -84,7 +84,6 @@ import kotlin.Pair;
 import kotlin.Unit;
 import kotlin.collections.ArraysKt;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
@@ -173,7 +172,7 @@ public final class OnboardingBabyPage extends BaseActivity {
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public OnboardingBabyViewModel(@NotNull Application app) {
-            String strJoinToString$default;
+            String strQ;
             super(app);
             Intrinsics.checkNotNullParameter(app, "app");
             BabyInfoManager babyInfoManager = null;
@@ -207,13 +206,13 @@ public final class OnboardingBabyPage extends BaseActivity {
             BabyInfoManager.BabySizeInfo babySizeInfoA = BabyInfoManager.a(iK);
             List listListOf = zU ? CollectionsKt.listOf((Object[]) new String[]{babySizeInfoA.f7664b, babySizeInfoA.d}) : CollectionsKt.listOf((Object[]) new String[]{babySizeInfoA.c, babySizeInfoA.f7665e});
             if (iK < 4) {
-                strJoinToString$default = babySizeInfoA.f7666f;
-                Intrinsics.checkNotNullExpressionValue(strJoinToString$default, "getSizeTemplate(...)");
+                strQ = babySizeInfoA.f7666f;
+                Intrinsics.checkNotNullExpressionValue(strQ, "getSizeTemplate(...)");
             } else {
-                strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(CollectionsKt.filterNotNull(listListOf), " & ", null, null, 0, null, new i(24), 30, null);
+                strQ = CollectionsKt.q(CollectionsKt.filterNotNull(listListOf), " & ", null, null, new i(24), 30);
             }
-            Intrinsics.checkNotNullParameter(strJoinToString$default, "<set-?>");
-            mutableStateMutableStateOf$default3.setValue(strJoinToString$default);
+            Intrinsics.checkNotNullParameter(strQ, "<set-?>");
+            mutableStateMutableStateOf$default3.setValue(strQ);
             BabyWeeklyCard.Companion companion = BabyWeeklyCard.d;
             String str = babySizeInfoA.a;
             companion.getClass();

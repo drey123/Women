@@ -30,7 +30,6 @@ import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.concurrent.ThreadsKt;
 import kotlin.coroutines.Continuation;
@@ -212,7 +211,7 @@ public final class PremiumFlow implements IapAgentEventListener {
             while (it2.hasNext()) {
                 arrayList.add(((ProductPlan) it2.next()).getProductId());
             }
-            Timber.a.b(android.support.v4.media.a.n("fetch products, ids: ", CollectionsKt___CollectionsKt.joinToString$default(arrayList, ",", null, null, 0, null, null, 62, null), "}"), new Object[0]);
+            Timber.a.b(android.support.v4.media.a.n("fetch products, ids: ", CollectionsKt.q(arrayList, ",", null, null, null, 62), "}"), new Object[0]);
             DefaultIoScheduler defaultIoScheduler = Dispatchers.c;
             PremiumFlow$fetchProducts$productList$1 premiumFlow$fetchProducts$productList$1 = new PremiumFlow$fetchProducts$productList$1(this, arrayList, null);
             premiumFlow$fetchProducts$1.f4894b = this;
@@ -236,7 +235,7 @@ public final class PremiumFlow implements IapAgentEventListener {
             ResultKt.a(objF);
         }
         List list5 = (List) objF;
-        Timber.a.b(c.a("fetch products result: ", list5 != null ? CollectionsKt___CollectionsKt.joinToString$default(list5, null, null, null, 0, null, new A0.b(0), 31, null) : null), new Object[0]);
+        Timber.a.b(c.a("fetch products result: ", list5 != null ? CollectionsKt.q(list5, null, null, null, new A0.b(0), 31) : null), new Object[0]);
         if (list5 != null) {
             List<ProductPlan> list6 = list2;
             ArrayList arrayList2 = new ArrayList();
@@ -328,7 +327,7 @@ public final class PremiumFlow implements IapAgentEventListener {
             } else {
                 list3 = mutableList;
             }
-            Timber.a.h(c.a("rearranged products: ", CollectionsKt___CollectionsKt.joinToString$default(list7, ";\n", null, null, 0, null, null, 62, null)), new Object[0]);
+            Timber.a.h(c.a("rearranged products: ", CollectionsKt.q(list7, ";\n", null, null, null, 62)), new Object[0]);
             ArrayList arrayList4 = new ArrayList(CollectionsKt.m(list7));
             for (IapProduct iapProduct4 : list7) {
                 StringBuilder sbX = android.support.v4.media.a.x(iapProduct4.k, CertificateUtil.DELIMITER);

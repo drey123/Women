@@ -45,7 +45,6 @@ import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.enums.EnumEntries;
 import kotlin.enums.EnumEntriesKt;
@@ -335,7 +334,7 @@ public final class HomeTutorialViewModel extends AndroidViewModel {
             com.facebook.react.views.image.a.t(TutorialPrefs.a.get(), "lastShowTutorialAppVersion", appVersion.a());
             com.coremedia.iso.boxes.a.c(TutorialPrefs.a.get(), "shouldShowChecklistRedDot", true);
         }
-        Timber.a.b(androidx.browser.trusted.c.a("tutorial steps: ", CollectionsKt___CollectionsKt.joinToString$default(this.f7712f, null, null, null, 0, null, null, 63, null)), new Object[0]);
+        Timber.a.b(androidx.browser.trusted.c.a("tutorial steps: ", CollectionsKt.q(this.f7712f, null, null, null, null, 63)), new Object[0]);
         m();
     }
 

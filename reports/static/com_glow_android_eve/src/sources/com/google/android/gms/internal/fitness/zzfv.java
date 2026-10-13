@@ -40,7 +40,7 @@ final class zzfv extends zzfw {
     }
 
     @Override // com.google.android.gms.internal.fitness.zzfw, java.util.List
-    /* JADX INFO: renamed from: zzf */
+    /* JADX INFO: renamed from: zzf, reason: merged with bridge method [inline-methods] */
     public final zzfw subList(int i, int i6) {
         zzfo.zzc(i, i6, this.zzb);
         int i7 = this.zza;

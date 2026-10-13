@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlinx.coroutines.BuildersKt;
@@ -79,7 +79,7 @@ public final class zzca implements zzbu {
         zzv.zza(iZzk - 2, jZza);
         zzprVar.zzk();
         zzprVar.zzg();
-        CollectionsKt___CollectionsKt.joinToString$default(zzprVar.zzj(), null, null, null, 0, null, new zzbw(this), 31, null);
+        CollectionsKt.q(zzprVar.zzj(), null, null, null, new zzbw(this), 31);
     }
 
     @Override // com.google.android.recaptcha.internal.zzbu

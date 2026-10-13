@@ -51,7 +51,6 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
@@ -90,12 +89,12 @@ public final class FertileWindowCardKt {
         String strL2 = fe.f10521b.l("MMM dd");
         Intrinsics.checkNotNullExpressionValue(strL2, "toStringByFormat(...)");
         List listSplit$default2 = StringsKt__StringsKt.split$default(strL2, new String[]{" "}, false, 0, 6, null);
-        sb.append(CollectionsKt___CollectionsKt.joinToString$default(listSplit$default, " ", null, null, 0, null, null, 62, null));
+        sb.append(CollectionsKt.q(listSplit$default, " ", null, null, null, 62));
         sb.append("-");
         if (Intrinsics.areEqual(listSplit$default.get(0), listSplit$default2.get(0))) {
             sb.append((String) listSplit$default2.get(1));
         } else {
-            sb.append(CollectionsKt___CollectionsKt.joinToString$default(listSplit$default2, " ", null, null, 0, null, null, 62, null));
+            sb.append(CollectionsKt.q(listSplit$default2, " ", null, null, null, 62));
         }
         sb.append(" | ");
         int feIndex = (cycleSummary.getFeIndex() - cycleSummary.getFbIndex()) + 1;

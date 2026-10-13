@@ -35,7 +35,7 @@ public final class DoubleArraySerializer extends PrimitiveArraySerializer<Double
         Intrinsics.checkNotNullParameter(builder, "builder");
         double dB = decoder.B(this.f27479b, i);
         builder.getClass();
-        builder.b(builder.getF27461b() + 1);
+        builder.b(builder.getF27456b() + 1);
         double[] dArr = builder.a;
         int i6 = builder.f27456b;
         builder.f27456b = i6 + 1;

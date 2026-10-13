@@ -16,7 +16,6 @@ import com.glow.android.trion.rest.JsonDataResponse;
 import java.util.List;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
@@ -89,8 +88,8 @@ public final /* synthetic */ class d implements Function1 {
                 String type = (String) obj2;
                 Intrinsics.checkNotNullParameter(type, "$type");
                 Intrinsics.checkNotNull(list2);
-                String strJoinToString$default = CollectionsKt___CollectionsKt.joinToString$default(list2, ",", null, null, 0, null, new w5.a(26), 30, null);
-                return strJoinToString$default.length() == 0 ? new ScalarSynchronousSingle(MapsKt.emptyMap()) : ((IapClientWithProductCache) this$2).d(strJoinToString$default, type).c(new k(new C1.d(list2, 5), 19));
+                String strQ = CollectionsKt.q(list2, ",", null, null, new w5.a(26), 30);
+                return strQ.length() == 0 ? new ScalarSynchronousSingle(MapsKt.emptyMap()) : ((IapClientWithProductCache) this$2).d(strQ, type).c(new k(new C1.d(list2, 5), 19));
         }
     }
 

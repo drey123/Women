@@ -53,7 +53,6 @@ import kotlin.Metadata;
 import kotlin.NoWhenBranchMatchedException;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.MapsKt;
 import kotlin.collections.SetsKt;
 import kotlin.enums.EnumEntries;
@@ -393,7 +392,7 @@ public final class GLRNStoreKitModule extends BaseReactContextBaseJavaModule imp
         Timber.Forest forest = Timber.a;
         Intrinsics.checkNotNull(list);
         List list2 = list;
-        forest.b(androidx.browser.trusted.c.a("getStoreInfo purchases: ", CollectionsKt___CollectionsKt.joinToString$default(list2, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new a(2), 30, null)), new Object[0]);
+        forest.b(androidx.browser.trusted.c.a("getStoreInfo purchases: ", CollectionsKt.q(list2, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new a(2), 30)), new Object[0]);
         Iterator it2 = list2.iterator();
         if (it2.hasNext()) {
             next = it2.next();
@@ -522,7 +521,7 @@ public final class GLRNStoreKitModule extends BaseReactContextBaseJavaModule imp
     }
 
     private static final void performFetchProducts$subQ(IapAgent iapAgent, List<String> list, GLRNStoreKitModule gLRNStoreKitModule, PremiumTask premiumTask, List<IapPurchase> list2) {
-        iapAgent.f(CollectionsKt___CollectionsKt.joinToString$default(list, ",", null, null, 0, null, null, 62, null), "all").d(AndroidSchedulers.a()).c(new b(new C0269f(gLRNStoreKitModule, list, 16, list2), 21)).h(new b(new g(26, gLRNStoreKitModule, premiumTask), 22), new io.sentry.android.core.internal.gestures.a(10, gLRNStoreKitModule, premiumTask));
+        iapAgent.f(CollectionsKt.q(list, ",", null, null, null, 62), "all").d(AndroidSchedulers.a()).c(new b(new C0269f(gLRNStoreKitModule, list, 16, list2), 21)).h(new b(new g(26, gLRNStoreKitModule, premiumTask), 22), new io.sentry.android.core.internal.gestures.a(10, gLRNStoreKitModule, premiumTask));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -551,7 +550,7 @@ public final class GLRNStoreKitModule extends BaseReactContextBaseJavaModule imp
         }
         mutableList.addAll(arrayList2);
         this$0.productsCache = mutableList;
-        Timber.a.b(androidx.browser.trusted.c.a("performFetchProducts: ", CollectionsKt___CollectionsKt.joinToString$default(list, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new a(1), 30, null)), new Object[0]);
+        Timber.a.b(androidx.browser.trusted.c.a("performFetchProducts: ", CollectionsKt.q(list, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new a(1), 30)), new Object[0]);
         return this$0.createRNRespProducts(productIds, list, purchases);
     }
 

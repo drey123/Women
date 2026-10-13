@@ -37,7 +37,6 @@ import kotlin.Pair;
 import kotlin.TuplesKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.collections.CollectionsKt___CollectionsKt;
 import kotlin.collections.SetsKt;
 import kotlin.comparisons.ComparisonsKt;
 import kotlin.jvm.functions.Function3;
@@ -525,7 +524,7 @@ public final class GoogleIapClient extends IapClientWithProductCache implements 
     public final void b(@NotNull List<IapPurchase> purchases, @NotNull IapClientResponseListener listener) {
         Intrinsics.checkNotNullParameter(purchases, "purchases");
         Intrinsics.checkNotNullParameter(listener, "listener");
-        Timber.a.b(c.a("consumeProducts: \n", CollectionsKt___CollectionsKt.joinToString$default(purchases, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new a(24), 30, null)), new Object[0]);
+        Timber.a.b(c.a("consumeProducts: \n", CollectionsKt.q(purchases, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new a(24), 30)), new Object[0]);
         if (purchases.isEmpty()) {
             return;
         }
@@ -542,7 +541,7 @@ public final class GoogleIapClient extends IapClientWithProductCache implements 
     public final void c(@NotNull List<IapPurchase> purchases, @NotNull IapClientResponseListener listener) {
         Intrinsics.checkNotNullParameter(purchases, "purchases");
         Intrinsics.checkNotNullParameter(listener, "listener");
-        Timber.a.b(c.a("acknowledgeProducts: \n", CollectionsKt___CollectionsKt.joinToString$default(purchases, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new a(25), 30, null)), new Object[0]);
+        Timber.a.b(c.a("acknowledgeProducts: \n", CollectionsKt.q(purchases, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, new a(25), 30)), new Object[0]);
         if (purchases.isEmpty()) {
             return;
         }
