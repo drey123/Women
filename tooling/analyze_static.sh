@@ -94,7 +94,14 @@ for code in sorted(counts, key=lambda c: (-counts[c], sigs[c])):
     if counts[code] > 0:
         print(f"{sigs[code]}\t{counts[code]}\t{code}")
 PYEOF
-  [ $? -eq 0 ] && SCAN_OK=1
+  if python3 - "$TRACKERS_JSON" <<'PYCHECK'
+import json, sys
+d = json.load(open(sys.argv[1], encoding="utf-8"))
+ts = d.get("trackers", d) if isinstance(d, dict) else {}
+sys.exit(0 if isinstance(ts, dict) and ts else 3)
+PYCHECK
+  then SCAN_OK=1
+  fi
 fi
 if [ "$SCAN_OK" -eq 1 ] && [ -s "$OUT/exodus_scan.tsv" ]; then
   NSIGS=$(python3 -c "import json;d=json.load(open('$TRACKERS_JSON'));ts=d.get('trackers',d);print(sum(1 for t in ts.values() if isinstance(t,dict) and len((t.get('code_signature') or '').strip())>=8))")
