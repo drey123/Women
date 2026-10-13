@@ -40,25 +40,26 @@ timeout 900 jadx -d "$OUT/src" --no-res --deobf-min 3 -j 4 "$APK" > "$EX/jadx.lo
 # ---- 3. Exodus signature scan over smali + sources ----
 git clone --depth 1 -q https://github.com/Exodus-Privacy/exodus-core /tmp/exodus-core 2>/dev/null || true
 if [ -d /tmp/exodus-core ]; then
-  python3 - <<'PYEOF' > "$OUT/exodus_scan.tsv"
+  OUTDIR="$OUT" python3 - <<'PYEOF' > "$OUT/exodus_scan.tsv"
 import re, os, subprocess, glob
 sigs = {}
+scan_root = os.path.join(os.environ["OUTDIR"], "dec")
 for f in glob.glob('/tmp/exodus-core/signatures/*.py'):
     src = open(f, encoding='utf-8', errors='ignore').read()
     for m in re.finditer(r'class\s+(\w+)\((?:User)?Signature\):.*?name\s*=\s*"([^"]+)".*?code_signature\s*=\s*"([^"]*)"', src, re.S):
         cls, name, code = m.group(1), m.group(2), m.group(3)
-        if code: sigs[cls] = (name, code)
-print(f"tracker\tmatch_files\tcode_signature")
+        if code:
+            sigs[cls] = (name, code)
+print("tracker\tmatch_files\tcode_signature")
 for cls, (name, code) in sorted(sigs.items()):
     try:
-        r = subprocess.run(['grep','-rlF',code,'OUTDIR_TOKEN'], capture_output=True, text=True, timeout=240)
-        n = len([l for l in r.stdout.splitlines() if l.strip()])
+        r = subprocess.run(['grep', '-rlF', code, scan_root], capture_output=True, text=True, timeout=240)
+        n = len([line for line in r.stdout.splitlines() if line.strip()])
     except Exception:
         n = 0
     if n > 0:
         print(f"{name}\t{n}\t{code}")
 PYEOF
-  sed -i "s|OUTDIR_TOKEN|$OUT|g" "$OUT/exodus_scan.tsv"
   echo "## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)" >> "$OUT/report.md"
   echo "| Tracker | Matching files | Code signature |" >> "$OUT/report.md"
   echo "|---|---|---|" >> "$OUT/report.md"
