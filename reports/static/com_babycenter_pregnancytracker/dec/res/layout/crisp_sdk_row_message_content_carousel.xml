@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/crisp_sdk_target_card" android:layout_width="170.0dp" android:layout_height="wrap_content" style="@style/Widget.Crisp.SDK.CardView.Filled.ExtraLarge.Variant"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/crisp_sdk_target_image" android:background="@color/crisp_sdk_chat_messages_carousel_image_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60.0dp" android:scaleType="centerCrop" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingTop="10.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="14.0dp">
+            <com.google.android.material.textview.MaterialTextView android:id="@id/crisp_sdk_target_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Crisp.SDK.LabelMedium.Bold.Carousel" />
+            <com.google.android.material.textview.MaterialTextView android:id="@id/crisp_sdk_target_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" style="@style/TextAppearance.Crisp.SDK.BodyExtraSmall.Carousel" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/crisp_sdk_target_actions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>

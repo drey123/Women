@@ -1,0 +1,14 @@
+[
+  {
+    "trimester": 1,
+    "symptomIds": [10, 9, 12, 7, 11, 3, 1, 8, 4, 13, 24, 25]
+  },
+  {
+    "trimester": 2,
+    "symptomIds": [14, 11, 13, 19, 0, 21, 5]
+  },
+  {
+    "trimester": 3,
+    "symptomIds": [8, 20, 2, 4, 0, 13, 11]
+  }
+]

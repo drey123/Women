@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:id="@id/text" android:paddingTop="?spacingXXXL" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawablePadding="?spacingS" android:fontFamily="@font/montserrat_medium" android:paddingHorizontal="?spacingXXXL" app:drawableTopCompat="@drawable/logo_babycenter"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

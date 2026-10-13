@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/crisp_sdk_header_background" android:background="@drawable/crisp_sdk_header_background" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/crisp_sdk_header_close_button" layout="@layout/crisp_sdk_button_close" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <im.crisp.client.internal.ui.views.CrispSegmentedButton android:layout_gravity="center_horizontal" android:id="@id/crisp_sdk_header_toggle_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/crisp_sdk_header_button_toggle_marginHorizontal">
+            <com.google.android.material.button.MaterialButton android:id="@id/crisp_sdk_header_chat_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crisp_sdk_chat_chat_header_mode_chat" app:icon="@drawable/crisp_sdk_header_toggle_chat" style="@style/Widget.Crisp.SDK.Button.Filled.Segmented.Header" />
+            <com.google.android.material.button.MaterialButton android:id="@id/crisp_sdk_header_helpdesk_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crisp_sdk_chat_chat_header_mode_helpdesk" app:icon="@drawable/crisp_sdk_header_toggle_helpdesk" style="@style/Widget.Crisp.SDK.Button.Filled.Segmented.Header" />
+        </im.crisp.client.internal.ui.views.CrispSegmentedButton>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/crisp_sdk_header_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/crisp_sdk_header_webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                <com.google.android.material.button.MaterialButton android:id="@id/crisp_sdk_header_webview_back" style="@style/Widget.Crisp.SDK.Button.Filled.Square.WebView" />
+                <com.google.android.material.textview.MaterialTextView android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/crisp_sdk_header_webview_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/TextAppearance.Crisp.SDK.LabelMedium.Bold.OnPrimary" />
+                <Space android:layout_width="50.0dp" android:layout_height="match_parent" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <TextView android:gravity="center_horizontal" android:id="@id/crisp_sdk_header_helpdesk" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="10.0dp" android:text="@string/crisp_sdk_chat_chat_header_helpdesk_curated" android:layout_marginHorizontal="6.0dp" style="@style/TextAppearance.Crisp.SDK.LabelMedium.Bold.OnPrimary" />
+            <LinearLayout android:id="@id/crisp_sdk_header_opened" style="@style/Widget.Crisp.SDK.Header.Opened">
+                <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/crisp_sdk_header_opened_recycler" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                <TextView android:gravity="center_horizontal" android:id="@id/crisp_sdk_header_opened_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" style="@style/TextAppearance.Crisp.SDK.LabelMedium.Bold.OnPrimary" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp">
+                    <View android:layout_gravity="center_vertical" android:id="@id/crisp_sdk_header_opened_availability" android:background="@drawable/crisp_sdk_header_opened_online_background" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" />
+                    <TextView android:gravity="center_horizontal" android:id="@id/crisp_sdk_header_opened_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dp" style="@style/TextAppearance.Crisp.SDK.BodyExtraSmall.OnPrimary" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/crisp_sdk_header_ongoing" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:layout_marginHorizontal="6.0dp">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <include android:id="@id/crisp_sdk_header_ongoing_operator_avatar" layout="@layout/crisp_sdk_header_ongoing_operator" />
+                    <View android:layout_gravity="end|bottom" android:id="@id/crisp_sdk_header_ongoing_availability" android:background="@drawable/crisp_sdk_header_availability_background" android:visibility="gone" android:layout_width="13.0dp" android:layout_height="13.0dp" android:layout_marginBottom="-3.0dp" android:layout_marginEnd="-4.0dp" />
+                </FrameLayout>
+                <TextView android:ellipsize="end" android:id="@id/crisp_sdk_header_ongoing_operator_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="11.0dp" style="@style/TextAppearance.Crisp.SDK.LabelMedium.Bold.OnPrimary" />
+                <com.google.android.material.button.MaterialButton android:id="@id/crisp_sdk_header_ongoing_channels" android:visibility="gone" android:layout_marginStart="9.0dp" app:icon="@drawable/crisp_sdk_header_overflow" style="@style/Widget.Crisp.SDK.Button.Standard.Inverted.More" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

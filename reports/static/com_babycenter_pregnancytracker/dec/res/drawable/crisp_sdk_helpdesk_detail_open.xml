@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="20.0dp" android:width="20.0dp" android:viewportWidth="20.0" android:viewportHeight="20.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <path android:pathData="M15.833,0.833H4.167C2.326,0.833 0.833,2.326 0.833,4.167V15.833C0.833,17.674 2.326,19.167 4.167,19.167H15.833C17.674,19.167 19.167,17.674 19.167,15.833V4.167C19.167,2.326 17.674,0.833 15.833,0.833Z" android:strokeColor="@color/crisp_sdk_helpdesksearch_openbutton_default" android:strokeWidth="1.5" />
+        <path android:pathData="M6.042,14.099L14.007,6.133H8.425M14.006,6.135V11.716" android:strokeColor="@color/crisp_sdk_helpdesksearch_openbutton_default" android:strokeWidth="2.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    </group>
+</vector>

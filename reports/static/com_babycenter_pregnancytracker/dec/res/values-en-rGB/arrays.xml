@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="appointment_types">
+        <item>Antenatal appointment</item>
+        <item>Ultrasound scan</item>
+        <item>Screening test</item>
+        <item>Antenatal class</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="my_profile__options_dialog__items__baby">
+        <item>@string/my_profile__options_dialog__option__report_loss</item>
+        <item>@string/my_profile__options_dialog__option__remove</item>
+    </string-array>
+    <array name="native_article__accepted_hosts" />
+    <array name="native_community__topic__images">
+        <item>@drawable/img__topic__pregnancy</item>
+        <item>@drawable/img__topic__baby</item>
+        <item>@drawable/img__topic__toddler</item>
+        <item>@drawable/img__topic__getting_pregnant</item>
+        <item>@drawable/img__topic__health_and_fitness</item>
+        <item>@drawable/img__topic__work_and_money</item>
+        <item>@drawable/img__topic__family_life</item>
+    </array>
+    <string-array name="native_community__topic__links">
+        <item>https://community.babycentre.co.uk/groups/topic/3/pregnancy</item>
+        <item>https://community.babycentre.co.uk/groups/topic/4/baby</item>
+        <item>https://community.babycentre.co.uk/groups/topic/5/life-with-a-toddler</item>
+        <item>https://community.babycentre.co.uk/groups/topic/35/getting-pregnant</item>
+        <item>https://community.babycentre.co.uk/groups/topic/8/health-fitness-and-nutrition</item>
+        <item>https://community.babycentre.co.uk/groups/topic/9/work-and-money</item>
+        <item>https://community.babycentre.co.uk/groups/topic/6/family-life</item>
+    </string-array>
+    <string-array name="native_community__topic__titles">
+        <item>Pregnancy</item>
+        <item>Baby</item>
+        <item>Life with a Toddler</item>
+        <item>Getting Pregnant</item>
+        <item>Health, Fitness &amp; Nutrition</item>
+        <item>Work &amp; Money</item>
+        <item>Family Life</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <im.crisp.client.internal.ui.views.CornerWebView android:id="@id/crisp_sdk_chat_game_web" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:backgroundTint="@android:color/transparent" />
+    <com.google.android.material.button.MaterialButton android:layout_gravity="center_horizontal" android:id="@id/crisp_sdk_chat_game_stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" style="@style/Widget.Crisp.SDK.Button.Elevated.Outlined.Game" />
+</androidx.appcompat.widget.LinearLayoutCompat>

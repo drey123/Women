@@ -1,0 +1,33 @@
+package com.google.android.gms.ads.internal.client;
+
+import android.os.IInterface;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes2.dex */
+public interface zzea extends IInterface {
+    void zze();
+
+    void zzf();
+
+    void zzg(boolean z);
+
+    boolean zzh();
+
+    int zzi();
+
+    float zzj();
+
+    float zzk();
+
+    void zzl(zzed zzedVar);
+
+    float zzm();
+
+    boolean zzn();
+
+    zzed zzo();
+
+    boolean zzp();
+
+    void zzq();
+}

@@ -1,0 +1,1552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BabyCenter" />
+    <style name="BabyCenter.Community.EmptyField" parent="">
+        <item name="android:indeterminate">true</item>
+        <item name="indicatorColor">@color/colorCommunityPostsEmptyIndicator</item>
+        <item name="trackColor">@color/colorCommunityPostsEmptyTrack</item>
+        <item name="trackCornerRadius">10.0dp</item>
+        <item name="trackStopIndicatorSize">0.0dp</item>
+        <item name="trackThickness">10.0dp</item>
+    </style>
+    <style name="BabyCenter.ModalBottomSheetStyle.AppRater" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="behavior_draggable">false</item>
+        <item name="behavior_saveFlags">skipCollapsed</item>
+        <item name="behavior_skipCollapsed">true</item>
+    </style>
+    <style name="BabyCenter.ModalBottomSheetStyle.Community" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="shapeAppearance">@style/BabyCenter.ShapeAppearance.Community</item>
+    </style>
+    <style name="BabyCenter.ModalBottomSheetStyle.CommunityTooltip" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="behavior_draggable">false</item>
+    </style>
+    <style name="BabyCenter.ModalBottomSheetStyle.DueDateCalculator" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="shapeAppearance">@style/BabyCenter.ShapeAppearance.DueDateCalculator</item>
+    </style>
+    <style name="BabyCenter.ModalBottomSheetStyle.FreeformEntryFalseDoor" parent="@style/BabyCenter.ModalBottomSheetStyle.RoundedCorners">
+        <item name="backgroundTint">@color/colorSurfaceDialog</item>
+    </style>
+    <style name="BabyCenter.ModalBottomSheetStyle.RoundedCorners" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="shapeAppearance">@style/BabyCenter.ShapeAppearance.RoundedCorners</item>
+    </style>
+    <style name="BabyCenter.ModalBottomSheetStyle.StageDetails" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="shapeAppearance">@style/BabyCenter.ShapeAppearance.StageDetails</item>
+    </style>
+    <style name="BabyCenter.ModalBottomSheetStyle.Symptoms" parent="@style/BabyCenter.ModalBottomSheetStyle.RoundedCorners">
+        <item name="backgroundTint">@color/colorCalendarSymptomsLoggedInfoBackground</item>
+    </style>
+    <style name="BabyCenter.ModalBottomSheetStyle.Transparent" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.CardView" parent="@style/ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">@dimen/babycenter.cardView.cornerRadius</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.Circle" parent="">
+        <item name="cornerSize">50.0%</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.Community" parent="@style/ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerSizeTopLeft">@dimen/babycenter_bottom_sheet_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/babycenter_bottom_sheet_corner_radius</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.Dialog" parent="@style/ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">10.0dp</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.DueDateCalculator" parent="@style/ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerSizeTopLeft">@dimen/babycenter_bottom_sheet_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/babycenter_bottom_sheet_corner_radius</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.Image" parent="">
+        <item name="cornerSize">8.0dp</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.Image2" parent="">
+        <item name="cornerSize">10.0dp</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.Image3" parent="">
+        <item name="cornerSize">4.0dp</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.MediumComponent" parent="@style/ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">3.0dp</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.Rectangle" parent="">
+        <item name="cornerSize">0.0dp</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.RoundCorners.Top" parent="">
+        <item name="cornerSizeTopLeft">@dimen/babycenter.cardView.cornerRadius</item>
+        <item name="cornerSizeTopRight">@dimen/babycenter.cardView.cornerRadius</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.RoundedCorners" parent="@style/ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerSizeTopLeft">@dimen/babycenter_bottom_sheet_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/babycenter_bottom_sheet_corner_radius</item>
+    </style>
+    <style name="BabyCenter.ShapeAppearance.StageDetails" parent="@style/ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerSizeTopLeft">@dimen/babycenter.cardView.cornerRadius</item>
+        <item name="cornerSizeTopRight">@dimen/babycenter.cardView.cornerRadius</item>
+    </style>
+    <style name="BabyCenter.TextAppearance" parent="@style/TextAppearance.AppCompat" />
+    <style name="BabyCenter.TextAppearance.BodyText" parent="@style/BabyCenter.TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="lineHeight">26.0sp</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.BodyText.Article" parent="@style/BabyCenter.TextAppearance.BodyText">
+        <item name="android:fontFamily">@font/lora_regular</item>
+        <item name="fontFamily">@font/lora_regular</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.BodyTextAlt" parent="@style/BabyCenter.TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="lineHeight">22.0sp</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.BodyTextAlt.Bold" parent="@style/BabyCenter.TextAppearance.BodyTextAlt">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Button" parent="@style/BabyCenter.TextAppearance.Heading5">
+        <item name="android:textColor">?colorOnBackgroundSecondary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Button.Outlined" parent="@style/BabyCenter.TextAppearance.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Button.Tab" parent="@style/BabyCenter.TextAppearance.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.FinePrint" parent="@style/BabyCenter.TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?colorOnBackgroundSecondary</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="lineHeight">18.0sp</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Heading1" parent="@style/BabyCenter.TextAppearance">
+        <item name="android:textSize">28.0sp</item>
+        <item name="android:fontFamily">@font/domine_bold</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/domine_bold</item>
+        <item name="lineHeight">36.0sp</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Heading2" parent="@style/BabyCenter.TextAppearance">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="lineHeight">28.0sp</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Heading3" parent="@style/BabyCenter.TextAppearance">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="lineHeight">28.0sp</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Heading4" parent="@style/BabyCenter.TextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="lineHeight">26.0sp</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Heading5" parent="@style/BabyCenter.TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="lineHeight">24.0sp</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Heading6" parent="@style/BabyCenter.TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="lineHeight">22.0sp</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Quote" parent="@style/BabyCenter.TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="lineHeight">28.0sp</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Slider.Tooltip" parent="@style/BabyCenter.TextAppearance.BodyTextAlt">
+        <item name="android:textColor">?android:colorBackground</item>
+    </style>
+    <style name="BabyCenter.TextAppearance.Subtle" parent="@style/BabyCenter.TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?colorOnBackgroundSecondary</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="lineHeight">20.0sp</item>
+    </style>
+    <style name="BabyCenter.Theme" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">?colorOnBackground</item>
+        <item name="android:textColorSecondary">?colorOnBackgroundSecondary</item>
+        <item name="android:textColorLink">@color/colorLink</item>
+        <item name="android:listDivider">@color/colorDivider</item>
+        <item name="android:actionBarStyle">@style/BabyCenter.Widget.ActionBar</item>
+        <item name="android:colorControlNormal">@color/colorOnPrimary</item>
+        <item name="android:colorControlActivated">@color/colorControlActivated</item>
+        <item name="actionBarStyle">@style/BabyCenter.Widget.ActionBar</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
+        <item name="actionModeBackground">@color/colorActionModeBackground</item>
+        <item name="actionModeSplitBackground">@android:color/transparent</item>
+        <item name="actionModeStyle">@style/BabyCenter.Widget.ActionMode</item>
+        <item name="borderlessButtonStyle">@style/BabyCenter.Widget.Button.Borderless</item>
+        <item name="bottomNavigationStyle">@style/BabyCenter.Widget.BottomNavigationView</item>
+        <item name="bottomSheetDialogTheme">@style/BabyCenter.ThemeOverlay.BottomSheetDialog</item>
+        <item name="buttonAlertStyle">@style/BabyCenter.Widget.Button.Alert</item>
+        <item name="buttonOutlinedLargeStyle">?materialButtonOutlinedStyle</item>
+        <item name="buttonOutlinedMediumStyle">@style/BabyCenter.Widget.Button.Outlined.Medium</item>
+        <item name="buttonOutlinedSmallStyle">@style/BabyCenter.Widget.Button.Outlined.Small</item>
+        <item name="buttonPrimarySmall">@style/BabyCenter2.Widget.Button.Primary.Small</item>
+        <item name="buttonPromoStyle">@style/BabyCenter.Widget.Button.Promo</item>
+        <item name="buttonRectangularStyle">@style/BabyCenter.Widget.Button.Primary.Rectangular</item>
+        <item name="cardViewOutlinedStyle">@style/BabyCenter.Widget.CardView.Outlined</item>
+        <item name="checkboxStyle">@style/BabyCenter.Widget.Checkbox</item>
+        <item name="colorBackgroundBottomTab">@color/colorBackgroundEndScreen</item>
+        <item name="colorBackgroundEndScreen">@color/colorBackgroundEndScreen</item>
+        <item name="colorControlActivated">@color/colorControlActivated</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="colorOnBackgroundSecondary">@color/colorOnBackgroundSecondary</item>
+        <item name="colorOnError">@color/colorOnError</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="colorOnSurface">?colorOnBackground</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryDark</item>
+        <item name="colorStandaloneLink">@color/colorLinkStandalone</item>
+        <item name="colorSurface">?android:colorBackground</item>
+        <item name="extendedFloatingActionButtonStyle">@style/BabyCenter.Widget.ExtendedFab</item>
+        <item name="floatingActionButtonStyle">@style/BabyCenter.Widget.Fab</item>
+        <item name="listDivider2">@color/colorDivider2</item>
+        <item name="listDividerLeaf">@color/colorDividerLeaf</item>
+        <item name="materialAlertDialogTheme">@style/BabyCenter.ThemeOverlay.MaterialAlertDialog</item>
+        <item name="materialButtonOutlinedStyle">@style/BabyCenter.Widget.Button.Outlined.Large</item>
+        <item name="materialButtonStyle">@style/BabyCenter.Widget.Button.Primary</item>
+        <item name="materialCalendarTheme">@style/BabyCenter.ThemeOverlay.MaterialDatePicker</item>
+        <item name="materialCardViewStyle">@style/BabyCenter.Widget.CardView</item>
+        <item name="materialTimePickerTheme">@style/BabyCenter.ThemeOverlay.MaterialTimePicker</item>
+        <item name="radioButtonStyle">@style/BabyCenter.Widget.Radiobutton</item>
+        <item name="selectableItemBackgroundBorderless">@drawable/selectable_item_background_borderless</item>
+        <item name="shapeAppearanceMediumComponent">@style/BabyCenter.ShapeAppearance.MediumComponent</item>
+        <item name="sliderStyle">@style/BabyCenter.Widget.Slider</item>
+        <item name="snackbarButtonStyle">@style/BabyCenter.Widget.Snackbar.Button.Info</item>
+        <item name="snackbarStyle">@style/BabyCenter.Widget.Snackbar.Info</item>
+        <item name="snackbarTextViewStyle">@style/BabyCenter.Widget.Snackbar.TextView.Info</item>
+        <item name="spacing">16.0dp</item>
+        <item name="spacingL">20.0dp</item>
+        <item name="spacingM">12.0dp</item>
+        <item name="spacingS">8.0dp</item>
+        <item name="spacingTouchTarget">48.0dp</item>
+        <item name="spacingXL">24.0dp</item>
+        <item name="spacingXS">4.0dp</item>
+        <item name="spacingXXL">32.0dp</item>
+        <item name="spacingXXS">2.0dp</item>
+        <item name="spacingXXXL">48.0dp</item>
+        <item name="spacingXXXS">1.0dp</item>
+        <item name="switchStyle">@style/BabyCenter.Widget.Switch</item>
+        <item name="tabStyle">@style/BabyCenter.Widget.TabLayout</item>
+        <item name="tabsActionBarLayoutStyle">@style/Widget.MaterialComponents.TabLayout.Colored</item>
+        <item name="tabsStandaloneStyle">?tabStyle</item>
+        <item name="textAppearanceArticleBody1">@style/BabyCenter.TextAppearance.BodyText.Article</item>
+        <item name="textAppearanceBody1">@style/BabyCenter.TextAppearance.BodyText</item>
+        <item name="textAppearanceBody2">?textAppearanceBodyAlt</item>
+        <item name="textAppearanceBodyAlt">@style/BabyCenter.TextAppearance.BodyTextAlt</item>
+        <item name="textAppearanceBodyAltBold">@style/BabyCenter.TextAppearance.BodyTextAlt.Bold</item>
+        <item name="textAppearanceButton">@style/BabyCenter.TextAppearance.Button</item>
+        <item name="textAppearanceCaption">?textAppearanceFinePrint</item>
+        <item name="textAppearanceFinePrint">@style/BabyCenter.TextAppearance.FinePrint</item>
+        <item name="textAppearanceHeadline1">@style/BabyCenter.TextAppearance.Heading1</item>
+        <item name="textAppearanceHeadline2">@style/BabyCenter.TextAppearance.Heading2</item>
+        <item name="textAppearanceHeadline3">@style/BabyCenter.TextAppearance.Heading3</item>
+        <item name="textAppearanceHeadline4">@style/BabyCenter.TextAppearance.Heading4</item>
+        <item name="textAppearanceHeadline5">@style/BabyCenter.TextAppearance.Heading5</item>
+        <item name="textAppearanceHeadline6">@style/BabyCenter.TextAppearance.Heading6</item>
+        <item name="textAppearanceLargePopupMenu">?textAppearanceBody1</item>
+        <item name="textAppearanceQuote">@style/BabyCenter.TextAppearance.Quote</item>
+        <item name="textAppearanceSmallPopupMenu">?textAppearanceBody1</item>
+        <item name="textAppearanceSubtitle1">?textAppearanceSubtle</item>
+        <item name="textAppearanceSubtle">@style/BabyCenter.TextAppearance.Subtle</item>
+        <item name="textInputFilledDropdownStyle">@style/BabyCenter.Widget.TextInput.Filled.ExposedDropdownMenu</item>
+        <item name="textInputFilledStyle">@style/BabyCenter.Widget.TextInput.Filled</item>
+        <item name="textInputOutlinedDropdownStyle">@style/BabyCenter.Widget.TextInput.Outlined.ExposedDropdownMenu</item>
+        <item name="textInputOutlinedStyle">@style/BabyCenter.Widget.TextInput.Outlined</item>
+        <item name="textInputStyle">?textInputFilledStyle</item>
+        <item name="toolbarStyle">@style/BabyCenter.Widget.Toolbar</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="BabyCenter.Theme.BottomSheetDialog" parent="@style/BabyCenter.Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.MaterialComponents.BottomSheetDialog</item>
+    </style>
+    <style name="BabyCenter.Theme.BottomSheetDialog.BabySizeImageThemeSelector" parent="@style/BabyCenter.Theme.BottomSheetDialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="bottomSheetStyle">@style/BabyCenter.ModalBottomSheetStyle.StageDetails</item>
+    </style>
+    <style name="BabyCenter.Theme.BottomSheetDialog.Community" parent="@style/BabyCenter.Theme.BottomSheetDialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="bottomSheetStyle">@style/BabyCenter.ModalBottomSheetStyle.Community</item>
+    </style>
+    <style name="BabyCenter.Theme.BottomSheetDialog.CommunityTooltip" parent="@style/BabyCenter.Theme.BottomSheetDialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="bottomSheetStyle">@style/BabyCenter.ModalBottomSheetStyle.CommunityTooltip</item>
+    </style>
+    <style name="BabyCenter.Theme.ChecklistDialog" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="BabyCenter.Theme.Snackbar" parent="@style/BabyCenter.Theme" />
+    <style name="BabyCenter.Theme.Snackbar.Dismissible" parent="@style/BabyCenter.Theme.Snackbar">
+        <item name="snackbarButtonStyle">@style/BabyCenter.Widget.Snackbar.Button.Dismissible</item>
+        <item name="snackbarCloseButtonStyle">@style/BabyCenter.Widget.Snackbar.CloseButton.Dismissible</item>
+        <item name="snackbarStyle">@style/BabyCenter.Widget.Snackbar.Dismissible</item>
+        <item name="snackbarTextViewStyle">@style/BabyCenter.Widget.Snackbar.TextView.Dismissible</item>
+    </style>
+    <style name="BabyCenter.Theme.Snackbar.Error" parent="@style/BabyCenter.Theme.Snackbar">
+        <item name="snackbarButtonStyle">@style/BabyCenter.Widget.Snackbar.Button.Error</item>
+        <item name="snackbarStyle">@style/BabyCenter.Widget.Snackbar.Error</item>
+        <item name="snackbarTextViewStyle">@style/BabyCenter.Widget.Snackbar.TextView.Error</item>
+    </style>
+    <style name="BabyCenter.Theme.Snackbar.Info" parent="@style/BabyCenter.Theme.Snackbar">
+        <item name="snackbarButtonStyle">@style/BabyCenter.Widget.Snackbar.Button.Info</item>
+        <item name="snackbarStyle">@style/BabyCenter.Widget.Snackbar.Info</item>
+        <item name="snackbarTextViewStyle">@style/BabyCenter.Widget.Snackbar.TextView.Info</item>
+    </style>
+    <style name="BabyCenter.Theme.Snackbar.Success" parent="@style/BabyCenter.Theme.Snackbar">
+        <item name="snackbarButtonStyle">@style/BabyCenter.Widget.Snackbar.Button.Success</item>
+        <item name="snackbarStyle">@style/BabyCenter.Widget.Snackbar.Success</item>
+        <item name="snackbarTextViewStyle">@style/BabyCenter.Widget.Snackbar.TextView.Success</item>
+    </style>
+    <style name="BabyCenter.Theme.Snackbar.Warning" parent="@style/BabyCenter.Theme.Snackbar">
+        <item name="snackbarButtonStyle">@style/BabyCenter.Widget.Snackbar.Button.Warning</item>
+        <item name="snackbarStyle">@style/BabyCenter.Widget.Snackbar.Warning</item>
+        <item name="snackbarTextViewStyle">@style/BabyCenter.Widget.Snackbar.TextView.Warning</item>
+    </style>
+    <style name="BabyCenter.Theme.SplashScreen" parent="@style/Theme.SplashScreen.IconBackground">
+        <item name="postSplashScreenTheme">@style/BabyCenter2.Theme.NoActionBar</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/bc_logo_splash_screen</item>
+        <item name="windowSplashScreenAnimationDuration">3000</item>
+        <item name="windowSplashScreenBackground">@color/colorBackgroundSplashScreen</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay" parent="@style/BabyCenter" />
+    <style name="BabyCenter.ThemeOverlay.BottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.MaterialComponents.BottomSheetDialog</item>
+        <item name="colorOnSurface">@color/colorOnBackground</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSurface">@color/colorBackground</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.BottomSheetDialog.DailySymptomCheckInReminder" parent="@style/BabyCenter.ThemeOverlay.BottomSheetDialog.RoundedCorners">
+        <item name="android:colorBackground">@color/colorDailySymptomCheckInReminderBackground</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.BottomSheetDialog.FreeformEntryFalseDoor" parent="@style/BabyCenter.ThemeOverlay.BottomSheetDialog.RoundedCorners">
+        <item name="bottomSheetStyle">@style/BabyCenter.ModalBottomSheetStyle.FreeformEntryFalseDoor</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="materialButtonStyle">@style/BabyCenter2.Widget.Button.Primary</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.BottomSheetDialog.Milestones" parent="@style/BabyCenter.ThemeOverlay.BottomSheetDialog.RoundedCorners">
+        <item name="android:colorBackground">@color/navy1100</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.BottomSheetDialog.PhotoEditor" parent="@style/BabyCenter.ThemeOverlay.BottomSheetDialog.Transparent">
+        <item name="android:backgroundDimAmount">0.75</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.BottomSheetDialog.RoundedCorners" parent="@style/BabyCenter.ThemeOverlay.BottomSheetDialog">
+        <item name="android:listDivider">@color/colorDivider</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="bottomSheetStyle">@style/BabyCenter.ModalBottomSheetStyle.RoundedCorners</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.BottomSheetDialog.Symptoms" parent="@style/BabyCenter.ThemeOverlay.BottomSheetDialog.RoundedCorners">
+        <item name="bottomSheetStyle">@style/BabyCenter.ModalBottomSheetStyle.Symptoms</item>
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.BottomSheetDialog.Transparent" parent="@style/BabyCenter.ThemeOverlay.BottomSheetDialog">
+        <item name="android:backgroundDimAmount">0.9</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="bottomSheetStyle">@style/BabyCenter.ModalBottomSheetStyle.Transparent</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.BottomSheetDialog.WithTextInput" parent="@style/BabyCenter.ThemeOverlay.BottomSheetDialog.RoundedCorners">
+        <item name="android:colorBackground">@color/colorBackgroundPrimary</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.ExposedDropdownMenu.FilledBox" parent="@style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.FilledBox">
+        <item name="autoCompleteTextViewStyle">@style/BabyCenter.Widget.AutoCompleteTextView.FilledBox</item>
+        <item name="colorError">@color/textFieldError</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.ExposedDropdownMenu.OutlinedBox" parent="@style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.OutlinedBox">
+        <item name="autoCompleteTextViewStyle">@style/BabyCenter.Widget.AutoCompleteTextView.OutlinedBox</item>
+        <item name="colorError">@color/textFieldError</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.MaterialAlertDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="alertDialogStyle">@style/BabyCenter.Widget.AlertDialogStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/BabyCenter.Widget.Button.Dialog.Negative</item>
+        <item name="buttonBarNeutralButtonStyle">@style/BabyCenter.Widget.Button.Dialog.Neutral</item>
+        <item name="buttonBarPositiveButtonStyle">@style/BabyCenter.Widget.Button.Dialog.Positive</item>
+        <item name="colorOnSurface">@color/colorOnBackground</item>
+        <item name="colorPrimary">@color/colorPrimaryDialog</item>
+        <item name="colorSurface">@color/colorBackground</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/BabyCenter.Widget.Dialog.BodyTextStyle</item>
+        <item name="materialAlertDialogTitleIconStyle">@style/BabyCenter.Widget.Dialog.IconStyle</item>
+        <item name="materialAlertDialogTitlePanelStyle">@style/BabyCenter.Widget.Dialog.TitlePanelStyle</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/BabyCenter.Widget.Dialog.TitleTextStyle</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.MaterialDatePicker" parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="buttonBarNegativeButtonStyle">@style/BabyCenter.Widget.Button.Dialog.Negative</item>
+        <item name="buttonBarPositiveButtonStyle">@style/BabyCenter.Widget.Button.Dialog.Positive</item>
+        <item name="colorOnPrimary">@color/buttonPrimaryForeground</item>
+        <item name="colorOnSurface">@color/colorOnBackground</item>
+        <item name="colorPrimary">@color/colorPrimaryDialog</item>
+        <item name="colorSurface">@color/colorBackground</item>
+        <item name="materialCalendarHeaderLayout">@style/BabyCenter.Widget.DatePickerDialog.HeaderLayout</item>
+        <item name="materialCalendarHeaderSelection">@style/BabyCenter.Widget.DatePickerDialog.HeaderSelection</item>
+        <item name="materialCalendarHeaderTitle">@style/BabyCenter.Widget.DatePickerDialog.HeaderTitle</item>
+        <item name="materialCalendarHeaderToggleButton">@style/BabyCenter.Widget.DatePickerDialog.HeaderToggleButton</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.MaterialTimePicker" parent="@style/ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="borderlessButtonStyle">@style/BabyCenter.Widget.Button.Dialog.Borderless</item>
+        <item name="colorOnPrimary">@color/buttonPrimaryForeground</item>
+        <item name="colorOnSurface">@color/colorOnBackground</item>
+        <item name="colorPrimary">@color/colorPrimaryDialog</item>
+        <item name="colorSurface">@color/colorBackground</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.Snackbar" parent="@style/BabyCenter.ThemeOverlay">
+        <item name="colorSurface">@color/colorBackground</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.Snackbar.Dismissible" parent="@style/BabyCenter.ThemeOverlay.Snackbar">
+        <item name="colorOnSurface">@color/snackBarDismissibleBackground</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.Snackbar.Error" parent="@style/BabyCenter.ThemeOverlay.Snackbar">
+        <item name="colorOnSurface">@color/snackBarErrorBackground</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.Snackbar.Info" parent="@style/BabyCenter.ThemeOverlay.Snackbar">
+        <item name="colorOnSurface">@color/snackBarInfoBackground</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.Snackbar.Success" parent="@style/BabyCenter.ThemeOverlay.Snackbar">
+        <item name="colorOnSurface">@color/snackBarSuccessBackground</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.Snackbar.Warning" parent="@style/BabyCenter.ThemeOverlay.Snackbar">
+        <item name="colorOnSurface">@color/snackBarWarningBackground</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.TextInputEditText.FilledBox" parent="@style/ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="colorControlActivated">@color/colorOnBackground</item>
+        <item name="colorError">@color/textFieldError</item>
+        <item name="editTextStyle">@style/BabyCenter.Widget.EditText.FilledBox</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.TextInputEditText.OutlinedBox" parent="@style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="colorControlActivated">@color/colorOnBackground</item>
+        <item name="colorError">@color/textFieldError</item>
+        <item name="editTextStyle">@style/BabyCenter.Widget.EditText.OutlinedBox</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.Toolbar.Dark" parent="@style/ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="actionMenuTextColor">@color/toolbarForegroundDark</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="colorControlNormal">@color/toolbarForegroundDark</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.Toolbar.Light" parent="@style/ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="actionMenuTextColor">@color/toolbarForegroundLight</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="colorControlNormal">@color/toolbarForegroundLight</item>
+    </style>
+    <style name="BabyCenter.ThemeOverlay.Toolbar.Light2" parent="@style/ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="actionMenuTextColor">@color/headerHomeHeaderTextAndIconColor</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="colorControlNormal">@color/headerHomeHeaderTextAndIconColor</item>
+        <item name="colorOnPrimary">@color/headerHomeHeaderTextAndIconColor</item>
+    </style>
+    <style name="BabyCenter.Widget" parent="@style/BabyCenter" />
+    <style name="BabyCenter.Widget.ActionBar" parent="@style/Widget.MaterialComponents.ActionBar.Primary">
+        <item name="popupTheme">@style/BabyCenter.Theme</item>
+        <item name="titleTextStyle">?textAppearanceHeadline5</item>
+    </style>
+    <style name="BabyCenter.Widget.ActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="titleTextStyle">?textAppearanceHeadline5</item>
+    </style>
+    <style name="BabyCenter.Widget.AlertDialogStyle" parent="@style/MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">@style/BabyCenter.ShapeAppearance.MediumComponent</item>
+    </style>
+    <style name="BabyCenter.Widget.AutoCompleteTextView.FilledBox" parent="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textColor">@color/text_on_background</item>
+    </style>
+    <style name="BabyCenter.Widget.AutoCompleteTextView.OutlinedBox" parent="@style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textColor">@color/text_on_background</item>
+    </style>
+    <style name="BabyCenter.Widget.BottomNavigationView" parent="@style/Widget.MaterialComponents.BottomNavigationView">
+        <item name="backgroundTint">@color/bottomNavigationViewBackground</item>
+        <item name="itemIconTint">@color/tab_layout_item_foreground</item>
+        <item name="itemRippleColor">@color/tab_layout_item_background</item>
+        <item name="itemTextColor">@color/tab_layout_item_foreground</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+    <style name="BabyCenter.Widget.Button" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:minHeight">62.0dp</item>
+        <item name="android:paddingStart">?spacing</item>
+        <item name="android:paddingEnd">?spacing</item>
+        <item name="cornerRadius">3.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Alert" parent="@style/BabyCenter.Widget.Button">
+        <item name="android:textColor">@color/button_alert_foreground</item>
+        <item name="backgroundTint">@color/button_alert_background</item>
+        <item name="drawableTint">@color/button_alert_foreground</item>
+        <item name="iconTint">@color/button_alert_foreground</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Borderless" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/button_outlined_foreground</item>
+        <item name="android:minHeight">62.0dp</item>
+        <item name="drawableTint">@color/button_outlined_foreground</item>
+        <item name="iconTint">@color/button_outlined_foreground</item>
+        <item name="rippleColor">@color/button_outlined_ripple</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Dialog.Borderless" parent="@style/BabyCenter.Widget.Button.Outlined.Large">
+        <item name="android:layout_height">52.0dp</item>
+        <item name="android:minHeight">52.0dp</item>
+        <item name="android:insetLeft">4.0dp</item>
+        <item name="android:insetRight">4.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Dialog.Negative" parent="@style/BabyCenter.Widget.Button.Outlined.Large">
+        <item name="android:minHeight">52.0dp</item>
+        <item name="android:insetLeft">4.0dp</item>
+        <item name="android:insetRight">4.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Dialog.Neutral" parent="@style/BabyCenter.Widget.Button.Outlined.Large">
+        <item name="android:minHeight">52.0dp</item>
+        <item name="android:insetLeft">4.0dp</item>
+        <item name="android:insetRight">4.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Dialog.Positive" parent="@style/BabyCenter.Widget.Button.Primary">
+        <item name="android:minHeight">52.0dp</item>
+        <item name="android:insetLeft">4.0dp</item>
+        <item name="android:insetRight">0.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Outlined" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/BabyCenter.TextAppearance.Button.Outlined</item>
+        <item name="android:textColor">@color/button_outlined_foreground</item>
+        <item name="android:paddingTop">2.0dp</item>
+        <item name="android:paddingBottom">2.0dp</item>
+        <item name="backgroundTint">@color/button_outlined_background</item>
+        <item name="cornerRadius">3.0dp</item>
+        <item name="drawableTint">@color/button_outlined_foreground</item>
+        <item name="iconTint">@color/button_outlined_foreground</item>
+        <item name="rippleColor">@color/button_outlined_ripple</item>
+        <item name="strokeColor">@color/button_outlined_stroke</item>
+        <item name="strokeWidth">1.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Outlined.Large" parent="@style/BabyCenter.Widget.Button.Outlined">
+        <item name="android:minHeight">62.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Outlined.Medium" parent="@style/BabyCenter.Widget.Button.Outlined">
+        <item name="android:minHeight">47.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Outlined.Small" parent="@style/BabyCenter.Widget.Button.Outlined">
+        <item name="android:textAppearance">?textAppearanceBodyAltBold</item>
+        <item name="android:minHeight">37.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Primary" parent="@style/BabyCenter.Widget.Button">
+        <item name="android:textColor">@color/button_primary_foreground</item>
+        <item name="backgroundTint">@color/button_primary_background</item>
+        <item name="drawableTint">@color/button_primary_foreground</item>
+        <item name="iconTint">@color/button_primary_foreground</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Primary.Rectangular" parent="@style/BabyCenter.Widget.Button.Primary">
+        <item name="cornerRadius">0.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Button.Promo" parent="@style/BabyCenter.Widget.Button">
+        <item name="android:textColor">@color/button_promo_foreground</item>
+        <item name="backgroundTint">@color/button_promo_background</item>
+        <item name="drawableTint">@color/button_promo_foreground</item>
+        <item name="iconTint">@color/button_promo_foreground</item>
+    </style>
+    <style name="BabyCenter.Widget.CardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/colorBackgroundCard</item>
+        <item name="cardElevation">@dimen/babycenter.cardView.elevation</item>
+        <item name="rippleColor">?colorControlHighlight</item>
+        <item name="shapeAppearance">@style/BabyCenter.ShapeAppearance.CardView</item>
+    </style>
+    <style name="BabyCenter.Widget.CardView.Outlined" parent="@style/BabyCenter.Widget.CardView">
+        <item name="cardElevation">0.0dp</item>
+        <item name="strokeColor">@color/colorDivider</item>
+        <item name="strokeWidth">1.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Checkbox" parent="@style/Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/text_on_background</item>
+        <item name="buttonTint">@color/compound_button_color</item>
+    </style>
+    <style name="BabyCenter.Widget.Chip.Choice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="android:minHeight">30.0dp</item>
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="chipStrokeColor">@color/chip_stroke_color</item>
+        <item name="chipStrokeWidth">1.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Chip.KickCounter" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textColor">@color/kick_counter_module_chip_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">2</item>
+        <item name="android:insetTop">0.0dp</item>
+        <item name="android:insetBottom">0.0dp</item>
+        <item name="android:checkable">true</item>
+        <item name="android:paddingHorizontal">?spacingXXS</item>
+        <item name="android:paddingVertical">?spacingXXS</item>
+        <item name="backgroundTint">@color/kick_counter_module_chip_background_color</item>
+        <item name="cornerRadius">12.0dp</item>
+        <item name="strokeColor">@color/kick_counter_module_chip_border_color</item>
+    </style>
+    <style name="BabyCenter.Widget.DatePickerDialog.HeaderLayout" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderLayout">
+        <item name="android:background">@color/colorBackground</item>
+    </style>
+    <style name="BabyCenter.Widget.DatePickerDialog.HeaderSelection" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection">
+        <item name="android:textColor">@color/colorOnBackground</item>
+    </style>
+    <style name="BabyCenter.Widget.DatePickerDialog.HeaderTitle" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderTitle">
+        <item name="android:textColor">@color/colorOnBackground</item>
+    </style>
+    <style name="BabyCenter.Widget.DatePickerDialog.HeaderToggleButton" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton">
+        <item name="android:tint">@color/colorOnBackground</item>
+    </style>
+    <style name="BabyCenter.Widget.Dialog.BodyTextStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="BabyCenter.Widget.Dialog.IconStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Icon">
+        <item name="tint">?colorOnBackground</item>
+    </style>
+    <style name="BabyCenter.Widget.Dialog.TitlePanelStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Panel" />
+    <style name="BabyCenter.Widget.Dialog.TitleTextStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textAppearance">?textAppearanceHeadline2</item>
+    </style>
+    <style name="BabyCenter.Widget.EditText.FilledBox" parent="@style/Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textColor">@color/text_on_background</item>
+    </style>
+    <style name="BabyCenter.Widget.EditText.OutlinedBox" parent="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textColor">@color/text_on_background</item>
+    </style>
+    <style name="BabyCenter.Widget.ExtendedFab" parent="@style/Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:textColor">@color/button_fab_foreground</item>
+        <item name="backgroundTint">@color/button_fab_background</item>
+        <item name="iconTint">@color/button_fab_foreground</item>
+    </style>
+    <style name="BabyCenter.Widget.Fab" parent="@style/Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/button_fab_background</item>
+        <item name="tint">@color/button_fab_foreground</item>
+    </style>
+    <style name="BabyCenter.Widget.MoreFragment" parent="@style/BabyCenter.Widget" />
+    <style name="BabyCenter.Widget.MoreFragment.MenuItem" parent="@style/BabyCenter.Widget.MoreFragment">
+        <item name="android:textAppearance">?textAppearanceBody2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">?spacingS</item>
+        <item name="android:paddingRight">?spacingS</item>
+        <item name="android:paddingBottom">?spacingS</item>
+        <item name="android:minHeight">60.0dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:drawablePadding">?spacing</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:paddingStart">?spacing</item>
+        <item name="drawableEndCompat">@drawable/ic_more_fragment_baseline_chevron_right_24</item>
+    </style>
+    <style name="BabyCenter.Widget.MoreFragment.Settings.ToggleButton" parent="@style/BabyCenter2.Widget.Button.Secondary.Medium">
+        <item name="android:textColor">@color/fg_settings_dark_mode_toggle</item>
+        <item name="backgroundTint">@color/bg_settings_dark_mode_toggle</item>
+        <item name="cornerRadius">3.0dp</item>
+    </style>
+    <style name="BabyCenter.Widget.Radiobutton" parent="@style/Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/text_on_background</item>
+        <item name="buttonTint">@color/compound_button_color</item>
+    </style>
+    <style name="BabyCenter.Widget.Slider" parent="@style/Widget.MaterialComponents.Slider">
+        <item name="labelStyle">@style/BabyCenter.Widget.Slider.Tooltip</item>
+    </style>
+    <style name="BabyCenter.Widget.Slider.Tooltip" parent="@style/Widget.MaterialComponents.Tooltip">
+        <item name="android:textAppearance">@style/BabyCenter.TextAppearance.Slider.Tooltip</item>
+        <item name="backgroundTint">?colorOnBackground</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar" parent="@style/Widget.MaterialComponents.Snackbar">
+        <item name="actionTextColorAlpha">1.0</item>
+        <item name="backgroundOverlayColorAlpha">1.0</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.Button" parent="@style/BabyCenter.Widget.Button.Borderless">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.Button.Dismissible" parent="@style/BabyCenter.Widget.Snackbar.Button">
+        <item name="android:textAppearance">?textAppearanceBody2</item>
+        <item name="android:textColor">@color/snackBarDismissibleActionColor</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.Button.Error" parent="@style/BabyCenter.Widget.Snackbar.Button">
+        <item name="android:textColor">@color/snackBarErrorActionColor</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.Button.Info" parent="@style/BabyCenter.Widget.Snackbar.Button">
+        <item name="android:textColor">@color/snackBarInfoActionColor</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.Button.Success" parent="@style/BabyCenter.Widget.Snackbar.Button">
+        <item name="android:textColor">@color/snackBarSuccessActionColor</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.Button.Warning" parent="@style/BabyCenter.Widget.Snackbar.Button">
+        <item name="android:textColor">@color/snackBarWarningActionColor</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.CloseButton.Dismissible" parent="@style/Widget.MaterialComponents.Button.TextButton.Icon.Close.Snackbar">
+        <item name="iconTint">@color/snackBarDismissibleActionColor</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.Dismissible" parent="@style/BabyCenter.Widget.Snackbar">
+        <item name="materialThemeOverlay">@style/BabyCenter.ThemeOverlay.Snackbar.Dismissible</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.Error" parent="@style/BabyCenter.Widget.Snackbar">
+        <item name="materialThemeOverlay">@style/BabyCenter.ThemeOverlay.Snackbar.Error</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.Info" parent="@style/BabyCenter.Widget.Snackbar">
+        <item name="materialThemeOverlay">@style/BabyCenter.ThemeOverlay.Snackbar.Info</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.Success" parent="@style/BabyCenter.Widget.Snackbar">
+        <item name="materialThemeOverlay">@style/BabyCenter.ThemeOverlay.Snackbar.Success</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.TextView" parent="@style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textAppearance">@style/BabyCenter.TextAppearance.BodyTextAlt.Bold</item>
+        <item name="android:maxLines">3</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.TextView.Dismissible" parent="@style/BabyCenter.Widget.Snackbar.TextView">
+        <item name="android:textAppearance">?textAppearanceBody2</item>
+        <item name="android:textColor">@color/snackBarDismissibleTextColor</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.TextView.Error" parent="@style/BabyCenter.Widget.Snackbar.TextView">
+        <item name="android:textColor">@color/snackBarErrorTextColor</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.TextView.Info" parent="@style/BabyCenter.Widget.Snackbar.TextView">
+        <item name="android:textColor">@color/snackBarInfoTextColor</item>
+        <item name="android:maxLines">3</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.TextView.Success" parent="@style/BabyCenter.Widget.Snackbar.TextView">
+        <item name="android:textColor">@color/snackBarSuccessTextColor</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.TextView.Warning" parent="@style/BabyCenter.Widget.Snackbar.TextView">
+        <item name="android:textColor">@color/snackBarWarningTextColor</item>
+    </style>
+    <style name="BabyCenter.Widget.Snackbar.Warning" parent="@style/BabyCenter.Widget.Snackbar">
+        <item name="materialThemeOverlay">@style/BabyCenter.ThemeOverlay.Snackbar.Warning</item>
+    </style>
+    <style name="BabyCenter.Widget.Switch" parent="@style/Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:textColor">@color/text_on_background</item>
+        <item name="thumbTint">@color/switch_thumb_color</item>
+        <item name="trackTint">@color/switch_track_color</item>
+    </style>
+    <style name="BabyCenter.Widget.TabLayout" parent="@style/Widget.MaterialComponents.TabLayout">
+        <item name="tabIconTint">@color/tab_layout_item_foreground</item>
+        <item name="tabRippleColor">@color/tab_layout_item_background</item>
+        <item name="tabTextAppearance">@style/BabyCenter.TextAppearance.Button.Tab</item>
+        <item name="tabTextColor">@color/tab_layout_item_foreground</item>
+    </style>
+    <style name="BabyCenter.Widget.TextInput.Filled" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/text_field_box_background_color</item>
+        <item name="boxBackgroundErrorColor">@color/text_field_box_error_background_color</item>
+        <item name="boxCollapsedPaddingTop">4.0dp</item>
+        <item name="boxStrokeColor">@color/text_field_stroke_color</item>
+        <item name="counterOverflowTextAppearance">?textAppearanceHeadline6</item>
+        <item name="counterTextAppearance">?textAppearanceHeadline6</item>
+        <item name="counterTextColor">?colorOnBackgroundSecondary</item>
+        <item name="endIconTint">@color/text_field_icon_tint</item>
+        <item name="errorTextAppearance">?textAppearanceHeadline6</item>
+        <item name="helperTextTextAppearance">?textAppearanceSubtitle1</item>
+        <item name="helperTextTextColor">?colorOnBackgroundSecondary</item>
+        <item name="hintTextAppearance">?textAppearanceCaption</item>
+        <item name="hintTextColor">@color/textFieldHintText</item>
+        <item name="materialThemeOverlay">@style/BabyCenter.ThemeOverlay.TextInputEditText.FilledBox</item>
+        <item name="placeholderTextColor">?colorOnBackgroundSecondary</item>
+        <item name="startIconTint">@color/text_field_icon_tint</item>
+    </style>
+    <style name="BabyCenter.Widget.TextInput.Filled.ExposedDropdownMenu" parent="@style/BabyCenter.Widget.TextInput.Filled">
+        <item name="endIconMode">dropdown_menu</item>
+        <item name="materialThemeOverlay">@style/BabyCenter.ThemeOverlay.ExposedDropdownMenu.FilledBox</item>
+    </style>
+    <style name="BabyCenter.Widget.TextInput.Outlined" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_field_stroke_color</item>
+        <item name="boxStrokeErrorColor">@color/text_field_outlined_error_background_color</item>
+        <item name="counterOverflowTextAppearance">?textAppearanceHeadline6</item>
+        <item name="counterTextAppearance">?textAppearanceHeadline6</item>
+        <item name="counterTextColor">?colorOnBackgroundSecondary</item>
+        <item name="endIconTint">@color/text_field_icon_tint</item>
+        <item name="errorTextAppearance">?textAppearanceHeadline6</item>
+        <item name="helperTextTextAppearance">?textAppearanceSubtitle1</item>
+        <item name="helperTextTextColor">?colorOnBackgroundSecondary</item>
+        <item name="hintTextAppearance">?textAppearanceCaption</item>
+        <item name="hintTextColor">@color/textFieldHintText</item>
+        <item name="materialThemeOverlay">@style/BabyCenter.ThemeOverlay.TextInputEditText.OutlinedBox</item>
+        <item name="placeholderTextColor">?colorOnBackgroundSecondary</item>
+        <item name="startIconTint">@color/text_field_icon_tint</item>
+    </style>
+    <style name="BabyCenter.Widget.TextInput.Outlined.ExposedDropdownMenu" parent="@style/BabyCenter.Widget.TextInput.Outlined">
+        <item name="endIconMode">dropdown_menu</item>
+        <item name="materialThemeOverlay">@style/BabyCenter.ThemeOverlay.ExposedDropdownMenu.OutlinedBox</item>
+    </style>
+    <style name="BabyCenter.Widget.Toolbar" parent="@style/Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextAppearance">?textAppearanceHeadline5</item>
+    </style>
+    <style name="BabyCenter.Widget.Toolbar.Dark" parent="@style/BabyCenter.Widget.Toolbar">
+        <item name="android:theme">@style/BabyCenter.ThemeOverlay.Toolbar.Dark</item>
+        <item name="android:background">@color/toolbarBackgroundDark</item>
+    </style>
+    <style name="BabyCenter.Widget.Toolbar.Light" parent="@style/BabyCenter.Widget.Toolbar">
+        <item name="android:theme">@style/BabyCenter.ThemeOverlay.Toolbar.Light</item>
+        <item name="android:background">@color/toolbarBackgroundLight</item>
+    </style>
+    <style name="BabyCenter2" />
+    <style name="BabyCenter2.ShapeAppearance" parent="@style/BabyCenter2" />
+    <style name="BabyCenter2.ShapeAppearance.BirthPreferences.RoundedLeft" parent="@style/ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">26.0dp</item>
+        <item name="cornerSizeBottomRight">0.0dp</item>
+        <item name="cornerSizeTopLeft">26.0dp</item>
+        <item name="cornerSizeTopRight">0.0dp</item>
+    </style>
+    <style name="BabyCenter2.ShapeAppearance.BirthPreferences.RoundedRight" parent="@style/ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">0.0dp</item>
+        <item name="cornerSizeBottomRight">26.0dp</item>
+        <item name="cornerSizeTopLeft">0.0dp</item>
+        <item name="cornerSizeTopRight">26.0dp</item>
+    </style>
+    <style name="BabyCenter2.ShapeAppearance.Button" parent="@style/BabyCenter2.ShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24.0dp</item>
+    </style>
+    <style name="BabyCenter2.ShapeAppearance.TextInput.Metric" parent="">
+        <item name="cornerSizeBottomLeft">0.0dp</item>
+        <item name="cornerSizeBottomRight">0.0dp</item>
+        <item name="cornerSizeTopLeft">0.0dp</item>
+        <item name="cornerSizeTopRight">4.0dp</item>
+    </style>
+    <style name="BabyCenter2.ShapeAppearance.TextInput.MetricValue" parent="">
+        <item name="cornerSizeBottomLeft">0.0dp</item>
+        <item name="cornerSizeBottomRight">0.0dp</item>
+        <item name="cornerSizeTopLeft">4.0dp</item>
+        <item name="cornerSizeTopRight">0.0dp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance" parent="@style/TextAppearance.AppCompat" />
+    <style name="BabyCenter2.TextAppearance.Body1" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:fontFamily">@font/poppins_400_regular</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">@font/poppins_400_regular</item>
+        <item name="lineHeight">24.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Body1.Article" parent="@style/BabyCenter2.TextAppearance.Body1">
+        <item name="android:fontFamily">@font/lora_regular</item>
+        <item name="fontFamily">@font/lora_regular</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Body2" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:fontFamily">@font/poppins_400_regular</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">@font/poppins_400_regular</item>
+        <item name="lineHeight">22.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Button" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:fontFamily">@font/poppins_500_medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">@font/poppins_500_medium</item>
+        <item name="lineHeight">26.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Caption" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?colorOnBackgroundSecondary</item>
+        <item name="android:fontFamily">@font/poppins_400_regular</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">@font/poppins_400_regular</item>
+        <item name="lineHeight">18.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Heading1" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">28.0sp</item>
+        <item name="android:fontFamily">@font/poppins_500_medium</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/poppins_500_medium</item>
+        <item name="lineHeight">36.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Heading2" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:fontFamily">@font/poppins_500_medium</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/poppins_500_medium</item>
+        <item name="lineHeight">28.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Heading3" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:fontFamily">@font/poppins_500_medium</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/poppins_500_medium</item>
+        <item name="lineHeight">28.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Heading4" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:fontFamily">@font/poppins_500_medium</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/poppins_500_medium</item>
+        <item name="lineHeight">26.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Heading5" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:fontFamily">@font/poppins_500_medium</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/poppins_500_medium</item>
+        <item name="lineHeight">24.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Heading6" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:fontFamily">@font/poppins_500_medium</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/poppins_500_medium</item>
+        <item name="lineHeight">22.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Subtitle1" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?colorOnBackgroundSecondary</item>
+        <item name="android:fontFamily">@font/poppins_400_regular</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">@font/poppins_400_regular</item>
+        <item name="lineHeight">22.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Tab" parent="@style/BabyCenter2.TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:fontFamily">@font/poppins_500_medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="fontFamily">@font/poppins_500_medium</item>
+        <item name="lineHeight">26.0sp</item>
+    </style>
+    <style name="BabyCenter2.TextAppearance.Tab.Selected" parent="@style/BabyCenter2.TextAppearance.Tab">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="BabyCenter2.Theme" parent="@style/BabyCenter.Theme">
+        <item name="android:textColorPrimary">@color/text_on_background_primary</item>
+        <item name="android:textColorLink">@color/colorLink</item>
+        <item name="borderlessButtonStyle">@style/BabyCenter2.Widget.Button.Borderless</item>
+        <item name="buttonOutlinedMediumStyle">@style/BabyCenter2.Widget.Button.Secondary.Medium</item>
+        <item name="buttonOutlinedSmallStyle">@style/BabyCenter2.Widget.Button.Secondary.Small</item>
+        <item name="buttonPrimarySmall">@style/BabyCenter2.Widget.Button.Primary.Small</item>
+        <item name="buttonPromoStyle">@style/BabyCenter2.Widget.Button.Promo</item>
+        <item name="buttonSecondary">@style/BabyCenter2.Widget.Button.Secondary</item>
+        <item name="checkboxStyle">@style/BabyCenter2.Widget.Checkbox</item>
+        <item name="extendedFloatingActionButtonSecondaryStyle">@style/BabyCenter2.Widget.ExtendedFab.Secondary</item>
+        <item name="extendedFloatingActionButtonStyle">@style/BabyCenter2.Widget.ExtendedFab</item>
+        <item name="floatingActionButtonStyle">@style/BabyCenter2.Widget.Fab</item>
+        <item name="listDividerLeaf">@color/colorDividerLeaf2</item>
+        <item name="loadingViewStyle">@style/BabyCenter2.Widget.LoadingView</item>
+        <item name="materialAlertDialogTheme">@style/BabyCenter2.ThemeOverlay.MaterialAlertDialog</item>
+        <item name="materialButtonOutlinedStyle">?buttonSecondary</item>
+        <item name="materialButtonStyle">@style/BabyCenter2.Widget.Button.Primary</item>
+        <item name="materialCalendarTheme">@style/BabyCenter2.ThemeOverlay.MaterialDatePicker</item>
+        <item name="materialTimePickerTheme">@style/BabyCenter2.ThemeOverlay.MaterialTimePicker</item>
+        <item name="radioButtonStyle">@style/BabyCenter2.Widget.Radiobutton</item>
+        <item name="switchStyle">@style/BabyCenter2.Widget.Switch</item>
+        <item name="tabStyle">@style/BabyCenter2.Widget.TabLayout</item>
+        <item name="tabsActionBarLayoutStyle">@style/BabyCenter2.Widget.TabLayout.ActionBar</item>
+        <item name="tabsStandaloneStyle">@style/BabyCenter2.Widget.TabLayout</item>
+        <item name="textAppearanceArticleBody1">@style/BabyCenter2.TextAppearance.Body1.Article</item>
+        <item name="textAppearanceBody1">@style/BabyCenter2.TextAppearance.Body1</item>
+        <item name="textAppearanceBody2">@style/BabyCenter2.TextAppearance.Body2</item>
+        <item name="textAppearanceButton">@style/BabyCenter2.TextAppearance.Button</item>
+        <item name="textAppearanceCaption">@style/BabyCenter2.TextAppearance.Caption</item>
+        <item name="textAppearanceHeadline1">@style/BabyCenter2.TextAppearance.Heading1</item>
+        <item name="textAppearanceHeadline2">@style/BabyCenter2.TextAppearance.Heading2</item>
+        <item name="textAppearanceHeadline3">@style/BabyCenter2.TextAppearance.Heading3</item>
+        <item name="textAppearanceHeadline4">@style/BabyCenter2.TextAppearance.Heading4</item>
+        <item name="textAppearanceHeadline5">@style/BabyCenter2.TextAppearance.Heading5</item>
+        <item name="textAppearanceHeadline6">@style/BabyCenter2.TextAppearance.Heading6</item>
+        <item name="textAppearanceLargePopupMenu">?textAppearanceBody1</item>
+        <item name="textAppearanceSmallPopupMenu">?textAppearanceBody1</item>
+        <item name="textAppearanceSubtitle1">@style/BabyCenter2.TextAppearance.Subtitle1</item>
+        <item name="textInputFilledDropdownStyle">@style/BabyCenter2.Widget.TextInput.Filled.ExposedDropdownMenu</item>
+        <item name="textInputFilledStyle">@style/BabyCenter2.Widget.TextInput.Filled</item>
+        <item name="textInputOutlinedDropdownStyle">@style/BabyCenter2.Widget.TextInput.Outlined.ExposedDropdownMenu</item>
+        <item name="textInputOutlinedStyle">@style/BabyCenter2.Widget.TextInput.Outlined</item>
+        <item name="textInputStyle">?textInputFilledStyle</item>
+    </style>
+    <style name="BabyCenter2.Theme.AppRater" parent="@style/BabyCenter2.Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="bottomSheetStyle">@style/BabyCenter.ModalBottomSheetStyle.AppRater</item>
+    </style>
+    <style name="BabyCenter2.Theme.BabyName.Landing" parent="@style/BabyCenter2.Theme.NoActionBar.LightToolbarHeader">
+        <item name="android:windowBackground">@color/babyNameShuffleBackgroundLanding</item>
+    </style>
+    <style name="BabyCenter2.Theme.BirthdayPreference" parent="@style/BabyCenter2.Theme.NoActionBar.LightToolbarHeader">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="BabyCenter2.Theme.BirthdayPreference.Landing" parent="@style/BabyCenter2.Theme.NoActionBar.LightToolbarHeader">
+        <item name="android:windowBackground">@color/birthPreferencesBackgroundWindow</item>
+    </style>
+    <style name="BabyCenter2.Theme.BottomNavigation.StageDetails" parent="@style/Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@drawable/bg_stage_details_bottom_nav</item>
+        <item name="android:elevation">4.0dp</item>
+        <item name="backgroundTint">@color/colorBackgroundStageDetailsBottomNav</item>
+        <item name="itemIconSize">@dimen/stage_details__bottom_nav__icon_size</item>
+        <item name="itemRippleColor">@color/tab_layout_item_background</item>
+        <item name="labelVisibilityMode">unlabeled</item>
+    </style>
+    <style name="BabyCenter2.Theme.BottomSheetDialog" parent="@style/BabyCenter2.Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.MaterialComponents.BottomSheetDialog</item>
+    </style>
+    <style name="BabyCenter2.Theme.BottomSheetDialog.DueDateCalculator" parent="@style/BabyCenter2.Theme.BottomSheetDialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="bottomSheetStyle">@style/BabyCenter.ModalBottomSheetStyle.DueDateCalculator</item>
+    </style>
+    <style name="BabyCenter2.Theme.ContractionTimer" parent="@style/BabyCenter2.Theme.NoActionBar.LightToolbarHeader">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="textAppearanceArticleBody1">@style/BabyCenter2.TextAppearance.Body1</item>
+    </style>
+    <style name="BabyCenter2.Theme.DeeplinkResolver" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="BabyCenter2.Theme.Dialog.AddressCapture" parent="@style/BabyCenter2.Theme">
+        <item name="android:windowBackground">@drawable/bg_card</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">90.0%</item>
+    </style>
+    <style name="BabyCenter2.Theme.DueDate" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="BabyCenter2.Theme.ExitActivity" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="BabyCenter2.Theme.LoyaltyLanding" parent="@style/BabyCenter2.Theme.NoActionBar.LightToolbarHeader">
+        <item name="android:windowBackground">@color/backgroundLoyaltyLanding</item>
+    </style>
+    <style name="BabyCenter2.Theme.LoyaltyPointHistory" parent="@style/BabyCenter2.Theme.NoActionBar.LightToolbarHeader">
+        <item name="android:windowBackground">@color/backgroundLoyaltyPointHistory</item>
+    </style>
+    <style name="BabyCenter2.Theme.MediaFiles" parent="@style/BabyCenter2.Theme.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+    <style name="BabyCenter2.Theme.MediaFiles.BumpieStreak" parent="@style/BabyCenter2.Theme.MediaFiles">
+        <item name="android:windowBackground">@color/colorBackgroundBumpieStreakCelebration</item>
+    </style>
+    <style name="BabyCenter2.Theme.MediaFilesTimelapse" parent="@style/BabyCenter2.Theme.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+    <style name="BabyCenter2.Theme.MyProfile" parent="@style/BabyCenter2.Theme.NoActionBar.LightToolbarHeader">
+        <item name="android:colorBackground">@color/colorBackgroundMyProfile</item>
+    </style>
+    <style name="BabyCenter2.Theme.NoActionBar" parent="@style/BabyCenter2.Theme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="BabyCenter2.Theme.NoActionBar.Fullscreen" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="BabyCenter2.Theme.NoActionBar.LightToolbar" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="colorPrimary">@color/toolbarBackgroundLight</item>
+        <item name="colorPrimaryDark">@color/toolbarBackgroundLight</item>
+        <item name="toolbarNavigationButtonStyle">@style/BabyCenter2.Widget.Toolbar.Light.Button.Navigation</item>
+        <item name="toolbarStyle">@style/BabyCenter2.Widget.Toolbar.Light</item>
+    </style>
+    <style name="BabyCenter2.Theme.NoActionBar.LightToolbarHeader" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/BabyCenter2.Widget.ActionButton.Overflow</item>
+        <item name="circularProgressIndicatorStyle">@style/BabyCenter2.Widget.CircularProgressIndicator.LightToolbarHeader</item>
+        <item name="colorPrimary">@color/toolbarBackgroundLight</item>
+        <item name="colorPrimaryDark">@color/toolbarBackgroundLight</item>
+        <item name="toolbarNavigationButtonStyle">@style/BabyCenter2.Widget.Toolbar.Light.Button.Navigation2</item>
+        <item name="toolbarStyle">@style/BabyCenter2.Widget.Toolbar.Light2</item>
+    </style>
+    <style name="BabyCenter2.Theme.PhotoEdit" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+    <style name="BabyCenter2.Theme.SignUp" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="BabyCenter2.Theme.SignUp.CommunityPromotion" parent="@style/BabyCenter2.Theme.SignUp">
+        <item name="android:windowLightStatusBar">@bool/is_light_mode</item>
+    </style>
+    <style name="BabyCenter2.Theme.SignUp.Consent" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="android:windowLightStatusBar">@bool/is_light_mode</item>
+    </style>
+    <style name="BabyCenter2.Theme.SignUp.LeadgenOffers" parent="@style/BabyCenter2.Theme.SignUp">
+        <item name="android:windowBackground">@color/leadgen_offers_background</item>
+    </style>
+    <style name="BabyCenter2.Theme.SignUp.LoyaltyOptIn" parent="@style/BabyCenter2.Theme.SignUp">
+        <item name="android:windowBackground">@color/backgroundLoyaltyOptIn</item>
+    </style>
+    <style name="BabyCenter2.Theme.SignUp.NotificationPromotion" parent="@style/BabyCenter2.Theme.SignUp">
+        <item name="android:windowBackground">@color/notificationPromptBackground</item>
+    </style>
+    <style name="BabyCenter2.Theme.SignUp.WidgetPromotion" parent="@style/BabyCenter2.Theme.SignUp">
+        <item name="android:windowBackground">@color/widgetPromotionBackground</item>
+    </style>
+    <style name="BabyCenter2.Theme.SignUp2" parent="@style/BabyCenter2.Theme.SignUp">
+        <item name="android:colorBackground">@color/colorBackgroundWelcomeHearts</item>
+        <item name="textInputFilledDropdownStyle">@style/BabyCenter2.Widget.TextInput.Filled.SignUp2.ExposedDropdownMenu</item>
+        <item name="textInputFilledStyle">@style/BabyCenter2.Widget.TextInput.Filled.SignUp2</item>
+    </style>
+    <style name="BabyCenter2.Theme.SignUp2.ValueExchange" parent="@style/BabyCenter2.Theme.SignUp">
+        <item name="android:colorBackground">@color/colorBackgroundWelcomeHearts</item>
+    </style>
+    <style name="BabyCenter2.Theme.StageDetails.InteractiveImage" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="BabyCenter2.Theme.Story" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="android:backgroundDimAmount">0.75</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="BabyCenter2.Theme.VideoPlayer" parent="@style/BabyCenter2.Theme.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+    <style name="BabyCenter2.Theme.Welcome" parent="@style/BabyCenter2.Theme.NoActionBar">
+        <item name="android:colorBackground">@color/backgroundWelcomeScreen</item>
+        <item name="colorPrimaryDark">@color/backgroundWelcomeScreen</item>
+    </style>
+    <style name="BabyCenter2.ThemeOverlay.ExposedDropdownMenu.FilledBox" parent="@style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.FilledBox">
+        <item name="autoCompleteTextViewStyle">@style/BabyCenter2.Widget.AutoCompleteTextView.FilledBox</item>
+        <item name="colorError">@color/textFieldError</item>
+    </style>
+    <style name="BabyCenter2.ThemeOverlay.ExposedDropdownMenu.OutlinedBox" parent="@style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.OutlinedBox">
+        <item name="autoCompleteTextViewStyle">@style/BabyCenter2.Widget.AutoCompleteTextView.OutlinedBox</item>
+        <item name="colorError">@color/textFieldError</item>
+    </style>
+    <style name="BabyCenter2.ThemeOverlay.MaterialAlertDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="alertDialogStyle">@style/BabyCenter2.Widget.AlertDialogStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/BabyCenter2.Widget.Button.Dialog.Negative</item>
+        <item name="buttonBarNeutralButtonStyle">@style/BabyCenter2.Widget.Button.Dialog.Neutral</item>
+        <item name="buttonBarPositiveButtonStyle">@style/BabyCenter2.Widget.Button.Dialog.Positive</item>
+        <item name="colorOnSurface">@color/colorOnBackground</item>
+        <item name="colorPrimary">@color/colorPrimaryDialog</item>
+        <item name="colorSurface">@color/colorBackground</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/BabyCenter2.Widget.Dialog.BodyTextStyle</item>
+        <item name="materialAlertDialogTitleIconStyle">@style/BabyCenter2.Widget.Dialog.IconStyle</item>
+        <item name="materialAlertDialogTitlePanelStyle">@style/BabyCenter2.Widget.Dialog.TitlePanelStyle</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/BabyCenter2.Widget.Dialog.TitleTextStyle</item>
+    </style>
+    <style name="BabyCenter2.ThemeOverlay.MaterialDatePicker" parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="buttonBarNegativeButtonStyle">@style/BabyCenter2.Widget.Button.Dialog.Negative</item>
+        <item name="buttonBarPositiveButtonStyle">@style/BabyCenter2.Widget.Button.Dialog.Positive</item>
+        <item name="colorOnPrimary">@color/buttonPrimaryForeground</item>
+        <item name="colorOnSurface">@color/colorOnBackground</item>
+        <item name="colorPrimary">@color/colorPrimaryDialog</item>
+        <item name="colorSurface">@color/colorSurfaceDialog</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="materialCalendarHeaderLayout">@style/BabyCenter2.Widget.DatePickerDialog.HeaderLayout</item>
+        <item name="materialCalendarHeaderSelection">@style/BabyCenter2.Widget.DatePickerDialog.HeaderSelection</item>
+        <item name="materialCalendarHeaderTitle">@style/BabyCenter2.Widget.DatePickerDialog.HeaderTitle</item>
+        <item name="materialCalendarHeaderToggleButton">@style/BabyCenter2.Widget.DatePickerDialog.HeaderToggleButton</item>
+    </style>
+    <style name="BabyCenter2.ThemeOverlay.MaterialDatePicker.TextInputStyle" parent="@style/ThemeOverlay.MaterialComponents.TimePicker.Display.TextInputEditText">
+        <item name="editTextStyle">@style/BabyCenter2.Widget.MaterialTimePicker.EditTextStyle</item>
+    </style>
+    <style name="BabyCenter2.ThemeOverlay.MaterialTimePicker" parent="@style/ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="chipStyle">@style/BabyCenter2.Widget.MaterialTimePicker.ChipStyle</item>
+        <item name="colorOnPrimary">@color/buttonPrimaryForeground</item>
+        <item name="colorOnSurface">@color/colorOnBackground</item>
+        <item name="colorPrimary">@color/colorPrimaryDialog</item>
+        <item name="colorSurface">@color/colorBackground</item>
+        <item name="textInputStyle">@style/BabyCenter2.Widget.MaterialTimePicker.TextInputStyle</item>
+    </style>
+    <style name="BabyCenter2.ThemeOverlay.NumberPicker" parent="@style/BabyCenter2.Theme">
+        <item name="android:textColorPrimary">@color/colorNumberPickerText</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:fontFamily">@font/poppins_700_semi_bold</item>
+        <item name="android:colorControlNormal">@android:color/transparent</item>
+        <item name="colorControlNormal">@android:color/transparent</item>
+    </style>
+    <style name="BabyCenter2.ThemeOverlay.TextInputEditText.FilledBox" parent="@style/ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="colorControlActivated">@color/colorOnBackground</item>
+        <item name="colorError">@color/textFieldError</item>
+        <item name="editTextStyle">@style/BabyCenter2.Widget.EditText.FilledBox</item>
+    </style>
+    <style name="BabyCenter2.ThemeOverlay.TextInputEditText.OutlinedBox" parent="@style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="colorControlActivated">@color/colorOnBackground</item>
+        <item name="colorError">@color/textFieldError</item>
+        <item name="editTextStyle">@style/BabyCenter2.Widget.EditText.OutlinedBox</item>
+    </style>
+    <style name="BabyCenter2.Widget.ActionButton.Overflow" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/headerHomeHeaderTextAndIconColor</item>
+        <item name="tint">@color/headerHomeHeaderTextAndIconColor</item>
+    </style>
+    <style name="BabyCenter2.Widget.AlertDialogStyle" parent="@style/MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">@style/BabyCenter.ShapeAppearance.Dialog</item>
+    </style>
+    <style name="BabyCenter2.Widget.AutoCompleteTextView.FilledBox" parent="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textColor">@color/text_on_background</item>
+    </style>
+    <style name="BabyCenter2.Widget.AutoCompleteTextView.OutlinedBox" parent="@style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textColor">@color/text_on_background</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:paddingLeft">?spacing</item>
+        <item name="android:paddingRight">?spacing</item>
+        <item name="android:minHeight">50.0dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:insetTop">0.0dp</item>
+        <item name="android:insetBottom">0.0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="shapeAppearance">@style/BabyCenter2.ShapeAppearance.Button</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.BirthPreferences" parent="@style/BabyCenter2.Widget.Button.Secondary">
+        <item name="backgroundTint">@color/birthPreferencesBackgroundButton</item>
+        <item name="rippleColor">?colorControlHighlight</item>
+        <item name="strokeColor">@null</item>
+        <item name="strokeWidth">0.0dp</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.BirthPreferences.RoundedLeftButton" parent="@style/BabyCenter2.Widget.Button.BirthPreferences">
+        <item name="shapeAppearanceOverlay">@style/BabyCenter2.ShapeAppearance.BirthPreferences.RoundedLeft</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.BirthPreferences.RoundedRightButton" parent="@style/BabyCenter2.Widget.Button.BirthPreferences">
+        <item name="shapeAppearanceOverlay">@style/BabyCenter2.ShapeAppearance.BirthPreferences.RoundedRight</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Borderless" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textColor">@color/button_borderless_foreground2</item>
+        <item name="android:minHeight">50.0dp</item>
+        <item name="android:insetTop">0.0dp</item>
+        <item name="android:insetBottom">0.0dp</item>
+        <item name="android:paddingStart">?spacing</item>
+        <item name="android:paddingEnd">?spacing</item>
+        <item name="drawableTint">@color/button_borderless_foreground2</item>
+        <item name="iconTint">@color/button_borderless_foreground2</item>
+        <item name="rippleColor">@color/button_borderless_ripple2</item>
+        <item name="shapeAppearance">@style/BabyCenter2.ShapeAppearance.Button</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Borderless.Small" parent="@style/BabyCenter2.Widget.Button.Borderless">
+        <item name="android:textAppearance">?textAppearanceBody2</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Dialog.Negative" parent="@style/BabyCenter2.Widget.Button.Borderless">
+        <item name="android:textAppearance">?textAppearanceHeadline6</item>
+        <item name="android:minHeight">52.0dp</item>
+        <item name="android:insetLeft">4.0dp</item>
+        <item name="android:insetRight">4.0dp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Dialog.Neutral" parent="@style/BabyCenter2.Widget.Button.Borderless">
+        <item name="android:minHeight">52.0dp</item>
+        <item name="android:insetLeft">4.0dp</item>
+        <item name="android:insetRight">4.0dp</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Dialog.Positive" parent="@style/BabyCenter2.Widget.Button.Borderless">
+        <item name="android:textAppearance">?textAppearanceHeadline6</item>
+        <item name="android:minHeight">52.0dp</item>
+        <item name="android:insetLeft">4.0dp</item>
+        <item name="android:insetRight">4.0dp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Primary" parent="@style/BabyCenter2.Widget.Button">
+        <item name="android:textColor">@color/button2_primary_foreground</item>
+        <item name="backgroundTint">@color/button2_primary_background</item>
+        <item name="drawableTint">@color/button2_primary_foreground</item>
+        <item name="iconTint">@color/button2_primary_foreground</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Primary.Activated" parent="@style/BabyCenter2.Widget.Button.Primary">
+        <item name="android:textColor">@color/button2_primary_activated_foreground</item>
+        <item name="backgroundTint">@color/button2_primary_activated_background</item>
+        <item name="drawableTint">@color/button2_primary_activated_foreground</item>
+        <item name="iconTint">@color/button2_primary_activated_foreground</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Primary.Small" parent="@style/BabyCenter2.Widget.Button.Primary">
+        <item name="android:textAppearance">?textAppearanceHeadline6</item>
+        <item name="android:minHeight">30.0dp</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Promo" parent="@style/BabyCenter2.Widget.Button">
+        <item name="android:textColor">@color/button2_promo_foreground</item>
+        <item name="backgroundTint">@color/button2_promo_background</item>
+        <item name="drawableTint">@color/button2_promo_foreground</item>
+        <item name="iconTint">@color/button2_promo_foreground</item>
+        <item name="strokeColor">@color/button2_promo_border</item>
+        <item name="strokeWidth">1.0dp</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Secondary" parent="@style/BabyCenter2.Widget.Button">
+        <item name="android:textColor">@color/button2_secondary_foreground</item>
+        <item name="backgroundTint">@color/button2_secondary_background</item>
+        <item name="drawableTint">@color/button2_secondary_foreground</item>
+        <item name="iconTint">@color/button2_secondary_foreground</item>
+        <item name="strokeColor">@color/button2_secondary_border</item>
+        <item name="strokeWidth">1.0dp</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Secondary.AnswerPage.Answer" parent="@style/BabyCenter2.Widget.Button.Secondary">
+        <item name="android:textColor">@color/button2_story_quiz_answer_page_answer_foreground</item>
+        <item name="backgroundTint">@color/button2_story_quiz_answer_page_answer_background</item>
+        <item name="drawableTint">@color/button2_story_quiz_answer_page_answer_foreground</item>
+        <item name="iconTint">@color/button2_story_quiz_answer_page_answer_foreground</item>
+        <item name="strokeColor">@color/button2_story_quiz_answer_page_answer_border</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Secondary.Medium" parent="@style/BabyCenter2.Widget.Button.Secondary">
+        <item name="android:minHeight">40.0dp</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Secondary.Medium.Community" parent="@style/BabyCenter2.Widget.Button.Secondary.Medium">
+        <item name="android:paddingLeft">?spacingXL</item>
+        <item name="android:paddingRight">?spacingXL</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Secondary.QuizPage.Answer" parent="@style/BabyCenter2.Widget.Button.Secondary">
+        <item name="backgroundTint">@color/button2_story_quiz_question_page_answer_background</item>
+        <item name="strokeColor">@color/button2_story_quiz_question_page_answer_border</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Secondary.ReadMore" parent="@style/BabyCenter2.Widget.Button.Secondary">
+        <item name="android:paddingLeft">?spacingXL</item>
+        <item name="android:paddingRight">?spacingXL</item>
+        <item name="strokeColor">@null</item>
+        <item name="strokeWidth">0.0dp</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Secondary.Small" parent="@style/BabyCenter2.Widget.Button.Secondary">
+        <item name="android:textAppearance">?textAppearanceHeadline6</item>
+        <item name="android:minHeight">30.0dp</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.Secondary.StoryPoll" parent="@style/BabyCenter2.Widget.Button.Secondary">
+        <item name="backgroundTint">@color/bg_story_poll_answer_choice</item>
+        <item name="strokeColor">@color/border_story_poll_answer_choice</item>
+    </style>
+    <style name="BabyCenter2.Widget.Button.YourBabyVideo" parent="@style/BabyCenter2.Widget.Button">
+        <item name="android:textColor">@color/colorTextStageDetailsYourBabyVideo</item>
+        <item name="android:paddingLeft">?spacingXL</item>
+        <item name="android:paddingRight">?spacingXL</item>
+        <item name="backgroundTint">@color/backgroundStageDetailsYourBabyVideo</item>
+        <item name="drawableTint">@color/colorTextStageDetailsYourBabyVideo</item>
+        <item name="iconTint">@color/colorTextStageDetailsYourBabyVideo</item>
+    </style>
+    <style name="BabyCenter2.Widget.Checkbox" parent="@style/Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/compound2_text</item>
+        <item name="buttonTint">@color/compound2_button</item>
+    </style>
+    <style name="BabyCenter2.Widget.CircularProgressIndicator.LightToolbarHeader" parent="@style/Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="indicatorColor">?colorOnBackgroundSecondary</item>
+    </style>
+    <style name="BabyCenter2.Widget.DatePickerDialog.HeaderLayout" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderLayout">
+        <item name="android:background">@color/colorBackgroundDatePickerHeader</item>
+    </style>
+    <style name="BabyCenter2.Widget.DatePickerDialog.HeaderSelection" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="BabyCenter2.Widget.DatePickerDialog.HeaderTitle" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderTitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="BabyCenter2.Widget.DatePickerDialog.HeaderToggleButton" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton">
+        <item name="android:tint">@color/white</item>
+    </style>
+    <style name="BabyCenter2.Widget.Dialog.BodyTextStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="BabyCenter2.Widget.Dialog.IconStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Icon">
+        <item name="tint">?colorOnBackground</item>
+    </style>
+    <style name="BabyCenter2.Widget.Dialog.TitlePanelStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Panel" />
+    <style name="BabyCenter2.Widget.Dialog.TitleTextStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textAppearance">?textAppearanceHeadline5</item>
+    </style>
+    <style name="BabyCenter2.Widget.EditText.FilledBox" parent="@style/Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textColor">@color/text_on_background</item>
+    </style>
+    <style name="BabyCenter2.Widget.EditText.OutlinedBox" parent="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:textColor">@color/text_on_background</item>
+    </style>
+    <style name="BabyCenter2.Widget.ExtendedFab" parent="@style/Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:textColor">@color/button2_fab_foreground</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="backgroundTint">@color/button2_fab_background</item>
+        <item name="iconTint">@color/button2_fab_foreground</item>
+    </style>
+    <style name="BabyCenter2.Widget.ExtendedFab.Secondary" parent="@style/BabyCenter2.Widget.ExtendedFab">
+        <item name="android:textColor">@color/button2_fab_secondary_foreground</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="backgroundTint">@color/button2_fab_secondary_background</item>
+        <item name="iconTint">@color/button2_fab_secondary_foreground</item>
+    </style>
+    <style name="BabyCenter2.Widget.Fab" parent="@style/Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/button2_fab_background</item>
+        <item name="tint">@color/button2_fab_foreground</item>
+    </style>
+    <style name="BabyCenter2.Widget.LoadingView" parent="">
+        <item name="android:background">@color/loadingViewBackground</item>
+        <item name="lv_shimmerColor">@color/loadingViewShimmer</item>
+        <item name="shapeAppearance">@style/BabyCenter.ShapeAppearance.CardView</item>
+    </style>
+    <style name="BabyCenter2.Widget.LoadingView.SymptomVisualization" parent="@style/BabyCenter2.Widget.LoadingView">
+        <item name="shapeAppearance">@style/BabyCenter.ShapeAppearance.Image3</item>
+    </style>
+    <style name="BabyCenter2.Widget.MaterialTimePicker.ChipStyle" parent="@style/Widget.MaterialComponents.TimePicker.Display">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">0.0dp</item>
+        <item name="android:paddingRight">0.0dp</item>
+        <item name="android:minEms">2</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:paddingStart">0.0dp</item>
+        <item name="android:paddingEnd">0.0dp</item>
+    </style>
+    <style name="BabyCenter2.Widget.MaterialTimePicker.EditTextStyle" parent="@style/Widget.MaterialComponents.TimePicker.Display.TextInputEditText">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">0.0dp</item>
+        <item name="android:paddingRight">0.0dp</item>
+        <item name="android:paddingStart">0.0dp</item>
+        <item name="android:paddingEnd">0.0dp</item>
+    </style>
+    <style name="BabyCenter2.Widget.MaterialTimePicker.TextInputStyle" parent="@style/Widget.MaterialComponents.TimePicker.Display.TextInputLayout">
+        <item name="materialThemeOverlay">@style/BabyCenter2.ThemeOverlay.MaterialDatePicker.TextInputStyle</item>
+    </style>
+    <style name="BabyCenter2.Widget.Radiobutton" parent="@style/Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/compound2_text</item>
+        <item name="buttonTint">@color/compound2_button</item>
+    </style>
+    <style name="BabyCenter2.Widget.Switch" parent="@style/Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:textColor">@color/compound2_text</item>
+        <item name="thumbTint">@color/compound2_switch_thumb</item>
+        <item name="trackTint">@color/compound2_switch_track</item>
+    </style>
+    <style name="BabyCenter2.Widget.TabLayout" parent="@style/Widget.MaterialComponents.TabLayout">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="tabIconTint">@color/tab_layout_item_foreground2</item>
+        <item name="tabIndicatorColor">@color/tabLayoutItemSelectedForeground2</item>
+        <item name="tabIndicatorHeight">3.0dp</item>
+        <item name="tabRippleColor">@color/tab_layout_item_background2</item>
+        <item name="tabTextAppearance">@style/BabyCenter2.TextAppearance.Tab</item>
+        <item name="tabTextColor">@color/tab_layout_item_foreground2</item>
+    </style>
+    <style name="BabyCenter2.Widget.TabLayout.ActionBar" parent="@style/Widget.MaterialComponents.TabLayout.Colored">
+        <item name="tabTextAppearance">@style/BabyCenter2.TextAppearance.Tab</item>
+    </style>
+    <style name="BabyCenter2.Widget.TextInput.Filled" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/text_field_box_background_color</item>
+        <item name="boxBackgroundErrorColor">@color/text_field_box_error_background_color</item>
+        <item name="boxCollapsedPaddingTop">4.0dp</item>
+        <item name="boxStrokeColor">@color/text_field2_stroke_color</item>
+        <item name="counterOverflowTextAppearance">?textAppearanceHeadline6</item>
+        <item name="counterTextAppearance">?textAppearanceHeadline6</item>
+        <item name="counterTextColor">?colorOnBackgroundSecondary</item>
+        <item name="endIconTint">@color/text_field2_icon_tint</item>
+        <item name="errorTextAppearance">?textAppearanceHeadline6</item>
+        <item name="helperTextTextAppearance">?textAppearanceSubtitle1</item>
+        <item name="helperTextTextColor">?colorOnBackgroundSecondary</item>
+        <item name="hintTextAppearance">?textAppearanceCaption</item>
+        <item name="hintTextColor">@color/textFieldHintText</item>
+        <item name="materialThemeOverlay">@style/BabyCenter2.ThemeOverlay.TextInputEditText.FilledBox</item>
+        <item name="placeholderTextColor">?colorOnBackgroundSecondary</item>
+        <item name="startIconTint">@color/text_field2_icon_tint</item>
+    </style>
+    <style name="BabyCenter2.Widget.TextInput.Filled.ExposedDropdownMenu" parent="@style/BabyCenter2.Widget.TextInput.Filled">
+        <item name="cursorColor">@color/colorOnBackground</item>
+        <item name="endIconMode">dropdown_menu</item>
+        <item name="materialThemeOverlay">@style/BabyCenter2.ThemeOverlay.ExposedDropdownMenu.FilledBox</item>
+    </style>
+    <style name="BabyCenter2.Widget.TextInput.Filled.ExposedDropdownMenu.SymptomsLog" parent="@style/BabyCenter2.Widget.TextInput.Filled.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/text_field_box_background_color_signup2</item>
+    </style>
+    <style name="BabyCenter2.Widget.TextInput.Filled.SignUp2" parent="@style/BabyCenter2.Widget.TextInput.Filled">
+        <item name="boxBackgroundColor">@color/text_field_box_background_color_signup2</item>
+    </style>
+    <style name="BabyCenter2.Widget.TextInput.Filled.SignUp2.ExposedDropdownMenu" parent="@style/BabyCenter2.Widget.TextInput.Filled.SignUp2">
+        <item name="endIconMode">dropdown_menu</item>
+        <item name="materialThemeOverlay">@style/BabyCenter2.ThemeOverlay.ExposedDropdownMenu.FilledBox</item>
+    </style>
+    <style name="BabyCenter2.Widget.TextInput.Outlined" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_field_stroke_color</item>
+        <item name="boxStrokeErrorColor">@color/text_field_outlined_error_background_color</item>
+        <item name="counterOverflowTextAppearance">?textAppearanceHeadline6</item>
+        <item name="counterTextAppearance">?textAppearanceHeadline6</item>
+        <item name="counterTextColor">?colorOnBackgroundSecondary</item>
+        <item name="endIconTint">@color/text_field_icon_tint</item>
+        <item name="errorTextAppearance">?textAppearanceHeadline6</item>
+        <item name="helperTextTextAppearance">?textAppearanceSubtitle1</item>
+        <item name="helperTextTextColor">?colorOnBackgroundSecondary</item>
+        <item name="hintTextAppearance">?textAppearanceCaption</item>
+        <item name="hintTextColor">@color/textFieldHintText</item>
+        <item name="materialThemeOverlay">@style/BabyCenter2.ThemeOverlay.TextInputEditText.OutlinedBox</item>
+        <item name="placeholderTextColor">?colorOnBackgroundSecondary</item>
+        <item name="startIconTint">@color/text_field_icon_tint</item>
+    </style>
+    <style name="BabyCenter2.Widget.TextInput.Outlined.ExposedDropdownMenu" parent="@style/BabyCenter2.Widget.TextInput.Outlined">
+        <item name="endIconMode">dropdown_menu</item>
+        <item name="materialThemeOverlay">@style/BabyCenter2.ThemeOverlay.ExposedDropdownMenu.OutlinedBox</item>
+    </style>
+    <style name="BabyCenter2.Widget.Toolbar" parent="@style/Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextAppearance">?textAppearanceHeadline5</item>
+    </style>
+    <style name="BabyCenter2.Widget.Toolbar.Light" parent="@style/BabyCenter2.Widget.Toolbar">
+        <item name="android:theme">@style/BabyCenter.ThemeOverlay.Toolbar.Light</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="BabyCenter2.Widget.Toolbar.Light.Button.Navigation" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:tint">@color/toolbarForegroundLight</item>
+        <item name="tint">@color/toolbarForegroundLight</item>
+    </style>
+    <style name="BabyCenter2.Widget.Toolbar.Light.Button.Navigation2" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:tint">@color/headerHomeHeaderTextAndIconColor</item>
+        <item name="tint">@color/headerHomeHeaderTextAndIconColor</item>
+    </style>
+    <style name="BabyCenter2.Widget.Toolbar.Light2" parent="@style/BabyCenter2.Widget.Toolbar">
+        <item name="android:theme">@style/BabyCenter.ThemeOverlay.Toolbar.Light2</item>
+        <item name="android:background">@color/headerBackgroundLight</item>
+        <item name="android:titleTextColor">@color/headerHomeHeaderTextAndIconColor</item>
+        <item name="titleTextColor">@color/headerHomeHeaderTextAndIconColor</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_up_out</item>
+    </style>
+    <style name="EditText">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+    <style name="PopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:itemBackground">@drawable/bg_checklist_menu_item</item>
+    </style>
+    <style name="StoryFilter" parent="@style/BabyCenter2.Theme">
+        <item name="android:textAppearance">?textAppearanceHeadline5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">?spacing</item>
+        <item name="android:paddingBottom">?spacing</item>
+        <item name="android:minHeight">60.0dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="styles_is_it_safe__search_text_input_layout" parent="@style/BabyCenter2.Widget.TextInput.Outlined">
+        <item name="endIconTint">@color/color_is_it_safe_text_field_icon_tint</item>
+        <item name="startIconTint">@color/color_is_it_safe_text_field_icon_tint</item>
+    </style>
+</resources>

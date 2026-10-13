@@ -1,0 +1,78 @@
+[
+  {
+    "name": "General Pregnancy",
+    "groups": [
+      {
+        "id": 25002391,
+        "url": "https://www.babycenter.ca/g25002391/first-time-parents",
+        "title": "First time parents",
+        "imageUrl": "https://imageserve.babycenter.com/16/000/473/tOs1XXZJv4j5QY7l9gM46Daj8UWMuO7h_med_sq.jpg"
+      },
+      {
+        "id": 25001731,
+        "url": "https://www.babycenter.ca/g25001731/pregnancy",
+        "title": "Pregnancy",
+        "imageUrl": "https://imageserve.babycenter.com/15/000/417/IMwNTrQGZbIglMy6o9iT7rQxv6xlhI1J_med_sq.jpg"
+      },
+      {
+        "id": 25001753,
+        "url": "https://www.babycenter.ca/g25001753/baby-names",
+        "title": "Baby Names",
+        "imageUrl": "http://imageserve.babycenter.com/25/000/088/3syrvrwq9noaAROkZaEUb6ngYDyId4Vo_med_sq.jpg"
+      },
+      {
+        "id": 25001959,
+        "url": "https://www.babycenter.ca/g25001959/pregnancy-and-over-35-moms",
+        "title": "Pregnant and over 35+"
+      }
+    ]
+  },
+  {
+    "name": "Family",
+    "groups": [
+      {
+        "id": 25001791,
+        "url": "https://www.babycenter.ca/g25001791/bargain-hunters",
+        "title": "Bargain Hunters",
+        "imageUrl": "https://imageserve.babycenter.com/20/000/088/GJ0T8DRtETfgKzBEAwVzvUFlPyiryO8M_med_sq.jpg"
+      },
+      {
+        "id": 25001851,
+        "url": "https://www.babycenter.ca/g25001851/newbies",
+        "title": "Newbies"
+      }
+    ]
+  },
+  {
+    "name": "Health",
+    "groups": [
+      {
+        "id": 25001751,
+        "url": "https://www.babycenter.ca/g25001751/high-risk-pregnancy",
+        "title": "High risk pregnancy",
+        "imageUrl": "https://imageserve.babycenter.com/17/000/417/zWQr6GDTybspo5XIQqBclUftXvhgxek3_med_sq.jpg"
+      },
+      {
+        "id": 25002483,
+        "url": "https://www.babycenter.ca/g25002483/natural-delivery-",
+        "title": "Natural delivery"
+      },
+      {
+        "id": 25001933,
+        "url": "https://www.babycenter.ca/g25001933/midwife-assisted-birth",
+        "title": "Midwife-assisted birth"
+      },
+      {
+        "id": 25004429,
+        "url": "https://www.babycenter.ca/g25004429/c-section-mommies",
+        "title": "C-section mommies"
+      },
+      {
+        "id": 25001757,
+        "url": "https://www.babycenter.ca/g25001757/vbac",
+        "title": "VBAC support ",
+        "imageUrl": "https://imageserve.babycenter.com/28/000/088/2JmB5GoxEbRFAC2pKXWPKBm1IHYor3ag_med_sq.jpg"
+      }
+    ]
+  }
+]

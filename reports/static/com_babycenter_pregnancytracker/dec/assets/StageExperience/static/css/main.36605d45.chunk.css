@@ -1,0 +1,1695 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400);
+
+html {
+	font-size: 14px
+}
+
+body {
+	font-family: Poppins, Arial, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #000
+}
+
+div {
+	padding: 0;
+	margin: 0
+}
+
+p {
+	margin-top: 0
+}
+
+p div {
+	display: block
+}
+
+img {
+	border-style: none
+}
+
+a img {
+	border: none
+}
+
+table {
+	display: table;
+	border-collapse: collapse;
+	border: none;
+	margin: 0
+}
+
+td {
+	vertical-align: top
+}
+
+hr {
+	height: 1px;
+	background-color: inherit;
+	border: none;
+	border-top: 1px solid #d7d7c9
+}
+
+hr.dashed {
+	border-top-style: dashed
+}
+
+hr.dotted {
+	border-top-style: dotted
+}
+
+.fakeH1,
+.fakeH2,
+.fakeH3,
+.fakeH4,
+.moduleHeader,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+	padding: 0;
+	margin: 0
+}
+
+a:active,
+a:hover,
+a:link,
+a:visited {
+	color: #000;
+	text-decoration: none
+}
+
+a:hover {
+	color: #028c9b
+}
+
+.altBodyText a,
+.bodyLinks a,
+.bodyText a,
+.byline a,
+.seeAllLink a {
+	border-bottom: 2px solid transparent
+}
+
+.altBodyText a,
+.altBodyText a:link,
+.altBodyText a:visited,
+.bodyLinks a,
+.bodyLinks a:link,
+.bodyLinks a:visited,
+.bodyText a,
+.bodyText a:link,
+.bodyText a:visited,
+.byline a,
+.byline a:link,
+.byline a:visited,
+.seeAllLink a,
+.seeAllLink a:link,
+.seeAllLink a:visited {
+	border-bottom: 2px solid #3cb6ce
+}
+
+.altBodyText a.noLinkStyle,
+.altBodyText a:link.noLinkStyle,
+.altBodyText a:visited.noLinkStyle,
+.bodyLinks a.noLinkStyle,
+.bodyLinks a:link.noLinkStyle,
+.bodyLinks a:visited.noLinkStyle,
+.bodyText a.noLinkStyle,
+.bodyText a:link.noLinkStyle,
+.bodyText a:visited.noLinkStyle,
+.byline a.noLinkStyle,
+.byline a:link.noLinkStyle,
+.byline a:visited.noLinkStyle,
+.seeAllLink a.noLinkStyle,
+.seeAllLink a:link.noLinkStyle,
+.seeAllLink a:visited.noLinkStyle {
+	border-bottom: none
+}
+
+.altBodyText a:active,
+.altBodyText a:hover,
+.bodyLinks a:active,
+.bodyLinks a:hover,
+.bodyText a:active,
+.bodyText a:hover,
+.byline a:active,
+.byline a:hover,
+.seeAllLink a:active,
+.seeAllLink a:hover {
+	color: #000;
+	border-bottom-color: #1e93aa
+}
+
+.altBodyText a:active.noLinkStyle,
+.altBodyText a:hover.noLinkStyle,
+.bodyLinks a:active.noLinkStyle,
+.bodyLinks a:hover.noLinkStyle,
+.bodyText a:active.noLinkStyle,
+.bodyText a:hover.noLinkStyle,
+.byline a:active.noLinkStyle,
+.byline a:hover.noLinkStyle,
+.seeAllLink a:active.noLinkStyle,
+.seeAllLink a:hover.noLinkStyle {
+	border-bottom: none
+}
+
+.breadcrumb a,
+.byline a,
+.tableOfContentsContainer a,
+.textLinks a {
+	border-bottom: 2px solid transparent
+}
+
+.breadcrumb a:active,
+.breadcrumb a:hover,
+.byline a:active,
+.byline a:hover,
+.tableOfContentsContainer a:active,
+.tableOfContentsContainer a:hover,
+.textLinks a:active,
+.textLinks a:hover {
+	color: #000;
+	border-bottom-color: #1e93aa
+}
+
+.breadcrumb a:active.noLinkStyle,
+.breadcrumb a:hover.noLinkStyle,
+.byline a:active.noLinkStyle,
+.byline a:hover.noLinkStyle,
+.tableOfContentsContainer a:active.noLinkStyle,
+.tableOfContentsContainer a:hover.noLinkStyle,
+.textLinks a:active.noLinkStyle,
+.textLinks a:hover.noLinkStyle {
+	border-bottom: none
+}
+
+.seeAllLink {
+	display: block;
+	text-align: center;
+	text-transform: uppercase
+}
+
+.bodyText {
+	letter-spacing: -.1px;
+	line-height: 162.5%
+}
+
+.altBodyText {
+	letter-spacing: -.1px;
+	font-size: .875rem;
+	line-height: 1.375rem
+}
+
+.finePrint {
+	font-size: .75rem;
+	line-height: 1rem
+}
+
+.finePrint,
+.subtleText {
+	font-family: Montserrat, Arial, sans-serif;
+	color: #797a6e
+}
+
+.subtleText {
+	font-size: .875rem;
+	line-height: 1.375rem
+}
+
+.linkText {
+	color: #000;
+	border-bottom: 2px solid #3cb6ce;
+	text-decoration: none
+}
+
+.contentTypeLabel {
+	font-family: Montserrat, Arial, sans-serif;
+	color: #797a6e;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: normal;
+	margin-bottom: 4px;
+	font-size: 1rem
+}
+
+.center {
+	text-align: center
+}
+
+.floatLeft {
+	float: left
+}
+
+.floatRight {
+	float: right
+}
+
+.clear:after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.clearRight {
+	clear: right
+}
+
+.clearLeft {
+	clear: left
+}
+
+.noBorder {
+	border: none
+}
+
+.hide {
+	display: none
+}
+
+.fullWidth {
+	width: 100%
+}
+
+.inlineBlock {
+	display: inline-block
+}
+
+.lowercase {
+	text-transform: lowercase
+}
+
+.uppercase {
+	text-transform: uppercase
+}
+
+.normalLineHeight {
+	line-height: normal
+}
+
+.wrapWord {
+	word-wrap: break-word
+}
+
+.vertCenterFlex {
+	display: flex;
+	align-items: center
+}
+
+.vertCenterFlex .item+.item {
+	margin-left: 5px
+}
+
+.verticalCenterCell {
+	display: table-cell;
+	vertical-align: middle
+}
+
+.verticalCenterCell .verticalCenterImg {
+	display: block
+}
+
+.spacerSm {
+	margin-bottom: 10px
+}
+
+.spacer {
+	margin-bottom: 25px
+}
+
+.spacerLg {
+	margin-bottom: 40px
+}
+
+.imgDivider {
+	border-bottom: 1px solid #3cb6ce;
+	height: 25px;
+	margin-bottom: 40px;
+	text-align: center
+}
+
+.imgDivider span {
+	display: inline-block;
+	padding: 0 35px;
+	background-color: #fff;
+	margin: auto
+}
+
+img.noResize {
+	max-width: none
+}
+
+@-webkit-keyframes fadeInOpacity {
+	0% {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+.fake_button,
+a.button,
+a.linkBtn_,
+button,
+input.button {
+	display: inline-block;
+	background-color: #0f8299;
+	color: #fff;
+	outline: none;
+	border: none;
+	font-family: Montserrat, Arial, sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1.125rem;
+	padding: 15px 40px;
+	line-height: 1.25rem;
+	text-align: center;
+	text-transform: uppercase
+}
+
+.fake_button:hover,
+.fake_button:link,
+.fake_button:visited,
+a.button:hover,
+a.button:link,
+a.button:visited,
+a.linkBtn_:hover,
+a.linkBtn_:link,
+a.linkBtn_:visited,
+button:hover,
+button:link,
+button:visited,
+input.button:hover,
+input.button:link,
+input.button:visited {
+	color: #fff;
+	text-decoration: none;
+	background-image: none
+}
+
+.fake_button:active,
+.fake_button:hover,
+a.button:active,
+a.button:hover,
+a.linkBtn_:active,
+a.linkBtn_:hover,
+button:active,
+button:hover,
+input.button:active,
+input.button:hover {
+	background-color: #016376
+}
+
+.fake_button.inactive,
+a.button.inactive,
+a.linkBtn_.inactive,
+button.inactive,
+input.button.inactive {
+	cursor: default;
+	background-color: #e0e1dd;
+	color: #c2c2bc
+}
+
+.fake_button.promo,
+a.button.promo,
+a.linkBtn_.promo,
+button.promo,
+input.button.promo {
+	background-color: #ff8b7c
+}
+
+.fake_button.promo:active,
+.fake_button.promo:hover,
+a.button.promo:active,
+a.button.promo:hover,
+a.linkBtn_.promo:active,
+a.linkBtn_.promo:hover,
+button.promo:active,
+button.promo:hover,
+input.button.promo:active,
+input.button.promo:hover {
+	background-color: #dc6757
+}
+
+.fake_button.secondary,
+a.button.secondary,
+a.linkBtn_.secondary,
+button.secondary,
+input.button.secondary {
+	font-size: 1rem;
+	padding: 12px 40px;
+	line-height: 1.1rem;
+	color: #000;
+	background: #fff;
+	border: 2px solid #88bb49;
+	font-weight: 400
+}
+
+.fake_button.secondary:active,
+.fake_button.secondary:hover,
+a.button.secondary:active,
+a.button.secondary:hover,
+a.linkBtn_.secondary:active,
+a.linkBtn_.secondary:hover,
+button.secondary:active,
+button.secondary:hover,
+input.button.secondary:active,
+input.button.secondary:hover {
+	color: #62912b;
+	border-color: #62912b;
+	background-color: #fff
+}
+
+.fake_button.secondary.inactive,
+a.button.secondary.inactive,
+a.linkBtn_.secondary.inactive,
+button.secondary.inactive,
+input.button.secondary.inactive {
+	color: #e0e1dd;
+	border-color: #e0e1dd
+}
+
+a.linkBtn_:hover {
+	background-image: none
+}
+
+.cancelAndSubmit {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end
+}
+
+.cancelAndSubmit>div,
+.cancelAndSubmit a+a,
+.cancelAndSubmit a+button,
+.cancelAndSubmit button+a,
+.cancelAndSubmit button+button {
+	margin-left: 20px
+}
+
+.twoButtons {
+	display: flex;
+	align-items: center
+}
+
+.twoButtons a+a,
+.twoButtons a+button,
+.twoButtons button+a,
+.twoButtons button+button,
+.twoButtons div+div {
+	margin-left: 20px
+}
+
+.twoButtons a.linkBtn_.secondary {
+	font-size: 1.125rem;
+	padding: 10px 40px;
+	line-height: 1.25rem
+}
+
+.bcForm input[type=number],
+.bcForm input[type=password],
+.bcForm input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=text],
+select,
+textarea {
+	background-color: #f9f9f8;
+	border: 1px solid #adaea5;
+	color: #000;
+	outline: none;
+	font-family: Montserrat, Arial, sans-serif
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=text] {
+	height: 48px
+}
+
+input[type=email]:invalid {
+	background-color: #f9f9f8
+}
+
+select {
+	height: 48px
+}
+
+textarea {
+	min-height: 75px
+}
+
+.formRow {
+	margin-bottom: 20px
+}
+
+.formRowSlim {
+	margin-bottom: 5px
+}
+
+.successMsg {
+	color: #93bb43
+}
+
+.formError,
+div .successMsg {
+	margin-bottom: 4px
+}
+
+.formError {
+	display: block;
+	color: #c32227
+}
+
+.bcForm {
+	position: relative;
+	line-height: normal
+}
+
+.bcForm label {
+	display: block;
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 10px
+}
+
+.bcForm label.required:before {
+	content: "* ";
+	color: #c32227
+}
+
+.bcForm label.inlineLabel {
+	display: inline-block;
+	margin: 0 20px 0 5px;
+	font-weight: 400
+}
+
+.bcForm label .details {
+	font-weight: 400
+}
+
+.bcForm input[type=file] {
+	width: auto;
+	height: auto;
+	line-height: normal
+}
+
+.bcForm input[type=checkbox],
+.bcForm input[type=radio] {
+	order: 0;
+	height: auto;
+	width: auto;
+	line-height: normal;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 5px;
+	font-size: 1rem
+}
+
+.bcForm select option {
+	padding: 3px 10px
+}
+
+.bcForm input.error,
+.bcForm select.error {
+	color: #333;
+	border-color: #d71e24
+}
+
+.bcForm select.error {
+	background-color: #fff;
+	height: inherit;
+	background-image: none;
+	display: inline;
+	padding-bottom: 0;
+	padding-left: 0
+}
+
+.bcForm .errorDelimiter {
+	margin-bottom: 4px
+}
+
+.bcForm .formErrorOverlay {
+	background-color: #fbe9e9;
+	border: 1px solid #c32227;
+	width: 100%;
+	height: 30px;
+	padding: 7px 0 0 8px;
+	font-size: 12px
+}
+
+.bcForm .formErrorOverlay:after,
+.bcForm .formErrorOverlay:before {
+	top: 100%;
+	right: 0;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none
+}
+
+.bcForm .formErrorOverlay:after {
+	border-color: #fbe9e9 rgba(136, 183, 213, 0) rgba(136, 183, 213, 0);
+	border-width: 10px;
+	margin-left: -10px
+}
+
+.bcForm .formErrorOverlay:before {
+	border-color: #c32227 rgba(194, 225, 245, 0) rgba(194, 225, 245, 0);
+	border-width: 11px;
+	margin-left: -11px
+}
+
+.bcForm .inlineFields input,
+.bcForm .inlineFields input[type=number],
+.bcForm .inlineFields input[type=text],
+.bcForm .inlineFields select {
+	width: auto;
+	margin-right: 10px
+}
+
+.bcForm .inlineFields .inlineText {
+	display: inline-block;
+	margin-right: 20px
+}
+
+.bcForm .inlineFields.inlineLabel label {
+	display: inline-block;
+	margin-right: 20px;
+	font-weight: 400
+}
+
+.bcForm .inlineInputAndLabel input {
+	width: auto;
+	float: left;
+	margin-right: 10px
+}
+
+.bcForm .inlineInputAndLabel label {
+	display: table-cell;
+	vertical-align: top;
+	font-weight: 400
+}
+
+.bcForm .formNote {
+	font-family: Montserrat, Arial, sans-serif;
+	font-size: .75rem;
+	line-height: 1rem;
+	color: #797a6e;
+	margin-top: 5px
+}
+
+ul {
+	margin: 0;
+	padding: 0 0 0 1em;
+	list-style-type: disc
+}
+
+ul li {
+	margin: 0 0 1em
+}
+
+ul.plainDoubleSpaced {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	line-height: normal
+}
+
+ul.plainDoubleSpaced li {
+	margin-bottom: 1em;
+	margin-left: 0;
+	padding-left: 0;
+	clear: both;
+	background-image: none
+}
+
+.expandingItem.bottomBorder {
+	border-bottom: 1px dotted #d7d7c9;
+	margin-bottom: 25px
+}
+
+.bcExpandContent,
+.bcExpandIconsContent,
+.bcExpandMenuContent,
+.bcExpandReverse {
+	display: none
+}
+
+.bcExpand,
+.bcExpandReverse,
+.bcExpandStartOpen,
+.bodyLinks .bcExpand,
+.bodyLinks .bcExpandReverse,
+.bodyLinks .bcExpandStartOpen,
+.bodyText .bcExpand,
+.bodyText .bcExpandReverse,
+.bodyText .bcExpandStartOpen {
+	position: relative;
+	display: block;
+	border-top: 1px dotted #d7d7c9;
+	padding: 10px 20px;
+	text-align: left;
+	background-position: center right 30px;
+	background-repeat: no-repeat;
+	background-size: 13px 8px;
+	font-weight: 700;
+	border-bottom: none;
+	color: #000;
+	line-height: 100%
+}
+
+.noTopBorder .bcExpand,
+.noTopBorder .bcExpandReverse,
+.noTopBorder .bcExpandStartOpen,
+.noTopBorder .bodyLinks .bcExpand,
+.noTopBorder .bodyLinks .bcExpandReverse,
+.noTopBorder .bodyLinks .bcExpandStartOpen,
+.noTopBorder .bodyText .bcExpand,
+.noTopBorder .bodyText .bcExpandReverse,
+.noTopBorder .bodyText .bcExpandStartOpen {
+	border-top: none
+}
+
+.bcExpand:hover,
+.bcExpandReverse:hover,
+.bcExpandStartOpen:hover {
+	color: #000
+}
+
+.bcExpand {
+	background-image: url(https://assets.babycenter.com/ims/2019/11/bgArrowExpandGrey.svg)
+}
+
+.bcExpandReverse {
+	background-image: url(https://assets.babycenter.com/ims/2019/11/bgArrowCollapseGrey.svg)
+}
+
+.bcExpandContent {
+	margin: 10px 20px 0
+}
+
+.altExpand {
+	text-align: center
+}
+
+.altExpand .bcExpand,
+.altExpand .bcExpandReverse {
+	display: inline-block;
+	margin: auto;
+	padding: 0 50px 0 30px;
+	line-height: 26px;
+	border: 2px solid #1e9170;
+	font-weight: 400
+}
+
+.altExpand .bcExpand:hover,
+.altExpand .bcExpandReverse:hover {
+	border: 2px solid #1e9170
+}
+
+@media screen and (max-width:727px) {
+	html {
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+		text-size-adjust: 100%
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		position: relative;
+		line-height: normal
+	}
+}
+
+@media screen and (max-width:727px) {
+
+	.fakeH1,
+	h1 {
+		font-family: Domine, Georgia, serif;
+		font-size: 1.75rem;
+		line-height: 2.375rem;
+		text-align: center;
+		margin: 0 0 24px
+	}
+
+	.fakeH1 .sub,
+	h1 .sub {
+		display: block;
+		font-size: 1.3rem;
+		margin-top: 10px
+	}
+
+	.fakeH2,
+	h2 {
+		font-family: Domine, Georgia, serif;
+		font-size: 1.375rem;
+		line-height: 2rem;
+		margin: 0 0 15px
+	}
+
+	.fakeH3,
+	.moduleHeader,
+	h3 {
+		font-size: 1.25rem;
+		line-height: 2rem;
+		margin: 0 0 15px
+	}
+
+	.fakeH3,
+	.fakeH4,
+	.moduleHeader,
+	h3,
+	h4 {
+		font-family: Montserrat, Arial, sans-serif;
+		font-weight: 700
+	}
+
+	.fakeH4,
+	h4 {
+		font-size: 1.125rem;
+		line-height: 2.25rem;
+		margin: 0 0 10px
+	}
+
+	h5 {
+		font-size: 1rem;
+		line-height: 1.5rem
+	}
+
+	h5,
+	h6 {
+		font-family: Montserrat, Arial, sans-serif
+	}
+
+	h6 {
+		font-size: .875rem;
+		line-height: 1.375rem
+	}
+}
+
+@media screen and (max-width:727px) {
+
+	.fake_button,
+	a.button,
+	a.linkBtn_,
+	button,
+	input.button {
+		width: 100%
+	}
+
+	.fake_button.inline,
+	.fake_button.secondary,
+	a.button.inline,
+	a.button.secondary,
+	a.linkBtn_.inline,
+	a.linkBtn_.secondary,
+	button.inline,
+	button.secondary,
+	input.button.inline,
+	input.button.secondary {
+		width: auto;
+		display: inline-block;
+		margin: auto
+	}
+
+	.cancelAndSubmit a,
+	.cancelAndSubmit button {
+		width: auto
+	}
+}
+
+@media screen and (max-width:727px) {
+	form {
+		width: 100%
+	}
+
+	input[type=email],
+	input[type=number],
+	input[type=password],
+	input[type=text] {
+		font-size: 16px;
+		padding: 9px 5px;
+		width: 100%
+	}
+
+	input[type=image] {
+		border: none;
+		width: auto;
+		padding: 0
+	}
+
+	textarea {
+		font-size: 16px;
+		padding: 9px 5px;
+		width: 100%
+	}
+
+	select {
+		padding-left: 3px;
+		padding-right: 3px;
+		font-size: 16px
+	}
+
+	fieldset {
+		border: none;
+		padding: 0;
+		margin: 0
+	}
+
+	.formRow {
+		position: relative
+	}
+
+	.formRow form input[type=password],
+	.formRow input[type=email],
+	.formRow input[type=text],
+	.formRow textarea {
+		margin: 0
+	}
+}
+
+@media screen and (min-width:728px) {
+	body {
+		margin: 0 auto;
+		line-height: normal;
+		font-weight: 500
+	}
+
+	body,
+	p {
+		padding: 0
+	}
+
+	p {
+		margin: 0 0 1em
+	}
+
+	a {
+		cursor: pointer
+	}
+}
+
+@media screen and (min-width:728px) {
+
+	.fakeH1,
+	h1 {
+		font-family: Domine, Georgia, serif;
+		font-size: 2.8rem;
+		line-height: 3.75rem
+	}
+
+	.fakeH1 .sub,
+	h1 .sub {
+		display: block;
+		font-size: 1.34rem;
+		margin-top: 10px
+	}
+
+	.fakeH2,
+	h2 {
+		font-family: Domine, Georgia, serif;
+		font-size: 1.875rem;
+		line-height: 2.85rem;
+		margin: 0 0 15px
+	}
+
+	.fakeH3,
+	.moduleHeader,
+	h3 {
+		font-size: 1.5rem;
+		margin: 0 0 15px
+	}
+
+	.fakeH3,
+	.fakeH4,
+	.moduleHeader,
+	h3,
+	h4 {
+		font-family: Montserrat, Arial, sans-serif;
+		font-weight: 700;
+		line-height: 2.25rem
+	}
+
+	.fakeH4,
+	h4,
+	h5 {
+		font-size: 1.125rem
+	}
+
+	h5 {
+		line-height: 1.5rem
+	}
+
+	h5,
+	h6 {
+		font-family: Montserrat, Arial, sans-serif
+	}
+
+	h6 {
+		font-size: .875rem;
+		line-height: 1.375rem
+	}
+}
+
+@media screen and (min-width:728px) {
+	.bcForm .error {
+		margin-top: 4px;
+		display: block;
+		font-size: 15px;
+		font-family: Montserrat, Arial, sans-serif
+	}
+
+	.bcForm .formError {
+		font-size: 15px
+	}
+
+	.bcForm input,
+	.bcForm textarea {
+		width: 100%;
+		font-size: 15px;
+		font-family: Montserrat, Arial, sans-serif
+	}
+
+	.bcForm input {
+		line-height: 23px
+	}
+
+	.bcForm input[type=email],
+	.bcForm input[type=number],
+	.bcForm input[type=password],
+	.bcForm input[type=text] {
+		padding: 0 10px
+	}
+
+	.bcForm input[type=password] {
+		width: 100%
+	}
+
+	.bcForm textarea {
+		padding: 7px 0 6px 10px;
+		overflow: auto;
+		margin-bottom: 5px;
+		height: 90px;
+		font-size: 15px
+	}
+
+	.bcForm select {
+		width: 100%;
+		font-size: 15px
+	}
+
+	.formSubmit {
+		text-align: center
+	}
+
+	.formSubmit.twoButtons {
+		display: inline-block;
+		width: auto
+	}
+}
+
+footer {
+	background-color: #ecedeb;
+	padding: 0 5px;
+	box-shadow: inset 0 4px 9px -9px #999
+}
+
+nav.footerNav {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	text-transform: uppercase;
+	font-size: .8rem;
+	padding: 0 5px
+}
+
+nav.footerNav a {
+	padding: 28px 5px 20px;
+	-webkit-tap-highlight-color: transparent;
+	text-align: center
+}
+
+nav.footerNav a:active,
+nav.footerNav a:hover {
+	color: #000
+}
+
+nav.footerNav a .pointer {
+	display: none
+}
+
+nav.footerNav a .icon {
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto 10px;
+	background-size: contain
+}
+
+nav.footerNav a.baby-size .icon {
+	background-image: url(https://assets.babycenter.com/ims/2019/12/btn_babysize.svg)
+}
+
+nav.footerNav a.summary .icon {
+	background-image: url(https://assets.babycenter.com/ims/2019/12/btn_summary.svg)
+}
+
+nav.footerNav a.your-baby .icon {
+	background-image: url(https://assets.babycenter.com/ims/2019/12/btn_yourbaby.svg)
+}
+
+nav.footerNav a.your-body .icon {
+	background-image: url(https://assets.babycenter.com/ims/2019/12/btn_yourbody.svg)
+}
+
+nav.footerNav a.active {
+	position: relative
+}
+
+nav.footerNav a.active .pointer {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -18px;
+	box-sizing: border-box;
+	background: #fff;
+	box-shadow: 0 2px 2px 0 hsla(0, 0%, 80%, .4)
+}
+
+nav.footerNav a.active .pointer:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: -2em;
+	left: 50%;
+	box-sizing: border-box;
+	border-color: transparent transparent #fff #fff;
+	border-style: solid;
+	border-width: 1em;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-shadow: -2px 2px 2px 0 hsla(0, 0%, 80%, .4)
+}
+
+nav.footerNav a.active.baby-size .icon {
+	color: #49b6ca;
+	background-image: url(https://assets.babycenter.com/ims/2019/12/btn_babysize_active.svg)
+}
+
+nav.footerNav a.active.baby-size .pointer {
+	background-color: #d5e7bf
+}
+
+nav.footerNav a.active.baby-size .pointer:after {
+	border-color: transparent transparent #d5e7bf #d5e7bf
+}
+
+nav.footerNav a.active.summary .icon {
+	background-image: url(https://assets.babycenter.com/ims/2019/12/btn_summary_active.svg)
+}
+
+nav.footerNav a.active.summary .pointer {
+	background-color: #dceff4
+}
+
+nav.footerNav a.active.summary .pointer:after {
+	border-color: transparent transparent #dceff4 #dceff4
+}
+
+nav.footerNav a.active.your-body .icon {
+	color: #49b6ca;
+	background-image: url(https://assets.babycenter.com/ims/2019/12/btn_yourbody_active.svg)
+}
+
+nav.footerNav a.active.your-body .pointer {
+	background-color: #fff3f1
+}
+
+nav.footerNav a.active.your-body .pointer:after {
+	border-color: transparent transparent #fff3f1 #fff3f1
+}
+
+nav.footerNav a.active.your-baby .icon {
+	color: #49b6ca;
+	background-image: url(https://assets.babycenter.com/ims/2019/12/btn_yourbaby_active.svg)
+}
+
+.fetalDevImageSection .fetalDevDetail {
+	overflow: hidden;
+	line-height: 0;
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	direction: ltr
+}
+
+.fetalDevImageSection .fetalDevDetail .fetalDevImgContainer {
+	direction: ltr;
+	min-height: 300px;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	margin: auto;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	left: 0;
+	top: 0
+}
+
+.fetalDevImageSection .fetalDevDetail .fetalDevImgContainer img {
+	max-width: 100%;
+	height: auto;
+	display: block
+}
+
+.fetalDevImageSection .fetalDevDetail .hotspot {
+	position: absolute;
+	z-index: 1
+}
+
+.fetalDevImageSection .fetalDevDetail .hotspot .zoomInOut {
+	width: 25px;
+	height: 25px;
+	background-size: 25px 25px
+}
+
+.fetalDevImageSection .fetalDevDetail .hotspot .zoomInOut.bgZoomIn {
+	background-image: url(https://assets.babycenter.com/ims/2019/12/button_zoomin.svg)
+}
+
+.fetalDevImageSection .fetalDevDetail .hotspot .zoomInOut.bgZoomOut {
+	background-image: url(https://assets.babycenter.com/ims/2019/12/button_zoomout.svg)
+}
+
+.fetalDevImageSection .fetalDevDetailText {
+	line-height: 1.5rem;
+    min-height: 3rem;
+    padding: 0px 10px 0px;
+	margin: 10px 0px 0px;
+	text-align: center
+}
+
+.pregProgressBar {
+	display: flex;
+	justify-content: space-evenly
+}
+
+.pregProgressBar .triProgressBar {
+	position: relative;
+	width: 33.33%;
+	height: 10px;
+	background-color: #c2c2bc;
+	margin: 0 2px;
+	text-align: left
+}
+
+.pregProgressBar .triProgressBar span {
+	background-color: #f09081;
+	display: inline-block;
+	height: 10px;
+	width: 0;
+	position: absolute;
+	-webkit-transition: width .5s linear;
+	transition: width .5s linear;
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s
+}
+
+.rtl .pregProgressBar .triProgressBar {
+	text-align: right
+}
+
+@-webkit-keyframes bounceIn {
+	0% {
+		-webkit-transform: scale(.2);
+		transform: scale(.2)
+	}
+
+	60% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1)
+	}
+
+	to {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+@keyframes bounceIn {
+	0% {
+		-webkit-transform: scale(.2);
+		transform: scale(.2)
+	}
+
+	60% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1)
+	}
+
+	to {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+.summary-page {
+	text-align: center;
+	background-color: #edf6f9
+}
+
+.summary-page .sectionDivider .angle,
+.summary-page .shadedSection {
+	background-color: #dceff4
+}
+
+.summary-page h1 {
+	position: relative;
+	height: 260px
+}
+
+.summary-page .celebrate {
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	-webkit-animation: bounceIn .5s ease-in 0s;
+	animation: bounceIn .5s ease-in 0s;
+	background-image: url(https://assets.babycenter.com/ims/2020/01/img_sparkle290.svg);
+	background-size: contain
+}
+
+.summary-page .weeksContainerOuter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%
+}
+
+.summary-page .weeksContainer {
+	background: url(https://assets.babycenter.com/ims/2019/12/bubble-01.svg) no-repeat;
+	background-position: 50%;
+	background-size: contain;
+	width: 220px;
+	height: 220px;
+	padding: 40px 40px 20px;
+	margin-top: 40px;
+	display: inline-block;
+	font-size: 4.5rem;
+	line-height: 4.5rem;
+	font-weight: 700;
+	font-family: Montserrat, Arial, sans-serif
+}
+
+.summary-page .weeksContainer .weeksLabel {
+	font-size: 1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 1.5rem
+}
+
+.summary-page .trimester {
+	background-color: #fff;
+	padding: 10px;
+	display: inline-block;
+	font-size: 1.25rem;
+	text-transform: uppercase
+}
+
+.summary-page .highlightsContent {
+	margin: 1.1em
+}
+
+.summary-page .highlightsContent p {
+	position: relative;
+	padding-top: 18px
+}
+
+.summary-page .highlightsContent p:before {
+	content: "";
+	position: absolute;
+	background-color: #0f7a8a;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	top: 0;
+	left: 50%
+}
+
+.baby-size-page {
+	background-color: #e7f1da;
+	text-align: center;
+	padding-top: 25px
+}
+
+.baby-size-page .sectionDivider .angle,
+.baby-size-page .shadedSection {
+	background-color: #d5e7bf
+}
+
+.baby-size-page .fruitTitle {
+	margin-bottom: 25px
+}
+
+.baby-size-page .fruitTitle .fruitName {
+	display: block;
+	font-family: Montserrat, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 3.2rem
+}
+
+.baby-size-page .babySizeDetail {
+	padding: 10px;
+	width: 50%
+}
+
+.baby-size-page .babySizeDetail+.babySizeDetail {
+	border-left: 1px solid #000
+}
+
+.baby-size-page .babySizeDetail .sizeLabel {
+	font-weight: 700;
+	margin-bottom: 20px
+}
+
+.baby-size-page .babySizeDetail .measurementValue {
+	font-family: Montserrat, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 3.2rem
+}
+
+.baby-size-page .babySizeDetail .measurementUnit {
+	font-size: .9rem;
+	margin-bottom: 10px
+}
+
+.baby-size-page .babySizeDetail .rulerImg {
+	margin-top: 10px
+}
+
+.baby-size-page .babySizeDetail .measurementNote {
+	font-size: .9rem;
+	margin-top: 10px
+}
+
+.baby-size-page .babySizeLengthAndWeight {
+	display: flex;
+	justify-content: space-evenly
+}
+
+.baby-size-page .sectionDivider,
+.baby-size-page .shadedSection {
+	padding-top: 100px
+}
+
+.your-body-page .sectionDivider .angle,
+.your-body-page .shadedSection {
+	background-color: #fff3f1
+}
+
+.your-body-page .shadedSection h4 {
+	text-align: center;
+	padding: 0 60px;
+	line-height: normal
+}
+
+.your-body-page .fetalDevDetail {
+	background-color: #cfdadc
+}
+
+.rtl {
+	direction: rtl
+}
+
+* {
+	box-sizing: border-box
+}
+
+.hideForBcApp {
+	display: none
+}
+
+.sideMargins {
+	margin-left: 15px;
+	margin-right: 15px
+}
+
+.adContainer {
+	text-align: center
+}
+
+.adContainer.adhesionAd {
+	position: fixed;
+	z-index: 50;
+	width: 100%;
+	height: 50px;
+	padding: 0;
+	background-color: #ecedeb
+}
+
+.bodyText .bcExpand {
+	border-top: none;
+	background-image: none;
+	padding-right: 0;
+	padding-left: 0
+}
+
+.bodyText h2 {
+	font-family: Montserrat, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 1.125rem;
+	line-height: 2.25rem;
+	text-align: center;
+	line-height: normal;
+	margin: 10px 0
+}
+
+.bodyText h2 span {
+	display: block
+}
+
+.bcExpandContent {
+	display: block;
+	margin-right: 0;
+	margin-left: 0
+}
+
+.rtl .bcExpand,
+.rtl .bodyText .bcExpand {
+	text-align: right
+}
+
+.expandingItem.bottomBorder {
+	border-bottom: none
+}
+
+.page {
+	padding-top: 50px
+}
+
+.sectionDivider {
+	position: relative
+}
+
+.sectionDivider .angle {
+	padding-top: 100px;
+	-webkit-clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%)
+}
+
+.sectionDivider .sectionIcon {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	text-align: center;
+	width: 100%
+}
+
+.shadedSection {
+	padding-top: 10px;
+	padding-bottom: 40px
+}
+
+.shadedSection.adOnly {
+	padding-top: 25px
+}
+
+/*# sourceMappingURL=main.36605d45.chunk.css.map */
+
+@media (prefers-color-scheme: dark) {
+
+    .summary-page {
+    	background-color: #004953;
+    }
+
+    .summary-page .sectionDivider .angle,
+    .summary-page .shadedSection {
+    	background-color: #002F36;
+    }
+
+    .summary-page .highlightsContent,
+    .summary-page .trimesterText,
+    .summary-page .togoText,
+    .bodyText a {
+        color: #fff;
+    }
+
+    .baby-size-page {
+    	background-color: #004953;
+    	color: #fff;
+    }
+
+    .baby-size-page .sectionDivider .angle,
+    .baby-size-page .shadedSection {
+    	background-color: #002F36
+    }
+
+    .your-body-page {
+        background-color: #004953;
+        color: #fff;
+    }
+
+    .your-body-page .sectionDivider .angle,
+    .your-body-page .shadedSection {
+    	background-color: #002F36
+    }
+
+    .your-baby-page  {
+        background-color: #004953;
+        color: #fff
+    }
+
+    .your-baby-page.spacerLg {
+    	margin-bottom: 0px;
+    	padding-bottom: 40px
+    }
+}

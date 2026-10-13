@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/colorModuleBackground" android:paddingBottom="?spacingXL" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?spacingL"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/breaks" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="456.0dp" app:layout_constraintTop_toTopOf="parent" />
+    <com.babycenter.pregbaby.ui.view.PageIndicatorView android:gravity="center_vertical" android:id="@id/breaksIndicator" android:layout_width="wrap_content" android:layout_height="32.0dp" app:indicatorDefaultColor="@color/colorHomeFeedPageIndicatorDefault" app:indicatorMargin="2.0dp" app:indicatorSelectedColor="@color/colorHomeFeedPageIndicatorSelected" app:indicatorSize="8.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/breaks" />
+</androidx.constraintlayout.widget.ConstraintLayout>

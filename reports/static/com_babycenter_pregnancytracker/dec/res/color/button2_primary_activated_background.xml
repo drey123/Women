@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:color="@color/button2PrimaryBackgroundEnabledActivated" android:state_activated="true" />
+    <item android:state_enabled="true" android:color="@color/button2PrimaryBackgroundHoveredActivated" android:state_activated="true" android:state_hovered="true" />
+    <item android:state_enabled="true" android:state_pressed="true" android:color="@color/button2PrimaryBackgroundPressedActivated" android:state_activated="true" />
+    <item android:color="@color/button2PrimaryBackgroundDisabledActivated" android:state_activated="true" />
+    <item android:state_enabled="true" android:color="@color/button2PrimaryBackgroundEnabled" />
+    <item android:state_enabled="true" android:color="@color/button2PrimaryBackgroundHovered" android:state_hovered="true" />
+    <item android:state_enabled="true" android:state_pressed="true" android:color="@color/button2PrimaryBackgroundPressed" />
+    <item android:color="@color/button2PrimaryBackgroundDisabled" />
+</selector>

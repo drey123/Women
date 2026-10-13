@@ -1,0 +1,66 @@
+package org.simpleframework.xml.core;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+import org.simpleframework.xml.strategy.Type;
+import org.simpleframework.xml.strategy.Value;
+import org.simpleframework.xml.stream.InputNode;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes4.dex */
+class MapFactory extends Factory {
+    public MapFactory(Context context, Type type) {
+        super(context, type);
+    }
+
+    private boolean isMap(Class cls) {
+        return Map.class.isAssignableFrom(cls);
+    }
+
+    public Class getConversion(Class cls) throws InstantiationException {
+        if (cls.isAssignableFrom(HashMap.class)) {
+            return HashMap.class;
+        }
+        if (cls.isAssignableFrom(TreeMap.class)) {
+            return TreeMap.class;
+        }
+        throw new InstantiationException("Cannot instantiate %s for %s", cls, this.type);
+    }
+
+    public Instance getInstance(InputNode inputNode) throws InstantiationException {
+        Value override = getOverride(inputNode);
+        Class type = getType();
+        if (override != null) {
+            return getInstance(override);
+        }
+        if (!Factory.isInstantiable(type)) {
+            type = getConversion(type);
+        }
+        if (isMap(type)) {
+            return this.context.getInstance(type);
+        }
+        throw new InstantiationException("Invalid map %s for %s", type, this.type);
+    }
+
+    @Override // org.simpleframework.xml.core.Factory
+    public Object getInstance() throws InstantiationException {
+        Class type = getType();
+        Class conversion = !Factory.isInstantiable(type) ? getConversion(type) : type;
+        if (isMap(conversion)) {
+            return conversion.newInstance();
+        }
+        throw new InstantiationException("Invalid map %s for %s", type, this.type);
+    }
+
+    public Instance getInstance(Value value) throws InstantiationException {
+        Class type = value.getType();
+        if (!Factory.isInstantiable(type)) {
+            type = getConversion(type);
+        }
+        if (isMap(type)) {
+            return new ConversionInstance(this.context, value, type);
+        }
+        throw new InstantiationException("Invalid map %s for %s", type, this.type);
+    }
+}

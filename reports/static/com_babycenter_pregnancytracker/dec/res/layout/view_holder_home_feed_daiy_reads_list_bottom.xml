@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="?spacingXS" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.button.MaterialButton android:layout_gravity="center_horizontal" android:id="@id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stage_daily_reads__title__default" android:textAllCaps="false" style="?buttonSecondary" />
+</FrameLayout>

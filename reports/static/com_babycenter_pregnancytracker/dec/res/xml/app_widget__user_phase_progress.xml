@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="@dimen/app_widget__user_phase_info_small__size__unspecified__min_w" android:minHeight="@dimen/app_widget__user_phase_info_small__size__unspecified__min_h" android:updatePeriodMillis="@integer/app_widget__default__update_interval" android:initialLayout="@layout/app_widget__default__state_loading" android:previewImage="@drawable/preview_image_small" android:resizeMode="horizontal|vertical" android:widgetCategory="home_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

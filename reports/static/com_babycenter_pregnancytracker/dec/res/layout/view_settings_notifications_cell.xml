@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginEnd="?spacing" app:layout_constraintEnd_toStartOf="@id/switch_key" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/subtitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" app:layout_constraintEnd_toEndOf="@id/title" app:layout_constraintStart_toStartOf="@id/title" app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.google.android.material.switchmaterial.SwitchMaterial android:gravity="top" android:id="@id/switch_key" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+package com.google.common.util.concurrent;
+
+import com.google.common.base.Supplier;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes3.dex */
+public final /* synthetic */ class a implements Supplier {
+    public final /* synthetic */ int a;
+    public final /* synthetic */ AbstractService b;
+
+    public /* synthetic */ a(AbstractService abstractService, int i) {
+        this.a = i;
+        this.b = abstractService;
+    }
+
+    @Override // com.google.common.base.Supplier
+    /* JADX INFO: renamed from: get */
+    public final Object get2() {
+        int i = this.a;
+        AbstractService abstractService = this.b;
+        switch (i) {
+            case 0:
+                return ((AbstractExecutionThreadService.AnonymousClass1) abstractService).lambda$doStart$0();
+            default:
+                return ((AbstractScheduledService.ServiceDelegate) abstractService).lambda$doStart$0();
+        }
+    }
+}

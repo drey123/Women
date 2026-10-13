@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_discover_stories_filter" android:id="@id/menu_preferences" android:title="@string/stories__discover_tab__preferences__title" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_more_gear" android:id="@id/menu_more" android:title="@string/navigation__more" app:showAsAction="always" />
+</menu>

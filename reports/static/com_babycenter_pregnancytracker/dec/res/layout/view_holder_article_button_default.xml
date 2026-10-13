@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center_horizontal" android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:layout_marginBottom="?spacingS" android:layout_marginStart="?spacing" android:layout_marginEnd="?spacing" style="?materialButtonStyle" />
+</FrameLayout>

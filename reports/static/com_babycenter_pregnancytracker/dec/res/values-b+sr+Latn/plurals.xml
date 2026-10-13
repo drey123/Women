@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_sdk_date_hour">
+        <item quantity="one">Pre sat vremena</item>
+        <item quantity="other">Pre %1$d sati</item>
+    </plurals>
+    <plurals name="crisp_sdk_date_minute">
+        <item quantity="one">Pre minut</item>
+        <item quantity="other">Pre %1$d minuta</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_hour">
+        <item quantity="one">Sat vremena</item>
+        <item quantity="other">%1$d sati</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_minute">
+        <item quantity="one">Minut</item>
+        <item quantity="other">%1$d minuta</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Premotajte %d sekundu unapred</item>
+        <item quantity="few">Premotajte %d sekunde unapred</item>
+        <item quantity="other">Premotajte %d sekundi unapred</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Premotajte %d sekundu unazad</item>
+        <item quantity="few">Premotajte %d sekunde unazad</item>
+        <item quantity="other">Premotajte %d sekundi unazad</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d novo obaveštenje</item>
+        <item quantity="few">%d nova obaveštenja</item>
+        <item quantity="other">%d novih obaveštenja</item>
+    </plurals>
+    <plurals name="place_details_review_count_a11y_label">
+        <item quantity="one">%1$d recenzija</item>
+        <item quantity="few">%1$d recenzije</item>
+        <item quantity="other">%1$d recenzija</item>
+    </plurals>
+</resources>

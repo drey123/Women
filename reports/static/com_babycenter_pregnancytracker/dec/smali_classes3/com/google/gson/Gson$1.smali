@@ -1,0 +1,106 @@
+.class Lcom/google/gson/Gson$1;
+.super Lcom/google/gson/b;
+.source "r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/gson/b;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public final read(Lp55;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p1}, Lp55;->X()Lu55;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    sget-object v0, Lu55;->NULL:Lu55;
+
+    .line 6
+    .line 7
+    if-ne p0, v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Lp55;->n0()V
+
+    .line 10
+    .line 11
+    .line 12
+    const/4 p0, 0x0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    invoke-virtual {p1}, Lp55;->nextDouble()D
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-wide p0
+
+    .line 18
+    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
+.end method
+
+.method public final write(Lm65;Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    check-cast p2, Ljava/lang/Number;
+
+    .line 2
+    .line 3
+    if-nez p2, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Lm65;->K()Lm65;
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+
+    .line 9
+    :cond_0
+    invoke-virtual {p2}, Ljava/lang/Number;->doubleValue()D
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide v0
+
+    .line 13
+    invoke-static {v0, v1}, Lcom/google/gson/a;->a(D)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {p1, v0, v1}, Lm65;->T(D)V
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+.end method

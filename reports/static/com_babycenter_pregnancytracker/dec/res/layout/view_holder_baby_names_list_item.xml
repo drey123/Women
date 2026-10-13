@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:textColor="?colorStandaloneLink" android:gravity="center_vertical" android:id="@id/text" android:background="?selectableItemBackground" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?spacingTouchTarget"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

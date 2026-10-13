@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="?spacingS" android:paddingBottom="?spacingXL" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="end" android:id="@id/close" android:background="?selectableItemBackgroundBorderless" android:padding="?spacingM" android:layout_width="?spacingTouchTarget" android:layout_height="?spacingTouchTarget" android:src="@drawable/ic_baseline_close_24" android:contentDescription="@null" android:layout_marginEnd="?spacingS" app:tint="@color/button2PrimaryBackgroundEnabled" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline2" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:text="@string/loyalty_program__reward_details__claimed_physical__title" android:includeFontPadding="false" android:layout_marginHorizontal="?spacingL" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:text="@string/loyalty_program__reward_details__claimed_physical__description" android:includeFontPadding="false" android:layout_marginHorizontal="?spacingL" />
+            <com.google.android.material.button.MaterialButton android:id="@id/doneButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingXL" android:text="@string/loyalty_program__reward_details__claimed_physical__cta__done" android:layout_marginHorizontal="?spacingL" app:layout_constraintTop_toBottomOf="@id/expirationDateView" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

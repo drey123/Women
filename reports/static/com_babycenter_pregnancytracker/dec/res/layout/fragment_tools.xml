@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:paddingTop="?spacing" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolTabs" />
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:background="?android:colorBackground" android:layout_width="match_parent" android:layout_height="wrap_content" app:liftOnScroll="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/header" android:background="@color/headerBackgroundLight" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_home_feed_top_shapes" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <include android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" layout="@layout/view_home_feed_toolbar_with_child_info" />
+            <com.google.android.material.chip.ChipGroup android:id="@id/toolTabs" android:background="?android:colorBackground" android:padding="?spacingS" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" app:selectionRequired="true" app:singleSelection="true">
+                <com.google.android.material.chip.Chip android:id="@id/all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tools__tab__all" style="@style/BabyCenter.Widget.Chip.Choice" />
+                <com.google.android.material.chip.Chip android:id="@id/preconception" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tools__tab__trying_to_conceive" style="@style/BabyCenter.Widget.Chip.Choice" />
+                <com.google.android.material.chip.Chip android:id="@id/pregnancy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tools__tab__pregnancy" style="@style/BabyCenter.Widget.Chip.Choice" />
+                <com.google.android.material.chip.Chip android:id="@id/baby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tools__tab__baby" style="@style/BabyCenter.Widget.Chip.Choice" />
+            </com.google.android.material.chip.ChipGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

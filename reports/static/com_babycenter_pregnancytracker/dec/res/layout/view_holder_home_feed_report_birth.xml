@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_card" android:padding="?spacing" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="?spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline2" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/report_birth_module__title" />
+    <include android:id="@id/report_birth_contraction_timer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" layout="@layout/view_holder_home_feed_report_birth_item" />
+    <include android:id="@id/report_birth_birth_preferences" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingM" layout="@layout/view_holder_home_feed_report_birth_item" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:text="@string/report_birth_module__is_baby_here" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/colorTextReportBirthItemCta" android:layout_gravity="center" android:id="@id/report_birth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_birth_module__report_birth" />
+</LinearLayout>

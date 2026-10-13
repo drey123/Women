@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?spacing" android:paddingVertical="?spacingL">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline4" android:id="@id/titleView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/loyalty_program__user_suspended_dialog__title" android:includeFontPadding="false" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:id="@id/descriptionView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:text="@string/loyalty_program__user_suspended_dialog__description" android:includeFontPadding="false" />
+            <com.google.android.material.button.MaterialButton android:id="@id/contactSupportButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:text="@string/loyalty_program__user_suspended_dialog__cta__contact_support" />
+            <com.google.android.material.button.MaterialButton android:textAppearance="?textAppearanceBodyAlt" android:textColor="?colorStandaloneLink" android:layout_gravity="center_horizontal" android:id="@id/closeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:text="@string/loyalty_program__user_suspended_dialog__cta__close" style="?borderlessButtonStyle" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

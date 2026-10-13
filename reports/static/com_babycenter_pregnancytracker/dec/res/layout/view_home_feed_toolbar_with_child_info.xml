@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="0.0dp" app:contentInsetStart="0.0dp" style="?toolbarStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/childImage" android:padding="?spacingM" android:layout_width="?actionBarSize" android:layout_height="?actionBarSize" android:foreground="?selectableItemBackgroundBorderless" android:scaleType="centerCrop" app:shapeAppearance="@style/BabyCenter.ShapeAppearance.Circle" />
+    <TextView android:textAppearance="?textAppearanceHeadline5" android:textColor="@color/headerHomeHeaderTextAndIconColor" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/childName" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="?actionBarSize" android:maxLines="1" android:drawablePadding="?spacingXS" android:paddingEnd="?spacing" app:drawableEndCompat="@drawable/ic_baseline_chevron_down_24" app:drawableTint="@color/headerHomeHeaderTextAndIconColor" />
+</androidx.appcompat.widget.Toolbar>

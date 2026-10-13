@@ -1,0 +1,524 @@
+[
+  {
+    "Phase": "Preg",
+    "week": 2,
+    "stage_id": 102,
+    "statements": "Acreditamos que este é só o começo de uma grande aventura."
+  },
+  {
+    "Phase": "Preg",
+    "week": 3,
+    "stage_id": 103,
+    "statements": "Acreditamos que você é mais capaz do que imagina."
+  },
+  {
+    "Phase": "Preg",
+    "week": 4,
+    "stage_id": 104,
+    "statements": "Acreditamos que é perfeitamente normal fazer vários testes de gravidez - só pra ter certeza."
+  },
+  {
+    "Phase": "Preg",
+    "week": 5,
+    "stage_id": 105,
+    "statements": "Acreditamos que vale esperar um pouquinho para compartilhar a novidade sobre a chegada do bebê - e depois revelar acidentalmente."
+  },
+  {
+    "Phase": "Preg",
+    "week": 6,
+    "stage_id": 106,
+    "statements": "Acreditamos que, de muitas maneiras, você se preparou para isso durante toda a sua vida."
+  },
+  {
+    "Phase": "Preg",
+    "week": 7,
+    "stage_id": 107,
+    "statements": "Acreditamos que o enjoo matinal e o cansaço são, na verdade, a maneira de seu bebê dizer \"estou aqui!\"."
+  },
+  {
+    "Phase": "Preg",
+    "week": 8,
+    "stage_id": 108,
+    "statements": "Acreditamos que funciona você fingir que está chamando alguém pela casa em voz bem alta, só para testar como soa o nome que gostaria de dar ao seu bebê."
+  },
+  {
+    "Phase": "Preg",
+    "week": 9,
+    "stage_id": 109,
+    "statements": "Acreditamos que é divertido tentar todos os métodos possíveis para prever o sexo do bebê - mesmo que eles sejam só brincadeira."
+  },
+  {
+    "Phase": "Preg",
+    "week": 10,
+    "stage_id": 110,
+    "statements": "Acreditamos que é natural sonhar acordado sobre o futuro do seu filho."
+  },
+  {
+    "Phase": "Preg",
+    "week": 11,
+    "stage_id": 111,
+    "statements": "Acreditamos que a gravidez é o melhor motivo para chorar sem motivo."
+  },
+  {
+    "Phase": "Preg",
+    "week": 12,
+    "stage_id": 112,
+    "statements": "Acreditamos que é divertido comparar o tamanho do seu bebê com o de frutas e vegetais."
+  },
+  {
+    "Phase": "Preg",
+    "week": 13,
+    "stage_id": 113,
+    "statements": "Acreditamos que a gravidez é feita de pequenos mistérios."
+  },
+  {
+    "Phase": "Preg",
+    "week": 14,
+    "stage_id": 114,
+    "statements": "Acreditamos que você deve aceitar toda a ajuda que seus amigos e familiares oferecerem durante a gravidez (e também depois)."
+  },
+  {
+    "Phase": "Preg",
+    "week": 15,
+    "stage_id": 115,
+    "statements": "Acreditamos que você deve correr para descobrir o sexo do bebê - ou não."
+  },
+  {
+    "Phase": "Preg",
+    "week": 16,
+    "stage_id": 116,
+    "statements": "Acreditamos que, não importa o que esteja sentindo, você não está sozinho."
+  },
+  {
+    "Phase": "Preg",
+    "week": 17,
+    "stage_id": 117,
+    "statements": "Acreditamos que pode ser legal postar fotos do ultrassom no Instagram - ou mostrar individualmente para os amigos."
+  },
+  {
+    "Phase": "Preg",
+    "week": 18,
+    "stage_id": 118,
+    "statements": "Acreditamos que você precisa satisfazer os desejos, mesmo quando surgem no meio da madrugada."
+  },
+  {
+    "Phase": "Preg",
+    "week": 19,
+    "stage_id": 119,
+    "statements": "Acreditamos que todos os corpos e barrigas de grávida são igualmente perfeitos."
+  },
+  {
+    "Phase": "Preg",
+    "week": 20,
+    "stage_id": 120,
+    "statements": "Acreditamos que o nome que você mais gosta é o perfeito para seu bebê."
+  },
+  {
+    "Phase": "Preg",
+    "week": 21,
+    "stage_id": 121,
+    "statements": "Acreditamos que, embora a gravidez seja mágica, também é uma das coisas mais difíceis que você vivenciará."
+  },
+  {
+    "Phase": "Preg",
+    "week": 22,
+    "stage_id": 122,
+    "statements": "Acreditamos que seu umbigo nunca esteve tão bonito como agora."
+  },
+  {
+    "Phase": "Preg",
+    "week": 23,
+    "stage_id": 123,
+    "statements": "Acreditamos que sua voz é música para os ouvidos do seu bebê."
+  },
+  {
+    "Phase": "Preg",
+    "week": 24,
+    "stage_id": 124,
+    "statements": "Acreditamos que você deve exibir sua barriga usando roupas justas - ou largas, ou como ficar confortável."
+  },
+  {
+    "Phase": "Preg",
+    "week": 25,
+    "stage_id": 125,
+    "statements": "Acreditamos que não há nenhum mal em sentir preguiça na gravidez."
+  },
+  {
+    "Phase": "Preg",
+    "week": 26,
+    "stage_id": 126,
+    "statements": "Acreditamos que você consegue, mesmo quando pensa que não."
+  },
+  {
+    "Phase": "Preg",
+    "week": 27,
+    "stage_id": 127,
+    "statements": "Acreditamos que as leggings são perfeitas ​​para usar em qualquer ocasião."
+  },
+  {
+    "Phase": "Preg",
+    "week": 28,
+    "stage_id": 128,
+    "statements": "Acreditamos que cada gravidez é diferente – e é isso que a faz tão mágica."
+  },
+  {
+    "Phase": "Preg",
+    "week": 29,
+    "stage_id": 129,
+    "statements": "Acreditamos que o autocuidado é uma necessidade, não um luxo."
+  },
+  {
+    "Phase": "Preg",
+    "week": 30,
+    "stage_id": 130,
+    "statements": "Acreditamos que mudanças de humor e lapsos de memória deixam a vida mais dinâmica."
+  },
+  {
+    "Phase": "Preg",
+    "week": 31,
+    "stage_id": 131,
+    "statements": "Acreditamos que é perfeitamente aceitável caminhar sem muito equilíbrio."
+  },
+  {
+    "Phase": "Preg",
+    "week": 32,
+    "stage_id": 132,
+    "statements": "Acreditamos que dá para ficar satisfeita com apenas 3 mordidas, mesmo estando faminta dois minutos atrás."
+  },
+  {
+    "Phase": "Preg",
+    "week": 33,
+    "stage_id": 133,
+    "statements": "Acreditamos que seu bebê gosta quando você ri."
+  },
+  {
+    "Phase": "Preg",
+    "week": 34,
+    "stage_id": 134,
+    "statements": "Acreditamos que, independentemente de como você dá à luz, é o primeiro aconchego que faz tudo valer a pena."
+  },
+  {
+    "Phase": "Preg",
+    "week": 35,
+    "stage_id": 135,
+    "statements": "Acreditamos na fila preferencial para ir ao banheiro."
+  },
+  {
+    "Phase": "Preg",
+    "week": 36,
+    "stage_id": 136,
+    "statements": "Acreditamos que tirar um cochilo não é preguiça, mas uma necessidade real."
+  },
+  {
+    "Phase": "Preg",
+    "week": 37,
+    "stage_id": 137,
+    "statements": "Acreditamos em calças confortáveis e em dormir com muitos travesseiros."
+  },
+  {
+    "Phase": "Preg",
+    "week": 38,
+    "stage_id": 138,
+    "statements": "Acreditamos que conselhos não solicitados podem ser gentilmente recusados."
+  },
+  {
+    "Phase": "Preg",
+    "week": 39,
+    "stage_id": 139,
+    "statements": "Acreditamos que o nascimento é um milagre, independentemente de como seu filho veio ao mundo."
+  },
+  {
+    "Phase": "Baby",
+    "week": 40,
+    "stage_id": 1000,
+    "statements": "Acreditamos que seu bebê também não vê a hora de te conhecer."
+  },
+  {
+    "Phase": "Baby",
+    "week": 1,
+    "stage_id": 1001,
+    "statements": "Acreditamos em amor à primeira vista… e também naquele que leva um tempinho para crescer."
+  },
+  {
+    "Phase": "Baby",
+    "week": 2,
+    "stage_id": 1002,
+    "statements": "Acreditamos que sobreviver aos desafios diários do pós-parto é uma conquista."
+  },
+  {
+    "Phase": "Baby",
+    "week": 3,
+    "stage_id": 1003,
+    "statements": "Acreditamos que a privação do sono é coisa séria."
+  },
+  {
+    "Phase": "Baby",
+    "week": 4,
+    "stage_id": 1004,
+    "statements": "Acreditamos na vontade irresistível de sentir o cheirinho do bebê."
+  },
+  {
+    "Phase": "Baby",
+    "week": 5,
+    "stage_id": 1005,
+    "statements": "Acreditamos que faz toda a diferença você falar de solidão nesse momento."
+  },
+  {
+    "Phase": "Baby",
+    "week": 6,
+    "stage_id": 1006,
+    "statements": "Acreditamos que às vezes o lixo é o melhor destino para um body sujo de cocô."
+  },
+  {
+    "Phase": "Baby",
+    "week": 7,
+    "stage_id": 1007,
+    "statements": "Acreditamos que nunca é cedo demais para começar a ler histórias para seu bebê dormir."
+  },
+  {
+    "Phase": "Baby",
+    "week": "2m0w",
+    "stage_id": 1200,
+    "statements": "Acreditamos que é uma incrivel coincidência a mamada de seu bebê durar o mesmo que um episódio de sua série favorita."
+  },
+  {
+    "Phase": "Baby",
+    "week": "2m1w",
+    "stage_id": 1210,
+    "statements": "Acreditamos que é absolutamente normal discutir sobre a consistência do cocô durante o jantar."
+  },
+  {
+    "Phase": "Baby",
+    "week": "2m2w",
+    "stage_id": 1220,
+    "statements": "Acreditamos que você deve aderir às sonecas diurnas para dar um bom exemplo."
+  },
+  {
+    "Phase": "Baby",
+    "week": "2m3w",
+    "stage_id": 1230,
+    "statements": "Acreditamos que manchas de golfada combinam com qualquer roupa."
+  },
+  {
+    "Phase": "Baby",
+    "week": "3m0w",
+    "stage_id": 1300,
+    "statements": "Acreditamos em não tentar fingir que tudo é perfeito."
+  },
+  {
+    "Phase": "Baby",
+    "week": "3m1w",
+    "stage_id": 1310,
+    "statements": "Acreditamos que é supernormal você encomendar fraldas às 2 da manhã enquanto amamenta."
+  },
+  {
+    "Phase": "Baby",
+    "week": "3m2w",
+    "stage_id": 1320,
+    "statements": "Acreditamos que você não desafina quando canta para seu bebê."
+  },
+  {
+    "Phase": "Baby",
+    "week": "3m3w",
+    "stage_id": 1330,
+    "statements": "Acreditamos que às vezes seu bebê faz coisas apenas para que você sorria."
+  },
+  {
+    "Phase": "Baby",
+    "week": "4m0w",
+    "stage_id": 1400,
+    "statements": "Acreditamos que um rosto coberto de baba é tão adorável quanto bagunçado."
+  },
+  {
+    "Phase": "Baby",
+    "week": "4m1w",
+    "stage_id": 1410,
+    "statements": "Acreditamos que a regressão do padrão de sono aos 4 meses é a maneira de seu bebê mantê-la atenta."
+  },
+  {
+    "Phase": "Baby",
+    "week": "4m2w",
+    "stage_id": 1420,
+    "statements": "Acreditamos que você e seu bebê criaram uma linguagem só de vocês."
+  },
+  {
+    "Phase": "Baby",
+    "week": "4m3w",
+    "stage_id": 1430,
+    "statements": "Acreditamos que seu bebê está começando a curtir suas vozes bobas e canções inventadas."
+  },
+  {
+    "Phase": "Baby",
+    "week": "5m0w",
+    "stage_id": 1500,
+    "statements": "Acreditamos num relacionamento sério com a babá eletrônica."
+  },
+  {
+    "Phase": "Baby",
+    "week": "5m1w",
+    "stage_id": 1510,
+    "statements": "Acreditamos que o conselho de \"dormir quando seu filho dorme\" seria muito bem-vindo se você pudesse dirigir com os olhos fechados."
+  },
+  {
+    "Phase": "Baby",
+    "week": "5m2w",
+    "stage_id": 1520,
+    "statements": "Acreditamos que seu bebê lhe acha a pessoa mais engraçada do planeta."
+  },
+  {
+    "Phase": "Baby",
+    "week": "5m3w",
+    "stage_id": 1530,
+    "statements": "Acreditamos que, no momento em que você jura que não consegue fazer algo, é quando percebe que já está fazendo isso há muito tempo."
+  },
+  {
+    "Phase": "Baby",
+    "week": "6m0w",
+    "stage_id": 1600,
+    "statements": "Acreditamos na emoção de começar a introdução alimentar."
+  },
+  {
+    "Phase": "Baby",
+    "week": "6m1w",
+    "stage_id": 1610,
+    "statements": "Acreditamos que bebês que batem em tudo um dia serão ótimos cientistas... ou carpinteiros... ou engenheiros de som."
+  },
+  {
+    "Phase": "Baby",
+    "week": "6m2w",
+    "stage_id": 1620,
+    "statements": "Acreditamos que banana amassada vai deixar seu bebê de queixo caído."
+  },
+  {
+    "Phase": "Baby",
+    "week": "6m3w",
+    "stage_id": 1630,
+    "statements": "Acreditamos que \"ba, ba, ba\" é apenas o começo de muitas conversas que virão."
+  },
+  {
+    "Phase": "Baby",
+    "week": "7m0w",
+    "stage_id": 1700,
+    "statements": "Acreditamos em móveis macios, cantos arredondados e gavetas trancadas."
+  },
+  {
+    "Phase": "Baby",
+    "week": "7m1w",
+    "stage_id": 1710,
+    "statements": "Acreditamos em naninhas extras, roupas extras, ajuda extra."
+  },
+  {
+    "Phase": "Baby",
+    "week": "7m2w",
+    "stage_id": 1720,
+    "statements": "Acreditamos que não há nada mais restaurador que um café ou chá, mesmo requentado no micro-ondas cinco vezes."
+  },
+  {
+    "Phase": "Baby",
+    "week": "7m3w",
+    "stage_id": 1730,
+    "statements": "Acreditamos que seu braço, sua camisa ou seu cabelo têm um sabor delicioso."
+  },
+  {
+    "Phase": "Baby",
+    "week": "8m0w",
+    "stage_id": 1800,
+    "statements": "Acreditamos que é uma boa ideia andar pela casa, silenciosamente, na ponta dos pés depois das 19h."
+  },
+  {
+    "Phase": "Baby",
+    "week": "8m1w",
+    "stage_id": 1810,
+    "statements": "Acreditamos que não há sensação melhor do que quando seu bebê estende a mão para você."
+  },
+  {
+    "Phase": "Baby",
+    "week": "8m2w",
+    "stage_id": 1820,
+    "statements": "Acreditamos que os brinquedos estão tão cansados ​​de cair quanto você de pegá-los."
+  },
+  {
+    "Phase": "Baby",
+    "week": "8m3w",
+    "stage_id": 1830,
+    "statements": "Acreditamos que coisas incríveis estão acontecendo dentro do cérebro do seu bebê."
+  },
+  {
+    "Phase": "Baby",
+    "week": "9m0w",
+    "stage_id": 1900,
+    "statements": "Acreditamos na sua imensa capacidade de improvisar se for pega de surpresa."
+  },
+  {
+    "Phase": "Baby",
+    "week": "9m1w",
+    "stage_id": 1910,
+    "statements": "Acreditamos que a maternidade é a coisa mais gratificante - e humilhante - que você já vivenciou."
+  },
+  {
+    "Phase": "Baby",
+    "week": "9m2w",
+    "stage_id": 1920,
+    "statements": "Acreditamos nas lágrimas de felicidade, em comemorar cada marco e em aproveitar cada momento de carinho."
+  },
+  {
+    "Phase": "Baby",
+    "week": "9m3w",
+    "stage_id": 1930,
+    "statements": "Acreditamos na graça de imitar som de sirene sempre que um caminhão de bombeiros passa."
+  },
+  {
+    "Phase": "Baby",
+    "week": "10m0w",
+    "stage_id": 2000,
+    "statements": "Acreditamos que não há problema em pular algumas etapas na hora de dormir."
+  },
+  {
+    "Phase": "Baby",
+    "week": "10m1w",
+    "stage_id": 2010,
+    "statements": "Acreditamos que mesmo as crianças de paladar \"exigente\" vão crescer e mudar."
+  },
+  {
+    "Phase": "Baby",
+    "week": "10m2w",
+    "stage_id": 2020,
+    "statements": "Acreditamos na arte da distração quando o mau humor se instala."
+  },
+  {
+    "Phase": "Baby",
+    "week": "10m3w",
+    "stage_id": 2030,
+    "statements": "Acreditamos que um dia (mesmo que num futuro distante) você conseguirá fazer xixi sozinha novamente."
+  },
+  {
+    "Phase": "Baby",
+    "week": "11m0w",
+    "stage_id": 2100,
+    "statements": "Acreditamos que os dias parecem longos, mas os anos passam rapidamente."
+  },
+  {
+    "Phase": "Baby",
+    "week": "11m1w",
+    "stage_id": 2110,
+    "statements": "Acreditamos que, independentemente dos brinquedos que você comprar, há uma chance de seu bebê preferir a caixa."
+  },
+  {
+    "Phase": "Baby",
+    "week": "11m2w",
+    "stage_id": 2120,
+    "statements": "Acreditamos que uma naninha pode ser um amigo para toda a vida."
+  },
+  {
+    "Phase": "Baby",
+    "week": "11m3w",
+    "stage_id": 2130,
+    "statements": "Acreditamos que a maternidade é a coisa mais desafiadora e extraordinária que você vivenciará."
+  },
+  {
+    "Phase": "Default",
+    "week": "n/a",
+    "stage_id": "n/a",
+    "statements": "Acreditamos na jornada."
+  }
+]

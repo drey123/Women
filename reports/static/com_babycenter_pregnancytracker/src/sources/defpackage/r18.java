@@ -1,0 +1,18 @@
+package defpackage;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes3.dex */
+public final class r18 {
+    public static final r18 c = new r18(Collections.EMPTY_MAP, Collections.EMPTY_LIST);
+    public final Map a;
+    public final List b;
+
+    public r18(Map map, List list) {
+        this.a = map;
+        this.b = list;
+    }
+}

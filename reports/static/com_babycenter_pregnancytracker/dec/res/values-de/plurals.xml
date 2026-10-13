@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="community_promo__pattern__members_count">
+        <item quantity="one">%1$d member</item>
+        <item quantity="other">%1$d members</item>
+    </plurals>
+    <plurals name="crisp_sdk_date_hour">
+        <item quantity="one">Vor einer Stunde</item>
+        <item quantity="other">Vor %1$d Stunden</item>
+    </plurals>
+    <plurals name="crisp_sdk_date_minute">
+        <item quantity="one">Vor einer Minute</item>
+        <item quantity="other">Vor %1$d Minuten</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_hour">
+        <item quantity="one">Einer Stunde</item>
+        <item quantity="other">%1$d Stunden</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_minute">
+        <item quantity="one">Eine Minute</item>
+        <item quantity="other">%1$d Minuten</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d Sekunde vorspulen</item>
+        <item quantity="other">%d Sekunden vorspulen</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d Sekunde zurückspulen</item>
+        <item quantity="other">%d Sekunden zurückspulen</item>
+    </plurals>
+    <plurals name="kick_tracker__label__kicks_plural">
+        <item quantity="one">%1$d Kick</item>
+        <item quantity="other">%1$d Kicks</item>
+    </plurals>
+    <plurals name="memories__milestone__month">
+        <item quantity="one">%1$d month</item>
+        <item quantity="other">%1$d months</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d neue Benachrichtigung</item>
+        <item quantity="other">%d neue Benachrichtigungen</item>
+    </plurals>
+    <plurals name="place_details_review_count_a11y_label">
+        <item quantity="one">%1$d Rezension</item>
+        <item quantity="other">%1$d Rezensionen</item>
+    </plurals>
+    <plurals name="signup_stage_text">
+        <item quantity="one">"You're &lt;b> %1$d weeks, %2$d day&lt;/b> pregnant"</item>
+        <item quantity="other">"You're &lt;b> %1$d weeks, %2$d days&lt;/b> pregnant"</item>
+    </plurals>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="?spacing" android:paddingHorizontal="?spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="55.0dp" android:layout_height="55.0dp" android:src="@drawable/ic_loyalty_program_indicator_inactive" android:contentDescription="@null" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:text="@string/loyalty_program__point_history__empty__title" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:text="@string/loyalty_program__point_history__empty__description" />
+    <com.google.android.material.button.MaterialButton android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:text="@string/loyalty_program__point_history__empty__cta" android:paddingHorizontal="?spacingXL" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="16.0dp" android:width="90.0dp" android:viewportWidth="360.0" android:viewportHeight="64.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/kickTrackerRecordSessionControlBackground" android:pathData="M165,10a15,10 0,1 0,30 0a15,10 0,1 0,-30 0z" />
+    <path android:fillColor="@color/kickTrackerRecordSessionControlBackground" android:pathData="M-114,266a294,257 0,1 0,588 0a294,257 0,1 0,-588 0z" />
+</vector>

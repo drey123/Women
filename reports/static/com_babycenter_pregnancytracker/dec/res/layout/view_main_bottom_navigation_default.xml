@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.bottomnavigation.BottomNavigationView android:theme="@style/BabyCenter2.Theme" android:layout_width="match_parent" android:layout_height="@dimen/bottom_navigation_height" app:menu="@menu/bottom_nav_menu_default"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

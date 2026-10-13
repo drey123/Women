@@ -1,0 +1,39 @@
+{
+  "headline": "Plan de nacimiento",
+  "featuredItem": {
+    "image": "https://assets.babycenter.com/ims/2026/01/tools_birth_preferences.png",
+    "headline": "Cómo escribir un plan de nacimiento",
+    "deck": "Una simple descripción para que tu partera sepa cómo quieres que nazca tu bebé",
+    "linkText": "Lee más",
+    "linkUrl": "https://espanol.babycenter.com/a900808/c%C3%B3mo-escribir-un-plan-de-nacimiento"
+  },
+  "cardItems": [
+    {
+      "image": "https://assets.babycenter.com/ims/2026/01/icon-travel.png",
+      "headline": "Qué empacar para ir al hospital",
+      "deck": "La lista con todo lo que quieres llevarte para el parto",
+      "linkText": "Ver la lista",
+      "linkUrl": "https://espanol.babycenter.com/a900814/qu%C3%A9-llevar-al-hospital-cuando-vas-a-dar-a-luz"
+    },
+    {
+      "image": "https://assets.babycenter.com/ims/2026/01/icon-timer.png",
+      "headline": "Contador de contracciones",
+      "deck": "Ver cómo avanza tu parto y comparte tu progreso",
+      "linkText": "Contar contracciones",
+      "linkUrl": "babycenterpreg://tools/contraction_timer"
+    }
+  ],
+  "listSection": {
+    "title": "Prepararse para el nacimiento",
+    "items": [
+      {
+        "text": "Lo que me hubiera gustado saber antes del parto",
+        "url": "https://espanol.babycenter.com/a14300071/lo-que-me-hubiera-gustado-saber-antes-del-parto"
+      },
+      {
+        "text": "Consejos para la persona que te ayude en el parto",
+        "url": "https://espanol.babycenter.com/a700430/consejos-para-la-persona-que-te-va-a-ayudar-durante-el-parto"
+      }
+    ]
+  }
+}

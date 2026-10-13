@@ -1,0 +1,220 @@
+{
+  "strategies": {
+    "screenTitle": "Sleep strategies",
+    "title": "Sleep strategies",
+    "description": "There are many ways to teach healthy sleep habits to your child. How, where, and when your baby sleeps will vary, depending on your baby's temperament and your preferences. For best results, choose sleep methods and strategies that your child responds well to – and stick with them.\n\nHere's help with baby sleep, from how to settle a newborn to sleep training, schedules, and tips for night-weaning.",
+    "isDescriptionCollapsible": true,
+    "showListLanding": true,
+    "trackingPageName": "Sleep Tool | Methods Landing Page",
+    "content": [
+      {
+        "screenTitle": "Sleep strategies",
+        "subTitle": "Sleep habits and sleep training",
+        "articles": [
+          {
+            "name": "The five S's for baby sleep",
+            "tabName": "The five S's",
+            "trackingPageName": "Sleep Tool | Method Detail: The five S",
+            "assetsPath": "tools/sleep_guide/strategies/habits_training/en_us/1_the_five_s.html",
+            "iconUrl": "file:///android_asset/tools/icon_habits_training.png",
+            "shareable": true,
+            "sortOrder": 0
+          },
+          {
+            "name": "Gentle sleep training",
+            "tabName": "Gentle sleep",
+            "trackingPageName": "Sleep Tool | Method Detail: Gentle sleep",
+            "assetsPath": "tools/sleep_guide/strategies/habits_training/en_us/2_gentle_sleep.html",
+            "iconUrl": "file:///android_asset/tools/icon_habits_training.png",
+            "shareable": true,
+            "sortOrder": 1
+          },
+          {
+            "name": "\"Cry it out\" sleep training",
+            "tabName": "Cry it out",
+            "trackingPageName": "Sleep Tool | Method Detail: Cry it out",
+            "assetsPath": "tools/sleep_guide/strategies/habits_training/en_us/3_cry_it_out.html",
+            "iconUrl": "file:///android_asset/tools/icon_habits_training.png",
+            "shareable": true,
+            "sortOrder": 2
+          },
+          {
+            "name": "Fading sleep training",
+            "tabName": "Fading sleep",
+            "trackingPageName": "Sleep Tool | Method Detail: Fading sleep",
+            "assetsPath": "tools/sleep_guide/strategies/habits_training/en_us/4_fading_sleep.html",
+            "iconUrl": "file:///android_asset/tools/icon_habits_training.png",
+            "shareable": true,
+            "sortOrder": 3
+          },
+          {
+            "name": "Night weaning",
+            "tabName": "Night weaning",
+            "trackingPageName": "Sleep Tool | Method Detail: Night weaning",
+            "assetsPath": "tools/sleep_guide/strategies/habits_training/en_us/5_night_weaning.html",
+            "iconUrl": "file:///android_asset/tools/icon_habits_training.png",
+            "shareable": true,
+            "sortOrder": 4
+          },
+          {
+            "name": "Sleep regression",
+            "tabName": "Sleep regression",
+            "trackingPageName": "Sleep Tool | Method Detail: Sleep regression",
+            "assetsPath": "tools/sleep_guide/strategies/habits_training/en_us/6_sleep_regression.html",
+            "iconUrl": "file:///android_asset/tools/icon_habits_training.png",
+            "shareable": true,
+            "sortOrder": 5
+          },
+          {
+            "name": "When can babies self soothe?",
+            "tabName": "Self soothe",
+            "trackingPageName": "Sleep Tool | Method Detail: Self soothe",
+            "assetsPath": "tools/sleep_guide/strategies/habits_training/en_us/7_self_soothe.html",
+            "iconUrl": "file:///android_asset/tools/icon_habits_training.png",
+            "shareable": true,
+            "sortOrder": 6
+          },
+          {
+            "name": "Safe sleep tips",
+            "tabName": "Safe sleep tips",
+            "trackingPageName": "Sleep Tool | Method Detail: Safe sleep tips",
+            "assetsPath": "tools/sleep_guide/strategies/habits_training/en_us/8_safe_sleep_tips.html",
+            "iconUrl": "file:///android_asset/tools/icon_habits_training.png",
+            "shareable": true,
+            "sortOrder": 7
+          }
+        ]
+      },
+      {
+        "screenTitle": "Sleep strategies",
+        "subTitle": "Getting into a regular routine",
+        "articles": [
+          {
+            "name": "Bedtime routines",
+            "tabName": "Bedtime routines",
+            "trackingPageName": "Sleep Tool | Schedule Detail: Bedtime routines",
+            "assetsPath": "tools/sleep_guide/strategies/routine/en_us/1_bedtime_routines.html",
+            "iconUrl": "file:///android_asset/tools/icon_sleep_schedule.png",
+            "shareable": true,
+            "sortOrder": 0
+          },
+          {
+            "name": "Sleeping through the night",
+            "tabName": "Sleeping through the night",
+            "trackingPageName": "Sleep Tool | Schedule Detail: Sleeping through the night",
+            "assetsPath": "tools/sleep_guide/strategies/routine/en_us/2_sleeping_through_the_night.html",
+            "iconUrl": "file:///android_asset/tools/icon_sleep_schedule.png",
+            "shareable": true,
+            "sortOrder": 1
+          },
+          {
+            "name": "Baby naps",
+            "tabName": "Baby naps",
+            "trackingPageName": "Sleep Tool | Schedule Detail: Baby naps",
+            "assetsPath": "tools/sleep_guide/strategies/routine/en_us/3_baby_naps.html",
+            "iconUrl": "file:///android_asset/tools/icon_sleep_schedule.png",
+            "shareable": true,
+            "sortOrder": 2
+          },
+          {
+            "name": "Wake windows",
+            "tabName": "Wake windows",
+            "trackingPageName": "Sleep Tool | Schedule Detail: Wake windows",
+            "assetsPath": "tools/sleep_guide/strategies/routine/en_us/4_wake_window.html",
+            "iconUrl": "file:///android_asset/tools/icon_sleep_schedule.png",
+            "shareable": true,
+            "sortOrder": 3
+          }
+        ]
+      }
+    ]
+  },
+  "needs": {
+    "showListLanding": false,
+    "trackingPageName": "Sleep Tool | Sleep Schedules",
+    "content": [
+      {
+        "screenTitle": "Sleep needs",
+        "articles": [
+          {
+            "name": "Newborn",
+            "tabName": "Newborn",
+            "trackingPageName": "Sleep Tool | Sleep Schedules: Newborn",
+            "assetsPath": "tools/sleep_guide/needs/en_us/1_newborn.html",
+            "shareable": false,
+            "babyMonthStart": 0,
+            "babyMonthEnd": 0,
+            "sortOrder": 0
+          },
+          {
+            "name": "1 month old",
+            "tabName": "1 month old",
+            "trackingPageName": "Sleep Tool | Sleep Schedules: 1 month old",
+            "assetsPath": "tools/sleep_guide/needs/en_us/2_1_month_old.html",
+            "shareable": false,
+            "babyMonthStart": 1,
+            "babyMonthEnd": 1,
+            "sortOrder": 1
+          },
+          {
+            "name": "2 months old",
+            "tabName": "2 months old",
+            "trackingPageName": "Sleep Tool | Sleep Schedules: 2 months old",
+            "assetsPath": "tools/sleep_guide/needs/en_us/3_2_months_old.html",
+            "shareable": false,
+            "babyMonthStart": 2,
+            "babyMonthEnd": 2,
+            "sortOrder": 2
+          },
+          {
+            "name": "3 to 5 months old",
+            "tabName": "3 to 5 months old",
+            "trackingPageName": "Sleep Tool | Sleep Schedules: 3 to 5 months old",
+            "assetsPath": "tools/sleep_guide/needs/en_us/4_3_to_5_months_old.html",
+            "shareable": false,
+            "babyMonthStart": 3,
+            "babyMonthEnd": 5,
+            "sortOrder": 3
+          },
+          {
+            "name": "6 to 8 months old",
+            "tabName": "6 to 8 months old",
+            "trackingPageName": "Sleep Tool | Sleep Schedules: 6 to 8 months old",
+            "assetsPath": "tools/sleep_guide/needs/en_us/5_6_to_8_months_old.html",
+            "shareable": false,
+            "babyMonthStart": 6,
+            "babyMonthEnd": 8,
+            "sortOrder": 4
+          },
+          {
+            "name": "9 to 11 months old",
+            "tabName": "9 to 11 months old",
+            "trackingPageName": "Sleep Tool | Sleep Schedules: 9 to 11 months old",
+            "assetsPath": "tools/sleep_guide/needs/en_us/6_9_to_11_months_old.html",
+            "shareable": false,
+            "babyMonthStart": 9,
+            "babyMonthEnd": 11,
+            "sortOrder": 5
+          }
+        ]
+      }
+    ]
+  },
+  "community": {
+    "content": [
+      {
+        "trackingPageName": "Sleep Tool | Community",
+        "groups": [
+          {
+            "name": "Teaching Your Baby and Toddler To Sleep",
+            "trackingPageName": "Sleep Tool | Community",
+            "url": "https://community.babycenter.com/groups/a199215/teaching_your_baby_and_toddler_to_sleep",
+            "iconUrl": "https://imageserve.babycenter.com/27/000/099/1WnJnjVojMAYJM1osPB3lyppSJItrekH_med.jpg",
+            "sortOrder": 0
+          }
+        ]
+      }
+    ]
+  },
+  "hasLullabies": true
+}

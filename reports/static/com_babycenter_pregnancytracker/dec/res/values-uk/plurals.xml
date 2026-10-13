@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_sdk_date_hour">
+        <item quantity="one">Годину тому</item>
+        <item quantity="other">%1$d годин тому</item>
+    </plurals>
+    <plurals name="crisp_sdk_date_minute">
+        <item quantity="one">Хвилину тому</item>
+        <item quantity="other">%1$d хвилин тому</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_hour">
+        <item quantity="one">Година</item>
+        <item quantity="other">%1$d годин</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_minute">
+        <item quantity="one">Хвилина</item>
+        <item quantity="other">%1$d хвилин</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Перемотати вперед на %d секунду</item>
+        <item quantity="few">Перемотати вперед на %d секунди</item>
+        <item quantity="many">Перемотати вперед на %d секунд</item>
+        <item quantity="other">Перемотати вперед на %d секунди</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Перемотати назад на %d секунду</item>
+        <item quantity="few">Перемотати назад на %d секунди</item>
+        <item quantity="many">Перемотати назад на %d секунд</item>
+        <item quantity="other">Перемотати назад на %d секунди</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d нове сповіщення</item>
+        <item quantity="few">%d нові сповіщення</item>
+        <item quantity="many">%d нових сповіщень</item>
+        <item quantity="other">%d нового сповіщення</item>
+    </plurals>
+    <plurals name="place_details_review_count_a11y_label">
+        <item quantity="one">%1$d відгук</item>
+        <item quantity="few">%1$d відгуки</item>
+        <item quantity="many">%1$d відгуків</item>
+        <item quantity="other">%1$d відгуку</item>
+    </plurals>
+</resources>

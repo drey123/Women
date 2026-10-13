@@ -1,0 +1,34 @@
+version: 3.0.3
+apkFileName: com.babycenter.pregnancytracker.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 26
+  targetSdkVersion: 36
+versionInfo:
+  versionCode: 223
+  versionName: 6.16.0
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- gif
+- m4a
+- mp3
+- ogg
+- png
+- so
+- webp
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- res/raw-en-rAU/checklist__tasks.json
+- res/raw-en-rAU/greetings_feeling.json
+- res/raw-en-rCA/checklist__tasks.json
+- res/raw-en-rCA/greetings_feeling.json
+- res/raw-es/checklist__tasks.json
+- res/raw-es/greetings_feeling.json
+- res/raw-fr-rCA/checklist__tasks.json
+- res/raw-fr-rCA/greetings_feeling.json
+- res/raw-pt/checklist__tasks.json
+- res/raw-pt/greetings_feeling.json

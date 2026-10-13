@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.babycenter.theme.view.TextInputLayoutWithErrorBackground android:id="@id/eventDate" android:layout_width="match_parent" android:layout_height="wrap_content" app:endIconDrawable="@drawable/ic_baseline_calendar_24" app:endIconMode="custom" style="?textInputFilledDropdownStyle">
+        <AutoCompleteTextView android:id="@id/eventDateAutoCompleteView" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" android:imeOptions="actionDone" android:textAlignment="viewStart" />
+    </com.babycenter.theme.view.TextInputLayoutWithErrorBackground>
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:includeFontPadding="false" />
+    <com.babycenter.theme.view.TextInputLayoutWithErrorBackground android:id="@id/eventTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" app:endIconDrawable="@drawable/ic_baseline_access_time_24" app:endIconMode="custom" style="?textInputFilledDropdownStyle">
+        <AutoCompleteTextView android:id="@id/eventTimeAutoCompleteView" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" android:imeOptions="actionDone" android:textAlignment="viewStart" />
+    </com.babycenter.theme.view.TextInputLayoutWithErrorBackground>
+</LinearLayout>

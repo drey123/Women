@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_card" android:paddingTop="?spacingXXL" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_story_organic_shape" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    <TextView android:textAppearance="?textAppearanceHeadline3" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginHorizontal="?spacing" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/answers" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" app:layout_constraintTop_toBottomOf="@id/text" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/description" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="?spacing" android:includeFontPadding="false" android:layout_marginHorizontal="?spacing" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/answers" app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

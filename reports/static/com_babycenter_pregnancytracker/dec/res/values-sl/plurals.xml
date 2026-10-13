@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_sdk_date_hour">
+        <item quantity="one">Pred eno uro</item>
+        <item quantity="other">%1$d ur nazaj</item>
+    </plurals>
+    <plurals name="crisp_sdk_date_minute">
+        <item quantity="one">Pred eno minuto</item>
+        <item quantity="other">%1$d minut nazaj</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_hour">
+        <item quantity="one">Uro</item>
+        <item quantity="other">%1$d ur</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_minute">
+        <item quantity="one">minuta</item>
+        <item quantity="other">%1$d minut</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Premik naprej za %d sekundo</item>
+        <item quantity="two">Premik naprej za %d sekundi</item>
+        <item quantity="few">Premik naprej za %d sekunde</item>
+        <item quantity="other">Premik naprej za %d sekund</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Premik nazaj za %d sekundo</item>
+        <item quantity="two">Premik nazaj za %d sekundi</item>
+        <item quantity="few">Premik nazaj za %d sekunde</item>
+        <item quantity="other">Premik nazaj za %d sekund</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d novo obvestilo</item>
+        <item quantity="two">%d novi obvestili</item>
+        <item quantity="few">%d nova obvestila</item>
+        <item quantity="other">%d novih obvestil</item>
+    </plurals>
+    <plurals name="place_details_review_count_a11y_label">
+        <item quantity="one">%1$d mnenje</item>
+        <item quantity="two">%1$d mnenji</item>
+        <item quantity="few">%1$d mnenja</item>
+        <item quantity="other">%1$d mnenj</item>
+    </plurals>
+</resources>

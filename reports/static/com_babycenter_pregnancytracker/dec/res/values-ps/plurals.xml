@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_sdk_date_hour">
+        <item quantity="one">ساعته مخکې</item>
+        <item quantity="other">%1$d ساعت مخکې</item>
+    </plurals>
+    <plurals name="crisp_sdk_date_minute">
+        <item quantity="one">یو دقیقه مخکې</item>
+        <item quantity="other">%1$d دقیقې مخکې</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_hour">
+        <item quantity="one">څو ساعته</item>
+        <item quantity="other">%1$d یو ساعت</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_minute">
+        <item quantity="one">یوه دقیقه</item>
+        <item quantity="other">%1$d دقیقې</item>
+    </plurals>
+</resources>

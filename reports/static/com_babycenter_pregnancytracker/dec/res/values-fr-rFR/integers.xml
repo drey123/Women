@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="app_widget__default__update_interval">10800000</integer>
+    <integer name="birth_preferences__max_length__note">200</integer>
+    <integer name="birth_preferences__max_length__person_name">25</integer>
+    <integer name="first_trimester_end">13</integer>
+    <integer name="ll_bad_network_upload_interval_seconds">-1</integer>
+    <integer name="ll_decent_network_upload_interval_seconds">-1</integer>
+    <integer name="ll_great_network_upload_interval_seconds">-1</integer>
+    <integer name="ll_session_timeout_seconds">15</integer>
+    <integer name="ll_wifi_upload_interval_seconds">-1</integer>
+    <integer name="second_trimester_end">27</integer>
+    <integer name="show_banner_week">36</integer>
+    <integer name="stage_week_size_bottom_start">8</integer>
+    <integer name="stage_week_size_toe_start">14</integer>
+    <integer name="third_trimester_end">41</integer>
+</resources>

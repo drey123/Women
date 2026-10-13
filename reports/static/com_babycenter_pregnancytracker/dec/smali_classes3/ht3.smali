@@ -1,0 +1,34 @@
+.class public interface abstract Lht3;
+.super Ljava/lang/Object;
+.source "r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55"
+
+# interfaces
+.implements Leg6;
+
+
+# virtual methods
+.method public abstract synthetic getDefaultInstanceForType()Ldg6;
+.end method
+
+.method public abstract getPaths(I)Ljava/lang/String;
+.end method
+
+.method public abstract getPathsBytes(I)Lcom/google/protobuf/h;
+.end method
+
+.method public abstract getPathsCount()I
+.end method
+
+.method public abstract getPathsList()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract synthetic isInitialized()Z
+.end method

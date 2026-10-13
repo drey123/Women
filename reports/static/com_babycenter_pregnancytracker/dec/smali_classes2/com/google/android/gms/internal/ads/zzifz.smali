@@ -1,0 +1,179 @@
+.class final Lcom/google/android/gms/internal/ads/zzifz;
+.super Ljava/lang/Object;
+.source "r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55"
+
+
+# static fields
+.field private static final zza:Lcom/google/android/gms/internal/ads/zzifz;
+
+
+# instance fields
+.field private final zzb:Lcom/google/android/gms/internal/ads/zzifg;
+
+.field private final zzc:Ljava/util/concurrent/ConcurrentHashMap;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzifz;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzifz;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/google/android/gms/internal/ads/zzifz;->zza:Lcom/google/android/gms/internal/ads/zzifz;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzifz;->zzc:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 10
+    .line 11
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzifg;
+
+    .line 12
+    .line 13
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzifg;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzifz;->zzb:Lcom/google/android/gms/internal/ads/zzifg;
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method public static zza()Lcom/google/android/gms/internal/ads/zzifz;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/google/android/gms/internal/ads/zzifz;->zza:Lcom/google/android/gms/internal/ads/zzifz;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private zzc(Ljava/lang/Class;)Lcom/google/android/gms/internal/ads/zzigh;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Class<",
+            "TT;>;)",
+            "Lcom/google/android/gms/internal/ads/zzigh<",
+            "TT;>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzifz;->zzc:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lcom/google/android/gms/internal/ads/zzifz;->zzb:Lcom/google/android/gms/internal/ads/zzifg;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/ads/zzifg;->zza(Ljava/lang/Class;)Lcom/google/android/gms/internal/ads/zzigh;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    invoke-virtual {v0, p1, p0}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    check-cast p1, Lcom/google/android/gms/internal/ads/zzigh;
+
+    .line 14
+    .line 15
+    if-eqz p1, :cond_0
+
+    .line 16
+    .line 17
+    return-object p1
+
+    .line 18
+    :cond_0
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final zzb(Ljava/lang/Class;)Lcom/google/android/gms/internal/ads/zzigh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzifz;->zzc:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/ads/zzifz;->zzc(Ljava/lang/Class;)Lcom/google/android/gms/internal/ads/zzigh;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzigh;
+
+    .line 15
+    .line 16
+    return-object v0
+.end method

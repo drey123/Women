@@ -1,0 +1,28 @@
+package com.google.android.gms.internal.ads;
+
+import defpackage.rw3;
+import java.security.GeneralSecurityException;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes2.dex */
+final /* synthetic */ class zzhfk implements zzhln {
+    static final /* synthetic */ zzhfk zza = new zzhfk();
+
+    private /* synthetic */ zzhfk() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhln
+    public final /* synthetic */ zzhdq zza(zzheh zzhehVar, Integer num) throws GeneralSecurityException {
+        zzhfo zzhfoVar = (zzhfo) zzhehVar;
+        int i = zzhfl.zza;
+        if (zzhfoVar.zzc() == 24) {
+            rw3.r("192 bit AES EAX Parameters are not valid");
+            return null;
+        }
+        zzhfh zzhfhVar = new zzhfh(null);
+        zzhfhVar.zza(zzhfoVar);
+        zzhfhVar.zzc(num);
+        zzhfhVar.zzb(zzibb.zzb(zzhfoVar.zzc()));
+        return zzhfhVar.zzd();
+    }
+}

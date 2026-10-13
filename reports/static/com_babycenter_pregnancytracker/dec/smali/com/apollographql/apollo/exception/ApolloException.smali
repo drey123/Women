@@ -1,0 +1,43 @@
+.class public abstract Lcom/apollographql/apollo/exception/ApolloException;
+.super Ljava/lang/RuntimeException;
+.source "r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u00086\u0018\u00002\u00060\u0001j\u0002`\u0002\u0082\u0001\u0013\u0003\u0004\u0005\u0006\u0007\u0008\t\n\u000b\u000c\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u00a8\u0006\u0016"
+    }
+    d2 = {
+        "Lcom/apollographql/apollo/exception/ApolloException;",
+        "Ljava/lang/RuntimeException;",
+        "Lkotlin/RuntimeException;",
+        "Lcom/apollographql/apollo/exception/ApolloCompositeException;",
+        "Lcom/apollographql/apollo/exception/ApolloGraphQLException;",
+        "Lcom/apollographql/apollo/exception/ApolloHttpException;",
+        "Lcom/apollographql/apollo/exception/ApolloNetworkException;",
+        "Lcom/apollographql/apollo/exception/ApolloParseException;",
+        "Lcom/apollographql/apollo/exception/ApolloWebSocketClosedException;",
+        "Lcom/apollographql/apollo/exception/ApolloWebSocketForceCloseException;",
+        "Lcom/apollographql/apollo/exception/AutoPersistedQueriesNotSupported;",
+        "Lcom/apollographql/apollo/exception/CacheMissException;",
+        "Lcom/apollographql/apollo/exception/DefaultApolloException;",
+        "Lcom/apollographql/apollo/exception/HttpCacheMissException;",
+        "Lcom/apollographql/apollo/exception/JsonDataException;",
+        "Lcom/apollographql/apollo/exception/JsonEncodingException;",
+        "Lcom/apollographql/apollo/exception/MissingValueException;",
+        "Lcom/apollographql/apollo/exception/NoDataException;",
+        "Lcom/apollographql/apollo/exception/NullOrMissingField;",
+        "Lcom/apollographql/apollo/exception/RouterError;",
+        "Lcom/apollographql/apollo/exception/SubscriptionConnectionException;",
+        "Lcom/apollographql/apollo/exception/SubscriptionOperationException;",
+        "apollo-api"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation

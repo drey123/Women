@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/heroTextContainer" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceHeadline4" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="312.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/group1" layout="@layout/view_holder_community_promo_group" />
+    <include android:id="@id/group2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" layout="@layout/view_holder_community_promo_group" />
+</LinearLayout>

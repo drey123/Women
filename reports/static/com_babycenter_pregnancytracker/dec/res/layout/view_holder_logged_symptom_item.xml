@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_card" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:id="@id/symptomItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawablePadding="?spacingS" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textColor="@color/buttonChipStrokeDefault" android:gravity="center" android:id="@id/severityBadge" android:background="@drawable/bg_symptom_severity_with_stroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="?spacingS" android:paddingHorizontal="?spacingM" android:paddingVertical="?spacingXS" />
+    </LinearLayout>
+    <com.babycenter.theme.view.loading.LoadingView android:id="@id/loadingView1" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="?spacingXL" />
+    <com.babycenter.theme.view.loading.LoadingView android:id="@id/loadingView2" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="?spacingM" />
+    <com.babycenter.theme.view.loading.LoadingView android:id="@id/loadingView3" android:layout_width="98.0dp" android:layout_height="20.0dp" android:layout_marginTop="?spacingM" />
+    <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingXL" />
+    <Button android:id="@id/readMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacingXS" android:text="@string/app_calendar__symptom_read_more" style="?borderlessButtonStyle" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:id="@id/addNote" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="?spacingS" android:text="@string/app_calendar__symptom_add_note" app:drawableEndCompat="@drawable/ic_baseline_chevron_down_24" app:drawableTint="@color/loyalty_faq_chevron" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/noteLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:hint="@string/app_calendar__symptom_add_note_hint">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/note" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton android:layout_gravity="end" android:id="@id/saveButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:text="@string/save" style="@style/BabyCenter2.Widget.Button.Primary.Small" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:height="70.0dp" android:width="79.0dp" android:viewportWidth="79.0" android:viewportHeight="70.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/img_reminder_dialog_header_background" android:bottom="8.0dp" android:end="8.0dp" />
+    <item android:gravity="end|bottom" android:drawable="@drawable/img_reminder_dialog_header_foreground" />
+</layer-list>

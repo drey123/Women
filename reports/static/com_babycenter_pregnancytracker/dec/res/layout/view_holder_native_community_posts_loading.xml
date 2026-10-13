@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_card" android:layout_width="@dimen/community__posts__card__width" android:layout_height="@dimen/community__posts__card__height" android:backgroundTint="@color/colorBackgroundCommunityPostsCard" android:paddingHorizontal="?spacingL" android:paddingVertical="?spacingXL">
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:layout_gravity="start" android:layout_width="184.0dp" android:layout_height="wrap_content" style="@style/BabyCenter.Community.EmptyField" />
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" style="@style/BabyCenter.Community.EmptyField" />
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" style="@style/BabyCenter.Community.EmptyField" />
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" style="@style/BabyCenter.Community.EmptyField" />
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:layout_width="142.0dp" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" style="@style/BabyCenter.Community.EmptyField" />
+    </LinearLayout>
+</FrameLayout>

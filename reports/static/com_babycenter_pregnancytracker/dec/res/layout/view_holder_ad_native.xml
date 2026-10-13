@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="?spacing" android:paddingBottom="?spacingXS" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?spacing" android:paddingEnd="?spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/adContainer" android:layout_width="match_parent" android:layout_height="wrap_content" style="?cardViewOutlinedStyle" />
+    <ImageView android:layout_gravity="end|top" android:id="@id/adInfoIcon" android:background="@android:drawable/ic_menu_info_details" android:visibility="gone" android:layout_width="?spacingTouchTarget" android:layout_height="?spacingTouchTarget" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</FrameLayout>

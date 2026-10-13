@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/colorCalendarViewBackground" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/sizeImage" android:layout_width="24.0dp" android:layout_height="24.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:gravity="start" android:id="@id/pregnancyPeriod" android:layout_width="0.0dp" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="?spacingS" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/sizeImage" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginStart="0.0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

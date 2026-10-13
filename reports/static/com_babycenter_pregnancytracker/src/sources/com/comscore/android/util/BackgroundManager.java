@@ -1,0 +1,58 @@
+package com.comscore.android.util;
+
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.app.Application;
+import android.os.Bundle;
+import com.comscore.Analytics;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes2.dex */
+@SuppressLint({"NewApi"})
+@TargetApi(14)
+public class BackgroundManager implements Application.ActivityLifecycleCallbacks {
+    private Application a;
+
+    public BackgroundManager(Application application) {
+        this.a = application;
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityPaused(Activity activity) {
+        Analytics.notifyExitForeground();
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityResumed(Activity activity) {
+        Analytics.notifyEnterForeground();
+    }
+
+    public void register() {
+        this.a.registerActivityLifecycleCallbacks(this);
+    }
+
+    public void unregister() {
+        this.a.unregisterActivityLifecycleCallbacks(this);
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityDestroyed(Activity activity) {
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityStarted(Activity activity) {
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityStopped(Activity activity) {
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivityCreated(Activity activity, Bundle bundle) {
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/crisp_sdk_message_content" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/crisp_sdk_picker_card" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Crisp.SDK.CardView.Filled.ExtraLarge.Primary">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Crisp.SDK.BodySmall.OnPrimary" android:id="@id/crisp_sdk_picker_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="14.0dp" android:paddingVertical="8.0dp" />
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/crisp_sdk_picker_choices" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:layoutManager="com.google.android.flexbox.FlexboxLayoutManager" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

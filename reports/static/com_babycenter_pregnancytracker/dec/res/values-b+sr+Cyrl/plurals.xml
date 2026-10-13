@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_sdk_date_hour">
+        <item quantity="one">Сат пре</item>
+        <item quantity="other">%1$d сати раније</item>
+    </plurals>
+    <plurals name="crisp_sdk_date_minute">
+        <item quantity="one">Минут пре</item>
+        <item quantity="other">%1$d минута раније</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_hour">
+        <item quantity="one">За сат времена</item>
+        <item quantity="other">%1$d сати</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_minute">
+        <item quantity="one">Минут</item>
+        <item quantity="other">%1$d минута</item>
+    </plurals>
+</resources>

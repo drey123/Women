@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@color/widgetPromotionBackground" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="?spacing">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/content" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <com.babycenter.pregbaby.ui.view.PageIndicatorView android:gravity="center" android:id="@id/indicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingXXL" android:paddingVertical="?spacingM" app:indicatorDefaultColor="@color/colorDailyInsightsModulePageIndicatorDefault" app:indicatorMargin="2.0dp" app:indicatorSelectedColor="@color/colorDailyInsightsModulePageIndicatorSelected" app:indicatorSize="8.0dp" />
+        <com.google.android.material.button.MaterialButton android:id="@id/ok_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingXXXL" android:layout_marginBottom="?spacingXXXL" android:layout_marginHorizontal="?spacing" app:layout_constraintTop_toBottomOf="@id/insightsIndicator" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

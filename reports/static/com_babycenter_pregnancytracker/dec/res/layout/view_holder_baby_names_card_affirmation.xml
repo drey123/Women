@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="?spacing" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="352.0dp" android:elevation="@dimen/babycenter.cardView.elevation">
+        <TextView android:textAppearance="?textAppearanceHeadline2" android:ellipsize="end" android:gravity="center" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="5" android:includeFontPadding="false" />
+        <com.google.android.material.button.MaterialButton android:id="@id/cta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:text="@string/baby_names__label__keep_going" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton android:id="@id/crisp_sdk_smiley_img" style="@style/Widget.Crisp.SDK.Button.Standard.Smiley"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

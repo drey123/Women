@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:background="?android:colorBackground" android:layout_width="match_parent" android:layout_height="wrap_content" app:liftOnScroll="true">
+        <FrameLayout android:id="@id/header" android:background="@color/headerBackgroundLight" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_header_community" />
+            <include android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" layout="@layout/view_home_feed_toolbar_with_child_info" />
+        </FrameLayout>
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:layout_gravity="center_horizontal" android:id="@id/contentProgress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

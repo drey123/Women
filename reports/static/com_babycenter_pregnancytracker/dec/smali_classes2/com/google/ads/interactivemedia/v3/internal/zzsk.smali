@@ -1,0 +1,25 @@
+.class public final Lcom/google/ads/interactivemedia/v3/internal/zzsk;
+.super Ljava/lang/Object;
+.source "r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55"
+
+
+# static fields
+.field public static final synthetic zza:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    const-wide/high16 v0, 0x4000000000000000L    # 2.0
+
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

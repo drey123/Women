@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_toolbar_bell" android:id="@id/calendar_notification_button_item" android:title="@string/notifications_title" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_more_gear" android:id="@id/calendar_more_button_item" android:title="@string/navigation__more" app:showAsAction="always" />
+</menu>

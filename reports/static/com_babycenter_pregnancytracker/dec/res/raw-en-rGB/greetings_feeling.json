@@ -1,0 +1,19 @@
+{
+  "forTimeOfDay": [
+    {
+      "start": "00:00",
+      "end": "04:00",
+      "text": "How are you feeling?"
+    },
+    {
+      "start": "04:00",
+      "end": "20:00",
+      "text": "How are you feeling today?"
+    },
+    {
+      "start": "20:00",
+      "end": "24:00",
+      "text": "How was your day?"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_card" android:padding="?spacingM" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingXL" android:backgroundTint="@color/colorBackgroundStageDetailsDailyBriefingErrorModule" android:layout_marginHorizontal="?spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stage_pages__summary__daily_brief__error__title" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingXS" android:text="@string/stage_pages__summary__daily_brief__error__description" />
+    <com.google.android.material.button.MaterialButton android:id="@id/reload" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingM" android:text="@string/error_try_again" app:iconGravity="textStart" app:iconSize="?spacingXL" style="?buttonOutlinedSmallStyle" />
+</LinearLayout>

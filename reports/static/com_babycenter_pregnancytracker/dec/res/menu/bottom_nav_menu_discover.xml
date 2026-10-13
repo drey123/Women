@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_bottom_tab_home" android:id="@id/menu_home" android:title="@string/navigation__home" />
+    <item android:icon="@drawable/ic_bottom_tab_birth_club" android:id="@id/menu_birthclub" android:title="@string/navigation__community" />
+    <item android:icon="@drawable/ic_bottom_tab_calendar" android:id="@id/menu_calendar" android:title="@string/navigation__calendar" />
+    <item android:icon="@drawable/ic_bottom_tab_discover" android:id="@id/menu_discover" android:title="@string/navigation__discover" />
+    <item android:icon="@drawable/ic_bottom_tab_tools" android:id="@id/menu_tools" android:title="@string/navigation__tools" />
+</menu>

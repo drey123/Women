@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_sdk_date_hour">
+        <item quantity="one">En time siden</item>
+        <item quantity="other">%1$d timer siden</item>
+    </plurals>
+    <plurals name="crisp_sdk_date_minute">
+        <item quantity="one">Ett minutt siden</item>
+        <item quantity="other">%1$d minutter siden</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_hour">
+        <item quantity="one">En time</item>
+        <item quantity="other">%1$d timer</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_minute">
+        <item quantity="one">Et minutt</item>
+        <item quantity="other">%1$d minutter</item>
+    </plurals>
+</resources>

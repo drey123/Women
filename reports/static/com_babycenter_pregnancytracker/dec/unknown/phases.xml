@@ -1,0 +1,16 @@
+<stages>
+    <!--  At the moment these IDs are not tied to anything, just picked a range where
+            they won't overlap with stages.  Eventually they become a ContentNode id. -->
+    <stage id="10" name="precon" dbname="bc20gettingpregnant" week="-2600" month="0" year="0"/>
+    <stage id="15" name="preg" dbname="bc20pregnancy" week="-39" month="0" year="0"/>
+    <stage id="20" name="baby" dbname="bc20baby" week="0" month="0" year="0"/>
+    <stage id="25" name="toddler" dbname="bc20toddler" week="0" month="0" year="1"/>
+    <stage id="30" name="preschooler" dbname="bc20preschooler" week="0" month="0" year="2"/>
+    <stage id="35" name="bigkid" dbname="bc20bigkid" week="0" month="0" year="5"/>
+    <!-- This stage is here because the stage mapper algorithm always looks ahead to see the
+         starting boundary of the next stage.  However, stage 40 appears to have been hijacked for
+         the "Just for You" phase, which appears next to "Big Kid" on the phase tabs.  That's not
+         what its supposed to mean, but apparently that's the way we are using it.
+         UPDATE:   So-Woo Lee changed this to yourfamily to match the enum -->
+    <stage id="40" name="yourfamily" week="0" month="0" year="9"/>
+</stages>

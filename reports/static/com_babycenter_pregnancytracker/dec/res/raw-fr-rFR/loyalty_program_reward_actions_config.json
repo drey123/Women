@@ -1,0 +1,74 @@
+[
+  {
+    "type": "Checklist",
+    "icon": "https://assets.babycenter.com/ims/2025/10/3thingstodo.png",
+    "title": "3 things to do",
+    "subtitle": "Your daily checklist of quick wins.",
+    "cap": "Daily",
+    "deeplink": ""
+  },
+  {
+    "type": "BabyNameShuffle",
+    "icon": "https://assets.babycenter.com/ims/2025/10/BabyNames.png",
+    "title": "Baby Name Shuffle",
+    "subtitle": "Swipe, save, and find your perfect baby name.",
+    "cap": "Daily",
+    "deeplink": "babycenterpreg://tools/babynames"
+  },
+  {
+    "type": "DailyReads",
+    "icon": "https://assets.babycenter.com/ims/2025/10/Dailyreads.png",
+    "title": "Daily reads",
+    "subtitle": "Expert advice right when you need it.",
+    "cap": "Daily",
+    "deeplink": ""
+  },
+  {
+    "type": "KickTracker",
+    "icon": "https://assets.babycenter.com/ims/2025/10/Kicktracker.png",
+    "title": "Kick tracker",
+    "subtitle": "Cherish and log the moments your baby moves.",
+    "cap": "Daily",
+    "deeplink": "babycenterpreg://tools/kick_tracker"
+  },
+  {
+    "type": "SymptomTracker",
+    "icon": "https://assets.babycenter.com/ims/2025/10/Symptoms.png",
+    "title": "Symptom tracker",
+    "subtitle": "Make sense of your symptoms.",
+    "cap": "Daily",
+    "deeplink": "babycenterpreg://tools/symptoms_tracker"
+  },
+  {
+    "type": "Bumpie",
+    "icon": "https://assets.babycenter.com/ims/2025/10/Bumpie.png",
+    "title": "Bumpie",
+    "subtitle": "Watch your bump grow.",
+    "cap": "Weekly",
+    "deeplink": "babycenterpreg://tools/bumpie"
+  },
+  {
+    "type": "AddressCapture",
+    "icon": "https://assets.babycenter.com/ims/2025/10/Icon_Postal_address.png",
+    "title": "Complete profile",
+    "subtitle": "Share your address, get samples delivered.",
+    "cap": "OneTime",
+    "deeplink": "babycenterpreg://more/address"
+  },
+  {
+    "type": "Push",
+    "icon": "https://assets.babycenter.com/ims/2026/04/reward-one-time-action.png",
+    "title": "Allow push notifications",
+    "subtitle": "Get personalized tips and baby updates.",
+    "cap": "OneTime",
+    "deeplink": ""
+  },
+  {
+    "type": "AeroflowSurvey",
+    "icon": "https://assets.babycenter.com/ims/2025/10/Breastbump.png",
+    "title": "Get a free breast pump",
+    "subtitle": "Check if you’re covered and claim yours.",
+    "cap": "OneTime",
+    "deeplink": "https://community.babycenter.com/aeroflow-offer?utm_source=email&utm_medium=email&utm_cam[…]n=en_US_adhoc_Aeroflow_StandalonePage_20250614&pe=&zdee="
+  }
+]

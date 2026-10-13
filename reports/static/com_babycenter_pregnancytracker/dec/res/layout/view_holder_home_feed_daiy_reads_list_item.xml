@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="?spacingM" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/divider" android:background="?android:listDivider" android:layout_width="match_parent" android:layout_height="1.0dp" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/image" android:layout_width="100.0dp" android:layout_height="0.0dp" android:scaleType="centerCrop" app:layout_constraintDimensionRatio="@string/daily_reads_thumbnail_aspect_ratio" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/title" app:shapeAppearance="@style/BabyCenter.ShapeAppearance.Image" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:maxLines="3" android:layout_marginStart="?spacingM" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/image" app:layout_constraintTop_toBottomOf="@id/divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

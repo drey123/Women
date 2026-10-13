@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?spacingXL"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/popupRoot" android:background="@drawable/bg_symptom_item_severity" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:id="@id/severityLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:text="@string/app_calendar__symptoms_logged_symptom_severity" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/optionsContainer" android:background="@drawable/bg_symptom_severity_track" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:baselineAligned="false" android:minHeight="32.0dp">
+            <FrameLayout android:id="@id/optionPresent" android:layout_width="0.0dp" android:layout_height="match_parent" android:foreground="?selectableItemBackgroundBorderless" android:layout_weight="1.0">
+                <View android:layout_gravity="center" android:id="@id/dotPresent" android:background="@drawable/bg_symptom_severity_dot" android:focusable="true" android:clickable="true" android:layout_width="12.0dp" android:layout_height="12.0dp" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/optionMild" android:layout_width="0.0dp" android:layout_height="match_parent" android:foreground="?selectableItemBackgroundBorderless" android:layout_weight="1.0">
+                <View android:layout_gravity="center" android:id="@id/dotMild" android:background="@drawable/bg_symptom_severity_dot" android:focusable="true" android:clickable="true" android:layout_width="12.0dp" android:layout_height="12.0dp" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/optionModerate" android:layout_width="0.0dp" android:layout_height="match_parent" android:foreground="?selectableItemBackgroundBorderless" android:layout_weight="1.0">
+                <View android:layout_gravity="center" android:id="@id/dotModerate" android:background="@drawable/bg_symptom_severity_dot" android:focusable="true" android:clickable="true" android:layout_width="12.0dp" android:layout_height="12.0dp" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/optionSevere" android:layout_width="0.0dp" android:layout_height="match_parent" android:foreground="?selectableItemBackgroundBorderless" android:layout_weight="1.0">
+                <View android:layout_gravity="center" android:id="@id/dotSevere" android:background="@drawable/bg_symptom_severity_dot" android:focusable="true" android:clickable="true" android:layout_width="12.0dp" android:layout_height="12.0dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/labelsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingM">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:id="@id/labelPresent" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_calendar__symptom_severity_present" android:includeFontPadding="false" android:layout_weight="1.0" android:paddingHorizontal="?spacingS" android:paddingVertical="4.0dp" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:id="@id/labelMild" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_calendar__symptom_severity_mild" android:includeFontPadding="false" android:layout_weight="1.0" android:paddingHorizontal="?spacingS" android:paddingVertical="4.0dp" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:id="@id/labelModerate" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_calendar__symptom_severity_moderate" android:includeFontPadding="false" android:layout_weight="1.0" android:paddingHorizontal="?spacingS" android:paddingVertical="4.0dp" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:id="@id/labelSevere" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_calendar__symptom_severity_severe" android:includeFontPadding="false" android:layout_weight="1.0" android:paddingHorizontal="?spacingS" android:paddingVertical="4.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

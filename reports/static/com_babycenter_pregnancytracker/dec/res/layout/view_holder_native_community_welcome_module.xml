@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline1" android:gravity="center_horizontal" android:id="@id/titleView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/native_community__welcome_module__title" android:paddingStart="?spacingS" android:paddingEnd="?spacingS" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:id="@id/descriptionView" android:paddingTop="?spacingXS" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/native_community__welcome_module__text" android:paddingStart="?spacing" android:paddingEnd="?spacing" />
+</LinearLayout>

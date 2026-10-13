@@ -1,0 +1,31 @@
+package com.google.ads.interactivemedia.v3.internal;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes2.dex */
+final class zzhh implements Runnable {
+    final /* synthetic */ zzhi zza;
+
+    public zzhh(zzhi zzhiVar) {
+        this.zza = zzhiVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        zzhi zzhiVar = this.zza;
+        synchronized (zzhiVar.zzq()) {
+            if (zzhiVar.zzr()) {
+                return;
+            }
+            zzhiVar.zzs(true);
+            try {
+                zzhiVar.zzo();
+            } catch (Exception e) {
+                this.zza.zzp().zzc(2023, -1L, e);
+            }
+            zzhi zzhiVar2 = this.zza;
+            synchronized (zzhiVar2.zzq()) {
+                zzhiVar2.zzs(false);
+            }
+        }
+    }
+}

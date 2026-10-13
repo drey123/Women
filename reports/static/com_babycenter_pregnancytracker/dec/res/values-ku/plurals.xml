@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_sdk_date_hour">
+        <item quantity="one">کاتژمێرێک پێش ئێستا</item>
+        <item quantity="other">%1$d کاتژمێر پێش ئێستا</item>
+    </plurals>
+    <plurals name="crisp_sdk_date_minute">
+        <item quantity="one">خولەکێک پێش ئێستا</item>
+        <item quantity="other">%1$d خولەک پێش ئێستا</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_hour">
+        <item quantity="one">چەند کاتژمێرێک</item>
+        <item quantity="other">%1$d کاتژمێر</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_minute">
+        <item quantity="one">خولەکێک</item>
+        <item quantity="other">%1$d خولەک</item>
+    </plurals>
+</resources>

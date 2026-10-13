@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <id name="button" />
+    <id name="credit" />
+    <id name="footer_ad_container" />
+    <id name="header_ad_container" />
+    <id name="image" />
+    <id name="text" />
+    <id name="view_holder_coroutine_scope" />
+    <id name="view_tag_binding" />
+    <id name="view_tag_coroutine_scope" />
+    <id name="view_tag_item_bound" />
+    <id name="view_tag_loyalty_reward_action_type" />
+    <id name="view_tag_mode_bound" />
+    <id name="view_tag_position" />
+</resources>

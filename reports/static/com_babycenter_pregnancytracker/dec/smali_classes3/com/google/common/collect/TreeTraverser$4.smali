@@ -1,0 +1,93 @@
+.class Lcom/google/common/collect/TreeTraverser$4;
+.super Lcom/google/common/collect/FluentIterable;
+.source "r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/common/collect/TreeTraverser;->breadthFirstTraversal(Ljava/lang/Object;)Lcom/google/common/collect/FluentIterable;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/common/collect/FluentIterable<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/google/common/collect/TreeTraverser;
+
+.field final synthetic val$root:Ljava/lang/Object;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/common/collect/TreeTraverser;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    iput-object p2, p0, Lcom/google/common/collect/TreeTraverser$4;->val$root:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    iput-object p1, p0, Lcom/google/common/collect/TreeTraverser$4;->this$0:Lcom/google/common/collect/TreeTraverser;
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public iterator()Lcom/google/common/collect/UnmodifiableIterator;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/collect/UnmodifiableIterator<",
+            "TT;>;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lcom/google/common/collect/TreeTraverser$BreadthFirstIterator;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/google/common/collect/TreeTraverser$4;->this$0:Lcom/google/common/collect/TreeTraverser;
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lcom/google/common/collect/TreeTraverser$4;->val$root:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    invoke-direct {v0, v1, p0}, Lcom/google/common/collect/TreeTraverser$BreadthFirstIterator;-><init>(Lcom/google/common/collect/TreeTraverser;Ljava/lang/Object;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method public bridge synthetic iterator()Ljava/util/Iterator;
+    .locals 0
+
+    .line 11
+    invoke-virtual {p0}, Lcom/google/common/collect/TreeTraverser$4;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
+
+    move-result-object p0
+
+    return-object p0
+.end method

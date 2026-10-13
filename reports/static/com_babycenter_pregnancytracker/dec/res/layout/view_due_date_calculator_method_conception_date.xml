@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.babycenter.theme.view.TextInputLayoutWithErrorBackground android:id="@id/conceptionDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/due_date_calculator__hint__conception_date" app:endIconDrawable="@drawable/ic_baseline_calendar_24" app:endIconMode="custom" style="?textInputFilledDropdownStyle">
+        <AutoCompleteTextView android:id="@id/conceptionDateAutoCompleteView" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" android:imeOptions="actionDone" android:textAlignment="viewStart" />
+    </com.babycenter.theme.view.TextInputLayoutWithErrorBackground>
+</LinearLayout>

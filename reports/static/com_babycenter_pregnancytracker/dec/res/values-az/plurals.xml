@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_sdk_date_hour">
+        <item quantity="one">Bir saat əvvəl</item>
+        <item quantity="other">%1$d saat əvvəl</item>
+    </plurals>
+    <plurals name="crisp_sdk_date_minute">
+        <item quantity="one">Bir dəqiqə əvvəl</item>
+        <item quantity="other">%1$d dəqiqə əvvəl</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_hour">
+        <item quantity="one">Bir saat</item>
+        <item quantity="other">%1$d saat</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_minute">
+        <item quantity="one">Bir dəqiqə</item>
+        <item quantity="other">%1$d dəqiqə</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d saniyə irəli çəkin</item>
+        <item quantity="other">%d saniyə irəli çəkin</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d saniyə geri çəkin</item>
+        <item quantity="other">%d saniyə geri çəkin</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d yeni bildiriş</item>
+        <item quantity="other">%d yeni bildiriş</item>
+    </plurals>
+    <plurals name="place_details_review_count_a11y_label">
+        <item quantity="one">%1$d rəy</item>
+        <item quantity="other">%1$d rəy</item>
+    </plurals>
+</resources>

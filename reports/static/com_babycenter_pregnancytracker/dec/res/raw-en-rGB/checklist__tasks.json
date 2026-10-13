@@ -1,0 +1,718 @@
+[
+  {
+    "uuid": "dd3e7348-3e01-404b-bfcb-861eb793527a",
+    "cat": "SelfCare",
+    "type": "ConnectingWithBaby",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Write a short note to your baby",
+        "affirmation": "It's a sweet keepsake to share when they're older 💞"
+      }
+    ]
+  },
+  {
+    "uuid": "b9e7a67d-c270-4e08-b45d-179d45c83e66",
+    "cat": "SelfCare",
+    "type": "ConnectingWithBaby",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Tell your baby how much you love them",
+        "affirmation": "Talking to your baby can help you feel connected."
+      }
+    ]
+  },
+  {
+    "uuid": "2ed0d10d-49fe-4bfd-9c2f-85738881c241",
+    "cat": "SelfCare",
+    "type": "ConnectingWithBaby",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Jot down a pregnancy memory",
+        "affirmation": "Hooray! Some day, you'll share these with your baby."
+      }
+    ]
+  },
+  {
+    "uuid": "070fd291-69a3-420b-8a6c-3e85ad02598c",
+    "cat": "SelfCare",
+    "type": "ConnectingWithBaby",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Sing a little song to your baby",
+        "affirmation": "Your baby loves your voice (even if you can't sing)."
+      }
+    ],
+    "targeting": {
+      "tri": [3]
+    }
+  },
+  {
+    "uuid": "ef06e7a1-964a-437e-a639-c8e4d675cad0",
+    "cat": "SelfCare",
+    "type": "ConnectingWithBaby",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Tell your baby how your day's going",
+        "affirmation": "Your little pal loves hearing your voice."
+      }
+    ],
+    "targeting": {
+      "tri": [3]
+    }
+  },
+  {
+    "uuid": "3dba12aa-d7ae-4905-a688-090d269efe01",
+    "cat": "SelfCare",
+    "type": "ConnectingWithBaby",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Read something aloud to your baby",
+        "affirmation": "Your baby is learning the sound of your voice."
+      }
+    ],
+    "targeting": {
+      "tri": [3]
+    }
+  },
+  {
+    "uuid": "8f228a9c-78f9-4b02-8ede-e004afbbef7a",
+    "cat": "SelfCare",
+    "type": "ConnectingWithBaby",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Hum a song to your baby",
+        "affirmation": "They can sense the vibrations – isn't that amazing?"
+      }
+    ],
+    "targeting": {
+      "tri": [3]
+    }
+  },
+  {
+    "uuid": "5de8ee9b-8a22-4401-852d-fa5388a8ec0d",
+    "cat": "SelfCare",
+    "type": "ConnectingWithBaby",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Rub your belly for a bonding moment with your baby",
+        "affirmation": "Your baby can feel it – and may move in response."
+      }
+    ],
+    "targeting": {
+      "tri": [2, 3]
+    }
+  },
+  {
+    "uuid": "f279324d-cf85-4b09-8323-be8adc4e6745",
+    "cat": "SelfCare",
+    "type": "ConnectingWithBaby",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Hold your belly so your baby can sense your touch",
+        "affirmation": "You're bonding more every day!"
+      }
+    ],
+    "targeting": {
+      "tri": [2, 3]
+    }
+  },
+  {
+    "uuid": "2ee6ca91-06e4-480d-ba27-f787f19c6a63",
+    "cat": "SelfCare",
+    "type": "MentalEmotional",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take five deep breaths in and out",
+        "affirmation": "A little stress relief can help you and your baby."
+      }
+    ]
+  },
+  {
+    "uuid": "8d6b332b-8af8-44ce-a876-3401793e3715",
+    "cat": "SelfCare",
+    "type": "MentalEmotional",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Name one thing that went well today",
+        "affirmation": "Expressing gratitude can help your mood 🧠"
+      }
+    ]
+  },
+  {
+    "uuid": "b8561170-5fb2-4819-8c1d-2cb5c7f45e1b",
+    "cat": "SelfCare",
+    "type": "MentalEmotional",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Say something you're grateful for before bed",
+        "affirmation": "There's a lot to look forward to right now 👶"
+      }
+    ],
+    "targeting": {
+      "tri": [2]
+    }
+  },
+  {
+    "uuid": "1fe78f60-2061-4586-8001-a651e451c5a0",
+    "cat": "SelfCare",
+    "type": "MentalEmotional",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Journal about how you're feeling (a sentence counts)",
+        "affirmation": "Whatever you're feeling is valid."
+      }
+    ]
+  },
+  {
+    "uuid": "6c2e9a91-06ae-430b-b17a-82cffee9efd6",
+    "cat": "SelfCare",
+    "type": "MentalEmotional",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Let yourself sit down and rest for a moment",
+        "affirmation": "Your body is doing a lot right now."
+      }
+    ]
+  },
+  {
+    "uuid": "cabbfb68-2fdd-48ac-8273-b3ed79c2b4d7",
+    "cat": "SelfCare",
+    "type": "MentalEmotional",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Write down a worry to clear it from your head",
+        "affirmation": "Does your brain feel quieter now?"
+      }
+    ]
+  },
+  {
+    "uuid": "be0d5a32-ec4d-498d-9a81-3a6e13a3367c",
+    "cat": "SelfCare",
+    "type": "MentalEmotional",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Do a quick body scan for tension and release it",
+        "affirmation": "Ahhh ... that feels better."
+      }
+    ]
+  },
+  {
+    "uuid": "345c0f8c-0f6f-40cb-bb21-623b18489094",
+    "cat": "SelfCare",
+    "type": "MentalEmotional",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Treat yourself to something special today",
+        "affirmation": "You've earned it!"
+      }
+    ]
+  },
+  {
+    "uuid": "2c4fc63e-3dfc-405b-a124-7a5335583656",
+    "cat": "SelfCare",
+    "type": "MentalEmotional",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Write down three things you're grateful for",
+        "affirmation": "Keeping regular gratitude lists is good for you."
+      }
+    ]
+  },
+  {
+    "uuid": "e4150f68-a05c-4cc0-b925-0a420fff7896",
+    "cat": "SelfCare",
+    "type": "Affirmations",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/affirmation-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Say this mantra: \"I know I can do this\"",
+        "affirmation": "Yep, you can do it!"
+      }
+    ]
+  },
+  {
+    "uuid": "fdddedcb-6c55-4d38-807b-aa14e95e7fdd",
+    "cat": "SelfCare",
+    "type": "Affirmations",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/affirmation-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Say this mantra: \"I'm capable of amazing things\"",
+        "affirmation": "You really are!"
+      }
+    ]
+  },
+  {
+    "uuid": "1e402ca4-5762-42d3-9510-bee3188417a3",
+    "cat": "SelfCare",
+    "type": "Affirmations",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/affirmation-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Say this mantra: \"My baby is safe and loved\"",
+        "affirmation": "You've got this!"
+      }
+    ]
+  },
+  {
+    "uuid": "23855498-c525-4221-9230-994e6a8a7ad7",
+    "cat": "SelfCare",
+    "type": "Affirmations",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/affirmation-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Say this mantra: \"I'm resilient, strong, and brave\"",
+        "affirmation": "Yes you are!"
+      }
+    ]
+  },
+  {
+    "uuid": "60694918-5bab-4d79-a545-d2205627903a",
+    "cat": "SelfCare",
+    "type": "Affirmations",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/affirmation-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Say this mantra: \"I'm doing the best I can\"",
+        "affirmation": "It's okay if you're overwhelmed right now."
+      }
+    ]
+  },
+  {
+    "uuid": "971f7417-82c7-4ff4-96d4-97658e8bafc0",
+    "cat": "SelfCare",
+    "type": "Affirmations",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/affirmation-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Repeat this: \"I'm proud of what my body's doing now\"",
+        "affirmation": "You're growing a baby and a new organ: the placenta."
+      }
+    ],
+    "targeting": {
+      "tri": [1]
+    }
+  },
+  {
+    "uuid": "485f29ea-64e6-416e-822e-8428db381c5c",
+    "cat": "SelfCare",
+    "type": "Physical",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Put your feet up and relax for at least five minutes",
+        "affirmation": "You took time for yourself *and* minimize swelling."
+      }
+    ]
+  },
+  {
+    "uuid": "c86a6a9c-0e8f-428d-b5eb-c5184b11278f",
+    "cat": "SelfCare",
+    "type": "Physical",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Do five ankle circles with each foot",
+        "affirmation": "Ankle circles can keep blood flowing like it should."
+      }
+    ]
+  },
+  {
+    "uuid": "5df33c76-7c95-48da-b10a-3f4fbe71c2fa",
+    "cat": "SelfCare",
+    "type": "Physical",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Do some shoulder rolls",
+        "affirmation": "Great work relieving those sore muscles."
+      }
+    ]
+  },
+  {
+    "uuid": "771bbf86-e408-441c-9b61-1d0bfc3417bc",
+    "cat": "SelfCare",
+    "type": "Physical",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take a stretch break",
+        "affirmation": "It all counts, even if you can't touch your toes."
+      }
+    ]
+  },
+  {
+    "uuid": "ba13f8b1-04c0-44f4-96e5-de88aa26807e",
+    "cat": "SelfCare",
+    "type": "Physical",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Indulge a craving",
+        "affirmation": "It's a pregnancy rite of passage 🍔"
+      }
+    ]
+  },
+  {
+    "uuid": "5777ee56-8e6d-4ef2-b5d5-cd50cd564a27",
+    "cat": "SelfCare",
+    "type": "Physical",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take a walk outside",
+        "affirmation": "Getting some fresh air can feel so good."
+      }
+    ]
+  },
+  {
+    "uuid": "d1379016-b4b1-432d-bb6f-2a6b83d75c32",
+    "cat": "SelfCare",
+    "type": "Physical",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Grab a healthy snack",
+        "affirmation": "Good job nourishing your baby!"
+      }
+    ]
+  },
+  {
+    "uuid": "65b15682-8fbb-4fd1-bd93-665f7dddf002",
+    "cat": "SelfCare",
+    "type": "Physical",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Get some steps in after a meal",
+        "affirmation": "Way to get moving 🙌"
+      }
+    ]
+  },
+  {
+    "uuid": "0c8d3a88-8fee-4ef6-9fbd-9dc24bf6eafb",
+    "cat": "SelfCare",
+    "type": "SocialConnection",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Make plans with a friend",
+        "affirmation": "Yay! There's another thing to look forward to."
+      }
+    ]
+  },
+  {
+    "uuid": "c10aa4f0-5965-47ad-8442-a0206a7f87b3",
+    "cat": "SelfCare",
+    "type": "SocialConnection",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Share an ultrasound photo with a loved one",
+        "affirmation": "Your village is just as excited as you are!"
+      }
+    ],
+    "targeting": {
+      "tri": [2, 3]
+    }
+  },
+  {
+    "uuid": "4e88f356-bb22-4d17-b02f-13cf74cdeeb5",
+    "cat": "SelfCare",
+    "type": "SocialConnection",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Send a funny post to a friend",
+        "affirmation": "Way to brighten someone's day (and yours) ☀️"
+      }
+    ]
+  },
+  {
+    "uuid": "93c1289f-ee35-40ef-8949-053d1916e40b",
+    "cat": "SelfCare",
+    "type": "SocialConnection",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "List three people who could help when baby's here",
+        "affirmation": "Your village is there to support you."
+      }
+    ]
+  },
+  {
+    "uuid": "ba30138b-d397-425a-bb57-9b2142365583",
+    "cat": "SelfCare",
+    "type": "SocialConnection",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/selfcare-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Text a friend and check in with them",
+        "affirmation": "Remember: You're not in this alone."
+      }
+    ]
+  },
+  {
+    "uuid": "82ad24d2-2b68-4278-bd8e-b6c801255f5e",
+    "cat": "SelfCare",
+    "type": "Vitamins",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/vitamin-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take today's pregnancy vitamin",
+        "affirmation": "Dreading it? A different brand might help."
+      }
+    ]
+  },
+  {
+    "uuid": "6283ac9c-144d-4011-946c-8b8ce3a4e62b",
+    "cat": "SelfCare",
+    "type": "Vitamins",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/vitamin-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take your prenatal vitamin",
+        "affirmation": "Nice! Make it a daily habit during pregnancy."
+      }
+    ]
+  },
+  {
+    "uuid": "dd41a642-6ec2-4fd3-a3ac-eea909507fe4",
+    "cat": "SelfCare",
+    "type": "Vitamins",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/vitamin-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take today's pregnancy vitamin",
+        "affirmation": "Done! You're already taking great care of your baby."
+      }
+    ]
+  },
+  {
+    "uuid": "8456ad91-dcef-4607-8b92-34aa5d97e294",
+    "cat": "SelfCare",
+    "type": "Vitamins",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/vitamin-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take today's pregnancy vitamin",
+        "affirmation": "You did it! Even if it wasn't fun 🙃"
+      }
+    ]
+  },
+  {
+    "uuid": "2f24227d-dad4-457f-9645-ff589f2724a1",
+    "cat": "SelfCare",
+    "type": "Vitamins",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/vitamin-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Pop your pregnancy vitamin",
+        "affirmation": "Your future bestie says thanks!"
+      }
+    ]
+  },
+  {
+    "uuid": "aa27c868-0b52-4b45-a0d4-dbf90571b37c",
+    "cat": "SelfCare",
+    "type": "Vitamins",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/vitamin-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take your vitamin (you'll forget later 🙃)",
+        "affirmation": "That's one less thing to remember now."
+      }
+    ]
+  },
+  {
+    "uuid": "ae05c398-0066-4c93-ba39-83708a08ef5d",
+    "cat": "SelfCare",
+    "type": "Vitamins",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/vitamin-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take your prenatal vitamin before you get distracted",
+        "affirmation": "Done! You've got enough on your plate already."
+      }
+    ]
+  },
+  {
+    "uuid": "da3095ee-fc6d-43ff-880c-9b6e606bfb22",
+    "cat": "SelfCare",
+    "type": "Vitamins",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/vitamin-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Remember your pregnancy vitamin today",
+        "affirmation": "Great! Now that's over with."
+      }
+    ]
+  },
+  {
+    "uuid": "f2120ca3-47a2-44fe-8831-24a0be9d6835",
+    "cat": "SelfCare",
+    "type": "Water",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/water-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take a water break",
+        "affirmation": "Good job! Sipping throughout the day is good for you."
+      }
+    ]
+  },
+  {
+    "uuid": "891e9d36-5330-43e5-aad3-f96756d92285",
+    "cat": "SelfCare",
+    "type": "Water",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/water-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Refill your water bottle",
+        "affirmation": "Good work! Aim for about 1.6 litres of fluids a day."
+      }
+    ]
+  },
+  {
+    "uuid": "e0e89e77-bc72-4e50-9bbd-47101db8fb2e",
+    "cat": "SelfCare",
+    "type": "Water",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/water-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take a quick drink of water",
+        "affirmation": "🎉 Staying hydrated is extra important right now."
+      }
+    ]
+  },
+  {
+    "uuid": "3b6442b6-c3e9-43d7-acc1-408110ae7c3b",
+    "cat": "SelfCare",
+    "type": "Water",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/water-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take a hydration break",
+        "affirmation": "Woohoo! Every sip adds up."
+      }
+    ]
+  },
+  {
+    "uuid": "65d642ab-8d2e-4fa8-8c0d-ed271ed9029c",
+    "cat": "SelfCare",
+    "type": "Water",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/water-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Take a few sips of water",
+        "affirmation": "Your body needed that."
+      }
+    ]
+  },
+  {
+    "uuid": "78229c9b-1707-409f-9a3d-c81418d251b2",
+    "cat": "SelfCare",
+    "type": "Water",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/water-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Grab your water bottle and take some sips",
+        "affirmation": "Hydration looks good on you 💁‍♀️"
+      }
+    ]
+  },
+  {
+    "uuid": "58edcc0e-5933-44ea-9572-4b64e64016e9",
+    "cat": "SelfCare",
+    "type": "Water",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/water-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Drink a quick glass of water",
+        "affirmation": "Your body's working hard – this helps."
+      }
+    ]
+  },
+  {
+    "uuid": "8989a453-6ca9-4978-8a40-f9f1691face7",
+    "cat": "SelfCare",
+    "type": "Water",
+    "prio": "Medium",
+    "icon": "https://assets.babycenter.com/ims/2024/04/water-rejuv-2024.png",
+    "textVariants": [
+      {
+        "text": "Keep sipping that water",
+        "affirmation": "Fluids help your body keep up right now."
+      }
+    ]
+  }
+]

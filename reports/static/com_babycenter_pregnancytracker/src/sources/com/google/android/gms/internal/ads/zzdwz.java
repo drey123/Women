@@ -1,0 +1,66 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes2.dex */
+public final class zzdwz {
+    private final Map zza = new HashMap();
+
+    public final synchronized void zza(String str, zzflw zzflwVar) {
+        zzbxq zzbxqVarZzB;
+        if (this.zza.containsKey(str)) {
+            return;
+        }
+        zzbxq zzbxqVarZzC = null;
+        if (zzflwVar == null) {
+            zzbxqVarZzB = null;
+        } else {
+            try {
+                zzbxqVarZzB = zzflwVar.zzB();
+            } catch (zzflf unused) {
+                zzbxqVarZzB = null;
+            }
+        }
+        if (zzflwVar != null) {
+            try {
+                zzbxqVarZzC = zzflwVar.zzC();
+            } catch (zzflf unused2) {
+            }
+        }
+        boolean z = true;
+        if (((Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbiq.zzkL)).booleanValue()) {
+            if (zzflwVar == null) {
+                z = false;
+            } else {
+                try {
+                    zzflwVar.zzn();
+                } catch (zzflf unused3) {
+                    z = false;
+                }
+            }
+        }
+        this.zza.put(str, new zzdwy(str, zzbxqVarZzB, zzbxqVarZzC, z));
+    }
+
+    public final synchronized void zzb(String str, zzbxb zzbxbVar) {
+        if (this.zza.containsKey(str)) {
+            return;
+        }
+        try {
+            this.zza.put(str, new zzdwy(str, zzbxbVar.zzf(), zzbxbVar.zzg(), true));
+        } catch (Throwable unused) {
+        }
+    }
+
+    public final synchronized zzdwy zzc(String str) {
+        return (zzdwy) this.zza.get(str);
+    }
+
+    public final String zzd(String str) {
+        zzbxq zzbxqVar;
+        zzdwy zzdwyVarZzc = zzc(str);
+        return (zzdwyVarZzc == null || (zzbxqVar = zzdwyVarZzc.zzb) == null) ? "" : zzbxqVar.toString();
+    }
+}

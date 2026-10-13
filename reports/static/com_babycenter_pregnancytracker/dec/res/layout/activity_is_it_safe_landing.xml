@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:background="?android:colorBackground" android:layout_width="match_parent" android:layout_height="wrap_content" app:liftOnScroll="true">
+        <FrameLayout android:id="@id/header" android:background="@color/headerBackgroundLight" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="bottom" android:id="@id/toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="?actionBarSize" style="?toolbarStyle" />
+            <ImageView android:layout_gravity="end|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_header_is_it_safe" />
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/banner_ad_view" />
+            <LinearLayout android:orientation="vertical" android:paddingTop="?spacing" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.babycenter.theme.view.TextInputLayoutWithErrorBackground android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/is_it_safe__hint__search" android:layout_marginHorizontal="?spacing" app:startIconDrawable="@drawable/ic_baseline_search_24" style="@style/styles_is_it_safe__search_text_input_layout">
+                    <AutoCompleteTextView android:id="@id/search" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" />
+                </com.babycenter.theme.view.TextInputLayoutWithErrorBackground>
+                <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacing" layout="@layout/view_is_it_safe_categories" />
+            </LinearLayout>
+            <include layout="@layout/banner_footer_ad_view" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

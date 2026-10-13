@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.location;
+
+import android.app.PendingIntent;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.location.ActivityRecognitionApi;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes2.dex */
+public final class zzw implements ActivityRecognitionApi {
+    @Override // com.google.android.gms.location.ActivityRecognitionApi
+    public final PendingResult<Status> removeActivityUpdates(GoogleApiClient googleApiClient, PendingIntent pendingIntent) {
+        return googleApiClient.execute(new zzu(this, googleApiClient, pendingIntent));
+    }
+
+    @Override // com.google.android.gms.location.ActivityRecognitionApi
+    public final PendingResult<Status> requestActivityUpdates(GoogleApiClient googleApiClient, long j, PendingIntent pendingIntent) {
+        return googleApiClient.execute(new zzt(this, googleApiClient, j, pendingIntent));
+    }
+}

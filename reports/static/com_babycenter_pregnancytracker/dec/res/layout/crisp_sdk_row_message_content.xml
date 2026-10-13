@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/crisp_sdk_message_operator_avatar" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="1.0dp" android:layout_marginEnd="8.0dp" app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/crisp_sdk_message_line" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:id="@id/crisp_sdk_message_operator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:paddingStart="1.0dp" android:paddingEnd="0.0dp">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Crisp.SDK.LabelMedium" android:textColor="@color/crisp_sdk_chat_operator_nickname" android:id="@id/crisp_sdk_message_operator_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Crisp.SDK.LabelExtraSmall.Bold" android:textColor="@android:color/white" android:id="@id/crisp_sdk_message_operator_tag" android:background="@drawable/crisp_sdk_message_operator_tag_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6.0dp" android:paddingHorizontal="3.0dp" android:paddingVertical="1.0dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <ViewStub android:id="@id/crisp_sdk_message_content_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/crisp_sdk_message_status" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

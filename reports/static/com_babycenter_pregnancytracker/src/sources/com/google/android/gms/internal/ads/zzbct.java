@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes2.dex */
+public final class zzbct extends zzbdf {
+    public zzbct(zzbbs zzbbsVar, String str, String str2, zzaxm zzaxmVar, int i, int i2) {
+        super(zzbbsVar, "IIcYtgV+jKyhXEWTRGryYoN4Hb3AaxkKFvJa61B8IsfExxFOrLfbygLFTq7UIHav", "0Td4x6cMqS7UG7AA2zcqm+bK2AW+gIwIgEtwqP1CguA=", zzaxmVar, i, 3);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbdf
+    public final void zza() {
+        Boolean bool = (Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbiq.zzdN);
+        bool.booleanValue();
+        zzbay zzbayVar = new zzbay((String) this.zze.invoke(null, this.zza.zzb(), bool));
+        zzaxm zzaxmVar = this.zzd;
+        synchronized (zzaxmVar) {
+            zzaxmVar.zzc(zzbayVar.zza);
+            zzaxmVar.zzP(zzbayVar.zzb);
+        }
+    }
+}

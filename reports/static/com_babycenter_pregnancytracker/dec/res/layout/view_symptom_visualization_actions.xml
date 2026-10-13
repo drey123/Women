@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.button.MaterialButton android:id="@id/btn_view_in_timeline" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/symptom_visualization_view_in_timeline" style="?buttonSecondary" />
+    <com.google.android.material.button.MaterialButton android:id="@id/btn_log_symptom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:text="@string/symptom_visualization_log_symptom_cta" />
+    <TextView android:textAppearance="?textAppearanceFinePrint" android:textColorLink="?colorOnBackgroundSecondary" android:gravity="center" android:id="@id/compliance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" />
+</LinearLayout>

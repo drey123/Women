@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="50.0dp" android:width="50.0dp" android:viewportWidth="50.0" android:viewportHeight="50.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/stageNavigationForeground" android:pathData="M27.84,17.173l-8.142,8.16 8.142,8.16L25.333,36 14.667,25.333l10.666,-10.666z" android:fillType="nonZero" />
+</vector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="?spacingXXXL" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline4" android:id="@id/general_title" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingL" android:layout_marginBottom="?spacingS" android:text="@string/settings_home_feed_customization__title" android:layout_marginHorizontal="?spacing" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="?android:listDivider" android:showDividers="middle" android:dividerPadding="?spacing" android:layout_marginHorizontal="?spacing">
+        <com.google.android.material.switchmaterial.SwitchMaterial android:textAppearance="?textAppearanceBody2" android:id="@id/communityShowHomeModule" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?spacingTouchTarget" android:text="@string/drawer_community" android:paddingHorizontal="?spacing" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:textAppearance="?textAppearanceBody2" android:id="@id/registryBuilderShowHomeModule" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?spacingTouchTarget" android:text="@string/registry_builder__title" android:paddingHorizontal="?spacing" />
+    </LinearLayout>
+</LinearLayout>

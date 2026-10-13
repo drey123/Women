@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.babycenter.pregbaby.ui.nav.tools.guide.common.ExpandableTextView android:orientation="vertical" android:id="@id/expandable_text_view" android:paddingTop="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/expandable_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?spacing" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:textColor="?colorStandaloneLink" android:gravity="center_vertical" android:id="@id/read_more_less" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="?spacingTouchTarget" android:text="@string/tools__guide__cta__expand" android:paddingHorizontal="?spacing" app:drawableEndCompat="@drawable/ic_baseline_chevron_down_24" app:drawableTint="?colorStandaloneLink" />
+</com.babycenter.pregbaby.ui.nav.tools.guide.common.ExpandableTextView>

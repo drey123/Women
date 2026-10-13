@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.pal;
+
+import android.os.IBinder;
+import android.os.IInterface;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes3.dex */
+public abstract class zzgv extends zzfk implements zzgw {
+    public static zzgw zzb(IBinder iBinder) {
+        if (iBinder == null) {
+            return null;
+        }
+        IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.ads.signalsdk.ISignalSdkService");
+        return iInterfaceQueryLocalInterface instanceof zzgw ? (zzgw) iInterfaceQueryLocalInterface : new zzgu(iBinder);
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1.0">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/crisp_sdk_fragment_messages_placeholder" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <include android:id="@id/crisp_sdk_alert_card" android:visibility="gone" layout="@layout/crisp_sdk_alert" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/crisp_sdk_fragment_compose_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:id="@id/crisp_sdk_banner_dead" android:visibility="gone" layout="@layout/crisp_sdk_banner_dead" />
+    <include android:id="@id/crisp_sdk_banner_offline" android:visibility="gone" layout="@layout/crisp_sdk_banner_offline" />
+</FrameLayout>

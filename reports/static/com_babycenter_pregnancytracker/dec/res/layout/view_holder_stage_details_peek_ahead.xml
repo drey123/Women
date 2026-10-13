@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="?spacing" android:layout_marginVertical="?spacing" app:cardCornerRadius="12.0dp" app:cardPreventCornerOverlap="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_card" android:paddingTop="?spacing" android:paddingBottom="?spacingXL" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?spacingM">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="?spacingXL" android:src="@drawable/bg_peek_ahead_header" android:contentDescription="@null" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline3" android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="?spacingM" android:text="@string/stage_pages__summary__peek_ahead__title" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/weekItems" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="?spacingXL" />
+        <com.google.android.material.button.MaterialButton android:id="@id/seeMoreButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stage_pages__summary__peek_ahead__see_more_cta" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

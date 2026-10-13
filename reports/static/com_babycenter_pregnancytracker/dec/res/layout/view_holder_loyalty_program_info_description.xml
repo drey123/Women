@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/loyalty_program__info_dialog__description" android:includeFontPadding="false" android:layout_marginHorizontal="?spacingL" android:layout_marginVertical="?spacingM"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

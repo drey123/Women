@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_baby_names_filter" android:id="@id/filter" android:title="@string/menu__baby_names__filter" app:showAsAction="always">
+        <menu>
+            <group android:visible="true" android:checkableBehavior="single">
+                <item android:id="@id/filter_boy_names" android:title="@string/menu__baby_names__filter__boy_names" app:showAsAction="always" />
+                <item android:id="@id/filter_girl_names" android:title="@string/menu__baby_names__filter__girl_names" app:showAsAction="always" />
+                <item android:id="@id/filter_both" android:title="@string/menu__baby_names__filter__both" app:showAsAction="always" />
+            </group>
+        </menu>
+    </item>
+</menu>

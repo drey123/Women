@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/dragHandle" android:layout_width="match_parent" android:layout_height="?spacingXXL" android:src="@drawable/drag_handle" android:scaleType="centerInside" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/text" android:paddingBottom="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="3" app:layout_constraintTop_toBottomOf="@id/dragHandle" />
+        <ImageView android:id="@id/previous" android:padding="?spacingXS" android:layout_width="?spacingTouchTarget" android:layout_height="?spacingTouchTarget" android:foreground="?selectableItemBackgroundBorderless" android:src="@drawable/ic_stage_details_previous" />
+        <TextView android:textAppearance="?textAppearanceCaption" android:gravity="center" android:id="@id/position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="96.0dp" android:minLines="1" android:includeFontPadding="false" />
+        <ImageView android:id="@id/next" android:padding="?spacingXS" android:layout_width="?spacingTouchTarget" android:layout_height="?spacingTouchTarget" android:foreground="?selectableItemBackgroundBorderless" android:src="@drawable/ic_stage_details_next" />
+        <androidx.constraintlayout.helper.widget.Flow android:layout_width="match_parent" android:layout_height="wrap_content" app:constraint_referenced_ids="previous,position,next" app:flow_horizontalStyle="packed" app:layout_constraintTop_toBottomOf="@id/text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

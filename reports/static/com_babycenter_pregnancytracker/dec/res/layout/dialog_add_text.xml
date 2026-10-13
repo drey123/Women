@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/text_dialog" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:textSize="40.0sp" android:gravity="center" android:id="@id/text" android:background="@null" android:layout_width="match_parent" android:layout_height="0.0dp" android:inputType="textCapSentences" android:imeOptions="actionDone" app:layout_constraintBottom_toTopOf="@id/colorPicker" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/EditText" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/colorPicker" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

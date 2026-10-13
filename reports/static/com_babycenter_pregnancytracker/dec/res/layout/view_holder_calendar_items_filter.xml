@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.chip.ChipGroup android:id="@id/filters" android:padding="?spacingM" android:layout_width="wrap_content" android:layout_height="wrap_content" app:selectionRequired="true" app:singleSelection="true">
+        <com.google.android.material.chip.Chip android:id="@id/filterAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_calendar__timeline__filter__all" style="@style/BabyCenter.Widget.Chip.Choice" />
+        <com.google.android.material.chip.Chip android:id="@id/filterSymptoms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_calendar__timeline__filter__symptoms" style="@style/BabyCenter.Widget.Chip.Choice" />
+        <com.google.android.material.chip.Chip android:id="@id/filterAppointment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_calendar__timeline__filter__appointment" style="@style/BabyCenter.Widget.Chip.Choice" />
+        <com.google.android.material.chip.Chip android:id="@id/filterNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_calendar__timeline__filter__note" style="@style/BabyCenter.Widget.Chip.Choice" />
+        <com.google.android.material.chip.Chip android:id="@id/filterKickTracker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_calendar__timeline__filter__kick_tracker" style="@style/BabyCenter.Widget.Chip.Choice" />
+        <com.google.android.material.chip.Chip android:id="@id/filterBumpie" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_calendar__timeline__filter__bumpie" style="@style/BabyCenter.Widget.Chip.Choice" />
+        <com.google.android.material.chip.Chip android:id="@id/filterGrowthTracker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_calendar__timeline__filter__growth_tracker" style="@style/BabyCenter.Widget.Chip.Choice" />
+        <com.google.android.material.chip.Chip android:id="@id/filterMilestones" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_calendar__timeline__filter__milestones" style="@style/BabyCenter.Widget.Chip.Choice" />
+    </com.google.android.material.chip.ChipGroup>
+</HorizontalScrollView>

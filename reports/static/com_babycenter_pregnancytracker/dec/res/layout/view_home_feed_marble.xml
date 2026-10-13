@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/home_feed__header__elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view" android:background="@color/headerHomeFeedBackground" android:layout_width="match_parent" android:layout_height="24.0dp" android:elevation="@dimen/home_feed__header__elevation" />
+    <TextView android:textAppearance="?textAppearanceHeadline4" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/weekText" android:background="@drawable/marble_bg" android:paddingBottom="?spacingXS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:elevation="8.0dp" />
+</FrameLayout>

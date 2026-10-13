@@ -1,0 +1,121 @@
+.class interface abstract Lcom/google/android/libraries/places/internal/zzauh;
+.super Ljava/lang/Object;
+.source "r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55"
+
+
+# virtual methods
+.method public abstract zzA(Ljava/util/List;)V
+.end method
+
+.method public abstract zzB(Ljava/util/List;)V
+.end method
+
+.method public abstract zzC(Ljava/util/List;)V
+.end method
+
+.method public abstract zzD(Ljava/util/List;)V
+.end method
+
+.method public abstract zzF(Ljava/util/List;Lcom/google/android/libraries/places/internal/zzaui;Lcom/google/android/libraries/places/internal/zzasb;)V
+.end method
+
+.method public abstract zzG(Ljava/util/List;Lcom/google/android/libraries/places/internal/zzaui;Lcom/google/android/libraries/places/internal/zzasb;)V
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end method
+
+.method public abstract zzH(Ljava/util/List;)V
+.end method
+
+.method public abstract zzI(Ljava/util/List;)V
+.end method
+
+.method public abstract zzJ(Ljava/util/List;)V
+.end method
+
+.method public abstract zzK(Ljava/util/List;)V
+.end method
+
+.method public abstract zzL(Ljava/util/List;)V
+.end method
+
+.method public abstract zzM(Ljava/util/List;)V
+.end method
+
+.method public abstract zzN(Ljava/util/List;)V
+.end method
+
+.method public abstract zzb()I
+.end method
+
+.method public abstract zzc()I
+.end method
+
+.method public abstract zzd()D
+.end method
+
+.method public abstract zze()F
+.end method
+
+.method public abstract zzf()J
+.end method
+
+.method public abstract zzg()J
+.end method
+
+.method public abstract zzh()I
+.end method
+
+.method public abstract zzi()J
+.end method
+
+.method public abstract zzj()I
+.end method
+
+.method public abstract zzk()Z
+.end method
+
+.method public abstract zzl()Ljava/lang/String;
+.end method
+
+.method public abstract zzm()Ljava/lang/String;
+.end method
+
+.method public abstract zzn(Ljava/lang/Object;Lcom/google/android/libraries/places/internal/zzaui;Lcom/google/android/libraries/places/internal/zzasb;)V
+.end method
+
+.method public abstract zzo(Ljava/lang/Object;Lcom/google/android/libraries/places/internal/zzaui;Lcom/google/android/libraries/places/internal/zzasb;)V
+.end method
+
+.method public abstract zzp()Lcom/google/android/libraries/places/internal/zzarl;
+.end method
+
+.method public abstract zzq()I
+.end method
+
+.method public abstract zzr()I
+.end method
+
+.method public abstract zzs()I
+.end method
+
+.method public abstract zzt()J
+.end method
+
+.method public abstract zzu()I
+.end method
+
+.method public abstract zzv()J
+.end method
+
+.method public abstract zzw(Ljava/util/List;)V
+.end method
+
+.method public abstract zzx(Ljava/util/List;)V
+.end method
+
+.method public abstract zzy(Ljava/util/List;)V
+.end method
+
+.method public abstract zzz(Ljava/util/List;)V
+.end method

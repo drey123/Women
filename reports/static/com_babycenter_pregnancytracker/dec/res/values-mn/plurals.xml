@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_sdk_date_hour">
+        <item quantity="one">1 цагийн өмнө</item>
+        <item quantity="other">%1$d цагийн өмнө</item>
+    </plurals>
+    <plurals name="crisp_sdk_date_minute">
+        <item quantity="one">1 минутын өмнө</item>
+        <item quantity="other">%1$d минутын өмнө</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_hour">
+        <item quantity="one">1 цагийн</item>
+        <item quantity="other">%1$d цагийн</item>
+    </plurals>
+    <plurals name="crisp_sdk_duration_minute">
+        <item quantity="one">1 минутын</item>
+        <item quantity="other">%1$d минутын</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d секундээр хурдан урагшлуулах</item>
+        <item quantity="other">%d секундээр хурдан урагшлуулах</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d секунд ухраах</item>
+        <item quantity="other">%d секунд ухраах</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d шинэ мэдэгдэл</item>
+        <item quantity="other">%d шинэ мэдэгдэл</item>
+    </plurals>
+    <plurals name="place_details_review_count_a11y_label">
+        <item quantity="one">%1$d шүүмж</item>
+        <item quantity="other">%1$d шүүмж</item>
+    </plurals>
+</resources>

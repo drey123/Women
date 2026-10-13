@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textview.MaterialTextView android:layout_width="match_parent" android:layout_height="?listPreferredItemHeight" android:foreground="@drawable/item_appointment_type_divider" android:singleLine="true" style="?android:dropDownItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

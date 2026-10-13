@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="community_promo__pattern__members_count">
+        <item quantity="one">%1$d member</item>
+        <item quantity="other">%1$d members</item>
+    </plurals>
+    <plurals name="signup_stage_text">
+        <item quantity="one">"You're &lt;b> %1$d weeks, %2$d day&lt;/b> pregnant"</item>
+        <item quantity="other">"You're &lt;b> %1$d weeks, %2$d days&lt;/b> pregnant"</item>
+    </plurals>
+</resources>

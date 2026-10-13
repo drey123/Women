@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/colorBackgroundEndScreen" android:layout_width="match_parent" android:layout_height="200.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_delight_dailyreads" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="?spacingL" android:paddingVertical="?spacingXL">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline2" android:layout_gravity="start|top" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/daily_reads_module__title" />
+        <com.google.android.material.progressindicator.CircularProgressIndicator android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</FrameLayout>

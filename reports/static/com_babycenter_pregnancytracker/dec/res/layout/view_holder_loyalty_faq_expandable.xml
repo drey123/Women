@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_card" android:padding="?spacingS" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="?spacingS" android:layout_weight="1.0" />
+        <ImageView android:id="@id/arrow" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="?spacingS" android:src="@drawable/ic_baseline_chevron_down_24" app:tint="@color/loyalty_faq_chevron" />
+    </LinearLayout>
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="?spacingS" />
+    <com.google.android.material.button.MaterialButton android:id="@id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="?spacingS" app:iconGravity="textStart" app:iconSize="16.0dp" style="?buttonSecondary" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:color="@color/crisp_sdk_chat_messages_picker_theirs_button_normal_label" />
+    <item android:state_enabled="false" android:state_checked="true" android:color="@color/crisp_sdk_chat_messages_picker_theirs_button_normal_label" />
+    <item android:state_enabled="false" android:state_checked="false" android:color="@color/crisp_sdk_chat_messages_picker_theirs_button_disabled_label" />
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/widgetPromotionBackground" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="96.0dp" android:src="@drawable/img_addwidget_step2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline3" android:id="@id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingXXXL" android:layout_marginHorizontal="?spacingXXL" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:layout_marginHorizontal="?spacingXXL" />
+</LinearLayout>

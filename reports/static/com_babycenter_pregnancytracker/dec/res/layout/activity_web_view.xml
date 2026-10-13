@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/webViewLayout" android:background="?android:colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/toolbar_container" android:background="@color/headerBackgroundLight" android:layout_width="match_parent" android:layout_height="wrap_content" app:liftOnScroll="true">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:layout_marginTop="110.0dp" android:elevation="0.0dp" style="?toolbarStyle" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/pull_to_refresh" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.babycenter.pregbaby.ui.webview.NestedScrollPregBabyWebView android:id="@id/web_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/progress" android:layout_width="match_parent" android:layout_height="2.0dp" android:indeterminate="false" android:progressDrawable="@drawable/progress" app:layout_anchor="@id/toolbar_container" app:layout_anchorGravity="bottom" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:id="@id/fullVideoContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

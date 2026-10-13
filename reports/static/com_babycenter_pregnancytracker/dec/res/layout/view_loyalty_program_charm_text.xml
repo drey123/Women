@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/loyaltyProgramIndicatorImage" android:paddingTop="?spacingXS" android:layout_width="?spacingTouchTarget" android:layout_height="36.0dp" android:src="@drawable/ic_loyalty_program_indicator" android:contentDescription="@null" />
+    <TextView android:textAppearance="?textAppearanceCaption" android:textColor="@color/colorLinkStandalone" android:gravity="center_vertical" android:id="@id/loyaltyProgramIndicatorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="?spacingXS" app:drawableEndCompat="@drawable/ic_baseline_arrow_forward_24" app:drawableTint="@color/colorLinkStandalone" app:tint="@color/colorLinkStandalone" />
+    <androidx.constraintlayout.helper.widget.Flow android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="loyaltyProgramIndicatorImage,loyaltyProgramIndicatorText" app:flow_maxElementsWrap="1" app:flow_wrapMode="chain" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</merge>

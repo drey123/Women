@@ -1,0 +1,42 @@
+package com.google.ads.interactivemedia.v3.internal;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes2.dex */
+public final class zzbg extends zzacr implements zzadx {
+    private static final zzbg zzg;
+    private int zzb;
+    private long zzd;
+    private long zze;
+    private long zzf;
+
+    static {
+        zzbg zzbgVar = new zzbg();
+        zzg = zzbgVar;
+        zzacr.zzaA(zzbg.class, zzbgVar);
+    }
+
+    private zzbg() {
+    }
+
+    @Override // com.google.ads.interactivemedia.v3.internal.zzacr
+    public final Object zzm(int i, Object obj, Object obj2) {
+        int i2 = i - 1;
+        if (i2 == 0) {
+            return (byte) 1;
+        }
+        if (i2 == 2) {
+            return zzacr.zzaB(zzg, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001ဂ\u0000\u0002ဂ\u0001\u0003ဂ\u0002", new Object[]{"zzb", "zzd", "zze", "zzf"});
+        }
+        if (i2 == 3) {
+            return new zzbg();
+        }
+        byte[] bArr = null;
+        if (i2 == 4) {
+            return new zzbf(bArr);
+        }
+        if (i2 == 5) {
+            return zzg;
+        }
+        throw null;
+    }
+}

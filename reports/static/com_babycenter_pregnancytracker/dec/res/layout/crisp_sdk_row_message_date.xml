@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textview.MaterialTextView android:gravity="center_horizontal" android:id="@id/crisp_sdk_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:layout_marginBottom="14.0dp" android:singleLine="true" android:paddingHorizontal="4.0dp" style="@style/TextAppearance.Crisp.SDK.LabelMedium.Bold"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

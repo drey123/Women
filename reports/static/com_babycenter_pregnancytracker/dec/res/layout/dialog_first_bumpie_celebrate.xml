@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="@color/colorBackground" android:padding="?spacingXL" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="?spacingXL" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_celebration" />
+        <TextView android:textAppearance="@style/BabyCenter2.TextAppearance.Heading4" android:textColor="@color/colorOnBackground" android:ellipsize="end" android:gravity="center" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacingXL" android:text="@string/bumpie_first_click_dialog_title" android:autoSizeTextType="uniform" />
+        <TextView android:textAppearance="@style/BabyCenter2.TextAppearance.Body1" android:textColor="@color/colorOnBackground" android:ellipsize="end" android:gravity="center" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bumpie_first_click_dialog_description" />
+        <Button android:textAppearance="@style/BabyCenter2.TextAppearance.Button" android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacingL" android:text="@string/bumpie_first_click_button_text" android:paddingHorizontal="?spacingXXL" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

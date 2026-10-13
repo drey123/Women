@@ -1,0 +1,63 @@
+{
+  "forTimeOfDay": [
+    {
+      "start": "00:00",
+      "end": "04:00",
+      "text": [
+        "Olá, corujinha 🦉",
+        "No clube da madrugada 🌝",
+        "Acordada até tarde e arrasando 🌟",
+        "Acordada e com tudo em cima 🌟"
+      ]
+    },
+    {
+      "start": "04:00",
+      "end": "08:00",
+      "text": [
+        "De pé e pronta! ☀️",
+        "O sol já nasceu 😎",
+        "Bom dia, flor do dia ☀️"
+      ]
+    },
+    {
+      "start": "08:00",
+      "end": "12:00",
+      "text": [
+        "Bom dia! ☀️",
+        "Aproveite o seu dia 👑",
+        "Você vai arrasar 🤘",
+        "Você dá conta 💪"
+      ]
+    },
+    {
+      "start": "12:00",
+      "end": "20:00",
+      "text": [
+        "Oi, como está? \uD83D\uDE18",
+        "Você está arrasando! 💪",
+        "Continue incrível! ☀️",
+        "Continue arrasando! \uD83E\uDD29",
+        "Você está com tudo 🔥",
+        "Você é muito forte 💪",
+        "Você é uma estrela ⭐"
+      ]
+    },
+    {
+      "start": "20:00",
+      "end": "24:00",
+      "text": [
+        "Bons sonhos 💤",
+        "Você arrasou hoje 💪",
+        "O descanso vem aí 😊"
+      ]
+    }
+  ],
+  "forWeekDay": [
+    {
+      "day": "fri",
+      "text": [
+        "Sextou!"
+      ]
+    }
+  ]
+}

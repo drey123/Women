@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/navy200" />
+    <item android:drawable="@drawable/ic_tree_logo" android:left="24.0dp" android:top="16.0dp" android:right="24.0dp" android:bottom="16.0dp" />
+</layer-list>

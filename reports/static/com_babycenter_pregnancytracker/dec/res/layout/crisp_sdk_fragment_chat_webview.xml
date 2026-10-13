@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?colorSurface" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView android:id="@id/crisp_sdk_chat_webview_web" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:nestedScrollingEnabled="true" android:backgroundTint="@android:color/transparent" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/crisp_sdk_chat_webview_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminateOnly="true" app:trackColor="@android:color/transparent" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/ui_logo_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/ui_logo_img" android:focusable="true" android:clickable="true" android:contentDescription="@string/jwplayer_logo_view_logo_watermark" app:shapeAppearance="@style/JWRoundedImageView.LogoViewImage" style="@style/JWImage.LogoViewImage" />
+</merge>

@@ -1,0 +1,41 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.Bundle;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes2.dex */
+public final class zzasb {
+    private final Bundle zza;
+
+    public zzasb(Bundle bundle) {
+        this.zza = bundle;
+    }
+
+    public final String zza() {
+        return this.zza.getString("install_referrer");
+    }
+
+    public final long zzb() {
+        return this.zza.getLong("referrer_click_timestamp_seconds");
+    }
+
+    public final long zzc() {
+        return this.zza.getLong("install_begin_timestamp_seconds");
+    }
+
+    public final boolean zzd() {
+        return this.zza.getBoolean("google_play_instant");
+    }
+
+    public final long zze() {
+        return this.zza.getLong("referrer_click_timestamp_server_seconds");
+    }
+
+    public final long zzf() {
+        return this.zza.getLong("install_begin_timestamp_server_seconds");
+    }
+
+    public final String zzg() {
+        return this.zza.getString("install_version");
+    }
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "General Pregnancy",
+    "groups": [
+      {
+        "id": 1295,
+        "url": "https://community.babycentre.co.uk/groups/a1295/pregnant_for_the_first_time",
+        "title": "First pregnancy",
+        "imageUrl": "https://imageserve.babycenter.com/2/000/389/2k4GgLuymIj6bNrpB2r94o6LVvWGFqY4_med.jpg"
+      },
+      {
+        "id": 225,
+        "url": "https://community.babycentre.co.uk/groups/a225/pregnancy",
+        "title": "Pregnancy",
+        "imageUrl": "https://imageserve.babycenter.com/12/000/408/h98O3lfXBjyKaiVIw7wSZ667CXyJ2ZJv_med.jpg"
+      },
+      {
+        "id": 275,
+        "url": "https://community.babycentre.co.uk/groups/a275/baby_names",
+        "title": "Baby Names",
+        "imageUrl": "https://imageserve.babycenter.com/21/000/247/kni2Qtwm3TgRHqxrco4MOR4P8JMllKzq_med.jpg"
+      },
+      {
+        "id": 3863415,
+        "url": "https://community.babycentre.co.uk/groups/a3863415/the_gender_guessing_group",
+        "title": "Gender guessing",
+        "imageUrl": "https://imageserve.babycenter.com/20/000/381/lCRtLq7Zhl92fHmrouKbmSbsXgheJCb4_med.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Family",
+    "groups": [
+      {
+        "id": 12175,
+        "url": "https://community.babycentre.co.uk/groups/a12175/am_i_being_unreasonable",
+        "title": "Am I being unreasonable?",
+        "imageUrl": "https://imageserve.babycenter.com/9/000/440/DnvOvL5izYSdSRV98JBgnB0dSqZ2zZQU_med.jpg"
+      },
+      {
+        "id": 3165,
+        "url": "https://community.babycentre.co.uk/groups/a3165/parents_of_234_or_more",
+        "title": "Parents of 2,3 or more",
+        "imageUrl": "https://imageserve.babycenter.com/17/000/070/32CwAU28VUVx6P8N93fdHdFLTeVuucxb_med.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Health",
+    "groups": [
+      {
+        "id": 3873735,
+        "url": "https://community.babycentre.co.uk/groups/a3873735/pndanxietydepression",
+        "title": "PND and anxiety",
+        "imageUrl": "https://imageserve.babycenter.com/25/000/408/b34nyIX5qgqkUgZtvRcVk2W2sdNUk7Lg_med.jpg"
+      },
+      {
+        "id": 3854195,
+        "url": "https://community.babycentre.co.uk/groups/a3854195/gestational_diabetes",
+        "title": "Gestational diabetes",
+        "imageUrl": "https://static.babycenter.com/user/yTkxZzwjC3gBiJnV/89e9a069-d005-46ee-905c-a0511c35a234"
+      }
+    ]
+  }
+]

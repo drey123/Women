@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorBackgroundEndScreen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/completed" android:layout_width="56.0dp" android:layout_height="56.0dp" app:layout_constraintBottom_toBottomOf="@id/text" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/text" app:lottie_fileName="lottie/checklist_task_checkmark.zip" />
+    <TextView android:textAppearance="?textAppearanceHeadline5" android:id="@id/text" android:background="@drawable/bg_card" android:layout_width="0.0dp" android:layout_height="wrap_content" android:foreground="@drawable/selectable_item_background_round_corners" android:minHeight="96.0dp" android:minLines="3" android:includeFontPadding="false" android:paddingStart="?spacingM" android:paddingEnd="48.0dp" android:paddingVertical="?spacingM" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/completed" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/icon" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="?spacingM" android:layout_marginEnd="?spacingM" app:layout_constraintEnd_toEndOf="@id/text" app:layout_constraintTop_toTopOf="@id/text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/community_home" android:background="@drawable/bg_community_icons" android:layout_width="0.0dp" android:layout_height="wrap_content" android:paddingVertical="?spacingS">
+        <com.google.android.material.imageview.ShapeableImageView android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_community_home" app:shapeAppearance="@style/BabyCenter.ShapeAppearance.Circle" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:text="@string/native_community__label__home" android:lines="2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/community_my_activity" android:background="@drawable/bg_community_icons" android:layout_width="0.0dp" android:layout_height="wrap_content" android:paddingVertical="?spacingS">
+        <com.google.android.material.imageview.ShapeableImageView android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_community_my_activity" app:shapeAppearance="@style/BabyCenter.ShapeAppearance.Circle" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:text="@string/native_community__label__my_activity" android:lines="2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/community_my_bookmark" android:background="@drawable/bg_community_icons" android:layout_width="0.0dp" android:layout_height="wrap_content" android:paddingVertical="?spacingS">
+        <com.google.android.material.imageview.ShapeableImageView android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_community_bookmark" app:shapeAppearance="@style/BabyCenter.ShapeAppearance.Circle" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:text="@string/native_community__label__my_bookmarks" android:lines="2" />
+    </LinearLayout>
+    <androidx.constraintlayout.helper.widget.Flow android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?spacingS" app:constraint_referenced_ids="community_home,community_my_activity,community_my_bookmark" app:flow_horizontalGap="?spacingS" app:flow_maxElementsWrap="3" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

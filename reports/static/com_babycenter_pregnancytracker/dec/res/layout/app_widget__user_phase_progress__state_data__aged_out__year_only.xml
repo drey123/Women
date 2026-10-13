@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/header_container" android:background="#017187" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/app_widget__logo__babycenter_1" android:layout_marginEnd="8.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/my_baby" android:textAllCaps="true" />
+    </LinearLayout>
+    <FrameLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/header_container">
+        <ImageView android:id="@id/background" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/aged_out_hero_image" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/dial" android:padding="4.0dp" android:layout_width="@dimen/app_widget__user_phase_info__dial_size" android:layout_height="@dimen/app_widget__user_phase_info__dial_size" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:padding="12.0dp" android:layout_width="@dimen/app_widget__user_phase_info__dial_size" android:layout_height="@dimen/app_widget__user_phase_info__dial_size">
+            <TextView android:textSize="54.0sp" android:textStyle="bold" android:textColor="#656565" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dp" android:textAllCaps="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#656565" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dp" android:textAllCaps="true" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

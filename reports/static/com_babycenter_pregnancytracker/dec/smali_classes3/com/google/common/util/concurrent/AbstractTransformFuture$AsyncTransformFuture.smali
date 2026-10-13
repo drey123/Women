@@ -1,0 +1,141 @@
+.class final Lcom/google/common/util/concurrent/AbstractTransformFuture$AsyncTransformFuture;
+.super Lcom/google/common/util/concurrent/AbstractTransformFuture;
+.source "r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/common/util/concurrent/AbstractTransformFuture;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "AsyncTransformFuture"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<I:",
+        "Ljava/lang/Object;",
+        "O:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lcom/google/common/util/concurrent/AbstractTransformFuture<",
+        "TI;TO;",
+        "Lcom/google/common/util/concurrent/AsyncFunction<",
+        "-TI;+TO;>;",
+        "Lcom/google/common/util/concurrent/ListenableFuture<",
+        "+TO;>;>;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/common/util/concurrent/ListenableFuture;Lcom/google/common/util/concurrent/AsyncFunction;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/util/concurrent/ListenableFuture<",
+            "+TI;>;",
+            "Lcom/google/common/util/concurrent/AsyncFunction<",
+            "-TI;+TO;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/AbstractTransformFuture;-><init>(Lcom/google/common/util/concurrent/ListenableFuture;Ljava/lang/Object;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public doTransform(Lcom/google/common/util/concurrent/AsyncFunction;Ljava/lang/Object;)Lcom/google/common/util/concurrent/ListenableFuture;
+    .locals 0
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/util/concurrent/AsyncFunction<",
+            "-TI;+TO;>;TI;)",
+            "Lcom/google/common/util/concurrent/ListenableFuture<",
+            "+TO;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p1, p2}, Lcom/google/common/util/concurrent/AsyncFunction;->apply(Ljava/lang/Object;)Lcom/google/common/util/concurrent/ListenableFuture;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    const-string p2, "AsyncFunction.apply returned null instead of a Future. Did you mean to return immediateFuture(null)? %s"
+
+    .line 6
+    .line 7
+    invoke-static {p0, p2, p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    return-object p0
+.end method
+
+.method public bridge synthetic doTransform(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+        .end annotation
+    .end param
+
+    .line 11
+    check-cast p1, Lcom/google/common/util/concurrent/AsyncFunction;
+
+    invoke-virtual {p0, p1, p2}, Lcom/google/common/util/concurrent/AbstractTransformFuture$AsyncTransformFuture;->doTransform(Lcom/google/common/util/concurrent/AsyncFunction;Ljava/lang/Object;)Lcom/google/common/util/concurrent/ListenableFuture;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public setResult(Lcom/google/common/util/concurrent/ListenableFuture;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/util/concurrent/ListenableFuture<",
+            "+TO;>;)V"
+        }
+    .end annotation
+
+    .line 7
+    invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/AbstractFuture;->setFuture(Lcom/google/common/util/concurrent/ListenableFuture;)Z
+
+    return-void
+.end method
+
+.method public bridge synthetic setResult(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/google/common/util/concurrent/ListenableFuture;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/AbstractTransformFuture$AsyncTransformFuture;->setResult(Lcom/google/common/util/concurrent/ListenableFuture;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

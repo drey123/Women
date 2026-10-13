@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:orientation="vertical" android:id="@id/measurementUnits" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/imperial" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeightLarge" android:text="@string/imperial" android:layout_marginStart="?spacing" />
+    <View android:background="?android:listDivider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <RadioButton android:id="@id/metric" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeightLarge" android:text="@string/metric" android:layout_marginStart="?spacing" />
+    <View android:background="?android:listDivider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+</RadioGroup>

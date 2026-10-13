@@ -1,0 +1,66 @@
+package com.google.android.gms.location;
+
+import android.app.Activity;
+import android.content.Context;
+import androidx.annotation.NonNull;
+import com.google.android.gms.common.api.Api;
+import com.google.android.gms.internal.location.zzau;
+import com.google.android.gms.internal.location.zzbp;
+import com.google.android.gms.internal.location.zzbv;
+import com.google.android.gms.internal.location.zzbz;
+import com.google.android.gms.internal.location.zzcc;
+import com.google.android.gms.internal.location.zzce;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes3.dex */
+public class LocationServices {
+
+    @NonNull
+    @Deprecated
+    public static final Api<Api.ApiOptions.NoOptions> API = zzbp.zzb;
+
+    @NonNull
+    @Deprecated
+    public static final FusedLocationProviderApi FusedLocationApi = new zzau();
+
+    @NonNull
+    @Deprecated
+    public static final GeofencingApi GeofencingApi = new zzbv();
+
+    @NonNull
+    @Deprecated
+    public static final SettingsApi SettingsApi = new zzcc();
+
+    private LocationServices() {
+    }
+
+    @NonNull
+    public static FusedLocationProviderClient getFusedLocationProviderClient(@NonNull Activity activity) {
+        return new zzbp(activity);
+    }
+
+    @NonNull
+    public static GeofencingClient getGeofencingClient(@NonNull Activity activity) {
+        return new zzbz(activity);
+    }
+
+    @NonNull
+    public static SettingsClient getSettingsClient(@NonNull Activity activity) {
+        return new zzce(activity);
+    }
+
+    @NonNull
+    public static FusedLocationProviderClient getFusedLocationProviderClient(@NonNull Context context) {
+        return new zzbp(context);
+    }
+
+    @NonNull
+    public static GeofencingClient getGeofencingClient(@NonNull Context context) {
+        return new zzbz(context);
+    }
+
+    @NonNull
+    public static SettingsClient getSettingsClient(@NonNull Context context) {
+        return new zzce(context);
+    }
+}

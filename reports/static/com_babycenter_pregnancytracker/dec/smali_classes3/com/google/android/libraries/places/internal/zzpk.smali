@@ -1,0 +1,297 @@
+.class public final Lcom/google/android/libraries/places/internal/zzpk;
+.super Lcom/google/android/libraries/places/internal/zzpg;
+.source "r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55"
+
+
+# static fields
+.field private static final zza:Z
+
+.field private static final zzb:Z
+
+.field private static final zzc:Lcom/google/android/libraries/places/internal/zzpf;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 1
+    invoke-static {}, Lcom/google/android/libraries/places/internal/zzpk$zza;->zza()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    sput-boolean v0, Lcom/google/android/libraries/places/internal/zzpk;->zza:Z
+
+    .line 6
+    .line 7
+    sget-object v0, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    const/4 v1, 0x1
+
+    .line 10
+    if-eqz v0, :cond_1
+
+    .line 11
+    .line 12
+    const-string v2, "robolectric"
+
+    .line 13
+    .line 14
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    if-eqz v0, :cond_0
+
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 22
+    :cond_1
+    :goto_0
+    sput-boolean v1, Lcom/google/android/libraries/places/internal/zzpk;->zzb:Z
+
+    .line 23
+    .line 24
+    new-instance v0, Lcom/google/android/libraries/places/internal/zzpk$1;
+
+    .line 25
+    .line 26
+    invoke-direct {v0}, Lcom/google/android/libraries/places/internal/zzpk$1;-><init>()V
+
+    .line 27
+    .line 28
+    .line 29
+    sput-object v0, Lcom/google/android/libraries/places/internal/zzpk;->zzc:Lcom/google/android/libraries/places/internal/zzpf;
+
+    .line 30
+    .line 31
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/libraries/places/internal/zzpg;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static zzp()Z
+    .locals 3
+
+    .line 1
+    :try_start_0
+    const-string v0, "dalvik.system.VMStack"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const-string v1, "getStackClass2"
+
+    .line 8
+    .line 9
+    const/4 v2, 0x0
+
+    .line 10
+    invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-static {}, Lcom/google/android/libraries/places/internal/zzpk;->zzq()Ljava/lang/String;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    const-class v1, Lcom/google/android/libraries/places/internal/zzpk$zza;
+
+    .line 18
+    .line 19
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 27
+    return v0
+
+    .line 28
+    :catchall_0
+    const/4 v0, 0x0
+
+    .line 29
+    return v0
+.end method
+
+.method public static zzq()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    :try_start_0
+    invoke-static {}, Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 9
+    return-object v0
+
+    .line 10
+    :catchall_0
+    const/4 v0, 0x0
+
+    .line 11
+    return-object v0
+.end method
+
+.method public static zzr()Ljava/lang/Class;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Ldalvik/system/VMStack;->getStackClass2()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic zzs()Z
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lcom/google/android/libraries/places/internal/zzpk;->zza:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public static synthetic zzt()Z
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lcom/google/android/libraries/places/internal/zzpk;->zzb:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+
+# virtual methods
+.method public zzc()Lcom/google/android/libraries/places/internal/zzpf;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcom/google/android/libraries/places/internal/zzpk;->zzc:Lcom/google/android/libraries/places/internal/zzpf;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public zze(Ljava/lang/String;)Lcom/google/android/libraries/places/internal/zzor;
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/android/libraries/places/internal/zzpo;->zzb(Ljava/lang/String;)Lcom/google/android/libraries/places/internal/zzor;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public zzg()Lcom/google/android/libraries/places/internal/zzpt;
+    .locals 0
+
+    .line 1
+    invoke-static {}, Lcom/google/android/libraries/places/internal/zzpp;->zza()Lcom/google/android/libraries/places/internal/zzpp;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public zzn()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    const-string p0, "platform: Android"
+
+    .line 2
+    .line 3
+    return-object p0
+.end method

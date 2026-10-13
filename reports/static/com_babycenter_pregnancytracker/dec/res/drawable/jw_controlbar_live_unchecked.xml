@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="20.0px" android:top="25.0px" android:right="20.0px" android:bottom="25.0px">
+        <shape android:shape="oval">
+            <solid android:color="@color/jw_live_indicator_unchecked" />
+            <size android:height="15.0px" android:width="15.0px" />
+        </shape>
+    </item>
+</layer-list>

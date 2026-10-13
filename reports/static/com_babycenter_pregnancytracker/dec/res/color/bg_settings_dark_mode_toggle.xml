@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_checked="true" android:color="@color/button2PrimaryBackgroundEnabled" />
+    <item android:state_enabled="false" android:state_checked="true" android:color="@color/button2PrimaryBackgroundDisabled" />
+    <item android:state_checked="false" android:color="@android:color/transparent" />
+</selector>

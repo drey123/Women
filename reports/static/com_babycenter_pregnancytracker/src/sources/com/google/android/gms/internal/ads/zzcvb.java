@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.ads;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes2.dex */
+public final class zzcvb implements zzimu {
+    public static zzcvb zza() {
+        return zzcva.zza;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzinj, com.google.android.gms.internal.ads.zzini
+    public final /* synthetic */ Object zzb() {
+        zzbhv.zza.EnumC0005zza enumC0005zza = zzbhv.zza.EnumC0005zza.APP_OPEN;
+        zzinc.zzb(enumC0005zza);
+        return enumC0005zza;
+    }
+}

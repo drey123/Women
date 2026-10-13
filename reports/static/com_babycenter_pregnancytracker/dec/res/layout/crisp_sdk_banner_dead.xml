@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="9.0dp" style="@style/Widget.Crisp.SDK.CardView.Elevated.Small.Error"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="10.0dp" android:paddingVertical="9.0dp">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/crisp_sdk_banner_status_icon" android:baselineAlignBottom="true" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Crisp.SDK.LabelMedium.Bold" android:textColor="?colorError" android:id="@id/crisp_sdk_banner_dead_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crisp_sdk_chat_chat_health_main" android:layout_marginStart="6.0dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Crisp.SDK.LabelMedium.Bold" android:textColor="?colorOnErrorContainer" android:id="@id/crisp_sdk_banner_dead_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crisp_sdk_chat_chat_health_label_link" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Crisp.SDK.BodySmall" android:textColor="?colorOnErrorContainer" android:id="@id/crisp_sdk_banner_dead_updates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crisp_sdk_chat_chat_health_label_updates" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

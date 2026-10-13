@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="?spacingL" android:paddingVertical="?spacingS"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/card" android:background="@drawable/bg_card" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="162.0dp" android:backgroundTint="@color/colorDailyInsightsModuleLockedCard" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline4" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="?spacingS" app:drawableTint="?colorOnBackground" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:textSize="18.0sp" android:ellipsize="end" android:id="@id/description" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="?spacingM" android:text="@string/daily_insight_module__description__locked" android:maxLines="3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

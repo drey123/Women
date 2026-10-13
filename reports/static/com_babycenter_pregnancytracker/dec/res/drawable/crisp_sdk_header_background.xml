@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/crisp_sdk_header_background_color">
+        <shape>
+            <corners android:topLeftRadius="12.0dp" android:topRightRadius="12.0dp" />
+            <solid android:color="?colorPrimary" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topLeftRadius="12.0dp" android:topRightRadius="12.0dp" />
+            <gradient android:startColor="@color/crisp_sdk_chat_header_gradient_bottom" android:endColor="@color/crisp_sdk_chat_header_gradient_top" android:angle="90.0" android:type="linear" android:centerX="0.5" android:centerY="0.01" android:centerColor="@color/crisp_sdk_chat_header_gradient_bottom" />
+        </shape>
+    </item>
+    <item android:id="@id/crisp_sdk_header_background_tile">
+        <selector />
+    </item>
+</layer-list>

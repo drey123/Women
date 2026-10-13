@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/shoppingChecklistBackground" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.babycenter.pregbaby.ui.nav.tools.checklist.shopping.common.CircularStepIndicator android:id="@id/circularStepIndicator" android:layout_width="130.0dp" android:layout_height="130.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.chip.ChipGroup android:id="@id/chips" android:paddingTop="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/circularStepIndicator">
+        <com.google.android.material.chip.Chip android:textStyle="normal" android:id="@id/item_i_have" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/items_i_have" android:backgroundTint="@color/chip_background_color" style="@style/BabyCenter.Widget.Chip.Choice" />
+        <com.google.android.material.chip.Chip android:id="@id/item_i_need" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/items_i_need" android:backgroundTint="@color/chip_background_color" style="@style/BabyCenter.Widget.Chip.Choice" />
+    </com.google.android.material.chip.ChipGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

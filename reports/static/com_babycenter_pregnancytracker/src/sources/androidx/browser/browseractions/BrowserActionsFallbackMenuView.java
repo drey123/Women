@@ -1,0 +1,28 @@
+package androidx.browser.browseractions;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.LinearLayout;
+import androidx.annotation.NonNull;
+import com.babycenter.pregnancytracker.R;
+import com.google.common.primitives.Ints;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes.dex */
+@Deprecated
+public class BrowserActionsFallbackMenuView extends LinearLayout {
+    public final int a;
+    public final int b;
+
+    public BrowserActionsFallbackMenuView(@NonNull Context context, @NonNull AttributeSet attributeSet) {
+        super(context, attributeSet);
+        this.a = getResources().getDimensionPixelOffset(R.dimen.browser_actions_context_menu_min_padding);
+        this.b = getResources().getDimensionPixelOffset(R.dimen.browser_actions_context_menu_max_width);
+    }
+
+    @Override // android.widget.LinearLayout, android.view.View
+    public final void onMeasure(int i, int i2) {
+        super.onMeasure(View.MeasureSpec.makeMeasureSpec(Math.min(getResources().getDisplayMetrics().widthPixels - (this.a * 2), this.b), Ints.MAX_POWER_OF_TWO), i2);
+    }
+}

@@ -1,0 +1,123 @@
+{
+  "sections": [
+    {
+      "title": "About the program",
+      "items": [
+        {
+          "question": "How do I join BabyCenter Rewards?",
+          "answer": [
+            {
+              "text": "In your BabyCenter app, tap the Gear icon on the top right, navigate to the Rewards section, then tap \"Rewards\" or \"My points.\" Then, you'll see a button to get started! For additional information, check out the <a href=\"https://www.babycenter.com/rewards-terms\">BabyCenter Rewards Program Terms and Conditions</a>.<br/><br/>The BabyCenter Rewards program is only available through the BabyCenter app, and not on BabyCenter’s website or other channels."
+            }
+          ]
+        },
+        {
+          "question": "Is there a cost to join?",
+          "answer": [
+            {
+              "text": "No! BabyCenter Rewards is completely free to join. "
+            }
+          ]
+        },
+        {
+          "question": "How can I stop receiving BabyCenter Rewards notifications?",
+          "answer": [
+            {
+              "text": "If you’d like to stop receiving push notifications about your BabyCenter Rewards activity, you can unsubscribe by navigating to your Push Notification Settings page and unsubscribing from ‘BabyCenter Updates’. For email, please reach out to customer support and we’ll take care of it for you!"
+            }
+          ]
+        },
+        {
+          "question": "How do I opt out of the program?",
+          "answer": [
+            {
+              "text": "You can opt out any time through your Account Settings page or by sending a request to <a href=\"mailto:customerservice@babycenter.com\">customerservice@babycenter.com</a>. Be aware that opting out forfeits any unused points in your account. You can rejoin at any time, though you will begin with zero Points."
+            }
+          ],
+          "cta": {
+            "title": "Opt out of BabyCenter Rewards"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Earning points",
+      "items": [
+        {
+          "question": "How do I earn points?",
+          "answer": [
+            {
+              "text": "You can earn points every day by completing simple qualifying activities like reading articles and tracking your symptoms. You can check the current list of qualifying activities by visiting your My Points page in the BabyCenter app at any time. We may update the list of qualifying activities from time to time.<br/><br/>Daily and weekly caps apply to your ability to earn points. To see these caps, visit the How to Earn Points section of the My Points page in your BabyCenter app."
+            }
+          ]
+        },
+        {
+          "question": "How do I find how many points I’ve earned?",
+          "answer": [
+            {
+              "text": "Your current points balance is displayed in the BabyCenter app on your My Points page as well as on your home screen. Don't worry if you don't see new points right away - they can take up to 24 hours to appear in your rewards account."
+            }
+          ]
+        },
+        {
+          "question": "Do points expire?",
+          "answer": [
+            {
+              "text": "Points don’t expire as long as your rewards account remains active. Points will expire if your rewards account remains inactive for a continuous 12-month period. Activity is defined as either earning points or redeeming points for rewards. If your rewards account becomes inactive, your account could be deactivated, which will result in the forfeiture of any unused points.<br/><br/>Please note that points may also be forfeited if you opt out of BabyCenter rewards or we close your account for any reason."
+            }
+          ]
+        },
+        {
+          "question": "Can I earn points even if I’m not pregnant?",
+          "answer": [
+            {
+              "text": "Absolutely! The BabyCenter Rewards program is open to all BabyCenter users, but there may be some tools and qualifying activities, and associated points-earning opportunities, that may only be available or relevant to pregnant users (e.g., points earned from a “kick tracker”)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Redeeming rewards",
+      "items": [
+        {
+          "question": "What kind of rewards can I earn?",
+          "answer": [
+            {
+              "text": "You can redeem points for available discount codes from popular baby brands, exclusive content, and free products and services from our partners. You can view the current offerings on the Rewards page in your BabyCenter app at any time. We may update the list of available rewards from time to time."
+            }
+          ]
+        },
+        {
+          "question": "How long will it take to receive my reward?",
+          "answer": [
+            {
+              "text": "In general, digital rewards like discount codes are available promptly after redemption. For free products and services, delivery times vary and will be specified at checkout, typically within 30 days. BabyCenter is not responsible for rewards fulfillment in all cases, however, as it may partner with other companies to provide such rewards, and therefore cannot guarantee delivery timing.<br/><br/>If you have any questions about a specific delivery, please reach out to our customer support team."
+            }
+          ]
+        },
+        {
+          "question": "I lost my discount code, can you resend it?",
+          "answer": [
+            {
+              "text": "Absolutely. Each time you redeem a discount code, we display it promptly after redemption, as well as send a copy to your email. If you can’t find the email in your inbox (or spam folder!) reach out to customer support and we’d be happy to send it to you again!"
+            }
+          ]
+        },
+        {
+          "question": "For more, check out the <a href=\"https://www.babycenter.com/rewards-faq\">full list of FAQs</a> on our website."
+        },
+        {
+          "answer": [
+            {
+              "text": "You can leave the rewards program at any time. When you leave, you will lose all your points. If you rejoin later, you'll start fresh with zero points."
+            }
+          ],
+          "cta": {
+            "title": "Opt out of BabyCenter Rewards"
+          }
+        }
+      ]
+    }
+  ]
+}

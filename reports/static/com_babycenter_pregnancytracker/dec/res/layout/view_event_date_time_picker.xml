@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:id="@id/dateLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_calendar__symptoms_logged_date_label" android:layout_marginVertical="?spacingS" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.babycenter.theme.view.TextInputLayoutWithErrorBackground android:id="@id/eventDate" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="?spacingXS" app:endIconDrawable="@drawable/ic_baseline_calendar_24" app:endIconMode="custom" style="@style/BabyCenter2.Widget.TextInput.Filled.ExposedDropdownMenu.SymptomsLog">
+            <AutoCompleteTextView android:id="@id/eventDateAutoCompleteView" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" android:imeOptions="actionDone" android:textAlignment="viewStart" />
+        </com.babycenter.theme.view.TextInputLayoutWithErrorBackground>
+        <com.babycenter.theme.view.TextInputLayoutWithErrorBackground android:id="@id/eventTime" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="?spacingXS" app:endIconDrawable="@drawable/ic_baseline_access_time_24" app:endIconMode="custom" style="@style/BabyCenter2.Widget.TextInput.Filled.ExposedDropdownMenu.SymptomsLog">
+            <AutoCompleteTextView android:id="@id/eventTimeAutoCompleteView" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" android:imeOptions="actionDone" android:textAlignment="viewStart" />
+        </com.babycenter.theme.view.TextInputLayoutWithErrorBackground>
+    </LinearLayout>
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/stageDayLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:includeFontPadding="false" />
+</LinearLayout>

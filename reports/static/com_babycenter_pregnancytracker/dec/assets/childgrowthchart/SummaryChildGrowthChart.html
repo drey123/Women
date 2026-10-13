@@ -1,0 +1,92 @@
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Biometrics placeholder -->
+    <script src="file:///android_asset/childgrowthchart/BabyCenterBiometrics.js" type="text/javascript"></script>
+    <!-- Chart library placeholder -->
+    <script src="file:///android_asset/childgrowthchart/Chart.js" type="text/javascript"></script>
+    <!-- CDC data placeholder -->
+    <script src="file:///android_asset/childgrowthchart/CDCData.js" type="text/javascript"></script>
+    <!-- jQuery placeholder -->
+    <script src="file:///android_asset/jquery.js" type="text/javascript"></script>
+    <!-- User input placeholder -->
+    <script>DATA INSERT</script>
+
+    <style type="text/css">
+            * {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+            }
+            #childGrowthChart-tooltip {
+                position: absolute;
+                color: white;
+                border-radius: 3px;
+                -webkit-transition: all .1s ease;
+                pointer-events: none;
+                -webkit-transform: translate(-50%%, 0);
+                transform: translate(-50%%, 0);
+                font-family: Arial;
+                font-size: 14px;
+                line-height: 150%%;
+            }
+
+            .chartjs-tooltip-key {
+                display: inline-block;
+            }
+
+            #childGrowthChartSummary {
+                background: #efefed;
+                padding: 10px;
+                float: right;
+                font-family: Arial;
+                font-size: 14px;
+                line-height: 150%%;
+                position: absolute;
+            }
+
+            * {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+            }
+            .yAxisLabel {
+                top: -5px;
+                left: 0;
+                position: relative;
+                font-size: 12px;
+                color: #999;
+            }
+
+            .xAxisLabel {
+                float: right;
+                top: -8px;
+                right: 5px;
+                position: relative;
+                font-size: 12px;
+                color: #999;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background: #012126;
+                }
+
+                .yAxisLabel {
+                    color: #999;
+                }
+
+                .xAxisLabel {
+                    color: #999;
+                }
+            }
+    </style>
+</head>
+
+<body>
+<div style="position: absolute; height: 92%; width: 98%">
+    <div class="yAxisLabel">Percentile</div>
+    <canvas id="childGrowthChart"></canvas>
+    <div class="xAxisLabel">Age (months)</div>
+</div>
+<script src="file:///android_asset/childgrowthchart/RunChartScript.js" type="text/javascript"></script>
+</body>
+</html>

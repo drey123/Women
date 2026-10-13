@@ -1,0 +1,404 @@
+.class public interface abstract Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+.super Ljava/lang/Object;
+.source "r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Throwable;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+.annotation runtime Ljava/lang/FunctionalInterface;
+.end annotation
+
+
+# static fields
+.field public static final FALSE:Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+
+.field public static final TRUE:Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcq3;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lcq3;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->FALSE:Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+
+    .line 8
+    .line 9
+    new-instance v0, Lcq3;
+
+    .line 10
+    .line 11
+    const/4 v1, 0x1
+
+    .line 12
+    invoke-direct {v0, v1}, Lcq3;-><init>(I)V
+
+    .line 13
+    .line 14
+    .line 15
+    sput-object v0, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->TRUE:Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public static synthetic a(Lorg/apache/commons/lang3/function/FailableDoublePredicate;D)Z
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->lambda$negate$3(D)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static synthetic b(D)Z
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->lambda$static$1(D)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static synthetic c(D)Z
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->lambda$static$0(D)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static synthetic d(Lorg/apache/commons/lang3/function/FailableDoublePredicate;Lorg/apache/commons/lang3/function/FailableDoublePredicate;D)Z
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->lambda$and$2(Lorg/apache/commons/lang3/function/FailableDoublePredicate;D)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static synthetic e(Lorg/apache/commons/lang3/function/FailableDoublePredicate;Lorg/apache/commons/lang3/function/FailableDoublePredicate;D)Z
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->lambda$or$4(Lorg/apache/commons/lang3/function/FailableDoublePredicate;D)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static falsePredicate()Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E:",
+            "Ljava/lang/Throwable;",
+            ">()",
+            "Lorg/apache/commons/lang3/function/FailableDoublePredicate<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->FALSE:Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private synthetic lambda$and$2(Lorg/apache/commons/lang3/function/FailableDoublePredicate;D)Z
+    .locals 0
+
+    .line 1
+    invoke-interface {p0, p2, p3}, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->test(D)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    if-eqz p0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-interface {p1, p2, p3}, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->test(D)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    if-eqz p0, :cond_0
+
+    .line 12
+    .line 13
+    const/4 p0, 0x1
+
+    .line 14
+    return p0
+
+    .line 15
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 16
+    return p0
+.end method
+
+.method private synthetic lambda$negate$3(D)Z
+    .locals 0
+
+    .line 1
+    invoke-interface {p0, p1, p2}, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->test(D)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    xor-int/lit8 p0, p0, 0x1
+
+    .line 6
+    .line 7
+    return p0
+.end method
+
+.method private synthetic lambda$or$4(Lorg/apache/commons/lang3/function/FailableDoublePredicate;D)Z
+    .locals 0
+
+    .line 1
+    invoke-interface {p0, p2, p3}, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->test(D)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    if-nez p0, :cond_1
+
+    .line 6
+    .line 7
+    invoke-interface {p1, p2, p3}, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->test(D)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    if-eqz p0, :cond_0
+
+    .line 12
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 15
+    return p0
+
+    .line 16
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    .line 17
+    return p0
+.end method
+
+.method private static synthetic lambda$static$0(D)Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method private static synthetic lambda$static$1(D)Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x1
+
+    .line 2
+    return p0
+.end method
+
+.method public static truePredicate()Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E:",
+            "Ljava/lang/Throwable;",
+            ">()",
+            "Lorg/apache/commons/lang3/function/FailableDoublePredicate<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lorg/apache/commons/lang3/function/FailableDoublePredicate;->TRUE:Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public and(Lorg/apache/commons/lang3/function/FailableDoublePredicate;)Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/apache/commons/lang3/function/FailableDoublePredicate<",
+            "TE;>;)",
+            "Lorg/apache/commons/lang3/function/FailableDoublePredicate<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Laq3;
+
+    .line 5
+    .line 6
+    const/4 v1, 0x1
+
+    .line 7
+    invoke-direct {v0, p0, p1, v1}, Laq3;-><init>(Lorg/apache/commons/lang3/function/FailableDoublePredicate;Lorg/apache/commons/lang3/function/FailableDoublePredicate;I)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method public negate()Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lorg/apache/commons/lang3/function/FailableDoublePredicate<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lbq3;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lbq3;-><init>(Lorg/apache/commons/lang3/function/FailableDoublePredicate;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public or(Lorg/apache/commons/lang3/function/FailableDoublePredicate;)Lorg/apache/commons/lang3/function/FailableDoublePredicate;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/apache/commons/lang3/function/FailableDoublePredicate<",
+            "TE;>;)",
+            "Lorg/apache/commons/lang3/function/FailableDoublePredicate<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Laq3;
+
+    .line 5
+    .line 6
+    const/4 v1, 0x0
+
+    .line 7
+    invoke-direct {v0, p0, p1, v1}, Laq3;-><init>(Lorg/apache/commons/lang3/function/FailableDoublePredicate;Lorg/apache/commons/lang3/function/FailableDoublePredicate;I)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method public abstract test(D)Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(D)Z^TE;"
+        }
+    .end annotation
+.end method

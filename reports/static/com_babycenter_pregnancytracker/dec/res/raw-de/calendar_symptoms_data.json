@@ -1,0 +1,292 @@
+[
+  {
+    "id": 0,
+    "name": "Back pain",
+    "url": "https://www.babycentre.co.uk/a536387/back-pain-in-pregnancy",
+    "description": [
+      "Softening ligaments and a growing bump are often behind back pain. Gentle exercise, warm baths, and a supportive pillow can help."
+    ],
+    "imageUrl": "",
+    "sortOrder": 1
+  },
+  {
+    "id": 1,
+    "name": "Bloating & gas",
+    "url": "https://www.babycentre.co.uk/a562886/wind-and-bloating-in-pregnancy",
+    "description": [
+      "Pregnancy hormones slow digestion, causing bloating, burping, and yes – farting. Smaller, more frequent meals can help ease it."
+    ],
+    "imageUrl": "",
+    "sortOrder": 2
+  },
+  {
+    "id": 26,
+    "name": "Breasts leaking",
+    "url": "https://www.babycentre.co.uk/x552713/is-it-normal-for-my-breasts-to-leak-during-pregnancy",
+    "description": [
+      "That's colostrum – your baby's first milk. Your body starts making it during pregnancy, so a little leaking before birth is normal."
+    ],
+    "imageUrl": "",
+    "sortOrder": 3
+  },
+  {
+    "id": 3,
+    "name": "Breast soreness",
+    "url": "https://www.babycentre.co.uk/a262/sore-breasts-in-pregnancy",
+    "description": [
+      "Tender, sore, or even leaking breasts are all normal. It's your body getting ready to breastfeed your baby."
+    ],
+    "imageUrl": "",
+    "sortOrder": 4
+  },
+  {
+    "id": 4,
+    "name": "Constipation",
+    "url": "https://www.babycentre.co.uk/a836/constipation-in-pregnancy",
+    "description": [
+      "Rising progesterone slows your digestive system, which can lead to constipation during pregnancy."
+    ],
+    "imageUrl": "",
+    "sortOrder": 5
+  },
+  {
+    "id": 2,
+    "name": "Contractions",
+    "url": "https://www.babycentre.co.uk/braxton-hicks-contractions",
+    "description": [
+      "Braxton Hicks (or “practice”) contractions often start in the second or third trimester. It's your body getting ready for labour."
+    ],
+    "imageUrl": "",
+    "sortOrder": 6
+  },
+  {
+    "id": 5,
+    "name": "Cramping",
+    "url": "https://www.babycentre.co.uk/a204/abdominal-pain-in-pregnancy",
+    "description": [
+      "Cramping can often be eased with warm baths, gentle movement, or lying on the side opposite the pain."
+    ],
+    "imageUrl": "",
+    "sortOrder": 7
+  },
+  {
+    "id": 7,
+    "name": "Dizzy & lightheaded",
+    "url": "https://www.babycentre.co.uk/a228/dizziness-in-pregnancy",
+    "description": [
+      "Hormones relax your blood vessels and send more blood to your baby, which can lower blood pressure and leave you feeling faint."
+    ],
+    "imageUrl": "",
+    "sortOrder": 8
+  },
+  {
+    "id": 8,
+    "name": "Fatigue",
+    "url": "https://www.babycentre.co.uk/a2911/tiredness-in-pregnancy",
+    "description": [
+      "Feeling wiped out? Fatigue is common, especially in the first and third trimesters, thanks to hormones and disrupted sleep."
+    ],
+    "imageUrl": "",
+    "sortOrder": 9
+  },
+  {
+    "id": 9,
+    "name": "Food aversions",
+    "url": "https://www.babycentre.co.uk/x25006235/why-do-i-have-such-strong-cravings-now-im-pregnant",
+    "description": [
+      "Can't face salad? Chicken giving you the ick? Hormones are rewiring your sense of taste and smell – it's very common."
+    ],
+    "imageUrl": "",
+    "sortOrder": 10
+  },
+  {
+    "id": 10,
+    "name": "Food cravings",
+    "url": "https://www.babycentre.co.uk/a4444/top-pregnancy-cravings",
+    "description": [
+      "Pickled onions? Baked beans and salad cream? Cravings are common in pregnancy, and they can be pretty specific."
+    ],
+    "imageUrl": "",
+    "sortOrder": 11
+  },
+  {
+    "id": 11,
+    "name": "Frequent urination",
+    "url": "https://www.babycentre.co.uk/a237/frequent-urination-in-pregnancy",
+    "description": [
+      "Needing to pee more often? Hormones and your growing womb pressing on your bladder are usually behind it."
+    ],
+    "imageUrl": "",
+    "sortOrder": 12
+  },
+  {
+    "id": 12,
+    "name": "Headaches",
+    "url": "https://www.babycentre.co.uk/a536356/headaches-in-pregnancy",
+    "description": [
+      "Resting in a quiet, dim room and using warm or cold compresses can help ease pregnancy headaches."
+    ],
+    "imageUrl": "",
+    "sortOrder": 13
+  },
+  {
+    "id": 13,
+    "name": "Heartburn & indigestion",
+    "url": "https://www.babycentre.co.uk/a242/heartburn-in-pregnancy",
+    "description": [
+      "Eating smaller meals, skipping spicy foods, and sipping peppermint tea can help ease heartburn and indigestion."
+    ],
+    "imageUrl": "",
+    "sortOrder": 14
+  },
+  {
+    "id": 14,
+    "name": "Itching",
+    "url": "https://www.babycentre.co.uk/a536367/itchy-skin-during-pregnancy",
+    "description": [
+      "Itching is common in pregnancy - it affects about 20% of pregnant women. It's often caused by stretching or dry skin."
+    ],
+    "imageUrl": "",
+    "sortOrder": 15
+  },
+  {
+    "id": 27,
+    "name": "Mood changes",
+    "url": "https://www.babycentre.co.uk/a253/mood-swings-in-pregnancy",
+    "description": [
+      "Rising oestrogen and progesterone can leave you anxious one minute and fine the next. It can feel like a lot."
+    ],
+    "imageUrl": "",
+    "sortOrder": 16
+  },
+  {
+    "id": 24,
+    "name": "Nausea",
+    "url": "https://www.babycentre.co.uk/a549842/morning-sickness-nausea-and-vomiting-in-pregnancy",
+    "description": [
+      "Around 80% of mums-to-be have nausea or vomiting (morning sickness). Hormone shifts are usually the main cause."
+    ],
+    "imageUrl": "",
+    "sortOrder": 17
+  },
+  {
+    "id": 17,
+    "name": "Pelvic pain",
+    "url": "https://www.babycentre.co.uk/a564618/pelvic-girdle-pain-pgp",
+    "description": [
+      "The hormone relaxin loosens your pelvic ligaments for birth, but that movement can cause pain – from a dull ache to sharp twinges."
+    ],
+    "imageUrl": "",
+    "sortOrder": 18
+  },
+  {
+    "id": 28,
+    "name": "Shortness of breath",
+    "url": "https://www.babycentre.co.uk/a219/breathlessness-in-pregnancy",
+    "description": [
+      "Feeling out of breath? Your growing uterus presses on your lungs, so it can feel harder to catch your breath."
+    ],
+    "imageUrl": "",
+    "sortOrder": 19
+  },
+  {
+    "id": 29,
+    "name": "Skin, hair & nail changes",
+    "url": "https://www.babycentre.co.uk/a222/skin-changes-during-pregnancy",
+    "description": [
+      "Hormone changes can affect your skin, hair, and nails – think stretch marks, acne, visible veins, or melasma."
+    ],
+    "imageUrl": "",
+    "sortOrder": 20
+  },
+  {
+    "id": 15,
+    "name": "Sleep issues",
+    "url": "https://www.babycentre.co.uk/a547372/insomnia-in-pregnancy",
+    "description": [
+      "Insomnia, restless legs, vivid dreams, and a bladder that won't quit – pregnancy can make good sleep hard to come by."
+    ],
+    "imageUrl": "",
+    "sortOrder": 21
+  },
+  {
+    "id": 18,
+    "name": "Spotting",
+    "url": "https://www.babycentre.co.uk/a3081/vaginal-spotting-or-bleeding-in-early-pregnancy",
+    "description": [
+      "Light spotting can be normal early in pregnancy, but it's always worth checking with your midwife or GP."
+    ],
+    "imageUrl": "",
+    "sortOrder": 22
+  },
+  {
+    "id": 30,
+    "name": "Strong sense of smell",
+    "url": "https://www.babycentre.co.uk/a25016459/sense-of-smell-during-pregnancy",
+    "description": [
+      "A super-sensitive sense of smell affects about two-thirds of pregnancies, probably thanks to hormone changes."
+    ],
+    "imageUrl": "",
+    "sortOrder": 23
+  },
+  {
+    "id": 19,
+    "name": "Stuffy nose",
+    "url": "https://www.babycentre.co.uk/a547386/snoring-and-congestion-in-pregnancy",
+    "description": [
+      "Feeling blocked up? Hormone changes can swell your nasal passages, making congestion a common pregnancy symptom."
+    ],
+    "imageUrl": "",
+    "sortOrder": 24
+  },
+  {
+    "id": 31,
+    "name": "Sweating",
+    "url": "https://www.babycentre.co.uk/a1004503/pregnant-and-feeling-the-heat-heres-how-to-cope",
+    "description": [
+      "Feeling warmer than usual? Totally normal. Increased blood flow in pregnancy can leave your skin feeling extra warm."
+    ],
+    "imageUrl": "",
+    "sortOrder": 25
+  },
+  {
+    "id": 20,
+    "name": "Swelling",
+    "url": "https://www.babycentre.co.uk/a230/swelling-oedema-in-pregnancy",
+    "description": [
+      "Drinking plenty of fluids, putting your feet up, and wearing compression socks can help ease swelling in your feet and ankles."
+    ],
+    "imageUrl": "",
+    "sortOrder": 26
+  },
+  {
+    "id": 21,
+    "name": "Vaginal discharge",
+    "url": "https://www.babycentre.co.uk/a270/vaginal-discharge-in-pregnancy",
+    "description": [
+      "Vaginal discharge often increases during pregnancy because your body is producing more oestrogen."
+    ],
+    "imageUrl": "",
+    "sortOrder": 27
+  },
+  {
+    "id": 25,
+    "name": "Vomiting",
+    "url": "https://www.babycentre.co.uk/a549842/morning-sickness-nausea-and-vomiting-in-pregnancy",
+    "description": [
+      "Being sick? You're not alone. Vomiting is common in pregnancy – but if you can't keep anything down, call your GP or midwife."
+    ],
+    "imageUrl": "",
+    "sortOrder": 28
+  },
+  {
+    "id": 22,
+    "name": "Other",
+    "url": "",
+    "description": [
+      "Not every symptom has a neat label. Log what you're experiencing and talk to your midwife if you need help making sense of it."
+    ],
+    "imageUrl": "",
+    "sortOrder": 29
+  }
+]

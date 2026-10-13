@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceCaption" android:paddingBottom="?spacingM" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingL" android:text="@string/stage_pages__baby_size__disclaimer" android:breakStrategy="simple" android:paddingHorizontal="?spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

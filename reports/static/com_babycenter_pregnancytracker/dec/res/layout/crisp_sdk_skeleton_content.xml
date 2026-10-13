@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:theme="@style/Theme.Crisp.SDK.Skeleton" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/crisp_sdk_header_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/crisp_sdk_skeleton_close_button" layout="@layout/crisp_sdk_button_close" />
+        <com.facebook.shimmer.ShimmerFrameLayout android:layout_height="wrap_content" style="@style/Widget.Crisp.SDK.Skeleton.Shimmer">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/crisp_sdk_header_button_toggle_marginHorizontal">
+                    <include layout="@layout/crisp_sdk_skeleton_header_button_segmented" />
+                    <include layout="@layout/crisp_sdk_skeleton_header_button_segmented" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat style="@style/Widget.Crisp.SDK.Header.Opened">
+                    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <include layout="@layout/crisp_sdk_row_operator" />
+                        <include android:layout_width="@dimen/crisp_sdk_header_operator_size" android:layout_height="@dimen/crisp_sdk_header_operator_size" android:layout_marginStart="@dimen/crisp_sdk_skeleton_header_operator_overlap" layout="@layout/crisp_sdk_row_operator" />
+                        <include android:layout_width="@dimen/crisp_sdk_header_operator_size" android:layout_height="@dimen/crisp_sdk_header_operator_size" android:layout_marginStart="@dimen/crisp_sdk_skeleton_header_operator_overlap" layout="@layout/crisp_sdk_row_operator" />
+                        <include android:layout_width="@dimen/crisp_sdk_header_operator_size" android:layout_height="@dimen/crisp_sdk_header_operator_size" android:layout_marginStart="@dimen/crisp_sdk_skeleton_header_operator_overlap" layout="@layout/crisp_sdk_row_operator" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <View android:background="@drawable/crisp_sdk_skeleton_background" android:layout_width="147.0dp" android:layout_height="16.0dp" android:layout_marginTop="7.0dp" />
+                    <View android:background="@drawable/crisp_sdk_skeleton_background" android:layout_width="146.0dp" android:layout_height="14.0dp" android:layout_marginTop="3.0dp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </FrameLayout>
+    <im.crisp.client.internal.ui.views.LockableScrollView android:background="?colorSurface" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" app:scrollable="false">
+        <com.facebook.shimmer.ShimmerFrameLayout android:layout_height="match_parent" style="@style/Widget.Crisp.SDK.Skeleton.Shimmer">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingTop="@dimen/crisp_sdk_messages_paddingTop" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/crisp_sdk_messages_paddingHorizontal">
+                <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/crisp_sdk_message_lastOfStreak_marginBottom">
+                    <com.google.android.material.imageview.ShapeableImageView style="@style/Widget.Crisp.SDK.Skeleton.Message.Avatar" />
+                    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="start" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <include layout="@layout/crisp_sdk_skeleton_message_operator_nickname" />
+                        <androidx.constraintlayout.widget.ConstraintLayout android:layout_marginHorizontal="0.0dp" android:layout_marginVertical="0.0dp" style="@style/Widget.Crisp.SDK.Skeleton.Message.Content">
+                            <com.google.android.material.card.MaterialCardView android:layout_width="0.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.63" style="@style/Widget.Crisp.SDK.Skeleton.CardView.Outlined.ExtraLarge.OnSurface">
+                                <View android:layout_width="match_parent" android:layout_marginHorizontal="@dimen/crisp_sdk_message_text_paddingHorizontal" android:layout_marginVertical="@dimen/crisp_sdk_message_text_paddingVertical" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                            </com.google.android.material.card.MaterialCardView>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <com.google.android.material.card.MaterialCardView android:layout_marginBottom="@dimen/crisp_sdk_message_default_marginBottom" style="@style/Widget.Crisp.SDK.Skeleton.CardView.Outlined.ExtraLarge.OnSurface">
+                    <androidx.constraintlayout.widget.ConstraintLayout style="@style/Widget.Crisp.SDK.Skeleton.Message.Content">
+                        <View android:id="@id/msg2_line1" android:layout_marginBottom="@dimen/crisp_sdk_skeleton_message_line_margin" app:layout_constraintBottom_toTopOf="@id/msg2_line2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.93" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                        <View android:id="@id/msg2_line2" android:layout_marginBottom="@dimen/crisp_sdk_skeleton_message_line_margin" app:layout_constraintBottom_toTopOf="@id/msg2_line3" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/msg2_line1" app:layout_constraintWidth_percent="0.96" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                        <View android:id="@id/msg2_line3" app:layout_constraintBottom_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/msg2_line2" app:layout_constraintWidth_percent="0.16" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:layout_marginBottom="@dimen/crisp_sdk_message_lastOfStreak_marginBottom" style="@style/Widget.Crisp.SDK.Skeleton.CardView.Outlined.ExtraLarge.OnSurface">
+                    <androidx.constraintlayout.widget.ConstraintLayout style="@style/Widget.Crisp.SDK.Skeleton.Message.Content">
+                        <View android:id="@id/msg3_line1" android:layout_marginBottom="@dimen/crisp_sdk_skeleton_message_line_margin" app:layout_constraintBottom_toTopOf="@id/msg3_line2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.91" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                        <View android:id="@id/msg3_line2" app:layout_constraintBottom_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/msg3_line1" app:layout_constraintWidth_percent="0.15" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/crisp_sdk_message_default_marginBottom">
+                    <com.google.android.material.imageview.ShapeableImageView style="@style/Widget.Crisp.SDK.Skeleton.Message.Avatar" />
+                    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="start" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <include layout="@layout/crisp_sdk_skeleton_message_operator_nickname" />
+                        <com.google.android.material.card.MaterialCardView style="@style/Widget.Crisp.SDK.Skeleton.CardView.Outlined.ExtraLarge.OnSurface">
+                            <androidx.constraintlayout.widget.ConstraintLayout style="@style/Widget.Crisp.SDK.Skeleton.Message.Content">
+                                <View android:id="@id/msg4_line1" android:layout_marginBottom="@dimen/crisp_sdk_skeleton_message_line_margin" app:layout_constraintBottom_toTopOf="@id/msg4_line2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.99" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                                <View android:id="@id/msg4_line2" android:layout_marginBottom="@dimen/crisp_sdk_skeleton_message_line_margin" app:layout_constraintBottom_toTopOf="@id/msg4_line3" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/msg4_line1" app:layout_constraintWidth_percent="0.96" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                                <View android:id="@id/msg4_line3" app:layout_constraintBottom_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/msg4_line2" app:layout_constraintWidth_percent="0.33" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/crisp_sdk_message_lastOfStreak_marginBottom">
+                    <com.google.android.material.imageview.ShapeableImageView android:visibility="invisible" style="@style/Widget.Crisp.SDK.Skeleton.Message.Avatar" />
+                    <com.google.android.material.card.MaterialCardView style="@style/Widget.Crisp.SDK.Skeleton.CardView.Outlined.ExtraLarge.OnSurface">
+                        <androidx.constraintlayout.widget.ConstraintLayout style="@style/Widget.Crisp.SDK.Skeleton.Message.Content">
+                            <View android:id="@id/msg5_line1" android:layout_marginBottom="@dimen/crisp_sdk_skeleton_message_line_margin" app:layout_constraintBottom_toTopOf="@id/msg5_line2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.87" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                            <View android:id="@id/msg5_line2" app:layout_constraintBottom_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/msg5_line1" app:layout_constraintWidth_percent="0.59" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <com.google.android.material.card.MaterialCardView android:layout_marginBottom="@dimen/crisp_sdk_message_default_marginBottom" style="@style/Widget.Crisp.SDK.Skeleton.CardView.Outlined.ExtraLarge.OnSurface">
+                    <androidx.constraintlayout.widget.ConstraintLayout style="@style/Widget.Crisp.SDK.Skeleton.Message.Content">
+                        <View android:id="@id/msg6_line1" android:layout_marginBottom="@dimen/crisp_sdk_skeleton_message_line_margin" app:layout_constraintBottom_toTopOf="@id/msg6_line2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.95" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                        <View android:id="@id/msg6_line2" android:layout_marginBottom="@dimen/crisp_sdk_skeleton_message_line_margin" app:layout_constraintBottom_toTopOf="@id/msg6_line3" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/msg6_line1" app:layout_constraintWidth_percent="0.96" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                        <View android:id="@id/msg6_line3" app:layout_constraintBottom_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/msg6_line2" app:layout_constraintWidth_percent="0.14" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:layout_marginBottom="@dimen/crisp_sdk_message_lastOfDay_marginBottom" style="@style/Widget.Crisp.SDK.Skeleton.CardView.Outlined.ExtraLarge.OnSurface">
+                    <androidx.constraintlayout.widget.ConstraintLayout style="@style/Widget.Crisp.SDK.Skeleton.Message.Content">
+                        <View android:id="@id/msg7_line1" android:layout_marginBottom="@dimen/crisp_sdk_skeleton_message_line_margin" app:layout_constraintBottom_toTopOf="@id/msg7_line2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.92" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                        <View android:id="@id/msg7_line2" app:layout_constraintBottom_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/msg7_line1" app:layout_constraintWidth_percent="0.45" style="@style/Widget.Crisp.SDK.Skeleton.Message.Line" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </im.crisp.client.internal.ui.views.LockableScrollView>
+    <LinearLayout android:orientation="vertical" android:background="?colorSurface" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/crisp_sdk_compose_paddingHorizontal">
+        <include layout="@layout/crisp_sdk_divider_compose" />
+        <com.google.android.material.textfield.TextInputLayout android:enabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.Crisp.SDK.Skeleton.TextInputLayout.Compose">
+            <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/crisp_sdk_chat_chat_form_field_message" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/crisp_sdk_compose_buttons_paddingHorizontal">
+            <com.google.android.material.checkbox.MaterialCheckBox android:button="@drawable/crisp_sdk_smiley_add" style="@style/Widget.Crisp.SDK.Skeleton.Button.Compose" />
+            <com.google.android.material.button.MaterialButton app:icon="@drawable/crisp_sdk_attachment_add" style="@style/Widget.Crisp.SDK.Skeleton.Button.Compose" />
+            <com.google.android.material.checkbox.MaterialCheckBox android:button="@drawable/crisp_sdk_feedback" style="@style/Widget.Crisp.SDK.Skeleton.Button.Compose" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

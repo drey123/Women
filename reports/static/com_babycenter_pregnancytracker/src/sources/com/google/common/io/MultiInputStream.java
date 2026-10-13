@@ -1,0 +1,103 @@
+package com.google.common.io;
+
+import com.google.common.annotations.GwtIncompatible;
+import com.google.common.annotations.J2ktIncompatible;
+import com.google.common.base.Preconditions;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Iterator;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes3.dex */
+@ElementTypesAreNonnullByDefault
+@J2ktIncompatible
+@GwtIncompatible
+final class MultiInputStream extends InputStream {
+    private InputStream in;
+    private Iterator<? extends ByteSource> it;
+
+    public MultiInputStream(Iterator<? extends ByteSource> it) {
+        this.it = (Iterator) Preconditions.checkNotNull(it);
+        advance();
+    }
+
+    private void advance() {
+        close();
+        if (this.it.hasNext()) {
+            this.in = this.it.next().openStream();
+        }
+    }
+
+    @Override // java.io.InputStream
+    public int available() {
+        InputStream inputStream = this.in;
+        if (inputStream == null) {
+            return 0;
+        }
+        return inputStream.available();
+    }
+
+    @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        InputStream inputStream = this.in;
+        if (inputStream != null) {
+            try {
+                inputStream.close();
+            } finally {
+                this.in = null;
+            }
+        }
+    }
+
+    @Override // java.io.InputStream
+    public boolean markSupported() {
+        return false;
+    }
+
+    @Override // java.io.InputStream
+    public int read(byte[] bArr, int i, int i2) throws IOException {
+        Preconditions.checkNotNull(bArr);
+        while (true) {
+            InputStream inputStream = this.in;
+            if (inputStream == null) {
+                return -1;
+            }
+            int i3 = inputStream.read(bArr, i, i2);
+            if (i3 != -1) {
+                return i3;
+            }
+            advance();
+        }
+    }
+
+    @Override // java.io.InputStream
+    public long skip(long j) throws IOException {
+        InputStream inputStream = this.in;
+        if (inputStream == null || j <= 0) {
+            return 0L;
+        }
+        long jSkip = inputStream.skip(j);
+        if (jSkip != 0) {
+            return jSkip;
+        }
+        if (read() == -1) {
+            return 0L;
+        }
+        return this.in.skip(j - 1) + 1;
+    }
+
+    @Override // java.io.InputStream
+    public int read() throws IOException {
+        while (true) {
+            InputStream inputStream = this.in;
+            if (inputStream == null) {
+                return -1;
+            }
+            int i = inputStream.read();
+            if (i != -1) {
+                return i;
+            }
+            advance();
+        }
+    }
+}

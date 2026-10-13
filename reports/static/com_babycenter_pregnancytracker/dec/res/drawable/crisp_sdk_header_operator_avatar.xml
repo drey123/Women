@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="44.0dp" android:width="44.0dp" android:viewportWidth="44.0" android:viewportHeight="44.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,0h44v44h-44z" />
+        <path android:fillColor="@color/crisp_sdk_chat_header_operator_icon" android:pathData="M21.98,11.39C23.482,11.39 24.922,11.987 25.984,13.049C27.046,14.111 27.643,15.551 27.643,17.053V21.279C27.643,22.781 27.046,24.222 25.984,25.284C24.922,26.346 23.482,26.942 21.98,26.942C20.478,26.942 19.037,26.346 17.975,25.284C16.913,24.222 16.316,22.781 16.316,21.279V17.053C16.316,15.551 16.913,14.111 17.975,13.049C19.037,11.987 20.478,11.39 21.98,11.39Z" />
+        <path android:fillColor="@color/crisp_sdk_chat_header_operator_icon" android:pathData="M14.182,26.507H29.778C30.059,26.501 30.34,26.552 30.601,26.657C30.863,26.762 31.101,26.919 31.3,27.119C31.5,27.318 31.657,27.556 31.762,27.818C31.867,28.079 31.918,28.36 31.912,28.642V32.606H12.09V28.642C12.085,28.363 12.134,28.087 12.237,27.828C12.339,27.569 12.493,27.333 12.687,27.135C12.882,26.936 13.115,26.778 13.371,26.67C13.628,26.562 13.903,26.507 14.182,26.507Z" android:strokeAlpha="0.8" android:fillAlpha="0.8" />
+    </group>
+</vector>

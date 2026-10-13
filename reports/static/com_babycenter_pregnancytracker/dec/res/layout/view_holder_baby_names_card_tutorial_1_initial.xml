@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="?spacing" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="352.0dp" android:elevation="@dimen/babycenter.cardView.elevation">
+        <TextView android:textAppearance="?textAppearanceHeadline2" android:ellipsize="end" android:gravity="center" android:id="@id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/baby_names__tutorial__text__1__initial" android:includeFontPadding="false" />
+        <ImageView android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="?spacingXL" android:src="@drawable/ic_tools_baby_names_game" android:scaleType="centerInside" />
+        <com.google.android.material.button.MaterialButton android:id="@id/start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacingXL" android:text="@string/baby_names__tutorial__cta__start" />
+        <com.google.android.material.button.MaterialButton android:id="@id/skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" android:text="@string/baby_names__tutorial__cta__skip" style="?borderlessButtonStyle" />
+    </LinearLayout>
+</FrameLayout>

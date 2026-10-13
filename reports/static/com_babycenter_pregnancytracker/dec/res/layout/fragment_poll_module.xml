@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="?spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline3" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacingS" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" />
+    <RadioGroup android:orientation="vertical" android:id="@id/content" android:paddingTop="?spacingXS" android:paddingBottom="?spacingXS" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="?android:listDivider" android:animateLayoutChanges="true" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:id="@id/vote" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?spacing" android:layout_marginBottom="?spacing" android:text="@string/vote" android:layout_marginStart="?spacing" android:layout_marginEnd="?spacing" />
+        <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@id/progress" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:indeterminate="true" android:layout_centerInParent="true" android:elevation="10.0dp" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:id="@id/votesCount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toStartOf="@id/bottomAction" android:layout_alignParentStart="true" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:id="@id/showResults" android:background="?selectableItemBackgroundBorderless" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/poll_show_results" android:layout_centerHorizontal="true" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:id="@id/bottomAction" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/polls_change_vote" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?textAppearanceFinePrint" android:textColorLink="?colorOnBackgroundSecondary" android:gravity="center" android:id="@id/compliance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="?spacing" />
+</LinearLayout>

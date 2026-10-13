@@ -1,0 +1,19 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55 */
+/* JADX INFO: loaded from: classes3.dex */
+public final class ud0 implements rx6 {
+    public static final ud0 a = new ud0();
+    public static final dt3 b;
+
+    static {
+        oa0 oa0VarN = oa0.n();
+        oa0VarN.b = 1;
+        b = new dt3("messagingClientEvent", le2.x(le2.u(ps7.class, oa0VarN.m())));
+    }
+
+    @Override // defpackage.if3
+    public final void a(Object obj, Object obj2) {
+        ((sx6) obj2).a(b, ((jg6) obj).a);
+    }
+}

@@ -1,0 +1,91 @@
+.class Lcom/google/common/collect/FluentIterable$3$1;
+.super Lcom/google/common/collect/AbstractIndexedListIterator;
+.source "r8-map-id-aa86f593fde5e5eeaa449ae73e5c147ca7ce0831a9c8790d1a8c78c6c3539c55"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/common/collect/FluentIterable$3;->iterator()Ljava/util/Iterator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/common/collect/AbstractIndexedListIterator<",
+        "Ljava/util/Iterator<",
+        "+TT;>;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/google/common/collect/FluentIterable$3;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/common/collect/FluentIterable$3;I)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/google/common/collect/FluentIterable$3$1;->this$0:Lcom/google/common/collect/FluentIterable$3;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Lcom/google/common/collect/AbstractIndexedListIterator;-><init>(I)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic get(I)Ljava/lang/Object;
+    .locals 0
+
+    .line 12
+    invoke-virtual {p0, p1}, Lcom/google/common/collect/FluentIterable$3$1;->get(I)Ljava/util/Iterator;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public get(I)Ljava/util/Iterator;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)",
+            "Ljava/util/Iterator<",
+            "+TT;>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/google/common/collect/FluentIterable$3$1;->this$0:Lcom/google/common/collect/FluentIterable$3;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lcom/google/common/collect/FluentIterable$3;->val$inputs:[Ljava/lang/Iterable;
+
+    .line 4
+    .line 5
+    aget-object p0, p0, p1
+
+    .line 6
+    .line 7
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
+.end method
