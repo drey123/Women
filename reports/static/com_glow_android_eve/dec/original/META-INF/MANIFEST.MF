@@ -1,0 +1,62 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA1-Digest: bWTx892hM0A2/DNTN+BC0i6rP2I=
+
+Name: lib/arm64-v8a/libandroidx.graphics.path.so
+SHA1-Digest: 18F/y0SzCm7+idQ2qhAqvlLgCKY=
+
+Name: lib/arm64-v8a/libc++_shared.so
+SHA1-Digest: Qb4i8wtcqu9etZou9OIjlNzs/to=
+
+Name: lib/arm64-v8a/libfbjni.so
+SHA1-Digest: 3hDzGuVJ7LFnggM3ryQNM1uuhSk=
+
+Name: lib/arm64-v8a/libgifimage.so
+SHA1-Digest: 0B5rGcuXByKFMk4P1BQvS1o32yo=
+
+Name: lib/arm64-v8a/libhermes.so
+SHA1-Digest: TaIhy4/9S7KYpy88JZwwtLJSOTQ=
+
+Name: lib/arm64-v8a/libhermestooling.so
+SHA1-Digest: uRkRvxjZeIfN/shfRfZwF86CyiY=
+
+Name: lib/arm64-v8a/libimage_processing_util_jni.so
+SHA1-Digest: vUJZDlsVpdNx2vtRqx8qA3UafRw=
+
+Name: lib/arm64-v8a/libimagepipeline.so
+SHA1-Digest: LtlfqFTkjPFfgZe+mTUtJxWlMmw=
+
+Name: lib/arm64-v8a/libjsctooling.so
+SHA1-Digest: WlXgLqTKQObhBPwnVfGLvhOji5I=
+
+Name: lib/arm64-v8a/libjsi.so
+SHA1-Digest: IfKI4S5SGuwFHSIYXLvW5iPQ48Y=
+
+Name: lib/arm64-v8a/libnative-filters.so
+SHA1-Digest: Ob2fvlKeyLd/Lb9WyFFazB6717o=
+
+Name: lib/arm64-v8a/libnative-imagetranscoder.so
+SHA1-Digest: rSKsbS6I7fI7WOGrLI/Agc1ZveQ=
+
+Name: lib/arm64-v8a/libopencv_java4.so
+SHA1-Digest: gevvvW8QHIDt64PFUzZ4X6O93y0=
+
+Name: lib/arm64-v8a/libreactnative.so
+SHA1-Digest: Trs/iPFfzplUi790zbxrQHOZo8U=
+
+Name: lib/arm64-v8a/librenderscript-toolkit.so
+SHA1-Digest: jAZvNM3MXEpmP3P9ubgxZXtDOtg=
+
+Name: lib/arm64-v8a/libsentry-android.so
+SHA1-Digest: MBQYA7iBY3eW8FKsAFJ+18iuEgc=
+
+Name: lib/arm64-v8a/libsentry.so
+SHA1-Digest: n6yNTOYDRELD8ewHZfEj6BJbOI4=
+
+Name: lib/arm64-v8a/libsurface_util_jni.so
+SHA1-Digest: RuucNBozK+K0qZYKOrzqdSR1QCQ=
+
+Name: stamp-cert-sha256
+SHA1-Digest: 5vTkm69vqAbusD/fho7oWwc7j+I=
+
