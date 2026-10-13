@@ -78,47 +78,43 @@ public final class a {
     }
 
     private final synchronized void b() {
+        if (t3.a.d(this)) {
+            return;
+        }
         try {
-            if (t3.a.d(this)) {
+            FetchedAppSettingsManager fetchedAppSettingsManager = FetchedAppSettingsManager.f6173a;
+            p pVarQ = FetchedAppSettingsManager.q(q.m(), false);
+            if (pVarQ == null) {
                 return;
             }
-            try {
-                FetchedAppSettingsManager fetchedAppSettingsManager = FetchedAppSettingsManager.f6173a;
-                p pVarQ = FetchedAppSettingsManager.q(q.m(), false);
-                if (pVarQ == null) {
-                    return;
-                }
-                String strK = pVarQ.k();
-                if (strK != null && strK.length() > 0) {
-                    JSONObject jSONObject = new JSONObject(strK);
-                    f10635c.clear();
-                    Iterator<String> itKeys = jSONObject.keys();
-                    while (itKeys.hasNext()) {
-                        String key = itKeys.next();
-                        JSONObject jSONObject2 = jSONObject.getJSONObject(key);
-                        if (jSONObject2 != null) {
-                            if (jSONObject2.optBoolean("is_deprecated_event")) {
-                                Set set = f10636d;
-                                k.d(key, "key");
-                                set.add(key);
-                            } else {
-                                JSONArray jSONArrayOptJSONArray = jSONObject2.optJSONArray("deprecated_param");
-                                k.d(key, "key");
-                                C0158a c0158a = new C0158a(key, new ArrayList());
-                                if (jSONArrayOptJSONArray != null) {
-                                    c0158a.c(k0.n(jSONArrayOptJSONArray));
-                                }
-                                f10635c.add(c0158a);
+            String strK = pVarQ.k();
+            if (strK != null && strK.length() > 0) {
+                JSONObject jSONObject = new JSONObject(strK);
+                f10635c.clear();
+                Iterator<String> itKeys = jSONObject.keys();
+                while (itKeys.hasNext()) {
+                    String key = itKeys.next();
+                    JSONObject jSONObject2 = jSONObject.getJSONObject(key);
+                    if (jSONObject2 != null) {
+                        if (jSONObject2.optBoolean("is_deprecated_event")) {
+                            Set set = f10636d;
+                            k.d(key, "key");
+                            set.add(key);
+                        } else {
+                            JSONArray jSONArrayOptJSONArray = jSONObject2.optJSONArray("deprecated_param");
+                            k.d(key, "key");
+                            C0158a c0158a = new C0158a(key, new ArrayList());
+                            if (jSONArrayOptJSONArray != null) {
+                                c0158a.c(k0.n(jSONArrayOptJSONArray));
                             }
+                            f10635c.add(c0158a);
                         }
                     }
                 }
-            } catch (Exception unused) {
-            } catch (Throwable th) {
-                t3.a.b(th, this);
             }
-        } catch (Throwable th2) {
-            throw th2;
+        } catch (Exception unused) {
+        } catch (Throwable th) {
+            t3.a.b(th, this);
         }
     }
 

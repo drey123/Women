@@ -50,51 +50,47 @@ public class TransferNetworkLossHandler extends BroadcastReceiver {
     /* JADX INFO: Access modifiers changed from: private */
     public synchronized void resumeAllTransfersOnNetworkAvailability() {
         TransferRecord transfer;
+        int i10 = 0;
+        TransferState[] transferStateArr = {TransferState.WAITING_FOR_NETWORK};
+        LOGGER.debug("Loading transfers from database...");
+        ArrayList arrayList = new ArrayList();
+        Cursor cursorQueryTransfersWithTypeAndStates = null;
         try {
-            int i10 = 0;
-            TransferState[] transferStateArr = {TransferState.WAITING_FOR_NETWORK};
-            LOGGER.debug("Loading transfers from database...");
-            ArrayList arrayList = new ArrayList();
-            Cursor cursorQueryTransfersWithTypeAndStates = null;
-            try {
-                cursorQueryTransfersWithTypeAndStates = this.dbUtil.queryTransfersWithTypeAndStates(TransferType.ANY, transferStateArr);
-                int i11 = 0;
-                while (cursorQueryTransfersWithTypeAndStates.moveToNext()) {
-                    int i12 = cursorQueryTransfersWithTypeAndStates.getInt(cursorQueryTransfersWithTypeAndStates.getColumnIndexOrThrow(TransferTable.COLUMN_ID));
-                    if (this.updater.getTransfer(i12) == null) {
-                        TransferRecord transferRecord = new TransferRecord(i12);
-                        transferRecord.updateFromDB(cursorQueryTransfersWithTypeAndStates);
-                        this.updater.addTransfer(transferRecord);
-                        i11++;
-                    }
-                    arrayList.add(Integer.valueOf(i12));
+            cursorQueryTransfersWithTypeAndStates = this.dbUtil.queryTransfersWithTypeAndStates(TransferType.ANY, transferStateArr);
+            int i11 = 0;
+            while (cursorQueryTransfersWithTypeAndStates.moveToNext()) {
+                int i12 = cursorQueryTransfersWithTypeAndStates.getInt(cursorQueryTransfersWithTypeAndStates.getColumnIndexOrThrow(TransferTable.COLUMN_ID));
+                if (this.updater.getTransfer(i12) == null) {
+                    TransferRecord transferRecord = new TransferRecord(i12);
+                    transferRecord.updateFromDB(cursorQueryTransfersWithTypeAndStates);
+                    this.updater.addTransfer(transferRecord);
+                    i11++;
                 }
+                arrayList.add(Integer.valueOf(i12));
+            }
+            LOGGER.debug("Closing the cursor for resumeAllTransfers");
+            cursorQueryTransfersWithTypeAndStates.close();
+            try {
+                int size = arrayList.size();
+                while (i10 < size) {
+                    Object obj = arrayList.get(i10);
+                    i10++;
+                    Integer num = (Integer) obj;
+                    AmazonS3 amazonS3 = S3ClientReference.get(num);
+                    if (amazonS3 != null && (transfer = this.updater.getTransfer(num.intValue())) != null && !transfer.isRunning()) {
+                        transfer.start(amazonS3, this.dbUtil, this.updater, this.connManager);
+                    }
+                }
+            } catch (Exception e10) {
+                LOGGER.error("Error in resuming the transfers." + e10.getMessage());
+            }
+            LOGGER.debug(i11 + " transfers are loaded from database.");
+        } catch (Throwable th) {
+            if (cursorQueryTransfersWithTypeAndStates != null) {
                 LOGGER.debug("Closing the cursor for resumeAllTransfers");
                 cursorQueryTransfersWithTypeAndStates.close();
-                try {
-                    int size = arrayList.size();
-                    while (i10 < size) {
-                        Object obj = arrayList.get(i10);
-                        i10++;
-                        Integer num = (Integer) obj;
-                        AmazonS3 amazonS3 = S3ClientReference.get(num);
-                        if (amazonS3 != null && (transfer = this.updater.getTransfer(num.intValue())) != null && !transfer.isRunning()) {
-                            transfer.start(amazonS3, this.dbUtil, this.updater, this.connManager);
-                        }
-                    }
-                } catch (Exception e10) {
-                    LOGGER.error("Error in resuming the transfers." + e10.getMessage());
-                }
-                LOGGER.debug(i11 + " transfers are loaded from database.");
-            } catch (Throwable th) {
-                if (cursorQueryTransfersWithTypeAndStates != null) {
-                    LOGGER.debug("Closing the cursor for resumeAllTransfers");
-                    cursorQueryTransfersWithTypeAndStates.close();
-                }
-                throw th;
             }
-        } catch (Throwable th2) {
-            throw th2;
+            throw th;
         }
     }
 

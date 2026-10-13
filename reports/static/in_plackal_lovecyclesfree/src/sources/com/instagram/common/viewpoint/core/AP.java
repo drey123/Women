@@ -96,7 +96,11 @@ public final class AP implements InterfaceC2095pF {
                 }
 
                 /* JADX WARN: Failed to parse debug info
-                java.lang.ArrayIndexOutOfBoundsException
+                java.lang.ArrayIndexOutOfBoundsException: Index 12 out of bounds for length 10
+                	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:147)
+                	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+                	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:656)
+                	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
                  */
                 @Override // com.instagram.common.viewpoint.core.InterfaceC2095pF
                 public final long AGi(C04195i c04195i) throws C2097pH {
@@ -286,7 +290,12 @@ public final class AP implements InterfaceC2095pF {
                     throw new com.instagram.common.viewpoint.core.C2096pG(null, com.facebook.ads.AdError.REMOTE_ADS_SERVICE_ERROR);
                  */
                 /* JADX WARN: Failed to parse debug info
-                java.lang.ArrayIndexOutOfBoundsException
+                java.lang.ArrayIndexOutOfBoundsException: Index 23 out of bounds for length 15
+                	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.restartVar(DebugInfoParser.java:193)
+                	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:141)
+                	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+                	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:656)
+                	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
                  */
                 @Override // com.instagram.common.viewpoint.core.InterfaceC2095pF
                 /*
@@ -602,7 +611,11 @@ public final class AP implements InterfaceC2095pF {
                     if (r1 != 0) goto L25;
                  */
                 /* JADX WARN: Failed to parse debug info
-                java.lang.ArrayIndexOutOfBoundsException
+                java.lang.ArrayIndexOutOfBoundsException: Index 24 out of bounds for length 15
+                	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:147)
+                	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+                	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:656)
+                	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
                  */
                 @Override // com.instagram.common.viewpoint.core.InterfaceC2095pF
                 /*

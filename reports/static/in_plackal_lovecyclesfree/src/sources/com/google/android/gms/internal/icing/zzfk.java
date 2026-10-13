@@ -23,12 +23,16 @@ final class zzfk extends zzfm {
         return zzfn.zzb ? zzfn.zzv(obj, j10) : zzfn.zzw(obj, j10);
     }
 
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.icing.zzfn.zzx(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.icing.zzfn.zzy(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 'z10' boolean)' in method call: com.google.android.gms.internal.icing.zzfn.zzx(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 'z10' boolean)' in method call: com.google.android.gms.internal.icing.zzfn.zzy(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.icing.zzfm
     public final void zzc(Object obj, long j10, boolean z10) {
         if (zzfn.zzb) {
-            zzfn.zzD(obj, j10, z10 ? (byte) 1 : (byte) 0);
+            zzfn.zzx(obj, j10, z10);
         } else {
-            zzfn.zzE(obj, j10, z10 ? (byte) 1 : (byte) 0);
+            zzfn.zzy(obj, j10, z10);
         }
     }
 

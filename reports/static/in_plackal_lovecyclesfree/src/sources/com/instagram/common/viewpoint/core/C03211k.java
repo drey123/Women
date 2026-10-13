@@ -63,7 +63,12 @@ public final class C03211k extends AQ implements AJ {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException
+    java.lang.ArrayIndexOutOfBoundsException: Index 20 out of bounds for length 17
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:135)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:656)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     @MetaExoPlayerCustomization("Meta Specific, added in D4001689 for 'Handling loopback Address'")
     private HttpURLConnection A05(URL url, int i10, byte[] bArr, long j10, long j11, boolean z10, boolean z11, Map<String, String> map) throws IOException {

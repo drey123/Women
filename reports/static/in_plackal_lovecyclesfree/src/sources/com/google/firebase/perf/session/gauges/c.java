@@ -85,16 +85,20 @@ public class c {
     }
 
     private synchronized void h(long j10, final Timer timer) {
-        this.f8808f = j10;
         try {
-            this.f8807e = this.f8804b.scheduleAtFixedRate(new Runnable() { // from class: com.google.firebase.perf.session.gauges.a
-                @Override // java.lang.Runnable
-                public final void run() {
-                    c.a(this.f8797b, timer);
-                }
-            }, 0L, j10, TimeUnit.MILLISECONDS);
-        } catch (RejectedExecutionException e10) {
-            f8801g.j("Unable to start collecting Cpu Metrics: " + e10.getMessage());
+            this.f8808f = j10;
+            try {
+                this.f8807e = this.f8804b.scheduleAtFixedRate(new Runnable() { // from class: com.google.firebase.perf.session.gauges.a
+                    @Override // java.lang.Runnable
+                    public final void run() {
+                        c.a(this.f8797b, timer);
+                    }
+                }, 0L, j10, TimeUnit.MILLISECONDS);
+            } catch (RejectedExecutionException e10) {
+                f8801g.j("Unable to start collecting Cpu Metrics: " + e10.getMessage());
+            }
+        } catch (Throwable th) {
+            throw th;
         }
     }
 

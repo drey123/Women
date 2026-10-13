@@ -19,12 +19,16 @@ final class zzaer extends zzaes {
         return Float.intBitsToFloat(this.zza.getInt(obj, j10));
     }
 
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.gtm.zzaet.zzi(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.gtm.zzaet.zzj(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 'z10' boolean)' in method call: com.google.android.gms.internal.gtm.zzaet.zzi(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 'z10' boolean)' in method call: com.google.android.gms.internal.gtm.zzaet.zzj(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.gtm.zzaes
     public final void zzc(Object obj, long j10, boolean z10) {
         if (zzaet.zzb) {
-            zzaet.zzD(obj, j10, z10 ? (byte) 1 : (byte) 0);
+            zzaet.zzi(obj, j10, z10);
         } else {
-            zzaet.zzE(obj, j10, z10 ? (byte) 1 : (byte) 0);
+            zzaet.zzj(obj, j10, z10);
         }
     }
 

@@ -23,7 +23,7 @@ public final class zzhmd extends zzhwo implements zzhya {
         this.zze = zzhviVar;
     }
 
-    public static zzhmd zze(zzhvi zzhviVar, zzhvy zzhvyVar) {
+    public static zzhmd zze(zzhvi zzhviVar, zzhvy zzhvyVar) throws zzhxd {
         return (zzhmd) zzhwo.zzbT(zzf, zzhviVar, zzhvyVar);
     }
 

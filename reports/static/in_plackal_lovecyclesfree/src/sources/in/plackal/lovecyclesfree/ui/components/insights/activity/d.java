@@ -234,16 +234,6 @@ public abstract class d extends m implements oa.d, View.OnClickListener {
         kotlin.jvm.internal.k.e(v10, "v");
     }
 
-    /* JADX WARN: Failed to analyze thrown exceptions
-    java.util.ConcurrentModificationException
-    	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1013)
-    	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:967)
-    	at jadx.core.dex.visitors.MethodThrowsVisitor.processInstructions(MethodThrowsVisitor.java:130)
-    	at jadx.core.dex.visitors.MethodThrowsVisitor.visit(MethodThrowsVisitor.java:68)
-    	at jadx.core.dex.visitors.MethodThrowsVisitor.checkInsn(MethodThrowsVisitor.java:178)
-    	at jadx.core.dex.visitors.MethodThrowsVisitor.processInstructions(MethodThrowsVisitor.java:131)
-    	at jadx.core.dex.visitors.MethodThrowsVisitor.visit(MethodThrowsVisitor.java:68)
-     */
     @Override // in.plackal.lovecyclesfree.ui.components.insights.activity.m, rb.a, androidx.fragment.app.h, androidx.activity.h, androidx.core.app.h, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);

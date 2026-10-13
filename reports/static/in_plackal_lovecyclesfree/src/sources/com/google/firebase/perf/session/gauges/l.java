@@ -71,16 +71,20 @@ public class l {
     }
 
     private synchronized void g(long j10, final Timer timer) {
-        this.f8829e = j10;
         try {
-            this.f8828d = this.f8825a.scheduleAtFixedRate(new Runnable() { // from class: com.google.firebase.perf.session.gauges.j
-                @Override // java.lang.Runnable
-                public final void run() {
-                    l.a(this.f8820b, timer);
-                }
-            }, 0L, j10, TimeUnit.MILLISECONDS);
-        } catch (RejectedExecutionException e10) {
-            f8824f.j("Unable to start collecting Memory Metrics: " + e10.getMessage());
+            this.f8829e = j10;
+            try {
+                this.f8828d = this.f8825a.scheduleAtFixedRate(new Runnable() { // from class: com.google.firebase.perf.session.gauges.j
+                    @Override // java.lang.Runnable
+                    public final void run() {
+                        l.a(this.f8820b, timer);
+                    }
+                }, 0L, j10, TimeUnit.MILLISECONDS);
+            } catch (RejectedExecutionException e10) {
+                f8824f.j("Unable to start collecting Memory Metrics: " + e10.getMessage());
+            }
+        } catch (Throwable th) {
+            throw th;
         }
     }
 

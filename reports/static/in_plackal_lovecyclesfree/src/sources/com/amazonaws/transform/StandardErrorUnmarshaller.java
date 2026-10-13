@@ -2,6 +2,7 @@ package com.amazonaws.transform;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.util.XpathUtils;
+import javax.xml.xpath.XPathExpressionException;
 import org.w3c.dom.Node;
 
 /* JADX INFO: compiled from: r8-map-id-b8cb285f80ed680abd9f5d8a2555b1e9c891d5cb7369afdf1129a2183c743eeb */
@@ -23,7 +24,7 @@ public class StandardErrorUnmarshaller extends AbstractErrorUnmarshaller<Node> {
     }
 
     @Override // com.amazonaws.transform.Unmarshaller
-    public AmazonServiceException unmarshall(Node node) {
+    public AmazonServiceException unmarshall(Node node) throws XPathExpressionException {
         String errorCode = parseErrorCode(node);
         String strAsString = XpathUtils.asString("ErrorResponse/Error/Type", node);
         String strAsString2 = XpathUtils.asString("ErrorResponse/RequestId", node);

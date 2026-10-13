@@ -301,37 +301,33 @@ public class d implements com.android.volley.a {
 
     @Override // com.android.volley.a
     public synchronized void initialize() {
-        try {
-            File file = this.f9857c.get();
-            if (!file.exists()) {
-                if (!file.mkdirs()) {
-                    com.android.volley.g.c("Unable to create cache dir %s", file.getAbsolutePath());
-                }
-                return;
+        File file = this.f9857c.get();
+        if (!file.exists()) {
+            if (!file.mkdirs()) {
+                com.android.volley.g.c("Unable to create cache dir %s", file.getAbsolutePath());
             }
-            File[] fileArrListFiles = file.listFiles();
-            if (fileArrListFiles == null) {
-                return;
-            }
-            for (File file2 : fileArrListFiles) {
+            return;
+        }
+        File[] fileArrListFiles = file.listFiles();
+        if (fileArrListFiles == null) {
+            return;
+        }
+        for (File file2 : fileArrListFiles) {
+            try {
+                long length = file2.length();
+                c cVar = new c(new BufferedInputStream(c(file2)), length);
                 try {
-                    long length = file2.length();
-                    c cVar = new c(new BufferedInputStream(c(file2)), length);
-                    try {
-                        b bVarB = b.b(cVar);
-                        bVarB.f9861a = length;
-                        i(bVarB.f9862b, bVarB);
-                        cVar.close();
-                    } catch (Throwable th) {
-                        cVar.close();
-                        throw th;
-                    }
-                } catch (IOException unused) {
-                    file2.delete();
+                    b bVarB = b.b(cVar);
+                    bVarB.f9861a = length;
+                    i(bVarB.f9862b, bVarB);
+                    cVar.close();
+                } catch (Throwable th) {
+                    cVar.close();
+                    throw th;
                 }
+            } catch (IOException unused) {
+                file2.delete();
             }
-        } catch (Throwable th2) {
-            throw th2;
         }
     }
 

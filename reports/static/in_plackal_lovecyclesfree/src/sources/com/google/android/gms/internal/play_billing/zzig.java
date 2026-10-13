@@ -19,16 +19,12 @@ final class zzig extends zzih {
         return Float.intBitsToFloat(this.zza.getInt(obj, j10));
     }
 
-    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.play_billing.zzii.zzi(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.play_billing.zzii.zzj(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Unknown register number '(r5v0 'z' boolean)' in method call: com.google.android.gms.internal.play_billing.zzii.zzi(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Unknown register number '(r5v0 'z' boolean)' in method call: com.google.android.gms.internal.play_billing.zzii.zzj(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.play_billing.zzih
     public final void zzc(Object obj, long j10, boolean z10) {
         if (zzii.zzb) {
-            zzii.zzi(obj, j10, z10);
+            zzii.zzD(obj, j10, z10 ? (byte) 1 : (byte) 0);
         } else {
-            zzii.zzj(obj, j10, z10);
+            zzii.zzE(obj, j10, z10 ? (byte) 1 : (byte) 0);
         }
     }
 

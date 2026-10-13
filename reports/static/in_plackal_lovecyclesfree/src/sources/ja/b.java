@@ -179,9 +179,11 @@ public class b extends SQLiteOpenHelper {
                     k.b("Error", e10.getMessage());
                 }
             }
-            return dateJ;
-        } finally {
             cursorQuery.close();
+            return dateJ;
+        } catch (Throwable th) {
+            cursorQuery.close();
+            throw th;
         }
     }
 
