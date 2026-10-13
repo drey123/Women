@@ -1,0 +1,1 @@
+System.register(["./index-legacy-BrYhl2i2.js"],function(e,r){"use strict";var t;return{setters:[e=>{t=e.dl}],execute:function(){e("SavePasswordWeb",class extends t{readPassword(){throw new Error("Method not implemented.")}async promptDialog(e){throw new Error("Not implemented on web"+JSON.stringify(e))}async getPluginVersion(){return{version:"web"}}})}}});

@@ -1,0 +1,1 @@
+System.register(["./index-legacy-BrYhl2i2.js","./InterpretationGameModal-legacy-CNOW35p-.js"],function(e,t){"use strict";var n,a,r;return{setters:[e=>{n=e.n,a=e.q},e=>{r=e.default}],execute:function(){e("interpretationGameModalService",new class{async open(){const e=await n.create(a({component:r}));return await e.present(),e.onDidDismiss()}})}}});

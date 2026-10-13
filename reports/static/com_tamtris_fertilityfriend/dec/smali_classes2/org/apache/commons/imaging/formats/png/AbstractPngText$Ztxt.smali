@@ -1,0 +1,25 @@
+.class public Lorg/apache/commons/imaging/formats/png/AbstractPngText$Ztxt;
+.super Lorg/apache/commons/imaging/formats/png/AbstractPngText;
+.source "AbstractPngText.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/apache/commons/imaging/formats/png/AbstractPngText;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Ztxt"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 47
+    invoke-direct {p0, p1, p2}, Lorg/apache/commons/imaging/formats/png/AbstractPngText;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method

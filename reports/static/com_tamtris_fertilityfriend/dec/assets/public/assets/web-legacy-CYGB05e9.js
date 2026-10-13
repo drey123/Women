@@ -1,0 +1,1 @@
+System.register(["./index-legacy-BrYhl2i2.js"],function(e,t){"use strict";var n;return{setters:[e=>{n=e.dl}],execute:function(){e("InAppReviewWeb",class extends n{async requestReview(){throw this.unimplemented("Not implemented on web.")}})}}});

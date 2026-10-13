@@ -1,0 +1,1 @@
+import{O as n}from"./index-flPLuAHJ.js";class s extends n{async getLanguage(){var e;const a=await this.get("setupapi_language.php",void 0,{context:"Loading language setting"});return{success:a.success,lang:(e=a.lang)!=null?e:null}}async setLanguage(a){return this.post("setupapi_language.php",{lang:a},{context:"Saving language setting"})}}const u=new s;export{u as l};

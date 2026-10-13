@@ -1,0 +1,42 @@
+{
+	"appId": "com.tamtris.fertilityfriend",
+	"appName": "FF",
+	"webDir": "dist",
+	"server": {
+		"hostname": "www.fertilityfriend.com",
+		"iosScheme": "https",
+		"androidScheme": "https"
+	},
+	"android": {},
+	"ios": {
+		"copy": [
+			{
+				"src": "ios-resources/",
+				"dest": "ios/App/App",
+				"keepParentFolder": false
+			}
+		]
+	},
+	"plugins": {
+		"Keyboard": {},
+		"WidgetBridge": {
+			"group": "group.com.tamtris.fertilityfriend"
+		},
+		"SplashScreen": {
+			"launchShowDuration": 1000,
+			"launchAutoHide": false,
+			"launchFadeOutDuration": 300,
+			"backgroundColor": "#ffffff",
+			"androidScaleType": "CENTER_CROP",
+			"showSpinner": false,
+			"androidSpinnerStyle": "large",
+			"iosSpinnerStyle": "small",
+			"spinnerColor": "#999999",
+			"splashFullScreen": true,
+			"splashImmersive": true,
+			"androidSplashResourceName": "splash",
+			"layoutName": "launch_screen",
+			"useDialog": true
+		}
+	}
+}

@@ -1,0 +1,1 @@
+import{n as t,q as r,eB as n}from"./index-flPLuAHJ.js";const i={async open(o,a){const e=await t.create(r({component:n,componentProps:{imageUrl:o,title:a||"Chart"}}));return await e.present(),e.onDidDismiss()}};export{i as chartImageViewerModalService};

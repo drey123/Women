@@ -1,0 +1,19 @@
+package io.ionic.libs.ionfilesystemlib.helper.common;
+
+import android.os.Build;
+import kotlin.Metadata;
+import org.apache.commons.imaging.formats.tiff.constants.ExifTagConstants;
+
+/* JADX INFO: compiled from: IONFILEBuildConfig.kt */
+/* JADX INFO: loaded from: classes2.dex */
+@Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0003\u001a\u00020\u0004¨\u0006\u0005"}, d2 = {"Lio/ionic/libs/ionfilesystemlib/helper/common/IONFILEBuildConfig;", "", "()V", "getAndroidSdkVersionCode", "", "IONFilesystemLib_release"}, k = 1, mv = {1, 9, 0}, xi = ExifTagConstants.FLASH_VALUE_OFF_NO_FLASH_FUNCTION)
+public final class IONFILEBuildConfig {
+    public static final IONFILEBuildConfig INSTANCE = new IONFILEBuildConfig();
+
+    private IONFILEBuildConfig() {
+    }
+
+    public final int getAndroidSdkVersionCode() {
+        return Build.VERSION.SDK_INT;
+    }
+}

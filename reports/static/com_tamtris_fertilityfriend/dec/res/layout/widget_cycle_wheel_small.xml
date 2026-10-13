@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_root" android:background="@android:color/white" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/wheel_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="Cycle wheel" />
+    <TextView android:id="@id/text_label" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+</FrameLayout>

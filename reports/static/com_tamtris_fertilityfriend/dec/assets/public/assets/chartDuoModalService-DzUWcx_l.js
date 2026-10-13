@@ -1,0 +1,1 @@
+import{n as s,q as e}from"./index-flPLuAHJ.js";import n from"./ChartDuoModal-DSM6CKO-.js";const i={async open(a={}){const o=await s.create(e({component:n,componentProps:{mode:a.mode||"signs",isModal:!0},cssClass:"fullscreen-modal"}));await o.present();const{data:t}=await o.onWillDismiss();return t}};export{i as chartDuoModalService};

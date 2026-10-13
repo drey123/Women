@@ -1,0 +1,1 @@
+import{n,q as t}from"./index-flPLuAHJ.js";import l from"./CyclePlannerModal-DqR6qT6W.js";import"./cyclePlannerStore-BYIJgO6W.js";const c=async()=>{const o=await n.create(t({component:l,cssClass:"fullscreen-modal"}));await o.present();const{data:a}=await o.onWillDismiss();return a};export{c as openCyclePlannerModal};

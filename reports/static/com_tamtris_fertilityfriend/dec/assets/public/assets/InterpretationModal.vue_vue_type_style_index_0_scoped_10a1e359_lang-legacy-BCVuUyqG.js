@@ -1,0 +1,1 @@
+System.register([],function(e,t){"use strict";return{execute:function(){var e=document.createElement("style");e.textContent="ion-content[data-v-10a1e359]{--background: var(--ion-background-color)}\n",document.head.appendChild(e)}}});

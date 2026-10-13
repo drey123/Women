@@ -1,0 +1,166 @@
+.class final enum Lorg/apache/commons/imaging/icc/IccTagDataTypes$1;
+.super Lorg/apache/commons/imaging/icc/IccTagDataTypes;
+.source "IccTagDataTypes.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/apache/commons/imaging/icc/IccTagDataTypes;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x4010
+    name = null
+.end annotation
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;ILjava/lang/String;I)V
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x10,
+            0x10
+        }
+        names = {
+            null,
+            null,
+            null,
+            null
+        }
+    .end annotation
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v2, p2
+
+    move-object v3, p3
+
+    move v4, p4
+
+    .line 31
+    invoke-direct/range {v0 .. v5}, Lorg/apache/commons/imaging/icc/IccTagDataTypes;-><init>(Ljava/lang/String;ILjava/lang/String;ILorg/apache/commons/imaging/icc/IccTagDataTypes$1;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public dump(Ljava/lang/String;[B)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/apache/commons/imaging/ImagingException;,
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 34
+    const-string v0, "ICC: corrupt tag data"
+
+    new-instance v1, Ljava/io/ByteArrayInputStream;
+
+    invoke-direct {v1, p2}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+
+    .line 35
+    :try_start_0
+    const-string v2, "type_signature"
+
+    sget-object v3, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
+
+    invoke-static {v2, v1, v0, v3}, Lorg/apache/commons/imaging/common/BinaryFunctions;->read4Bytes(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;Ljava/nio/ByteOrder;)I
+
+    .line 38
+    const-string v2, "ignore"
+
+    sget-object v3, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
+
+    invoke-static {v2, v1, v0, v3}, Lorg/apache/commons/imaging/common/BinaryFunctions;->read4Bytes(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;Ljava/nio/ByteOrder;)I
+
+    .line 39
+    const-string v2, "stringLength"
+
+    sget-object v3, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
+
+    invoke-static {v2, v1, v0, v3}, Lorg/apache/commons/imaging/common/BinaryFunctions;->read4Bytes(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;Ljava/nio/ByteOrder;)I
+
+    move-result v0
+
+    .line 42
+    new-instance v2, Ljava/lang/String;
+
+    add-int/lit8 v0, v0, -0x1
+
+    sget-object v3, Ljava/nio/charset/StandardCharsets;->US_ASCII:Ljava/nio/charset/Charset;
+
+    const/16 v4, 0xc
+
+    invoke-direct {v2, p2, v4, v0, v3}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
+
+    .line 43
+    invoke-static {}, Lorg/apache/commons/imaging/icc/IccTagDataTypes;->access$100()Ljava/util/logging/Logger;
+
+    move-result-object p2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    const-string v0, "s: \'"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    const-string v0, "\'"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p2, p1}, Ljava/util/logging/Logger;->fine(Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 44
+    invoke-virtual {v1}, Ljava/io/InputStream;->close()V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 34
+    :try_start_1
+    invoke-virtual {v1}, Ljava/io/InputStream;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    goto :goto_0
+
+    :catchall_1
+    move-exception p2
+
+    invoke-virtual {p1, p2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    :goto_0
+    throw p1
+.end method

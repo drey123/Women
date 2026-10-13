@@ -1,0 +1,1 @@
+import{r as t}from"./index-flPLuAHJ.js";const s=t([]),a=t(3),n=t(!1),o=t(null),i=()=>({calendarData:s,months:a,isLoading:n,error:o,setCalendarData:e=>{s.value=e},setMonths:e=>{a.value=e},setLoading:e=>{n.value=e},setError:e=>{o.value=e},reset:()=>{s.value=[],a.value=3,n.value=!1,o.value=null}});export{i as useCyclePlannerStore};

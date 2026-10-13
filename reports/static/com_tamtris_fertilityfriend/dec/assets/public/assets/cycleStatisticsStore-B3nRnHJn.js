@@ -1,0 +1,1 @@
+import{r as s}from"./index-flPLuAHJ.js";const t=s(null),r=()=>({statisticsData:t,setStatisticsData:a=>{t.value=a},getStatisticsData:()=>t.value,clearData:()=>{t.value=null}});export{r as useCycleStatisticsStore};

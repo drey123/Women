@@ -1,0 +1,1 @@
+import{n as o,q as t}from"./index-flPLuAHJ.js";import a from"./InterpretationGameModal-lrecKem7.js";class n{async open(){const e=await o.create(t({component:a}));return await e.present(),e.onDidDismiss()}}const m=new n;export{m as interpretationGameModalService};

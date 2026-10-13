@@ -1,0 +1,1 @@
+System.register(["./index-legacy-BrYhl2i2.js"],function(t,e){"use strict";var s;return{setters:[t=>{s=t.r}],execute:function(){const e=s(null);t("useCycleStatisticsStore",()=>({statisticsData:e,setStatisticsData:t=>{e.value=t},getStatisticsData:()=>e.value,clearData:()=>{e.value=null}}))}}});

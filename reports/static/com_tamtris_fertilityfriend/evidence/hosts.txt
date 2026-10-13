@@ -1,0 +1,14 @@
+     13 https://www.googleapis.com
+      4 https://issuetracker.google.com
+      3 http://play.google.com
+      2 https://youtrack.jetbrains.com
+      2 https://www.fertilityfriend.com
+      2 https://developer.android.com
+      2 https://capacitorjs.com
+      2 https://*
+      2 http://*
+      1 https://support.google.com
+      1 https://ssl.gstatic.com
+      1 https://cloud.google.com
+      1 https://accounts.google.com
+      1 http://ns.adobe.com
