@@ -177,7 +177,7 @@ jobs:
           git config user.name "audit-bot"
           git config user.email "audit-bot@users.noreply.github.com"
           # Remove legacy decompiled trees from the index; they are not report artifacts.
-          git rm -r --cached --sparse --ignore-unmatch 'reports/static/*/dec' 'reports/static/*/src'
+          git rm -r --cached --sparse --ignore-unmatch ':(glob)reports/static/*/dec/**' ':(glob)reports/static/*/src/**'
           git add --sparse -A reports/
           if git diff --cached --quiet; then
             echo "No report changes to commit."
