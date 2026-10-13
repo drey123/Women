@@ -213,10 +213,19 @@ jobs:
           git commit -m "Update static-analysis evidence [skip ci]"
           for attempt in 1 2 3; do
             git fetch origin main
-            git rebase origin/main
+            if ! git rebase origin/main 2>/dev/null; then
+              # Machine-generated evidence policy: the newest completed run wins.
+              # The replayed commit only touches reports/** (staging above is
+              # scoped), so -X theirs resolves exactly those conflicts as
+              # "new run replaces stale committed evidence".
+              echo "Rebase conflicted on reports/** — resolving with latest-run-wins policy."
+              git rebase --abort 2>/dev/null || true
+              git rebase -X theirs origin/main
+            fi
             if git push origin HEAD:main; then
               exit 0
             fi
+            git rebase --abort 2>/dev/null || true
             sleep $((attempt * 2))
           done
           echo "Could not publish reports after three attempts."
