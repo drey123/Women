@@ -3,7 +3,7 @@ Static analysis report — com_stardust_app
 - Package: `com.stardust.app`
 - APK: `/tmp/apk/com.stardust.app.apk` (66132023 bytes, sha256 `b85380d4bba8af176605fd79e1689bd4189d1f06a93d1128bdcee56782f7e31b`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:12:55Z | Runner: x86_64
+- Date: 2026-10-13T12:55:58Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -55,21 +55,27 @@ com.stardust.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ```
 
 ## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
+- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
 | Tracker | Matching files | Code signature |
 |---|---|---|
+| OneSignal | 629 | `com.onesignal.` |
+| AppsFlyer | 11 | `com.appsflyer.` |
+| Branch | 1 | `io.branch.` |
+| mParticle | 1 | `com.mparticle` |
 
-**Tracker classes embedded in code: 0**
+**Tracker classes embedded in code: 4**
 
 ## Network hosts referenced in code/resources (top 100)
 ```
      17 https://www.slf4j.org
-     15 https://rev.cat
+     16 https://rev.cat
      13 https://www.googleapis.com
      13 https://firebase.google.com
-      9 https://stardust.app
+     10 https://stardust.app
       9 https://stardust-app.onelink.me
       5 https://play.google.com
       5 https://errors.rev.cat
+      5 https://developer.android.com
       4 https://rownd-hub.supertokens.com
       4 https://issuetracker.google.com
       4 https://api.rownd.io
@@ -81,10 +87,11 @@ com.stardust.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
       3 https://api.stardust.app
       3 https://api.rudderlabs.com
       3 http://www.slf4j.org
+      2 https://superwall.com
+      2 https://ingest.us.signoz.cloud:443
       2 https://goo.gle
       2 https://goo.gl
       2 https://firebase-settings.crashlytics.com
-      2 https://developer.android.com
       2 https://api.revenuecat.com
       2 https://%sviap.%s
       2 https://%svalidate-and-log.%s
@@ -98,7 +105,7 @@ com.stardust.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
       1 https://www.google.com
       1 https://www.babylist.com
       1 https://support.google.com
-      1 https://superwall.com
+      1 https://superwall.dev
       1 https://stardust-prod-5a598.firebaseio.com
       1 https://st-auth.stardust.app,
       1 https://privacy-sandbox.appsflyersdk.com
@@ -112,6 +119,7 @@ com.stardust.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
       1 https://docs.revenuecat.com
       1 https://console.firebase.google.com
       1 https://auth.rownd.io
+      1 https://apps.apple.com
       1 https://appleid.apple.com
       1 https://api.onesignal.com
       1 https://api-production.8-lives-cat.io
@@ -119,12 +127,14 @@ com.stardust.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
       1 https://api-diagnostics.revenuecat.com
       1 https://accounts.google.com
       1 https://a.revenue.cat
+      1 https://:
       1 https://%svalidate.%s
       1 https://%sregister.%s
       1 https://%spia.%s
       1 https://%sonelink.%s
       1 https://%slaunches.%s
       1 https://%sinapps.%s
+      1 https://%simpression.%s
       1 https://%sgcdsdk.%s
       1 https://%sdlsdk.%s
       1 https://%sconversions.%s
@@ -148,8 +158,8 @@ com.stardust.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 
 ## Crypto/pinning posture
 - Bundled cert/keystore files: 0 → 
-- network_security_config present: reports/static/com_stardust_app/dec/res/xml/network_security_config.xml 
-- certificatePinner usages: 13
+- network_security_config present: /tmp/women-analysis-com_stardust_app.2DUKYN/dec/res/xml/network_security_config.xml 
+- certificatePinner usages: 22
 
 ## Manifest package/version
 ```

@@ -3,7 +3,7 @@ Static analysis report — com_hp_pregnancy_lite
 - Package: `com.hp.pregnancy.lite`
 - APK: `/tmp/apk/com.hp.pregnancy.lite.apk` (96296232 bytes, sha256 `64187b6a8dfec9210a4784cbf537d2bf5c6135627dfedfb8123a54106b127b18`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:12:51Z | Runner: x86_64
+- Date: 2026-10-13T13:00:26Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -60,10 +60,17 @@ com.hp.pregnancy.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ```
 
 ## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
+- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
 | Tracker | Matching files | Code signature |
 |---|---|---|
+| OneSignal | 816 | `com.onesignal.` |
+| Branch | 20 | `io.branch.` |
+| Facebook Login | 3 | `com.facebook.login` |
+| Bolts | 2 | `com.parse.bolts` |
+| Facebook Places | 1 | `com.facebook.places` |
+| Facebook Share | 1 | `com.facebook.share` |
 
-**Tracker classes embedded in code: 0**
+**Tracker classes embedded in code: 6**
 
 ## Network hosts referenced in code/resources (top 100)
 ```
@@ -170,14 +177,14 @@ com.hp.pregnancy.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ```
 
 ## Local data model signals
-- Room @Entity classes: 22 (files: reports/static/com_hp_pregnancy_lite/src/sources/com/hp/pregnancy/room_database/entity/QuickTips.java reports/static/com_hp_pregnancy_lite/src/sources/com/hp/pregnancy/room_database/entity/Shopping.java reports/static/com_hp_pregnancy_lite/src/sources/com/hp/pregnancy/room_database/entity/Questions.java reports/static/com_hp_pregnancy_lite/src/sources/com/hp/pregnancy/room_database/entity/Daily.java reports/static/com_hp_pregnancy_lite/src/sources/com/hp/pregnancy/room_database/entity/BirthPlan.java )
+- Room @Entity classes: 22 (files: /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/src/sources/com/hp/pregnancy/room_database/entity/QuickTips.java /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/src/sources/com/hp/pregnancy/room_database/entity/Shopping.java /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/src/sources/com/hp/pregnancy/room_database/entity/Questions.java /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/src/sources/com/hp/pregnancy/room_database/entity/Daily.java /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/src/sources/com/hp/pregnancy/room_database/entity/BirthPlan.java )
 - @Database classes: 2
 - protobuf generated classes: 131 files
 - SQLiteOpenHelper subclasses: 13
 - FirebaseRemoteConfig usages: 201 lines
 
 ## Crypto/pinning posture
-- Bundled cert/keystore files: 1 → reports/static/com_hp_pregnancy_lite/dec/res/raw/public_key.pem 
+- Bundled cert/keystore files: 1 → /tmp/women-analysis-com_hp_pregnancy_lite.z9Z0MK/dec/res/raw/public_key.pem 
 - network_security_config present: 
 - certificatePinner usages: 35
 

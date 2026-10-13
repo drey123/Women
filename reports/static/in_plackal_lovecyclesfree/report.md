@@ -3,7 +3,7 @@ Static analysis report — in_plackal_lovecyclesfree
 - Package: `in.plackal.lovecyclesfree`
 - APK: `/tmp/apk/in.plackal.lovecyclesfree.apk` (26433637 bytes, sha256 `2288d273bf0e4650941b53ba52c178b9880dffac91bd00f6350c75de7e6d5f22`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:23:45Z | Runner: x86_64
+- Date: 2026-10-13T12:55:03Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -39,10 +39,16 @@ android.permission.FOREGROUND_SERVICE
 ```
 
 ## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
+- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
 | Tracker | Matching files | Code signature |
 |---|---|---|
+| Facebook Ads | 5 | `com.facebook.ads` |
+| Facebook Login | 2 | `com.facebook.login` |
+| Bolts | 1 | `com.parse.bolts` |
+| Facebook Places | 1 | `com.facebook.places` |
+| Facebook Share | 1 | `com.facebook.share` |
 
-**Tracker classes embedded in code: 0**
+**Tracker classes embedded in code: 5**
 
 ## Network hosts referenced in code/resources (top 100)
 ```

@@ -1,6 +1,6 @@
 # Live Exodus Privacy tracker inventory
 
-Fetched: 2026-10-13T12:33:57Z | source: https://reports.exodus-privacy.eu.org/api
+Fetched: 2026-10-13T12:51:32Z | source: https://reports.exodus-privacy.eu.org/api
 
 - Target apps: 16
 - Reports found: 0

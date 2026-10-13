@@ -3,7 +3,7 @@ Static analysis report — com_clue_android
 - Package: `com.clue.android`
 - APK: `/tmp/apk/com.clue.android.apk` (42021951 bytes, sha256 `3b3984a7562e19a1784c86e42e4bd470b4c472bbf1606fd23d9d4cd718e9b1c7`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T12:34:04Z | Runner: x86_64
+- Date: 2026-10-13T12:51:36Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -138,7 +138,7 @@ com.clue.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 
 ## Crypto/pinning posture
 - Bundled cert/keystore files: 0 → 
-- network_security_config present: /tmp/women-analysis-com_clue_android.nItTfN/dec/res/xml/network_security_config.xml 
+- network_security_config present: /tmp/women-analysis-com_clue_android.49pHax/dec/res/xml/network_security_config.xml 
 - certificatePinner usages: 0
 
 ## Manifest package/version

@@ -1,0 +1,7 @@
+tracker	match_files	code_signature
+Braze (formerly Appboy)	18	com.appboy
+Facebook Login	5	com.facebook.login
+Singular	2	com.singular.sdk
+Bolts	1	com.parse.bolts
+Facebook Places	1	com.facebook.places
+Facebook Share	1	com.facebook.share

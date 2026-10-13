@@ -1,1 +1,7 @@
 tracker	match_files	code_signature
+OneSignal	816	com.onesignal.
+Branch	20	io.branch.
+Facebook Login	3	com.facebook.login
+Bolts	2	com.parse.bolts
+Facebook Places	1	com.facebook.places
+Facebook Share	1	com.facebook.share

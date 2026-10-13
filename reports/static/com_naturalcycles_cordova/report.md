@@ -3,7 +3,7 @@ Static analysis report — com_naturalcycles_cordova
 - Package: `com.naturalcycles.cordova`
 - APK: `/tmp/apk/com.naturalcycles.cordova.apk` (82932818 bytes, sha256 `93bd7fde999865625142eb759357932687983fa86b47b29fe3cba8cc0eed0526`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:23:45Z | Runner: x86_64
+- Date: 2026-10-13T12:56:33Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -35,10 +35,12 @@ com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 ```
 
 ## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
+- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
 | Tracker | Matching files | Code signature |
 |---|---|---|
+| MoEngage | 77 | `com.moengage.` |
 
-**Tracker classes embedded in code: 0**
+**Tracker classes embedded in code: 1**
 
 ## Network hosts referenced in code/resources (top 100)
 ```
@@ -132,7 +134,7 @@ com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 - FirebaseRemoteConfig usages: 0 lines
 
 ## Crypto/pinning posture
-- Bundled cert/keystore files: 5 → reports/static/com_naturalcycles_cordova/dec/assets/ds-visa.crt reports/static/com_naturalcycles_cordova/dec/assets/ds-amex.pem reports/static/com_naturalcycles_cordova/dec/assets/ds-discover.cer reports/static/com_naturalcycles_cordova/dec/assets/ds-mastercard.crt reports/static/com_naturalcycles_cordova/dec/assets/ds-cartesbancaires.pem 
+- Bundled cert/keystore files: 5 → /tmp/women-analysis-com_naturalcycles_cordova.um7Y1g/dec/assets/ds-visa.crt /tmp/women-analysis-com_naturalcycles_cordova.um7Y1g/dec/assets/ds-amex.pem /tmp/women-analysis-com_naturalcycles_cordova.um7Y1g/dec/assets/ds-discover.cer /tmp/women-analysis-com_naturalcycles_cordova.um7Y1g/dec/assets/ds-mastercard.crt /tmp/women-analysis-com_naturalcycles_cordova.um7Y1g/dec/assets/ds-cartesbancaires.pem 
 - network_security_config present: 
 - certificatePinner usages: 50
 

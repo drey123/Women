@@ -1,1 +1,6 @@
 tracker	match_files	code_signature
+Facebook Ads	5	com.facebook.ads
+Facebook Login	2	com.facebook.login
+Bolts	1	com.parse.bolts
+Facebook Places	1	com.facebook.places
+Facebook Share	1	com.facebook.share

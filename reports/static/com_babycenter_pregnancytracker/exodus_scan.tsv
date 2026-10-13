@@ -1,1 +1,8 @@
 tracker	match_files	code_signature
+Snowplow	20	com.snowplowanalytics.
+AppsFlyer	11	com.appsflyer.
+Amazon Advertisement	6	com.amazon.device.ads
+ComScore	2	com.comscore.
+AppLovin (MAX and SparkLabs)	1	com.applovin
+JW Player	1	com.longtailvideo.jwplayer.
+mParticle	1	com.mparticle

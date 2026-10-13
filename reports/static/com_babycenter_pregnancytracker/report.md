@@ -3,7 +3,7 @@ Static analysis report — com_babycenter_pregnancytracker
 - Package: `com.babycenter.pregnancytracker`
 - APK: `/tmp/apk/com.babycenter.pregnancytracker.apk` (67082565 bytes, sha256 `3816927114ee91d9837dfc35535dd33c449ab1555b979ede30cd0e0b72aa3c5f`)
 - Tools: apktool 3.0.3, jadx 1.5.6, aapt2 (/usr/local/lib/android/sdk)
-- Date: 2026-10-13T09:23:52Z | Runner: x86_64
+- Date: 2026-10-13T13:01:09Z | Runner: x86_64
 
 ## Permissions (aapt2)
 ```
@@ -36,10 +36,18 @@ com.amazon.privacypass.ATTEST
 ```
 
 ## Tracker classes detected (Exodus-Privacy signatures over decompiled tree)
+- Signatures checked: 428 (source: reports.exodus-privacy.eu.org/api/trackers)
 | Tracker | Matching files | Code signature |
 |---|---|---|
+| Snowplow | 20 | `com.snowplowanalytics.` |
+| AppsFlyer | 11 | `com.appsflyer.` |
+| Amazon Advertisement | 6 | `com.amazon.device.ads` |
+| ComScore | 2 | `com.comscore.` |
+| AppLovin (MAX and SparkLabs) | 1 | `com.applovin` |
+| JW Player | 1 | `com.longtailvideo.jwplayer.` |
+| mParticle | 1 | `com.mparticle` |
 
-**Tracker classes embedded in code: 0**
+**Tracker classes embedded in code: 7**
 
 ## Network hosts referenced in code/resources (top 100)
 ```
@@ -154,7 +162,7 @@ com.amazon.privacypass.ATTEST
 
 ## Crypto/pinning posture
 - Bundled cert/keystore files: 0 → 
-- network_security_config present: reports/static/com_babycenter_pregnancytracker/dec/res/xml/network_security_config.xml 
+- network_security_config present: /tmp/women-analysis-com_babycenter_pregnancytracker.84dxi3/dec/res/xml/network_security_config.xml 
 - certificatePinner usages: 50
 
 ## Manifest package/version
