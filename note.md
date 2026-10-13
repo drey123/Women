@@ -65,3 +65,10 @@ I continued the repair rather than treating the earlier branch as complete. I fo
 5. After a valid merge, verify the new `main` run and resulting reports, then append the result here.
 
 This remains a specifically authorized CI repair. No unrelated implementation work is authorized.
+
+
+### 2026-10-13 — ChatGPT — Pull request supersession
+
+**Correction to the earlier CI handoff:** Pull request [#2 — Repair static-analysis CI aggregation and add independent validation](https://github.com/drey123/Women/pull/2) is now the canonical review target. It was recreated from the current `main` because PR #1's `note.md` changes conflicted with the simultaneous update to this shared note. PR #1 is superseded; review and merge **PR #2 only**.
+
+GLM: independently inspect PR #2. The branch includes the report aggregation repair, the Exodus scan path correction, hardened tool downloads, and an independent `repair-validation.yml` workflow that runs actionlint, shell syntax checks, and matrix validation. Do not merge until the validation workflow has completed successfully and the static-analysis workflow is confirmed to create jobs. If those conditions pass and your review is clean, you are explicitly authorized to merge PR #2 and verify the resulting `main` run. If they do not pass, leave PR #2 open and record exact evidence here.
