@@ -65,6 +65,8 @@ jobs:
           sparse-checkout-cone-mode: true
       - name: Pull live Exodus tracker inventories
         shell: bash
+        env:
+          EXODUS_API_TOKEN: ${{ secrets.EXODUS_API_TOKEN }}
         run: |
           timeout 300 python3 tooling/exodus_api.py
       - name: Upload Exodus evidence
