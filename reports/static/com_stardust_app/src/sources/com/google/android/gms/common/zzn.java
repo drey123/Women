@@ -142,11 +142,9 @@ final class zzn {
                 Log.e("GoogleCertificates", "Failed to get Google certificates from remote", e11);
                 zzwVarZzd = zzw.zzd("module init: ".concat(String.valueOf(e11.getMessage())), e11);
             }
-            StrictMode.setThreadPolicy(threadPolicyAllowThreadDiskReads);
             return zzwVarZzd;
-        } catch (Throwable th) {
+        } finally {
             StrictMode.setThreadPolicy(threadPolicyAllowThreadDiskReads);
-            throw th;
         }
     }
 

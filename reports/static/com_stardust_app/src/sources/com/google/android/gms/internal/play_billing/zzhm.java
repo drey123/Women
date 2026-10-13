@@ -19,12 +19,16 @@ final class zzhm extends zzhn {
         return Float.intBitsToFloat(this.zza.getInt(obj, j10));
     }
 
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.play_billing.zzho.zzi(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.play_billing.zzho.zzj(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 'z10' boolean)' in method call: com.google.android.gms.internal.play_billing.zzho.zzi(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Unknown register number '(r5v0 'z10' boolean)' in method call: com.google.android.gms.internal.play_billing.zzho.zzj(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.play_billing.zzhn
     public final void zzc(Object obj, long j10, boolean z10) {
         if (zzho.zzb) {
-            zzho.zzD(obj, j10, z10 ? (byte) 1 : (byte) 0);
+            zzho.zzi(obj, j10, z10);
         } else {
-            zzho.zzE(obj, j10, z10 ? (byte) 1 : (byte) 0);
+            zzho.zzj(obj, j10, z10);
         }
     }
 

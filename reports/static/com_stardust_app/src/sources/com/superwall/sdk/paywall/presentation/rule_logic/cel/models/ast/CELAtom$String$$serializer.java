@@ -6,6 +6,7 @@ import Jf.c;
 import Kf.J0;
 import Kf.L0;
 import Kf.O;
+import Kf.T0;
 import Kf.Y0;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
@@ -48,6 +49,7 @@ public /* synthetic */ class CELAtom$String$$serializer implements O<CELAtom.Str
         Intrinsics.checkNotNullParameter(decoder, "decoder");
         f fVar = descriptor;
         c cVarB = decoder.b(fVar);
+        T0 t10 = null;
         boolean z10 = true;
         int i10 = 0;
         String strZ = null;
@@ -64,7 +66,7 @@ public /* synthetic */ class CELAtom$String$$serializer implements O<CELAtom.Str
             }
         }
         cVarB.c(fVar);
-        return new CELAtom.String(i10, strZ, null);
+        return new CELAtom.String(i10, strZ, t10);
     }
 
     @Override // Gf.p, Gf.d

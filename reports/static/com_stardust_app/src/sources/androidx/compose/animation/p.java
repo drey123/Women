@@ -11,21 +11,11 @@ public abstract class p {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
     @NotNull
-    public static final q f7058a;
+    public static final q f7058a = new q(new G((r) null, (C) null, (k) null, (y) null, (LinkedHashMap) null, 63));
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
     @NotNull
-    public static final q f7059b;
-
-    static {
-        y yVar = null;
-        LinkedHashMap linkedHashMap = null;
-        r rVar = null;
-        C c10 = null;
-        k kVar = null;
-        f7058a = new q(new G(rVar, c10, kVar, yVar, linkedHashMap, 63));
-        f7059b = new q(new G(rVar, c10, kVar, yVar, linkedHashMap, 47));
-    }
+    public static final q f7059b = new q(new G((r) null, (C) null, (k) null, (y) null, (LinkedHashMap) null, 47));
 
     @NotNull
     public abstract G a();

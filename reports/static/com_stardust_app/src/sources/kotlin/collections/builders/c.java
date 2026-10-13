@@ -42,7 +42,7 @@ public final class c<V> extends AbstractC3033e<V> {
 
     @Override // kotlin.collections.AbstractC3033e
     public final int g() {
-        return this.f34052a.getSize();
+        return this.f34052a.size();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection

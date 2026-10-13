@@ -84,35 +84,31 @@ public final class LocalTransactionMetadataStore {
     }
 
     public final synchronized void cacheLocalTransactionMetadata(@NotNull String purchaseToken, @NotNull LocalTransactionMetadata data) {
+        Intrinsics.checkNotNullParameter(purchaseToken, "purchaseToken");
+        Intrinsics.checkNotNullParameter(data, "data");
+        String tokenHash = getTokenHash(purchaseToken);
+        if (hasCachedData(tokenHash)) {
+            LogLevel logLevel = LogLevel.DEBUG;
+            LogHandler currentLogHandler = LogWrapperKt.getCurrentLogHandler();
+            if (Config.INSTANCE.getLogLevel().compareTo(logLevel) <= 0) {
+                currentLogHandler.d("[Purchases] - " + logLevel.name(), "Purchase data already cached for token: " + purchaseToken + ". Skipping cache.");
+            }
+            return;
+        }
         try {
-            Intrinsics.checkNotNullParameter(purchaseToken, "purchaseToken");
-            Intrinsics.checkNotNullParameter(data, "data");
-            String tokenHash = getTokenHash(purchaseToken);
-            if (hasCachedData(tokenHash)) {
-                LogLevel logLevel = LogLevel.DEBUG;
-                LogHandler currentLogHandler = LogWrapperKt.getCurrentLogHandler();
-                if (Config.INSTANCE.getLogLevel().compareTo(logLevel) <= 0) {
-                    currentLogHandler.d("[Purchases] - " + logLevel.name(), "Purchase data already cached for token: " + purchaseToken + ". Skipping cache.");
-                }
-                return;
+            String str = KEY_PREFIX + tokenHash;
+            String strA = this.json.a(LocalTransactionMetadata.INSTANCE.serializer(), data);
+            SharedPreferences.Editor editor = this.sharedPreferences.edit();
+            Intrinsics.checkNotNullExpressionValue(editor, "editor");
+            editor.putString(str, strA);
+            editor.apply();
+            LogLevel logLevel2 = LogLevel.DEBUG;
+            LogHandler currentLogHandler2 = LogWrapperKt.getCurrentLogHandler();
+            if (Config.INSTANCE.getLogLevel().compareTo(logLevel2) <= 0) {
+                currentLogHandler2.d("[Purchases] - " + logLevel2.name(), "Local transaction metadata cache updated");
             }
-            try {
-                String str = KEY_PREFIX + tokenHash;
-                String strA = this.json.a(LocalTransactionMetadata.INSTANCE.serializer(), data);
-                SharedPreferences.Editor editor = this.sharedPreferences.edit();
-                Intrinsics.checkNotNullExpressionValue(editor, "editor");
-                editor.putString(str, strA);
-                editor.apply();
-                LogLevel logLevel2 = LogLevel.DEBUG;
-                LogHandler currentLogHandler2 = LogWrapperKt.getCurrentLogHandler();
-                if (Config.INSTANCE.getLogLevel().compareTo(logLevel2) <= 0) {
-                    currentLogHandler2.d("[Purchases] - " + logLevel2.name(), "Local transaction metadata cache updated");
-                }
-            } catch (SerializationException e10) {
-                LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", "Failed to serialize local transaction metadata", e10);
-            }
-        } catch (Throwable th) {
-            throw th;
+        } catch (SerializationException e10) {
+            LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", "Failed to serialize local transaction metadata", e10);
         }
     }
 

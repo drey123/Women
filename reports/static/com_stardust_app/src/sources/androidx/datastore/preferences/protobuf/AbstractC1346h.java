@@ -282,7 +282,7 @@ public abstract class AbstractC1346h {
         }
 
         @Override // androidx.datastore.preferences.protobuf.AbstractC1346h
-        public final int e(int i10) {
+        public final int e(int i10) throws InvalidProtocolBufferException {
             if (i10 < 0) {
                 throw InvalidProtocolBufferException.e();
             }

@@ -421,7 +421,7 @@ public final class e {
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public final Serializable h(@NotNull ContinuationImpl continuationImpl) {
+    public final Serializable h(@NotNull ContinuationImpl continuationImpl) throws Throwable {
         PeriodCalculator$getLatestPeriodList$1 periodCalculator$getLatestPeriodList$1;
         if (continuationImpl instanceof PeriodCalculator$getLatestPeriodList$1) {
             periodCalculator$getLatestPeriodList$1 = (PeriodCalculator$getLatestPeriodList$1) continuationImpl;
@@ -460,7 +460,7 @@ public final class e {
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public final Serializable k(ContinuationImpl continuationImpl) {
+    public final Serializable k(ContinuationImpl continuationImpl) throws Throwable {
         PeriodCalculator$getPeriodDayUIModelList$1 periodCalculator$getPeriodDayUIModelList$1;
         p390wf.a aVar;
         if (continuationImpl instanceof PeriodCalculator$getPeriodDayUIModelList$1) {
@@ -551,7 +551,7 @@ public final class e {
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0013  */
-    public final Object m(int i10, int i11, int i12, @NotNull ContinuationImpl continuationImpl) {
+    public final Object m(int i10, int i11, int i12, @NotNull ContinuationImpl continuationImpl) throws Throwable {
         PeriodCalculator$shouldRecalculate$1 periodCalculator$shouldRecalculate$1;
         if (continuationImpl instanceof PeriodCalculator$shouldRecalculate$1) {
             periodCalculator$shouldRecalculate$1 = (PeriodCalculator$shouldRecalculate$1) continuationImpl;

@@ -271,30 +271,34 @@ public final class a implements Application.ActivityLifecycleCallbacks {
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final synchronized void onActivityResumed(Activity activity) {
-        if (this.f31537a.isEmpty()) {
-            this.f31547o.getClass();
-            this.f31549q = new Timer();
-            this.f31537a.put(activity, Boolean.TRUE);
-            if (this.f31553u) {
-                f(ApplicationProcessState.FOREGROUND);
-                synchronized (this.f31543k) {
-                    try {
-                        for (InterfaceC0416a interfaceC0416a : this.f31543k) {
-                            if (interfaceC0416a != null) {
-                                interfaceC0416a.a();
+        try {
+            if (this.f31537a.isEmpty()) {
+                this.f31547o.getClass();
+                this.f31549q = new Timer();
+                this.f31537a.put(activity, Boolean.TRUE);
+                if (this.f31553u) {
+                    f(ApplicationProcessState.FOREGROUND);
+                    synchronized (this.f31543k) {
+                        try {
+                            for (InterfaceC0416a interfaceC0416a : this.f31543k) {
+                                if (interfaceC0416a != null) {
+                                    interfaceC0416a.a();
+                                }
                             }
+                        } catch (Throwable th) {
+                            throw th;
                         }
-                    } catch (Throwable th) {
-                        throw th;
                     }
+                    this.f31553u = false;
+                } else {
+                    d(Constants$TraceNames.BACKGROUND_TRACE_NAME.toString(), this.f31550r, this.f31549q);
+                    f(ApplicationProcessState.FOREGROUND);
                 }
-                this.f31553u = false;
             } else {
-                d(Constants$TraceNames.BACKGROUND_TRACE_NAME.toString(), this.f31550r, this.f31549q);
-                f(ApplicationProcessState.FOREGROUND);
+                this.f31537a.put(activity, Boolean.TRUE);
             }
-        } else {
-            this.f31537a.put(activity, Boolean.TRUE);
+        } catch (Throwable th2) {
+            throw th2;
         }
     }
 
