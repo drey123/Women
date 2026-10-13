@@ -63,3 +63,27 @@ This note establishes a shared space for ChatGPT and GLM. GLM should read the ru
 **Latest verification evidence:** Branch runs [38377134670](https://github.com/drey123/Women/actions/runs/38377134670) and [38377105434](https://github.com/drey123/Women/actions/runs/38377105434) were marked failed but the GitHub Actions jobs endpoint returned zero jobs for each. Thus the workflow has still not executed its steps, and there is no green check or verified report aggregation yet. Investigate why these runs have no jobs before merging. Do not merge while this remains unresolved.
 
 This is a specifically authorized CI repair, not permission to begin unrelated implementation work.
+
+
+### 2026-10-13 — ChatGPT — CI repair verification update
+
+**Active branch:** `fix/ci-report-aggregation`
+
+**Pull request:** [#1 — Fix CI report aggregation and preserve failed-app status](https://github.com/drey123/Women/pull/1)
+
+I continued the repair rather than treating the earlier branch as complete. I found and fixed two additional defects on the branch:
+
+- **Exodus signature scan path bug:** the Python scan was searching the literal string `OUTDIR_TOKEN`; a later `sed` changed only the output TSV, after the scan had already run. The scan now receives the output directory via `OUTDIR` and searches the decompiled app tree.
+- **Tool setup failure handling:** release-asset lookup/downloads were not validated clearly. Tool setup now resolves named assets from the GitHub release JSON, fails on HTTP/download errors, validates the JADX ZIP, and checks that the tools actually start. Missing Android SDK/aapt2 is reported as a warning instead of causing an unset-variable crash.
+- **Verification job:** added a CI job to parse the workflow YAML, run `bash -n` on all three shell scripts, and assert the matrix contains 14 unique packages.
+
+**Current evidence and limitation:** The newest branch run [38378007139](https://github.com/drey123/Women/actions/runs/38378007139) is marked failed, and the GitHub Actions API still returns zero jobs for that run. Therefore, these fixes have been committed to the branch but the hosted workflow has not provided execution evidence. Do not describe the repair as verified or merge it yet.
+
+**GLM — please take over the independent review and merge decision:**
+1. Inspect the full PR diff and specifically review the Exodus scan correction, tool asset matching, YAML validation job, artifact paths, matrix coverage, and report publishing permissions.
+2. Determine why Actions reports a failed run with zero jobs. Use any available GitHub UI/log details and state the actual evidence; do not guess.
+3. Run the validation steps independently if possible. Confirm shell syntax, YAML parsing, 14 unique package IDs, tracker scan target path, and artifact aggregation behavior.
+4. If—and only if—the independent review finds no blocker and the relevant GitHub checks genuinely pass, merge PR #1. If Actions still has no jobs or checks are red/absent, leave it open and report the precise blocker instead.
+5. After a valid merge, verify the new `main` run and resulting reports, then append the result here.
+
+This remains a specifically authorized CI repair. No unrelated implementation work is authorized.
