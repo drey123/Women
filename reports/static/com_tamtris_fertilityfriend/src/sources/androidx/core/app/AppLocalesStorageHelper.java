@@ -30,49 +30,53 @@ public class AppLocalesStorageHelper {
         synchronized (sAppLocaleStorageSync) {
             attributeValue = "";
             try {
-                FileInputStream fileInputStreamOpenFileInput = context.openFileInput(APPLICATION_LOCALES_RECORD_FILE);
                 try {
+                    FileInputStream fileInputStreamOpenFileInput = context.openFileInput(APPLICATION_LOCALES_RECORD_FILE);
                     try {
-                        XmlPullParser xmlPullParserNewPullParser = Xml.newPullParser();
-                        xmlPullParserNewPullParser.setInput(fileInputStreamOpenFileInput, "UTF-8");
-                        int depth = xmlPullParserNewPullParser.getDepth();
-                        while (true) {
-                            int next = xmlPullParserNewPullParser.next();
-                            if (next != 1 && (next != 3 || xmlPullParserNewPullParser.getDepth() > depth)) {
-                                if (next != 3 && next != 4 && xmlPullParserNewPullParser.getName().equals(LOCALE_RECORD_FILE_TAG)) {
-                                    attributeValue = xmlPullParserNewPullParser.getAttributeValue(null, LOCALE_RECORD_ATTRIBUTE_TAG);
+                        try {
+                            XmlPullParser xmlPullParserNewPullParser = Xml.newPullParser();
+                            xmlPullParserNewPullParser.setInput(fileInputStreamOpenFileInput, "UTF-8");
+                            int depth = xmlPullParserNewPullParser.getDepth();
+                            while (true) {
+                                int next = xmlPullParserNewPullParser.next();
+                                if (next != 1 && (next != 3 || xmlPullParserNewPullParser.getDepth() > depth)) {
+                                    if (next != 3 && next != 4 && xmlPullParserNewPullParser.getName().equals(LOCALE_RECORD_FILE_TAG)) {
+                                        attributeValue = xmlPullParserNewPullParser.getAttributeValue(null, LOCALE_RECORD_ATTRIBUTE_TAG);
+                                        break;
+                                    }
+                                } else {
                                     break;
                                 }
-                            } else {
-                                break;
+                            }
+                            if (fileInputStreamOpenFileInput != null) {
+                                try {
+                                    fileInputStreamOpenFileInput.close();
+                                } catch (IOException unused) {
+                                }
+                            }
+                        } catch (IOException | XmlPullParserException unused2) {
+                            Log.w(TAG, "Reading app Locales : Unable to parse through file :androidx.appcompat.app.AppCompatDelegate.application_locales_record_file");
+                            if (fileInputStreamOpenFileInput != null) {
+                                fileInputStreamOpenFileInput.close();
                             }
                         }
+                        if (attributeValue.isEmpty()) {
+                            context.deleteFile(APPLICATION_LOCALES_RECORD_FILE);
+                        }
+                    } catch (Throwable th) {
                         if (fileInputStreamOpenFileInput != null) {
                             try {
                                 fileInputStreamOpenFileInput.close();
-                            } catch (IOException unused) {
+                            } catch (IOException unused3) {
                             }
                         }
-                    } catch (IOException | XmlPullParserException unused2) {
-                        Log.w(TAG, "Reading app Locales : Unable to parse through file :androidx.appcompat.app.AppCompatDelegate.application_locales_record_file");
-                        if (fileInputStreamOpenFileInput != null) {
-                            fileInputStreamOpenFileInput.close();
-                        }
+                        throw th;
                     }
-                    if (attributeValue.isEmpty()) {
-                        context.deleteFile(APPLICATION_LOCALES_RECORD_FILE);
-                    }
-                } catch (Throwable th) {
-                    if (fileInputStreamOpenFileInput != null) {
-                        try {
-                            fileInputStreamOpenFileInput.close();
-                        } catch (IOException unused3) {
-                        }
-                    }
-                    throw th;
+                } catch (FileNotFoundException unused4) {
+                    return "";
                 }
-            } catch (FileNotFoundException unused4) {
-                return "";
+            } catch (Throwable th2) {
+                throw th2;
             }
         }
         return attributeValue;

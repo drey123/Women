@@ -22,9 +22,9 @@ final class zzig extends zzih {
     @Override // com.google.android.gms.internal.play_billing.zzih
     public final void zzc(Object obj, long j, boolean z) {
         if (zzii.zzb) {
-            zzii.zzD(obj, j, r5 ? (byte) 1 : (byte) 0);
+            zzii.zzD(obj, j, z ? (byte) 1 : (byte) 0);
         } else {
-            zzii.zzE(obj, j, r5 ? (byte) 1 : (byte) 0);
+            zzii.zzE(obj, j, z ? (byte) 1 : (byte) 0);
         }
     }
 

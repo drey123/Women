@@ -176,7 +176,8 @@ public abstract class AbstractMap<K, V> implements Map<K, V>, KMappedMarker {
                 }
 
                 @Override // kotlin.collections.AbstractCollection
-                public int getSize() {
+                /* JADX INFO: renamed from: getSize */
+                public int get_size() {
                     return this.this$0.size();
                 }
             };
@@ -230,7 +231,8 @@ public abstract class AbstractMap<K, V> implements Map<K, V>, KMappedMarker {
                 }
 
                 @Override // kotlin.collections.AbstractCollection
-                public int getSize() {
+                /* JADX INFO: renamed from: getSize */
+                public int get_size() {
                     return this.this$0.size();
                 }
             };

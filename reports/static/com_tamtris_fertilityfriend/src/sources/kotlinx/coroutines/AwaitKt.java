@@ -77,12 +77,13 @@ public final class AwaitKt {
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:17:0x0053 -> B:19:0x0056). Please report as a decompilation issue!!! */
     /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
         java.lang.StackOverflowError
-        	at jadx.core.dex.attributes.AttributeStorage.add(AttributeStorage.java:53)
-        	at jadx.core.dex.attributes.AttrNode.add(AttrNode.java:21)
-        	at jadx.core.dex.regions.conditions.Compare.<init>(Compare.java:12)
-        	at jadx.core.dex.regions.conditions.IfCondition.fromIfNode(IfCondition.java:73)
-        	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.makeIfInfo(IfRegionMaker.java:161)
-        	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:64)
+        	at java.base/java.util.Collections.eq(Collections.java:5475)
+        	at java.base/java.util.Collections$SingletonList.contains(Collections.java:4956)
+        	at jadx.core.utils.BlockUtils.isPathExists(BlockUtils.java:842)
+        	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.isCandidateForOutBlock(IfRegionMaker.java:303)
+        	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.findOutBlock(IfRegionMaker.java:267)
+        	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.restructureIf(IfRegionMaker.java:191)
+        	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:82)
         	at jadx.core.dex.visitors.regions.maker.RegionMaker.traverse(RegionMaker.java:109)
         	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeRegion(RegionMaker.java:69)
         	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:111)
@@ -1099,7 +1100,6 @@ public final class AwaitKt {
         	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:111)
         	at jadx.core.dex.visitors.regions.maker.RegionMaker.traverse(RegionMaker.java:109)
         	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeRegion(RegionMaker.java:69)
-        	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:111)
         */
     public static final java.lang.Object joinAll(kotlinx.coroutines.Job[] r6, kotlin.coroutines.Continuation<? super kotlin.Unit> r7) {
         /*

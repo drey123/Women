@@ -192,12 +192,10 @@ final /* synthetic */ class FlowKt__DelayKt {
         /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:19:0x0063 -> B:15:0x0042). Please report as a decompilation issue!!! */
         /*  JADX ERROR: StackOverflowError in pass: RegionMakerVisitor
             java.lang.StackOverflowError
-            	at jadx.core.dex.attributes.AttributeStorage.add(AttributeStorage.java:53)
-            	at jadx.core.dex.attributes.AttrNode.add(AttrNode.java:21)
-            	at jadx.core.dex.regions.conditions.Compare.<init>(Compare.java:12)
-            	at jadx.core.dex.regions.conditions.IfCondition.fromIfNode(IfCondition.java:73)
-            	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.makeIfInfo(IfRegionMaker.java:161)
-            	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:64)
+            	at jadx.core.dex.attributes.AttrNode.contains(AttrNode.java:98)
+            	at jadx.core.dex.visitors.regions.maker.RegionMaker.traverse(RegionMaker.java:82)
+            	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeRegion(RegionMaker.java:69)
+            	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:111)
             	at jadx.core.dex.visitors.regions.maker.RegionMaker.traverse(RegionMaker.java:109)
             	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeRegion(RegionMaker.java:69)
             	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:111)
@@ -1215,6 +1213,8 @@ final /* synthetic */ class FlowKt__DelayKt {
             	at jadx.core.dex.visitors.regions.maker.RegionMaker.traverse(RegionMaker.java:109)
             	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeRegion(RegionMaker.java:69)
             	at jadx.core.dex.visitors.regions.maker.IfRegionMaker.process(IfRegionMaker.java:111)
+            	at jadx.core.dex.visitors.regions.maker.RegionMaker.traverse(RegionMaker.java:109)
+            	at jadx.core.dex.visitors.regions.maker.RegionMaker.makeRegion(RegionMaker.java:69)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r8) {
