@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#0d0f12" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="20.0dp" android:paddingBottom="32.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24.0dp" android:paddingEnd="24.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#0d0f12" android:background="@drawable/test_mode_badge_bg" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TEST MODE" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+            <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffffff" android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✕" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/test_mode_card_bg" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@id/product_id_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/sw_cyan" android:id="@id/trial_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="#b3ffffff" android:id="@id/price_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+            <TextView android:textSize="12.0sp" android:textColor="#99ffffff" android:id="@id/entitlements_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/sw_cyan" android:gravity="center" android:id="@id/confirm_button" android:background="@drawable/test_mode_button_bg" android:paddingTop="14.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="#f44336" android:gravity="center" android:id="@id/fail_button" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="Simulate Failure" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" />
+        <TextView android:textSize="11.0sp" android:textColor="#66ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="This is a simulated purchase. No real transaction will occur." />
+    </LinearLayout>
+</ScrollView>

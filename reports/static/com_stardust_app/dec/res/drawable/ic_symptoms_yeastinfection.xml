@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M30,35h68v58.53h-68z" />
+        <path android:fillColor="@drawable/$ic_symptoms_yeastinfection__0" android:pathData="M76.77,35C72.37,35 68.3,35.64 64.91,37.01L43.5,45.89C43.3,45.97 43.09,46.02 42.89,46.08C35.32,47.88 30.02,52.41 30.02,60.26C30.02,63.48 30.92,65.39 32.49,66.5C33.72,67.35 34.5,68.72 34.5,70.2V89.05C34.5,91.53 36.51,93.51 38.96,93.51H65.26C65.57,93.51 65.86,93.44 66.13,93.34L66.29,93.3C66.29,93.3 66.29,93.3 66.31,93.3L91.83,83.13C91.83,83.13 91.84,83.13 91.86,83.13H91.88C92.84,82.7 93.52,81.75 93.52,80.64V60.05C93.52,58.55 94.3,57.21 95.53,56.35C97.1,55.24 98,53.33 98,50.12C98,39.6 88.49,35.02 76.79,35.02L76.77,35Z" />
+        <path android:fillColor="@drawable/$ic_symptoms_yeastinfection__1" android:pathData="M76.77,35C72.37,35 68.3,35.64 64.91,37.01L43.5,45.89C43.3,45.97 43.09,46.02 42.89,46.08C35.32,47.88 30.02,52.41 30.02,60.26C30.02,63.48 30.92,65.39 32.49,66.5C33.72,67.35 34.5,68.72 34.5,70.2V89.05C34.5,91.53 36.51,93.51 38.96,93.51H65.26C65.57,93.51 65.86,93.44 66.13,93.34L66.29,93.3C66.29,93.3 66.29,93.3 66.31,93.3L91.83,83.13C91.83,83.13 91.84,83.13 91.86,83.13H91.88C92.84,82.7 93.52,81.75 93.52,80.64V60.05C93.52,58.55 94.3,57.21 95.53,56.35C97.1,55.24 98,53.33 98,50.12C98,39.6 88.49,35.02 76.79,35.02L76.77,35Z" />
+        <path android:fillColor="@drawable/$ic_symptoms_yeastinfection__2" android:pathData="M41.39,91.31C39,91.31 37.03,89.35 37.03,86.95V66.34L35.45,65.89C34.03,65.48 32.67,64.76 32.67,60.98C32.67,49.63 45.64,48.4 51.23,48.4C56.82,48.4 69.79,49.63 69.79,60.98C69.79,64.76 68.41,65.48 66.99,65.89L65.41,66.34V86.95C65.41,89.36 63.46,91.31 61.05,91.31H41.39Z" />
+        <path android:fillColor="@drawable/$ic_symptoms_yeastinfection__3" android:pathData="M58.48,59.23m-2.13,0a2.13,2.13 0,1 1,4.25 0a2.13,2.13 0,1 1,-4.25 0" />
+        <path android:fillColor="@drawable/$ic_symptoms_yeastinfection__4" android:pathData="M45.73,54.98m-2.13,0a2.13,2.13 0,1 1,4.25 0a2.13,2.13 0,1 1,-4.25 0" />
+        <path android:fillColor="@drawable/$ic_symptoms_yeastinfection__5" android:pathData="M53.38,67.73m-2.13,0a2.13,2.13 0,1 1,4.25 0a2.13,2.13 0,1 1,-4.25 0" />
+        <path android:fillColor="@drawable/$ic_symptoms_yeastinfection__6" android:pathData="M45.73,75.38m-2.13,0a2.13,2.13 0,1 1,4.25 0a2.13,2.13 0,1 1,-4.25 0" />
+        <path android:fillColor="@drawable/$ic_symptoms_yeastinfection__7" android:pathData="M56.77,82.17m-2.13,0a2.13,2.13 0,1 1,4.25 0a2.13,2.13 0,1 1,-4.25 0" />
+        <path android:fillColor="@drawable/$ic_symptoms_yeastinfection__8" android:pathData="M44.02,84.73m-2.13,0a2.13,2.13 0,1 1,4.25 0a2.13,2.13 0,1 1,-4.25 0" />
+        <path android:fillColor="@drawable/$ic_symptoms_yeastinfection__9" android:pathData="M41.48,66.02m-2.13,0a2.13,2.13 0,1 1,4.25 0a2.13,2.13 0,1 1,-4.25 0" />
+    </group>
+</vector>

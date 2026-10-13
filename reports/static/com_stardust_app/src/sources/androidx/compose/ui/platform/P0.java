@@ -1,0 +1,6 @@
+package androidx.compose.ui.platform;
+
+/* JADX INFO: compiled from: PlatformTextInputModifierNode.kt */
+/* JADX INFO: loaded from: classes.dex */
+public interface P0 extends O0, kotlinx.coroutines.I {
+}

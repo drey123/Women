@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M35,30h58.29v68h-58.29z" />
+        <path android:fillColor="@drawable/$ic_birthcontrol_iudinserted__0" android:pathData="M64.14,44.57H60.76C60.76,38.39 55.75,33.38 49.57,33.38C43.39,33.38 38.38,38.39 38.38,44.57H35C35,36.53 41.53,30 49.57,30C57.61,30 64.14,36.53 64.14,44.57Z" />
+        <path android:fillColor="@drawable/$ic_birthcontrol_iudinserted__1" android:pathData="M93.29,44.57H89.91C89.91,38.39 84.89,33.38 78.71,33.38C72.54,33.38 67.52,38.39 67.52,44.57H64.14C64.14,36.53 70.67,30 78.71,30C86.76,30 93.29,36.53 93.29,44.57Z" />
+        <path android:fillColor="@drawable/$ic_birthcontrol_iudinserted__2" android:pathData="M60.7,73.71V94.56C60.7,96.47 62.24,98 64.14,98C66.05,98 67.58,96.47 67.58,94.56V73.71H60.7ZM64.14,95.18C63.02,95.18 62.1,94.27 62.1,93.14C62.1,92.02 63.02,91.1 64.14,91.1C65.27,91.1 66.18,92.02 66.18,93.14C66.18,94.27 65.27,95.18 64.14,95.18Z" />
+        <path android:fillColor="@drawable/$ic_birthcontrol_iudinserted__3" android:pathData="M60.7,73.71V94.56C60.7,96.46 62.24,98 64.14,98C66.05,98 67.58,96.46 67.58,94.56V73.71H60.7ZM64.14,95.18C63.02,95.18 62.1,94.27 62.1,93.14C62.1,92.02 63.02,91.1 64.14,91.1C65.27,91.1 66.18,92.02 66.18,93.14C66.18,94.27 65.27,95.18 64.14,95.18Z" />
+        <path android:fillColor="@drawable/$ic_birthcontrol_iudinserted__4" android:pathData="M67.97,42.59H60.31C59.21,42.59 58.31,43.49 58.31,44.59V81.43C58.31,82.53 59.21,83.43 60.31,83.43H67.97C69.08,83.43 69.97,82.53 69.97,81.43V44.59C69.97,43.49 69.08,42.59 67.97,42.59Z" />
+    </group>
+</vector>

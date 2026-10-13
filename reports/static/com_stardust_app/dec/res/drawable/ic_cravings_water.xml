@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_cravings_water__0" android:pathData="M63.8,36.78C73.08,36.78 80.6,35.26 80.6,33.39C80.6,31.52 73.08,30 63.8,30C54.52,30 47,31.52 47,33.39C47,35.26 54.52,36.78 63.8,36.78Z" />
+    <path android:fillColor="@drawable/$ic_cravings_water__1" android:pathData="M63.8,36.65C54.53,36.65 47,35.13 47,33.26V94.59C47,96.48 54.53,98 63.8,98C73.07,98 80.6,96.48 80.6,94.61V33.26C80.6,35.13 73.07,36.65 63.8,36.65Z" />
+    <path android:fillColor="@drawable/$ic_cravings_water__2" android:pathData="M48.15,34.6C50.57,33.33 56.67,32.42 63.8,32.42C70.94,32.42 77.04,33.33 79.46,34.6C80.19,34.23 80.6,33.81 80.6,33.39C80.6,31.52 73.07,30 63.8,30C54.53,30 47,31.52 47,33.39C47,33.81 47.42,34.23 48.15,34.6Z" />
+    <path android:fillColor="@drawable/$ic_cravings_water__3" android:pathData="M63.8,95.43C73.08,95.43 80.6,93.91 80.6,92.04C80.6,90.17 73.08,88.65 63.8,88.65C54.52,88.65 47,90.17 47,92.04C47,93.91 54.52,95.43 63.8,95.43Z" android:strokeAlpha="0.3" android:fillAlpha="0.3" />
+    <path android:fillColor="@drawable/$ic_cravings_water__4" android:pathData="M63.44,43.6C55.76,43.6 49.55,44.86 49.55,46.4V89.29C49.55,90.83 55.78,92.09 63.44,92.09C71.11,92.09 77.34,90.83 77.34,89.29V46.42C77.34,44.88 71.11,43.62 63.44,43.62V43.6Z" />
+    <path android:fillColor="@drawable/$ic_cravings_water__5" android:pathData="M63.44,49.19C71.12,49.19 77.34,47.94 77.34,46.4C77.34,44.85 71.12,43.6 63.44,43.6C55.77,43.6 49.55,44.85 49.55,46.4C49.55,47.94 55.77,49.19 63.44,49.19Z" android:strokeAlpha="0.9" android:fillAlpha="0.9" />
+</vector>

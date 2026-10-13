@@ -1,0 +1,6 @@
+package androidx.glance.appwidget.action;
+
+/* JADX INFO: compiled from: StartServiceAction.kt */
+/* JADX INFO: loaded from: classes.dex */
+public final class n implements m {
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="moon_phase_in_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="ordinal">
+        <item quantity="one">%dst</item>
+        <item quantity="two">%dnd</item>
+        <item quantity="other">%dth</item>
+    </plurals>
+    <plurals name="period_in_n_days">
+        <item quantity="one">Period in %d day</item>
+        <item quantity="other">Period in %d days</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+    <plurals name="wheel_late_period_subtitle">
+        <item quantity="one">%d day late</item>
+        <item quantity="other">%d days late</item>
+    </plurals>
+    <plurals name="wheel_period_in_subtitle">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,0h128v128h-128z" />
+        <path android:fillColor="@drawable/$ic_activities_shopping__0" android:pathData="M30,89.87L38.5,87.86V45.36L30,47.37V89.87Z" />
+        <path android:fillColor="@drawable/$ic_activities_shopping__1" android:pathData="M65.7,45.36V37.2C65.7,31.57 61.13,27 55.5,27C49.87,27 45.3,31.57 45.3,37.2V45.36H38.5V87.86H72.5V45.36H65.7ZM48.7,37.2C48.7,33.44 51.74,30.4 55.5,30.4C59.26,30.4 62.3,33.44 62.3,37.2V45.36H48.7V37.2Z" />
+        <path android:fillColor="@drawable/$ic_activities_shopping__2" android:pathData="M57.2,47.37V38.87C57.2,33.24 52.63,28.67 47,28.67C41.37,28.67 36.8,33.24 36.8,38.87V47.37H30V89.87H64V47.37H57.2ZM40.2,38.87C40.2,35.11 43.24,32.07 47,32.07C50.76,32.07 53.8,35.11 53.8,38.87V47.37H40.2V38.87Z" />
+        <path android:fillColor="@drawable/$ic_activities_shopping__3" android:pathData="M94.23,55.46V48.99C94.23,43.63 89.87,39.28 84.52,39.28C79.16,39.28 74.81,43.63 74.81,48.99V55.46H68.33V86.93H98V55.46H94.23ZM78.04,48.99C78.04,45.41 80.94,42.51 84.52,42.51C88.09,42.51 90.99,45.41 90.99,48.99V55.46H78.04V48.99Z" android:strokeAlpha="0.6" android:fillAlpha="0.6" />
+        <path android:fillColor="@drawable/$ic_activities_shopping__4" android:pathData="M94.23,55.46V48.99C94.23,43.63 89.87,39.28 84.52,39.28C79.16,39.28 74.81,43.63 74.81,48.99V55.46H68.33V86.93H98V55.46H94.23ZM78.04,48.99C78.04,45.41 80.94,42.51 84.52,42.51C88.09,42.51 90.99,45.41 90.99,48.99V55.46H78.04V48.99Z" android:strokeAlpha="0.6" android:fillAlpha="0.6" />
+        <path android:fillColor="@drawable/$ic_activities_shopping__5" android:pathData="M89.91,60.29L98,55.46V86.98L89.91,92.66V60.29Z" android:strokeAlpha="0.6" android:fillAlpha="0.6" />
+        <path android:fillColor="@drawable/$ic_activities_shopping__6" android:pathData="M60.24,60.29L68.33,55.46V86.98L60.24,92.66V60.29Z" android:strokeAlpha="0.6" android:fillAlpha="0.6" />
+        <path android:fillColor="@drawable/$ic_activities_shopping__7" android:pathData="M84.78,60.29V53.81C84.78,48.46 80.42,44.1 75.06,44.1C69.71,44.1 65.35,48.46 65.35,53.81V60.29H60.22V92.66H89.89V60.29H84.76H84.78ZM68.59,53.81C68.59,50.24 71.49,47.34 75.06,47.34C78.64,47.34 81.54,50.24 81.54,53.81V60.29H68.59V53.81Z" android:strokeAlpha="0.6" android:fillAlpha="0.6" />
+    </group>
+</vector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M28,28h72v72h-72z" />
+        <group>
+            <clip-path android:pathData="M36,28L92,28A8,8 0,0 1,100 36L100,92A8,8 0,0 1,92 100L36,100A8,8 0,0 1,28 92L28,36A8,8 0,0 1,36 28z" />
+            <path android:fillColor="@drawable/$ic_birthcontrol_replacedpatch__0" android:pathData="M98,28H30C28.9,28 28,28.9 28,30V98C28,99.1 28.9,100 30,100H98C99.1,100 100,99.1 100,98V30C100,28.9 99.1,28 98,28Z" />
+            <path android:fillColor="@drawable/$ic_birthcontrol_replacedpatch__1" android:pathData="M85.07,35.2H42.93C38.66,35.2 35.2,38.66 35.2,42.93V85.07C35.2,89.34 38.66,92.8 42.93,92.8H85.07C89.34,92.8 92.8,89.34 92.8,85.07V42.93C92.8,38.66 89.34,35.2 85.07,35.2Z" />
+            <path android:fillColor="@drawable/$ic_birthcontrol_replacedpatch__2" android:pathData="M88,80.27L88,47.73C88,43.46 84.54,40 80.27,40L47.73,40C43.46,40 40,43.46 40,47.73L40,80.27C40,84.54 43.46,88 47.73,88L80.27,88C84.54,88 88,84.54 88,80.27Z" android:strokeAlpha="0.5" android:fillAlpha="0.5" />
+        </group>
+    </group>
+</vector>

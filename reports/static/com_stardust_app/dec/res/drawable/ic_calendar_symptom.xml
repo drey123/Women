@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="7.0dp" android:width="10.0dp" android:viewportWidth="10.0" android:viewportHeight="7.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0.646,0.034h9.265v6.819h-9.265z" />
+        <path android:fillColor="@drawable/$ic_calendar_symptom__0" android:pathData="M4.641,0.034C6.846,0.034 8.636,1.824 8.636,4.029V5.361H0.646L0.646,4.029C0.646,1.824 2.435,0.034 4.641,0.034Z" />
+        <path android:fillColor="@drawable/$ic_calendar_symptom__1" android:pathData="M4.641,0.034C6.846,0.034 8.636,1.824 8.636,4.029V5.361H0.646L0.646,4.029C0.646,1.824 2.435,0.034 4.641,0.034Z" />
+        <path android:fillColor="@drawable/$ic_calendar_symptom__2" android:pathData="M4.641,1.424C6.08,1.424 7.247,2.599 7.247,4.048V5.361H2.035L2.035,4.048C2.035,2.599 3.202,1.424 4.641,1.424Z" />
+        <path android:fillColor="@drawable/$ic_calendar_symptom__3" android:pathData="M4.641,1.424C6.08,1.424 7.247,2.599 7.247,4.048V5.361H2.035L2.035,4.048C2.035,2.599 3.202,1.424 4.641,1.424Z" />
+        <path android:fillColor="@drawable/$ic_calendar_symptom__4" android:pathData="M4.64,2.698C5.375,2.698 5.973,3.295 5.973,4.03V5.362H3.309V4.03C3.309,3.295 3.907,2.698 4.642,2.698H4.64Z" android:fillAlpha="0.3" />
+        <path android:fillColor="@drawable/$ic_calendar_symptom__5" android:pathData="M4.64,2.698C5.375,2.698 5.973,3.295 5.973,4.03V5.362H3.309V4.03C3.309,3.295 3.907,2.698 4.642,2.698H4.64Z" />
+    </group>
+    <path android:fillColor="@drawable/$ic_calendar_symptom__6" android:pathData="M9.964,5.433C9.849,4.94 9.491,4.557 9.059,4.473C8.799,4.423 8.552,4.476 8.341,4.603C8.101,3.991 7.574,3.565 6.958,3.566C6.386,3.567 5.888,3.935 5.627,4.48C5.214,4.565 4.88,4.907 4.745,5.358C4.719,5.355 4.695,5.35 4.668,5.35C4.399,5.35 4.164,5.512 4.027,5.759C3.911,5.966 4.047,6.242 4.259,6.242L9.724,6.234C9.861,6.233 9.977,6.115 9.995,5.957C10.013,5.79 10.006,5.614 9.964,5.433Z" />
+</vector>

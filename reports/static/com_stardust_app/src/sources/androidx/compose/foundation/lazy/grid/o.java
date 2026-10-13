@@ -1,0 +1,29 @@
+package androidx.compose.foundation.lazy.grid;
+
+import androidx.compose.foundation.gestures.Orientation;
+import java.util.List;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: compiled from: LazyGridLayoutInfo.kt */
+/* JADX INFO: loaded from: classes.dex */
+public interface o {
+    long a();
+
+    int b();
+
+    int c();
+
+    int d();
+
+    int e();
+
+    int f();
+
+    int g();
+
+    @NotNull
+    Orientation getOrientation();
+
+    @NotNull
+    List<g> h();
+}

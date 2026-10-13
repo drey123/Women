@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_symptoms_jointpain__0" android:pathData="M84.71,88.37L79.5,83.16C88.84,73.82 88.84,58.64 79.5,49.31C70.16,39.97 54.98,39.97 45.65,49.31L40.44,44.1C52.65,31.89 72.5,31.89 84.71,44.1C96.91,56.3 96.91,76.16 84.71,88.37Z" />
+    <path android:fillColor="@drawable/$ic_symptoms_jointpain__1" android:pathData="M82.1,46.7C70.78,35.38 52.89,34.58 40.62,44.27L45.67,49.32C55,39.99 70.18,39.99 79.52,49.32C88.85,58.66 88.85,73.84 79.52,83.17L84.57,88.22C94.26,75.95 93.46,58.06 82.12,46.74L82.1,46.7Z" />
+    <path android:fillColor="@drawable/$ic_symptoms_jointpain__2" android:pathData="M88.05,39.64L43.87,83.82L45.17,85.12L89.35,40.94L88.05,39.64Z" />
+    <path android:fillColor="@drawable/$ic_symptoms_jointpain__3" android:pathData="M45.44,83.32L39.5,82.48L33,88.99L38.93,89.84L39.77,95.77L46.29,89.25L45.44,83.32Z" />
+    <path android:fillColor="@drawable/$ic_symptoms_jointpain__4" android:pathData="M79.13,37.24L95,34L91.76,49.87L88.68,40.32L79.13,37.24Z" />
+    <path android:fillColor="@drawable/$ic_symptoms_jointpain__5" android:pathData="M80.92,87.69L47.44,81.56L41.11,47.91L42.92,47.57L49.01,79.97L81.24,85.88L80.92,87.69Z" />
+    <path android:fillColor="@drawable/$ic_symptoms_jointpain__6" android:pathData="M80.92,87.69L47.44,81.56L41.11,47.91L42.92,47.57L49.01,79.97L81.24,85.88L80.92,87.69Z" />
+</vector>

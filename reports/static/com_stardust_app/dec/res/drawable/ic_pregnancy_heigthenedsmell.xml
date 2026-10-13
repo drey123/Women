@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="129.0dp" android:width="128.0dp" android:viewportWidth="128.0" android:viewportHeight="129.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M64,0.46L64,0.46A64,64 0,0 1,128 64.46L128,64.46A64,64 0,0 1,64 128.46L64,128.46A64,64 0,0 1,-0 64.46L-0,64.46A64,64 0,0 1,64 0.46z" />
+        <group>
+            <clip-path android:pathData="M37,32.31h53.89v64h-53.89z" />
+            <path android:fillColor="@drawable/$ic_pregnancy_heigthenedsmell__0" android:pathData="M51.9,70.73V94.43C51.9,95.72 50.64,96.62 49.43,96.2C44.95,94.63 36.07,90.45 37.08,82.22C37.96,75.09 40.56,61.24 42.27,52.46C43.16,47.85 47.2,44.53 51.89,44.53V70.73H51.9Z" />
+            <path android:fillColor="@drawable/$ic_pregnancy_heigthenedsmell__1" android:pathData="M75.99,70.73V94.43C75.99,95.72 77.26,96.62 78.46,96.2C82.94,94.63 91.83,90.45 90.81,82.22C89.93,75.08 87.33,61.23 85.62,52.45C84.72,47.84 80.69,44.52 75.99,44.52V70.73V70.73Z" />
+            <path android:fillColor="@drawable/$ic_pregnancy_heigthenedsmell__2" android:pathData="M80.03,48.39C80.03,39.51 72.83,32.31 63.95,32.31C55.07,32.31 47.86,39.51 47.86,48.39C47.86,48.39 47.98,83.08 63.95,83.08C79.91,83.08 80.03,48.39 80.03,48.39Z" />
+            <path android:fillColor="@drawable/$ic_pregnancy_heigthenedsmell__3" android:pathData="M68.46,70.1H59.43V88.8H68.46V70.1Z" />
+            <path android:fillColor="@drawable/$ic_pregnancy_heigthenedsmell__4" android:pathData="M75.99,92.17C70.95,92.17 66.67,88.46 65.97,83.46L63.95,70.84L61.92,83.46C61.22,88.46 56.95,92.17 51.9,92.17V65.73C51.9,59.08 57.29,53.69 63.95,53.69C70.6,53.69 75.99,59.08 75.99,65.73V92.17Z" />
+            <path android:fillColor="@drawable/$ic_pregnancy_heigthenedsmell__5" android:pathData="M63.95,70.84C61.8,70.84 59.89,69.49 59.16,67.46L58.52,65.67C58.13,64.58 58.93,63.44 60.09,63.44H67.79C68.95,63.44 69.75,64.58 69.36,65.67L68.72,67.46C68,69.49 66.08,70.84 63.93,70.84H63.95Z" android:strokeAlpha="0.8" android:fillAlpha="0.8" />
+            <path android:fillColor="@drawable/$ic_pregnancy_heigthenedsmell__6" android:pathData="M69.22,50.04C70.27,51.09 71.98,51.09 73.04,50.04C74.09,48.98 74.09,47.27 73.04,46.22C71.98,45.16 70.27,45.16 69.22,46.22C68.16,47.27 68.16,48.98 69.22,50.04Z" />
+            <path android:fillColor="@drawable/$ic_pregnancy_heigthenedsmell__7" android:pathData="M55.32,50.04C56.37,51.09 58.09,51.09 59.14,50.04C60.2,48.98 60.2,47.27 59.14,46.22C58.09,45.16 56.37,45.16 55.32,46.22C54.26,47.27 54.26,48.98 55.32,50.04Z" />
+        </group>
+    </group>
+</vector>

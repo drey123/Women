@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_symptoms_lowappetite__0" android:pathData="M80.76,79.9C69.7,82.7 58.28,82.7 47.24,79.9C45.5,79.46 44,78.17 44,76H84C84,78.14 82.56,79.9 80.76,79.9Z" />
+    <path android:fillColor="@drawable/$ic_symptoms_lowappetite__1" android:pathData="M64,77.84C86.09,77.84 104,74.97 104,71.42C104,67.87 86.09,65 64,65C41.91,65 24,67.87 24,71.42C24,74.97 41.91,77.84 64,77.84Z" />
+    <path android:fillColor="@drawable/$ic_symptoms_lowappetite__2" android:pathData="M64,75.3C81.85,75.3 96.32,73.56 96.32,71.42C96.32,69.28 81.85,67.54 64,67.54C46.15,67.54 31.68,69.28 31.68,71.42C31.68,73.56 46.15,75.3 64,75.3Z" android:strokeAlpha="0.3" android:fillAlpha="0.3" />
+    <path android:fillColor="@drawable/$ic_symptoms_lowappetite__3" android:pathData="M66.12,68.5m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+    <path android:fillColor="@drawable/$ic_symptoms_lowappetite__4" android:pathData="M61.12,71.12m-0.72,-2.39a2.5,2.5 118.99,1 1,1.45 4.79a2.5,2.5 118.99,1 1,-1.45 -4.79" />
+    <path android:fillColor="@drawable/$ic_symptoms_lowappetite__5" android:pathData="M67.5,71.5m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+</vector>

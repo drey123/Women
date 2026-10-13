@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="57.0dp" android:width="56.0dp" android:viewportWidth="56.0" android:viewportHeight="57.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_work_luteal__0" android:pathData="M1.375,0.5L40.125,0.5A1.25,1.25 0,0 1,41.375 1.75L41.375,55.5A1.25,1.25 0,0 1,40.125 56.75L1.375,56.75A1.25,1.25 0,0 1,0.125 55.5L0.125,1.75A1.25,1.25 0,0 1,1.375 0.5z" />
+    <path android:fillColor="@drawable/$ic_work_luteal__1" android:pathData="M13.875,11.125L13.875,18A1.25,1.25 0,0 1,12.625 19.25L5.75,19.25A1.25,1.25 0,0 1,4.5 18L4.5,11.125A1.25,1.25 0,0 1,5.75 9.875L12.625,9.875A1.25,1.25 0,0 1,13.875 11.125z" />
+    <path android:fillColor="@drawable/$ic_work_luteal__2" android:pathData="M13.875,23.625L13.875,30.5A1.25,1.25 0,0 1,12.625 31.75L5.75,31.75A1.25,1.25 0,0 1,4.5 30.5L4.5,23.625A1.25,1.25 0,0 1,5.75 22.375L12.625,22.375A1.25,1.25 0,0 1,13.875 23.625z" />
+    <path android:fillColor="@drawable/$ic_work_luteal__3" android:pathData="M13.875,36.125L13.875,43A1.25,1.25 0,0 1,12.625 44.25L5.75,44.25A1.25,1.25 0,0 1,4.5 43L4.5,36.125A1.25,1.25 0,0 1,5.75 34.875L12.625,34.875A1.25,1.25 0,0 1,13.875 36.125z" />
+    <path android:fillColor="@drawable/$ic_work_luteal__4" android:pathData="M8.218,21.826C8.046,21.527 7.663,21.424 7.365,21.597L4.816,23.068C4.517,23.241 4.415,23.623 4.587,23.922L8.417,30.555C8.59,30.854 8.972,30.957 9.271,30.784L27.704,20.141C28.003,19.969 28.106,19.587 27.933,19.288L26.462,16.739C26.289,16.44 25.907,16.338 25.608,16.51L10.805,25.057C10.507,25.229 10.124,25.127 9.952,24.828L8.218,21.826Z" />
+    <path android:fillColor="@drawable/$ic_work_luteal__5" android:pathData="M31.106,34.528L39.411,28.307L55.626,49.954C56.04,50.507 55.927,51.29 55.375,51.704L49.072,56.426C48.519,56.84 47.736,56.727 47.322,56.175L31.106,34.528Z" />
+    <path android:fillColor="@drawable/$ic_work_luteal__6" android:pathData="M31.119,25.002C30.684,24.829 30.221,25.177 30.265,25.642L31.106,34.528L39.41,28.308L31.119,25.002Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_work_luteal__7" android:pathData="M33.51,25.955L30.508,28.204L30.265,25.641C30.221,25.176 30.685,24.829 31.119,25.002L33.51,25.955Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_work_luteal__8" android:pathData="M8.251,9.174C8.078,8.875 7.696,8.772 7.397,8.945L4.848,10.416C4.549,10.589 4.447,10.971 4.62,11.27L8.449,17.903C8.622,18.202 9.004,18.305 9.303,18.132L27.737,7.489C28.035,7.317 28.138,6.935 27.965,6.636L26.494,4.087C26.322,3.788 25.939,3.686 25.64,3.859L10.838,12.405C10.539,12.577 10.156,12.475 9.984,12.176L8.251,9.174Z" />
+</vector>

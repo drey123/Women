@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M44,26h42v72h-42z" />
+        <path android:fillColor="@drawable/$ic_flow_light__0" android:pathData="M64.99,71C76.44,71 85.72,72.35 85.74,73.99C83.88,62.61 71.92,37.29 67.04,27.3C66.19,25.57 63.77,25.57 62.92,27.3C58.08,37.29 46.14,62.58 44.27,73.97C44.39,72.33 53.61,71 65.01,71H64.99Z" />
+        <path android:fillColor="@drawable/$ic_flow_light__1" android:pathData="M64.99,71C76.44,71 85.72,72.35 85.74,73.99C83.88,62.61 71.92,37.29 67.04,27.3C66.19,25.57 63.77,25.57 62.92,27.3C58.08,37.29 46.14,62.58 44.27,73.97C44.39,72.33 53.61,71 65.01,71H64.99Z" android:fillAlpha="0.8" />
+        <path android:fillColor="@drawable/$ic_flow_light__2" android:pathData="M85.74,74.01C85.74,75.66 76.44,77.01 64.99,77.01C53.54,77.01 44.3,75.66 44.25,74.01C44.09,74.98 44,75.86 44,76.6C44,88.41 53.4,97.98 64.99,97.98C76.58,97.98 85.98,88.41 85.98,76.6C85.98,75.84 85.89,74.96 85.74,73.99V74.01Z" />
+        <path android:fillColor="@drawable/$ic_flow_light__3" android:pathData="M85.74,74.01C85.74,75.66 76.44,77.01 64.99,77.01C53.54,77.01 44.3,75.66 44.25,74.01C44.09,74.98 44,75.86 44,76.6C44,88.41 53.4,97.98 64.99,97.98C76.58,97.98 85.98,88.41 85.98,76.6C85.98,75.84 85.89,74.96 85.74,73.99V74.01Z" />
+        <path android:fillColor="#ff4b01" android:pathData="M64.99,76.99C76.44,76.99 85.74,75.64 85.74,73.99C85.74,72.33 76.44,71 64.99,71C53.54,71 44.37,72.33 44.27,73.97V74.01C44.3,75.66 53.58,76.99 65.01,76.99H64.99Z" />
+    </group>
+</vector>

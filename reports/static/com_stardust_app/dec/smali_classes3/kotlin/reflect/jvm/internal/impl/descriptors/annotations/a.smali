@@ -1,0 +1,10 @@
+.class public interface abstract Lkotlin/reflect/jvm/internal/impl/descriptors/annotations/a;
+.super Ljava/lang/Object;
+.source "Annotations.kt"
+
+
+# virtual methods
+.method public abstract getAnnotations()Lkotlin/reflect/jvm/internal/impl/descriptors/annotations/f;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end method

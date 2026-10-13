@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_activities_running__0" android:pathData="M59.78,39.55C59.08,39.35 58.36,39.16 57.62,38.9C57.1,38.72 56.58,38.54 56.07,38.35L45.24,34.8L35.54,64.21V72.14H60.77L70.51,43.08L59.78,39.57V39.55Z" />
+    <path android:fillColor="@drawable/$ic_activities_running__1" android:pathData="M29.4,85.69L47.36,91.54C52.42,93.2 57.73,94.02 63.04,94.02H97.37C98.81,94.02 99.98,91.42 99.98,89.98V90.12H63.22C57.76,90.12 52.37,89.24 47.2,87.53L28,81.12V83.77C28,84.65 28.56,85.42 29.4,85.69Z" />
+    <path android:fillColor="@drawable/$ic_activities_running__2" android:pathData="M28,81.12L34.51,61.56C35.43,58.83 39.21,58.56 40.49,61.13C43.53,67.19 50.91,69.66 56.97,66.62L62.21,64.01C63.27,63.49 64.55,63.68 65.39,64.53L68.36,67.5C71.41,70.54 75.11,72.83 79.2,74.19L92.66,78.67C97.03,80.13 100,84.23 100,88.84V90.1H63.24C57.78,90.1 52.38,89.22 47.22,87.51L28,81.12Z" />
+    <path android:fillColor="@drawable/$ic_activities_running__3" android:pathData="M32,69.17L28,81.14L38.78,84.74C39.23,83.44 39.48,82.06 39.48,80.62C39.48,75.51 36.4,71.1 32,69.19V69.17Z" />
+    <path android:fillColor="@drawable/$ic_activities_running__4" android:pathData="M67.52,82.48L58.47,73.43L57.66,76.43L52.93,71.7L49.6,84.06L56.08,82.34L55.16,85.79L67.52,82.48Z" />
+    <path android:fillColor="@drawable/$ic_activities_running__5" android:pathData="M70.04,68.11C68.15,66.58 67.09,64.33 67.05,61.99C67.05,61.29 66.46,60.73 65.75,60.73H61.24C60.63,60.73 60.09,61.16 59.96,61.76L59.89,62.08C59.2,65.32 60.55,68.63 63.32,70.47L65.86,72.16C68.76,74.07 72.41,74.39 75.6,73.01L75.9,72.86L70.04,68.13V68.11Z" />
+    <path android:fillColor="@drawable/$ic_activities_running__6" android:pathData="M63.35,62.44C62.04,62.79 61.26,64.14 61.61,65.46C61.96,66.77 63.31,67.55 64.63,67.2C65.94,66.85 66.72,65.5 66.37,64.18C66.02,62.86 64.67,62.08 63.35,62.44Z" />
+    <path android:fillColor="@drawable/$ic_activities_running__7" android:pathData="M82.77,49.21L60.64,43.26C59.91,43.06 59.15,43.5 58.96,44.23C58.76,44.96 59.19,45.72 59.93,45.92L82.05,51.86C82.79,52.06 83.54,51.63 83.74,50.89C83.94,50.16 83.5,49.4 82.77,49.21Z" />
+    <path android:fillColor="@drawable/$ic_activities_running__8" android:pathData="M31.13,47.72L73.37,59.03C74.11,59.23 74.86,58.8 75.06,58.06C75.25,57.33 74.82,56.57 74.08,56.38L31.84,45.06C31.11,44.86 30.35,45.3 30.16,46.03C29.96,46.76 30.4,47.52 31.13,47.72Z" />
+</vector>

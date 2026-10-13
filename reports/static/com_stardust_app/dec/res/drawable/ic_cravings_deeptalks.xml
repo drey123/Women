@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_cravings_deeptalks__0" android:pathData="M85.96,34H51.05C45.52,34 41.01,39.27 41.01,45.78V54.47C41.01,60.98 45.5,66.25 51.05,66.25H72.38C75.28,66.25 77.64,69 77.64,72.42V77L85.96,66.25C91.51,66.25 96,60.98 96,54.47V45.78C96,39.27 91.51,34 85.96,34Z" />
+    <path android:fillColor="@drawable/$ic_cravings_deeptalks__1" android:pathData="M61,58H39C32.93,58 28,63.67 28,70.67C28,77.66 32.93,83.33 39,83.33H39.09L49.08,96V90.6C49.08,86.6 51.89,83.33 55.39,83.33H61C67.07,83.33 72,77.66 72,70.67C72,63.67 67.07,58 61,58Z" android:strokeAlpha="0.8" android:fillAlpha="0.8" />
+</vector>

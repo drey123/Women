@@ -1,0 +1,74 @@
+.class public interface abstract Lbe/o;
+.super Ljava/lang/Object;
+.source "SpanProcessor.java"
+
+# interfaces
+.implements Ljava/io/Closeable;
+
+
+# virtual methods
+.method public abstract K()Z
+.end method
+
+.method public abstract P0(Lbe/h;)V
+.end method
+
+.method public close()V
+    .locals 4
+
+    .line 1
+    invoke-interface {p0}, Lbe/o;->shutdown()LNd/e;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const-wide/16 v1, 0xa
+
+    .line 6
+    .line 7
+    sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, v1, v2, v3}, LNd/e;->c(JLjava/util/concurrent/TimeUnit;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public abstract i1()Z
+.end method
+
+.method public abstract l1(Lio/opentelemetry/context/b;Lbe/h;)V
+.end method
+
+.method public o()LNd/e;
+    .locals 1
+
+    .line 1
+    sget-object v0, LNd/e;->d:LNd/e;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public shutdown()LNd/e;
+    .locals 1
+
+    .line 1
+    invoke-interface {p0}, Lbe/o;->o()LNd/e;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method

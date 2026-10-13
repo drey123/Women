@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="108.0dp" android:width="108.0dp" android:viewportWidth="108.0" android:viewportHeight="108.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#00000000" android:pathData="M54.13,30.23m-3.94,0a3.94,3.94 0,1 1,7.87 0a3.94,3.94 0,1 1,-7.87 0" android:strokeColor="#9c9ab3" android:strokeWidth="0.50625" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__0" android:pathData="M58.06,77.54C58.06,79.72 56.3,81.48 54.13,81.48C51.95,81.48 50.19,79.72 50.19,77.54C50.19,75.37 51.95,73.61 54.13,73.61C56.3,73.61 58.06,75.37 58.06,77.54Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__1" android:pathData="M76.02,57.82C78.2,57.82 79.96,56.06 79.96,53.89C79.96,51.71 78.2,49.95 76.02,49.95V57.82Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__2" android:pathData="M31.75,57.82C29.58,57.82 27.82,56.06 27.82,53.89C27.82,51.71 29.58,49.95 31.75,49.95V57.82Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__3" android:pathData="M73.1,46.05C73.1,46.05 74.41,44.96 74.41,42.12C74.41,39.27 73.1,38.18 73.1,38.18V38.18C75.27,38.18 77.03,39.94 77.03,42.12C77.03,44.29 75.27,46.05 73.1,46.05V46.05Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__4" android:pathData="M34.6,69.69C32.4,69.69 30.62,67.9 30.62,65.7C30.62,63.51 32.4,61.72 34.6,61.72C34.6,61.72 35.49,62.61 35.49,65.7C35.49,68.8 34.6,69.69 34.6,69.69Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__5" android:pathData="M64.85,37.47C64.85,37.47 67.48,37.03 67.48,33.52C67.48,30.01 64.85,29.57 64.85,29.57C67.03,29.57 68.8,31.34 68.8,33.52C68.8,35.7 67.03,37.47 64.85,37.47Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__6" android:pathData="M64.85,37.47C64.75,37.47 64.66,37.47 64.55,37.46C64.65,37.47 64.75,37.47 64.85,37.47Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__7" android:pathData="M64.55,29.58C64.65,29.57 64.75,29.57 64.85,29.57C64.75,29.57 64.66,29.57 64.55,29.58Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__8" android:pathData="M42.62,78.21C40.45,78.21 38.69,76.45 38.69,74.27C38.69,72.1 40.45,70.34 42.62,70.34C42.62,70.34 45.25,70.99 45.25,74.27C45.25,77.55 42.62,78.21 42.62,78.21Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__9" android:pathData="M42.93,37.47C42.93,37.47 40.29,37.03 40.29,33.52C40.29,30.01 42.93,29.57 42.93,29.57C40.75,29.57 38.98,31.34 38.98,33.52C38.98,35.7 40.75,37.47 42.93,37.47Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__10" android:pathData="M42.93,37.47C43.02,37.47 43.12,37.47 43.22,37.46C43.13,37.47 43.03,37.47 42.93,37.47Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__11" android:pathData="M43.22,29.58C43.13,29.57 43.03,29.57 42.93,29.57C43.02,29.57 43.12,29.57 43.22,29.58Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__12" android:pathData="M65.15,78.21C67.32,78.21 69.09,76.45 69.09,74.27C69.09,72.1 67.32,70.34 65.15,70.34C65.15,70.34 62.53,70.99 62.53,74.27C62.53,77.55 65.15,78.21 65.15,78.21Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__13" android:pathData="M34.68,46.05C34.68,46.05 33.37,44.96 33.37,42.12C33.37,39.27 34.68,38.18 34.68,38.18V38.18C32.5,38.18 30.74,39.94 30.74,42.12C30.74,44.29 32.5,46.05 34.68,46.05V46.05Z" />
+    <path android:fillColor="@drawable/$ic_launcher_foreground__14" android:pathData="M73.17,69.69C75.37,69.69 77.15,67.9 77.15,65.7C77.15,63.51 75.37,61.72 73.17,61.72C73.17,61.72 72.29,62.61 72.29,65.7C72.29,68.8 73.17,69.69 73.17,69.69Z" />
+</vector>

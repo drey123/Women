@@ -1,0 +1,458 @@
+.class final Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "PaywallMessageHandler.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;->didLoadWebView(Lcom/superwall/sdk/models/paywall/Paywall;Ljava/util/Date;Lse/c;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Lkotlinx/coroutines/I;",
+        "Lse/c<",
+        "-",
+        "Lkotlin/Unit;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "Lkotlinx/coroutines/I;",
+        "",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/I;)V"
+    }
+    k = 0x3
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+.end annotation
+
+.annotation runtime Lte/c;
+    c = "com.superwall.sdk.paywall.view.webview.messaging.PaywallMessageHandler$didLoadWebView$3"
+    f = "PaywallMessageHandler.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field final synthetic $scriptSrc:Ljava/lang/String;
+
+.field label:I
+
+.field final synthetic this$0:Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;
+
+
+# direct methods
+.method public constructor <init>(Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;Ljava/lang/String;Lse/c;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;",
+            "Ljava/lang/String;",
+            "Lse/c<",
+            "-",
+            "Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->this$0:Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->$scriptSrc:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    const/4 p1, 0x2
+
+    .line 6
+    invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILse/c;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static synthetic e(Ljava/lang/String;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->invokeSuspend$lambda$0(Ljava/lang/String;Ljava/lang/String;)Lkotlin/Unit;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method private static final invokeSuspend$lambda$0(Ljava/lang/String;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 6
+
+    .line 1
+    if-eqz p1, :cond_0
+
+    .line 2
+    .line 3
+    sget-object v0, Lcom/superwall/sdk/logger/Logger;->INSTANCE:Lcom/superwall/sdk/logger/Logger;
+
+    .line 4
+    .line 5
+    sget-object v1, Lcom/superwall/sdk/logger/LogLevel;->error:Lcom/superwall/sdk/logger/LogLevel;
+
+    .line 6
+    .line 7
+    sget-object v2, Lcom/superwall/sdk/logger/LogScope;->paywallView:Lcom/superwall/sdk/logger/LogScope;
+
+    .line 8
+    .line 9
+    const-string v3, "message"
+
+    .line 10
+    .line 11
+    invoke-static {v3, p0}, Lcom/appsflyer/internal/x;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v4
+
+    .line 15
+    new-instance v5, Ljava/lang/Exception;
+
+    .line 16
+    .line 17
+    invoke-direct {v5, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    const-string v3, "Error Evaluating JS"
+
+    .line 21
+    .line 22
+    invoke-virtual/range {v0 .. v5}, Lcom/superwall/sdk/logger/Logger;->debug(Lcom/superwall/sdk/logger/LogLevel;Lcom/superwall/sdk/logger/LogScope;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 26
+    .line 27
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lse/c;)Lse/c;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lse/c<",
+            "*>;)",
+            "Lse/c<",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance p1, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->this$0:Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;
+
+    .line 4
+    .line 5
+    iget-object v1, p0, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->$scriptSrc:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    invoke-direct {p1, v0, v1, p2}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;-><init>(Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;Ljava/lang/String;Lse/c;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lkotlinx/coroutines/I;
+
+    check-cast p2, Lse/c;
+
+    invoke-virtual {p0, p1, p2}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->invoke(Lkotlinx/coroutines/I;Lse/c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lkotlinx/coroutines/I;Lse/c;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlinx/coroutines/I;",
+            "Lse/c<",
+            "-",
+            "Lkotlin/Unit;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->create(Ljava/lang/Object;Lse/c;)Lse/c;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;
+
+    sget-object p2, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    invoke-virtual {p1, p2}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->a:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+
+    .line 2
+    .line 3
+    iget v0, p0, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->label:I
+
+    .line 4
+    .line 5
+    if-nez v0, :cond_4
+
+    .line 6
+    .line 7
+    invoke-static {p1}, Lkotlin/c;->b(Ljava/lang/Object;)V
+
+    .line 8
+    .line 9
+    .line 10
+    iget-object p1, p0, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->this$0:Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;
+
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;->getMessageHandler()Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandlerDelegate;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    if-eqz p1, :cond_0
+
+    .line 17
+    .line 18
+    iget-object v0, p0, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->$scriptSrc:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    new-instance v1, Lcom/superwall/sdk/paywall/view/webview/messaging/b;
+
+    .line 21
+    .line 22
+    invoke-direct {v1, v0}, Lcom/superwall/sdk/paywall/view/webview/messaging/b;-><init>(Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-interface {p1, v0, v1}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandlerDelegate;->evaluate(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+
+    .line 26
+    .line 27
+    .line 28
+    :cond_0
+    iget-object p1, p0, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->this$0:Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;
+
+    .line 29
+    .line 30
+    invoke-virtual {p1}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;->getMessageHandler()Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandlerDelegate;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object p1
+
+    .line 34
+    const/4 v0, 0x0
+
+    .line 35
+    if-eqz p1, :cond_1
+
+    .line 36
+    .line 37
+    invoke-static {}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;->access$getCompanion$p()Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$Companion;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v1
+
+    .line 41
+    invoke-virtual {v1}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$Companion;->getSelectionString()Ljava/lang/String;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v1
+
+    .line 45
+    invoke-interface {p1, v1, v0}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandlerDelegate;->evaluate(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+
+    .line 46
+    .line 47
+    .line 48
+    :cond_1
+    iget-object p1, p0, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->this$0:Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;
+
+    .line 49
+    .line 50
+    invoke-virtual {p1}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;->getMessageHandler()Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandlerDelegate;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object p1
+
+    .line 54
+    if-eqz p1, :cond_2
+
+    .line 55
+    .line 56
+    invoke-static {}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;->access$getCompanion$p()Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$Companion;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v1
+
+    .line 60
+    invoke-virtual {v1}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$Companion;->getPreventZoom()Ljava/lang/String;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v1
+
+    .line 64
+    invoke-interface {p1, v1, v0}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandlerDelegate;->evaluate(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+
+    .line 65
+    .line 66
+    .line 67
+    :cond_2
+    iget-object p1, p0, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->this$0:Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;
+
+    .line 68
+    .line 69
+    invoke-static {p1}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;->access$flushPendingMessagesInternal(Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;)V
+
+    .line 70
+    .line 71
+    .line 72
+    iget-object p1, p0, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler$didLoadWebView$3;->this$0:Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;
+
+    .line 73
+    .line 74
+    invoke-virtual {p1}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandler;->getMessageHandler()Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallMessageHandlerDelegate;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object p1
+
+    .line 78
+    if-eqz p1, :cond_3
+
+    .line 79
+    .line 80
+    new-instance v0, Lcom/superwall/sdk/paywall/view/PaywallViewState$Updates$SetLoadingState;
+
+    .line 81
+    .line 82
+    sget-object v1, Lcom/superwall/sdk/paywall/view/delegate/PaywallLoadingState$Ready;->INSTANCE:Lcom/superwall/sdk/paywall/view/delegate/PaywallLoadingState$Ready;
+
+    .line 83
+    .line 84
+    invoke-direct {v0, v1}, Lcom/superwall/sdk/paywall/view/PaywallViewState$Updates$SetLoadingState;-><init>(Lcom/superwall/sdk/paywall/view/delegate/PaywallLoadingState;)V
+
+    .line 85
+    .line 86
+    .line 87
+    invoke-interface {p1, v0}, Lcom/superwall/sdk/paywall/view/webview/messaging/PaywallStateDelegate;->updateState(Lcom/superwall/sdk/paywall/view/PaywallViewState$Updates;)V
+
+    .line 88
+    .line 89
+    .line 90
+    :cond_3
+    sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 91
+    .line 92
+    return-object p1
+
+    .line 93
+    :cond_4
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 94
+    .line 95
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 96
+    .line 97
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 98
+    .line 99
+    .line 100
+    throw p1
+.end method

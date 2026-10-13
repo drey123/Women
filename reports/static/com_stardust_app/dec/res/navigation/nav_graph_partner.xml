@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_partner" app:startDestination="@id/partnerCodeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.stardust.app.presentation.settings.partner.PartnerCodeFragment" android:id="@id/partnerCodeFragment">
+        <argument android:name="flowType" android:defaultValue="SETTINGS" app:argType="com.stardust.app.presentation.settings.FlowType" />
+        <action android:id="@id/action_partner_code_info" app:destination="@id/partnerCodeInfoFragment" />
+        <action android:id="@id/action_partner_success" app:destination="@id/partner_success" />
+        <action android:id="@id/action_notification_permission" app:destination="@id/notification_permission" />
+    </fragment>
+    <fragment android:name="com.stardust.app.presentation.settings.partner.info.PartnerCodeInfoFragment" android:id="@id/partnerCodeInfoFragment" />
+    <fragment android:name="com.stardust.app.presentation.settings.partner.partnersuccess.PartnerSuccessFragment" android:id="@id/partner_success">
+        <action android:id="@id/action_notification_permission" app:destination="@id/notification_permission" />
+        <action android:id="@id/action_partner_onboarding" app:destination="@id/partner_onboarding" />
+    </fragment>
+    <fragment android:name="com.stardust.app.presentation.settings.partner.onboarding.PartnerOnboardingFragment" android:id="@id/partner_onboarding">
+        <action android:id="@id/action_notification_permission" app:destination="@id/notification_permission" />
+    </fragment>
+    <fragment android:name="com.stardust.app.presentation.onboarding.notificationpermission.NotificationPermissionFragment" android:id="@id/notification_permission">
+        <action android:id="@id/action_how_did_you_hear_us" app:destination="@id/how_did_you_hear_us" />
+    </fragment>
+    <fragment android:name="com.stardust.app.presentation.onboarding.howdidyouhearus.HowDidYouHearUsFragment" android:id="@id/how_did_you_hear_us" />
+</navigation>

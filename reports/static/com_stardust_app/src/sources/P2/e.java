@@ -1,0 +1,8 @@
+package P2;
+
+/* JADX INFO: compiled from: R8$$SyntheticClass */
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class e {
+    public static /* bridge */ /* synthetic */ void a(Object obj) {
+    }
+}

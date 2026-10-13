@@ -1,0 +1,11 @@
+package androidx.compose.ui.autofill;
+
+/* JADX INFO: compiled from: R8$$SyntheticClass */
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class r {
+    public static StringBuilder a(String str) {
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append(str);
+        return sb2;
+    }
+}

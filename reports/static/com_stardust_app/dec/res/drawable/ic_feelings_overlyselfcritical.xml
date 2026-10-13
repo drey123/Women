@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M24,24h80v80h-80z" />
+        <group>
+            <clip-path android:pathData="M61.68,15.08l45.64,26.35l-43.14,74.72l-45.64,-26.35z" />
+            <path android:fillColor="@drawable/$ic_feelings_overlyselfcritical__0" android:pathData="M55.21,80.87L48.86,77.18L38.26,91.65C36.6,94.52 37.59,98.2 40.46,99.85C43.32,101.51 47,100.53 48.65,97.66L55.21,80.87Z" />
+            <path android:fillColor="@drawable/$ic_feelings_overlyselfcritical__1" android:pathData="M49.36,44.25a29.66,21.57 122.05,1 0,36.56 22.9a29.66,21.57 122.05,1 0,-36.56 -22.9z" />
+            <path android:fillColor="@drawable/$ic_feelings_overlyselfcritical__2" android:pathData="M53.74,47.37a22.82,16.5 122.05,1 0,27.97 17.51a22.82,16.5 122.05,1 0,-27.97 -17.51z" />
+            <path android:fillColor="@drawable/$ic_feelings_overlyselfcritical__3" android:pathData="M51.67,45.94a25.76,18.5 122.05,1 0,31.36 19.64a25.76,18.5 122.05,1 0,-31.36 -19.64z" />
+        </group>
+    </group>
+</vector>

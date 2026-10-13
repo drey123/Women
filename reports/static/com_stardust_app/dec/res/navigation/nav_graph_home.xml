@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_home" app:startDestination="@id/home"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.stardust.app.presentation.main.home.HomeFragment" android:id="@id/home">
+        <action android:id="@id/action_partner_code" app:destination="@id/navigation_partner" />
+        <action android:id="@id/action_cast_a_spell" app:destination="@id/navigation_cast_a_spell">
+            <argument android:name="partnerId" app:argType="integer" />
+        </action>
+    </fragment>
+    <include app:graph="@navigation/nav_graph_partner" />
+    <include app:graph="@navigation/nav_graph_cast_a_spell" />
+</navigation>

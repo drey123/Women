@@ -1,0 +1,452 @@
+.class final Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;
+.super Lkotlin/jvm/internal/Lambda;
+.source "CoreTextField.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/foundation/text/CoreTextFieldKt;->a(Landroidx/compose/ui/text/input/TextFieldValue;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/h;Landroidx/compose/ui/text/D;Landroidx/compose/ui/text/input/K;Lkotlin/jvm/functions/Function1;Landroidx/compose/foundation/interaction/k;Landroidx/compose/ui/graphics/N;ZIILandroidx/compose/ui/text/input/n;Landroidx/compose/foundation/text/j;ZZLBe/n;Landroidx/compose/foundation/text/TextFieldScrollerPosition;Landroidx/compose/runtime/j;III)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Landroidx/compose/runtime/j;",
+        "Ljava/lang/Integer;",
+        "Lkotlin/Unit;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic $$changed:I
+
+.field final synthetic $$changed1:I
+
+.field final synthetic $$default:I
+
+.field final synthetic $cursorBrush:Landroidx/compose/ui/graphics/N;
+
+.field final synthetic $decorationBox:LBe/n;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "LBe/n<",
+            "Lkotlin/jvm/functions/Function2<",
+            "-",
+            "Landroidx/compose/runtime/j;",
+            "-",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;",
+            "Landroidx/compose/runtime/j;",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $enabled:Z
+
+.field final synthetic $imeOptions:Landroidx/compose/ui/text/input/n;
+
+.field final synthetic $interactionSource:Landroidx/compose/foundation/interaction/k;
+
+.field final synthetic $keyboardActions:Landroidx/compose/foundation/text/j;
+
+.field final synthetic $maxLines:I
+
+.field final synthetic $minLines:I
+
+.field final synthetic $modifier:Landroidx/compose/ui/h;
+
+.field final synthetic $onTextLayout:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "Landroidx/compose/ui/text/z;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $onValueChange:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "Landroidx/compose/ui/text/input/TextFieldValue;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $readOnly:Z
+
+.field final synthetic $softWrap:Z
+
+.field final synthetic $textScrollerPosition:Landroidx/compose/foundation/text/TextFieldScrollerPosition;
+
+.field final synthetic $textStyle:Landroidx/compose/ui/text/D;
+
+.field final synthetic $value:Landroidx/compose/ui/text/input/TextFieldValue;
+
+.field final synthetic $visualTransformation:Landroidx/compose/ui/text/input/K;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/ui/text/input/TextFieldValue;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/h;Landroidx/compose/ui/text/D;Landroidx/compose/ui/text/input/K;Lkotlin/jvm/functions/Function1;Landroidx/compose/foundation/interaction/k;Landroidx/compose/ui/graphics/N;ZIILandroidx/compose/ui/text/input/n;Landroidx/compose/foundation/text/j;ZZLBe/n;Landroidx/compose/foundation/text/TextFieldScrollerPosition;III)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/ui/text/input/TextFieldValue;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Landroidx/compose/ui/text/input/TextFieldValue;",
+            "Lkotlin/Unit;",
+            ">;",
+            "Landroidx/compose/ui/h;",
+            "Landroidx/compose/ui/text/D;",
+            "Landroidx/compose/ui/text/input/K;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Landroidx/compose/ui/text/z;",
+            "Lkotlin/Unit;",
+            ">;",
+            "Landroidx/compose/foundation/interaction/k;",
+            "Landroidx/compose/ui/graphics/N;",
+            "ZII",
+            "Landroidx/compose/ui/text/input/n;",
+            "Landroidx/compose/foundation/text/j;",
+            "ZZ",
+            "LBe/n<",
+            "-",
+            "Lkotlin/jvm/functions/Function2<",
+            "-",
+            "Landroidx/compose/runtime/j;",
+            "-",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;-",
+            "Landroidx/compose/runtime/j;",
+            "-",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;",
+            "Landroidx/compose/foundation/text/TextFieldScrollerPosition;",
+            "III)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$value:Landroidx/compose/ui/text/input/TextFieldValue;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$onValueChange:Lkotlin/jvm/functions/Function1;
+
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$modifier:Landroidx/compose/ui/h;
+
+    .line 6
+    .line 7
+    iput-object p4, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$textStyle:Landroidx/compose/ui/text/D;
+
+    .line 8
+    .line 9
+    iput-object p5, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$visualTransformation:Landroidx/compose/ui/text/input/K;
+
+    .line 10
+    .line 11
+    iput-object p6, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$onTextLayout:Lkotlin/jvm/functions/Function1;
+
+    .line 12
+    .line 13
+    iput-object p7, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$interactionSource:Landroidx/compose/foundation/interaction/k;
+
+    .line 14
+    .line 15
+    iput-object p8, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$cursorBrush:Landroidx/compose/ui/graphics/N;
+
+    .line 16
+    .line 17
+    iput-boolean p9, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$softWrap:Z
+
+    .line 18
+    .line 19
+    iput p10, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$maxLines:I
+
+    .line 20
+    .line 21
+    iput p11, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$minLines:I
+
+    .line 22
+    .line 23
+    iput-object p12, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$imeOptions:Landroidx/compose/ui/text/input/n;
+
+    .line 24
+    .line 25
+    iput-object p13, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$keyboardActions:Landroidx/compose/foundation/text/j;
+
+    .line 26
+    .line 27
+    iput-boolean p14, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$enabled:Z
+
+    .line 28
+    .line 29
+    iput-boolean p15, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$readOnly:Z
+
+    .line 30
+    .line 31
+    move-object/from16 p1, p16
+
+    .line 32
+    .line 33
+    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$decorationBox:LBe/n;
+
+    .line 34
+    .line 35
+    move-object/from16 p1, p17
+
+    .line 36
+    .line 37
+    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$textScrollerPosition:Landroidx/compose/foundation/text/TextFieldScrollerPosition;
+
+    .line 38
+    .line 39
+    move/from16 p1, p18
+
+    .line 40
+    .line 41
+    iput p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$$changed:I
+
+    .line 42
+    .line 43
+    move/from16 p1, p19
+
+    .line 44
+    .line 45
+    iput p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$$changed1:I
+
+    .line 46
+    .line 47
+    move/from16 p1, p20
+
+    .line 48
+    .line 49
+    iput p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$$default:I
+
+    .line 50
+    .line 51
+    const/4 p1, 0x2
+
+    .line 52
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 53
+    .line 54
+    .line 55
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 22
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    move-object/from16 v18, p1
+
+    .line 4
+    .line 5
+    check-cast v18, Landroidx/compose/runtime/j;
+
+    .line 6
+    .line 7
+    move-object/from16 v1, p2
+
+    .line 8
+    .line 9
+    check-cast v1, Ljava/lang/Number;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object v1, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$value:Landroidx/compose/ui/text/input/TextFieldValue;
+
+    .line 15
+    .line 16
+    iget-object v2, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$onValueChange:Lkotlin/jvm/functions/Function1;
+
+    .line 17
+    .line 18
+    iget-object v3, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$modifier:Landroidx/compose/ui/h;
+
+    .line 19
+    .line 20
+    iget-object v4, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$textStyle:Landroidx/compose/ui/text/D;
+
+    .line 21
+    .line 22
+    iget-object v5, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$visualTransformation:Landroidx/compose/ui/text/input/K;
+
+    .line 23
+    .line 24
+    iget-object v6, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$onTextLayout:Lkotlin/jvm/functions/Function1;
+
+    .line 25
+    .line 26
+    iget-object v7, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$interactionSource:Landroidx/compose/foundation/interaction/k;
+
+    .line 27
+    .line 28
+    iget-object v8, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$cursorBrush:Landroidx/compose/ui/graphics/N;
+
+    .line 29
+    .line 30
+    iget-boolean v9, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$softWrap:Z
+
+    .line 31
+    .line 32
+    iget v10, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$maxLines:I
+
+    .line 33
+    .line 34
+    iget v11, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$minLines:I
+
+    .line 35
+    .line 36
+    iget-object v12, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$imeOptions:Landroidx/compose/ui/text/input/n;
+
+    .line 37
+    .line 38
+    iget-object v13, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$keyboardActions:Landroidx/compose/foundation/text/j;
+
+    .line 39
+    .line 40
+    iget-boolean v14, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$enabled:Z
+
+    .line 41
+    .line 42
+    iget-boolean v15, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$readOnly:Z
+
+    .line 43
+    .line 44
+    move-object/from16 v16, v1
+
+    .line 45
+    .line 46
+    iget-object v1, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$decorationBox:LBe/n;
+
+    .line 47
+    .line 48
+    move-object/from16 v17, v1
+
+    .line 49
+    .line 50
+    iget-object v1, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$textScrollerPosition:Landroidx/compose/foundation/text/TextFieldScrollerPosition;
+
+    .line 51
+    .line 52
+    move-object/from16 v19, v1
+
+    .line 53
+    .line 54
+    iget v1, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$$changed:I
+
+    .line 55
+    .line 56
+    or-int/lit8 v1, v1, 0x1
+
+    .line 57
+    .line 58
+    invoke-static {v1}, Landroidx/compose/runtime/w0;->a(I)I
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v1
+
+    .line 62
+    move/from16 p1, v1
+
+    .line 63
+    .line 64
+    iget v1, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$$changed1:I
+
+    .line 65
+    .line 66
+    invoke-static {v1}, Landroidx/compose/runtime/w0;->a(I)I
+
+    .line 67
+    .line 68
+    .line 69
+    move-result v20
+
+    .line 70
+    iget v1, v0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$6;->$$default:I
+
+    .line 71
+    .line 72
+    move/from16 v21, v1
+
+    .line 73
+    .line 74
+    move-object/from16 v1, v16
+
+    .line 75
+    .line 76
+    move-object/from16 v16, v17
+
+    .line 77
+    .line 78
+    move-object/from16 v17, v19
+
+    .line 79
+    .line 80
+    move/from16 v19, p1
+
+    .line 81
+    .line 82
+    invoke-static/range {v1 .. v21}, Landroidx/compose/foundation/text/CoreTextFieldKt;->a(Landroidx/compose/ui/text/input/TextFieldValue;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/h;Landroidx/compose/ui/text/D;Landroidx/compose/ui/text/input/K;Lkotlin/jvm/functions/Function1;Landroidx/compose/foundation/interaction/k;Landroidx/compose/ui/graphics/N;ZIILandroidx/compose/ui/text/input/n;Landroidx/compose/foundation/text/j;ZZLBe/n;Landroidx/compose/foundation/text/TextFieldScrollerPosition;Landroidx/compose/runtime/j;III)V
+
+    .line 83
+    .line 84
+    .line 85
+    sget-object v1, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 86
+    .line 87
+    return-object v1
+.end method

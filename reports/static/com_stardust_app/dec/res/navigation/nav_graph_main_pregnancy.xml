@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation app:startDestination="@id/navigation_pregnancy_home"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_graph_pregnancy_home" />
+    <include app:graph="@navigation/nav_graph_calendar" />
+    <include app:graph="@navigation/nav_graph_symptoms" />
+    <include app:graph="@navigation/nav_graph_friends" />
+    <include app:graph="@navigation/nav_graph_pregnancy_profile" />
+</navigation>

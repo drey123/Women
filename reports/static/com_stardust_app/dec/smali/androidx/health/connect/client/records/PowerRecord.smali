@@ -1,0 +1,647 @@
+.class public final Landroidx/health/connect/client/records/PowerRecord;
+.super Ljava/lang/Object;
+.source "PowerRecord.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/health/connect/client/records/PowerRecord$a;
+    }
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nPowerRecord.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PowerRecord.kt\nandroidx/health/connect/client/records/PowerRecord\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,163:1\n1#2:164\n*E\n"
+    }
+.end annotation
+
+
+# static fields
+.field public static final g:Landroidx/health/connect/client/units/Power;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# instance fields
+.field public final a:Ljava/time/Instant;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public final b:Ljava/time/ZoneOffset;
+
+.field public final c:Ljava/time/Instant;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public final d:Ljava/time/ZoneOffset;
+
+.field public final e:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Landroidx/health/connect/client/records/PowerRecord$a;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public final f:Lg1/c;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 10
+
+    .line 1
+    const v0, 0x186a0
+
+    .line 2
+    .line 3
+    .line 4
+    int-to-double v0, v0
+
+    .line 5
+    sget-object v4, Landroidx/health/connect/client/units/Power;->d:Landroidx/health/connect/client/units/Power$a;
+
+    .line 6
+    .line 7
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {v0, v1}, Landroidx/health/connect/client/units/Power$a;->a(D)Landroidx/health/connect/client/units/Power;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    sput-object v0, Landroidx/health/connect/client/records/PowerRecord;->g:Landroidx/health/connect/client/units/Power;
+
+    .line 15
+    .line 16
+    sget-object v0, Landroidx/health/connect/client/aggregate/AggregateMetric$AggregationType;->c:Landroidx/health/connect/client/aggregate/AggregateMetric$AggregationType;
+
+    .line 17
+    .line 18
+    new-instance v2, Landroidx/health/connect/client/records/PowerRecord$Companion$POWER_AVG$1;
+
+    .line 19
+    .line 20
+    const-string v7, "watts(D)Landroidx/health/connect/client/units/Power;"
+
+    .line 21
+    .line 22
+    const/4 v8, 0x0
+
+    .line 23
+    const/4 v3, 0x1
+
+    .line 24
+    const-class v5, Landroidx/health/connect/client/units/Power$a;
+
+    .line 25
+    .line 26
+    const-string v6, "watts"
+
+    .line 27
+    .line 28
+    invoke-direct/range {v2 .. v8}, Lkotlin/jvm/internal/FunctionReferenceImpl;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 29
+    .line 30
+    .line 31
+    const-string v1, "PowerSeries"
+
+    .line 32
+    .line 33
+    const-string v9, "power"
+
+    .line 34
+    .line 35
+    invoke-static {v1, v0, v9, v2}, LW0/e;->b(Ljava/lang/String;Landroidx/health/connect/client/aggregate/AggregateMetric$AggregationType;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+
+    .line 36
+    .line 37
+    .line 38
+    sget-object v0, Landroidx/health/connect/client/aggregate/AggregateMetric$AggregationType;->d:Landroidx/health/connect/client/aggregate/AggregateMetric$AggregationType;
+
+    .line 39
+    .line 40
+    new-instance v2, Landroidx/health/connect/client/records/PowerRecord$Companion$POWER_MIN$1;
+
+    .line 41
+    .line 42
+    const-string v7, "watts(D)Landroidx/health/connect/client/units/Power;"
+
+    .line 43
+    .line 44
+    const/4 v8, 0x0
+
+    .line 45
+    const/4 v3, 0x1
+
+    .line 46
+    const-class v5, Landroidx/health/connect/client/units/Power$a;
+
+    .line 47
+    .line 48
+    const-string v6, "watts"
+
+    .line 49
+    .line 50
+    invoke-direct/range {v2 .. v8}, Lkotlin/jvm/internal/FunctionReferenceImpl;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-static {v1, v0, v9, v2}, LW0/e;->b(Ljava/lang/String;Landroidx/health/connect/client/aggregate/AggregateMetric$AggregationType;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+
+    .line 54
+    .line 55
+    .line 56
+    sget-object v0, Landroidx/health/connect/client/aggregate/AggregateMetric$AggregationType;->e:Landroidx/health/connect/client/aggregate/AggregateMetric$AggregationType;
+
+    .line 57
+    .line 58
+    new-instance v2, Landroidx/health/connect/client/records/PowerRecord$Companion$POWER_MAX$1;
+
+    .line 59
+    .line 60
+    const-string v7, "watts(D)Landroidx/health/connect/client/units/Power;"
+
+    .line 61
+    .line 62
+    const/4 v8, 0x0
+
+    .line 63
+    const/4 v3, 0x1
+
+    .line 64
+    const-class v5, Landroidx/health/connect/client/units/Power$a;
+
+    .line 65
+    .line 66
+    const-string v6, "watts"
+
+    .line 67
+    .line 68
+    invoke-direct/range {v2 .. v8}, Lkotlin/jvm/internal/FunctionReferenceImpl;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-static {v1, v0, v9, v2}, LW0/e;->b(Ljava/lang/String;Landroidx/health/connect/client/aggregate/AggregateMetric$AggregationType;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+
+    .line 72
+    .line 73
+    .line 74
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/time/Instant;Ljava/time/ZoneOffset;Ljava/time/Instant;Ljava/time/ZoneOffset;Ljava/util/List;Lg1/c;)V
+    .locals 1
+    .param p1    # Ljava/time/Instant;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p3    # Ljava/time/Instant;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p5    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p6    # Lg1/c;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/time/Instant;",
+            "Ljava/time/ZoneOffset;",
+            "Ljava/time/Instant;",
+            "Ljava/time/ZoneOffset;",
+            "Ljava/util/List<",
+            "Landroidx/health/connect/client/records/PowerRecord$a;",
+            ">;",
+            "Lg1/c;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "startTime"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "endTime"
+
+    .line 7
+    .line 8
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const-string v0, "samples"
+
+    .line 12
+    .line 13
+    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v0, "metadata"
+
+    .line 17
+    .line 18
+    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 22
+    .line 23
+    .line 24
+    iput-object p1, p0, Landroidx/health/connect/client/records/PowerRecord;->a:Ljava/time/Instant;
+
+    .line 25
+    .line 26
+    iput-object p2, p0, Landroidx/health/connect/client/records/PowerRecord;->b:Ljava/time/ZoneOffset;
+
+    .line 27
+    .line 28
+    iput-object p3, p0, Landroidx/health/connect/client/records/PowerRecord;->c:Ljava/time/Instant;
+
+    .line 29
+    .line 30
+    iput-object p4, p0, Landroidx/health/connect/client/records/PowerRecord;->d:Ljava/time/ZoneOffset;
+
+    .line 31
+    .line 32
+    iput-object p5, p0, Landroidx/health/connect/client/records/PowerRecord;->e:Ljava/util/List;
+
+    .line 33
+    .line 34
+    iput-object p6, p0, Landroidx/health/connect/client/records/PowerRecord;->f:Lg1/c;
+
+    .line 35
+    .line 36
+    invoke-virtual {p1, p3}, Ljava/time/Instant;->isAfter(Ljava/time/Instant;)Z
+
+    .line 37
+    .line 38
+    .line 39
+    move-result p1
+
+    .line 40
+    if-nez p1, :cond_0
+
+    .line 41
+    .line 42
+    return-void
+
+    .line 43
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 44
+    .line 45
+    const-string p2, "startTime must not be after endTime."
+
+    .line 46
+    .line 47
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 48
+    .line 49
+    .line 50
+    throw p1
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Landroidx/health/connect/client/records/PowerRecord;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Landroidx/health/connect/client/records/PowerRecord;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, Landroidx/health/connect/client/records/PowerRecord;->a:Ljava/time/Instant;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, Landroidx/health/connect/client/records/PowerRecord;->a:Ljava/time/Instant;
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p1, Landroidx/health/connect/client/records/PowerRecord;->b:Ljava/time/ZoneOffset;
+
+    .line 25
+    .line 26
+    iget-object v3, p0, Landroidx/health/connect/client/records/PowerRecord;->b:Ljava/time/ZoneOffset;
+
+    .line 27
+    .line 28
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    if-nez v1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    iget-object v1, p1, Landroidx/health/connect/client/records/PowerRecord;->c:Ljava/time/Instant;
+
+    .line 36
+    .line 37
+    iget-object v3, p0, Landroidx/health/connect/client/records/PowerRecord;->c:Ljava/time/Instant;
+
+    .line 38
+    .line 39
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v1
+
+    .line 43
+    if-nez v1, :cond_4
+
+    .line 44
+    .line 45
+    return v2
+
+    .line 46
+    :cond_4
+    iget-object v1, p1, Landroidx/health/connect/client/records/PowerRecord;->d:Ljava/time/ZoneOffset;
+
+    .line 47
+    .line 48
+    iget-object v3, p0, Landroidx/health/connect/client/records/PowerRecord;->d:Ljava/time/ZoneOffset;
+
+    .line 49
+    .line 50
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v1
+
+    .line 54
+    if-nez v1, :cond_5
+
+    .line 55
+    .line 56
+    return v2
+
+    .line 57
+    :cond_5
+    iget-object v1, p1, Landroidx/health/connect/client/records/PowerRecord;->e:Ljava/util/List;
+
+    .line 58
+    .line 59
+    iget-object v3, p0, Landroidx/health/connect/client/records/PowerRecord;->e:Ljava/util/List;
+
+    .line 60
+    .line 61
+    invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v1
+
+    .line 65
+    if-nez v1, :cond_6
+
+    .line 66
+    .line 67
+    return v2
+
+    .line 68
+    :cond_6
+    iget-object p1, p1, Landroidx/health/connect/client/records/PowerRecord;->f:Lg1/c;
+
+    .line 69
+    .line 70
+    iget-object v1, p0, Landroidx/health/connect/client/records/PowerRecord;->f:Lg1/c;
+
+    .line 71
+    .line 72
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 73
+    .line 74
+    .line 75
+    move-result p1
+
+    .line 76
+    if-nez p1, :cond_7
+
+    .line 77
+    .line 78
+    return v2
+
+    .line 79
+    :cond_7
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Landroidx/health/connect/client/records/PowerRecord;->a:Ljava/time/Instant;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/time/Instant;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const/16 v1, 0x1f
+
+    .line 8
+    .line 9
+    mul-int/2addr v0, v1
+
+    .line 10
+    const/4 v2, 0x0
+
+    .line 11
+    iget-object v3, p0, Landroidx/health/connect/client/records/PowerRecord;->b:Ljava/time/ZoneOffset;
+
+    .line 12
+    .line 13
+    if-eqz v3, :cond_0
+
+    .line 14
+    .line 15
+    invoke-virtual {v3}, Ljava/time/ZoneOffset;->hashCode()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v3
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    move v3, v2
+
+    .line 21
+    :goto_0
+    add-int/2addr v0, v3
+
+    .line 22
+    mul-int/2addr v0, v1
+
+    .line 23
+    iget-object v3, p0, Landroidx/health/connect/client/records/PowerRecord;->c:Ljava/time/Instant;
+
+    .line 24
+    .line 25
+    invoke-static {v3, v0, v1}, Landroid/support/v4/media/session/a;->a(Ljava/time/Instant;II)I
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v0
+
+    .line 29
+    iget-object v3, p0, Landroidx/health/connect/client/records/PowerRecord;->d:Ljava/time/ZoneOffset;
+
+    .line 30
+    .line 31
+    if-eqz v3, :cond_1
+
+    .line 32
+    .line 33
+    invoke-virtual {v3}, Ljava/time/ZoneOffset;->hashCode()I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v2
+
+    .line 37
+    :cond_1
+    add-int/2addr v0, v2
+
+    .line 38
+    mul-int/2addr v0, v1
+
+    .line 39
+    iget-object v2, p0, Landroidx/health/connect/client/records/PowerRecord;->e:Ljava/util/List;
+
+    .line 40
+    .line 41
+    invoke-static {v2, v0, v1}, LU1/q;->b(Ljava/util/List;II)I
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v0
+
+    .line 45
+    iget-object v1, p0, Landroidx/health/connect/client/records/PowerRecord;->f:Lg1/c;
+
+    .line 46
+    .line 47
+    invoke-virtual {v1}, Lg1/c;->hashCode()I
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v1
+
+    .line 51
+    add-int/2addr v1, v0
+
+    .line 52
+    return v1
+.end method

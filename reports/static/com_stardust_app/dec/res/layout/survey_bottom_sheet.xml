@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:paddingTop="8.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Title Text" android:textAlignment="center" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" style="@style/TitleTextStyle" />
+    <TextView android:id="@id/message" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Message" android:textAlignment="center" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" style="@style/MessageTextStyle" />
+    <ListView android:id="@id/surveyListView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

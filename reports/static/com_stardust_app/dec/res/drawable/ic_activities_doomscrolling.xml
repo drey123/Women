@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M24,30h80v68h-80z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__0" android:pathData="M37.34,98L24,91.2V77.6L37.34,84.4V98Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__1" android:pathData="M37.34,98L50.66,91.2V77.6L37.34,84.4V98Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__2" android:pathData="M24,77.6L37.34,70.8L50.66,77.6L37.34,84.4L24,77.6Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__3" android:pathData="M64,98L50.66,91.2V77.6L64,84.4V98Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__4" android:pathData="M64,98L77.34,91.2V77.6L64,84.4V98Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__5" android:pathData="M50.66,77.6L64,70.8L77.34,77.6L64,84.4L50.66,77.6Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__6" android:pathData="M90.66,98L77.34,91.2V77.6L90.66,84.4V98Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__7" android:pathData="M90.66,98L104,91.2V77.6L90.66,84.4V98Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__8" android:pathData="M77.34,77.6L90.66,70.8L104,77.6L90.66,84.4L77.34,77.6Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__9" android:pathData="M50.66,77.6L37.34,70.8V57.2L50.66,64V77.6Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__10" android:pathData="M50.66,77.6L64,70.8V57.2L50.66,64V77.6Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__11" android:pathData="M37.34,57.2L50.66,50.4L64,57.2L50.66,64L37.34,57.2Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__12" android:pathData="M77.34,77.6L64,70.8V57.2L77.34,64V77.6Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__13" android:pathData="M77.34,77.6L90.66,70.8V57.2L77.34,64V77.6Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__14" android:pathData="M64,57.2L77.34,50.4L90.66,57.2L77.34,64L64,57.2Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__15" android:pathData="M64,57.2L50.66,50.4V36.8L64,43.6V57.2Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__16" android:pathData="M64,57.2L77.34,50.4V36.8L64,43.6V57.2Z" />
+        <path android:fillColor="@drawable/$ic_activities_doomscrolling__17" android:pathData="M50.66,36.8L64,30L77.34,36.8L64,43.6L50.66,36.8Z" />
+    </group>
+</vector>

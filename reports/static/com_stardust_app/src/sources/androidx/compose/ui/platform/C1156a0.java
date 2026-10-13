@@ -1,0 +1,106 @@
+package androidx.compose.ui.platform;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.graphics.Point;
+import android.graphics.Rect;
+import android.view.Display;
+import android.view.DisplayCutout;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: renamed from: androidx.compose.ui.platform.a0, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: AndroidWindowInfo.android.kt */
+/* JADX INFO: loaded from: classes.dex */
+public final class C1156a0 implements Y {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    @NotNull
+    public static final C1156a0 f11785a = new C1156a0();
+
+    @Override // androidx.compose.ui.platform.Y
+    @SuppressLint({"BanUncheckedReflection", "BlockedPrivateApi"})
+    @NotNull
+    public final Rect a(@NotNull Activity activity) throws Exception {
+        DisplayCutout displayCutout;
+        Rect rect = new Rect();
+        Configuration configuration = activity.getResources().getConfiguration();
+        try {
+            Field declaredField = Configuration.class.getDeclaredField("windowConfiguration");
+            declaredField.setAccessible(true);
+            Object obj = declaredField.get(configuration);
+            if (activity.isInMultiWindowMode()) {
+                Object objInvoke = obj.getClass().getDeclaredMethod("getBounds", new Class[0]).invoke(obj, new Object[0]);
+                Intrinsics.checkNotNull(objInvoke, "null cannot be cast to non-null type android.graphics.Rect");
+                rect.set((Rect) objInvoke);
+            } else {
+                Object objInvoke2 = obj.getClass().getDeclaredMethod("getAppBounds", new Class[0]).invoke(obj, new Object[0]);
+                Intrinsics.checkNotNull(objInvoke2, "null cannot be cast to non-null type android.graphics.Rect");
+                rect.set((Rect) objInvoke2);
+            }
+        } catch (Exception e10) {
+            if (!(e10 instanceof NoSuchFieldException ? true : e10 instanceof NoSuchMethodException ? true : e10 instanceof IllegalAccessException ? true : e10 instanceof InvocationTargetException)) {
+                throw e10;
+            }
+            activity.getWindowManager().getDefaultDisplay().getRectSize(rect);
+        }
+        Display defaultDisplay = activity.getWindowManager().getDefaultDisplay();
+        Point point = new Point();
+        defaultDisplay.getRealSize(point);
+        if (!activity.isInMultiWindowMode()) {
+            Resources resources = activity.getResources();
+            int identifier = resources.getIdentifier("navigation_bar_height", "dimen", "android");
+            int dimensionPixelSize = identifier > 0 ? resources.getDimensionPixelSize(identifier) : 0;
+            int i10 = rect.bottom + dimensionPixelSize;
+            if (i10 == point.y) {
+                rect.bottom = i10;
+            } else {
+                int i11 = rect.right + dimensionPixelSize;
+                if (i11 == point.x) {
+                    rect.right = i11;
+                } else if (rect.left == dimensionPixelSize) {
+                    rect.left = 0;
+                }
+            }
+        }
+        if ((rect.width() < point.x || rect.height() < point.y) && !activity.isInMultiWindowMode()) {
+            try {
+                Constructor<?> constructor = Class.forName("android.view.DisplayInfo").getConstructor(new Class[0]);
+                constructor.setAccessible(true);
+                Object objNewInstance = constructor.newInstance(new Object[0]);
+                Method declaredMethod = defaultDisplay.getClass().getDeclaredMethod("getDisplayInfo", objNewInstance.getClass());
+                declaredMethod.setAccessible(true);
+                declaredMethod.invoke(defaultDisplay, objNewInstance);
+                Field declaredField2 = objNewInstance.getClass().getDeclaredField("displayCutout");
+                declaredField2.setAccessible(true);
+                Object obj2 = declaredField2.get(objNewInstance);
+                displayCutout = obj2 instanceof DisplayCutout ? (DisplayCutout) obj2 : null;
+            } catch (Exception e11) {
+                if (!(e11 instanceof ClassNotFoundException ? true : e11 instanceof NoSuchMethodException ? true : e11 instanceof NoSuchFieldException ? true : e11 instanceof IllegalAccessException ? true : e11 instanceof InvocationTargetException ? true : e11 instanceof InstantiationException)) {
+                    throw e11;
+                }
+            }
+            if (displayCutout != null) {
+                if (rect.left == displayCutout.getSafeInsetLeft()) {
+                    rect.left = 0;
+                }
+                if (point.x - rect.right == displayCutout.getSafeInsetRight()) {
+                    rect.right = displayCutout.getSafeInsetRight() + rect.right;
+                }
+                if (rect.top == displayCutout.getSafeInsetTop()) {
+                    rect.top = 0;
+                }
+                if (point.y - rect.bottom == displayCutout.getSafeInsetBottom()) {
+                    rect.bottom = displayCutout.getSafeInsetBottom() + rect.bottom;
+                }
+            }
+        }
+        return rect;
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="54.0dp" android:width="76.0dp" android:viewportWidth="76.0" android:viewportHeight="54.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_exercise_follicular__0" android:pathData="M69.001,37.427C69.001,45.5 62.456,52.045 54.383,52.045C46.31,52.045 39.765,45.5 39.765,37.427C39.765,29.353 46.31,22.809 54.383,22.809C62.456,22.809 69.001,29.353 69.001,37.427Z" />
+    <path android:fillColor="@drawable/$ic_exercise_follicular__1" android:pathData="M2.101,49.423L4.045,51.982L38.731,25.624L57.371,34.306L58.728,31.393L41.624,23.426L56.311,12.265L54.366,9.706L2.101,49.423Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_exercise_follicular__2" android:pathData="M64.567,3.057L61.498,0.75L55.355,8.924H44.512V13.01H57.087V13.01L57.087,13.01L64.567,3.057Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_exercise_follicular__3" android:pathData="M23.4,34.08l-3.205,1.195l-7.802,-20.923l3.205,-1.195z" />
+    <path android:fillColor="@drawable/$ic_exercise_follicular__4" android:pathData="M13.036,8.875C7.707,8.875 7.918,11.206 8.044,15.005C8.152,18.284 12.072,17.154 16.218,17.049C20.944,16.928 25.963,17.478 25.963,15.817C25.963,13.117 19.819,8.875 13.036,8.875Z" />
+    <path android:fillColor="@drawable/$ic_exercise_follicular__5" android:pathData="M17.475,41.304m-10.06,0a10.06,10.06 0,1 1,20.12 0a10.06,10.06 0,1 1,-20.12 0" />
+    <path android:fillColor="@drawable/$ic_exercise_follicular__6" android:pathData="M3.958,49.792m-3.458,0a3.458,3.458 0,1 1,6.916 0a3.458,3.458 0,1 1,-6.916 0" />
+    <path android:fillColor="@drawable/$ic_exercise_follicular__7" android:pathData="M17.476,45.146l0.026,-3.214l37.811,0.304l-0.026,3.214z" />
+    <path android:fillColor="@drawable/$ic_exercise_follicular__8" android:pathData="M54.383,37.741m-7.702,0a7.702,7.702 0,1 1,15.404 0a7.702,7.702 0,1 1,-15.404 0" />
+    <path android:fillColor="@drawable/$ic_exercise_follicular__9" android:pathData="M17.319,41.461m-4.558,0a4.558,4.558 0,1 1,9.117 0a4.558,4.558 0,1 1,-9.117 0" />
+</vector>

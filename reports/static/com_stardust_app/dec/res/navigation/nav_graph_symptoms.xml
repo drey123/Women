@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navigation_symptoms" app:startDestination="@id/add_symptoms"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_graph_pregnancy" />
+    <fragment android:name="com.stardust.app.presentation.main.addsymptoms.AddSymptomsFragment" android:id="@id/add_symptoms">
+        <action android:id="@id/action_add_symptoms_to_navigation_pregnancy" app:destination="@id/navigation_pregnancy">
+            <argument android:name="flowType" app:argType="com.stardust.app.presentation.settings.FlowType" />
+        </action>
+    </fragment>
+</navigation>

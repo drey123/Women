@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_feelings_sad__0" android:pathData="M102.46,55.82C100.92,49.54 96.16,44.66 90.42,43.59C86.96,42.94 83.68,43.61 80.88,45.22C77.68,37.44 70.66,32 62.48,32C54.88,32 48.26,36.67 44.8,43.61C39.32,44.68 34.88,49.02 33.1,54.77C32.76,54.73 32.44,54.66 32.08,54.66C28.5,54.66 25.38,56.72 23.56,59.85C22.02,62.49 23.84,66 26.66,66H99.28C101.1,66 102.64,64.5 102.88,62.49C103.12,60.36 103.02,58.13 102.46,55.82Z" />
+    <path android:fillColor="@drawable/$ic_feelings_sad__1" android:pathData="M60.76,73.9C60.76,78.74 57.23,82.66 52.88,82.66C48.53,82.66 45,78.74 45,73.9C45,69.06 52.88,56 52.88,56C52.88,56 60.76,69.06 60.76,73.9Z" />
+    <path android:fillColor="@drawable/$ic_feelings_sad__2" android:pathData="M85.76,87.9C85.76,92.74 82.23,96.66 77.88,96.66C73.53,96.66 70,92.74 70,87.9C70,83.06 77.88,70 77.88,70C77.88,70 85.76,83.06 85.76,87.9Z" />
+</vector>

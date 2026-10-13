@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M40,30h48.05v68h-48.05z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__0" android:pathData="M40,79.3L46.19,82.37L46.27,78.89L40,79.3Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__1" android:pathData="M86.46,71.78L83,71.34V73L86.46,71.78Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__2" android:pathData="M79.23,30H52.28C51.97,30 51.65,30.06 51.37,30.19L47.27,31.85C46.51,32.17 46,32.9 46,33.72V95.94C46,97.08 46.92,98 48.06,98H81.48C82.62,98 83.53,97.08 83.53,95.94V33.46C83.53,32.79 83.2,32.15 82.62,31.76L80.56,30.41C80.17,30.15 79.68,30 79.21,30H79.23Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__3" android:pathData="M79.23,30H52.28C51.97,30 51.65,30.06 51.37,30.19L47.27,31.85C46.51,32.17 46,32.9 46,33.72V95.94C46,97.08 46.92,98 48.06,98H81.48C82.62,98 83.53,97.08 83.53,95.94V33.46C83.53,32.79 83.2,32.15 82.62,31.76L80.56,30.41C80.17,30.15 79.68,30 79.21,30H79.23Z" android:strokeAlpha="0.5" android:fillAlpha="0.5" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__4" android:pathData="M48,71.7L48,86.18C48,86.63 48.15,87 48.34,87L58.11,87C58.3,87 58.45,86.63 58.45,86.18L58.45,71.7C58.45,71.25 58.3,70.88 58.11,70.88L48.34,70.88C48.15,70.88 48,71.25 48,71.7Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__5" android:pathData="M48,53.74L48,68.23C48,68.68 48.15,69.04 48.34,69.04L58.11,69.04C58.3,69.04 58.45,68.68 58.45,68.23L58.45,53.74C58.45,53.29 58.3,52.93 58.11,52.93L48.34,52.93C48.15,52.93 48,53.29 48,53.74Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__6" android:pathData="M48,35.82L48,50.3C48,50.75 48.15,51.12 48.34,51.12L58.11,51.12C58.3,51.12 58.45,50.75 58.45,50.3L58.45,35.82C58.45,35.37 58.3,35 58.11,35L48.34,35C48.15,35 48,35.37 48,35.82Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__7" android:pathData="M59.28,71.7L59.28,86.18C59.28,86.63 59.43,87 59.62,87L69.39,87C69.58,87 69.73,86.63 69.73,86.18L69.73,71.7C69.73,71.25 69.58,70.88 69.39,70.88L59.62,70.88C59.43,70.88 59.28,71.25 59.28,71.7Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__8" android:pathData="M59.28,53.74L59.28,68.23C59.28,68.68 59.43,69.04 59.62,69.04L69.39,69.04C69.58,69.04 69.73,68.68 69.73,68.23L69.73,53.74C69.73,53.29 69.58,52.93 69.39,52.93L59.62,52.93C59.43,52.93 59.28,53.29 59.28,53.74Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__9" android:pathData="M59.28,35.82L59.28,50.3C59.28,50.75 59.43,51.12 59.62,51.12L69.39,51.12C69.58,51.12 69.73,50.75 69.73,50.3L69.73,35.82C69.73,35.37 69.58,35 69.39,35L59.62,35C59.43,35 59.28,35.37 59.28,35.82Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__10" android:pathData="M70.55,71.7L70.55,86.18C70.55,86.63 70.7,87 70.89,87L80.66,87C80.85,87 81,86.63 81,86.18L81,71.7C81,71.25 80.85,70.88 80.66,70.88L70.89,70.88C70.7,70.88 70.55,71.25 70.55,71.7Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__11" android:pathData="M70.55,53.74L70.55,68.23C70.55,68.68 70.7,69.04 70.89,69.04L80.66,69.04C80.85,69.04 81,68.68 81,68.23L81,53.74C81,53.29 80.85,52.93 80.66,52.93L70.89,52.93C70.7,52.93 70.55,53.29 70.55,53.74Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__12" android:pathData="M70.55,35.82L70.55,50.3C70.55,50.75 70.7,51.12 70.89,51.12L80.66,51.12C80.85,51.12 81,50.75 81,50.3L81,35.82C81,35.37 80.85,35 80.66,35L70.89,35C70.7,35 70.55,35.37 70.55,35.82Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__13" android:pathData="M45.95,75.74L83.72,78.4V95.94C83.72,97.08 82.81,98 81.67,98H48C46.86,98 45.95,97.08 45.95,95.94V75.74Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__14" android:pathData="M44.27,70.91C44.97,69.54 46.59,68.92 48.03,69.47L68.73,77.47L40,79.3L44.27,70.91Z" />
+        <path android:fillColor="@drawable/$ic_cravings_chocolate__15" android:pathData="M68.73,77.47L86.46,71.78L88.05,81.79L83.67,84.72L78.82,80.02C78.09,79.31 77.05,79.03 76.06,79.25L70.13,80.63L68.73,77.47Z" />
+    </group>
+</vector>

@@ -1,0 +1,29 @@
+package com.android.billingclient.api;
+
+import android.text.TextUtils;
+import androidx.annotation.NonNull;
+
+/* JADX INFO: compiled from: com.android.billingclient:billing@@8.0.0 */
+/* JADX INFO: loaded from: classes.dex */
+@Deprecated
+public final class SkuDetails {
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof SkuDetails)) {
+            return false;
+        }
+        ((SkuDetails) obj).getClass();
+        return TextUtils.equals(null, null);
+    }
+
+    public final int hashCode() {
+        throw null;
+    }
+
+    @NonNull
+    public final String toString() {
+        return "SkuDetails: ".concat("null");
+    }
+}

@@ -1,0 +1,271 @@
+.class public Landroidx/credentials/playservices/controllers/a;
+.super Ljava/lang/Object;
+.source "CredentialProviderBaseController.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/credentials/playservices/controllers/a$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Landroidx/credentials/playservices/controllers/a$a;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public static final b:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public static final c:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroidx/credentials/playservices/controllers/a$a;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroidx/credentials/playservices/controllers/a$a;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Landroidx/credentials/playservices/controllers/a;->a:Landroidx/credentials/playservices/controllers/a$a;
+
+    .line 7
+    .line 8
+    const/4 v0, 0x7
+
+    .line 9
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    const/16 v1, 0x14
+
+    .line 14
+    .line 15
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    filled-new-array {v0, v1}, [Ljava/lang/Integer;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v0
+
+    .line 23
+    const-string v1, "elements"
+
+    .line 24
+    .line 25
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-static {v0}, Lkotlin/collections/q;->S([Ljava/lang/Object;)Ljava/util/Set;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    sput-object v0, Landroidx/credentials/playservices/controllers/a;->b:Ljava/util/Set;
+
+    .line 33
+    .line 34
+    const/4 v0, 0x1
+
+    .line 35
+    sput v0, Landroidx/credentials/playservices/controllers/a;->c:I
+
+    .line 36
+    .line 37
+    return-void
+.end method
+
+.method public static a(Landroid/os/ResultReceiver;Landroid/content/Intent;Ljava/lang/String;)V
+    .locals 1
+    .param p0    # Landroid/os/ResultReceiver;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/content/Intent;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "resultReceiver"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "hiddenIntent"
+
+    .line 7
+    .line 8
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const-string v0, "typeTag"
+
+    .line 12
+    .line 13
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v0, "TYPE"
+
+    .line 17
+    .line 18
+    invoke-virtual {p1, v0, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 19
+    .line 20
+    .line 21
+    const-string p2, "ACTIVITY_REQUEST_CODE"
+
+    .line 22
+    .line 23
+    sget v0, Landroidx/credentials/playservices/controllers/a;->c:I
+
+    .line 24
+    .line 25
+    invoke-virtual {p1, p2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    .line 26
+    .line 27
+    .line 28
+    const-string p2, "RESULT_RECEIVER"
+
+    .line 29
+    .line 30
+    invoke-static {p0}, Landroidx/credentials/playservices/controllers/a;->b(Landroid/os/ResultReceiver;)Landroid/os/ResultReceiver;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object p0
+
+    .line 34
+    invoke-virtual {p1, p2, p0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 35
+    .line 36
+    .line 37
+    const/high16 p0, 0x10000
+
+    .line 38
+    .line 39
+    invoke-virtual {p1, p0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    .line 40
+    .line 41
+    .line 42
+    return-void
+.end method
+
+.method public static b(Landroid/os/ResultReceiver;)Landroid/os/ResultReceiver;
+    .locals 2
+
+    .line 1
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const-string v1, "obtain(...)"
+
+    .line 6
+    .line 7
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 11
+    .line 12
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    invoke-virtual {p0, v0, v1}, Landroid/os/ResultReceiver;->writeToParcel(Landroid/os/Parcel;I)V
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->setDataPosition(I)V
+
+    .line 18
+    .line 19
+    .line 20
+    sget-object p0, Landroid/os/ResultReceiver;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 21
+    .line 22
+    invoke-interface {p0, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p0
+
+    .line 26
+    check-cast p0, Landroid/os/ResultReceiver;
+
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    .line 29
+    .line 30
+    .line 31
+    return-object p0
+.end method

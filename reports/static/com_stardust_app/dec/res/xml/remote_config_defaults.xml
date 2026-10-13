@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaults>
+    <entry>
+        <key>enableDailyDecodeAndroid</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>useCaseErrorConfig</key>
+        <value>{"UpdatePeriodLength":true,"LoadLogsData":false}</value>
+    </entry>
+    <entry>
+        <key>enableBabyRegistryAndroid</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>useLocalHormoneGraphImagesAndroid</key>
+        <value>true</value>
+    </entry>
+</defaults>

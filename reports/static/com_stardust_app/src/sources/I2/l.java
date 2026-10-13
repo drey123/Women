@@ -1,0 +1,7 @@
+package I2;
+
+/* JADX INFO: compiled from: Initializable.java */
+/* JADX INFO: loaded from: classes.dex */
+public interface l {
+    void initialize();
+}

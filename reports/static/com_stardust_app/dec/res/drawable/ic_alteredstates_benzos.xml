@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_alteredstates_benzos__0" android:pathData="M80.67,56.44C80.67,59.73 70.07,62.38 56.99,62.38C43.92,62.38 33.34,59.73 33.34,56.44V46.96H80.67V56.44Z" />
+    <path android:fillColor="@drawable/$ic_alteredstates_benzos__1" android:pathData="M82.02,54.67C82.02,58.14 70.82,60.94 57.01,60.94C43.2,60.94 32,58.14 32,54.67V44.66H82.02V54.69V54.67Z" />
+    <path android:fillColor="@drawable/$ic_alteredstates_benzos__2" android:pathData="M57.01,50.93C70.83,50.93 82.02,48.12 82.02,44.66C82.02,41.19 70.83,38.39 57.01,38.39C43.2,38.39 32,41.19 32,44.66C32,48.12 43.2,50.93 57.01,50.93Z" />
+    <path android:fillColor="@drawable/$ic_alteredstates_benzos__3" android:pathData="M79.05,42.68C79.05,45.95 69.19,48.61 57.01,48.61C44.84,48.61 34.98,45.95 34.98,42.68C34.98,39.42 51.98,38 56.63,38C61.75,38 79.05,39.42 79.05,42.68Z" />
+    <path android:fillColor="@drawable/$ic_alteredstates_benzos__4" android:pathData="M94.64,83.24C94.64,86.53 84.04,89.18 70.97,89.18C57.89,89.18 47.3,86.53 47.3,83.24V73.76H94.62V83.24H94.64Z" />
+    <path android:fillColor="@drawable/$ic_alteredstates_benzos__5" android:pathData="M96,81.49C96,84.96 84.8,87.76 70.99,87.76C57.18,87.76 45.98,84.96 45.98,81.49V71.46H96V81.49Z" />
+    <path android:fillColor="@drawable/$ic_alteredstates_benzos__6" android:pathData="M70.99,77.75C84.8,77.75 96,74.94 96,71.48C96,68.01 84.8,65.2 70.99,65.2C57.17,65.2 45.98,68.01 45.98,71.48C45.98,74.94 57.17,77.75 70.99,77.75Z" />
+    <path android:fillColor="@drawable/$ic_alteredstates_benzos__7" android:pathData="M93.02,69.5C93.02,72.77 83.16,75.42 70.99,75.42C58.81,75.42 48.95,72.77 48.95,69.5C48.95,66.24 65.96,64.82 70.6,64.82C75.73,64.82 93.02,66.24 93.02,69.5Z" />
+</vector>

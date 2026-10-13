@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="129.0dp" android:width="128.0dp" android:viewportWidth="128.0" android:viewportHeight="129.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M64,0.46L64,0.46A64,64 0,0 1,128 64.46L128,64.46A64,64 0,0 1,64 128.46L64,128.46A64,64 0,0 1,-0 64.46L-0,64.46A64,64 0,0 1,64 0.46z" />
+        <path android:fillColor="@drawable/$ic_pregnancy_legcramps__0" android:pathData="M59.04,37.47H46.52C44.66,37.47 43.25,39.14 43.57,40.96C43.78,42.23 44.06,43.75 44.4,45.34L61.75,44.69C61.87,43.19 61.98,41.79 62.03,40.57C62.1,38.88 60.74,37.47 59.03,37.47H59.04Z" />
+        <path android:fillColor="@drawable/$ic_pregnancy_legcramps__1" android:pathData="M51.25,72.04C51.66,73.22 51.84,74.48 51.84,75.73L41.24,87.17C41.24,87.17 37.51,91.39 43,91.39H52C52,91.39 56.82,89.77 57.17,87.17C57.53,84.57 61.32,83.89 62.9,81.63C64.47,79.37 64.63,77.81 61.68,70.89C59.8,66.49 60.67,56.7 61.39,48.54L45.23,49.26C46.75,56.2 48.92,65.15 51.24,72.04H51.25Z" />
+        <path android:fillColor="@drawable/$ic_pregnancy_legcramps__2" android:pathData="M87.06,40.68V39.44C87.06,37.71 85.6,36.34 83.87,36.46L72.93,37.2C71.34,37.31 70.12,38.63 70.14,40.24C70.14,40.98 70.17,41.88 70.26,42.92L86.45,45.04C86.87,42.36 87.06,40.66 87.06,40.66V40.68Z" />
+        <path android:fillColor="@drawable/$ic_pregnancy_legcramps__3" android:pathData="M85.81,48.86L70.69,46.98C70.72,47.2 70.74,47.39 70.78,47.62C71.82,54.72 70.26,71.17 69.04,72.39C68.37,73.06 67.91,74.37 67.65,75.43C67.38,76.42 67.47,77.44 67.88,78.36C68.48,79.68 69.87,81.52 71.13,83.64C73.39,87.45 68.71,91.46 78.62,91.46C88.53,91.46 90.88,90.21 84.31,85.78C84.24,85.72 84.18,85.69 84.11,85.63C79.45,82.42 77.91,76.31 80.05,71.07C82.77,64.43 84.7,55.35 85.83,48.84L85.81,48.86Z" />
+        <path android:fillColor="@drawable/$ic_pregnancy_legcramps__4" android:pathData="M44.4,45.34C44.65,46.54 44.93,47.87 45.25,49.26L61.41,48.54C61.54,47.2 61.66,45.91 61.75,44.69L44.4,45.34Z" />
+        <path android:fillColor="@drawable/$ic_pregnancy_legcramps__5" android:pathData="M86.43,45.06L70.25,42.94C70.33,44.09 70.47,45.45 70.69,46.98L85.81,48.86C86.06,47.46 86.27,46.17 86.43,45.06Z" />
+        <path android:fillColor="@drawable/$ic_pregnancy_legcramps__6" android:pathData="M77.31,64.17L83.61,57.88L81.89,56.77L87.45,51.15L86.18,50.54L94.08,42.85L98.79,48.18L93.26,53.02L94.55,53.67L88.26,59.9L89.88,60.63L77.31,64.17Z" />
+        <path android:fillColor="@drawable/$ic_pregnancy_legcramps__7" android:pathData="M47.28,73.31L55,80.24L40.15,76.9L41.99,75.95L34.28,69.09L35.73,68.25L42.39,65.71L49.2,71.92L47.28,73.31Z" />
+        <path android:fillColor="@drawable/$ic_pregnancy_legcramps__8" android:pathData="M43.62,53.54L48.05,57.51L39.53,55.6L40.59,55.06L36.16,51.12L37,50.64L40.81,49.18L44.72,52.74L43.62,53.54Z" />
+        <path android:fillColor="@drawable/$ic_pregnancy_legcramps__9" android:pathData="M66.65,53.83L62.88,60.94L72.8,54.54L71.21,54.34L74.99,47.28L73.7,47.06L68.18,46.99L64.88,53.33L66.65,53.83Z" />
+    </group>
+</vector>

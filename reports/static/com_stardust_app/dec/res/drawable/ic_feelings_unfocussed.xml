@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M27,33h67v67h-67z" />
+        <path android:fillColor="@drawable/$ic_feelings_unfocussed__0" android:pathData="M78.17,55.54C78.17,46.64 87.06,47.07 87.06,39.81C87.06,36.04 75.11,32.98 60.38,32.98C45.65,32.98 33.7,36.06 33.7,39.83C33.7,39.83 33.7,39.9 33.74,40.03C33.75,40.2 33.77,40.36 33.84,40.54C35,46 43.7,82.23 69.27,82.23C82.54,82.23 69.27,100.02 69.27,100.02C69.27,100.02 82.13,100.02 85.99,80.86C87.17,75.01 85.42,68.98 81.58,64.43C79.75,62.26 78.17,59.31 78.17,55.55V55.54Z" />
+        <path android:fillColor="@drawable/$ic_feelings_unfocussed__1" android:pathData="M60.38,46.66C75.11,46.66 87.06,43.6 87.06,39.83C87.06,36.06 75.11,33 60.38,33C45.64,33 33.7,36.06 33.7,39.83C33.7,43.6 45.64,46.66 60.38,46.66Z" />
+        <path android:fillColor="@drawable/$ic_feelings_unfocussed__2" android:pathData="M60.38,46.64C71.93,46.64 81.3,44.24 81.3,41.29C81.3,38.33 71.93,35.93 60.38,35.93C48.83,35.93 39.46,38.33 39.46,41.29C39.46,44.24 48.83,46.64 60.38,46.64Z" />
+        <path android:fillColor="@drawable/$ic_feelings_unfocussed__3" android:pathData="M60.38,46.64C67.75,46.64 73.72,45.11 73.72,43.23C73.72,41.34 67.75,39.81 60.38,39.81C53.01,39.81 47.04,41.34 47.04,43.23C47.04,45.11 53.01,46.64 60.38,46.64Z" />
+        <path android:fillColor="@drawable/$ic_feelings_unfocussed__4" android:pathData="M60.38,46.64C63.5,46.64 66.04,46 66.04,45.2C66.04,44.41 63.5,43.76 60.38,43.76C57.26,43.76 54.72,44.41 54.72,45.2C54.72,46 57.26,46.64 60.38,46.64Z" />
+        <path android:fillColor="@drawable/$ic_feelings_unfocussed__5" android:pathData="M75.34,86.8C75.27,87.14 77.69,86.89 80.41,86.23C83.13,85.58 84.68,85.63 85.17,84.24C85.17,84.24 86.61,77.66 86.28,75.49C86.28,75.49 83.7,81.98 72.05,82.57C72.05,82.57 75.89,84.15 75.36,86.8H75.34Z" />
+        <path android:fillColor="@drawable/$ic_feelings_unfocussed__6" android:pathData="M69.27,100C69.27,100 72.54,100 76.26,97.55C74.82,96.78 73.47,95.94 72.33,95.18C70.82,97.92 69.27,99.98 69.27,99.98V100Z" />
+        <path android:fillColor="#ffb5e5" android:pathData="M80.39,49.24C80.32,49.33 80.23,49.42 80.16,49.52C80.25,49.43 80.32,49.33 80.39,49.24Z" />
+        <path android:fillColor="#ffb5e5" android:pathData="M35.98,48.58C36.01,48.67 36.08,48.78 36.12,48.87C36.01,48.53 35.89,48.17 35.8,47.85L35.98,48.58Z" />
+        <path android:fillColor="#ffb5e5" android:pathData="M80.39,49.24C80.39,49.24 80.48,49.13 80.53,49.08C80.53,49.08 80.44,49.19 80.39,49.24Z" />
+        <path android:fillColor="@drawable/$ic_feelings_unfocussed__7" android:pathData="M58.24,53.93C69.91,53.93 77.68,52.19 80.16,49.52C80.23,49.43 80.32,49.33 80.39,49.24C80.42,49.19 80.48,49.13 80.53,49.08C82.97,46.3 86.44,44.85 86.97,40.88C86.35,41.72 81.85,46.64 61.13,46.64C38.48,46.64 34.11,41.02 34.11,41.02L35.78,47.85C35.89,48.17 35.99,48.53 36.1,48.87C37.67,51.94 46.29,53.93 58.23,53.93H58.24Z" />
+        <path android:fillColor="@drawable/$ic_feelings_unfocussed__8" android:pathData="M83,66.62C83,66.62 79.46,62.6 78.43,58.13C77.68,63.77 73.23,72.96 50.87,74.46C51.19,74.71 51.82,75.59 52.12,75.71C53.62,76.3 59.69,77.06 68.35,74.66C77.01,72.25 83.59,68.66 83.02,66.62H83Z" />
+        <path android:fillColor="@drawable/$ic_feelings_unfocussed__9" android:pathData="M78.41,58.13C78.09,56.74 78.25,56.07 78.18,54.29C78.18,54.29 70,59.75 59.21,60.64C49.8,61.42 41.81,60.34 39.75,58.19C41.44,61.48 45.42,70.27 51.29,74.88C73.64,73.38 77.67,63.77 78.41,58.13Z" />
+        <path android:fillColor="@drawable/$ic_feelings_unfocussed__10" android:pathData="M44.27,66.51C44.27,66.51 60.27,70.37 72.03,62.01C72.03,62.01 62.55,71.21 47.52,71.11L44.27,66.51Z" />
+    </group>
+</vector>

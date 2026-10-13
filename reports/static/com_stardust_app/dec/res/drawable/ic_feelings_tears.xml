@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_feelings_tears__0" android:pathData="M104,63C104,63 86.1,83 64,83C41.9,83 24,63 24,63C24,63 41.9,43 64,43C86.1,43 104,63 104,63Z" />
+    <path android:fillColor="@drawable/$ic_feelings_tears__1" android:pathData="M104,63C104,63 86.1,83 64,83C41.9,83 24,63 24,63C24,63 41.9,43 64,43C86.1,43 104,63 104,63Z" />
+    <path android:fillColor="@drawable/$ic_feelings_tears__2" android:pathData="M64,83C75.05,83 84,74.05 84,63C84,51.95 75.05,43 64,43C52.95,43 44,51.95 44,63C44,74.05 52.95,83 64,83Z" />
+    <path android:fillColor="@drawable/$ic_feelings_tears__3" android:pathData="M64,83C75.05,83 84,74.05 84,63C84,51.95 75.05,43 64,43C52.95,43 44,51.95 44,63C44,74.05 52.95,83 64,83Z" />
+    <path android:fillColor="@drawable/$ic_feelings_tears__4" android:pathData="M64,69.66C67.68,69.66 70.66,66.68 70.66,63C70.66,59.32 67.68,56.34 64,56.34C60.32,56.34 57.34,59.32 57.34,63C57.34,66.68 60.32,69.66 64,69.66Z" />
+    <path android:fillColor="@drawable/$ic_feelings_tears__5" android:pathData="M60.94,67.64C62.32,67.64 63.44,66.52 63.44,65.14C63.44,63.76 62.32,62.64 60.94,62.64C59.56,62.64 58.44,63.76 58.44,65.14C58.44,66.52 59.56,67.64 60.94,67.64Z" />
+    <path android:fillColor="@drawable/$ic_feelings_tears__6" android:pathData="M67.08,60.88C68,60.88 68.74,60.14 68.74,59.22C68.74,58.3 68,57.56 67.08,57.56C66.16,57.56 65.42,58.3 65.42,59.22C65.42,60.14 66.16,60.88 67.08,60.88Z" />
+    <path android:fillColor="@drawable/$ic_feelings_tears__7" android:pathData="M97.76,84.9C97.76,89.74 94.23,93.66 89.88,93.66C85.53,93.66 82,89.74 82,84.9C82,80.06 89.88,67 89.88,67C89.88,67 97.76,80.06 97.76,84.9Z" />
+    <path android:fillColor="@drawable/$ic_feelings_tears__8" android:pathData="M97.76,84.9C97.76,89.74 94.23,93.66 89.88,93.66C85.53,93.66 82,89.74 82,84.9C82,80.06 89.88,67 89.88,67C89.88,67 97.76,80.06 97.76,84.9Z" />
+</vector>

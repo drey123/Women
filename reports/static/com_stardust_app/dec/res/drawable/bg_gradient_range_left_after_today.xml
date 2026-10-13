@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/ovulation_gradient_color_1_after_today" android:endColor="@color/ovulation_gradient_color_2_after_today" android:angle="0.0" />
+    <corners android:topLeftRadius="120.0dp" android:bottomLeftRadius="120.0dp" />
+</shape>

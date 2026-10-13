@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_flow_palepink__0" android:pathData="M92.5,34C95.26,34 97.5,31.76 97.5,29C97.5,26.24 95.26,24 92.5,24C89.74,24 87.5,26.24 87.5,29C87.5,31.76 89.74,34 92.5,34Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__1" android:pathData="M82.5,59C86.64,59 90,55.64 90,51.5C90,47.36 86.64,44 82.5,44C78.36,44 75,47.36 75,51.5C75,55.64 78.36,59 82.5,59Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__2" android:pathData="M102.5,69C102.5,71.76 100.26,74 97.5,74C94.74,74 92.5,71.76 92.5,69C92.5,66.24 94.74,64 97.5,64C100.26,64 102.5,66.24 102.5,69Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__3" android:pathData="M37.5,89C40.26,89 42.5,86.76 42.5,84C42.5,81.24 40.26,79 37.5,79C34.74,79 32.5,81.24 32.5,84C32.5,86.76 34.74,89 37.5,89Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__4" android:pathData="M37.5,99C37.5,101.76 35.26,104 32.5,104C29.74,104 27.5,101.76 27.5,99C27.5,96.24 29.74,94 32.5,94C35.26,94 37.5,96.24 37.5,99Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__5" android:pathData="M32.5,49C36.64,49 40,45.64 40,41.5C40,37.36 36.64,34 32.5,34C28.36,34 25,37.36 25,41.5C25,45.64 28.36,49 32.5,49Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__6" android:pathData="M57.5,64C57.5,69.52 53.02,74 47.5,74C41.98,74 37.5,69.52 37.5,64C37.5,58.48 41.98,54 47.5,54C53.02,54 57.5,58.48 57.5,64Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__7" android:pathData="M52.5,44C55.26,44 57.5,41.76 57.5,39C57.5,36.24 55.26,34 52.5,34C49.74,34 47.5,36.24 47.5,39C47.5,41.76 49.74,44 52.5,44Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__8" android:pathData="M97.5,94C97.5,99.52 93.02,104 87.5,104C81.98,104 77.5,99.52 77.5,94C77.5,88.48 81.98,84 87.5,84C93.02,84 97.5,88.48 97.5,94Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__9" android:pathData="M92.5,34C95.26,34 97.5,31.76 97.5,29C97.5,26.24 95.26,24 92.5,24C89.74,24 87.5,26.24 87.5,29C87.5,31.76 89.74,34 92.5,34Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__10" android:pathData="M82.5,59C86.64,59 90,55.64 90,51.5C90,47.36 86.64,44 82.5,44C78.36,44 75,47.36 75,51.5C75,55.64 78.36,59 82.5,59Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__11" android:pathData="M102.5,69C102.5,71.76 100.26,74 97.5,74C94.74,74 92.5,71.76 92.5,69C92.5,66.24 94.74,64 97.5,64C100.26,64 102.5,66.24 102.5,69Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__12" android:pathData="M37.5,89C40.26,89 42.5,86.76 42.5,84C42.5,81.24 40.26,79 37.5,79C34.74,79 32.5,81.24 32.5,84C32.5,86.76 34.74,89 37.5,89Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__13" android:pathData="M37.5,99C37.5,101.76 35.26,104 32.5,104C29.74,104 27.5,101.76 27.5,99C27.5,96.24 29.74,94 32.5,94C35.26,94 37.5,96.24 37.5,99Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__14" android:pathData="M32.5,49C36.64,49 40,45.64 40,41.5C40,37.36 36.64,34 32.5,34C28.36,34 25,37.36 25,41.5C25,45.64 28.36,49 32.5,49Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__15" android:pathData="M57.5,64C57.5,69.52 53.02,74 47.5,74C41.98,74 37.5,69.52 37.5,64C37.5,58.48 41.98,54 47.5,54C53.02,54 57.5,58.48 57.5,64Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__16" android:pathData="M52.5,44C55.26,44 57.5,41.76 57.5,39C57.5,36.24 55.26,34 52.5,34C49.74,34 47.5,36.24 47.5,39C47.5,41.76 49.74,44 52.5,44Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__17" android:pathData="M97.5,94C97.5,99.52 93.02,104 87.5,104C81.98,104 77.5,99.52 77.5,94C77.5,88.48 81.98,84 87.5,84C93.02,84 97.5,88.48 97.5,94Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__18" android:pathData="M81.98,74.61C81.98,86.42 72.36,96 60.49,96C48.62,96 39,86.42 39,74.61C39,65.09 52.98,36.13 58.39,25.3C59.26,23.57 61.74,23.57 62.61,25.3C68.02,36.15 82,65.09 82,74.61H81.98Z" />
+    <path android:fillColor="@drawable/$ic_flow_palepink__19" android:pathData="M77,89.08C74.5,90.05 71.78,90.58 68.94,90.58C56.85,90.58 47.05,81 47.05,69.19C47.05,61.2 57.09,39.51 63.57,26.34C63.38,25.97 63.21,25.63 63.04,25.3C62.16,23.57 59.63,23.57 58.75,25.3C53.24,36.13 39,65.09 39,74.61C39,86.42 48.8,96 60.88,96C67.26,96 73,93.33 77,89.08Z" />
+</vector>

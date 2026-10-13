@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_birthcontrol_emergencycontraception__0" android:pathData="M86.18,59.46C91.05,54.58 91.05,46.69 86.18,41.82C81.31,36.95 73.42,36.95 68.54,41.82L41.82,68.54C36.95,73.42 36.95,81.31 41.82,86.18C46.69,91.05 54.59,91.05 59.46,86.18L86.18,59.46Z" />
+    <path android:fillColor="@drawable/$ic_birthcontrol_emergencycontraception__1" android:pathData="M86.18,41.82C81.31,36.95 73.41,36.95 68.54,41.82L55.18,55.18L72.82,72.82L86.18,59.46C91.05,54.59 91.05,46.69 86.18,41.82Z" />
+</vector>

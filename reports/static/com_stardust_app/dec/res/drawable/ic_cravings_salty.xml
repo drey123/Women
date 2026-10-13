@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M40,32h48.26v65h-48.26z" />
+        <path android:fillColor="@drawable/$ic_cravings_salty__0" android:pathData="M59.88,32.66L51.46,43.14C50.67,44.13 51.15,45.6 52.4,45.92L63.17,48.65C64.4,48.95 65.55,47.9 65.34,46.66L62.98,33.45C62.71,31.98 60.83,31.5 59.88,32.66Z" />
+        <path android:fillColor="@drawable/$ic_cravings_salty__1" android:pathData="M48.49,35.44L42.29,47.34C41.69,48.47 42.49,49.82 43.75,49.89L54.85,50.48C56.13,50.55 57.03,49.28 56.58,48.11L51.68,35.62C51.14,34.22 49.19,34.12 48.49,35.46V35.44Z" />
+        <path android:fillColor="@drawable/$ic_cravings_salty__2" android:pathData="M58.7,55.27L69.32,47.03C70.33,46.26 70.18,44.7 69.05,44.11L59.19,38.96C58.06,38.37 56.7,39.14 56.63,40.4L55.86,53.78C55.77,55.27 57.5,56.18 58.69,55.25L58.7,55.27Z" />
+        <path android:fillColor="@drawable/$ic_cravings_salty__3" android:pathData="M81.93,37.96L71.32,46.19C70.31,46.96 70.45,48.52 71.59,49.12L81.45,54.26C82.58,54.86 83.93,54.09 84,52.83L84.78,39.45C84.87,37.96 83.14,37.04 81.95,37.97L81.93,37.96Z" />
+        <path android:fillColor="@drawable/$ic_cravings_salty__4" android:pathData="M68.09,34.66L65.79,47.86C65.57,49.12 66.72,50.16 67.95,49.85L78.71,47.09C79.93,46.77 80.44,45.29 79.63,44.31L71.17,33.87C70.24,32.7 68.35,33.18 68.09,34.66Z" />
+        <path android:fillColor="@drawable/$ic_cravings_salty__5" android:pathData="M86.7,97.36H41.65V92.92C41.65,92.02 41.81,91.14 42.12,90.3C42.73,88.61 42.73,86.78 42.12,85.09L42.08,85C41.79,84.18 41.63,83.3 41.63,82.42V63.3V44.19H86.68V54.97C86.68,55.67 86.47,56.35 86.07,56.93C85.28,58.09 85.26,59.63 86.07,60.8L86.11,60.85C86.48,61.43 86.7,62.09 86.7,62.77V97.38V97.36Z" />
+        <path android:fillColor="@drawable/$ic_cravings_salty__6" android:pathData="M79.18,70.29L55.05,57.69C53.91,57.1 52.56,57.87 52.49,59.13L51.19,81.48C51.12,82.75 52.38,83.67 53.57,83.2L78.98,73.44C80.38,72.91 80.49,70.97 79.16,70.27L79.18,70.29Z" />
+        <path android:fillColor="@drawable/$ic_cravings_salty__7" android:pathData="M88.26,94.72H40V97.02H88.26V94.72Z" />
+        <path android:fillColor="@drawable/$ic_cravings_salty__8" android:pathData="M88.26,43.64H40V45.94H88.26V43.64Z" />
+    </group>
+</vector>

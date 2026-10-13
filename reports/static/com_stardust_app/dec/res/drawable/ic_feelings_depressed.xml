@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dp" android:width="64.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_feelings_depressed__0" android:pathData="M36.75,73.16C33.21,76.67 33.54,82.79 33.54,82.79C33.54,82.79 39.61,83.27 43.16,79.78C46.72,76.28 46.37,70.14 46.37,70.14C46.37,70.14 40.3,69.67 36.75,73.16Z" android:strokeAlpha="0.8" android:fillAlpha="0.8" />
+    <path android:fillColor="@drawable/$ic_feelings_depressed__1" android:pathData="M42.57,98H47.71V50.35C47.71,41.95 54.55,35.13 62.96,35.13H63.67C72.08,35.13 78.92,41.95 78.92,50.35H84.06C84.06,39.13 74.91,30 63.67,30H62.96C51.72,30 42.57,39.13 42.57,50.35V98Z" />
+    <path android:fillColor="@drawable/$ic_feelings_depressed__2" android:pathData="M80.12,44.32C85.1,44.62 88.92,48.89 88.65,53.86L88.16,65.81C87.93,70.01 84.33,73.21 80.12,72.96L69.69,72.35L70.6,52.79C70.88,47.82 75.15,44.02 80.13,44.32L80.12,44.32Z" />
+    <path android:fillColor="@drawable/$ic_feelings_depressed__3" android:pathData="M82.48,44.93C78.02,44.8 74.26,48.31 74.11,52.76L73.58,63.46C73.45,67.23 76.4,70.37 80.18,70.49L89.53,70.77L90.29,53.26C90.44,48.8 86.94,45.07 82.47,44.93L82.48,44.93Z" />
+    <path android:fillColor="@drawable/$ic_feelings_depressed__4" android:pathData="M56.48,73.79C60.49,76.74 61.04,82.86 61.04,82.86C61.04,82.86 55.1,84.2 51.08,81.26C47.06,78.32 46.52,72.19 46.52,72.19C46.52,72.19 52.46,70.85 56.48,73.79Z" android:strokeAlpha="0.8" android:fillAlpha="0.8" />
+    <path android:fillColor="@drawable/$ic_feelings_depressed__5" android:pathData="M74.44,44.97C78.16,41.66 83.88,42 87.21,45.73L98,57.8L91.64,63.45C87.71,66.94 81.67,66.57 78.16,62.65L73.74,57.7C70.41,53.97 70.73,48.26 74.45,44.96L74.44,44.97Z" />
+    <path android:fillColor="@drawable/$ic_feelings_depressed__6" android:pathData="M68.74,66.27L62.32,62.63L70.29,48.61C72.75,44.29 78.27,42.78 82.61,45.25C86.96,47.72 88.49,53.24 86.03,57.56L83.34,62.31C80.43,67.43 73.89,69.2 68.76,66.28L68.74,66.27Z" />
+</vector>

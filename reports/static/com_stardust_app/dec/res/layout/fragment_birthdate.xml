@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.compose.ui.platform.ComposeView android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/titleContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/Headline.Yellow100" android:id="@id/textViewWelcomeUser" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/Headline.Yellow100" android:id="@id/textViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/enter_your_birthdate" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewZodiac" android:layout_width="190.0dp" android:layout_height="170.0dp" android:layout_marginTop="24.0dp" app:layout_constraintBottom_toTopOf="@id/textViewZodiac" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/titleContainer" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/Body.Yellow100" android:id="@id/textViewZodiac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:layout_marginBottom="32.0dp" app:layout_constraintBottom_toTopOf="@id/datePicker" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <DatePicker android:id="@id/datePicker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="16.0dp" app:layout_constraintBottom_toTopOf="@id/buttonDone" app:layout_constraintVertical_bias="0.7" style="@style/DatePickerStyle" />
+        <androidx.compose.ui.platform.ComposeView android:id="@id/buttonDone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

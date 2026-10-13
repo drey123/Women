@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="71.0dp" android:width="71.0dp" android:viewportWidth="71.0" android:viewportHeight="71.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_exercise_ovulation__0" android:pathData="M53.666,10.642L50.158,12.667C49.142,13.254 48.796,14.557 49.386,15.579L59.764,33.554C60.354,34.576 61.656,34.928 62.672,34.341L66.179,32.317C67.196,31.73 67.541,30.426 66.951,29.405L56.573,11.429C55.984,10.408 54.682,10.055 53.666,10.642Z" />
+    <path android:fillColor="@drawable/$ic_exercise_ovulation__1" android:pathData="M47.666,23.504L18.889,40.118L23.06,47.343L51.837,30.729L47.666,23.504Z" />
+    <path android:fillColor="@drawable/$ic_exercise_ovulation__2" android:pathData="M8.328,36.347L4.82,38.372C3.804,38.959 3.459,40.263 4.048,41.284L14.426,59.259C15.016,60.281 16.318,60.633 17.334,60.047L20.841,58.022C21.858,57.435 22.203,56.131 21.614,55.11L11.235,37.134C10.646,36.113 9.344,35.761 8.328,36.347Z" />
+    <path android:fillColor="@drawable/$ic_exercise_ovulation__3" android:pathData="M9.138,26.482L4.653,29.071C3.859,29.529 3.589,30.548 4.05,31.346L23.237,64.58C23.698,65.378 24.715,65.653 25.509,65.195L29.994,62.606C30.788,62.147 31.058,61.129 30.597,60.331L11.409,27.097C10.948,26.299 9.931,26.023 9.138,26.482Z" />
+    <path android:fillColor="@drawable/$ic_exercise_ovulation__4" android:pathData="M45.361,5.568L40.114,8.597C39.32,9.056 39.05,10.074 39.511,10.872L58.699,44.107C59.16,44.905 60.177,45.18 60.971,44.722L66.217,41.693C67.011,41.234 67.281,40.216 66.82,39.418L47.632,6.183C47.172,5.385 46.155,5.11 45.361,5.568Z" />
+</vector>
