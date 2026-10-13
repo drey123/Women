@@ -2,67 +2,173 @@ name: static-analysis
 
 on:
   push:
+    branches:
+      - main
+      - "fix/**"
+    paths-ignore:
+      - "reports/**"
+  pull_request:
     branches: [main]
     paths-ignore:
       - "reports/**"
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
+  validate-config:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate workflow YAML
+        run: ruby -e 'require "yaml"; YAML.load_file(".github/workflows/static-analysis.yml"); puts "Workflow YAML parses"'
+      - name: Validate shell syntax
+        run: |
+          bash -n tooling/setup_tools.sh
+          bash -n tooling/download_apk.sh
+          bash -n tooling/analyze_static.sh
+      - name: Validate analysis matrix size
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          text = Path(".github/workflows/static-analysis.yml").read_text()
+          block = text.split("        pkg:", 1)[1].split("\n    steps:", 1)[0]
+          packages = re.findall(r"^          - ([A-Za-z0-9_.]+)$", block, re.M)
+          assert len(packages) == 14, f"Expected 14 app packages, found {len(packages)}"
+          assert len(packages) == len(set(packages)), "Duplicate app package IDs found"
+          print(f"Validated {len(packages)} unique app packages")
+          PY
+
   exodus-api:
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - name: Pull live Exodus tracker inventories
-        run: timeout 300 python3 tooling/exodus_api.py || echo "exodus fetch failed — artifact partial, static jobs unaffected"
-      - name: Commit reports
+        run: timeout 300 python3 tooling/exodus_api.py || echo "WARNING: Exodus fetch incomplete; inspect reports/exodus/debug_raw_response.json"
+      - name: Upload Exodus evidence
         if: always()
-        run: |
-          git config user.name "audit-bot"
-          git config user.email "audit-bot@users.noreply.github.com"
-          git add reports/ && git commit -m "exodus live inventory [skip ci]" || echo "nothing to commit"
-          git push || true
+        uses: actions/upload-artifact@v4
+        with:
+          name: exodus-report
+          path: reports/exodus/
+          if-no-files-found: warn
+          retention-days: 14
 
   static:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     strategy:
       fail-fast: false
+      max-parallel: 4
       matrix:
         pkg:
-          - org.iggymedia.periodtracker   # Flo
-          - com.clue.android              # Clue
-          - com.period.tracker.lite       # Period Tracker (Simple Design)
-          - com.glow.android              # Glow
-          - com.glow.android.eve          # Eve
-          - com.ovuline.fertility         # Ovia Fertility
-          - in.plackal.lovecyclesfree     # Maya
-          - com.popularapp.periodcalendar # Period Calendar
-          - com.stardust.app              # Stardust
-          - com.naturalcycles.cordova     # Natural Cycles
-          - premom.eh.com.ehpremomapp     # Premom
-          - com.tamtris.fertilityfriend   # Fertility Friend
-          - com.hp.pregnancy.lite         # Pregnancy+
-          - com.babycenter.pregnancytracker # BabyCenter
+          - org.iggymedia.periodtracker
+          - com.clue.android
+          - com.period.tracker.lite
+          - com.glow.android
+          - com.glow.android.eve
+          - com.ovuline.fertility
+          - in.plackal.lovecyclesfree
+          - com.popularapp.periodcalendar
+          - com.stardust.app
+          - com.naturalcycles.cordova
+          - premom.eh.com.ehpremomapp
+          - com.tamtris.fertilityfriend
+          - com.hp.pregnancy.lite
+          - com.babycenter.pregnancytracker
     steps:
       - uses: actions/checkout@v4
-      - name: Install toolchain (self-provisioned)
+      - name: Set app label and isolate this matrix result
+        id: app
+        run: |
+          APP=$(echo "${{ matrix.pkg }}" | tr '.' '_')
+          echo "label=$APP" >> "$GITHUB_OUTPUT"
+          rm -rf reports/static
+          mkdir -p "reports/static/$APP"
+      - name: Install toolchain
+        id: tools
         run: bash tooling/setup_tools.sh
-      - name: Download APK (${{ matrix.pkg }})
+      - name: Download APK
+        id: download
+        continue-on-error: true
         run: bash tooling/download_apk.sh "${{ matrix.pkg }}" /tmp/apk
-      - name: Static analysis (${{ matrix.pkg }})
+      - name: Static analysis
+        if: steps.download.outcome == 'success'
         run: |
           chmod +x tooling/analyze_static.sh
-          APP=$(echo "${{ matrix.pkg }}" | tr '.' '_')
-          bash tooling/analyze_static.sh "$APP" "${{ matrix.pkg }}" "/tmp/apk/${{ matrix.pkg }}.apk" reports/static
-      - name: Commit report
+          bash tooling/analyze_static.sh "${{ steps.app.outputs.label }}" "${{ matrix.pkg }}" "/tmp/apk/${{ matrix.pkg }}.apk" reports/static
+      - name: Record unavailable or skipped analysis
+        if: always()
+        env:
+          APP_LABEL: ${{ steps.app.outputs.label }}
+          PACKAGE_NAME: ${{ matrix.pkg }}
+          TOOL_OUTCOME: ${{ steps.tools.outcome }}
+          DOWNLOAD_OUTCOME: ${{ steps.download.outcome }}
+        run: |
+          mkdir -p "reports/static/$APP_LABEL"
+          if [ ! -s "/tmp/apk/$PACKAGE_NAME.apk" ]; then
+            cat > "reports/static/$APP_LABEL/STATUS.md" <<EOF
+          # Analysis status: $APP_LABEL
+
+          - Package: `$PACKAGE_NAME`
+          - Result: NOT ANALYSED
+          - Toolchain step: `$TOOL_OUTCOME`
+          - APK download step: `$DOWNLOAD_OUTCOME`
+          - Reason: no validated APK was available to analyse in this run.
+          - Interpretation: this is an acquisition/tooling gap, not evidence that the app is safe or unsafe.
+          EOF
+          fi
+      - name: Upload per-app evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: static-${{ matrix.pkg }}
+          path: reports/static/
+          if-no-files-found: warn
+          retention-days: 14
+
+  publish-reports:
+    if: always() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: [exodus-api, static]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download per-app evidence
+        uses: actions/download-artifact@v4
+        with:
+          pattern: static-*
+          path: reports/static
+          merge-multiple: true
+      - name: Download Exodus evidence
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: exodus-report
+          path: reports/exodus
+      - name: Commit aggregated reports once
         run: |
           git config user.name "audit-bot"
           git config user.email "audit-bot@users.noreply.github.com"
-          git add reports/static || true
-          git commit -m "static analysis ${{ matrix.pkg }} [skip ci]" || echo "nothing to commit"
-          git pull --rebase || true
-          git push
+          git add reports/
+          if git diff --cached --quiet; then
+            echo "No report changes to commit."
+            exit 0
+          fi
+          git commit -m "Update static-analysis evidence [skip ci]"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo "Could not publish reports after three attempts."
+          exit 1
