@@ -57,6 +57,6 @@ jobs:
             packages = workflow.fetch("jobs").fetch("static").fetch("strategy").fetch("matrix").fetch("pkg")
             abort "Expected 14 app packages, found #{packages.length}" unless packages.length == 14
             abort "Duplicate app package IDs found" unless packages.uniq.length == packages.length
-            abort "Invalid package ID in matrix" unless packages.all? { |pkg| pkg.match?(/\\A[A-Za-z0-9_.]+\\z/) }
+            abort "Invalid package ID in matrix" unless packages.all? { |pkg| pkg.match?(/\A[A-Za-z0-9_.]+\z/) }
             puts "Validated #{packages.length} unique app package IDs"
           '
