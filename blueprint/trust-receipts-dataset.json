@@ -1,61 +1,108 @@
 {
   "schema": "nkwo.trust-receipts/1.0",
-  "built_at": "2026-10-13T14:11:47Z",
+  "built_at": "2026-10-13T16:09:04Z",
   "built_by": "blueprint/build_receipts.py",
   "evidence_note": "Tracker rows are code-presence findings (Exodus-Privacy registry signatures over the decompiled tree) — STATIC for wire behavior until a HAR trace replays them; statuses are the committed STATUS.md truth, never upgraded.",
   "apps": [
     {
       "label": "com_babycenter_pregnancytracker",
       "package": "com.babycenter.pregnancytracker",
-      "status": "NO STATUS FILE",
-      "status_detail": {},
+      "status": "ANALYSED",
+      "status_detail": {
+        "Toolchain step": "`success`",
+        "APK download step": "`success`",
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
+      },
       "status_freshness": "current",
       "apk_bytes": 67082565,
       "sha256_prefix": "3816927114ee91d9",
-      "report_date": "2026-10-13T13:01:09Z",
-      "tracker_count": 7,
+      "report_date": "2026-10-13T15:44:14Z",
+      "tracker_count": 12,
       "trackers": [
         {
           "name": "Snowplow",
           "match_files": 20,
+          "dex_class": "n",
           "code_signature": "com.snowplowanalytics.",
           "category": "analytics"
         },
         {
           "name": "AppsFlyer",
           "match_files": 11,
+          "dex_class": "Y",
           "code_signature": "com.appsflyer.",
           "category": "attribution"
         },
         {
           "name": "Amazon Advertisement",
           "match_files": 6,
+          "dex_class": "Y",
           "code_signature": "com.amazon.device.ads",
           "category": "ads"
         },
         {
           "name": "ComScore",
           "match_files": 2,
+          "dex_class": "Y",
           "code_signature": "com.comscore.",
           "category": "analytics"
         },
         {
           "name": "AppLovin (MAX and SparkLabs)",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.applovin",
           "category": "ads"
         },
         {
           "name": "JW Player",
           "match_files": 1,
+          "dex_class": "Y",
           "code_signature": "com.longtailvideo.jwplayer.",
           "category": "media"
         },
         {
           "name": "mParticle",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.mparticle",
           "category": "data-orchestration"
+        },
+        {
+          "name": "Google AdMob",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google CrashLytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google Firebase Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics",
+          "category": "unclassified"
+        },
+        {
+          "name": "IAB Open Measurement",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.iab.omid.library|com.prime31.util.IabHelperImpl|com.prime31.IAB.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Localytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.localytics.android.|com.localytics.androidx|com.localytics.react.",
+          "category": "unclassified"
         }
       ],
       "health_permissions": [],
@@ -76,25 +123,46 @@
     {
       "label": "com_clue_android",
       "package": "com.clue.android",
-      "status": "NO STATUS FILE",
-      "status_detail": {},
+      "status": "ANALYSED",
+      "status_detail": {
+        "Toolchain step": "`success`",
+        "APK download step": "`success`",
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
+      },
       "status_freshness": "current",
       "apk_bytes": 42021951,
       "sha256_prefix": "3b3984a7562e19a1",
-      "report_date": "2026-10-13T12:51:36Z",
-      "tracker_count": 2,
+      "report_date": "2026-10-13T15:34:09Z",
+      "tracker_count": 4,
       "trackers": [
         {
           "name": "Braze (formerly Appboy)",
           "match_files": 18,
+          "dex_class": "n",
           "code_signature": "com.appboy",
           "category": "engagement"
         },
         {
           "name": "Snowplow",
           "match_files": 17,
+          "dex_class": "n",
           "code_signature": "com.snowplowanalytics.",
           "category": "analytics"
+        },
+        {
+          "name": "Adjust",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.adjust.sdk.|com.adjust.android.sdk.",
+          "category": "attribution"
+        },
+        {
+          "name": "Google Firebase Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics",
+          "category": "unclassified"
         }
       ],
       "health_permissions": [
@@ -121,72 +189,123 @@
     {
       "label": "com_glow_android",
       "package": "com.glow.android",
-      "status": "NOT ANALYSED",
+      "status": "ANALYSED",
       "status_detail": {
-        "Toolchain step": "`failure`",
-        "APK download step": "`skipped`",
-        "Analysis step": "`skipped`",
-        "Reason": "required toolchain or APK acquisition was unavailable; no valid analysis result can be claimed."
+        "Toolchain step": "`success`",
+        "APK download step": "`success`",
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
       },
-      "status_freshness": "STALE — status predates the fresh report in the same directory; publisher defect, fix queued (see note.md)",
+      "status_freshness": "current",
       "apk_bytes": 132902051,
       "sha256_prefix": "be0e886a086748f7",
-      "report_date": "2026-10-13T12:51:44Z",
-      "tracker_count": 9,
+      "report_date": "2026-10-13T15:34:15Z",
+      "tracker_count": 15,
       "trackers": [
         {
           "name": "AppsFlyer",
           "match_files": 12,
+          "dex_class": "Y",
           "code_signature": "com.appsflyer.",
           "category": "attribution"
         },
         {
           "name": "Amazon Advertisement",
           "match_files": 5,
+          "dex_class": "Y",
           "code_signature": "com.amazon.device.ads",
           "category": "ads"
         },
         {
           "name": "Facebook Login",
           "match_files": 5,
+          "dex_class": "Y",
           "code_signature": "com.facebook.login",
           "category": "social-login"
         },
         {
           "name": "Facebook Share",
           "match_files": 5,
+          "dex_class": "Y",
           "code_signature": "com.facebook.share",
           "category": "social-share"
         },
         {
           "name": "AppLovin (MAX and SparkLabs)",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.applovin",
           "category": "ads"
         },
         {
           "name": "Bolts",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.parse.bolts",
           "category": "social-sdk-support"
         },
         {
           "name": "Facebook Places",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.facebook.places",
           "category": "social-location"
         },
         {
           "name": "Smaato",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.smaato.",
           "category": "ads"
         },
         {
           "name": "mParticle",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.mparticle",
           "category": "data-orchestration"
+        },
+        {
+          "name": "Facebook Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.facebook.appevents|com.facebook.marketing.|com.facebook.CampaignTrackingReceiver",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google AdMob",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google CrashLytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google Firebase Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics",
+          "category": "unclassified"
+        },
+        {
+          "name": "IAB Open Measurement",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.iab.omid.library|com.prime31.util.IabHelperImpl|com.prime31.IAB.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Sentry",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.sentry.|com.joshdholtz.sentry",
+          "category": "unclassified"
         }
       ],
       "health_permissions": [],
@@ -208,72 +327,123 @@
     {
       "label": "com_glow_android_eve",
       "package": "com.glow.android.eve",
-      "status": "ANALYSIS FAILED",
+      "status": "ANALYSED",
       "status_detail": {
         "Toolchain step": "`success`",
         "APK download step": "`success`",
-        "Analysis step": "`cancelled`",
-        "Reason": "analysis command failed after acquisition; the partial output is not a completed assessment."
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
       },
-      "status_freshness": "STALE — status predates the fresh report in the same directory; publisher defect, fix queued (see note.md)",
+      "status_freshness": "current",
       "apk_bytes": 141938123,
       "sha256_prefix": "d3be475550efaee6",
-      "report_date": "2026-10-13T12:53:08Z",
-      "tracker_count": 9,
+      "report_date": "2026-10-13T15:35:49Z",
+      "tracker_count": 15,
       "trackers": [
         {
           "name": "AppsFlyer",
           "match_files": 12,
+          "dex_class": "Y",
           "code_signature": "com.appsflyer.",
           "category": "attribution"
         },
         {
           "name": "Amazon Advertisement",
           "match_files": 5,
+          "dex_class": "Y",
           "code_signature": "com.amazon.device.ads",
           "category": "ads"
         },
         {
           "name": "Facebook Login",
           "match_files": 5,
+          "dex_class": "Y",
           "code_signature": "com.facebook.login",
           "category": "social-login"
         },
         {
           "name": "Facebook Share",
           "match_files": 5,
+          "dex_class": "Y",
           "code_signature": "com.facebook.share",
           "category": "social-share"
         },
         {
           "name": "AppLovin (MAX and SparkLabs)",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.applovin",
           "category": "ads"
         },
         {
           "name": "Bolts",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.parse.bolts",
           "category": "social-sdk-support"
         },
         {
           "name": "Facebook Places",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.facebook.places",
           "category": "social-location"
         },
         {
           "name": "Smaato",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.smaato.",
           "category": "ads"
         },
         {
           "name": "mParticle",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.mparticle",
           "category": "data-orchestration"
+        },
+        {
+          "name": "Facebook Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.facebook.appevents|com.facebook.marketing.|com.facebook.CampaignTrackingReceiver",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google AdMob",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google CrashLytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google Firebase Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics",
+          "category": "unclassified"
+        },
+        {
+          "name": "IAB Open Measurement",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.iab.omid.library|com.prime31.util.IabHelperImpl|com.prime31.IAB.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Sentry",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.sentry.|com.joshdholtz.sentry",
+          "category": "unclassified"
         }
       ],
       "health_permissions": [],
@@ -295,49 +465,95 @@
     {
       "label": "com_hp_pregnancy_lite",
       "package": "com.hp.pregnancy.lite",
-      "status": "NO STATUS FILE",
-      "status_detail": {},
+      "status": "ANALYSED",
+      "status_detail": {
+        "Toolchain step": "`success`",
+        "APK download step": "`success`",
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
+      },
       "status_freshness": "current",
       "apk_bytes": 96296232,
       "sha256_prefix": "64187b6a8dfec921",
-      "report_date": "2026-10-13T13:00:26Z",
-      "tracker_count": 6,
+      "report_date": "2026-10-13T15:43:48Z",
+      "tracker_count": 11,
       "trackers": [
         {
           "name": "OneSignal",
           "match_files": 816,
+          "dex_class": "Y",
           "code_signature": "com.onesignal.",
           "category": "engagement"
         },
         {
           "name": "Branch",
           "match_files": 20,
+          "dex_class": "Y",
           "code_signature": "io.branch.",
           "category": "attribution"
         },
         {
           "name": "Facebook Login",
           "match_files": 3,
+          "dex_class": "Y",
           "code_signature": "com.facebook.login",
           "category": "social-login"
         },
         {
           "name": "Bolts",
           "match_files": 2,
+          "dex_class": "Y",
           "code_signature": "com.parse.bolts",
           "category": "social-sdk-support"
         },
         {
           "name": "Facebook Places",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.facebook.places",
           "category": "social-location"
         },
         {
           "name": "Facebook Share",
           "match_files": 1,
+          "dex_class": "Y",
           "code_signature": "com.facebook.share",
           "category": "social-share"
+        },
+        {
+          "name": "Facebook Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.facebook.appevents|com.facebook.marketing.|com.facebook.CampaignTrackingReceiver",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google AdMob",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google CrashLytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google Firebase Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics",
+          "category": "unclassified"
+        },
+        {
+          "name": "Huawei Mobile Services (HMS) Core",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.huawei.hms.analytics|com.huawei.hms.location|com.huawei.hms.plugin.analytics|com.huawei.hms.plugin.ads|com.huawei.updatesdk.|com.huawei.agconnect.|com.huawei.hms.support.api.push.|com.huawei.hms.flutter.analytics.",
+          "category": "unclassified"
         }
       ],
       "health_permissions": [],
@@ -357,19 +573,39 @@
     {
       "label": "com_naturalcycles_cordova",
       "package": "com.naturalcycles.cordova",
-      "status": "NO STATUS FILE",
-      "status_detail": {},
+      "status": "ANALYSED",
+      "status_detail": {
+        "Toolchain step": "`success`",
+        "APK download step": "`success`",
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
+      },
       "status_freshness": "current",
       "apk_bytes": 82932818,
       "sha256_prefix": "93bd7fde99986562",
-      "report_date": "2026-10-13T12:56:33Z",
-      "tracker_count": 1,
+      "report_date": "2026-10-13T15:39:38Z",
+      "tracker_count": 3,
       "trackers": [
         {
           "name": "MoEngage",
           "match_files": 77,
+          "dex_class": "Y",
           "code_signature": "com.moengage.",
           "category": "engagement"
+        },
+        {
+          "name": "Adjust",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.adjust.sdk.|com.adjust.android.sdk.",
+          "category": "attribution"
+        },
+        {
+          "name": "Sentry",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.sentry.|com.joshdholtz.sentry",
+          "category": "unclassified"
         }
       ],
       "health_permissions": [],
@@ -387,54 +623,67 @@
     {
       "label": "com_ovuline_fertility",
       "package": "com.ovuline.fertility",
-      "status": "ANALYSIS FAILED",
+      "status": "ANALYSED",
       "status_detail": {
         "Toolchain step": "`success`",
         "APK download step": "`success`",
-        "Analysis step": "`cancelled`",
-        "Reason": "analysis command failed after acquisition; the partial output is not a completed assessment."
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
       },
-      "status_freshness": "STALE — status predates the fresh report in the same directory; publisher defect, fix queued (see note.md)",
+      "status_freshness": "current",
       "apk_bytes": 32109771,
       "sha256_prefix": "c6add81afaa97e4b",
-      "report_date": "2026-10-13T12:53:11Z",
-      "tracker_count": 6,
+      "report_date": "2026-10-13T15:36:39Z",
+      "tracker_count": 7,
       "trackers": [
         {
           "name": "Apptentive",
           "match_files": 13,
+          "dex_class": "Y",
           "code_signature": "com.apptentive.",
           "category": "engagement"
         },
         {
           "name": "AppsFlyer",
           "match_files": 11,
+          "dex_class": "Y",
           "code_signature": "com.appsflyer.",
           "category": "attribution"
         },
         {
           "name": "HelpShift",
           "match_files": 6,
+          "dex_class": "Y",
           "code_signature": "com.helpshift",
           "category": "support"
         },
         {
           "name": "Urbanairship",
           "match_files": 2,
+          "dex_class": "n",
           "code_signature": "com.urbanairship",
           "category": "engagement"
         },
         {
           "name": "Amazon Mobile Analytics (Amplify)",
           "match_files": 1,
+          "dex_class": "Y",
           "code_signature": "com.amplifyframework.analytics.",
           "category": "analytics"
         },
         {
           "name": "mParticle",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.mparticle",
           "category": "data-orchestration"
+        },
+        {
+          "name": "Sentry",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.sentry.|com.joshdholtz.sentry",
+          "category": "unclassified"
         }
       ],
       "health_permissions": [
@@ -471,14 +720,41 @@
     {
       "label": "com_period_tracker_lite",
       "package": "com.period.tracker.lite",
-      "status": "NO STATUS FILE",
-      "status_detail": {},
+      "status": "ANALYSED",
+      "status_detail": {
+        "Toolchain step": "`success`",
+        "APK download step": "`success`",
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
+      },
       "status_freshness": "current",
       "apk_bytes": 26308653,
       "sha256_prefix": "375e6e2284a027d5",
-      "report_date": "2026-10-13T12:51:36Z",
-      "tracker_count": 0,
-      "trackers": [],
+      "report_date": "2026-10-13T15:34:12Z",
+      "tracker_count": 3,
+      "trackers": [
+        {
+          "name": "Google AdMob",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google Firebase Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics",
+          "category": "unclassified"
+        },
+        {
+          "name": "Pusher",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.pusher.client.",
+          "category": "unclassified"
+        }
+      ],
       "health_permissions": [],
       "adservices_permissions": [
         "android.permission.ACCESS_ADSERVICES_AD_ID",
@@ -524,37 +800,74 @@
     {
       "label": "com_stardust_app",
       "package": "com.stardust.app",
-      "status": "NO STATUS FILE",
-      "status_detail": {},
+      "status": "ANALYSED",
+      "status_detail": {
+        "Toolchain step": "`success`",
+        "APK download step": "`success`",
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
+      },
       "status_freshness": "current",
       "apk_bytes": 66132023,
       "sha256_prefix": "b85380d4bba8af17",
-      "report_date": "2026-10-13T12:55:58Z",
-      "tracker_count": 4,
+      "report_date": "2026-10-13T15:39:25Z",
+      "tracker_count": 8,
       "trackers": [
         {
           "name": "OneSignal",
           "match_files": 629,
+          "dex_class": "Y",
           "code_signature": "com.onesignal.",
           "category": "engagement"
         },
         {
           "name": "AppsFlyer",
           "match_files": 11,
+          "dex_class": "Y",
           "code_signature": "com.appsflyer.",
           "category": "attribution"
         },
         {
           "name": "Branch",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "io.branch.",
           "category": "attribution"
         },
         {
           "name": "mParticle",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.mparticle",
           "category": "data-orchestration"
+        },
+        {
+          "name": "Google CrashLytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google Firebase Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics",
+          "category": "unclassified"
+        },
+        {
+          "name": "Huawei Mobile Services (HMS) Core",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.huawei.hms.analytics|com.huawei.hms.location|com.huawei.hms.plugin.analytics|com.huawei.hms.plugin.ads|com.huawei.updatesdk.|com.huawei.agconnect.|com.huawei.hms.support.api.push.|com.huawei.hms.flutter.analytics.",
+          "category": "unclassified"
+        },
+        {
+          "name": "OpenTelemetry (OpenCensus, OpenTracing)",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.opencensus|io.opentelemetry",
+          "category": "unclassified"
         }
       ],
       "health_permissions": [
@@ -578,12 +891,17 @@
     {
       "label": "com_tamtris_fertilityfriend",
       "package": "com.tamtris.fertilityfriend",
-      "status": "NO STATUS FILE",
-      "status_detail": {},
+      "status": "ANALYSED",
+      "status_detail": {
+        "Toolchain step": "`success`",
+        "APK download step": "`success`",
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
+      },
       "status_freshness": "current",
       "apk_bytes": 26429760,
       "sha256_prefix": "dde3256e30b7090f",
-      "report_date": "2026-10-13T13:00:08Z",
+      "report_date": "2026-10-13T15:42:54Z",
       "tracker_count": 0,
       "trackers": [],
       "health_permissions": [],
@@ -599,43 +917,95 @@
     {
       "label": "in_plackal_lovecyclesfree",
       "package": "in.plackal.lovecyclesfree",
-      "status": "NO STATUS FILE",
-      "status_detail": {},
+      "status": "ANALYSED",
+      "status_detail": {
+        "Toolchain step": "`success`",
+        "APK download step": "`success`",
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
+      },
       "status_freshness": "current",
       "apk_bytes": 26433637,
       "sha256_prefix": "2288d273bf0e4650",
-      "report_date": "2026-10-13T12:55:03Z",
-      "tracker_count": 5,
+      "report_date": "2026-10-13T15:38:04Z",
+      "tracker_count": 11,
       "trackers": [
         {
           "name": "Facebook Ads",
           "match_files": 5,
+          "dex_class": "Y",
           "code_signature": "com.facebook.ads",
           "category": "ads"
         },
         {
           "name": "Facebook Login",
           "match_files": 2,
+          "dex_class": "Y",
           "code_signature": "com.facebook.login",
           "category": "social-login"
         },
         {
           "name": "Bolts",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.parse.bolts",
           "category": "social-sdk-support"
         },
         {
           "name": "Facebook Places",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.facebook.places",
           "category": "social-location"
         },
         {
           "name": "Facebook Share",
           "match_files": 1,
+          "dex_class": "Y",
           "code_signature": "com.facebook.share",
           "category": "social-share"
+        },
+        {
+          "name": "Facebook Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.facebook.appevents|com.facebook.marketing.|com.facebook.CampaignTrackingReceiver",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google AdMob",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.ads.|com.google.android.gms.ads.AdView|com.google.android.gms.ads.AdActivity|com.google.android.gms.ads.AdRequest|com.google.android.gms.ads.mediation|com.google.android.gms.ads.doubleclick|com.google.android.ads.|com.google.unity.ads.|com.google.android.gms.admob|com.google.firebase.firebase_ads.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.android.apps.analytics.|com.google.android.gms.analytics.|com.google.analytics.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google CrashLytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google Firebase Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google Tag Manager",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.tagmanager|com.google.android.gms.tagmanager",
+          "category": "unclassified"
         }
       ],
       "health_permissions": [],
@@ -656,30 +1026,46 @@
     {
       "label": "org_iggymedia_periodtracker",
       "package": "org.iggymedia.periodtracker",
-      "status": "ANALYSIS FAILED",
+      "status": "ANALYSED",
       "status_detail": {
         "Toolchain step": "`success`",
         "APK download step": "`success`",
-        "Analysis step": "`cancelled`",
-        "Reason": "analysis command failed after acquisition; the partial output is not a completed assessment."
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
       },
-      "status_freshness": "STALE — status predates the fresh report in the same directory; publisher defect, fix queued (see note.md)",
+      "status_freshness": "current",
       "apk_bytes": 93077854,
       "sha256_prefix": "8415480aeea113a5",
-      "report_date": "2026-10-13T12:51:42Z",
-      "tracker_count": 2,
+      "report_date": "2026-10-13T15:34:13Z",
+      "tracker_count": 4,
       "trackers": [
         {
           "name": "AppsFlyer",
           "match_files": 12,
+          "dex_class": "Y",
           "code_signature": "com.appsflyer.",
           "category": "attribution"
         },
         {
           "name": "mParticle",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.mparticle",
           "category": "data-orchestration"
+        },
+        {
+          "name": "Google Firebase Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.google.firebase.analytics.FirebaseAnalytics|com.google.android.gms.measurement.|com.google.firebase.firebase_analytics",
+          "category": "unclassified"
+        },
+        {
+          "name": "Sentry",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.sentry.|com.joshdholtz.sentry",
+          "category": "unclassified"
         }
       ],
       "health_permissions": [
@@ -725,49 +1111,74 @@
     {
       "label": "premom_eh_com_ehpremomapp",
       "package": "premom.eh.com.ehpremomapp",
-      "status": "NO STATUS FILE",
-      "status_detail": {},
+      "status": "ANALYSED",
+      "status_detail": {
+        "Toolchain step": "`success`",
+        "APK download step": "`success`",
+        "Analysis step": "`success`",
+        "Reason": "all steps succeeded; report.md and evidence/ carry the fresh analysis for this run."
+      },
       "status_freshness": "current",
       "apk_bytes": 92088292,
       "sha256_prefix": "a68a7798d4bbafca",
-      "report_date": "2026-10-13T12:59:38Z",
-      "tracker_count": 6,
+      "report_date": "2026-10-13T15:42:40Z",
+      "tracker_count": 8,
       "trackers": [
         {
           "name": "Braze (formerly Appboy)",
           "match_files": 18,
+          "dex_class": "n",
           "code_signature": "com.appboy",
           "category": "engagement"
         },
         {
           "name": "Facebook Login",
           "match_files": 5,
+          "dex_class": "Y",
           "code_signature": "com.facebook.login",
           "category": "social-login"
         },
         {
           "name": "Singular",
           "match_files": 2,
+          "dex_class": "Y",
           "code_signature": "com.singular.sdk",
           "category": "attribution"
         },
         {
           "name": "Bolts",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.parse.bolts",
           "category": "social-sdk-support"
         },
         {
           "name": "Facebook Places",
           "match_files": 1,
+          "dex_class": "n",
           "code_signature": "com.facebook.places",
           "category": "social-location"
         },
         {
           "name": "Facebook Share",
           "match_files": 1,
+          "dex_class": "Y",
           "code_signature": "com.facebook.share",
           "category": "social-share"
+        },
+        {
+          "name": "Facebook Analytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "com.facebook.appevents|com.facebook.marketing.|com.facebook.CampaignTrackingReceiver",
+          "category": "unclassified"
+        },
+        {
+          "name": "Google CrashLytics",
+          "match_files": 0,
+          "dex_class": "Y",
+          "code_signature": "io.fabric.|com.crashlytics.|com.google.firebase.crashlytics|com.google.firebase.crash.|io.invertase.firebase.crashlytics.",
+          "category": "unclassified"
         }
       ],
       "health_permissions": [],

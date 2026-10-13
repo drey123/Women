@@ -1,5 +1,5 @@
 # FemTech Signal Intelligence & Dataset Architecture Brief — Nigerian Market
-## Research & Specification Document v1.3.0 (evidence update: wire-tier capture path live — HAR→GoldenTrace adapter CI-tested; exodus-standalone docker job opened as PR; Trust Receipts dataset generated from committed evidence; interactive research-phase prototype shipped; STATUS-evidence consistency defect discovered & fix queued — see §6.5)
+## Research & Specification Document v1.4.0 (evidence update: PR #3 merged — evidence-consistency restored (fresh STATUS in every terminal state), exodus-standalone independent engine live, NF-17 engine-divergence reconciled on identical APK bytes, scanner upgraded to dual-surface (dex-class primary), 101 tracker families with class-presence evidence across 13/14 ANALYSED apps)
 
 **Prepared:** 2026-10-13 · **Workspace:** `drey123/women` (private repo, CI-executed evidence pipeline) · **Methodology base:** OWASP MASTG, Exodus Privacy static SDK detection, HAR-based traffic analysis (TrackHAR/tweasel), public regulatory record
 
@@ -947,9 +947,10 @@ Format per brief: `{finding, evidence, confidence, category, impact 1–5}`. Ent
 | NF-11 | **Precise location in period trackers**: Maya and Eve request `ACCESS_FINE_LOCATION` (period/pregnancy context + precise location = a stalker-risk and state-risk surface no cycle app has a defensible need for) | §2.6 permission table, `STATIC`, aapt2 dumps committed | `STATIC` | permission hygiene | 5 |
 | NF-12 | **Consent-order migration, materialized**: Flo's 2026 tree carries TikTok Business SDK (161 files incl. commerce `iap` events) — an ad family absent from its 2021 consent-order findings — while AppsFlyer (named in 2021) remains at 473 files | §2.4 `STATIC` + FTC 2021 record `PRIOR-PUB` | `STATIC` + `PRIOR-PUB` | regulatory evasion dynamics | 5 |
 | NF-13 | **Health Connect asymmetry**: Flo reads the full reproductive Health Connect graph (17 `health.*` permissions incl. `READ_SEXUAL_ACTIVITY`, `READ_HEALTH_DATA_IN_BACKGROUND`) while the ad-funded tier reads none — two collection philosophies (health-graph ingestion vs. typed-data-plus-ads) converging on the same monetization | §2.4/§2.6 `STATIC` | `STATIC` | platform dynamics | 4 |
-| NF-14 | **Flo's second CDP**: the 2026 Flo tree carries mParticle alongside AppsFlyer (run 38396120033 `exodus_scan.tsv`: mParticle 1 file, `com.mparticle`) — a second data-orchestration layer the 2021 consent order predates; reconciliation against the full-tree 473-file AppsFlyer count pending | §6.4 positive-control row + committed scan TSV | `STATIC` | supply chain | 4 |
-| NF-15 | **Zero-signature scans are not clean bills**: Period Tracker Lite (`com.period.tracker.lite`, real 26,308,653-byte APK) matched 0 of 432 registry signatures while declaring `AD_ID` + all three `ACCESS_ADSERVICES_*` + `BILLING` + install-referrer permissions — a full monetization surface with no tracker-class match; "0 trackers" claims from code-signature scanning alone under-report monetization by construction | `reports/static/com_period_tracker_lite/{report.md,exodus_scan.tsv}` run 38400405690 | `STATIC` | methodology | 4 |
+| NF-14 | **Flo's second CDP**: the 2026 Flo tree carries mParticle alongside AppsFlyer (run 38396120033 `exodus_scan.tsv`: mParticle 1 file, `com.mparticle`) — a second data-orchestration layer the 2021 consent order predates; reconciliation against the full-tree 473-file AppsFlyer count pending. **CORRECTED in v1.4.0 (NF-17 scanner upgrade):** the mParticle row was tree-string residue — `dex_class=n` in the dual-surface TSV; Flo's real additional families are Google Firebase Analytics + Sentry (class-present). The finding inverts: what looked like a second CDP was the old engine reading strings; what it missed (Firebase/Sentry classes) was real | §6.4 positive-control row + committed scan TSVs (runs 38396120033 → 38423139076) | `STATIC` | supply chain | 4 |
+| NF-15 | **Zero-signature scans are not clean bills**: Period Tracker Lite (`com.period.tracker.lite`, real 26,308,653-byte APK) matched 0 of 432 registry signatures while declaring `AD_ID` + all three `ACCESS_ADSERVICES_*` + `BILLING` + install-referrer permissions — a full monetization surface with no tracker-class match; "0 trackers" claims from code-signature scanning alone under-report monetization by construction. **CORRECTED + CONFIRMED in v1.4.0 (NF-17 scanner upgrade):** the dual-surface scan now reads **Google AdMob (dex Y), Google Firebase Analytics (dex Y), Pusher (dex Y)** — the "0 trackers" was entirely fixed-string blindness (the pipe-alternation AdMob signature was invisible to it); the permission surface was telling the truth all along. The methodological warning is thereby validated at the strongest possible level: a published zero can be completely wrong | `reports/static/com_period_tracker_lite/{report.md,exodus_scan.tsv}` runs 38400405690 (void zero) → 38423139076 (corrected dual-surface TSV) | `STATIC` | methodology | 4 |
 | NF-16 | **Evidence-pipeline staleness defect**: success-path matrix runs emitted no `STATUS.md` (early `exit 0`) and the publisher never removed stale failure-era status files absent from new artifacts — the committed evidence was briefly self-contradictory (fresh `report.md` with real trackers beside a stale `NOT ANALYSED` status; 9 apps missing status, 4 stale, 0 saying `ANALYSED`). For a transparency project, evidence hygiene is a first-class finding | committed `reports/static/**/STATUS.md` vs `report.md` dates + artifact 11815306702 (no STATUS.md inside) + run 38400405690 job results | `VERIFIED` (direct observation) | methodology / evidence integrity | 4 |
+| NF-17 | **Engine divergence on identical APK bytes, reconciled**: the registry-grep scanner and exodus-standalone reported different tracker families on the SAME APK (Clue `3b3984a7…`: Braze+Snowplow vs Firebase-Analytics+Adjust; Flo `8415480a…`: +mParticle vs +Firebase/Sentry). A same-APK/same-registry triangulation job (run 38415446421) proved the tree-fixed surface both **over-reports** (Braze 18 + Snowplow 17 file-hits are manifest/resource residue — ZERO classes in Clue's dex) and **under-reports** (registry signatures carry `\|`-alternations like `com.adjust.sdk.\|com.adjust.android.sdk.` that fixed-string matching can never see; Adjust/Firebase/Sentry classes were in the dex all along). Scanner upgraded: TSV now carries a `dex_class` column (regex over dexdump class list = primary evidence; tree-fixed demoted to string-presence) + a registry digest line | run 38415446421 reconciliation artifact + post-merge run 38423139076 published TSVs (Clue: Braze 18/n, Snowplow 17/n, Adjust Y, Firebase-Analytics Y) | `VERIFIED` (this audit's pipeline, dual-engine) | methodology | 5 |
 
 ## 6.1 Prediction scoring (Phase 0 P-01…P-10)
 
@@ -1096,6 +1097,45 @@ success too, so every artifact carries a fresh status and every publish
 overwrites stale ones. Lesson generalized into the protocol: *a green job
 and a claimable result are different objects; the status record is the
 claim, so it must exist in every terminal state.*
+
+**6. PR #3 merged (d76a6df95); evidence consistency restored.** Post-merge
+run 38423139076: 14/14 matrix jobs + publish-reports SUCCESS (only the
+deliberately-permanent `exodus-api` AUTH_REQUIRED failure remains). Committed
+statuses now read `ANALYSED` for 13 of 14 apps; Period Calendar keeps its
+honest `NOT ANALYSED` (APK acquisition failure — the claim machinery is
+working exactly as designed there). The Trust Receipts dataset was
+regenerated from the fresh evidence: 13 ANALYSED rows, 101 tracker families,
+each with class-presence evidence.
+
+**7. NF-17 reconciled on real APKs; scanner upgraded.** The reconcile job
+(run 38415446421) held one registry fetch (428 signatures, digest logged),
+the checksum-verified Clue APK, and three matching surfaces in one place:
+dex-class-regex (exodus-core semantics), tree-fixed-string (our old
+semantics, verbatim), tree-regex. Verdict: the old surface both over-reported
+(Clue's Braze 18 + Snowplow 17 file-hits = manifest/resource residue; zero
+com.appboy/com.snowplowanalytics classes in the dex) and under-reported
+(registry signatures carry `|`-alternations — `com.adjust.sdk.|com.adjust.android.sdk.` —
+which fixed-string matching can never see; Adjust, Firebase Analytics and
+Sentry classes were present in Clue's and Flo's dexes). Registry-set skew
+(M1) was refuted: identical signature counts at both fetches. The scanner
+now publishes dual-surface TSVs (`dex_class` = primary class-presence
+evidence; `match_files` = string-presence, explicitly demoted) with a
+reading-rule note and a registry digest in every report. Period Tracker
+Lite's published zero (NF-15) became Google AdMob + Firebase Analytics +
+Pusher, all class-present — the strongest possible validation of the
+"unknown ≠ absence" rule.
+
+**8. Corrected headline landscape (dual-surface, class-presence weighted).**
+13 ANALYSED apps, 101 families total. Notable corrections vs v1.2: Clue's
+real embedded families are Adjust + Firebase Analytics (Braze/Snowplow =
+residue); Flo adds Firebase Analytics + Sentry as classes (mParticle =
+residue); Period Tracker Lite is ad-monetized (AdMob + Firebase), resolving
+its earlier AD_ID-permission anomaly; Natural Cycles remains the
+single-SDK-rows leader among subscription apps (MoEngage, dex-confirmed);
+Fertility Friend remains the zero-families control (0 rows, dex and tree
+both empty). All other v1.2 rows stand with class-presence now attested
+(AppsFlyer Y on Flo/Ovia/Stardust/BabyCenter; OneSignal Y on HP
+Pregnancy/Stardust; Braze Y on Premom).
 
 ## 7. References (public record anchors used; all fetched/verified 2026-10-13 unless noted)
 
