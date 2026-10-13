@@ -111,7 +111,7 @@ jobs:
         run: |
           mkdir -p "reports/static/$APP_LABEL"
           if [ ! -s "/tmp/apk/$PACKAGE_NAME.apk" ]; then
-            printf '# Analysis status: %s\\n\\n- Package: `%s`\\n- Result: NOT ANALYSED\\n- Toolchain step: `%s`\\n- APK download step: `%s`\\n- Reason: no validated APK was available to analyse in this run.\\n- Interpretation: this is an acquisition/tooling gap, not evidence that the app is safe or unsafe.\\n' \
+            printf '# Analysis status: %s\n\n- Package: `%s`\n- Result: NOT ANALYSED\n- Toolchain step: `%s`\n- APK download step: `%s`\n- Reason: no validated APK was available to analyse in this run.\n- Interpretation: this is an acquisition/tooling gap, not evidence that the app is safe or unsafe.\n' \
               "$APP_LABEL" "$PACKAGE_NAME" "$TOOL_OUTCOME" "$DOWNLOAD_OUTCOME" \
               > "reports/static/$APP_LABEL/STATUS.md"
           fi
