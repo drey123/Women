@@ -198,7 +198,7 @@ jobs:
           # Stage only artifacts this publisher manages; broad "git add -A reports/" is
           # unsafe with sparse checkout because omitted paths can look absent.
           git add --sparse -- reports/exodus/exodus_live.json reports/exodus/exodus_live.md
-          find reports/static -type f \\( -name report.md -o -name STATUS.md -o -name exodus_scan.tsv \\) -print0 | xargs -0 -r git add --sparse --
+          find reports/static -type f \( -name report.md -o -name STATUS.md -o -name exodus_scan.tsv \) -print0 | xargs -0 -r git add --sparse --
           find reports/static -type f -path '*/evidence/*' -print0 | xargs -0 -r git add --sparse --
           if git diff --cached --quiet; then
             echo "No report changes to commit."
