@@ -140,6 +140,7 @@ jobs:
           else
             exit 0
           fi
+          # shellcheck disable=SC2016 # Backticks below are literal Markdown delimiters, not shell substitutions.
           printf '# Analysis status: %s\n\n- Package: `%s`\n- Result: %s\n- Toolchain step: `%s`\n- APK download step: `%s`\n- Analysis step: `%s`\n- Reason: %s\n- Interpretation: an unavailable or failed analysis is not evidence that the app is safe or unsafe.\n' \
             "$APP_LABEL" "$PACKAGE_NAME" "$RESULT" "$TOOL_OUTCOME" "$DOWNLOAD_OUTCOME" "$ANALYSIS_OUTCOME" "$REASON" \
             > "reports/static/$APP_LABEL/STATUS.md"
